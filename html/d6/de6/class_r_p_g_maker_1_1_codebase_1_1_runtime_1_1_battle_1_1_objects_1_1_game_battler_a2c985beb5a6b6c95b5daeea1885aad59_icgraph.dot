@@ -1,0 +1,39 @@
+digraph "RPGMaker.Codebase.Runtime.Battle.Objects.GameBattler.GainMp"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameBattler.GainMp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="指定量のMPを回復"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Item\lEffectRecoverMp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a1e157a25ab917c407a6742a08778b24d",tooltip="MVでは指定対象に[MP回復]の[使用効果]を加えるメソッドであったが Uniteでは対象者への効果にMP回復が設定されていた場合の処理を記載する"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Apply",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#aa0e39264c1ed2c1803fc326949587463",tooltip="指定対象へ結果( Game_ActionResult )の適用"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeMagic\lReflection",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a44fa0b5be0eb1e4ef8ddb382c1954835",tooltip="指定対象が指定目標に対しての魔法反射アクションを起動する"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a95f3c0da75e16c8679e47a5d11c0f9d6",tooltip="指定対象が指定目標に対してのアクションを起動する"];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7",tooltip="アクションのアップデート"];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateBattle\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08",tooltip="Update処理"];
+  Node3 -> Node8 [id="edge7_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeNormal\lAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a7f264bea7481144707b47e7415755fb1",tooltip="指定対象が指定目標に対しての通常アクションを起動する"];
+  Node8 -> Node5 [id="edge8_Node000008_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node9 [id="edge9_Node000002_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Apply\lMyself",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a66cb5bfc5dcf889949277a058fecd784",tooltip="指定対象へ結果( Game_ActionResult )の適用（使用者への影響）"];
+  Node9 -> Node10 [id="edge10_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeAction\lMyself",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#acb68ab920d08ffa51067a84aca3e067e",tooltip="指定対象が指定目標に対してのアクションを起動する（使用者への影響）"];
+  Node10 -> Node6 [id="edge11_Node000010_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node11 [id="edge12_Node000001_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Item\lEffectRecoverMpItem",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a97337112d59657c0129a9d05d0dd0812",tooltip="MVでは指定対象に[MP回復]の[使用効果]を加えるメソッドであったが Uniteでは対象者への効果にHP回復が設定されていた場合の処理を記載する"];
+  Node11 -> Node3 [id="edge13_Node000011_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node9 [id="edge14_Node000011_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node12 [id="edge15_Node000001_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameBattler.RegenerateMp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a7e7019d32e194fafdf2c4e60687674cd",tooltip="MP自動回復を適用"];
+  Node12 -> Node13 [id="edge16_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameBattler.RegenerateAll",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a1abae57ee8f406d4fbc1ab49f8aebbbd",tooltip="自動回復・ダメージを適用"];
+  Node13 -> Node14 [id="edge17_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameBattler.OnTurnEnd",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#ad867675a2484176243b03e48e9e4f0a7",tooltip="ターン終了ハンドラ"];
+}

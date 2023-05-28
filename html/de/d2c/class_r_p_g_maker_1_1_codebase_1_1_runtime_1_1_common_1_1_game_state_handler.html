@@ -1,0 +1,813 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.GameStateHandler クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html">GameStateHandler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="../../d6/d0d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.GameStateHandler クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲーム実行中の、ゲームの状態を保持するクラス  
+ <a href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a3b9c47bb5660582b48bba3ad0e0cda21"><td class="memItemLeft" align="right" valign="top"><a id="a3b9c47bb5660582b48bba3ad0e0cda21" name="a3b9c47bb5660582b48bba3ad0e0cda21"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameState</a> </td></tr>
+<tr class="memdesc:a3b9c47bb5660582b48bba3ad0e0cda21"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームの状態の定義. ゲームの状態とは、表示する画面を差しています. <br /></td></tr>
+<tr class="separator:a3b9c47bb5660582b48bba3ad0e0cda21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:adce58ef0480f995976ab60592c9add27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#adce58ef0480f995976ab60592c9add27">CurrentGameState</a> ()</td></tr>
+<tr class="memdesc:adce58ef0480f995976ab60592c9add27"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態を返却する.  <br /></td></tr>
+<tr class="separator:adce58ef0480f995976ab60592c9add27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0674aa1bff51c30c55e65612b611f0b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b">SetGameState</a> (<a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameState</a> gameState)</td></tr>
+<tr class="memdesc:ad0674aa1bff51c30c55e65612b611f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">新しい状態を登録する.  <br /></td></tr>
+<tr class="separator:ad0674aa1bff51c30c55e65612b611f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c991ccb2c203b5ffc816c6c82f8768d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a7c991ccb2c203b5ffc816c6c82f8768d">IsMap</a> ()</td></tr>
+<tr class="memdesc:a7c991ccb2c203b5ffc816c6c82f8768d"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態がMAP、MENU、EVENTかどうかを返却する  <br /></td></tr>
+<tr class="separator:a7c991ccb2c203b5ffc816c6c82f8768d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08635f6fd879412581bd0c23e3559838"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a08635f6fd879412581bd0c23e3559838">IsMenu</a> ()</td></tr>
+<tr class="memdesc:a08635f6fd879412581bd0c23e3559838"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態がMENUかどうかを返却する  <br /></td></tr>
+<tr class="separator:a08635f6fd879412581bd0c23e3559838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21ee0055358ca67238c33be028d2d7b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b">IsBattle</a> ()</td></tr>
+<tr class="memdesc:ad21ee0055358ca67238c33be028d2d7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する  <br /></td></tr>
+<tr class="separator:ad21ee0055358ca67238c33be028d2d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲーム実行中の、ゲームの状態を保持するクラス </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="adce58ef0480f995976ab60592c9add27" name="adce58ef0480f995976ab60592c9add27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce58ef0480f995976ab60592c9add27">&#9670;&#160;</a></span>CurrentGameState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameState</a> RPGMaker.Codebase.Runtime.Common.GameStateHandler.CurrentGameState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態を返却する. </p>
+<dl class="section return"><dt>戻り値</dt><dd>現在の状態</dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_adce58ef0480f995976ab60592c9add27_icgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_adce58ef0480f995976ab60592c9add27_icgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_adce58ef0480f995976ab60592c9add27_icgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_adce58ef0480f995976ab60592c9add27_icgraph">
+<area shape="rect" title="現在の状態を返却する." alt="" coords="3430,860,3664,919"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#a402385a83dcdf16396dde4ed413ffc74" title="キーやマウスのイベントに対して実行するコールバック処理の登録" alt="" coords="3153,503,3372,561"/>
+<area shape="poly" title=" " alt="" coords="3531,846,3510,788,3478,717,3435,645,3410,612,3381,582,3355,564,3358,560,3384,578,3414,608,3440,642,3483,715,3515,786,3536,845"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aeaee3de09388ebf0bd140c0e4c831d56" title="イベント実行中で、MAPやバトル側でキー操作を受け付け可能かどうかを返却する" alt="" coords="2843,819,3068,877"/>
+<area shape="poly" title=" " alt="" coords="3415,883,3068,858,3068,853,3416,878"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a5a2bdab2d0f0b62de47028166fdcb660" title="メニュー表示、非表示切り替え処理" alt="" coords="2283,811,2486,853"/>
+<area shape="poly" title=" " alt="" coords="3415,860,3382,853,3239,826,3094,809,2955,805,2817,809,2681,815,2545,824,2486,828,2486,822,2544,819,2680,810,2817,804,2955,799,3094,804,3239,820,3383,848,3416,855"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a20cf76123ea64b387c1344993f99b0ec" title="Update処理" alt="" coords="1730,893,1933,936"/>
+<area shape="poly" title=" " alt="" coords="3416,901,3201,912,2957,917,2383,917,1934,917,1934,912,2383,912,2957,912,3200,906,3415,895"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a1d6cd2cf1396c3badfbb97bfd25f78f2" title="ターン終了処理" alt="" coords="3161,952,3364,995"/>
+<area shape="poly" title=" " alt="" coords="3432,926,3338,954,3336,949,3430,921"/>
+<area shape="rect" href="../../d3/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_message.html#a12e557632d63ea5e8100b2281e3645d7" title="表示や入力・選択の最中か Uniteでは選択肢、数値入力、アイテム選択はイベントで表示するため、それでの判定を行う" alt="" coords="3142,1069,3382,1112"/>
+<area shape="poly" title=" " alt="" coords="3516,932,3458,994,3422,1025,3384,1053,3346,1071,3344,1066,3381,1048,3419,1021,3454,990,3512,928"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#a94f2b7f6d7e8ce2a8cef3862a2199c67" title="GameStateに紐づくキーやマウスのイベントを破棄する" alt="" coords="3155,1136,3369,1195"/>
+<area shape="poly" title=" " alt="" coords="3529,933,3505,978,3472,1030,3432,1081,3384,1126,3366,1138,3363,1133,3381,1122,3428,1078,3468,1027,3500,976,3524,931"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="3145,652,3380,711"/>
+<area shape="poly" title=" " alt="" coords="3496,853,3381,765,3307,713,3310,709,3384,761,3499,848"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a60213aa742bdf8cf0ac32e7ffa6a1158" title="ゲームの状態を更新する" alt="" coords="2544,427,2769,485"/>
+<area shape="poly" title=" " alt="" coords="3527,847,3504,799,3472,743,3431,688,3407,664,3381,642,3309,621,3145,579,2768,486,2770,481,3147,574,3310,616,3384,638,3411,660,3435,685,3477,740,3509,796,3532,845"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a5f49f9a6afb129e2863cd9ee41835cfc" title="イベントのアップデートを行い、何か実行されたか返す" alt="" coords="1451,1011,1671,1053"/>
+<area shape="poly" title=" " alt="" coords="3507,931,3451,974,3418,994,3383,1009,3321,1029,3268,1040,3219,1045,3174,1046,3078,1040,2957,1035,2107,1035,1672,1035,1672,1029,2107,1029,2957,1029,3078,1034,3174,1040,3219,1040,3267,1035,3320,1023,3381,1004,3416,989,3448,970,3503,927"/>
+<area shape="poly" title=" " alt="" coords="2828,847,2486,837,2486,832,2829,842"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a75d4c40d6674b4574d843d94b935e33c" title="各メニューの戻る操作を行う" alt="" coords="2006,811,2210,853"/>
+<area shape="poly" title=" " alt="" coords="2268,835,2210,835,2210,829,2268,829"/>
+<area shape="rect" href="../../db/d72/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_equip_menu.html#ac19804e5b74b2636ff3f6b59d5fc0c8f" title="戻る処理" alt="" coords="1723,776,1940,819"/>
+<area shape="poly" title=" " alt="" coords="1991,829,1937,822,1937,817,1992,824"/>
+<area shape="poly" title=" " alt="" coords="2021,861,1906,895,1905,890,2019,856"/>
+<area shape="poly" title=" " alt="" coords="1955,801,2006,808,2005,813,1955,806"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a06f193d8cc6ab88f3eaa740f98d48204" title="メニューを全て閉じる" alt="" coords="1460,747,1663,789"/>
+<area shape="poly" title=" " alt="" coords="1708,787,1663,782,1664,776,1708,781"/>
+<area shape="poly" title=" " alt="" coords="1618,793,1667,813,1720,828,1794,838,1869,843,2006,839,2006,845,1869,848,1793,844,1719,833,1665,818,1616,798"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a2d3d5a99334df4144df89340990fd7d8" title="スキルやアイテムに使用効果でコモンイベントが付与された場合に実行する" alt="" coords="1179,609,1403,668"/>
+<area shape="poly" title=" " alt="" coords="1500,742,1353,671,1355,666,1503,737"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#afd5fe4791ecb39ce9ba7a9829d2e89f1" title="指定対象に[コモンイベント]の[使用効果]を加える" alt="" coords="903,681,1113,740"/>
+<area shape="poly" title=" " alt="" coords="1165,673,1114,687,1112,681,1164,668"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a8586f2f58bcb66360e1b9d7e4572a79f" title="コモンイベントが設定されている場合に、コモンイベントをキューに溜める" alt="" coords="549,695,837,737"/>
+<area shape="poly" title=" " alt="" coords="888,715,838,716,837,711,888,710"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7" title="アクションのアップデート" alt="" coords="276,695,501,737"/>
+<area shape="poly" title=" " alt="" coords="534,719,501,719,501,713,534,713"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08" title="Update処理" alt="" coords="5,720,228,779"/>
+<area shape="poly" title=" " alt="" coords="261,734,228,738,228,733,261,729"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#aa394caa485e94736c2113a2c94f72631" title="ターンのアップデート" alt="" coords="1184,761,1398,804"/>
+<area shape="poly" title=" " alt="" coords="3146,976,2658,976,1830,976,1754,971,1678,957,1604,936,1534,910,1412,854,1326,807,1328,802,1414,850,1536,905,1606,931,1679,951,1755,965,1830,971,2658,971,3146,971"/>
+<area shape="poly" title=" " alt="" coords="1169,782,228,755,228,750,1169,777"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b" title="新しい状態を登録する." alt="" coords="2817,636,3094,679"/>
+<area shape="poly" title=" " alt="" coords="3129,674,3094,671,3095,666,3130,668"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="2544,685,2769,744"/>
+<area shape="poly" title=" " alt="" coords="2827,685,2770,696,2769,691,2826,679"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="2555,619,2758,661"/>
+<area shape="poly" title=" " alt="" coords="2802,651,2758,649,2759,643,2802,646"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="2555,201,2758,244"/>
+<area shape="poly" title=" " alt="" coords="2929,625,2670,246,2675,243,2933,622"/>
+<area shape="poly" title=" " alt="" coords="2841,633,2815,620,2773,589,2735,554,2677,487,2681,484,2738,550,2776,585,2818,615,2844,628"/>
+<area shape="poly" title=" " alt="" coords="2570,753,2546,765,2498,794,2454,812,2452,808,2495,790,2543,760,2568,748"/>
+<area shape="poly" title=" " alt="" coords="2530,746,2497,751,2379,762,2279,769,2109,770,1938,766,1719,767,1663,768,1663,763,1719,761,1938,761,2109,765,2279,763,2378,757,2496,745,2529,741"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a94b4a9d9aec9347922dc440b8321629f" title="メニュー以下を全部非表示にする" alt="" coords="2283,693,2486,736"/>
+<area shape="poly" title=" " alt="" coords="2529,717,2486,717,2486,712,2529,712"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="2283,43,2486,85"/>
+<area shape="poly" title=" " alt="" coords="2618,194,2562,149,2495,106,2455,88,2457,83,2498,102,2565,145,2622,189"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="2006,43,2210,85"/>
+<area shape="poly" title=" " alt="" coords="2268,67,2210,67,2210,61,2268,61"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a50b8a09dc9b8ad097b5d4485d6d56217" title="戦闘終了のアップデート" alt="" coords="885,343,1131,385"/>
+<area shape="poly" title=" " alt="" coords="2275,42,2224,33,2029,12,1833,8,1560,8,1514,11,1469,19,1425,32,1382,49,1300,94,1225,147,1158,203,1103,258,1028,344,1024,340,1099,255,1155,199,1221,142,1297,89,1379,45,1423,27,1468,14,1513,6,1560,3,1833,3,2029,6,2224,28,2275,37"/>
+<area shape="poly" title=" " alt="" coords="944,394,188,722,185,717,942,389"/>
+<area shape="poly" title=" " alt="" coords="2628,415,2542,257,2530,224,2525,196,2516,172,2495,150,2462,135,2418,126,2365,121,2309,120,2109,125,1830,125,1779,130,1729,142,1682,160,1637,185,1595,215,1555,249,1483,326,1421,408,1371,488,1333,557,1308,610,1303,608,1328,555,1366,485,1417,405,1478,323,1551,245,1592,211,1634,181,1680,156,1728,136,1778,124,1830,120,2109,120,2309,114,2366,116,2419,121,2464,130,2498,146,2521,170,2530,195,2536,223,2547,255,2633,413"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ac2738925cfd0e983d10bbf087f87642a" title="同時に1つしか実行できないイベントをキューに貯める 現在1つも実行していない場合は、即実行する" alt="" coords="2272,293,2496,352"/>
+<area shape="poly" title=" " alt="" coords="2588,421,2495,373,2456,355,2458,350,2498,368,2591,417"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aa2d03e9e9c20247da88dc3f24b7b4026" title="自動実行の終了時処理" alt="" coords="2272,160,2496,219"/>
+<area shape="poly" title=" " alt="" coords="2631,415,2576,327,2538,281,2495,239,2467,221,2470,217,2498,235,2542,277,2580,324,2636,412"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a42dc4f2018a9b6b67b72f23658b1ce24" title="自動実行イベントがあればイベントを開始する" alt="" coords="1996,193,2220,252"/>
+<area shape="poly" title=" " alt="" coords="2627,416,2603,382,2572,346,2536,311,2495,284,2447,267,2377,253,2220,234,2221,229,2378,248,2448,262,2498,279,2539,307,2576,342,2607,379,2632,413"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ab40287bb1e07642b6869dd74300d63f4" title="並列実行の終了時処理" alt="" coords="2272,427,2496,485"/>
+<area shape="poly" title=" " alt="" coords="2529,459,2497,459,2497,453,2529,453"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a4b5ffa4de63aa68e836c9d4c7e542309" title="接触またはアクションキーでの実行の終了時処理" alt="" coords="2272,509,2496,568"/>
+<area shape="poly" title=" " alt="" coords="2544,493,2484,511,2483,506,2543,488"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ae8a8868d390cc54cdd9423794707e6d6" title="接触でのイベントを実行する" alt="" coords="1992,393,2224,452"/>
+<area shape="poly" title=" " alt="" coords="2542,425,2496,417,2426,411,2355,409,2225,414,2224,409,2355,404,2427,406,2497,412,2543,420"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#af3617ac5a414c04e062dc020dadefd74" title="アクションキーでイベントを実行する" alt="" coords="1996,560,2220,619"/>
+<area shape="poly" title=" " alt="" coords="2620,498,2566,545,2533,566,2497,583,2427,601,2355,609,2285,611,2220,607,2221,602,2285,606,2355,604,2426,596,2495,577,2530,561,2563,540,2617,494"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a664fb32a4de7178496e1129b97f7509b" title="アクションキーでイベントを実行する 同一の座標のもののみで判定する" alt="" coords="1996,643,2220,701"/>
+<area shape="poly" title=" " alt="" coords="2628,499,2573,562,2537,592,2498,617,2429,644,2357,662,2286,672,2220,676,2220,671,2285,667,2356,657,2427,639,2495,612,2534,588,2569,558,2624,495"/>
+<area shape="poly" title=" " alt="" coords="2258,207,2221,212,2220,206,2257,202"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a0eeb6696aa5bc8591a0c6565056cfd2f" title="移動直後に、自動実行イベント、並列処理イベントの発動条件を満たしていた場合には、実行処理を行う" alt="" coords="1719,259,1944,317"/>
+<area shape="poly" title=" " alt="" coords="1982,255,1945,264,1943,259,1981,250"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ad75e4db8f826f7904cdd50d2001e5fc3" title="イベントの実行状態更新" alt="" coords="1719,176,1944,235"/>
+<area shape="poly" title=" " alt="" coords="1981,217,1944,215,1944,210,1981,212"/>
+<area shape="poly" title=" " alt="" coords="2257,541,2129,544,1992,551,1831,566,1671,585,1404,623,1403,618,1670,580,1831,560,1991,545,2129,538,2257,536"/>
+<area shape="poly" title=" " alt="" coords="2287,506,2271,500,2171,455,2173,450,2273,495,2289,501"/>
+<area shape="poly" title=" " alt="" coords="2258,565,2221,571,2220,566,2257,559"/>
+<area shape="poly" title=" " alt="" coords="2326,578,2225,633,2198,645,2196,640,2223,628,2323,574"/>
+<area shape="poly" title=" " alt="" coords="1436,1016,1236,993,1122,985,1009,981,692,981,611,975,531,959,454,934,380,905,312,872,251,839,159,782,162,777,254,834,314,867,382,900,455,929,533,954,612,970,692,976,1009,976,1123,979,1236,987,1436,1010"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad21ee0055358ca67238c33be028d2d7b" name="ad21ee0055358ca67238c33be028d2d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21ee0055358ca67238c33be028d2d7b">&#9670;&#160;</a></span>IsBattle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Common.GameStateHandler.IsBattle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する </p>
+<dl class="section return"><dt>戻り値</dt><dd>現在の状態がMAPまたは、EVENTの場合true</dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad21ee0055358ca67238c33be028d2d7b_icgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad21ee0055358ca67238c33be028d2d7b_icgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad21ee0055358ca67238c33be028d2d7b_icgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad21ee0055358ca67238c33be028d2d7b_icgraph">
+<area shape="rect" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="1792,1131,2028,1173"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a493e2ea441be41285d7909efbe4e3a68" title="HudHandlerを登録" alt="" coords="844,1031,1097,1073"/>
+<area shape="poly" title=" " alt="" coords="1796,1130,1744,1120,1593,1096,1441,1080,1261,1067,1097,1059,1098,1053,1261,1061,1441,1075,1594,1091,1745,1115,1797,1125"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac4a358a4a2136a175a780d969a5a2ae2" title="実行するActionの登録" alt="" coords="1496,287,1737,329"/>
+<area shape="poly" title=" " alt="" coords="1894,1118,1623,331,1628,329,1899,1116"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#aa0e39264c1ed2c1803fc326949587463" title="指定対象へ結果( Game_ActionResult )の適用" alt="" coords="1508,1447,1725,1489"/>
+<area shape="poly" title=" " alt="" coords="1889,1187,1828,1273,1789,1323,1746,1370,1698,1413,1652,1448,1648,1444,1694,1409,1742,1366,1785,1319,1824,1270,1885,1184"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a66cb5bfc5dcf889949277a058fecd784" title="指定対象へ結果( Game_ActionResult )の適用（使用者への影響）" alt="" coords="1508,1559,1725,1617"/>
+<area shape="poly" title=" " alt="" coords="1901,1189,1880,1252,1848,1334,1803,1422,1776,1464,1746,1503,1713,1535,1676,1560,1673,1556,1709,1531,1742,1500,1772,1461,1799,1419,1843,1332,1875,1250,1896,1187"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#ab0525904da3fee19d88b27936d2149fd" title="指定ステートが付与可能なタイミングか（バトル、マップ、常時）" alt="" coords="1504,956,1730,1015"/>
+<area shape="poly" title=" " alt="" coords="1871,1124,1812,1079,1743,1036,1705,1018,1707,1013,1746,1031,1815,1075,1874,1119"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#afd5fe4791ecb39ce9ba7a9829d2e89f1" title="指定対象に[コモンイベント]の[使用効果]を加える" alt="" coords="1512,1297,1721,1356"/>
+<area shape="poly" title=" " alt="" coords="1861,1184,1669,1299,1666,1294,1859,1179"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a9d7e7a73b205c8bbd12640dd907d18c4" title="現在のHudHandlerを返却" alt="" coords="1489,1164,1744,1207"/>
+<area shape="poly" title=" " alt="" coords="1778,1170,1745,1173,1744,1168,1777,1164"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ab0b6b663d80d399628453df01d15f719" title="HudHandlerを削除" alt="" coords="1181,1089,1413,1148"/>
+<area shape="poly" title=" " alt="" coords="1777,1147,1413,1128,1413,1122,1778,1142"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="567,1031,770,1073"/>
+<area shape="poly" title=" " alt="" coords="829,1055,770,1055,770,1049,829,1049"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac9871a57a401c0da5670b07803acc775" title="実行するActionの登録（毎フレーム）" alt="" coords="1176,668,1418,727"/>
+<area shape="poly" title=" " alt="" coords="1591,342,1324,669,1320,666,1587,339"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a5c537e03f3a56943fb0fd5520eba9885" title="実行するActionの登録（フレーム指定）" alt="" coords="1158,5,1436,48"/>
+<area shape="poly" title=" " alt="" coords="1598,274,1574,225,1539,168,1494,110,1468,84,1440,62,1419,51,1422,46,1442,58,1472,80,1498,107,1544,165,1579,223,1603,271"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a8de365e0d759e315e0ffbd6a372df808" title="天候演出の実施" alt="" coords="1163,72,1431,131"/>
+<area shape="poly" title=" " alt="" coords="1587,277,1524,210,1484,175,1440,145,1417,134,1419,129,1442,140,1487,171,1528,206,1591,273"/>
+<area shape="rect" href="../../d7/d4e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_state_icon.html#a045ecc518fe00a041d1f242a3a605329" title="初期化" alt="" coords="1195,155,1399,213"/>
+<area shape="poly" title=" " alt="" coords="1560,282,1503,254,1440,228,1398,214,1400,208,1442,223,1505,249,1562,277"/>
+<area shape="rect" href="../../d6/daf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_status.html#ae534159741a3d8678abb6a9a9ac7eca5" title="初期化" alt="" coords="1181,237,1413,296"/>
+<area shape="poly" title=" " alt="" coords="1481,293,1413,284,1413,279,1482,288"/>
+<area shape="rect" href="../../db/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_weapon.html#ab5d955d4a14f4fd16912fa4e9616788f" title="モーション開始" alt="" coords="1188,320,1406,379"/>
+<area shape="poly" title=" " alt="" coords="1482,328,1407,338,1406,333,1481,323"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a83b0b22aa9a3f111f5e893f196b2cfd3" title="指定モーションを開始" alt="" coords="869,399,1072,457"/>
+<area shape="poly" title=" " alt="" coords="1568,339,1509,369,1442,393,1345,413,1247,426,1153,431,1073,433,1072,428,1153,426,1246,420,1344,408,1440,388,1507,364,1566,334"/>
+<area shape="poly" title=" " alt="" coords="1262,740,1173,839,1132,881,1106,904,1068,921,1034,930,973,935,911,937,877,942,837,954,799,972,761,992,700,1032,697,1028,759,988,796,967,835,950,875,937,911,931,973,930,1033,925,1066,916,1103,899,1128,877,1169,835,1258,736"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#aad14129591af8516826dac8b56918303" title="フラッシュ演出の実施" alt="" coords="836,548,1105,607"/>
+<area shape="poly" title=" " alt="" coords="1213,664,1104,621,1071,610,1072,605,1106,616,1215,659"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a01b386806bfe1b3fece68f3f3cdf7b44" title="イベントのフロー制御. ソースを分けるとインデックス周りが複雑になるのでここで処理." alt="" coords="855,631,1086,689"/>
+<area shape="poly" title=" " alt="" coords="1161,685,1086,676,1086,671,1162,679"/>
+<area shape="rect" href="../../db/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_weapon.html#a1e3a08a8de9dc580d8842ec7dc2c0915" title="初期化" alt="" coords="852,713,1089,756"/>
+<area shape="poly" title=" " alt="" coords="1162,715,1090,724,1089,718,1161,710"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a97ee229838de843d2361f3f82f1c023f" title="初期化" alt="" coords="860,780,1081,823"/>
+<area shape="poly" title=" " alt="" coords="1208,735,1105,771,1065,782,1064,777,1104,765,1206,730"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ad0210eaf48bc01b8b4eabc34d01ee489" title="初期化" alt="" coords="855,847,1086,889"/>
+<area shape="poly" title=" " alt="" coords="1253,738,1186,790,1147,815,1106,837,1076,849,1074,844,1104,832,1144,811,1183,785,1250,734"/>
+<area shape="rect" href="../../d5/df2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_damage.html#ab28575b7ed8ef52d2c587ec14f725df0" title="対象に対する準備" alt="" coords="858,481,1083,524"/>
+<area shape="poly" title=" " alt="" coords="1257,659,1189,596,1148,565,1103,538,1077,527,1079,522,1106,534,1151,561,1193,592,1261,655"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#abfe9fe94f6564adc4d17de52415c31a1" title="ダメージポップアップの準備" alt="" coords="561,532,775,591"/>
+<area shape="poly" title=" " alt="" coords="844,530,776,543,775,538,843,525"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ae8848832996473bf910c5fd802fdaf1e" title="アイコン初期化" alt="" coords="860,151,1081,209"/>
+<area shape="poly" title=" " alt="" coords="1180,185,1081,184,1081,179,1180,180"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a4f5f3cca4b064d8f901d48aa19c05bec" title="メンバ変数を初期化" alt="" coords="567,151,770,209"/>
+<area shape="poly" title=" " alt="" coords="845,183,770,183,770,177,845,177"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a442e991df0c551a8116da35bd02e3dcf" title="[ステータス]ウィンドウ(Window_BattleStatus)を生成" alt="" coords="865,233,1076,292"/>
+<area shape="poly" title=" " alt="" coords="1166,268,1076,267,1076,261,1166,262"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1696ba0f56578c100381e543a4d89f0f" title="戦闘シーンに必要なすべてのウィンドウを生成" alt="" coords="548,241,788,284"/>
+<area shape="poly" title=" " alt="" coords="850,265,789,265,789,260,850,260"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a23ce0be12af999015b5b0a114836d325" title="武器アニメの準備" alt="" coords="867,316,1074,375"/>
+<area shape="poly" title=" " alt="" coords="1173,350,1074,349,1075,344,1173,345"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a6c1763dd7538c64fd0999c88b885a8b3" title="モーションの準備" alt="" coords="565,316,772,375"/>
+<area shape="poly" title=" " alt="" coords="852,348,772,348,772,343,852,343"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a6f19d918d75079527d7a01785e72f925" title="モーションのアップデート" alt="" coords="271,273,486,332"/>
+<area shape="poly" title=" " alt="" coords="549,331,485,321,486,316,550,325"/>
+<area shape="poly" title=" " alt="" coords="854,399,772,376,773,371,855,394"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a9f3762a27950165114ac468ee2f573d6" title="モーションを再設定" alt="" coords="560,399,777,457"/>
+<area shape="poly" title=" " alt="" coords="854,431,777,431,777,425,854,425"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#ac7eb3fdb50cb263ad1db2bf38e4b1a57" title="入場モーションの準備" alt="" coords="277,524,480,583"/>
+<area shape="poly" title=" " alt="" coords="855,457,789,472,481,536,480,531,788,467,854,452"/>
+<area shape="poly" title=" " alt="" coords="558,395,547,389,522,371,499,353,462,335,464,330,501,348,525,367,549,384,560,390"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a729d74c76c2e682a99075e4eaffc4b2e" title="移動が終わった時に呼ばれるハンドラ" alt="" coords="257,407,500,449"/>
+<area shape="poly" title=" " alt="" coords="545,431,501,431,501,425,545,425"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#aa2bf83d9c5b5fc6cda668d044971d575" title="入場モーションを終わりまで飛ばす" alt="" coords="5,449,209,508"/>
+<area shape="poly" title=" " alt="" coords="545,457,500,464,348,477,209,481,209,476,347,471,500,459,544,452"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a0b6e261b1ac51520fc7cb0ef776d77aa" title="入場モーションを終わりまで飛ばす（プレビュー用）" alt="" coords="5,349,209,408"/>
+<area shape="poly" title=" " alt="" coords="544,404,500,397,347,385,209,381,209,376,348,380,500,392,545,399"/>
+<area shape="poly" title=" " alt="" coords="575,466,549,478,501,508,461,526,459,521,499,503,547,474,573,461"/>
+<area shape="poly" title=" " alt="" coords="247,455,210,462,209,457,246,450"/>
+<area shape="poly" title=" " alt="" coords="242,406,209,400,210,395,243,401"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a44fa0b5be0eb1e4ef8ddb382c1954835" title="指定対象が指定目標に対しての魔法反射アクションを起動する" alt="" coords="1188,1439,1406,1497"/>
+<area shape="poly" title=" " alt="" coords="1493,1471,1406,1471,1406,1465,1493,1465"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a7f264bea7481144707b47e7415755fb1" title="指定対象が指定目標に対しての通常アクションを起動する" alt="" coords="1185,1521,1409,1580"/>
+<area shape="poly" title=" " alt="" coords="1518,1496,1410,1524,1409,1519,1517,1491"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a95f3c0da75e16c8679e47a5d11c0f9d6" title="指定対象が指定目標に対してのアクションを起動する" alt="" coords="860,1505,1081,1548"/>
+<area shape="poly" title=" " alt="" coords="1174,1493,1082,1509,1081,1504,1173,1488"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7" title="アクションのアップデート" alt="" coords="556,1505,781,1548"/>
+<area shape="poly" title=" " alt="" coords="845,1529,781,1529,781,1524,845,1524"/>
+<area shape="poly" title=" " alt="" coords="1169,1544,1081,1537,1081,1532,1170,1539"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#acb68ab920d08ffa51067a84aca3e067e" title="指定対象が指定目標に対してのアクションを起動する（使用者への影響）" alt="" coords="1187,1604,1407,1663"/>
+<area shape="poly" title=" " alt="" coords="1494,1608,1408,1620,1407,1615,1493,1603"/>
+<area shape="poly" title=" " alt="" coords="1172,1618,836,1563,776,1551,777,1546,837,1557,1173,1612"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#af3246efa267ab6b0b78832124513c14a" title="床ダメージ" alt="" coords="1184,873,1410,932"/>
+<area shape="poly" title=" " alt="" coords="1488,955,1410,934,1411,929,1490,950"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a856f6d2b1eed251569df09d54ad4bd64" title="指定ステートが付加可能か" alt="" coords="1184,956,1410,1015"/>
+<area shape="poly" title=" " alt="" coords="1488,988,1410,988,1410,983,1488,983"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a721713aea404590ae235b32ef084a641" title="指定ステートを追加" alt="" coords="851,964,1090,1007"/>
+<area shape="poly" title=" " alt="" coords="1169,988,1091,988,1091,983,1169,983"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a8586f2f58bcb66360e1b9d7e4572a79f" title="コモンイベントが設定されている場合に、コモンイベントをキューに溜める" alt="" coords="1153,1372,1441,1415"/>
+<area shape="poly" title=" " alt="" coords="1498,1354,1403,1374,1402,1369,1497,1349"/>
+<area shape="poly" title=" " alt="" coords="1179,1421,773,1507,772,1502,1178,1416"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ad9a4fac37bf7481ee0e62a51a4504736" title="現在のHudHandlerで描画している全てのオブジェクトを削除する" alt="" coords="1185,1289,1409,1348"/>
+<area shape="poly" title=" " alt="" coords="1568,1217,1509,1249,1442,1280,1410,1292,1408,1287,1440,1275,1506,1244,1565,1212"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a33bf104f5fa62e334eb8aa0756d09e65" title="フェードイン" alt="" coords="869,1164,1072,1207"/>
+<area shape="poly" title=" " alt="" coords="1474,1188,1072,1188,1072,1183,1474,1183"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ac94b3aa947539ba79fcbc39dfa9c92fe" title="フェードアウト" alt="" coords="1195,1223,1399,1265"/>
+<area shape="poly" title=" " alt="" coords="1483,1212,1399,1228,1398,1223,1482,1207"/>
+<area shape="poly" title=" " alt="" coords="1496,1163,1413,1146,1414,1140,1497,1158"/>
+<area shape="poly" title=" " alt="" coords="854,1161,835,1154,760,1116,698,1076,701,1071,762,1111,837,1150,856,1156"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="567,1160,770,1203"/>
+<area shape="poly" title=" " alt="" coords="1180,1246,1017,1239,836,1221,754,1206,755,1201,837,1216,1017,1233,1180,1240"/>
+<area shape="poly" title=" " alt="" coords="1165,1095,1078,1077,1079,1071,1166,1089"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="869,1097,1072,1140"/>
+<area shape="poly" title=" " alt="" coords="1165,1121,1073,1121,1073,1116,1165,1116"/>
+<area shape="poly" title=" " alt="" coords="855,1145,771,1163,770,1158,854,1140"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c991ccb2c203b5ffc816c6c82f8768d" name="a7c991ccb2c203b5ffc816c6c82f8768d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c991ccb2c203b5ffc816c6c82f8768d">&#9670;&#160;</a></span>IsMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Common.GameStateHandler.IsMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態がMAP、MENU、EVENTかどうかを返却する </p>
+<dl class="section return"><dt>戻り値</dt><dd>現在の状態がMAP、MENU、EVENTの場合true</dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a7c991ccb2c203b5ffc816c6c82f8768d_icgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a7c991ccb2c203b5ffc816c6c82f8768d_icgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a7c991ccb2c203b5ffc816c6c82f8768d_icgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a7c991ccb2c203b5ffc816c6c82f8768d_icgraph">
+<area shape="rect" title="現在の状態がMAP、MENU、EVENTかどうかを返却する" alt="" coords="2909,400,3135,443"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a493e2ea441be41285d7909efbe4e3a68" title="HudHandlerを登録" alt="" coords="2024,5,2277,48"/>
+<area shape="poly" title=" " alt="" coords="3002,388,2978,345,2946,294,2906,242,2859,195,2784,138,2719,103,2649,79,2557,55,2486,40,2413,31,2277,25,2277,20,2414,26,2487,35,2558,49,2650,74,2721,98,2787,134,2862,191,2910,238,2950,291,2983,343,3006,386"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#aa3d54f5a3ff328b67ab08a65e33313ad" title="指定ステートを追加" alt="" coords="2617,437,2849,480"/>
+<area shape="poly" title=" " alt="" coords="2894,440,2850,446,2849,441,2894,435"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#ab0525904da3fee19d88b27936d2149fd" title="指定ステートが付与可能なタイミングか（バトル、マップ、常時）" alt="" coords="2620,355,2846,413"/>
+<area shape="poly" title=" " alt="" coords="2894,407,2846,401,2847,396,2894,402"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#afd5fe4791ecb39ce9ba7a9829d2e89f1" title="指定対象に[コモンイベント]の[使用効果]を加える" alt="" coords="1756,547,1966,605"/>
+<area shape="poly" title=" " alt="" coords="2969,452,2918,475,2861,495,2719,514,2471,535,1966,572,1966,567,2470,530,2718,508,2860,489,2916,471,2967,447"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a9d7e7a73b205c8bbd12640dd907d18c4" title="現在のHudHandlerを返却" alt="" coords="2605,205,2861,248"/>
+<area shape="poly" title=" " alt="" coords="2986,392,2929,341,2859,289,2787,251,2789,246,2862,284,2932,337,2990,388"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ab0b6b663d80d399628453df01d15f719" title="HudHandlerを削除" alt="" coords="2325,264,2557,323"/>
+<area shape="poly" title=" " alt="" coords="2971,395,2919,368,2860,345,2783,326,2703,313,2557,299,2558,294,2704,308,2784,321,2861,340,2921,363,2974,390"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#aabafad473ffb409533dd8db8eda71956" title="指定ステートを解除" alt="" coords="2605,861,2861,904"/>
+<area shape="poly" title=" " alt="" coords="3021,458,3009,539,2983,645,2963,701,2936,756,2903,807,2862,851,2846,863,2843,859,2859,847,2899,803,2932,753,2958,699,2978,643,3004,538,3015,457"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a60213aa742bdf8cf0ac32e7ffa6a1158" title="ゲームの状態を更新する" alt="" coords="2621,779,2845,837"/>
+<area shape="poly" title=" " alt="" coords="2998,456,2759,780,2754,777,2994,453"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="1759,53,1963,96"/>
+<area shape="poly" title=" " alt="" coords="2009,53,1963,60,1963,55,2009,47"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#af3246efa267ab6b0b78832124513c14a" title="床ダメージ" alt="" coords="2328,429,2554,488"/>
+<area shape="poly" title=" " alt="" coords="2602,461,2555,461,2555,456,2602,456"/>
+<area shape="poly" title=" " alt="" coords="2606,419,2555,432,2554,427,2605,414"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a856f6d2b1eed251569df09d54ad4bd64" title="指定ステートが付加可能か" alt="" coords="2328,347,2554,405"/>
+<area shape="poly" title=" " alt="" coords="2605,383,2555,382,2555,376,2605,378"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a721713aea404590ae235b32ef084a641" title="指定ステートを追加" alt="" coords="2031,367,2270,409"/>
+<area shape="poly" title=" " alt="" coords="2313,384,2270,386,2270,380,2313,379"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad4b92badb0ee04b916e3e7df3fb05243" title="指定対象に攻撃の[使用効果]を加える" alt="" coords="903,197,1113,256"/>
+<area shape="poly" title=" " alt="" coords="2088,363,2011,331,1915,296,1808,262,1698,237,1620,226,1539,219,1380,212,1233,214,1113,220,1113,215,1233,209,1380,207,1540,213,1620,221,1699,232,1809,257,1917,291,2013,326,2090,358"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad361cd52daaea9b629f16db972b52a84" title="指定対象に通常の[使用効果]を加える" alt="" coords="1756,456,1966,515"/>
+<area shape="poly" title=" " alt="" coords="2071,417,1951,458,1949,453,2070,412"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a5e2eccb8f1dbacca9ef1f357aff8d5fc" title="能力値やステートを規定値内に収める処理" alt="" coords="1746,367,1976,409"/>
+<area shape="poly" title=" " alt="" coords="2016,400,1976,399,1976,394,2016,394"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#aa0e39264c1ed2c1803fc326949587463" title="指定対象へ結果( Game_ActionResult )の適用" alt="" coords="585,311,802,353"/>
+<area shape="poly" title=" " alt="" coords="905,264,760,313,759,308,903,259"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a44fa0b5be0eb1e4ef8ddb382c1954835" title="指定対象が指定目標に対しての魔法反射アクションを起動する" alt="" coords="279,275,498,333"/>
+<area shape="poly" title=" " alt="" coords="569,323,498,317,498,311,570,318"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a7f264bea7481144707b47e7415755fb1" title="指定対象が指定目標に対しての通常アクションを起動する" alt="" coords="276,357,501,416"/>
+<area shape="poly" title=" " alt="" coords="570,357,501,369,501,364,569,351"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a30937435994c2aeb8de46e354b51d782" title="指定対象に[使用効果]を加える" alt="" coords="1179,617,1388,676"/>
+<area shape="poly" title=" " alt="" coords="1761,525,1748,536,1737,551,1731,566,1728,596,1722,626,1714,640,1700,653,1663,673,1623,687,1582,694,1539,698,1456,693,1382,679,1383,674,1457,688,1539,692,1581,689,1622,681,1661,668,1697,648,1710,637,1717,624,1722,596,1726,565,1733,549,1744,533,1758,521"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a0e31f70949304a3bf1175ac19a030616" title="指定対象にエフェクトを適用" alt="" coords="899,511,1117,569"/>
+<area shape="poly" title=" " alt="" coords="1191,614,1085,572,1087,567,1193,609"/>
+<area shape="poly" title=" " alt="" coords="948,504,726,356,729,352,951,500"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a8586f2f58bcb66360e1b9d7e4572a79f" title="コモンイベントが設定されている場合に、コモンイベントをキューに溜める" alt="" coords="549,519,837,561"/>
+<area shape="poly" title=" " alt="" coords="884,543,838,543,838,537,884,537"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7" title="アクションのアップデート" alt="" coords="276,467,501,509"/>
+<area shape="poly" title=" " alt="" coords="549,518,501,510,502,505,550,513"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08" title="Update処理" alt="" coords="5,347,228,405"/>
+<area shape="poly" title=" " alt="" coords="320,463,189,408,191,403,322,458"/>
+<area shape="poly" title=" " alt="" coords="1991,376,2030,376,2030,382,1991,382"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a46a4f6f463182320acb0e3741286fbfb" title="指定通常能力に指定ターン数の[強化]を追加" alt="" coords="1452,447,1682,489"/>
+<area shape="poly" title=" " alt="" coords="1772,417,1699,437,1656,449,1655,443,1698,432,1771,411"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a4bf2426bec4fa47d818471e0b214f39b" title="指定通常能力に指定ターン数の[弱体]を追加" alt="" coords="1463,580,1671,639"/>
+<area shape="poly" title=" " alt="" coords="1784,419,1748,446,1737,461,1731,477,1726,508,1721,538,1713,554,1700,570,1673,588,1670,584,1697,566,1709,551,1716,537,1721,507,1725,475,1732,459,1744,442,1780,414"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#abc126f772bf633d1a2d2a2348d2745b8" title="被ダメージハンドラ" alt="" coords="1442,513,1692,556"/>
+<area shape="poly" title=" " alt="" coords="1792,418,1748,446,1734,461,1725,475,1716,490,1700,504,1678,515,1675,510,1697,499,1712,486,1721,472,1730,458,1745,442,1790,414"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a1a3260593962f41e2d76f900a5c7e02f" title="指定通常能力の[強化]を解除" alt="" coords="1441,247,1694,289"/>
+<area shape="poly" title=" " alt="" coords="1811,361,1758,331,1697,304,1664,292,1666,287,1699,299,1760,327,1814,356"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a3d73aefe7c91fabe827a27d354ff8b4b" title="指定ステートを解除" alt="" coords="1436,313,1698,356"/>
+<area shape="poly" title=" " alt="" coords="1731,376,1644,359,1645,354,1732,371"/>
+<area shape="rect" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html#aa97acbdee8c974449432ea413a4aa848" title="指定の[敵キャラ]へ変更(変身)" alt="" coords="1445,380,1690,423"/>
+<area shape="poly" title=" " alt="" coords="1731,397,1691,398,1690,393,1731,391"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a4df77b613c49006d914da5573ee7f4d5" title="指定対象に[強化]の[使用効果]を加える" alt="" coords="1179,443,1388,501"/>
+<area shape="poly" title=" " alt="" coords="1437,472,1389,473,1388,468,1437,467"/>
+<area shape="poly" title=" " alt="" coords="1165,504,1118,516,1116,511,1163,499"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ae8c5a6cf681facd1b1bf2018e4d5f570" title="指定対象に[弱体]の[使用効果]を加える" alt="" coords="1179,528,1388,587"/>
+<area shape="poly" title=" " alt="" coords="1448,590,1388,579,1389,574,1449,585"/>
+<area shape="poly" title=" " alt="" coords="1164,552,1117,550,1117,544,1164,547"/>
+<area shape="poly" title=" " alt="" coords="1714,350,1784,363,1783,369,1713,355"/>
+<area shape="poly" title=" " alt="" coords="1753,616,1748,619,1733,640,1726,662,1719,683,1700,702,1629,737,1565,755,1506,760,1448,755,1390,742,1327,725,1258,707,1178,691,1056,664,937,630,749,564,751,559,939,625,1058,659,1179,685,1259,702,1328,720,1391,737,1449,749,1506,755,1564,750,1627,732,1697,698,1715,681,1721,660,1728,638,1744,615,1750,611"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ad9a4fac37bf7481ee0e62a51a4504736" title="現在のHudHandlerで描画している全てのオブジェクトを削除する" alt="" coords="2330,131,2553,189"/>
+<area shape="poly" title=" " alt="" coords="2622,204,2553,188,2554,183,2623,199"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a33bf104f5fa62e334eb8aa0756d09e65" title="フェードイン" alt="" coords="2340,64,2543,107"/>
+<area shape="poly" title=" " alt="" coords="2689,199,2628,159,2556,121,2527,110,2528,105,2558,116,2630,154,2692,194"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ac94b3aa947539ba79fcbc39dfa9c92fe" title="フェードアウト" alt="" coords="2049,148,2252,191"/>
+<area shape="poly" title=" " alt="" coords="2590,225,2461,217,2325,204,2252,193,2253,187,2325,199,2462,212,2591,219"/>
+<area shape="poly" title=" " alt="" coords="2623,254,2558,269,2557,264,2622,249"/>
+<area shape="poly" title=" " alt="" coords="2325,86,1963,79,1963,74,2325,81"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="1759,129,1963,172"/>
+<area shape="poly" title=" " alt="" coords="2034,165,1963,160,1963,155,2034,159"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="1466,129,1669,172"/>
+<area shape="poly" title=" " alt="" coords="1745,153,1669,153,1669,148,1745,148"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a50b8a09dc9b8ad097b5d4485d6d56217" title="戦闘終了のアップデート" alt="" coords="885,101,1131,144"/>
+<area shape="poly" title=" " alt="" coords="1755,129,1698,120,1546,110,1392,107,1250,111,1131,116,1131,111,1250,105,1392,102,1546,104,1699,115,1756,123"/>
+<area shape="poly" title=" " alt="" coords="871,134,742,148,591,173,431,211,352,236,277,265,242,283,208,304,152,348,149,344,205,300,239,278,275,260,351,231,430,206,590,168,741,143,870,128"/>
+<area shape="poly" title=" " alt="" coords="2384,257,2323,203,2299,170,2275,138,2225,90,2178,51,2182,46,2229,86,2279,134,2303,167,2327,200,2387,253"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="2049,252,2252,295"/>
+<area shape="poly" title=" " alt="" coords="2310,287,2252,283,2253,278,2311,282"/>
+<area shape="poly" title=" " alt="" coords="2093,248,1975,193,1927,175,1929,170,1977,188,2095,243"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ac2738925cfd0e983d10bbf087f87642a" title="同時に1つしか実行できないイベントをキューに貯める 現在1つも実行していない場合は、即実行する" alt="" coords="2329,696,2553,755"/>
+<area shape="poly" title=" " alt="" coords="2612,777,2547,758,2548,753,2613,771"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aa2d03e9e9c20247da88dc3f24b7b4026" title="自動実行の終了時処理" alt="" coords="2329,563,2553,621"/>
+<area shape="poly" title=" " alt="" coords="2696,769,2634,705,2596,672,2556,642,2523,624,2526,620,2559,638,2599,668,2638,701,2700,766"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a42dc4f2018a9b6b67b72f23658b1ce24" title="自動実行イベントがあればイベントを開始する" alt="" coords="2038,629,2263,688"/>
+<area shape="poly" title=" " alt="" coords="2689,771,2629,724,2594,703,2556,687,2482,667,2405,656,2331,651,2263,652,2263,647,2331,646,2406,650,2483,661,2558,681,2596,698,2632,720,2692,767"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ab40287bb1e07642b6869dd74300d63f4" title="並列実行の終了時処理" alt="" coords="2329,779,2553,837"/>
+<area shape="poly" title=" " alt="" coords="2606,811,2554,811,2554,805,2606,805"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a4b5ffa4de63aa68e836c9d4c7e542309" title="接触またはアクションキーでの実行の終了時処理" alt="" coords="2329,963,2553,1021"/>
+<area shape="poly" title=" " alt="" coords="2611,848,2607,851,2590,874,2583,897,2577,921,2559,946,2534,964,2531,960,2555,942,2572,919,2578,895,2585,871,2603,847,2608,844"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ae8a8868d390cc54cdd9423794707e6d6" title="接触でのイベントを実行する" alt="" coords="2034,832,2267,891"/>
+<area shape="poly" title=" " alt="" coords="2606,844,2558,852,2406,864,2267,867,2267,861,2406,859,2557,847,2606,838"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#af3617ac5a414c04e062dc020dadefd74" title="アクションキーでイベントを実行する" alt="" coords="2038,915,2263,973"/>
+<area shape="poly" title=" " alt="" coords="2626,845,2606,852,2558,871,2405,907,2264,931,2263,926,2404,902,2557,865,2604,847,2624,840"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a664fb32a4de7178496e1129b97f7509b" title="アクションキーでイベントを実行する 同一の座標のもののみで判定する" alt="" coords="2038,997,2263,1056"/>
+<area shape="poly" title=" " alt="" coords="2611,847,2607,851,2592,874,2585,897,2587,945,2589,969,2588,992,2578,1015,2559,1035,2522,1058,2482,1073,2440,1081,2397,1083,2312,1076,2237,1059,2238,1054,2313,1071,2397,1078,2440,1075,2481,1067,2520,1053,2556,1031,2574,1012,2582,991,2584,969,2582,945,2580,896,2587,872,2603,848,2607,843"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a2d3d5a99334df4144df89340990fd7d8" title="スキルやアイテムに使用効果でコモンイベントが付与された場合に実行する" alt="" coords="2038,1080,2263,1139"/>
+<area shape="poly" title=" " alt="" coords="2611,847,2607,851,2589,881,2582,910,2583,940,2588,971,2592,1001,2592,1031,2582,1060,2559,1087,2527,1110,2491,1127,2454,1138,2414,1145,2336,1147,2263,1139,2263,1134,2336,1142,2414,1140,2452,1133,2490,1122,2524,1106,2556,1083,2577,1057,2586,1030,2587,1001,2582,971,2578,941,2577,910,2584,879,2603,848,2607,843"/>
+<area shape="poly" title=" " alt="" coords="2315,624,2263,636,2262,630,2314,618"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a0eeb6696aa5bc8591a0c6565056cfd2f" title="移動直後に、自動実行イベント、並列処理イベントの発動条件を満たしていた場合には、実行処理を行う" alt="" coords="1749,629,1973,688"/>
+<area shape="poly" title=" " alt="" coords="2023,661,1974,661,1974,656,2023,656"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ad75e4db8f826f7904cdd50d2001e5fc3" title="イベントの実行状態更新" alt="" coords="1749,712,1973,771"/>
+<area shape="poly" title=" " alt="" coords="2032,695,1967,714,1966,709,2030,690"/>
+<area shape="poly" title=" " alt="" coords="2377,957,2276,905,2247,894,2249,889,2278,900,2380,952"/>
+<area shape="poly" title=" " alt="" coords="2314,974,2262,965,2263,960,2315,968"/>
+<area shape="poly" title=" " alt="" coords="2314,1010,2263,1016,2262,1011,2314,1004"/>
+<area shape="poly" title=" " alt="" coords="2368,1031,2278,1070,2247,1082,2246,1077,2276,1066,2366,1026"/>
+<area shape="poly" title=" " alt="" coords="2025,1074,2022,1070,2001,1040,1988,1011,1980,982,1978,954,1983,898,1996,843,2009,788,2015,733,2013,705,2006,677,1993,648,1974,619,1962,608,1966,604,1978,616,1998,646,2011,675,2018,704,2020,733,2015,789,2001,844,1988,899,1983,954,1986,981,1993,1009,2006,1038,2026,1066,2029,1070"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a08635f6fd879412581bd0c23e3559838" name="a08635f6fd879412581bd0c23e3559838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08635f6fd879412581bd0c23e3559838">&#9670;&#160;</a></span>IsMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Common.GameStateHandler.IsMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在の状態がMENUかどうかを返却する </p>
+<dl class="section return"><dt>戻り値</dt><dd>現在の状態がMAP、MENU、EVENTの場合true</dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a08635f6fd879412581bd0c23e3559838_icgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a08635f6fd879412581bd0c23e3559838_icgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a08635f6fd879412581bd0c23e3559838_icgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_a08635f6fd879412581bd0c23e3559838_icgraph">
+<area shape="rect" title="現在の状態がMENUかどうかを返却する" alt="" coords="2630,728,2864,771"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac4a358a4a2136a175a780d969a5a2ae2" title="実行するActionの登録" alt="" coords="2341,487,2582,529"/>
+<area shape="poly" title=" " alt="" coords="2707,720,2487,532,2490,528,2711,716"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#ab0525904da3fee19d88b27936d2149fd" title="指定ステートが付与可能なタイミングか（バトル、マップ、常時）" alt="" coords="2349,820,2575,879"/>
+<area shape="poly" title=" " alt="" coords="2671,779,2548,822,2547,817,2669,774"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac9871a57a401c0da5670b07803acc775" title="実行するActionの登録（毎フレーム）" alt="" coords="1139,263,1381,321"/>
+<area shape="poly" title=" " alt="" coords="2413,481,2357,452,2292,428,2166,402,2056,392,1959,394,1867,401,1774,409,1676,411,1566,402,1438,377,1371,354,1311,324,1313,320,1373,349,1440,372,1567,397,1676,405,1774,403,1866,396,1958,388,2056,387,2166,396,2294,423,2359,447,2416,477"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a5c537e03f3a56943fb0fd5520eba9885" title="実行するActionの登録（フレーム指定）" alt="" coords="2015,653,2293,696"/>
+<area shape="poly" title=" " alt="" coords="2428,541,2368,590,2332,615,2294,637,2249,655,2247,650,2292,632,2329,611,2365,586,2425,537"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a8de365e0d759e315e0ffbd6a372df808" title="天候演出の実施" alt="" coords="2020,221,2288,280"/>
+<area shape="poly" title=" " alt="" coords="2441,475,2416,434,2382,385,2340,336,2291,294,2272,283,2275,278,2295,290,2344,332,2386,381,2421,431,2445,473"/>
+<area shape="rect" href="../../d7/d4e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_state_icon.html#a045ecc518fe00a041d1f242a3a605329" title="初期化" alt="" coords="2052,304,2256,363"/>
+<area shape="poly" title=" " alt="" coords="2424,479,2364,431,2292,384,2252,366,2255,361,2294,379,2367,426,2428,475"/>
+<area shape="rect" href="../../d6/daf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_status.html#ae534159741a3d8678abb6a9a9ac7eca5" title="初期化" alt="" coords="2038,437,2270,496"/>
+<area shape="poly" title=" " alt="" coords="2326,492,2270,485,2270,480,2327,487"/>
+<area shape="rect" href="../../db/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_weapon.html#ab5d955d4a14f4fd16912fa4e9616788f" title="モーション開始" alt="" coords="2045,520,2263,579"/>
+<area shape="poly" title=" " alt="" coords="2327,529,2264,537,2263,532,2326,524"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a83b0b22aa9a3f111f5e893f196b2cfd3" title="指定モーションを開始" alt="" coords="1745,603,1949,661"/>
+<area shape="poly" title=" " alt="" coords="2415,539,2358,569,2294,593,2204,613,2113,626,2025,633,1949,636,1949,630,2025,628,2112,621,2203,608,2292,588,2356,564,2412,534"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#aad14129591af8516826dac8b56918303" title="フラッシュ演出の実施" alt="" coords="812,5,1081,64"/>
+<area shape="poly" title=" " alt="" coords="1232,251,1205,210,1170,164,1127,118,1079,78,1060,67,1062,62,1082,74,1131,114,1174,160,1209,207,1237,248"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a01b386806bfe1b3fece68f3f3cdf7b44" title="イベントのフロー制御. ソースを分けるとインデックス周りが複雑になるのでここで処理." alt="" coords="831,88,1062,147"/>
+<area shape="poly" title=" " alt="" coords="1213,255,1152,206,1079,161,1054,150,1056,145,1082,156,1155,202,1217,251"/>
+<area shape="rect" href="../../db/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_weapon.html#a1e3a08a8de9dc580d8842ec7dc2c0915" title="初期化" alt="" coords="828,171,1065,213"/>
+<area shape="poly" title=" " alt="" coords="1170,259,1080,228,1040,217,1042,211,1081,223,1172,254"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a97ee229838de843d2361f3f82f1c023f" title="初期化" alt="" coords="544,441,764,484"/>
+<area shape="poly" title=" " alt="" coords="1175,330,1081,361,1006,379,947,387,888,396,813,412,715,443,713,438,812,407,887,390,946,382,1005,373,1080,356,1173,325"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ad0210eaf48bc01b8b4eabc34d01ee489" title="初期化" alt="" coords="831,304,1062,347"/>
+<area shape="poly" title=" " alt="" coords="1125,309,1063,316,1062,310,1124,304"/>
+<area shape="rect" href="../../d5/df2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_damage.html#ab28575b7ed8ef52d2c587ec14f725df0" title="対象に対する準備" alt="" coords="834,237,1059,280"/>
+<area shape="poly" title=" " alt="" coords="1124,280,1059,273,1060,268,1125,275"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="845,421,1048,464"/>
+<area shape="poly" title=" " alt="" coords="1207,332,1148,370,1082,405,1034,423,1032,418,1080,400,1145,365,1204,328"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#abfe9fe94f6564adc4d17de52415c31a1" title="ダメージポップアップの準備" alt="" coords="547,229,761,288"/>
+<area shape="poly" title=" " alt="" coords="819,261,762,261,762,256,819,256"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ae128d3e09a2e0c5def040d04c8e656b4" title="ダメージポップアップのアップデート" alt="" coords="275,229,496,288"/>
+<area shape="poly" title=" " alt="" coords="532,261,496,261,496,256,532,256"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a4083c68c978af63bb4c10bdcedbc990f" title="Update処理" alt="" coords="5,229,227,288"/>
+<area shape="poly" title=" " alt="" coords="260,261,227,261,227,256,260,256"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ae8848832996473bf910c5fd802fdaf1e" title="アイコン初期化" alt="" coords="1736,304,1958,363"/>
+<area shape="poly" title=" " alt="" coords="2037,336,1958,336,1958,331,2037,331"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a4f5f3cca4b064d8f901d48aa19c05bec" title="メンバ変数を初期化" alt="" coords="1458,304,1661,363"/>
+<area shape="poly" title=" " alt="" coords="1721,336,1661,336,1661,331,1721,331"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a442e991df0c551a8116da35bd02e3dcf" title="[ステータス]ウィンドウ(Window_BattleStatus)を生成" alt="" coords="1742,437,1952,496"/>
+<area shape="poly" title=" " alt="" coords="2023,469,1952,469,1952,464,2023,464"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1696ba0f56578c100381e543a4d89f0f" title="戦闘シーンに必要なすべてのウィンドウを生成" alt="" coords="1439,441,1679,484"/>
+<area shape="poly" title=" " alt="" coords="1727,468,1680,467,1680,462,1727,462"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#aacb7721fb35bd6b6334d73e9df2ade88" title="表示に必要なオブジェクトを生成。 スプライトセット、ウィンドウレイヤー、ウィンドウなど" alt="" coords="1152,420,1368,479"/>
+<area shape="poly" title=" " alt="" coords="1424,459,1368,457,1368,451,1424,454"/>
+<area shape="poly" title=" " alt="" coords="1137,449,1049,447,1049,442,1137,444"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a23ce0be12af999015b5b0a114836d325" title="武器アニメの準備" alt="" coords="1743,520,1951,579"/>
+<area shape="poly" title=" " alt="" coords="2030,552,1951,552,1951,547,2030,547"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a6c1763dd7538c64fd0999c88b885a8b3" title="モーションの準備" alt="" coords="1456,520,1663,579"/>
+<area shape="poly" title=" " alt="" coords="1729,552,1663,552,1663,547,1729,547"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a6f19d918d75079527d7a01785e72f925" title="モーションのアップデート" alt="" coords="1153,509,1367,568"/>
+<area shape="poly" title=" " alt="" coords="1440,548,1367,545,1368,540,1441,542"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a45e55f85d2f74b0599bd881d23b9bd2f" title="Update処理" alt="" coords="839,512,1054,571"/>
+<area shape="poly" title=" " alt="" coords="1137,542,1054,543,1054,538,1137,537"/>
+<area shape="poly" title=" " alt="" coords="824,511,736,487,737,482,826,506"/>
+<area shape="poly" title=" " alt="" coords="995,501,977,493,946,491,921,493,904,497,896,504,895,512,890,511,891,501,901,493,920,487,947,485,978,488,997,496"/>
+<area shape="poly" title=" " alt="" coords="1730,601,1662,582,1664,577,1732,596"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a9f3762a27950165114ac468ee2f573d6" title="モーションを再設定" alt="" coords="1451,613,1668,672"/>
+<area shape="poly" title=" " alt="" coords="1731,639,1668,641,1668,636,1730,634"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#ac7eb3fdb50cb263ad1db2bf38e4b1a57" title="入場モーションの準備" alt="" coords="1158,760,1362,819"/>
+<area shape="poly" title=" " alt="" coords="1740,669,1680,687,1363,768,1361,763,1679,681,1739,664"/>
+<area shape="poly" title=" " alt="" coords="1458,610,1346,571,1347,566,1460,605"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a729d74c76c2e682a99075e4eaffc4b2e" title="移動が終わった時に呼ばれるハンドラ" alt="" coords="1138,643,1382,685"/>
+<area shape="poly" title=" " alt="" coords="1435,654,1382,658,1382,653,1435,649"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#aa2bf83d9c5b5fc6cda668d044971d575" title="入場モーションを終わりまで飛ばす" alt="" coords="845,595,1048,653"/>
+<area shape="poly" title=" " alt="" coords="1436,636,1391,633,1209,628,1049,627,1049,621,1210,623,1391,628,1436,630"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#a0b6e261b1ac51520fc7cb0ef776d77aa" title="入場モーションを終わりまで飛ばす（プレビュー用）" alt="" coords="845,677,1048,736"/>
+<area shape="poly" title=" " alt="" coords="1470,680,1392,700,1301,711,1210,717,1048,716,1049,710,1210,711,1301,706,1390,695,1468,675"/>
+<area shape="poly" title=" " alt="" coords="1502,682,1449,714,1392,744,1350,762,1348,757,1390,739,1447,709,1499,678"/>
+<area shape="poly" title=" " alt="" coords="1123,649,1048,640,1049,634,1124,644"/>
+<area shape="poly" title=" " alt="" coords="1124,685,1049,695,1048,690,1123,680"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html#ae3f591cdf424455684060104db3359c4" title="バトラーを設定" alt="" coords="845,760,1048,819"/>
+<area shape="poly" title=" " alt="" coords="1143,792,1049,792,1049,787,1143,787"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#af3246efa267ab6b0b78832124513c14a" title="床ダメージ" alt="" coords="2041,903,2267,961"/>
+<area shape="poly" title=" " alt="" coords="2337,886,2267,905,2265,899,2335,880"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a856f6d2b1eed251569df09d54ad4bd64" title="指定ステートが付加可能か" alt="" coords="2041,820,2267,879"/>
+<area shape="poly" title=" " alt="" coords="2334,852,2267,852,2267,847,2334,847"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a721713aea404590ae235b32ef084a641" title="指定ステートを追加" alt="" coords="1727,929,1967,972"/>
+<area shape="poly" title=" " alt="" coords="2038,886,2016,893,1907,931,1906,926,2014,888,2036,881"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad4b92badb0ee04b916e3e7df3fb05243" title="指定対象に攻撃の[使用効果]を加える" alt="" coords="1455,839,1664,897"/>
+<area shape="poly" title=" " alt="" coords="1755,927,1663,901,1665,895,1757,922"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad361cd52daaea9b629f16db972b52a84" title="指定対象に通常の[使用効果]を加える" alt="" coords="1455,921,1664,980"/>
+<area shape="poly" title=" " alt="" coords="1713,953,1664,953,1664,948,1713,948"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a5e2eccb8f1dbacca9ef1f357aff8d5fc" title="能力値やステートを規定値内に収める処理" alt="" coords="1445,1063,1674,1105"/>
+<area shape="poly" title=" " alt="" coords="1800,982,1625,1065,1622,1060,1798,977"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#aa0e39264c1ed2c1803fc326949587463" title="指定対象へ結果( Game_ActionResult )の適用" alt="" coords="1151,847,1369,889"/>
+<area shape="poly" title=" " alt="" coords="1440,871,1369,871,1369,865,1440,865"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a44fa0b5be0eb1e4ef8ddb382c1954835" title="指定対象が指定目標に対しての魔法反射アクションを起動する" alt="" coords="837,843,1056,901"/>
+<area shape="poly" title=" " alt="" coords="1136,872,1056,873,1056,868,1136,867"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a30937435994c2aeb8de46e354b51d782" title="指定対象に[使用効果]を加える" alt="" coords="1155,913,1365,972"/>
+<area shape="poly" title=" " alt="" coords="1440,950,1365,948,1365,943,1440,945"/>
+<area shape="poly" title=" " alt="" coords="1606,1053,1781,970,1784,975,1608,1058"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a46a4f6f463182320acb0e3741286fbfb" title="指定通常能力に指定ターン数の[強化]を追加" alt="" coords="1145,1196,1375,1239"/>
+<area shape="poly" title=" " alt="" coords="1518,1116,1459,1152,1392,1186,1360,1198,1358,1193,1390,1182,1457,1148,1515,1111"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a4bf2426bec4fa47d818471e0b214f39b" title="指定通常能力に指定ターン数の[弱体]を追加" alt="" coords="1156,1263,1364,1321"/>
+<area shape="poly" title=" " alt="" coords="1535,1119,1475,1186,1435,1222,1392,1253,1366,1267,1363,1262,1390,1248,1432,1218,1471,1183,1531,1115"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#abc126f772bf633d1a2d2a2348d2745b8" title="被ダメージハンドラ" alt="" coords="1135,1345,1385,1388"/>
+<area shape="poly" title=" " alt="" coords="1546,1120,1524,1169,1490,1228,1447,1286,1421,1312,1393,1336,1372,1347,1369,1343,1389,1331,1417,1309,1443,1283,1486,1225,1519,1167,1542,1118"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a1a3260593962f41e2d76f900a5c7e02f" title="指定通常能力の[強化]を解除" alt="" coords="1133,996,1387,1039"/>
+<area shape="poly" title=" " alt="" coords="1446,1062,1358,1042,1359,1037,1447,1056"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a3d73aefe7c91fabe827a27d354ff8b4b" title="指定ステートを解除" alt="" coords="1129,1063,1391,1105"/>
+<area shape="poly" title=" " alt="" coords="1429,1096,1392,1096,1392,1090,1429,1090"/>
+<area shape="rect" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html#aa97acbdee8c974449432ea413a4aa848" title="指定の[敵キャラ]へ変更(変身)" alt="" coords="1137,1129,1383,1172"/>
+<area shape="poly" title=" " alt="" coords="1447,1112,1359,1131,1358,1126,1446,1106"/>
+<area shape="poly" title=" " alt="" coords="1406,1072,1444,1073,1444,1078,1406,1078"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0674aa1bff51c30c55e65612b611f0b" name="ad0674aa1bff51c30c55e65612b611f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0674aa1bff51c30c55e65612b611f0b">&#9670;&#160;</a></span>SetGameState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Runtime.Common.GameStateHandler.SetGameState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameState</a>&#160;</td>
+          <td class="paramname"><em>gameState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>新しい状態を登録する. </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameState</td><td>新しい状態</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>状態を更新した場合はtrue</dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_cgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_cgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_cgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_cgraph">
+<area shape="rect" title="新しい状態を登録する." alt="" coords="5,13,283,56"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="331,5,566,64"/>
+<area shape="poly" title=" " alt="" coords="283,32,316,32,316,37,283,37"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#adce58ef0480f995976ab60592c9add27" title="現在の状態を返却する." alt="" coords="614,5,847,64"/>
+<area shape="poly" title=" " alt="" coords="567,32,599,32,599,37,567,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_icgraph.png" border="0" usemap="#ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_icgraph" alt=""/></div>
+<map name="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_icgraph" id="ade/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler_ad0674aa1bff51c30c55e65612b611f0b_icgraph">
+<area shape="rect" title="新しい状態を登録する." alt="" coords="1983,360,2260,403"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="1710,127,1935,185"/>
+<area shape="poly" title=" " alt="" coords="2079,353,1861,188,1864,184,2082,349"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="1721,552,1924,595"/>
+<area shape="poly" title=" " alt="" coords="2093,415,2025,479,1982,513,1936,542,1911,554,1909,549,1933,538,1979,509,2021,475,2089,411"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="1721,268,1924,311"/>
+<area shape="poly" title=" " alt="" coords="2035,358,1894,314,1895,309,2037,353"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a60213aa742bdf8cf0ac32e7ffa6a1158" title="ゲームの状態を更新する" alt="" coords="1710,469,1935,528"/>
+<area shape="poly" title=" " alt="" coords="2053,411,1900,471,1898,466,2051,406"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a06f193d8cc6ab88f3eaa740f98d48204" title="メニューを全て閉じる" alt="" coords="1449,101,1652,144"/>
+<area shape="poly" title=" " alt="" coords="1695,143,1652,138,1652,132,1696,138"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a94b4a9d9aec9347922dc440b8321629f" title="メニュー以下を全部非表示にする" alt="" coords="1449,168,1652,211"/>
+<area shape="poly" title=" " alt="" coords="1696,174,1652,180,1652,174,1695,169"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a5a2bdab2d0f0b62de47028166fdcb660" title="メニュー表示、非表示切り替え処理" alt="" coords="1449,35,1652,77"/>
+<area shape="poly" title=" " alt="" coords="1740,123,1661,92,1627,80,1629,75,1663,87,1742,118"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a75d4c40d6674b4574d843d94b935e33c" title="各メニューの戻る操作を行う" alt="" coords="1172,43,1376,85"/>
+<area shape="poly" title=" " alt="" coords="1434,101,1376,88,1377,83,1435,95"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a2d3d5a99334df4144df89340990fd7d8" title="スキルやアイテムに使用効果でコモンイベントが付与された場合に実行する" alt="" coords="1162,285,1386,344"/>
+<area shape="poly" title=" " alt="" coords="1446,154,1440,158,1424,173,1415,189,1406,205,1392,224,1356,258,1320,287,1316,283,1353,254,1388,221,1402,203,1410,186,1419,170,1436,154,1444,149"/>
+<area shape="rect" href="../../db/d72/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_equip_menu.html#ac19804e5b74b2636ff3f6b59d5fc0c8f" title="戻る処理" alt="" coords="889,72,1106,115"/>
+<area shape="poly" title=" " alt="" coords="1158,88,1107,93,1106,88,1157,83"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a20cf76123ea64b387c1344993f99b0ec" title="Update処理" alt="" coords="896,5,1099,48"/>
+<area shape="poly" title=" " alt="" coords="1157,51,1099,43,1100,38,1158,46"/>
+<area shape="poly" title=" " alt="" coords="1121,97,1448,115,1448,120,1121,103"/>
+<area shape="poly" title=" " alt="" coords="1121,69,1171,63,1172,69,1121,74"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#afd5fe4791ecb39ce9ba7a9829d2e89f1" title="指定対象に[コモンイベント]の[使用効果]を加える" alt="" coords="893,285,1102,344"/>
+<area shape="poly" title=" " alt="" coords="1147,317,1103,317,1103,312,1147,312"/>
+<area shape="rect" href="../../db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a8586f2f58bcb66360e1b9d7e4572a79f" title="コモンイベントが設定されている場合に、コモンイベントをキューに溜める" alt="" coords="549,293,837,336"/>
+<area shape="poly" title=" " alt="" coords="878,317,838,317,838,312,878,312"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7" title="アクションのアップデート" alt="" coords="276,289,501,332"/>
+<area shape="poly" title=" " alt="" coords="534,315,501,315,502,309,534,310"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08" title="Update処理" alt="" coords="5,252,228,311"/>
+<area shape="poly" title=" " alt="" coords="261,300,228,296,228,291,261,294"/>
+<area shape="poly" title=" " alt="" coords="1434,62,1376,64,1376,58,1434,57"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="1449,235,1652,277"/>
+<area shape="poly" title=" " alt="" coords="1706,278,1652,271,1653,266,1706,272"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="1172,168,1376,211"/>
+<area shape="poly" title=" " alt="" coords="1444,233,1365,214,1366,209,1446,228"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a50b8a09dc9b8ad097b5d4485d6d56217" title="戦闘終了のアップデート" alt="" coords="571,227,816,269"/>
+<area shape="poly" title=" " alt="" coords="1434,258,816,252,817,246,1434,252"/>
+<area shape="poly" title=" " alt="" coords="556,259,228,278,228,272,555,253"/>
+<area shape="poly" title=" " alt="" coords="1785,460,1730,409,1697,385,1661,365,1593,341,1521,326,1451,318,1386,314,1387,309,1451,312,1522,321,1594,336,1663,360,1700,380,1734,405,1789,456"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ac2738925cfd0e983d10bbf087f87642a" title="同時に1つしか実行できないイベントをキューに貯める 現在1つも実行していない場合は、即実行する" alt="" coords="1438,587,1662,645"/>
+<area shape="poly" title=" " alt="" coords="1724,537,1712,542,1664,570,1625,589,1622,584,1661,566,1709,538,1722,532"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aa2d03e9e9c20247da88dc3f24b7b4026" title="自動実行の終了時処理" alt="" coords="1438,720,1662,779"/>
+<area shape="poly" title=" " alt="" coords="1714,540,1712,542,1698,562,1691,581,1688,620,1686,661,1679,682,1664,703,1642,722,1639,718,1660,700,1674,679,1681,660,1683,620,1686,580,1693,559,1708,538,1710,536"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a42dc4f2018a9b6b67b72f23658b1ce24" title="自動実行イベントがあればイベントを開始する" alt="" coords="1162,687,1386,745"/>
+<area shape="poly" title=" " alt="" coords="1715,539,1712,542,1701,556,1695,571,1690,601,1685,631,1678,645,1664,659,1644,671,1616,681,1546,697,1465,707,1386,714,1386,709,1465,702,1545,692,1615,676,1641,666,1661,655,1673,642,1680,629,1685,600,1689,569,1696,554,1708,538,1711,535"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ab40287bb1e07642b6869dd74300d63f4" title="並列実行の終了時処理" alt="" coords="1438,803,1662,861"/>
+<area shape="poly" title=" " alt="" coords="1714,540,1712,542,1693,573,1685,604,1685,634,1689,665,1693,696,1693,727,1685,760,1664,792,1652,804,1648,800,1660,789,1680,758,1688,727,1688,696,1684,666,1680,635,1680,603,1688,571,1708,538,1710,537"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a4b5ffa4de63aa68e836c9d4c7e542309" title="接触またはアクションキーでの実行の終了時処理" alt="" coords="1438,403,1662,461"/>
+<area shape="poly" title=" " alt="" coords="1695,470,1662,462,1664,457,1697,465"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ae8a8868d390cc54cdd9423794707e6d6" title="接触でのイベントを実行する" alt="" coords="1158,451,1390,509"/>
+<area shape="poly" title=" " alt="" coords="1695,497,1390,487,1390,481,1696,492"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#af3617ac5a414c04e062dc020dadefd74" title="アクションキーでイベントを実行する" alt="" coords="1162,533,1386,592"/>
+<area shape="poly" title=" " alt="" coords="1696,516,1387,552,1386,547,1696,511"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a664fb32a4de7178496e1129b97f7509b" title="アクションキーでイベントを実行する 同一の座標のもののみで判定する" alt="" coords="1162,368,1386,427"/>
+<area shape="poly" title=" " alt="" coords="1778,462,1725,423,1694,406,1662,393,1592,378,1520,373,1450,374,1387,380,1386,375,1450,369,1520,367,1593,373,1663,388,1696,401,1728,419,1781,458"/>
+<area shape="poly" title=" " alt="" coords="1423,737,1386,732,1387,727,1424,731"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a0eeb6696aa5bc8591a0c6565056cfd2f" title="移動直後に、自動実行イベント、並列処理イベントの発動条件を満たしていた場合には、実行処理を行う" alt="" coords="885,728,1110,787"/>
+<area shape="poly" title=" " alt="" coords="1147,738,1110,743,1110,738,1146,732"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ad75e4db8f826f7904cdd50d2001e5fc3" title="イベントの実行状態更新" alt="" coords="885,645,1110,704"/>
+<area shape="poly" title=" " alt="" coords="1146,700,1110,694,1110,689,1147,694"/>
+<area shape="poly" title=" " alt="" coords="1476,398,1389,358,1360,347,1362,342,1391,354,1478,393"/>
+<area shape="poly" title=" " alt="" coords="1424,457,1391,462,1390,457,1423,451"/>
+<area shape="poly" title=" " alt="" coords="1489,472,1391,524,1364,535,1362,530,1389,519,1487,467"/>
+<area shape="poly" title=" " alt="" coords="1423,419,1386,414,1387,409,1424,413"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/GameState/GameStateHandler.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

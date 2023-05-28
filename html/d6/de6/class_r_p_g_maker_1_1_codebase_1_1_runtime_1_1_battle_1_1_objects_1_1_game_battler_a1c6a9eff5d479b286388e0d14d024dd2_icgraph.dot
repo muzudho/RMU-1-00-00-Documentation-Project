@@ -1,0 +1,49 @@
+digraph "RPGMaker.Codebase.Runtime.Battle.Objects.GameBattler.FriendsUnit"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameBattler.FriendsUnit",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="自分から見て味方キャラクターを返却"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ApplySubstitute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af4e4839300137c597bddc0c87bbde721",tooltip="対象が死んでいるなどしたら、代わりを選んで返す。 問題なければ、対象をそのまま返す"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeAction\lMyself",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#acb68ab920d08ffa51067a84aca3e067e",tooltip="指定対象が指定目標に対してのアクションを起動する（使用者への影響）"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af7129ab117a856eab46ea50ad5054bb7",tooltip="アクションのアップデート"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateBattle\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08",tooltip="Update処理"];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeNormal\lAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a7f264bea7481144707b47e7415755fb1",tooltip="指定対象が指定目標に対しての通常アクションを起動する"];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.InvokeAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a95f3c0da75e16c8679e47a5d11c0f9d6",tooltip="指定対象が指定目標に対してのアクションを起動する"];
+  Node7 -> Node4 [id="edge7_Node000007_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node8 [id="edge8_Node000001_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.FriendsUnit",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#aba53652a9250035addc22af16c1826a1",tooltip="行動主体から見たときの、味方のグループを返却する"];
+  Node8 -> Node9 [id="edge9_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Confusion\lTarget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ab0f8a305520f9cc46c49d288e0c50b73",tooltip="混乱している場合の、対象バトラーを選んで返す"];
+  Node9 -> Node10 [id="edge10_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Make\lTargets",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a5a109d0fddf38884a1cdeb5833709e80",tooltip="対象となり得るバトラーを配列で返す 使用者への影響については、対象とは別で処理されるべきもののため、ここでは含めない"];
+  Node10 -> Node11 [id="edge11_Node000010_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.StartAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#abc5245ecc7cc228c39cc09d68856240d",tooltip="アクション開始"];
+  Node11 -> Node12 [id="edge12_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessForced\lAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ad9cccdc3428a10e6f65e149664fd1ae6",tooltip="強制アクションの処理"];
+  Node12 -> Node13 [id="edge13_Node000012_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a5f49f9a6afb129e2863cd9ee41835cfc",tooltip="イベントのアップデートを行い、何か実行されたか返す"];
+  Node13 -> Node5 [id="edge14_Node000013_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 -> Node14 [id="edge15_Node000011_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessTurn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a2542f4b9c2a2f2c223a68bd230ab5374",tooltip="ターン継続処理"];
+  Node14 -> Node15 [id="edge16_Node000014_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateTurn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#aa394caa485e94736c2113a2c94f72631",tooltip="ターンのアップデート"];
+  Node15 -> Node5 [id="edge17_Node000015_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 -> Node16 [id="edge18_Node000008_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Decide\lRandomTarget",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a93bc9797feee411b5fe38079623a6413",tooltip="[範囲]に沿って、対象をランダムに決定"];
+  Node8 -> Node17 [id="edge19_Node000008_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Item\lTargetCandidates",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a31e3de29c848b637cf6455a2015f8fb7",tooltip="対象となり得るバトラーを配列で返す"];
+  Node17 -> Node18 [id="edge20_Node000017_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Evaluate",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a2ca4f20ffa522037f26ad6c259dd37b1",tooltip="全ての対象に効果を適用して、総ダメージ量を返す"];
+  Node8 -> Node19 [id="edge21_Node000008_Node000019",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node19 [id="Node000019",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Targets\lForFriends",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a933c2b982d92c47a7123b294d7b869c2",tooltip="味方側のバトラーの配列を返す"];
+  Node19 -> Node10 [id="edge22_Node000019_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d1/dbc/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor.html">MapEditor</a></li><li class="navelem"><a class="el" href="../../dd/db9/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component.html">Component</a></li><li class="navelem"><a class="el" href="../../dc/db3/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas.html">Canvas</a></li><li class="navelem"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html">EventEditCanvas</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="../../d1/d1a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>マップ上のイベントを編集する機能を持つキャンバスコンポーネント  
+ <a href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_inherit__map">
+<area shape="rect" title="マップ上のイベントを編集する機能を持つキャンバスコンポーネント" alt="" coords="5,80,238,139"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html" title=" " alt="" coords="77,5,166,32"/>
+<area shape="poly" title=" " alt="" coords="124,47,124,79,119,79,119,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dff/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_event_edit_canvas_coll__map">
+<area shape="rect" title="マップ上のイベントを編集する機能を持つキャンバスコンポーネント" alt="" coords="5,80,238,139"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html" title=" " alt="" coords="77,5,166,32"/>
+<area shape="poly" title=" " alt="" coords="124,47,124,79,119,79,119,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8e0e67b506b1d16b2ef02a619347227a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a8e0e67b506b1d16b2ef02a619347227a">EventEditCanvas</a> (MapDataModel mapDataModel, EventMapDataModel eventMapDataModel, EventMapDataModel.EventMapPage eventMapPage, Action repaintMethod)</td></tr>
+<tr class="separator:a8e0e67b506b1d16b2ef02a619347227a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78803b998253513023cb9706e7ed1f94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a78803b998253513023cb9706e7ed1f94">Refresh</a> ([CanBeNull] MapDataModel mapDataModel=null, [CanBeNull] List&lt; Vector3Int &gt; movePosList=null)</td></tr>
+<tr class="separator:a78803b998253513023cb9706e7ed1f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a4f1f8c08030111761073df09860d28"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a7a4f1f8c08030111761073df09860d28">LaunchNoneDrawingMode</a> ()</td></tr>
+<tr class="separator:a7a4f1f8c08030111761073df09860d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d68ef0e11a285c4574c87da48781ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#ad2d68ef0e11a285c4574c87da48781ef">LaunchEventDrawingMode</a> (string mapId)</td></tr>
+<tr class="separator:ad2d68ef0e11a285c4574c87da48781ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106ebf0b5f2eac9e25c1fd04f3a1bf36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a106ebf0b5f2eac9e25c1fd04f3a1bf36">LaunchRouteDrawingMode</a> (Vector3Int initializePos)</td></tr>
+<tr class="separator:a106ebf0b5f2eac9e25c1fd04f3a1bf36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af017a36ce3a2722aca7a9d804fcae016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#af017a36ce3a2722aca7a9d804fcae016">LaunchDestinationDrawingMode</a> (EventMapDataModel eventMapDataModelEntity, int eventIndex, int eventCommandIndex)</td></tr>
+<tr class="separator:af017a36ce3a2722aca7a9d804fcae016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955a783e8d05bd8725cd3f6db74ab48f"><td class="memItemLeft" align="right" valign="top"><a id="a955a783e8d05bd8725cd3f6db74ab48f" name="a955a783e8d05bd8725cd3f6db74ab48f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMoveEventViewTile</b> (Vector2Int pos)</td></tr>
+<tr class="memdesc:a955a783e8d05bd8725cd3f6db74ab48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動系イベントで表示する用 <br /></td></tr>
+<tr class="separator:a955a783e8d05bd8725cd3f6db74ab48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dd8ebe72e3d3f8b294f0bccbbca9cc"><td class="memItemLeft" align="right" valign="top"><a id="a01dd8ebe72e3d3f8b294f0bccbbca9cc" name="a01dd8ebe72e3d3f8b294f0bccbbca9cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCursorPos</b> (Vector3Int cellPos, Action&lt; int, int &gt; action=null)</td></tr>
+<tr class="memdesc:a01dd8ebe72e3d3f8b294f0bccbbca9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">カーソル位置を設定する。 <br /></td></tr>
+<tr class="separator:a01dd8ebe72e3d3f8b294f0bccbbca9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:aa1c981bf0b48020e9880ba7d01884f2a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#aa1c981bf0b48020e9880ba7d01884f2a">MapCanvas</a> (MapDataModel mapDataModel, Action repaintMethod, bool isSampleMap=false)</td></tr>
+<tr class="separator:aa1c981bf0b48020e9880ba7d01884f2a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8b93ac86a3f9b8703fcc3b28a617628 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ac8b93ac86a3f9b8703fcc3b28a617628">MoveGameObjectToPreviewScene</a> (GameObject go)</td></tr>
+<tr class="memdesc:ac8b93ac86a3f9b8703fcc3b28a617628 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">ゲームオブジェクトを現在属しているシーンからプレビューシーンに移動させる。  <br /></td></tr>
+<tr class="separator:ac8b93ac86a3f9b8703fcc3b28a617628 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaa46b19f6d87b89def3cab537595bc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdaa46b19f6d87b89def3cab537595bc">Refresh</a> ([CanBeNull] MapDataModel mapDataModel=null)</td></tr>
+<tr class="separator:acdaa46b19f6d87b89def3cab537595bc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a7b56f1e7bf4f5b161068f166b9927 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a92a7b56f1e7bf4f5b161068f166b9927">ResetCameraPosition</a> ()</td></tr>
+<tr class="separator:a92a7b56f1e7bf4f5b161068f166b9927 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca193b546307637bd3aa6edb07d1ee0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#aaca193b546307637bd3aa6edb07d1ee0">CaptureFullSizeMapFromCamera</a> ()</td></tr>
+<tr class="memdesc:aaca193b546307637bd3aa6edb07d1ee0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">カメラの設定を一時的に変更して、表示中のマップの全体を原寸でキャプチャする。  <br /></td></tr>
+<tr class="separator:aaca193b546307637bd3aa6edb07d1ee0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbf331b61525484fef829de4261226e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdbf331b61525484fef829de4261226e">UpdateBackgroundLayer</a> (MapDataModel mapDataModel, Sprite spr)</td></tr>
+<tr class="separator:acdbf331b61525484fef829de4261226e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e624508145aa354d9143ca36314305 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a79e624508145aa354d9143ca36314305">UpdateMapDistantViewLayer</a> (MapDataModel mapDataModel, Sprite spr)</td></tr>
+<tr class="separator:a79e624508145aa354d9143ca36314305 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8497421fbee3fdf2c7163afe5e400fa inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ae8497421fbee3fdf2c7163afe5e400fa">MapImageChange</a> (MapDataModel.Layer.LayerType layerType, Sprite spr, Action&lt; MapDataModel &gt; beforeRenderAction=null)</td></tr>
+<tr class="memdesc:ae8497421fbee3fdf2c7163afe5e400fa inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景または遠景の画像設定 (表示更新あり)。  <br /></td></tr>
+<tr class="separator:ae8497421fbee3fdf2c7163afe5e400fa inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a949b5f0571fabfd9068ca1980da466b3"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a949b5f0571fabfd9068ca1980da466b3">InitUI</a> (bool isSampleMap=false)</td></tr>
+<tr class="separator:a949b5f0571fabfd9068ca1980da466b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:aa5c5f3ed0b4f10f374a0a631df2d5100 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#aa5c5f3ed0b4f10f374a0a631df2d5100">InitUI</a> (bool isSampleMap=false)</td></tr>
+<tr class="separator:aa5c5f3ed0b4f10f374a0a631df2d5100 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2251fde9142862e109ac4894a3769594 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594">Render</a> ()</td></tr>
+<tr class="separator:a2251fde9142862e109ac4894a3769594 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac372ff97b58cec49e62e2d139668be91 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">Vector3Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ac372ff97b58cec49e62e2d139668be91">GetTilePosOnMousePosForEditor</a> (Vector3 mousePos, bool shadow=false, bool dontCompensateLeftAndUpValues=false)</td></tr>
+<tr class="separator:ac372ff97b58cec49e62e2d139668be91 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0438245b07da004208f66f6c0a3d10ba inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">Vector3Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a0438245b07da004208f66f6c0a3d10ba">GetTile4PosOnMousePosForEditor</a> (Vector3 mousePos)</td></tr>
+<tr class="memdesc:a0438245b07da004208f66f6c0a3d10ba inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">4分の1のタイルの場合の座標取得  <br /></td></tr>
+<tr class="separator:a0438245b07da004208f66f6c0a3d10ba inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8399bb2859ecb80082dcd4ab96711c inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAllEventTiles</b> (EventMapDataModel.EventMapPage targetEventMapPage)</td></tr>
+<tr class="memdesc:afe8399bb2859ecb80082dcd4ab96711c inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップの全てのイベントの位置にイベントを表わすタイルを設定する。 <br /></td></tr>
+<tr class="separator:afe8399bb2859ecb80082dcd4ab96711c inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6877989323d14f9376691bf1c26aa289 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetEarlyPosition</b> ()</td></tr>
+<tr class="memdesc:a6877989323d14f9376691bf1c26aa289 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期パーティ、乗り物のタイルを設定する <br /></td></tr>
+<tr class="separator:a6877989323d14f9376691bf1c26aa289 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a2258f2051715e4f480b1201388c157fb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2258f2051715e4f480b1201388c157fb">EditorCorrectionMapPrefabForEditor</a> (MapDataModel mapDataModel, GameObject mapPrefab)</td></tr>
+<tr class="memdesc:a2258f2051715e4f480b1201388c157fb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">エディター用の新規作成またはロードしたマッププレハブの内容を、使用できる状態に補正する。  <br /></td></tr>
+<tr class="separator:a2258f2051715e4f480b1201388c157fb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe2b4039cf7d155f94edc51bfbb18ef7 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#abe2b4039cf7d155f94edc51bfbb18ef7">UpdateBackgroundDisplayedAndScaleForEditor</a> (MapDataModel mapDataModel)</td></tr>
+<tr class="separator:abe2b4039cf7d155f94edc51bfbb18ef7 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a745761c4ee45c9618393927a1ca92a3d inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a745761c4ee45c9618393927a1ca92a3d">UpdateDistantViewDisplayedAndScaleForEditor</a> (MapDataModel mapDataModel)</td></tr>
+<tr class="separator:a745761c4ee45c9618393927a1ca92a3d inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a32640b08aad5cc32ecd1223ca70d58c1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">
+DatabaseManagementService&#160;</td><td class="memItemRight" valign="bottom"><b>_databaseManagementService</b></td></tr>
+<tr class="memdesc:a32640b08aad5cc32ecd1223ca70d58c1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期パーティ、乗り物のタイルを設定用 <br /></td></tr>
+<tr class="separator:a32640b08aad5cc32ecd1223ca70d58c1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5ae6857c3e9350f3ced3ebb06736ca inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">
+List&lt; TilemapLayer &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_tilemapLayers</b></td></tr>
+<tr class="memdesc:a1c5ae6857c3e9350f3ced3ebb06736ca inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">以下、イベント画像マップタイル表示専用。 <br /></td></tr>
+<tr class="separator:a1c5ae6857c3e9350f3ced3ebb06736ca inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a> に属する継承静的限定公開変数類</td></tr>
+<tr class="memitem:ac89c72560c5046002ae055b6e0412fdd inherit pro_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memItemLeft" align="right" valign="top">
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>EventMassImg</b> = &quot;Assets/RPGMaker/Storage/System/Map/EventMass.asset&quot;</td></tr>
+<tr class="memdesc:ac89c72560c5046002ae055b6e0412fdd inherit pro_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="mdescLeft">&#160;</td><td class="mdescRight">以下、MapEditCanvasクラスではイベント画像マップタイル表示専用。 EventEditCanvasクラスではイベント画像マップタイル表示以外でも使用。 <br /></td></tr>
+<tr class="separator:ac89c72560c5046002ae055b6e0412fdd inherit pro_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>マップ上のイベントを編集する機能を持つキャンバスコンポーネント </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a8e0e67b506b1d16b2ef02a619347227a" name="a8e0e67b506b1d16b2ef02a619347227a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0e67b506b1d16b2ef02a619347227a">&#9670;&#160;</a></span>EventEditCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.EventEditCanvas </td>
+          <td>(</td>
+          <td class="paramtype">MapDataModel&#160;</td>
+          <td class="paramname"><em>mapDataModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventMapDataModel&#160;</td>
+          <td class="paramname"><em>eventMapDataModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventMapDataModel::EventMapPage&#160;</td>
+          <td class="paramname"><em>eventMapPage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>repaintMethod</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>コンストラクタ </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a8e0e67b506b1d16b2ef02a619347227a_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a8e0e67b506b1d16b2ef02a619347227a_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a8e0e67b506b1d16b2ef02a619347227a_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a8e0e67b506b1d16b2ef02a619347227a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,238,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="286,13,513,56"/>
+<area shape="poly" title=" " alt="" coords="238,32,271,32,271,37,238,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="561,13,788,56"/>
+<area shape="poly" title=" " alt="" coords="514,32,546,32,546,37,514,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a949b5f0571fabfd9068ca1980da466b3" name="a949b5f0571fabfd9068ca1980da466b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949b5f0571fabfd9068ca1980da466b3">&#9670;&#160;</a></span>InitUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.InitUI </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isSampleMap</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>UI初期化</p>
+<p>【注意】 本メソッドは基底クラスMapCanvasのコンストラクタから呼ばれるので、 本メソッドの内の処理は、本クラスのコンストラクタ内の処理より先に行われる。 </p>
+
+<p><a class="el" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#aa5c5f3ed0b4f10f374a0a631df2d5100">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.MapCanvas</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a949b5f0571fabfd9068ca1980da466b3_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a949b5f0571fabfd9068ca1980da466b3_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a949b5f0571fabfd9068ca1980da466b3_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a949b5f0571fabfd9068ca1980da466b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,238,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="286,13,513,56"/>
+<area shape="poly" title=" " alt="" coords="238,32,271,32,271,37,238,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="561,13,788,56"/>
+<area shape="poly" title=" " alt="" coords="514,32,546,32,546,37,514,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af017a36ce3a2722aca7a9d804fcae016" name="af017a36ce3a2722aca7a9d804fcae016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af017a36ce3a2722aca7a9d804fcae016">&#9670;&#160;</a></span>LaunchDestinationDrawingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.LaunchDestinationDrawingMode </td>
+          <td>(</td>
+          <td class="paramtype">EventMapDataModel&#160;</td>
+          <td class="paramname"><em>eventMapDataModelEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventCommandIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>目的地描画モード起動 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,281,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="329,13,556,56"/>
+<area shape="poly" title=" " alt="" coords="281,32,314,32,314,37,281,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="604,13,831,56"/>
+<area shape="poly" title=" " alt="" coords="557,32,589,32,589,37,557,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_icgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_icgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_icgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_af017a36ce3a2722aca7a9d804fcae016_icgraph">
+<area shape="rect" title=" " alt="" coords="287,47,562,105"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#ae83ae54654638e6f3dfd0fa376a93ede" title="目的地描画モードを開始" alt="" coords="9,5,235,64"/>
+<area shape="poly" title=" " alt="" coords="271,58,235,53,235,47,272,53"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a53f6ee9d9d7d8905aee0b71639821dd3" title=" " alt="" coords="5,88,239,147"/>
+<area shape="poly" title=" " alt="" coords="272,99,240,104,239,99,272,94"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2d68ef0e11a285c4574c87da48781ef" name="ad2d68ef0e11a285c4574c87da48781ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d68ef0e11a285c4574c87da48781ef">&#9670;&#160;</a></span>LaunchEventDrawingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.LaunchEventDrawingMode </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>mapId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>イベント描画モード起動 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,248,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="296,13,523,56"/>
+<area shape="poly" title=" " alt="" coords="248,32,281,32,281,37,248,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="571,13,798,56"/>
+<area shape="poly" title=" " alt="" coords="524,32,556,32,556,37,524,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_icgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_icgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_icgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_ad2d68ef0e11a285c4574c87da48781ef_icgraph">
+<area shape="rect" title=" " alt="" coords="279,5,521,64"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a082e2faaa2d5584e0f855b146872ace2" title=" " alt="" coords="5,5,231,64"/>
+<area shape="poly" title=" " alt="" coords="264,37,231,37,231,32,264,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a4f1f8c08030111761073df09860d28" name="a7a4f1f8c08030111761073df09860d28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a4f1f8c08030111761073df09860d28">&#9670;&#160;</a></span>LaunchNoneDrawingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.LaunchNoneDrawingMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>マップに触ったらイベントが作成されてしまうので、それを回避する為のモード </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,246,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="294,13,521,56"/>
+<area shape="poly" title=" " alt="" coords="246,32,279,32,279,37,246,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="569,13,796,56"/>
+<area shape="poly" title=" " alt="" coords="522,32,554,32,554,37,522,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_icgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_icgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_icgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a7a4f1f8c08030111761073df09860d28_icgraph">
+<area shape="rect" title=" " alt="" coords="287,47,527,105"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#ad49e968f46fcd67108b047fc5e17c696" title="目的地描画モードを終了" alt="" coords="9,5,235,64"/>
+<area shape="poly" title=" " alt="" coords="271,59,235,54,235,48,272,54"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a53f6ee9d9d7d8905aee0b71639821dd3" title=" " alt="" coords="5,88,239,147"/>
+<area shape="poly" title=" " alt="" coords="272,98,239,103,239,98,271,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a106ebf0b5f2eac9e25c1fd04f3a1bf36" name="a106ebf0b5f2eac9e25c1fd04f3a1bf36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106ebf0b5f2eac9e25c1fd04f3a1bf36">&#9670;&#160;</a></span>LaunchRouteDrawingMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.LaunchRouteDrawingMode </td>
+          <td>(</td>
+          <td class="paramtype">Vector3Int&#160;</td>
+          <td class="paramname"><em>initializePos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ルート描画モード起動 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a106ebf0b5f2eac9e25c1fd04f3a1bf36_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a106ebf0b5f2eac9e25c1fd04f3a1bf36_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a106ebf0b5f2eac9e25c1fd04f3a1bf36_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a106ebf0b5f2eac9e25c1fd04f3a1bf36_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,250,93"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="298,5,525,48"/>
+<area shape="poly" title=" " alt="" coords="250,45,283,41,283,46,250,51"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="299,72,524,131"/>
+<area shape="poly" title=" " alt="" coords="250,77,285,82,284,87,250,83"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="573,5,800,48"/>
+<area shape="poly" title=" " alt="" coords="526,24,558,24,558,29,526,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78803b998253513023cb9706e7ed1f94" name="a78803b998253513023cb9706e7ed1f94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78803b998253513023cb9706e7ed1f94">&#9670;&#160;</a></span>Refresh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.EventEditCanvas.Refresh </td>
+          <td>(</td>
+          <td class="paramtype">[CanBeNull] MapDataModel&#160;</td>
+          <td class="paramname"><em>mapDataModel</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[CanBeNull] List&lt; Vector3Int &gt;&#160;</td>
+          <td class="paramname"><em>movePosList</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>データおよび表示更新 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_cgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_cgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_cgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_cgraph">
+<area shape="rect" title=" " alt="" coords="5,113,238,172"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a350477b28f94bba0a576b0761b036471" title="メソッドと引数列をUnityコンソールに表示する。" alt="" coords="286,5,513,48"/>
+<area shape="poly" title=" " alt="" coords="174,110,227,83,285,58,303,51,305,56,287,62,229,88,177,115"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="287,72,512,131"/>
+<area shape="poly" title=" " alt="" coords="238,123,272,118,273,123,239,128"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#afe8399bb2859ecb80082dcd4ab96711c" title="マップの全てのイベントの位置にイベントを表わすタイルを設定する。" alt="" coords="287,155,512,213"/>
+<area shape="poly" title=" " alt="" coords="239,157,273,162,272,168,238,163"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a6877989323d14f9376691bf1c26aa289" title="初期パーティ、乗り物のタイルを設定する" alt="" coords="287,237,512,296"/>
+<area shape="poly" title=" " alt="" coords="179,170,287,223,301,229,299,234,285,228,177,175"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="580,5,807,48"/>
+<area shape="poly" title=" " alt="" coords="513,24,565,24,565,29,513,29"/>
+<area shape="rect" href="../../d1/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_event_inspector.html#a739583a4bb9d9df6388441166ec14cbd" title="マップイベントページ情報によりマップタイルに表示するテクスチャーを取得する。" alt="" coords="580,155,808,213"/>
+<area shape="poly" title=" " alt="" coords="513,181,565,181,565,187,513,187"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ac8b93ac86a3f9b8703fcc3b28a617628" title="ゲームオブジェクトを現在属しているシーンからプレビューシーンに移動させる。" alt="" coords="561,237,826,296"/>
+<area shape="poly" title=" " alt="" coords="507,211,574,230,572,235,506,217"/>
+<area shape="poly" title=" " alt="" coords="513,264,546,264,546,269,513,269"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_icgraph.png" border="0" usemap="#adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_icgraph" alt=""/></div>
+<map name="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_icgraph" id="adf/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas_a78803b998253513023cb9706e7ed1f94_icgraph">
+<area shape="rect" title=" " alt="" coords="552,5,784,64"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a7c14942946148397f62c7b4fc3d011d9" title=" " alt="" coords="279,5,504,64"/>
+<area shape="poly" title=" " alt="" coords="537,37,505,37,505,32,537,32"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a4ff85adeafc8399792ae8ad76fb60980" title=" " alt="" coords="5,5,231,64"/>
+<area shape="poly" title=" " alt="" coords="264,37,231,37,231,32,264,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/MapEditor/Component/Canvas/EventEditCanvas.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

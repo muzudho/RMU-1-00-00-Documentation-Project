@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Battle.Window.WindowActorCommand クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d3/def/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle.html">Battle</a></li><li class="navelem"><a class="el" href="../../d9/d9d/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window.html">Window</a></li><li class="navelem"><a class="el" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html">WindowActorCommand</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../d4/d14/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Battle.Window.WindowActorCommand クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )のウィンドウ  
+ <a href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Window.WindowActorCommand の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d69/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_inherit__map">
+<area shape="rect" title="戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )のウィンドウ" alt="" coords="5,229,251,272"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html" title="コマンド選択用ウィンドウ コマンド項目には画面に表示される「表示名」と、内部で識別に使われる「シンボル」が別に存在するので注意" alt="" coords="65,155,191,181"/>
+<area shape="poly" title=" " alt="" coords="131,196,131,229,125,229,125,196"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html" title="コマンドカーソルの移動やスクロールを行うウィンドウ" alt="" coords="64,80,192,107"/>
+<area shape="poly" title=" " alt="" coords="131,122,131,154,125,154,125,122"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html" title="メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト MV の Winow_Base Unite では Prefab を利用するため、ほとんどの処理が不要" alt="" coords="77,5,179,32"/>
+<area shape="poly" title=" " alt="" coords="131,47,131,80,125,80,125,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Window.WindowActorCommand 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d22/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_window_8_window_actor_command_coll__map">
+<area shape="rect" title="戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )のウィンドウ" alt="" coords="5,229,251,272"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html" title="コマンド選択用ウィンドウ コマンド項目には画面に表示される「表示名」と、内部で識別に使われる「シンボル」が別に存在するので注意" alt="" coords="65,155,191,181"/>
+<area shape="poly" title=" " alt="" coords="131,196,131,229,125,229,125,196"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html" title="コマンドカーソルの移動やスクロールを行うウィンドウ" alt="" coords="64,80,192,107"/>
+<area shape="poly" title=" " alt="" coords="131,122,131,154,125,154,125,122"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html" title="メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト MV の Winow_Base Unite では Prefab を利用するため、ほとんどの処理が不要" alt="" coords="77,5,179,32"/>
+<area shape="poly" title=" " alt="" coords="131,47,131,80,125,80,125,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a71210d96e37aeca330cf51583ea800b2"><td class="memItemLeft" align="right" valign="top"><a id="a71210d96e37aeca330cf51583ea800b2" name="a71210d96e37aeca330cf51583ea800b2"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a71210d96e37aeca330cf51583ea800b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化 <br /></td></tr>
+<tr class="separator:a71210d96e37aeca330cf51583ea800b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298dd0d3f28c993adc12e6822748ec38"><td class="memItemLeft" align="right" valign="top"><a id="a298dd0d3f28c993adc12e6822748ec38" name="a298dd0d3f28c993adc12e6822748ec38"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCommandList</b> ()</td></tr>
+<tr class="memdesc:a298dd0d3f28c993adc12e6822748ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニューに全項目を追加。 個々の追加は addCommand で行っている <br /></td></tr>
+<tr class="separator:a298dd0d3f28c993adc12e6822748ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef3db7e9a38abc4427af10ec572647c"><td class="memItemLeft" align="right" valign="top"><a id="a4ef3db7e9a38abc4427af10ec572647c" name="a4ef3db7e9a38abc4427af10ec572647c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAttackCommand</b> ()</td></tr>
+<tr class="memdesc:a4ef3db7e9a38abc4427af10ec572647c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[攻撃]コマンドを追加 <br /></td></tr>
+<tr class="separator:a4ef3db7e9a38abc4427af10ec572647c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51ed548df5ac86e06303f5d3a6671c1"><td class="memItemLeft" align="right" valign="top"><a id="aa51ed548df5ac86e06303f5d3a6671c1" name="aa51ed548df5ac86e06303f5d3a6671c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddSkillCommands</b> ()</td></tr>
+<tr class="memdesc:aa51ed548df5ac86e06303f5d3a6671c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">[スキル]コマンドを追加 <br /></td></tr>
+<tr class="separator:aa51ed548df5ac86e06303f5d3a6671c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d117e90b15fa8e5f946d575b851ab93"><td class="memItemLeft" align="right" valign="top"><a id="a6d117e90b15fa8e5f946d575b851ab93" name="a6d117e90b15fa8e5f946d575b851ab93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGuardCommand</b> ()</td></tr>
+<tr class="memdesc:a6d117e90b15fa8e5f946d575b851ab93"><td class="mdescLeft">&#160;</td><td class="mdescRight">[防御]コマンドを追加 <br /></td></tr>
+<tr class="separator:a6d117e90b15fa8e5f946d575b851ab93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad6d34477d05c760b4fe4d7f10c597a"><td class="memItemLeft" align="right" valign="top"><a id="a6ad6d34477d05c760b4fe4d7f10c597a" name="a6ad6d34477d05c760b4fe4d7f10c597a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddItemCommand</b> ()</td></tr>
+<tr class="memdesc:a6ad6d34477d05c760b4fe4d7f10c597a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[アイテム]コマンドを追加 <br /></td></tr>
+<tr class="separator:a6ad6d34477d05c760b4fe4d7f10c597a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29645d392f9d4cc293c0e65bd0c7045b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a29645d392f9d4cc293c0e65bd0c7045b">Setup</a> (<a class="el" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html">GameActor</a> actor)</td></tr>
+<tr class="memdesc:a29645d392f9d4cc293c0e65bd0c7045b"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定アクターのコマンドを設定  <br /></td></tr>
+<tr class="separator:a29645d392f9d4cc293c0e65bd0c7045b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae721b5ff2845fa8c5b1a5628ffe1ddd3"><td class="memItemLeft" align="right" valign="top"><a id="ae721b5ff2845fa8c5b1a5628ffe1ddd3" name="ae721b5ff2845fa8c5b1a5628ffe1ddd3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessOk</b> (string symbol, int stypeid)</td></tr>
+<tr class="memdesc:ae721b5ff2845fa8c5b1a5628ffe1ddd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">OKの処理 <br /></td></tr>
+<tr class="separator:ae721b5ff2845fa8c5b1a5628ffe1ddd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65f8e8100cb3001f8cb02f8fab1780c6"><td class="memItemLeft" align="right" valign="top"><a id="a65f8e8100cb3001f8cb02f8fab1780c6" name="a65f8e8100cb3001f8cb02f8fab1780c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SelectLast</b> ()</td></tr>
+<tr class="memdesc:a65f8e8100cb3001f8cb02f8fab1780c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">前に選択した項目を選択 <br /></td></tr>
+<tr class="separator:a65f8e8100cb3001f8cb02f8fab1780c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a753b56c8a2d6084cd912b1135d6a5"><td class="memItemLeft" align="right" valign="top"><a id="aa4a753b56c8a2d6084cd912b1135d6a5" name="aa4a753b56c8a2d6084cd912b1135d6a5"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
+<tr class="memdesc:aa4a753b56c8a2d6084cd912b1135d6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを表示 <br /></td></tr>
+<tr class="separator:aa4a753b56c8a2d6084cd912b1135d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3602b325d7ccd776e52388dc73f356e2"><td class="memItemLeft" align="right" valign="top"><a id="a3602b325d7ccd776e52388dc73f356e2" name="a3602b325d7ccd776e52388dc73f356e2"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
+<tr class="memdesc:a3602b325d7ccd776e52388dc73f356e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを非表示(閉じるわけではない) <br /></td></tr>
+<tr class="separator:a3602b325d7ccd776e52388dc73f356e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowCommand</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a38447eed9d8687033373662ea9a6a98b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a38447eed9d8687033373662ea9a6a98b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化 <br /></td></tr>
+<tr class="separator:a38447eed9d8687033373662ea9a6a98b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae90a9457ccc5cab8e1c76d72d428c087 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#ae90a9457ccc5cab8e1c76d72d428c087">MaxItems</a> ()</td></tr>
+<tr class="memdesc:ae90a9457ccc5cab8e1c76d72d428c087 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが持つ最大項目数を返す  <br /></td></tr>
+<tr class="separator:ae90a9457ccc5cab8e1c76d72d428c087 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac9575656a559581c0b10a0c50d8bbd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearCommandList</b> ()</td></tr>
+<tr class="memdesc:a6ac9575656a559581c0b10a0c50d8bbd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">リストの初期化 <br /></td></tr>
+<tr class="separator:a6ac9575656a559581c0b10a0c50d8bbd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacec2e5a509db5632854404f2d42ce2d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCommandList</b> ()</td></tr>
+<tr class="memdesc:aacec2e5a509db5632854404f2d42ce2d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニューに全項目を追加。 個々の追加は addCommand で行っている <br /></td></tr>
+<tr class="separator:aacec2e5a509db5632854404f2d42ce2d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd566544a9cf1fdbd322268f349b39f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#abd566544a9cf1fdbd322268f349b39f2">AddCommand</a> (string name, string symbol, bool enabled=false)</td></tr>
+<tr class="memdesc:abd566544a9cf1fdbd322268f349b39f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">コマンド項目を追加  <br /></td></tr>
+<tr class="separator:abd566544a9cf1fdbd322268f349b39f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b7cd4b003ceccf4ca34e517ff8164a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a72b7cd4b003ceccf4ca34e517ff8164a">CurrentData</a> ()</td></tr>
+<tr class="memdesc:a72b7cd4b003ceccf4ca34e517ff8164a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のコマンド項目のオブジェクトを返す  <br /></td></tr>
+<tr class="separator:a72b7cd4b003ceccf4ca34e517ff8164a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31dad1acadf9efafc83b88423d461d8d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a31dad1acadf9efafc83b88423d461d8d">CurrentSymbol</a> ()</td></tr>
+<tr class="memdesc:a31dad1acadf9efafc83b88423d461d8d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のコマンド項目のシンボルを返す  <br /></td></tr>
+<tr class="separator:a31dad1acadf9efafc83b88423d461d8d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c6f9894a918642f92020ad1e073edc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a51c6f9894a918642f92020ad1e073edc">SetExt</a> (int ext)</td></tr>
+<tr class="memdesc:a51c6f9894a918642f92020ad1e073edc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のコマンド項目の追加情報を設定  <br /></td></tr>
+<tr class="separator:a51c6f9894a918642f92020ad1e073edc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743b122de708182fac5e626e3457b63d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a743b122de708182fac5e626e3457b63d">CurrentExt</a> ()</td></tr>
+<tr class="memdesc:a743b122de708182fac5e626e3457b63d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のコマンド項目の追加情報を返す  <br /></td></tr>
+<tr class="separator:a743b122de708182fac5e626e3457b63d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac194e04a6f5e6f709c719f5775c3ae06 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#ac194e04a6f5e6f709c719f5775c3ae06">FindSymbol</a> (string symbol)</td></tr>
+<tr class="memdesc:ac194e04a6f5e6f709c719f5775c3ae06 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたシンボルをもつコマンド項目の番号を返す  <br /></td></tr>
+<tr class="separator:ac194e04a6f5e6f709c719f5775c3ae06 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7012798792b2b13ea91f2fc15c56b7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a1e7012798792b2b13ea91f2fc15c56b7">SelectSymbol</a> (string symbol)</td></tr>
+<tr class="memdesc:a1e7012798792b2b13ea91f2fc15c56b7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定シンボルに従ってコマンド項目を選択  <br /></td></tr>
+<tr class="separator:a1e7012798792b2b13ea91f2fc15c56b7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7773fa259c75ea075e2a8307c67da365 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a7773fa259c75ea075e2a8307c67da365">FindExt</a> (int ext)</td></tr>
+<tr class="memdesc:a7773fa259c75ea075e2a8307c67da365 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した追加情報を持ったコマンド項目の番号を返す  <br /></td></tr>
+<tr class="separator:a7773fa259c75ea075e2a8307c67da365 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b78d76debf8657174457460940db2f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#ac4b78d76debf8657174457460940db2f">SelectExt</a> (int ext)</td></tr>
+<tr class="memdesc:ac4b78d76debf8657174457460940db2f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した追加情報に従ってコマンド項目を選択  <br /></td></tr>
+<tr class="separator:ac4b78d76debf8657174457460940db2f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199eeef3b2b0d6bc0dea0219abe3c3f7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a199eeef3b2b0d6bc0dea0219abe3c3f7">DrawItem</a> (int index)</td></tr>
+<tr class="memdesc:a199eeef3b2b0d6bc0dea0219abe3c3f7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定番号の項目を描画  <br /></td></tr>
+<tr class="separator:a199eeef3b2b0d6bc0dea0219abe3c3f7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8687682e391a2a331972887a6c473bcc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>CallOkHandler</b> ()</td></tr>
+<tr class="memdesc:a8687682e391a2a331972887a6c473bcc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">OKのハンドラを呼ぶ <br /></td></tr>
+<tr class="separator:a8687682e391a2a331972887a6c473bcc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f3c71918f1cf4ea97e53073243d0e64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> ()</td></tr>
+<tr class="memdesc:a0f3c71918f1cf4ea97e53073243d0e64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテンツの再描画 <br /></td></tr>
+<tr class="separator:a0f3c71918f1cf4ea97e53073243d0e64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe11db1b46b9086650d961b08bea24d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#abfe11db1b46b9086650d961b08bea24d">OnClickCommand</a> (string symbol)</td></tr>
+<tr class="memdesc:abfe11db1b46b9086650d961b08bea24d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">クリック時の処理  <br /></td></tr>
+<tr class="separator:abfe11db1b46b9086650d961b08bea24d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowSelectable</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a342e8311edc5ba02c1008fdd30209690 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a342e8311edc5ba02c1008fdd30209690 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化 <br /></td></tr>
+<tr class="separator:a342e8311edc5ba02c1008fdd30209690 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f90831602a0b56a71460dfe7c5baf64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a8f90831602a0b56a71460dfe7c5baf64">Index</a> ()</td></tr>
+<tr class="memdesc:a8f90831602a0b56a71460dfe7c5baf64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">選択中の項目の番号を返す  <br /></td></tr>
+<tr class="separator:a8f90831602a0b56a71460dfe7c5baf64 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70755fc269b20a7c6f1687b9f762d14a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a70755fc269b20a7c6f1687b9f762d14a">MaxItems</a> ()</td></tr>
+<tr class="memdesc:a70755fc269b20a7c6f1687b9f762d14a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが持つ最大項目数を返す  <br /></td></tr>
+<tr class="separator:a70755fc269b20a7c6f1687b9f762d14a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743b97a02e9931a22b9f22a0893b2131 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+new void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> ()</td></tr>
+<tr class="memdesc:a743b97a02e9931a22b9f22a0893b2131 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウをアクティブにする <br /></td></tr>
+<tr class="separator:a743b97a02e9931a22b9f22a0893b2131 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e507f191e38d818b8b39d33054e689 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+new void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> ()</td></tr>
+<tr class="memdesc:a24e507f191e38d818b8b39d33054e689 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">非アクティブにする <br /></td></tr>
+<tr class="separator:a24e507f191e38d818b8b39d33054e689 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba5cef6de0c004bbfa758250e4d8c1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a8ba5cef6de0c004bbfa758250e4d8c1c">Select</a> (int index)</td></tr>
+<tr class="memdesc:a8ba5cef6de0c004bbfa758250e4d8c1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した番号の項目を選択  <br /></td></tr>
+<tr class="separator:a8ba5cef6de0c004bbfa758250e4d8c1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad016dbe1e26dc9ad2e6eb8ebac9bc86d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deselect</b> ()</td></tr>
+<tr class="memdesc:ad016dbe1e26dc9ad2e6eb8ebac9bc86d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">全項目を非選択 <br /></td></tr>
+<tr class="separator:ad016dbe1e26dc9ad2e6eb8ebac9bc86d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7568e15ea2da07d708c1563466b47e7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reselect</b> ()</td></tr>
+<tr class="memdesc:af7568e15ea2da07d708c1563466b47e7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">項目の再選択 <br /></td></tr>
+<tr class="separator:af7568e15ea2da07d708c1563466b47e7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c91a0e36a78914fc1f471cb2b61ce72 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a7c91a0e36a78914fc1f471cb2b61ce72">SetHelpWindow</a> (<a class="el" href="../../d6/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_help.html">WindowHelp</a> helpWindow)</td></tr>
+<tr class="memdesc:a7c91a0e36a78914fc1f471cb2b61ce72 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘルプウィンドウを設定  <br /></td></tr>
+<tr class="separator:a7c91a0e36a78914fc1f471cb2b61ce72 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6cf2f8d5fd1e11d8afeb2ce6f51b9c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowHelpWindow</b> ()</td></tr>
+<tr class="memdesc:a9d6cf2f8d5fd1e11d8afeb2ce6f51b9c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘルプウィンドウを表示 <br /></td></tr>
+<tr class="separator:a9d6cf2f8d5fd1e11d8afeb2ce6f51b9c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c659061f65b01825f01ae0040b1457 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HideHelpWindow</b> ()</td></tr>
+<tr class="memdesc:a78c659061f65b01825f01ae0040b1457 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘルプウィンドウを非表示 <br /></td></tr>
+<tr class="separator:a78c659061f65b01825f01ae0040b1457 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5beeb33511e97477fe8ca1e2391c93a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#af5beeb33511e97477fe8ca1e2391c93a">SetHandler</a> (string symbol, Action method)</td></tr>
+<tr class="memdesc:af5beeb33511e97477fe8ca1e2391c93a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ハンドラを設定  <br /></td></tr>
+<tr class="separator:af5beeb33511e97477fe8ca1e2391c93a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f01a41d06217ddc9bf483166a6e611 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#ab4f01a41d06217ddc9bf483166a6e611">IsHandled</a> (string symbol)</td></tr>
+<tr class="memdesc:ab4f01a41d06217ddc9bf483166a6e611 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたハンドラが利用可能か  <br /></td></tr>
+<tr class="separator:ab4f01a41d06217ddc9bf483166a6e611 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a991830332c06ddefbd7a9e856a122825 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a991830332c06ddefbd7a9e856a122825">CallHandler</a> (string symbol)</td></tr>
+<tr class="memdesc:a991830332c06ddefbd7a9e856a122825 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したハンドラを呼ぶ  <br /></td></tr>
+<tr class="separator:a991830332c06ddefbd7a9e856a122825 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ce132998617df4e617ca7e20ab4fdf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+new void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a97ce132998617df4e617ca7e20ab4fdf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:a97ce132998617df4e617ca7e20ab4fdf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25258f9fdf3a0c01d81eaaf65780d181 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a25258f9fdf3a0c01d81eaaf65780d181">IsCancelEnabled</a> ()</td></tr>
+<tr class="memdesc:a25258f9fdf3a0c01d81eaaf65780d181 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルが可能か  <br /></td></tr>
+<tr class="separator:a25258f9fdf3a0c01d81eaaf65780d181 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fb737797bdd6a27ed96be2c129cc58 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessOk</b> ()</td></tr>
+<tr class="memdesc:a17fb737797bdd6a27ed96be2c129cc58 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">OKの処理 <br /></td></tr>
+<tr class="separator:a17fb737797bdd6a27ed96be2c129cc58 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e5620ec06c10a690801ffcb4719011 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CallOkHandler</b> ()</td></tr>
+<tr class="memdesc:af3e5620ec06c10a690801ffcb4719011 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">OKのハンドラを呼ぶ <br /></td></tr>
+<tr class="separator:af3e5620ec06c10a690801ffcb4719011 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc3dcffdadb507ac1944b74b32bcecc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessCancel</b> ()</td></tr>
+<tr class="memdesc:abcc3dcffdadb507ac1944b74b32bcecc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルを処理 <br /></td></tr>
+<tr class="separator:abcc3dcffdadb507ac1944b74b32bcecc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7f34080298a63f01f8826ef1d2b7aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CallCancelHandler</b> ()</td></tr>
+<tr class="memdesc:ae7f34080298a63f01f8826ef1d2b7aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルのハンドラを呼ぶ <br /></td></tr>
+<tr class="separator:ae7f34080298a63f01f8826ef1d2b7aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f1a9097d848624fce0bbec107eb9964 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CallUpdateHelp</b> ()</td></tr>
+<tr class="memdesc:a6f1a9097d848624fce0bbec107eb9964 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘルプのアップデートを呼ぶ <br /></td></tr>
+<tr class="separator:a6f1a9097d848624fce0bbec107eb9964 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15953e39b7c68d748b8b8fc7e17624b8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHelp</b> ()</td></tr>
+<tr class="memdesc:a15953e39b7c68d748b8b8fc7e17624b8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ヘルプウィンドウをアップデート <br /></td></tr>
+<tr class="separator:a15953e39b7c68d748b8b8fc7e17624b8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f17712033dc96b70eca511e567c371a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a3f17712033dc96b70eca511e567c371a">SetHelpWindowItem</a> (<a class="el" href="../../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html">GameItem</a> item)</td></tr>
+<tr class="memdesc:a3f17712033dc96b70eca511e567c371a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定項目をヘルプウィンドウに表示  <br /></td></tr>
+<tr class="separator:a3f17712033dc96b70eca511e567c371a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9835f3f31b359f6278457f316831655 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawAllItems</b> ()</td></tr>
+<tr class="memdesc:aa9835f3f31b359f6278457f316831655 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">全項目を描画 <br /></td></tr>
+<tr class="separator:aa9835f3f31b359f6278457f316831655 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a927c2c6f7e6395d375dd58dd446e1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#aa2a927c2c6f7e6395d375dd58dd446e1">DrawItem</a> (int index)</td></tr>
+<tr class="memdesc:aa2a927c2c6f7e6395d375dd58dd446e1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定番号の項目を描画 overrideして利用する  <br /></td></tr>
+<tr class="separator:aa2a927c2c6f7e6395d375dd58dd446e1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc7919e13310b185f2443bcef5e447d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearItem</b> ()</td></tr>
+<tr class="memdesc:a6dc7919e13310b185f2443bcef5e447d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した番号の項目を削除 <br /></td></tr>
+<tr class="separator:a6dc7919e13310b185f2443bcef5e447d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aab6338b62f4603bf3ded29fc942167 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> ()</td></tr>
+<tr class="memdesc:a1aab6338b62f4603bf3ded29fc942167 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンテンツの再描画 <br /></td></tr>
+<tr class="separator:a1aab6338b62f4603bf3ded29fc942167 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca563beba4c04a7ef11a9a309761fde inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#aeca563beba4c04a7ef11a9a309761fde">OnClickSelection</a> (int index)</td></tr>
+<tr class="memdesc:aeca563beba4c04a7ef11a9a309761fde inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">ボタン選択時処理  <br /></td></tr>
+<tr class="separator:aeca563beba4c04a7ef11a9a309761fde inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化 <br /></td></tr>
+<tr class="separator:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeHandler</b> ()</td></tr>
+<tr class="memdesc:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateOpen</b> ()</td></tr>
+<tr class="memdesc:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを開いている状態をアップデート <br /></td></tr>
+<tr class="separator:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ade49f2962fda60f1ad6c83617a2c9414">IsOpen</a> ()</td></tr>
+<tr class="memdesc:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが完全に開いているか  <br /></td></tr>
+<tr class="separator:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a88c98c800abbcda4dab46adb3ae97474">IsClosed</a> ()</td></tr>
+<tr class="memdesc:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが完全に閉じているか  <br /></td></tr>
+<tr class="separator:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateClose</b> ()</td></tr>
+<tr class="memdesc:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを閉じている状態をアップデート <br /></td></tr>
+<tr class="separator:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b> ()</td></tr>
+<tr class="memdesc:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを開く <br /></td></tr>
+<tr class="separator:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Close</b> ()</td></tr>
+<tr class="memdesc:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを閉じる <br /></td></tr>
+<tr class="separator:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a8787808799001295954d1e16f25b6af5">IsOpening</a> ()</td></tr>
+<tr class="memdesc:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが開いている途中か  <br /></td></tr>
+<tr class="separator:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a9dc4fb6eb7e051fc762cddfaf34a35f2">IsClosing</a> ()</td></tr>
+<tr class="memdesc:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが閉じている途中か  <br /></td></tr>
+<tr class="separator:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
+<tr class="memdesc:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを表示 <br /></td></tr>
+<tr class="separator:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
+<tr class="memdesc:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを非表示(閉じるわけではない) <br /></td></tr>
+<tr class="separator:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Activate</b> ()</td></tr>
+<tr class="memdesc:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウをアクティブにする <br /></td></tr>
+<tr class="separator:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Openness</b></td></tr>
+<tr class="memdesc:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">開放度(0 〜 255) <br /></td></tr>
+<tr class="separator:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Pause</b></td></tr>
+<tr class="memdesc:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポーズサインが表示中か <br /></td></tr>
+<tr class="separator:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowSelectable</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a98c7a51126dbdb5e442d843bf927ece3 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">Sprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a98c7a51126dbdb5e442d843bf927ece3">GetItemImage</a> (string iconName)</td></tr>
+<tr class="memdesc:a98c7a51126dbdb5e442d843bf927ece3 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイコン設定  <br /></td></tr>
+<tr class="separator:a98c7a51126dbdb5e442d843bf927ece3 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Deactivate</b> ()</td></tr>
+<tr class="memdesc:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">非アクティブにする <br /></td></tr>
+<tr class="separator:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowSelectable</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:af80f454e85e3759ded36bf2365538ad5 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+Dictionary&lt; string, Action &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_handlers</b></td></tr>
+<tr class="memdesc:af80f454e85e3759ded36bf2365538ad5 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">入力ハンドラ <br /></td></tr>
+<tr class="separator:af80f454e85e3759ded36bf2365538ad5 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1844d5e035eccb5945f467254a19b9a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_index</b></td></tr>
+<tr class="memdesc:ac1844d5e035eccb5945f467254a19b9a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">選択されている項目の番号 <br /></td></tr>
+<tr class="separator:ac1844d5e035eccb5945f467254a19b9a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe43914d569aa69e3b858ec441834314 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+Image&#160;</td><td class="memItemRight" valign="bottom"><b>_iconImage</b> = null</td></tr>
+<tr class="memdesc:afe43914d569aa69e3b858ec441834314 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイコン画像 <br /></td></tr>
+<tr class="separator:afe43914d569aa69e3b858ec441834314 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c8d4cd76b64955d03c8a386be3233e inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memItemLeft" align="right" valign="top">
+List&lt; <a class="el" href="../../d0/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_selector.html">Selector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>selectors</b></td></tr>
+<tr class="memdesc:ae7c8d4cd76b64955d03c8a386be3233e inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selector <br /></td></tr>
+<tr class="separator:ae7c8d4cd76b64955d03c8a386be3233e inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_iconWidth</b> = 32</td></tr>
+<tr class="memdesc:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本のアイコン幅 (規定値 : 32) <br /></td></tr>
+<tr class="separator:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_iconHeight</b> = 32</td></tr>
+<tr class="memdesc:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本のアイコン高さ (規定値 : 32) <br /></td></tr>
+<tr class="separator:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_faceWidth</b> = 144</td></tr>
+<tr class="memdesc:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本の顔画像の幅 (規定値 : 144) <br /></td></tr>
+<tr class="separator:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_faceHeight</b> = 144</td></tr>
+<tr class="memdesc:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本の顔画像の高さ (規定値 : 144) <br /></td></tr>
+<tr class="separator:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Visible</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示状態 <br /></td></tr>
+<tr class="separator:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Active</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activeかどうか <br /></td></tr>
+<tr class="separator:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Opacity</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">透過度 <br /></td></tr>
+<tr class="separator:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>戦闘シーンのアクターのコマンド( [攻撃][スキル][防御][アイテム] )のウィンドウ </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a29645d392f9d4cc293c0e65bd0c7045b" name="a29645d392f9d4cc293c0e65bd0c7045b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29645d392f9d4cc293c0e65bd0c7045b">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Battle.Window.WindowActorCommand.Setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html">GameActor</a>&#160;</td>
+          <td class="paramname"><em>actor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定アクターのコマンドを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">actor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_cgraph.png" border="0" usemap="#ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_cgraph" alt=""/></div>
+<map name="ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_cgraph" id="ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_cgraph">
+<area shape="rect" title="指定アクターのコマンドを設定" alt="" coords="5,893,289,936"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a743b97a02e9931a22b9f22a0893b2131" title="ウィンドウをアクティブにする" alt="" coords="1293,727,1514,785"/>
+<area shape="poly" title=" " alt="" coords="193,890,259,862,336,837,417,822,524,808,783,785,1054,769,1278,758,1279,763,1054,774,783,790,524,813,418,827,337,843,261,867,195,895"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a6ac9575656a559581c0b10a0c50d8bbd" title="リストの初期化" alt="" coords="661,952,909,1011"/>
+<area shape="poly" title=" " alt="" coords="290,927,646,964,646,970,289,932"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a298dd0d3f28c993adc12e6822748ec38" title="メニューに全項目を追加。 個々の追加は addCommand で行っている" alt="" coords="343,469,593,528"/>
+<area shape="poly" title=" " alt="" coords="163,891,433,538,437,541,167,895"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a4145c2e26a271a5610193c0fb97e880b" title="ウィンドウを開く" alt="" coords="356,1117,580,1160"/>
+<area shape="poly" title=" " alt="" coords="181,934,425,1106,422,1111,178,939"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a0f3c71918f1cf4ea97e53073243d0e64" title="コンテンツの再描画" alt="" coords="337,985,599,1028"/>
+<area shape="poly" title=" " alt="" coords="225,934,378,978,376,983,223,939"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a65f8e8100cb3001f8cb02f8fab1780c6" title="前に選択した項目を選択" alt="" coords="343,852,593,911"/>
+<area shape="poly" title=" " alt="" coords="289,897,328,893,328,898,290,903"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#af7568e15ea2da07d708c1563466b47e7" title="項目の再選択" alt="" coords="1573,499,1793,557"/>
+<area shape="poly" title=" " alt="" coords="1484,724,1523,700,1561,669,1596,634,1651,567,1655,570,1600,638,1565,673,1527,705,1486,728"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a8ba5cef6de0c004bbfa758250e4d8c1c" title="指定した番号の項目を選択" alt="" coords="1841,565,2062,624"/>
+<area shape="poly" title=" " alt="" coords="1794,553,1828,561,1826,566,1793,558"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a6f1a9097d848624fce0bbec107eb9964" title="ヘルプのアップデートを呼ぶ" alt="" coords="2110,565,2330,624"/>
+<area shape="poly" title=" " alt="" coords="2062,592,2095,592,2095,597,2062,597"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a15953e39b7c68d748b8b8fc7e17624b8" title="ヘルプウィンドウをアップデート" alt="" coords="2378,565,2598,624"/>
+<area shape="poly" title=" " alt="" coords="2330,592,2363,592,2363,597,2330,597"/>
+<area shape="rect" href="../../d6/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_help.html#a06800e39de3fa92a88bd5dace09c485e" title="文字の消去" alt="" coords="2646,573,2862,616"/>
+<area shape="poly" title=" " alt="" coords="2599,592,2631,592,2631,597,2599,597"/>
+<area shape="rect" href="../../d6/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_help.html#a999bb005c7e28816dc715a408b69ecce" title="指定文字を表示" alt="" coords="2910,573,3140,616"/>
+<area shape="poly" title=" " alt="" coords="2862,592,2895,592,2895,597,2862,597"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a4ef3db7e9a38abc4427af10ec572647c" title="[攻撃]コマンドを追加" alt="" coords="660,387,909,445"/>
+<area shape="poly" title=" " alt="" coords="582,466,655,447,656,452,584,471"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a6d117e90b15fa8e5f946d575b851ab93" title="[防御]コマンドを追加" alt="" coords="660,304,909,363"/>
+<area shape="poly" title=" " alt="" coords="503,467,567,419,646,372,659,366,661,371,648,377,570,423,506,471"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#a6ad6d34477d05c760b4fe4d7f10c597a" title="[アイテム]コマンドを追加" alt="" coords="660,469,909,528"/>
+<area shape="poly" title=" " alt="" coords="593,496,645,496,645,501,593,501"/>
+<area shape="rect" href="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command.html#aa51ed548df5ac86e06303f5d3a6671c1" title="[スキル]コマンドを追加" alt="" coords="660,552,909,611"/>
+<area shape="poly" title=" " alt="" coords="584,526,656,545,655,550,582,531"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#abd566544a9cf1fdbd322268f349b39f2" title="コマンド項目を追加" alt="" coords="981,387,1223,445"/>
+<area shape="poly" title=" " alt="" coords="910,413,967,413,967,419,910,419"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#aa21664f3457c012e9d770746f30de3c8" title="攻撃可能か" alt="" coords="994,221,1210,280"/>
+<area shape="poly" title=" " alt="" coords="903,384,921,373,937,353,944,333,951,311,969,290,980,282,983,286,972,294,956,314,949,334,942,356,924,377,906,388"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#abfe11db1b46b9086650d961b08bea24d" title="クリック時の処理" alt="" coords="984,304,1220,363"/>
+<area shape="poly" title=" " alt="" coords="899,383,972,364,973,370,901,389"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a17fb737797bdd6a27ed96be2c129cc58" title="OKの処理" alt="" coords="992,469,1212,528"/>
+<area shape="poly" title=" " alt="" coords="901,443,978,464,977,469,899,449"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a1e7012798792b2b13ea91f2fc15c56b7" title="指定シンボルに従ってコマンド項目を選択" alt="" coords="974,552,1230,611"/>
+<area shape="poly" title=" " alt="" coords="906,444,924,455,942,476,949,498,956,518,972,538,977,542,974,546,968,542,951,521,944,499,937,479,921,459,903,448"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a02180d1225721cb4f62f9cb6943a6862" title="指定アイテムを使用可能か" alt="" coords="1296,139,1511,197"/>
+<area shape="poly" title=" " alt="" coords="1210,218,1281,199,1282,204,1211,224"/>
+<area shape="rect" href="../../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a35f76cfeaf6620da70f61d673ea7b817" title="アイテムか" alt="" coords="1580,5,1787,48"/>
+<area shape="poly" title=" " alt="" coords="1443,136,1502,96,1572,58,1587,51,1589,56,1574,62,1505,101,1446,140"/>
+<area shape="rect" href="../../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a8e1283e04e639debbf8bcf88527b5b71" title="スキルか" alt="" coords="1580,72,1787,115"/>
+<area shape="poly" title=" " alt="" coords="1511,137,1586,116,1587,122,1512,142"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ae73db2a04b164222bb70e03d357761d8" title="指定アイテムが使用可能か" alt="" coords="1576,139,1791,197"/>
+<area shape="poly" title=" " alt="" coords="1511,165,1561,165,1561,171,1511,171"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a90ef6e10bb3853b21d99011a91532be5" title="指定スキルを使用可能か" alt="" coords="1576,221,1791,280"/>
+<area shape="poly" title=" " alt="" coords="1506,195,1569,214,1567,219,1504,201"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#aeffeda8e6cb625d746a8229ae5a7ff9f" title="指定アイテムが使用可能か" alt="" coords="1844,56,2059,115"/>
+<area shape="poly" title=" " alt="" coords="1780,135,1839,117,1841,122,1782,141"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a71cfc4475c351a35f1ae422d8f83011e" title="動作可能か" alt="" coords="2112,97,2328,156"/>
+<area shape="poly" title=" " alt="" coords="2060,99,2098,105,2097,110,2059,105"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a7b9c5899dcc07010ff17e6f0189a7ddf" title="指定アイテムが使用可能か" alt="" coords="2112,15,2328,73"/>
+<area shape="poly" title=" " alt="" coords="2059,66,2097,60,2098,65,2060,71"/>
+<area shape="poly" title=" " alt="" coords="1776,219,1792,207,1808,187,1815,167,1822,146,1839,125,1844,121,1847,125,1843,129,1827,149,1820,169,1812,190,1795,211,1779,223"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a19d8ba90a7c10fbe329e75143edbb5d8" title="指定スキルの動作可能か" alt="" coords="1844,387,2059,445"/>
+<area shape="poly" title=" " alt="" coords="1718,278,1774,326,1843,372,1852,378,1850,382,1840,377,1771,330,1714,282"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#aaf86d2a993c5f6d21a113820a516012f" title="指定スキルタイプが[スキル &#45; スキル封印]か" alt="" coords="1844,139,2059,197"/>
+<area shape="poly" title=" " alt="" coords="1780,218,1839,200,1841,205,1782,223"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a78483090c3dc1a1dfda94d633c3fad2a" title="指定スキルタイプが [スキル &#45; スキルタイプ封印]されているか" alt="" coords="1844,221,2059,280"/>
+<area shape="poly" title=" " alt="" coords="1791,248,1829,248,1829,253,1791,253"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a0c48f36143070e04e34fc4b8c2ebeabd" title="指定スキルの発動条件に合う装備をしているか" alt="" coords="1844,304,2059,363"/>
+<area shape="poly" title=" " alt="" coords="1782,278,1841,297,1839,302,1780,283"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#adf5281c85e621a30dbfcc13279da67e3" title="指定スキルに必要なMPを返す" alt="" coords="2112,428,2328,487"/>
+<area shape="poly" title=" " alt="" coords="2060,430,2098,436,2097,441,2059,435"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#af098469bac7d11b49bb04e884c9a0fbd" title="指定スキルに必要なTPを返す" alt="" coords="2112,345,2328,404"/>
+<area shape="poly" title=" " alt="" coords="2059,397,2097,391,2098,396,2060,402"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a991830332c06ddefbd7a9e856a122825" title="指定したハンドラを呼ぶ" alt="" coords="1573,416,1793,475"/>
+<area shape="poly" title=" " alt="" coords="1221,347,1367,371,1526,401,1560,409,1559,414,1524,407,1366,376,1220,353"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#ab4f01a41d06217ddc9bf483166a6e611" title="指定されたハンドラが利用可能か" alt="" coords="1841,469,2062,528"/>
+<area shape="poly" title=" " alt="" coords="1794,465,1827,471,1826,476,1793,470"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#af3e5620ec06c10a690801ffcb4719011" title="OKのハンドラを呼ぶ" alt="" coords="1293,416,1514,475"/>
+<area shape="poly" title=" " alt="" coords="1212,477,1278,465,1279,470,1213,482"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a24e507f191e38d818b8b39d33054e689" title="非アクティブにする" alt="" coords="1293,499,1514,557"/>
+<area shape="poly" title=" " alt="" coords="1213,507,1279,513,1278,519,1212,512"/>
+<area shape="poly" title=" " alt="" coords="1514,443,1559,443,1559,448,1514,448"/>
+<area shape="poly" title=" " alt="" coords="1514,525,1559,525,1559,531,1514,531"/>
+<area shape="poly" title=" " alt="" coords="1230,581,1826,590,1826,595,1230,586"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#ac194e04a6f5e6f709c719f5775c3ae06" title="指定されたシンボルをもつコマンド項目の番号を返す" alt="" coords="1282,632,1525,691"/>
+<area shape="poly" title=" " alt="" coords="1216,609,1277,625,1275,630,1214,614"/>
+<area shape="poly" title=" " alt="" coords="901,361,973,380,972,385,899,366"/>
+<area shape="poly" title=" " alt="" coords="910,331,970,331,970,336,910,336"/>
+<area shape="poly" title=" " alt="" coords="906,361,924,373,942,394,949,415,956,436,972,455,981,462,978,466,969,459,951,438,944,417,937,396,921,377,903,365"/>
+<area shape="poly" title=" " alt="" coords="910,361,924,373,940,394,948,415,949,457,950,498,957,518,972,538,975,540,971,544,968,542,953,521,945,499,944,457,942,416,935,396,920,376,907,365"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#aa875d83ef99e67a04c108b1a7d841492" title="防御可能か" alt="" coords="994,139,1210,197"/>
+<area shape="poly" title=" " alt="" coords="822,301,888,254,969,207,982,201,984,206,972,212,891,258,825,306"/>
+<area shape="poly" title=" " alt="" coords="1210,165,1281,165,1281,171,1210,171"/>
+<area shape="poly" title=" " alt="" coords="899,466,972,447,973,452,901,471"/>
+<area shape="poly" title=" " alt="" coords="903,467,921,455,937,436,944,415,951,394,968,373,974,369,977,373,972,377,956,396,949,417,942,438,924,459,906,471"/>
+<area shape="poly" title=" " alt="" coords="910,496,977,496,977,501,910,501"/>
+<area shape="poly" title=" " alt="" coords="901,526,973,545,972,550,899,531"/>
+<area shape="poly" title=" " alt="" coords="903,549,921,538,937,518,944,498,951,476,968,455,974,451,977,456,972,459,956,479,949,500,942,521,924,542,906,554"/>
+<area shape="poly" title=" " alt="" coords="907,549,920,538,935,518,942,498,944,457,945,415,953,394,968,373,971,370,975,374,972,376,957,397,950,416,949,458,948,499,940,521,924,542,910,553"/>
+<area shape="poly" title=" " alt="" coords="899,549,977,529,978,534,901,554"/>
+<area shape="poly" title=" " alt="" coords="910,579,959,579,959,584,910,584"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a51c6f9894a918642f92020ad1e073edc" title="現在のコマンド項目の追加情報を設定" alt="" coords="973,701,1231,744"/>
+<area shape="poly" title=" " alt="" coords="830,609,895,649,971,687,990,694,988,699,969,692,893,654,828,613"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a9d2a5daef74ba39b341fe8ce35e4a71f" title="[スキル]の配列" alt="" coords="997,635,1207,677"/>
+<area shape="poly" title=" " alt="" coords="911,608,995,628,993,633,909,613"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a5122bcb16ca5eb4b00724e77b5059be5" title="ウィンドウをアクティブにする" alt="" coords="665,1184,904,1227"/>
+<area shape="poly" title=" " alt="" coords="573,1158,667,1178,665,1183,572,1163"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ade49f2962fda60f1ad6c83617a2c9414" title="ウィンドウが完全に開いているか" alt="" coords="668,1117,902,1160"/>
+<area shape="poly" title=" " alt="" coords="580,1136,653,1136,653,1141,580,1141"/>
+<area shape="poly" title=" " alt="" coords="599,994,645,990,646,995,599,999"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#aacec2e5a509db5632854404f2d42ce2d" title="メニューに全項目を追加。 個々の追加は addCommand で行っている" alt="" coords="660,1035,910,1093"/>
+<area shape="poly" title=" " alt="" coords="590,1026,645,1036,645,1041,589,1031"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#acd8163cf89030ea84b9274d623fbf32b" title="最後の戦闘スキルを返す" alt="" coords="654,819,916,861"/>
+<area shape="poly" title=" " alt="" coords="593,862,638,856,639,862,593,868"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#ac4b78d76debf8657174457460940db2f" title="指定した追加情報に従ってコマンド項目を選択" alt="" coords="647,885,922,928"/>
+<area shape="poly" title=" " alt="" coords="593,889,633,892,632,897,593,894"/>
+<area shape="poly" title=" " alt="" coords="922,904,1073,897,1154,890,1233,879,1329,858,1424,831,1518,799,1607,763,1766,691,1884,629,1887,634,1769,695,1610,768,1520,804,1426,836,1330,864,1234,884,1154,895,1073,903,923,910"/>
+<area shape="rect" href="../../da/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_command.html#a7773fa259c75ea075e2a8307c67da365" title="指定した追加情報を持ったコマンド項目の番号を返す" alt="" coords="970,827,1234,869"/>
+<area shape="poly" title=" " alt="" coords="903,882,968,870,969,875,904,887"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_icgraph.png" border="0" usemap="#ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_icgraph" alt=""/></div>
+<map name="ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_icgraph" id="ad3/d67/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_actor_command_a29645d392f9d4cc293c0e65bd0c7045b_icgraph">
+<area shape="rect" title="指定アクターのコマンドを設定" alt="" coords="1666,127,1950,169"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a6f2168d68dbc4f9c789758d880e1e90d" title="[アイテム]ウィンドウで[キャンセル]が選択された時のハンドラ" alt="" coords="1384,60,1600,103"/>
+<area shape="poly" title=" " alt="" coords="1689,126,1596,106,1597,101,1690,120"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8e99dbc4e22be1923c86b952e0dd04f7" title="[スキル]ウィンドウで[キャンセル]が選択された時のハンドラ" alt="" coords="1384,127,1600,169"/>
+<area shape="poly" title=" " alt="" coords="1652,151,1601,151,1601,145,1652,145"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a3f66aa45a944ad066eab9284925cac95" title="[アクター]コマンドの選択開始" alt="" coords="1366,193,1618,252"/>
+<area shape="poly" title=" " alt="" coords="1701,176,1619,195,1618,190,1700,171"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a62ec72920d8084303f9dbce06aec4260" title="[アイテム]コマンドのハンドラ" alt="" coords="1100,60,1318,103"/>
+<area shape="poly" title=" " alt="" coords="1369,84,1318,84,1318,79,1369,79"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a57f867e85ec503225e9a252fa623ccc2" title="[アイテム]ウィンドウ(Window_BattleItem)を生成" alt="" coords="808,5,1052,48"/>
+<area shape="poly" title=" " alt="" coords="1375,59,1318,51,1180,38,1052,32,1052,26,1181,33,1318,45,1375,54"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a724e7857a3a65320fe6e1c7797646594" title="[アクター]コマンドウィンドウ(Window_ActorCommand)を生成" alt="" coords="828,75,1032,133"/>
+<area shape="poly" title=" " alt="" coords="1085,94,1032,98,1032,93,1084,89"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1696ba0f56578c100381e543a4d89f0f" title="戦闘シーンに必要なすべてのウィンドウを生成" alt="" coords="520,83,760,125"/>
+<area shape="poly" title=" " alt="" coords="813,107,761,107,761,101,813,101"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#aacb7721fb35bd6b6334d73e9df2ade88" title="表示に必要なオブジェクトを生成。 スプライトセット、ウィンドウレイヤー、ウィンドウなど" alt="" coords="257,75,472,133"/>
+<area shape="poly" title=" " alt="" coords="505,107,472,107,472,101,505,101"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="5,83,209,125"/>
+<area shape="poly" title=" " alt="" coords="241,107,209,107,209,101,241,101"/>
+<area shape="poly" title=" " alt="" coords="834,55,723,85,722,80,832,50"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a6c6f252160ff91a86574d896a92feef3" title="[スキル]コマンドのハンドラ" alt="" coords="1100,127,1318,169"/>
+<area shape="poly" title=" " alt="" coords="1369,151,1318,151,1318,145,1369,145"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad8e7c57e41f5e68675b104adce04aa94" title="[スキル]ウィンドウ(Window_BattleSkill)を生成" alt="" coords="828,164,1032,223"/>
+<area shape="poly" title=" " alt="" coords="1378,175,1318,184,1168,195,1032,197,1032,192,1168,189,1318,179,1377,170"/>
+<area shape="poly" title=" " alt="" coords="1085,131,1032,123,1033,117,1085,126"/>
+<area shape="poly" title=" " alt="" coords="818,162,711,128,713,123,819,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Battle/Window/WindowActorCommand.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

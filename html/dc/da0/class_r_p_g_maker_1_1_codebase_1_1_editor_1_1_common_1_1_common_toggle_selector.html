@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.CommonToggleSelector クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../dc/da0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector.html">CommonToggleSelector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="../../de/d7e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.CommonToggleSelector クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>トグルの選択処理クラス  
+ <a href="../../dc/da0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector.html#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af847640bf1b4e5197a9a7d87cfa9df57"><td class="memItemLeft" align="right" valign="top"><a id="af847640bf1b4e5197a9a7d87cfa9df57" name="af847640bf1b4e5197a9a7d87cfa9df57"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetToggleSelector</b> (List&lt; Toggle &gt; toggles, int defaultSelect=0, List&lt; Action &gt; actions=null)</td></tr>
+<tr class="memdesc:af847640bf1b4e5197a9a7d87cfa9df57"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の設定 引数1:設定対象(Toggle) 引数2:最初にチェックが入る配列番号 引数3:各Toggleに設定する処理（切り替え時に実行する処理） <br /></td></tr>
+<tr class="separator:af847640bf1b4e5197a9a7d87cfa9df57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeba3abbd2b4ebe8268df25c66ad7b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector.html#abeba3abbd2b4ebe8268df25c66ad7b51">SetToggleInVisualElementSelector</a> (List&lt; Toggle &gt; toggles, List&lt; VisualElement &gt; elements, int defaultSelect=0, List&lt; Action &gt; actions=null)</td></tr>
+<tr class="memdesc:abeba3abbd2b4ebe8268df25c66ad7b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える 引数のリストが1つでも動作する  <br /></td></tr>
+<tr class="separator:abeba3abbd2b4ebe8268df25c66ad7b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133f0e6342cfbd6ccaf63015b3086933"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector.html#a133f0e6342cfbd6ccaf63015b3086933">SetToggleInVisualElementSelectorSingle</a> (Toggle toggle, VisualElement element, bool defaultSelect=false, Action actions=null)</td></tr>
+<tr class="memdesc:a133f0e6342cfbd6ccaf63015b3086933"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える Toggle自体がラジオボタン形式ではなく、チェックボックス形式（1つのみの指定）の場合に利用する  <br /></td></tr>
+<tr class="separator:a133f0e6342cfbd6ccaf63015b3086933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9141b37983bae881389427f0d5fdea80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_common_toggle_selector.html#a9141b37983bae881389427f0d5fdea80">SetToggleInVisualElementSelectorSingle</a> (Toggle toggle, List&lt; VisualElement &gt; element, bool defaultSelect=false, Action actions=null)</td></tr>
+<tr class="memdesc:a9141b37983bae881389427f0d5fdea80"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える Toggle自体がラジオボタン形式ではなく、チェックボックス形式（1つのみの指定）の場合に利用する  <br /></td></tr>
+<tr class="separator:a9141b37983bae881389427f0d5fdea80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>トグルの選択処理クラス </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="abeba3abbd2b4ebe8268df25c66ad7b51" name="abeba3abbd2b4ebe8268df25c66ad7b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeba3abbd2b4ebe8268df25c66ad7b51">&#9670;&#160;</a></span>SetToggleInVisualElementSelector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.CommonToggleSelector.SetToggleInVisualElementSelector </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Toggle &gt;&#160;</td>
+          <td class="paramname"><em>toggles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; VisualElement &gt;&#160;</td>
+          <td class="paramname"><em>elements</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultSelect</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; Action &gt;&#160;</td>
+          <td class="paramname"><em>actions</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える 引数のリストが1つでも動作する </p>
+<p>引数1:設定対象(Toggle) 引数2:Toggle切り替え時に同時に切り替えるVisualElement 引数で渡されたVisualElement内の class="toggle_contents" が対象（渡されたもの自体は非対象） 引数2:最初にチェックが入る配列番号 引数3:各Toggleに設定する処理（切り替え時に実行する処理） </p>
+
+</div>
+</div>
+<a id="a9141b37983bae881389427f0d5fdea80" name="a9141b37983bae881389427f0d5fdea80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9141b37983bae881389427f0d5fdea80">&#9670;&#160;</a></span>SetToggleInVisualElementSelectorSingle() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.CommonToggleSelector.SetToggleInVisualElementSelectorSingle </td>
+          <td>(</td>
+          <td class="paramtype">Toggle&#160;</td>
+          <td class="paramname"><em>toggle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; VisualElement &gt;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defaultSelect</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>actions</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える Toggle自体がラジオボタン形式ではなく、チェックボックス形式（1つのみの指定）の場合に利用する </p>
+<p>引数1:設定対象(Toggle) 引数2:Toggle切り替え時に同時に切り替えるVisualElement 引数で渡されたVisualElement内の class="toggle_contents" が対象（渡されたもの自体は非対象） 引数2:最初にチェックが入る配列番号 引数3:各Toggleに設定する処理（切り替え時に実行する処理） </p>
+
+</div>
+</div>
+<a id="a133f0e6342cfbd6ccaf63015b3086933" name="a133f0e6342cfbd6ccaf63015b3086933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133f0e6342cfbd6ccaf63015b3086933">&#9670;&#160;</a></span>SetToggleInVisualElementSelectorSingle() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.CommonToggleSelector.SetToggleInVisualElementSelectorSingle </td>
+          <td>(</td>
+          <td class="paramtype">Toggle&#160;</td>
+          <td class="paramname"><em>toggle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>defaultSelect</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>actions</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>対象の設定 Toggle切替時に、引数で渡されたVisualElementの子要素のEnabled状態も切り替える Toggle自体がラジオボタン形式ではなく、チェックボックス形式（1つのみの指定）の場合に利用する </p>
+<p>引数1:設定対象(Toggle) 引数2:Toggle切り替え時に同時に切り替えるVisualElement 引数で渡されたVisualElement内の class="toggle_contents" が対象（渡されたもの自体は非対象） 引数2:最初にチェックが入る配列番号 引数3:各Toggleに設定する処理（切り替え時に実行する処理） </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/CommonToggleSelector.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

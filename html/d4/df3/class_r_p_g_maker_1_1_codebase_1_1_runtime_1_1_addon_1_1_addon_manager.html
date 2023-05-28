@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Addon.AddonManager クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/d2e/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon.html">Addon</a></li><li class="navelem"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html">AddonManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="../../d2/dd3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Addon.AddonManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>アドオン管理者  
+ <a href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_1_1_addon_runtime_info.html">AddonRuntimeInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン実行時情報  <a href="../../d4/d5e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_1_1_addon_runtime_info.html#details">[詳解]</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:afae97ba7405636d4468020e80ddf020e"><td class="memItemLeft" align="right" valign="top"><a id="afae97ba7405636d4468020e80ddf020e" name="afae97ba7405636d4468020e80ddf020e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> ()</td></tr>
+<tr class="memdesc:afae97ba7405636d4468020e80ddf020e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload and initialize Add-ons. <br /></td></tr>
+<tr class="separator:afae97ba7405636d4468020e80ddf020e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20395d1aa3537788b8c32065e3d68f4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a20395d1aa3537788b8c32065e3d68f4c">CallAddonCommand</a> (string addonName, string commandName, <a class="el" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html">AddonParameterContainer</a> parameters, string eventId, Action commandCallback)</td></tr>
+<tr class="memdesc:a20395d1aa3537788b8c32065e3d68f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン・コマンド呼出  <br /></td></tr>
+<tr class="separator:a20395d1aa3537788b8c32065e3d68f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab00dc4b5ce14232de65d9b71785113"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#acab00dc4b5ce14232de65d9b71785113">GetCurrentEventId</a> ()</td></tr>
+<tr class="memdesc:acab00dc4b5ce14232de65d9b71785113"><td class="mdescLeft">&#160;</td><td class="mdescRight">カレント・イベントId取得  <br /></td></tr>
+<tr class="separator:acab00dc4b5ce14232de65d9b71785113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9ff6338234a761eddbe514b59812bc"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#aaa9ff6338234a761eddbe514b59812bc">TakeOutCommandCallback</a> ()</td></tr>
+<tr class="memdesc:aaa9ff6338234a761eddbe514b59812bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">コマンド・コールバック持ち帰り  <br /></td></tr>
+<tr class="separator:aaa9ff6338234a761eddbe514b59812bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9012cc6c7edb3e015c918958f422e637"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_1_1_addon_runtime_info.html">AddonRuntimeInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a9012cc6c7edb3e015c918958f422e637">GetAddonRuntimeInfos</a> ()</td></tr>
+<tr class="memdesc:a9012cc6c7edb3e015c918958f422e637"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン実行時情報取得  <br /></td></tr>
+<tr class="separator:a9012cc6c7edb3e015c918958f422e637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344e577c1c56bca294719e3a926f2f54"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a344e577c1c56bca294719e3a926f2f54">GetParameterType</a> (string typeName)</td></tr>
+<tr class="memdesc:a344e577c1c56bca294719e3a926f2f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数タイプ取得  <br /></td></tr>
+<tr class="separator:a344e577c1c56bca294719e3a926f2f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05fdc67490da7ddfc859adf94ab37f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info.html">AddonInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#ab05fdc67490da7ddfc859adf94ab37f6">GetAddonInfo</a> (string addonName)</td></tr>
+<tr class="memdesc:ab05fdc67490da7ddfc859adf94ab37f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン情報取得  <br /></td></tr>
+<tr class="separator:ab05fdc67490da7ddfc859adf94ab37f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e32c655532441b10782b42e4de2ef5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info_container.html">AddonInfoContainer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a03e32c655532441b10782b42e4de2ef5">GetAddonInfos</a> ()</td></tr>
+<tr class="memdesc:a03e32c655532441b10782b42e4de2ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン情報取得  <br /></td></tr>
+<tr class="separator:a03e32c655532441b10782b42e4de2ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0b7a6ce4a3bb00076bcd41aef7e28787"><td class="memItemLeft" align="right" valign="top"><a id="a0b7a6ce4a3bb00076bcd41aef7e28787" name="a0b7a6ce4a3bb00076bcd41aef7e28787"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeOnLoad</b> ()</td></tr>
+<tr class="memdesc:a0b7a6ce4a3bb00076bcd41aef7e28787"><td class="mdescLeft">&#160;</td><td class="mdescRight">ロード時初期化 <br /></td></tr>
+<tr class="separator:a0b7a6ce4a3bb00076bcd41aef7e28787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73698a2c5716da66020e122f79bf97e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#ad73698a2c5716da66020e122f79bf97e">IsArray2Postfix</a> (string typeName)</td></tr>
+<tr class="memdesc:ad73698a2c5716da66020e122f79bf97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列からポストフィックスか？  <br /></td></tr>
+<tr class="separator:ad73698a2c5716da66020e122f79bf97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab441a6f4046846af022d754db8c8887c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#ab441a6f4046846af022d754db8c8887c">IsArrayPostfix</a> (string typeName)</td></tr>
+<tr class="memdesc:ab441a6f4046846af022d754db8c8887c"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列ポストフィックスか？  <br /></td></tr>
+<tr class="separator:ab441a6f4046846af022d754db8c8887c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83444c8516165b54bb9d0702b56f420a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d1/d2e/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon.html#a0e55dce1af9f541702ce13a3ceec2ff4">ParamType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a83444c8516165b54bb9d0702b56f420a">GetParamType</a> (string typeName, out int arrayDimension, out string structName)</td></tr>
+<tr class="memdesc:a83444c8516165b54bb9d0702b56f420a"><td class="mdescLeft">&#160;</td><td class="mdescRight">引数型取得  <br /></td></tr>
+<tr class="separator:a83444c8516165b54bb9d0702b56f420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13273f6e36434dbf1f63c0966bd60787"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a13273f6e36434dbf1f63c0966bd60787">GetTypeName</a> (<a class="el" href="../../d1/d2e/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon.html#a0e55dce1af9f541702ce13a3ceec2ff4">ParamType</a> paramType)</td></tr>
+<tr class="memdesc:a13273f6e36434dbf1f63c0966bd60787"><td class="mdescLeft">&#160;</td><td class="mdescRight">型名取得  <br /></td></tr>
+<tr class="separator:a13273f6e36434dbf1f63c0966bd60787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d5a490e9dea4d2a0538a0a4ea61ec6"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#af9d5a490e9dea4d2a0538a0a4ea61ec6">GetInitialValue</a> (<a class="el" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html">AddonParameterContainer</a> parameters, <a class="el" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html">AddonParamInfo</a> paramInfo)</td></tr>
+<tr class="memdesc:af9d5a490e9dea4d2a0538a0a4ea61ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期値取得  <br /></td></tr>
+<tr class="separator:af9d5a490e9dea4d2a0538a0a4ea61ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb30af24ae8c38e54201b31b8f6a7dc7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#acb30af24ae8c38e54201b31b8f6a7dc7">ApplyAddonInfoToModel</a> (<a class="el" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html">AddonDataModel</a> addonDataModel, <a class="el" href="../../db/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info.html">AddonInfo</a> addonInfo)</td></tr>
+<tr class="memdesc:acb30af24ae8c38e54201b31b8f6a7dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">アドオン情報をモデルへ適用  <br /></td></tr>
+<tr class="separator:acb30af24ae8c38e54201b31b8f6a7dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a9d9500a748cf0ea64e43db853a540902"><td class="memItemLeft" align="right" valign="top"><a id="a9d9500a748cf0ea64e43db853a540902" name="a9d9500a748cf0ea64e43db853a540902"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>PlayerEventId</b> = &quot;-2&quot;</td></tr>
+<tr class="memdesc:a9d9500a748cf0ea64e43db853a540902"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤー・イベントId <br /></td></tr>
+<tr class="separator:a9d9500a748cf0ea64e43db853a540902"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af031d2f55c09b5d3f1404bcb932f7037"><td class="memItemLeft" align="right" valign="top"><a id="af031d2f55c09b5d3f1404bcb932f7037" name="af031d2f55c09b5d3f1404bcb932f7037"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>ThisEventId</b> = &quot;-1&quot;</td></tr>
+<tr class="memdesc:af031d2f55c09b5d3f1404bcb932f7037"><td class="mdescLeft">&#160;</td><td class="mdescRight">このイベントId <br /></td></tr>
+<tr class="separator:af031d2f55c09b5d3f1404bcb932f7037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:aa90721fb5b9a7bf576dd15b68e7d2846"><td class="memItemLeft" align="right" valign="top"><a id="aa90721fb5b9a7bf576dd15b68e7d2846" name="aa90721fb5b9a7bf576dd15b68e7d2846"></a>
+static <a class="el" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html">AddonManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Instance</b><code> [get]</code></td></tr>
+<tr class="memdesc:aa90721fb5b9a7bf576dd15b68e7d2846"><td class="mdescLeft">&#160;</td><td class="mdescRight">実体 <br /></td></tr>
+<tr class="separator:aa90721fb5b9a7bf576dd15b68e7d2846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>アドオン管理者 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="acb30af24ae8c38e54201b31b8f6a7dc7" name="acb30af24ae8c38e54201b31b8f6a7dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb30af24ae8c38e54201b31b8f6a7dc7">&#9670;&#160;</a></span>ApplyAddonInfoToModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Addon.AddonManager.ApplyAddonInfoToModel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html">AddonDataModel</a>&#160;</td>
+          <td class="paramname"><em>addonDataModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info.html">AddonInfo</a>&#160;</td>
+          <td class="paramname"><em>addonInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アドオン情報をモデルへ適用 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addonDataModel</td><td></td></tr>
+    <tr><td class="paramname">addonInfo</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_acb30af24ae8c38e54201b31b8f6a7dc7_cgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_acb30af24ae8c38e54201b31b8f6a7dc7_cgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_acb30af24ae8c38e54201b31b8f6a7dc7_cgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_acb30af24ae8c38e54201b31b8f6a7dc7_cgraph">
+<area shape="rect" title="アドオン情報をモデルへ適用" alt="" coords="5,5,249,64"/>
+<area shape="rect" href="../../d3/d9c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info_container.html#a1bef096e702d9d8fe105896570060595" title="引数情報取得" alt="" coords="297,5,513,64"/>
+<area shape="poly" title=" " alt="" coords="249,32,282,32,282,37,249,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20395d1aa3537788b8c32065e3d68f4c" name="a20395d1aa3537788b8c32065e3d68f4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20395d1aa3537788b8c32065e3d68f4c">&#9670;&#160;</a></span>CallAddonCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Addon.AddonManager.CallAddonCommand </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>addonName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>commandName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html">AddonParameterContainer</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>commandCallback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アドオン・コマンド呼出 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addonName</td><td></td></tr>
+    <tr><td class="paramname">commandName</td><td></td></tr>
+    <tr><td class="paramname">parameters</td><td></td></tr>
+    <tr><td class="paramname">eventId</td><td></td></tr>
+    <tr><td class="paramname">commandCallback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a20395d1aa3537788b8c32065e3d68f4c_cgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a20395d1aa3537788b8c32065e3d68f4c_cgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a20395d1aa3537788b8c32065e3d68f4c_cgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a20395d1aa3537788b8c32065e3d68f4c_cgraph">
+<area shape="rect" title="アドオン・コマンド呼出" alt="" coords="5,51,277,93"/>
+<area shape="rect" href="../../dd/d3c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_instance_container.html#a71273332ad6d64eb1000d50922ca98e2" title="アドオン実体取得" alt="" coords="329,5,558,64"/>
+<area shape="poly" title=" " alt="" coords="277,53,314,48,315,53,278,58"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#af9d5a490e9dea4d2a0538a0a4ea61ec6" title="初期値取得" alt="" coords="325,88,562,131"/>
+<area shape="poly" title=" " alt="" coords="278,86,310,90,310,96,277,91"/>
+<area shape="rect" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html#aee3ccf123913eebbc2cc670543fd8d1e" title="情報取得" alt="" coords="618,51,821,93"/>
+<area shape="poly" title=" " alt="" coords="562,91,602,85,603,90,563,96"/>
+<area shape="rect" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html#a06bf21102dcd45c23a84346743e3be79" title="値取得" alt="" coords="610,117,828,176"/>
+<area shape="poly" title=" " alt="" coords="563,123,596,127,595,133,562,128"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab05fdc67490da7ddfc859adf94ab37f6" name="ab05fdc67490da7ddfc859adf94ab37f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05fdc67490da7ddfc859adf94ab37f6">&#9670;&#160;</a></span>GetAddonInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info.html">AddonInfo</a> RPGMaker.Codebase.Runtime.Addon.AddonManager.GetAddonInfo </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>addonName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アドオン情報取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">addonName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a03e32c655532441b10782b42e4de2ef5" name="a03e32c655532441b10782b42e4de2ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e32c655532441b10782b42e4de2ef5">&#9670;&#160;</a></span>GetAddonInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info_container.html">AddonInfoContainer</a> RPGMaker.Codebase.Runtime.Addon.AddonManager.GetAddonInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アドオン情報取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9012cc6c7edb3e015c918958f422e637" name="a9012cc6c7edb3e015c918958f422e637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9012cc6c7edb3e015c918958f422e637">&#9670;&#160;</a></span>GetAddonRuntimeInfos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_1_1_addon_runtime_info.html">AddonRuntimeInfo</a>[] RPGMaker.Codebase.Runtime.Addon.AddonManager.GetAddonRuntimeInfos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>アドオン実行時情報取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a9012cc6c7edb3e015c918958f422e637_cgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a9012cc6c7edb3e015c918958f422e637_cgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a9012cc6c7edb3e015c918958f422e637_cgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a9012cc6c7edb3e015c918958f422e637_cgraph">
+<area shape="rect" title="アドオン実行時情報取得" alt="" coords="5,5,292,48"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a344e577c1c56bca294719e3a926f2f54" title="引数タイプ取得" alt="" coords="340,5,602,48"/>
+<area shape="poly" title=" " alt="" coords="292,24,324,24,324,29,292,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acab00dc4b5ce14232de65d9b71785113" name="acab00dc4b5ce14232de65d9b71785113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab00dc4b5ce14232de65d9b71785113">&#9670;&#160;</a></span>GetCurrentEventId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Addon.AddonManager.GetCurrentEventId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>カレント・イベントId取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="af9d5a490e9dea4d2a0538a0a4ea61ec6" name="af9d5a490e9dea4d2a0538a0a4ea61ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d5a490e9dea4d2a0538a0a4ea61ec6">&#9670;&#160;</a></span>GetInitialValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Runtime.Addon.AddonManager.GetInitialValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html">AddonParameterContainer</a>&#160;</td>
+          <td class="paramname"><em>parameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html">AddonParamInfo</a>&#160;</td>
+          <td class="paramname"><em>paramInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期値取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters</td><td></td></tr>
+    <tr><td class="paramname">paramInfo</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_cgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_cgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_cgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_cgraph">
+<area shape="rect" title="初期値取得" alt="" coords="5,43,243,85"/>
+<area shape="rect" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html#aee3ccf123913eebbc2cc670543fd8d1e" title="情報取得" alt="" coords="298,5,502,48"/>
+<area shape="poly" title=" " alt="" coords="243,45,283,40,284,45,244,51"/>
+<area shape="rect" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html#a06bf21102dcd45c23a84346743e3be79" title="値取得" alt="" coords="291,72,509,131"/>
+<area shape="poly" title=" " alt="" coords="244,77,276,82,276,87,243,83"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_icgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_icgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_icgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_af9d5a490e9dea4d2a0538a0a4ea61ec6_icgraph">
+<area shape="rect" title="初期値取得" alt="" coords="325,5,562,48"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a20395d1aa3537788b8c32065e3d68f4c" title="アドオン・コマンド呼出" alt="" coords="5,5,277,48"/>
+<area shape="poly" title=" " alt="" coords="310,29,277,29,277,24,310,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a344e577c1c56bca294719e3a926f2f54" name="a344e577c1c56bca294719e3a926f2f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344e577c1c56bca294719e3a926f2f54">&#9670;&#160;</a></span>GetParameterType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Type RPGMaker.Codebase.Runtime.Addon.AddonManager.GetParameterType </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>typeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>引数タイプ取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a344e577c1c56bca294719e3a926f2f54_icgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a344e577c1c56bca294719e3a926f2f54_icgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a344e577c1c56bca294719e3a926f2f54_icgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a344e577c1c56bca294719e3a926f2f54_icgraph">
+<area shape="rect" title="引数タイプ取得" alt="" coords="340,5,602,48"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a9012cc6c7edb3e015c918958f422e637" title="アドオン実行時情報取得" alt="" coords="5,5,292,48"/>
+<area shape="poly" title=" " alt="" coords="324,29,292,29,292,24,324,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83444c8516165b54bb9d0702b56f420a" name="a83444c8516165b54bb9d0702b56f420a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83444c8516165b54bb9d0702b56f420a">&#9670;&#160;</a></span>GetParamType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d1/d2e/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon.html#a0e55dce1af9f541702ce13a3ceec2ff4">ParamType</a> RPGMaker.Codebase.Runtime.Addon.AddonManager.GetParamType </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>typeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out int&#160;</td>
+          <td class="paramname"><em>arrayDimension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>structName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>引数型取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeName</td><td></td></tr>
+    <tr><td class="paramname">arrayDimension</td><td></td></tr>
+    <tr><td class="paramname">structName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a83444c8516165b54bb9d0702b56f420a_cgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a83444c8516165b54bb9d0702b56f420a_cgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a83444c8516165b54bb9d0702b56f420a_cgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_a83444c8516165b54bb9d0702b56f420a_cgraph">
+<area shape="rect" title="引数型取得" alt="" coords="5,39,246,81"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#ad73698a2c5716da66020e122f79bf97e" title="配列からポストフィックスか？" alt="" coords="294,5,535,48"/>
+<area shape="poly" title=" " alt="" coords="246,43,279,40,279,45,246,49"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#ab441a6f4046846af022d754db8c8887c" title="配列ポストフィックスか？" alt="" coords="297,72,532,115"/>
+<area shape="poly" title=" " alt="" coords="246,71,282,75,282,81,246,77"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13273f6e36434dbf1f63c0966bd60787" name="a13273f6e36434dbf1f63c0966bd60787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13273f6e36434dbf1f63c0966bd60787">&#9670;&#160;</a></span>GetTypeName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Runtime.Addon.AddonManager.GetTypeName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d2e/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon.html#a0e55dce1af9f541702ce13a3ceec2ff4">ParamType</a>&#160;</td>
+          <td class="paramname"><em>paramType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>型名取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">paramType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad73698a2c5716da66020e122f79bf97e" name="ad73698a2c5716da66020e122f79bf97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73698a2c5716da66020e122f79bf97e">&#9670;&#160;</a></span>IsArray2Postfix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Addon.AddonManager.IsArray2Postfix </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>typeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配列からポストフィックスか？ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ad73698a2c5716da66020e122f79bf97e_icgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ad73698a2c5716da66020e122f79bf97e_icgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ad73698a2c5716da66020e122f79bf97e_icgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ad73698a2c5716da66020e122f79bf97e_icgraph">
+<area shape="rect" title="配列からポストフィックスか？" alt="" coords="294,5,535,48"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a83444c8516165b54bb9d0702b56f420a" title="引数型取得" alt="" coords="5,5,246,48"/>
+<area shape="poly" title=" " alt="" coords="279,29,246,29,246,24,279,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab441a6f4046846af022d754db8c8887c" name="ab441a6f4046846af022d754db8c8887c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab441a6f4046846af022d754db8c8887c">&#9670;&#160;</a></span>IsArrayPostfix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Runtime.Addon.AddonManager.IsArrayPostfix </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>typeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>配列ポストフィックスか？ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">typeName</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ab441a6f4046846af022d754db8c8887c_icgraph.png" border="0" usemap="#ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ab441a6f4046846af022d754db8c8887c_icgraph" alt=""/></div>
+<map name="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ab441a6f4046846af022d754db8c8887c_icgraph" id="ad4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager_ab441a6f4046846af022d754db8c8887c_icgraph">
+<area shape="rect" title="配列ポストフィックスか？" alt="" coords="294,5,528,48"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a83444c8516165b54bb9d0702b56f420a" title="引数型取得" alt="" coords="5,5,246,48"/>
+<area shape="poly" title=" " alt="" coords="279,29,246,29,246,24,279,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa9ff6338234a761eddbe514b59812bc" name="aaa9ff6338234a761eddbe514b59812bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9ff6338234a761eddbe514b59812bc">&#9670;&#160;</a></span>TakeOutCommandCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action RPGMaker.Codebase.Runtime.Addon.AddonManager.TakeOutCommandCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コマンド・コールバック持ち帰り </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Addon/Service/AddonManager.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

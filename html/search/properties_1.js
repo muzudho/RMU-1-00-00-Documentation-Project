@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['actions_0',['Actions',['../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a853965ac1a52bdffdad0a58ab4aa60a1',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameBattler']]],
+  ['active_1',['Active',['../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ab28e9742db297ca59316737d79217d78',1,'RPGMaker::Codebase::Runtime::Battle::Window::WindowBattle']]],
+  ['actor_2',['Actor',['../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a66f633cf6cd1f5efd207be486d0b10ef',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameActor']]],
+  ['actorid_3',['ActorId',['../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#ab992dd3a5bcc05771a59ce78945c8daa',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameActor']]],
+  ['actors_4',['Actors',['../d0/d67/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_misc_1_1_battle_scene_transition.html#a1071512f120e227a3d9d717a680031b5',1,'RPGMaker.Codebase.CoreSystem.Knowledge.Misc.BattleSceneTransition.Actors'],['../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#a40634094bb6465edb6a16f4fe1e06e59',1,'RPGMaker.Codebase.Runtime.Battle.Objects.GameParty.Actors']]],
+  ['addedbuffs_5',['AddedBuffs',['../db/d27/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action_result.html#a78e69e68c285faf573fec444212058eb',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameActionResult']]],
+  ['addeddebuffs_6',['AddedDebuffs',['../db/d27/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action_result.html#a80a3f3199f78f518bd2705fc48f15684',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameActionResult']]],
+  ['addedstates_7',['AddedStates',['../db/d27/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action_result.html#ad78c0bc79a8b1ff5a2f7f1a11813e43c',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameActionResult']]],
+  ['agi_8',['Agi',['../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ae436cb4b73fadb5c44e67e866ce02363',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameBattlerBase']]],
+  ['animationid_9',['AnimationId',['../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a270cdf3efa13f4bf286e31d428db00ad',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameItem']]],
+  ['armordata_10',['ArmorData',['../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a3b3e43a00220c2c060a6acc04bfa9ed1',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameItem']]],
+  ['atk_11',['Atk',['../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ad6a6b60e8d63777dcf3eba0d7e86f081',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameBattlerBase']]],
+  ['attacktype_12',['AttackType',['../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a33e9ab846548d2e72c596bdb94202aac',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameItem']]],
+  ['atypeid_13',['ATypeId',['../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html#a83a3d7438ae622e6808082b7f45a486a',1,'RPGMaker::Codebase::Runtime::Battle::Objects::GameItem']]]
+];

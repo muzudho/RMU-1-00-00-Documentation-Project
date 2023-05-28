@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d3/def/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle.html">Battle</a></li><li class="navelem"><a class="el" href="../../de/d39/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites.html">Sprites</a></li><li class="navelem"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html">SpriteEnemy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="../../de/d27/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>[敵キャラ]表示用のスプライトクラス  
+ <a href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/db7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_inherit__map">
+<area shape="rect" title="[敵キャラ]表示用のスプライトクラス" alt="" coords="5,229,209,272"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html" title="戦闘シーンで表示されるキャラ画像" alt="" coords="60,155,154,181"/>
+<area shape="poly" title=" " alt="" coords="110,196,110,229,104,229,104,196"/>
+<area shape="rect" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html" title="アニメーションする表示物のためのクラス" alt="" coords="64,80,150,107"/>
+<area shape="poly" title=" " alt="" coords="110,122,110,154,104,154,104,122"/>
+<area shape="rect" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html" title="Unity用の部品" alt="" coords="79,5,135,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_sprites_8_sprite_enemy_coll__map">
+<area shape="rect" title="[敵キャラ]表示用のスプライトクラス" alt="" coords="272,477,475,520"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html" title="戦闘シーンで表示されるキャラ画像" alt="" coords="327,401,420,428"/>
+<area shape="poly" title=" " alt="" coords="376,443,376,477,371,477,371,443"/>
+<area shape="rect" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html" title="アニメーションする表示物のためのクラス" alt="" coords="187,303,272,329"/>
+<area shape="poly" title=" " alt="" coords="262,336,356,399,353,403,259,340"/>
+<area shape="rect" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html" title="Unity用の部品" alt="" coords="79,112,135,139"/>
+<area shape="poly" title=" " alt="" coords="106,153,107,191,111,211,119,229,136,252,158,272,203,300,200,305,154,276,132,256,114,232,106,212,102,192,101,153"/>
+<area shape="rect" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html" title="アニメーションする表示物のためのクラス" alt="" coords="128,188,331,231"/>
+<area shape="poly" title=" " alt="" coords="139,145,200,185,197,190,136,149"/>
+<area shape="rect" href="../../dc/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_anchor.html" title="SpriteのAnchor設定用クラス" alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="110,63,110,112,104,112,104,63"/>
+<area shape="poly" title=" " alt="" coords="232,246,232,302,227,302,227,246"/>
+<area shape="poly" title=" " alt="" coords="347,201,358,209,350,217,332,220,331,214,348,212,353,209,345,206"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html" title="戦闘シーンでのアイコンやアニメーションを含む、バトラーの動作を制御する" alt="" coords="387,295,590,337"/>
+<area shape="poly" title=" " alt="" coords="455,349,390,403,387,399,451,345"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html" title="BattleManager に保持され、戦闘シーンでのパラメータの計算に利用される" alt="" coords="457,196,581,223"/>
+<area shape="poly" title=" " alt="" coords="514,238,497,295,492,293,509,236"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa19841a14f352f9276723d5dfa94a8d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html">GameEnemy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aa19841a14f352f9276723d5dfa94a8d2">GetGameEnemy</a> ()</td></tr>
+<tr class="memdesc:aa19841a14f352f9276723d5dfa94a8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">GameEnemy取得  <br /></td></tr>
+<tr class="separator:aa19841a14f352f9276723d5dfa94a8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0210eaf48bc01b8b4eabc34d01ee489"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ad0210eaf48bc01b8b4eabc34d01ee489">Initialize</a> (<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> battler)</td></tr>
+<tr class="memdesc:ad0210eaf48bc01b8b4eabc34d01ee489"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="separator:ad0210eaf48bc01b8b4eabc34d01ee489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5f3cca4b064d8f901d48aa19c05bec"><td class="memItemLeft" align="right" valign="top"><a id="a4f5f3cca4b064d8f901d48aa19c05bec" name="a4f5f3cca4b064d8f901d48aa19c05bec"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>InitMembers</b> ()</td></tr>
+<tr class="memdesc:a4f5f3cca4b064d8f901d48aa19c05bec"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化 <br /></td></tr>
+<tr class="separator:a4f5f3cca4b064d8f901d48aa19c05bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8848832996473bf910c5fd802fdaf1e"><td class="memItemLeft" align="right" valign="top"><a id="ae8848832996473bf910c5fd802fdaf1e" name="ae8848832996473bf910c5fd802fdaf1e"></a>
+async void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStateIconSprite</b> ()</td></tr>
+<tr class="memdesc:ae8848832996473bf910c5fd802fdaf1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイコン初期化 <br /></td></tr>
+<tr class="separator:ae8848832996473bf910c5fd802fdaf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff89cb865ec81264075c4411b526899a"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aff89cb865ec81264075c4411b526899a">SetBattler</a> (<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> battler)</td></tr>
+<tr class="memdesc:aff89cb865ec81264075c4411b526899a"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトラーを設定  <br /></td></tr>
+<tr class="separator:aff89cb865ec81264075c4411b526899a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf72b9d5df7b1707657b454001793e93"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#adf72b9d5df7b1707657b454001793e93">EnemyId</a> ()</td></tr>
+<tr class="memdesc:adf72b9d5df7b1707657b454001793e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵のID返却  <br /></td></tr>
+<tr class="separator:adf72b9d5df7b1707657b454001793e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390468899d86061181dd8b47f1357bff"><td class="memItemLeft" align="right" valign="top"><a id="a390468899d86061181dd8b47f1357bff" name="a390468899d86061181dd8b47f1357bff"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeHandler</b> ()</td></tr>
+<tr class="memdesc:a390468899d86061181dd8b47f1357bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:a390468899d86061181dd8b47f1357bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c0da070699d22220c437ef4e1397b1"><td class="memItemLeft" align="right" valign="top"><a id="a36c0da070699d22220c437ef4e1397b1" name="a36c0da070699d22220c437ef4e1397b1"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBitmap</b> ()</td></tr>
+<tr class="memdesc:a36c0da070699d22220c437ef4e1397b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">画像のアップデート <br /></td></tr>
+<tr class="separator:a36c0da070699d22220c437ef4e1397b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43be3520a2a83e0336826a6c60d200d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a43be3520a2a83e0336826a6c60d200d6">LoadBitmap</a> (string name, int hue)</td></tr>
+<tr class="memdesc:a43be3520a2a83e0336826a6c60d200d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したビットマップ画像を読み込む  <br /></td></tr>
+<tr class="separator:a43be3520a2a83e0336826a6c60d200d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2595db9bb377ff29b8aeda0f1473093a"><td class="memItemLeft" align="right" valign="top"><a id="a2595db9bb377ff29b8aeda0f1473093a" name="a2595db9bb377ff29b8aeda0f1473093a"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFrame</b> ()</td></tr>
+<tr class="memdesc:a2595db9bb377ff29b8aeda0f1473093a"><td class="mdescLeft">&#160;</td><td class="mdescRight">フレームのアップデート <br /></td></tr>
+<tr class="separator:a2595db9bb377ff29b8aeda0f1473093a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89547fdc45d3490d35a5cab22b3550c5"><td class="memItemLeft" align="right" valign="top"><a id="a89547fdc45d3490d35a5cab22b3550c5" name="a89547fdc45d3490d35a5cab22b3550c5"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()</td></tr>
+<tr class="memdesc:a89547fdc45d3490d35a5cab22b3550c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置のアップデート <br /></td></tr>
+<tr class="separator:a89547fdc45d3490d35a5cab22b3550c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53dc8f75adfa22baab08eeb4dde00f2c"><td class="memItemLeft" align="right" valign="top"><a id="a53dc8f75adfa22baab08eeb4dde00f2c" name="a53dc8f75adfa22baab08eeb4dde00f2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateStateSprite</b> ()</td></tr>
+<tr class="memdesc:a53dc8f75adfa22baab08eeb4dde00f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ステートスプライトをアップデート <br /></td></tr>
+<tr class="separator:a53dc8f75adfa22baab08eeb4dde00f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffacf5a1c9677fd42271d87d8081b0d"><td class="memItemLeft" align="right" valign="top"><a id="a5ffacf5a1c9677fd42271d87d8081b0d" name="a5ffacf5a1c9677fd42271d87d8081b0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitVisibility</b> ()</td></tr>
+<tr class="memdesc:a5ffacf5a1c9677fd42271d87d8081b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示状態を初期化 <br /></td></tr>
+<tr class="separator:a5ffacf5a1c9677fd42271d87d8081b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39aaa805516cab029f2cc9e96231d4ea"><td class="memItemLeft" align="right" valign="top"><a id="a39aaa805516cab029f2cc9e96231d4ea" name="a39aaa805516cab029f2cc9e96231d4ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupEffect</b> ()</td></tr>
+<tr class="memdesc:a39aaa805516cab029f2cc9e96231d4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトの準備 <br /></td></tr>
+<tr class="separator:a39aaa805516cab029f2cc9e96231d4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2ef4d3985f5e98814dc6f2a6f49c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a7c2ef4d3985f5e98814dc6f2a6f49c2a">StartEffect</a> (string effectType)</td></tr>
+<tr class="memdesc:a7c2ef4d3985f5e98814dc6f2a6f49c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したエフェクトの開始  <br /></td></tr>
+<tr class="separator:a7c2ef4d3985f5e98814dc6f2a6f49c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485ceb05e15b2856991960925a060760"><td class="memItemLeft" align="right" valign="top"><a id="a485ceb05e15b2856991960925a060760" name="a485ceb05e15b2856991960925a060760"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartAppear</b> ()</td></tr>
+<tr class="memdesc:a485ceb05e15b2856991960925a060760"><td class="mdescLeft">&#160;</td><td class="mdescRight">出現の開始 <br /></td></tr>
+<tr class="separator:a485ceb05e15b2856991960925a060760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f671a9de94adcbc48bcdb9ad2270cb"><td class="memItemLeft" align="right" valign="top"><a id="af5f671a9de94adcbc48bcdb9ad2270cb" name="af5f671a9de94adcbc48bcdb9ad2270cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDisappear</b> ()</td></tr>
+<tr class="memdesc:af5f671a9de94adcbc48bcdb9ad2270cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">消滅の開始 <br /></td></tr>
+<tr class="separator:af5f671a9de94adcbc48bcdb9ad2270cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81db798d343153ebe47bc8f7ba49de4"><td class="memItemLeft" align="right" valign="top"><a id="ac81db798d343153ebe47bc8f7ba49de4" name="ac81db798d343153ebe47bc8f7ba49de4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartWhiten</b> ()</td></tr>
+<tr class="memdesc:ac81db798d343153ebe47bc8f7ba49de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">白く変化開始 <br /></td></tr>
+<tr class="separator:ac81db798d343153ebe47bc8f7ba49de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a448ccaa514d14053cc84a0009168f759"><td class="memItemLeft" align="right" valign="top"><a id="a448ccaa514d14053cc84a0009168f759" name="a448ccaa514d14053cc84a0009168f759"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartSelect</b> ()</td></tr>
+<tr class="memdesc:a448ccaa514d14053cc84a0009168f759"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵の選択表示アニメーション開始 <br /></td></tr>
+<tr class="separator:a448ccaa514d14053cc84a0009168f759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee292eb5b9222149ae6b78ede3d57737"><td class="memItemLeft" align="right" valign="top"><a id="aee292eb5b9222149ae6b78ede3d57737" name="aee292eb5b9222149ae6b78ede3d57737"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartBlink</b> ()</td></tr>
+<tr class="memdesc:aee292eb5b9222149ae6b78ede3d57737"><td class="mdescLeft">&#160;</td><td class="mdescRight">点滅の開始 <br /></td></tr>
+<tr class="separator:aee292eb5b9222149ae6b78ede3d57737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd20b6c1ceca769c72a6a6038058dfd"><td class="memItemLeft" align="right" valign="top"><a id="a0bd20b6c1ceca769c72a6a6038058dfd" name="a0bd20b6c1ceca769c72a6a6038058dfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartCollapse</b> ()</td></tr>
+<tr class="memdesc:a0bd20b6c1ceca769c72a6a6038058dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - 通常]開始 <br /></td></tr>
+<tr class="separator:a0bd20b6c1ceca769c72a6a6038058dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3311965d42e827933e8fae74699448"><td class="memItemLeft" align="right" valign="top"><a id="a9d3311965d42e827933e8fae74699448" name="a9d3311965d42e827933e8fae74699448"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartBossCollapse</b> ()</td></tr>
+<tr class="memdesc:a9d3311965d42e827933e8fae74699448"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - ボス]開始 <br /></td></tr>
+<tr class="separator:a9d3311965d42e827933e8fae74699448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab936514e3b9dd3be1df5e2aec8559a94"><td class="memItemLeft" align="right" valign="top"><a id="ab936514e3b9dd3be1df5e2aec8559a94" name="ab936514e3b9dd3be1df5e2aec8559a94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartInstantCollapse</b> ()</td></tr>
+<tr class="memdesc:ab936514e3b9dd3be1df5e2aec8559a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - 瞬間消去]開始 <br /></td></tr>
+<tr class="separator:ab936514e3b9dd3be1df5e2aec8559a94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50803cbc5aba7b5ad0094cc0a57f3356"><td class="memItemLeft" align="right" valign="top"><a id="a50803cbc5aba7b5ad0094cc0a57f3356" name="a50803cbc5aba7b5ad0094cc0a57f3356"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateEffect</b> ()</td></tr>
+<tr class="memdesc:a50803cbc5aba7b5ad0094cc0a57f3356"><td class="mdescLeft">&#160;</td><td class="mdescRight">エフェクトをアップデート <br /></td></tr>
+<tr class="separator:a50803cbc5aba7b5ad0094cc0a57f3356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d94775c2ee28f908fd4b3a55b5b3671"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a1d94775c2ee28f908fd4b3a55b5b3671">IsEffecting</a> ()</td></tr>
+<tr class="memdesc:a1d94775c2ee28f908fd4b3a55b5b3671"><td class="mdescLeft">&#160;</td><td class="mdescRight">効果が加わっているか  <br /></td></tr>
+<tr class="separator:a1d94775c2ee28f908fd4b3a55b5b3671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c1b678614691402c6438c6650f222c"><td class="memItemLeft" align="right" valign="top"><a id="a25c1b678614691402c6438c6650f222c" name="a25c1b678614691402c6438c6650f222c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RevertToNormal</b> ()</td></tr>
+<tr class="memdesc:a25c1b678614691402c6438c6650f222c"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態を通常に戻す <br /></td></tr>
+<tr class="separator:a25c1b678614691402c6438c6650f222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda1b1547c41c5fff4a5a138ba8fad9d"><td class="memItemLeft" align="right" valign="top"><a id="aeda1b1547c41c5fff4a5a138ba8fad9d" name="aeda1b1547c41c5fff4a5a138ba8fad9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetSelect</b> ()</td></tr>
+<tr class="memdesc:aeda1b1547c41c5fff4a5a138ba8fad9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵の選択アニメーションをやめる <br /></td></tr>
+<tr class="separator:aeda1b1547c41c5fff4a5a138ba8fad9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e18e7c8363617e98a64292c2b666178"><td class="memItemLeft" align="right" valign="top"><a id="a5e18e7c8363617e98a64292c2b666178" name="a5e18e7c8363617e98a64292c2b666178"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWhiten</b> ()</td></tr>
+<tr class="memdesc:a5e18e7c8363617e98a64292c2b666178"><td class="mdescLeft">&#160;</td><td class="mdescRight">白エフェクトをアップデート <br /></td></tr>
+<tr class="separator:a5e18e7c8363617e98a64292c2b666178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635b13d63339f2e1127eb43dedcca1f4"><td class="memItemLeft" align="right" valign="top"><a id="a635b13d63339f2e1127eb43dedcca1f4" name="a635b13d63339f2e1127eb43dedcca1f4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSelect</b> ()</td></tr>
+<tr class="memdesc:a635b13d63339f2e1127eb43dedcca1f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵の選択アニメーション更新 <br /></td></tr>
+<tr class="separator:a635b13d63339f2e1127eb43dedcca1f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fc936d82f17d2d76a376b8b04a78e18"><td class="memItemLeft" align="right" valign="top"><a id="a0fc936d82f17d2d76a376b8b04a78e18" name="a0fc936d82f17d2d76a376b8b04a78e18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBlink</b> ()</td></tr>
+<tr class="memdesc:a0fc936d82f17d2d76a376b8b04a78e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">点滅をアップデート <br /></td></tr>
+<tr class="separator:a0fc936d82f17d2d76a376b8b04a78e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9893c30326e1ffbf1bc37120b7dd5ec5"><td class="memItemLeft" align="right" valign="top"><a id="a9893c30326e1ffbf1bc37120b7dd5ec5" name="a9893c30326e1ffbf1bc37120b7dd5ec5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAppear</b> ()</td></tr>
+<tr class="memdesc:a9893c30326e1ffbf1bc37120b7dd5ec5"><td class="mdescLeft">&#160;</td><td class="mdescRight">出現エフェクトをアップデート <br /></td></tr>
+<tr class="separator:a9893c30326e1ffbf1bc37120b7dd5ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b89f8cb37e009f6f711aafe123b62bb"><td class="memItemLeft" align="right" valign="top"><a id="a3b89f8cb37e009f6f711aafe123b62bb" name="a3b89f8cb37e009f6f711aafe123b62bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDisappear</b> ()</td></tr>
+<tr class="memdesc:a3b89f8cb37e009f6f711aafe123b62bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">消滅エフェクトをアップデート <br /></td></tr>
+<tr class="separator:a3b89f8cb37e009f6f711aafe123b62bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a3134e571dac96b038922fdd3a9370"><td class="memItemLeft" align="right" valign="top"><a id="aa9a3134e571dac96b038922fdd3a9370" name="aa9a3134e571dac96b038922fdd3a9370"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCollapse</b> ()</td></tr>
+<tr class="memdesc:aa9a3134e571dac96b038922fdd3a9370"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - 通常]をアップデート <br /></td></tr>
+<tr class="separator:aa9a3134e571dac96b038922fdd3a9370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee50d89ae23962bc06aad315145d6d87"><td class="memItemLeft" align="right" valign="top"><a id="aee50d89ae23962bc06aad315145d6d87" name="aee50d89ae23962bc06aad315145d6d87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBossCollapse</b> ()</td></tr>
+<tr class="memdesc:aee50d89ae23962bc06aad315145d6d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - ボス]をアップデート <br /></td></tr>
+<tr class="separator:aee50d89ae23962bc06aad315145d6d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182cb5066b571cc131154cdd17778391"><td class="memItemLeft" align="right" valign="top"><a id="a182cb5066b571cc131154cdd17778391" name="a182cb5066b571cc131154cdd17778391"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateInstantCollapse</b> ()</td></tr>
+<tr class="memdesc:a182cb5066b571cc131154cdd17778391"><td class="mdescLeft">&#160;</td><td class="mdescRight">[消滅エフェクト - 瞬間消去]をアップデート <br /></td></tr>
+<tr class="separator:a182cb5066b571cc131154cdd17778391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e60571bd5e9ea4f5c70bbde9aa4288c"><td class="memItemLeft" align="right" valign="top">override float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a0e60571bd5e9ea4f5c70bbde9aa4288c">DamageOffsetX</a> ()</td></tr>
+<tr class="memdesc:a0e60571bd5e9ea4f5c70bbde9aa4288c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ表示のOffsetX  <br /></td></tr>
+<tr class="separator:a0e60571bd5e9ea4f5c70bbde9aa4288c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb976df13babeec59694229cbaf4198"><td class="memItemLeft" align="right" valign="top">override float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a8fb976df13babeec59694229cbaf4198">DamageOffsetY</a> ()</td></tr>
+<tr class="memdesc:a8fb976df13babeec59694229cbaf4198"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ表示のOffsetY  <br /></td></tr>
+<tr class="separator:a8fb976df13babeec59694229cbaf4198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac403a373d259a368b9ffc3d2ea5e9742 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ac403a373d259a368b9ffc3d2ea5e9742">Initialize</a> (<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> battler)</td></tr>
+<tr class="memdesc:ac403a373d259a368b9ffc3d2ea5e9742 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="separator:ac403a373d259a368b9ffc3d2ea5e9742 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7602419d018185a702713bc8d36532dd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>InitMembers</b> ()</td></tr>
+<tr class="memdesc:a7602419d018185a702713bc8d36532dd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">メンバ変数を初期化 <br /></td></tr>
+<tr class="separator:a7602419d018185a702713bc8d36532dd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71943849e614d4781d2c98ed0b60ad8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ae71943849e614d4781d2c98ed0b60ad8">SetBattler</a> (<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> battler)</td></tr>
+<tr class="memdesc:ae71943849e614d4781d2c98ed0b60ad8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトラーを設定  <br /></td></tr>
+<tr class="separator:ae71943849e614d4781d2c98ed0b60ad8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e61e371e7d35f34d4c1bd14243f9b3 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a14e61e371e7d35f34d4c1bd14243f9b3">SetHome</a> (float x, float y)</td></tr>
+<tr class="memdesc:a14e61e371e7d35f34d4c1bd14243f9b3 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">基点を設定  <br /></td></tr>
+<tr class="separator:a14e61e371e7d35f34d4c1bd14243f9b3 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4083c68c978af63bb4c10bdcedbc990f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeHandler</b> ()</td></tr>
+<tr class="memdesc:a4083c68c978af63bb4c10bdcedbc990f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:a4083c68c978af63bb4c10bdcedbc990f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550b92298c30603e87dc626b71d01f45 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHide</b> ()</td></tr>
+<tr class="memdesc:a550b92298c30603e87dc626b71d01f45 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトラーを非表示にする Unite固有処理 <br /></td></tr>
+<tr class="separator:a550b92298c30603e87dc626b71d01f45 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a328c137bd1bbff15959b0d6e036407 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVisibility</b> ()</td></tr>
+<tr class="memdesc:a9a328c137bd1bbff15959b0d6e036407 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示・非表示のアップデート <br /></td></tr>
+<tr class="separator:a9a328c137bd1bbff15959b0d6e036407 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8f3e1140de33450fc6a808249d0a91 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMain</b> ()</td></tr>
+<tr class="memdesc:a6a8f3e1140de33450fc6a808249d0a91 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">主要なアップデート <br /></td></tr>
+<tr class="separator:a6a8f3e1140de33450fc6a808249d0a91 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bb407e5a9e6278df1e20e993d045ed inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBitmap</b> ()</td></tr>
+<tr class="memdesc:a88bb407e5a9e6278df1e20e993d045ed inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">画像のアップデート <br /></td></tr>
+<tr class="separator:a88bb407e5a9e6278df1e20e993d045ed inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c50554e9f97e6b5db906c91a4536933 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFrame</b> ()</td></tr>
+<tr class="memdesc:a0c50554e9f97e6b5db906c91a4536933 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">フレームのアップデート <br /></td></tr>
+<tr class="separator:a0c50554e9f97e6b5db906c91a4536933 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d68d17b7af69d0231143236ca6f5c2c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMove</b> ()</td></tr>
+<tr class="memdesc:a9d68d17b7af69d0231143236ca6f5c2c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動のアップデート <br /></td></tr>
+<tr class="separator:a9d68d17b7af69d0231143236ca6f5c2c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b18ab126f3a27e020a83060f30ea96d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePosition</b> ()</td></tr>
+<tr class="memdesc:a4b18ab126f3a27e020a83060f30ea96d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置のアップデート <br /></td></tr>
+<tr class="separator:a4b18ab126f3a27e020a83060f30ea96d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4566371629fc426ecfedb434a9a2cc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAnimation</b> ()</td></tr>
+<tr class="memdesc:a9a4566371629fc426ecfedb434a9a2cc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのアップデート <br /></td></tr>
+<tr class="separator:a9a4566371629fc426ecfedb434a9a2cc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae128d3e09a2e0c5def040d04c8e656b4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDamagePopup</b> ()</td></tr>
+<tr class="memdesc:ae128d3e09a2e0c5def040d04c8e656b4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージポップアップのアップデート <br /></td></tr>
+<tr class="separator:ae128d3e09a2e0c5def040d04c8e656b4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75ff7a5cdc3a534a19d13fd3d1b0a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSelectionEffect</b> ()</td></tr>
+<tr class="memdesc:ac75ff7a5cdc3a534a19d13fd3d1b0a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">選択エフェクトのアップデート <br /></td></tr>
+<tr class="separator:ac75ff7a5cdc3a534a19d13fd3d1b0a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d8edc563840302afe5bfbbac6d4d5a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupAnimation</b> ()</td></tr>
+<tr class="memdesc:a39d8edc563840302afe5bfbbac6d4d5a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの準備 <br /></td></tr>
+<tr class="separator:a39d8edc563840302afe5bfbbac6d4d5a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe9fe94f6564adc4d17de52415c31a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDamagePopup</b> ()</td></tr>
+<tr class="memdesc:abfe9fe94f6564adc4d17de52415c31a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージポップアップの準備 <br /></td></tr>
+<tr class="separator:abfe9fe94f6564adc4d17de52415c31a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f473aa81d2530d6f9c17205e1ace810 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a2f473aa81d2530d6f9c17205e1ace810">DamageOffsetX</a> ()</td></tr>
+<tr class="memdesc:a2f473aa81d2530d6f9c17205e1ace810 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージの xオフセットを返す  <br /></td></tr>
+<tr class="separator:a2f473aa81d2530d6f9c17205e1ace810 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93011f55b5bba40d0e8290cc8b0a6cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ae93011f55b5bba40d0e8290cc8b0a6cb">DamageOffsetY</a> ()</td></tr>
+<tr class="memdesc:ae93011f55b5bba40d0e8290cc8b0a6cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージの yオフセットを返す  <br /></td></tr>
+<tr class="separator:ae93011f55b5bba40d0e8290cc8b0a6cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a67f1fc41f559e8aabefa18d4d775a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a69a67f1fc41f559e8aabefa18d4d775a">StartMove</a> (float x, float y, float duration)</td></tr>
+<tr class="memdesc:a69a67f1fc41f559e8aabefa18d4d775a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定座標へ移動開始  <br /></td></tr>
+<tr class="separator:a69a67f1fc41f559e8aabefa18d4d775a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47c28205c2c8b92617c99141e0cd8d7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMoveEnd</b> ()</td></tr>
+<tr class="memdesc:af47c28205c2c8b92617c99141e0cd8d7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動が終わった時に呼ばれるハンドラ <br /></td></tr>
+<tr class="separator:af47c28205c2c8b92617c99141e0cd8d7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02b9de15331b0235d331067c5348a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#aa02b9de15331b0235d331067c5348a1c">IsEffecting</a> ()</td></tr>
+<tr class="memdesc:aa02b9de15331b0235d331067c5348a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">効果が加わっているか(常にfalse)  <br /></td></tr>
+<tr class="separator:aa02b9de15331b0235d331067c5348a1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504582210ded283b1800324cab20aacb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a504582210ded283b1800324cab20aacb">IsMoving</a> ()</td></tr>
+<tr class="memdesc:a504582210ded283b1800324cab20aacb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動中か  <br /></td></tr>
+<tr class="separator:a504582210ded283b1800324cab20aacb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792b4ef52ac388cab40498f6943c2998 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a792b4ef52ac388cab40498f6943c2998">InHomePosition</a> ()</td></tr>
+<tr class="memdesc:a792b4ef52ac388cab40498f6943c2998 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">基点にいるか  <br /></td></tr>
+<tr class="separator:a792b4ef52ac388cab40498f6943c2998 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a9bc049f51fe5b39cec4cf126fe43dd07 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a9bc049f51fe5b39cec4cf126fe43dd07 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理 <br /></td></tr>
+<tr class="separator:a9bc049f51fe5b39cec4cf126fe43dd07 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a818c06e7e1de23014f5589bbbccf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTimeHandler</b> ()</td></tr>
+<tr class="memdesc:a79a818c06e7e1de23014f5589bbbccf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:a79a818c06e7e1de23014f5589bbbccf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4752bcedd7e3588b5aae0b60d9ef52a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
+<tr class="memdesc:a4752bcedd7e3588b5aae0b60d9ef52a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">非表示とする <br /></td></tr>
+<tr class="separator:a4752bcedd7e3588b5aae0b60d9ef52a1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8dbba4682394406f24318bf03011ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
+<tr class="memdesc:a3f8dbba4682394406f24318bf03011ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示する <br /></td></tr>
+<tr class="separator:a3f8dbba4682394406f24318bf03011ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269e95e5116dfa64c64abc9d17f24a76 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVisibility</b> ()</td></tr>
+<tr class="memdesc:a269e95e5116dfa64c64abc9d17f24a76 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示状況を更新する <br /></td></tr>
+<tr class="separator:a269e95e5116dfa64c64abc9d17f24a76 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671622f947ae2600741193ffd37380bc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html#a671622f947ae2600741193ffd37380bc">StartAnimation</a> (AnimationDataModel animation, bool mirror, float delay, bool isActor)</td></tr>
+<tr class="memdesc:a671622f947ae2600741193ffd37380bc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの再生開始  <br /></td></tr>
+<tr class="separator:a671622f947ae2600741193ffd37380bc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d60b78140ab5a96c01a7c2ef38dc0cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html#a6d60b78140ab5a96c01a7c2ef38dc0cb">IsAnimationPlaying</a> ()</td></tr>
+<tr class="memdesc:a6d60b78140ab5a96c01a7c2ef38dc0cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション再生中かどうか  <br /></td></tr>
+<tr class="separator:a6d60b78140ab5a96c01a7c2ef38dc0cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html">RPGMaker.Codebase.Runtime.Battle.Sprites.Sprite</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ae6aa897c23cc58592aec45f4aaa8c537 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#ae6aa897c23cc58592aec45f4aaa8c537">SetSprite</a> (Texture2D texture2D)</td></tr>
+<tr class="memdesc:ae6aa897c23cc58592aec45f4aaa8c537 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprite設定  <br /></td></tr>
+<tr class="separator:ae6aa897c23cc58592aec45f4aaa8c537 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815472457b34125acc67d5797e458f3d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#a815472457b34125acc67d5797e458f3d">SetTextureUV</a> (Vector2 start, Vector2 end)</td></tr>
+<tr class="memdesc:a815472457b34125acc67d5797e458f3d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">テクスチャUVの設定  <br /></td></tr>
+<tr class="separator:a815472457b34125acc67d5797e458f3d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab650b9946e23a1215ccb7b379f86a5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#a1ab650b9946e23a1215ccb7b379f86a5">SetSize</a> (Vector2 size)</td></tr>
+<tr class="memdesc:a1ab650b9946e23a1215ccb7b379f86a5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">サイズ設定  <br /></td></tr>
+<tr class="separator:a1ab650b9946e23a1215ccb7b379f86a5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055cfecb11b5b4714a7c5edfbfc6cff1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> ()</td></tr>
+<tr class="memdesc:a055cfecb11b5b4714a7c5edfbfc6cff1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化処理 <br /></td></tr>
+<tr class="separator:a055cfecb11b5b4714a7c5edfbfc6cff1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfea0a47930d10d10103da5d95016fcf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#adfea0a47930d10d10103da5d95016fcf">SetBlendColor</a> (List&lt; int &gt; color)</td></tr>
+<tr class="memdesc:adfea0a47930d10d10103da5d95016fcf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">BlendColor設定  <br /></td></tr>
+<tr class="separator:adfea0a47930d10d10103da5d95016fcf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e469d231dabee48cc1fc6670a58bce7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a7e469d231dabee48cc1fc6670a58bce7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理 <br /></td></tr>
+<tr class="separator:a7e469d231dabee48cc1fc6670a58bce7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a0c835fc1ec0965756a0a4e650236d59e"><td class="memItemLeft" align="right" valign="top"><a id="a0c835fc1ec0965756a0a4e650236d59e" name="a0c835fc1ec0965756a0a4e650236d59e"></a>
+override float&#160;</td><td class="memItemRight" valign="bottom"><b>X</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a0c835fc1ec0965756a0a4e650236d59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">X <br /></td></tr>
+<tr class="separator:a0c835fc1ec0965756a0a4e650236d59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4585024d4a9f8a6693ab05ddd87d2176"><td class="memItemLeft" align="right" valign="top"><a id="a4585024d4a9f8a6693ab05ddd87d2176" name="a4585024d4a9f8a6693ab05ddd87d2176"></a>
+override float&#160;</td><td class="memItemRight" valign="bottom"><b>Y</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4585024d4a9f8a6693ab05ddd87d2176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y <br /></td></tr>
+<tr class="separator:a4585024d4a9f8a6693ab05ddd87d2176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html">RPGMaker.Codebase.Runtime.Battle.Sprites.Sprite</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:aab4fadf7d03dbb02299dd4b67da746f8 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+Bitmap&#160;</td><td class="memItemRight" valign="bottom"><b>bitmap</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:aab4fadf7d03dbb02299dd4b67da746f8 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmap <br /></td></tr>
+<tr class="separator:aab4fadf7d03dbb02299dd4b67da746f8 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d57e9a16634cc94152b04eaab4e655 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+OverrideTexture&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a87d57e9a16634cc94152b04eaab4e655 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture <br /></td></tr>
+<tr class="separator:a87d57e9a16634cc94152b04eaab4e655 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3de010f91381364119ba0737d5552e inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html">Sprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Parent</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a9d3de010f91381364119ba0737d5552e inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">親 <br /></td></tr>
+<tr class="separator:a9d3de010f91381364119ba0737d5552e inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5952c1b5746799046fe1a3e75329559 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>X</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa5952c1b5746799046fe1a3e75329559 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">X <br /></td></tr>
+<tr class="separator:aa5952c1b5746799046fe1a3e75329559 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7e8e97b621ca535e9327e862b064bf7 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>Y</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac7e8e97b621ca535e9327e862b064bf7 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">Y <br /></td></tr>
+<tr class="separator:ac7e8e97b621ca535e9327e862b064bf7 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907bf533883eb92cf73091e390d0ac09 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Opacity</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a907bf533883eb92cf73091e390d0ac09 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">透過度 <br /></td></tr>
+<tr class="separator:a907bf533883eb92cf73091e390d0ac09 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa097944dff32f5fa8c2e92ecf4ec0932 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Visible</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa097944dff32f5fa8c2e92ecf4ec0932 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示、非表示設定 <br /></td></tr>
+<tr class="separator:aa097944dff32f5fa8c2e92ecf4ec0932 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a3c2e33682c3ed79966fc587ad17321b2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_battler</b></td></tr>
+<tr class="memdesc:a3c2e33682c3ed79966fc587ad17321b2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトラー <br /></td></tr>
+<tr class="separator:a3c2e33682c3ed79966fc587ad17321b2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61ea23aeb448821d4abac64a4443326d inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+List&lt; <a class="el" href="../../d5/df2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_damage.html">SpriteDamage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_damages</b> = new List&lt;<a class="el" href="../../d5/df2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_damage.html">SpriteDamage</a>&gt;()</td></tr>
+<tr class="memdesc:a61ea23aeb448821d4abac64a4443326d inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージポップアップ用 <br /></td></tr>
+<tr class="separator:a61ea23aeb448821d4abac64a4443326d inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aac48a82b7f494f5b8ce61da5764738 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_homeX</b></td></tr>
+<tr class="memdesc:a3aac48a82b7f494f5b8ce61da5764738 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">基点の x座標 <br /></td></tr>
+<tr class="separator:a3aac48a82b7f494f5b8ce61da5764738 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1804430017dbe7ea085ec08f8585a9 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_homeY</b></td></tr>
+<tr class="memdesc:a2e1804430017dbe7ea085ec08f8585a9 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">基点の y座標 <br /></td></tr>
+<tr class="separator:a2e1804430017dbe7ea085ec08f8585a9 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e92f306937b77001a443375097bd33c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_offsetX</b></td></tr>
+<tr class="memdesc:a9e92f306937b77001a443375097bd33c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">xオフセット <br /></td></tr>
+<tr class="separator:a9e92f306937b77001a443375097bd33c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0857b1e770ddac814fa915a88755f074 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_offsetY</b></td></tr>
+<tr class="memdesc:a0857b1e770ddac814fa915a88755f074 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">yオフセット <br /></td></tr>
+<tr class="separator:a0857b1e770ddac814fa915a88755f074 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af143c5dc9293fa0657b5c68a6e59a765 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float?&#160;</td><td class="memItemRight" valign="bottom"><b>_targetOffsetX</b></td></tr>
+<tr class="memdesc:af143c5dc9293fa0657b5c68a6e59a765 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の xオフセット <br /></td></tr>
+<tr class="separator:af143c5dc9293fa0657b5c68a6e59a765 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870eddae5a6b3334c3ce37c9d3093dc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float?&#160;</td><td class="memItemRight" valign="bottom"><b>_targetOffsetY</b></td></tr>
+<tr class="memdesc:a870eddae5a6b3334c3ce37c9d3093dc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象の yオフセット <br /></td></tr>
+<tr class="separator:a870eddae5a6b3334c3ce37c9d3093dc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1687ed8d4b0d8a14acc150cb80f28080 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_movementDuration</b></td></tr>
+<tr class="memdesc:a1687ed8d4b0d8a14acc150cb80f28080 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動の継続時間 <br /></td></tr>
+<tr class="separator:a1687ed8d4b0d8a14acc150cb80f28080 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491e1cb462294ecd5b03aefc1105d584 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>_selectionEffectCount</b></td></tr>
+<tr class="memdesc:a491e1cb462294ecd5b03aefc1105d584 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="mdescLeft">&#160;</td><td class="mdescRight">選択エフェクトのカウント <br /></td></tr>
+<tr class="separator:a491e1cb462294ecd5b03aefc1105d584 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBase</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:afe285a7af4523a5e57f038c730a907e8 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+List&lt; CharacterAnimation &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>_animationSprites</b></td></tr>
+<tr class="memdesc:afe285a7af4523a5e57f038c730a907e8 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">付随する[アニメーション]のスプライト <br /></td></tr>
+<tr class="separator:afe285a7af4523a5e57f038c730a907e8 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec54ada82de86216437da596b4ae34b1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html">SpriteBase</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_effectTarget</b></td></tr>
+<tr class="memdesc:aec54ada82de86216437da596b4ae34b1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションを適用する対象 <br /></td></tr>
+<tr class="separator:aec54ada82de86216437da596b4ae34b1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af07656732c32735f0fa7068769b0bb inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>_hiding</b></td></tr>
+<tr class="memdesc:a1af07656732c32735f0fa7068769b0bb inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">非表示か <br /></td></tr>
+<tr class="separator:a1af07656732c32735f0fa7068769b0bb inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a3af1044bc882ccff342805ac0e835c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_animationCount</b></td></tr>
+<tr class="memdesc:a6a3af1044bc882ccff342805ac0e835c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーション実行数 <br /></td></tr>
+<tr class="separator:a6a3af1044bc882ccff342805ac0e835c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>[敵キャラ]表示用のスプライトクラス </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a0e60571bd5e9ea4f5c70bbde9aa4288c" name="a0e60571bd5e9ea4f5c70bbde9aa4288c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e60571bd5e9ea4f5c70bbde9aa4288c">&#9670;&#160;</a></span>DamageOffsetX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override float RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.DamageOffsetX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ダメージ表示のOffsetX </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a2f473aa81d2530d6f9c17205e1ace810">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a>を再実装しています。</p>
+
+</div>
+</div>
+<a id="a8fb976df13babeec59694229cbaf4198" name="a8fb976df13babeec59694229cbaf4198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb976df13babeec59694229cbaf4198">&#9670;&#160;</a></span>DamageOffsetY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override float RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.DamageOffsetY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ダメージ表示のOffsetY </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ae93011f55b5bba40d0e8290cc8b0a6cb">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a>を再実装しています。</p>
+
+</div>
+</div>
+<a id="adf72b9d5df7b1707657b454001793e93" name="adf72b9d5df7b1707657b454001793e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf72b9d5df7b1707657b454001793e93">&#9670;&#160;</a></span>EnemyId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.EnemyId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>敵のID返却 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa19841a14f352f9276723d5dfa94a8d2" name="aa19841a14f352f9276723d5dfa94a8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa19841a14f352f9276723d5dfa94a8d2">&#9670;&#160;</a></span>GetGameEnemy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html">GameEnemy</a> RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.GetGameEnemy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GameEnemy取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ad0210eaf48bc01b8b4eabc34d01ee489" name="ad0210eaf48bc01b8b4eabc34d01ee489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0210eaf48bc01b8b4eabc34d01ee489">&#9670;&#160;</a></span>Initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.Initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td>
+          <td class="paramname"><em>battler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初期化 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">battler</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ac403a373d259a368b9ffc3d2ea5e9742">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_ad0210eaf48bc01b8b4eabc34d01ee489_cgraph.png" border="0" usemap="#ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_ad0210eaf48bc01b8b4eabc34d01ee489_cgraph" alt=""/></div>
+<map name="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_ad0210eaf48bc01b8b4eabc34d01ee489_cgraph" id="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_ad0210eaf48bc01b8b4eabc34d01ee489_cgraph">
+<area shape="rect" title="初期化" alt="" coords="5,743,236,786"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac9871a57a401c0da5670b07803acc775" title="実行するActionの登録（毎フレーム）" alt="" coords="284,671,525,730"/>
+<area shape="poly" title=" " alt="" coords="218,740,269,728,270,733,219,745"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a390468899d86061181dd8b47f1357bff" title="Update処理" alt="" coords="292,788,517,847"/>
+<area shape="poly" title=" " alt="" coords="237,784,278,791,277,797,236,789"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac4a358a4a2136a175a780d969a5a2ae2" title="実行するActionの登録" alt="" coords="585,616,826,659"/>
+<area shape="poly" title=" " alt="" coords="525,673,585,660,586,665,526,678"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="894,616,1130,659"/>
+<area shape="poly" title=" " alt="" coords="826,635,880,635,880,640,826,640"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a08635f6fd879412581bd0c23e3559838" title="現在の状態がMENUかどうかを返却する" alt="" coords="895,550,1129,592"/>
+<area shape="poly" title=" " alt="" coords="806,613,896,594,897,599,807,618"/>
+<area shape="poly" title=" " alt="" coords="349,788,350,778,360,769,378,764,404,762,435,765,453,772,451,777,434,770,404,767,379,769,363,774,355,780,354,788"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#acbacfdc0a0c421baed7613fc41529941" title="Actionの削除" alt="" coords="573,818,837,860"/>
+<area shape="poly" title=" " alt="" coords="517,823,558,826,558,831,517,828"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a50803cbc5aba7b5ad0094cc0a57f3356" title="エフェクトをアップデート" alt="" coords="593,975,817,1034"/>
+<area shape="poly" title=" " alt="" coords="455,846,645,965,642,969,452,850"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a53dc8f75adfa22baab08eeb4dde00f2c" title="ステートスプライトをアップデート" alt="" coords="593,735,817,794"/>
+<area shape="poly" title=" " alt="" coords="517,795,578,784,579,790,518,800"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a39aaa805516cab029f2cc9e96231d4ea" title="エフェクトの準備" alt="" coords="903,683,1121,742"/>
+<area shape="poly" title=" " alt="" coords="738,973,786,927,835,871,849,849,858,830,867,811,883,791,910,767,938,747,941,752,913,772,887,794,871,814,862,832,854,852,839,874,790,930,742,977"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a9893c30326e1ffbf1bc37120b7dd5ec5" title="出現エフェクトをアップデート" alt="" coords="900,938,1124,996"/>
+<area shape="poly" title=" " alt="" coords="817,988,885,980,885,985,818,993"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a0fc936d82f17d2d76a376b8b04a78e18" title="点滅をアップデート" alt="" coords="885,1020,1139,1063"/>
+<area shape="poly" title=" " alt="" coords="818,1015,871,1022,870,1027,817,1021"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aee50d89ae23962bc06aad315145d6d87" title="[消滅エフェクト &#45; ボス]をアップデート" alt="" coords="900,1271,1124,1330"/>
+<area shape="poly" title=" " alt="" coords="722,1033,747,1082,783,1142,830,1204,857,1232,887,1257,893,1261,890,1266,884,1261,854,1236,826,1207,779,1145,742,1084,717,1036"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aa9a3134e571dac96b038922fdd3a9370" title="[消滅エフェクト &#45; 通常]をアップデート" alt="" coords="900,804,1124,863"/>
+<area shape="poly" title=" " alt="" coords="743,973,807,926,884,879,910,867,913,872,887,884,810,931,746,977"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a3b89f8cb37e009f6f711aafe123b62bb" title="消滅エフェクトをアップデート" alt="" coords="900,1188,1124,1247"/>
+<area shape="poly" title=" " alt="" coords="734,1033,800,1099,842,1136,887,1168,909,1180,906,1184,884,1172,838,1140,796,1103,730,1036"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a182cb5066b571cc131154cdd17778391" title="[消滅エフェクト &#45; 瞬間消去]をアップデート" alt="" coords="1198,988,1422,1047"/>
+<area shape="poly" title=" " alt="" coords="758,972,817,944,885,923,956,908,1014,899,1071,903,1140,923,1156,933,1166,944,1175,956,1188,968,1210,980,1207,984,1185,972,1171,960,1162,948,1152,937,1138,928,1070,908,1014,904,957,913,886,928,819,949,760,977"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a635b13d63339f2e1127eb43dedcca1f4" title="敵の選択アニメーション更新" alt="" coords="1198,1071,1422,1130"/>
+<area shape="poly" title=" " alt="" coords="769,1032,825,1054,886,1073,962,1086,1039,1094,1183,1101,1183,1106,1039,1100,961,1091,885,1078,823,1060,767,1037"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a5e18e7c8363617e98a64292c2b666178" title="白エフェクトをアップデート" alt="" coords="1198,1154,1422,1212"/>
+<area shape="poly" title=" " alt="" coords="750,1032,812,1071,886,1106,961,1129,1039,1147,1183,1170,1183,1175,1038,1153,960,1135,884,1111,810,1076,747,1037"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a910678c6b3d996b5b303f010d52f2ea0" title="エフェクトを消去" alt="" coords="1202,726,1418,784"/>
+<area shape="poly" title=" " alt="" coords="1122,725,1188,735,1187,740,1121,731"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a9f35d1ebe4d81b053e310a2747b802e9" title="エフェクトタイプを返す" alt="" coords="1187,808,1433,851"/>
+<area shape="poly" title=" " alt="" coords="1070,740,1126,768,1188,794,1208,801,1206,806,1186,799,1124,773,1067,745"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ab0cfe0154c253bf8dbdd917e1b83ecea" title="生きているか" alt="" coords="1202,147,1418,206"/>
+<area shape="poly" title=" " alt="" coords="1120,683,1137,670,1202,487,1291,219,1297,221,1207,488,1141,673,1123,687"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ab31a3ef28fe70dd09c18387b9c30946b" title="隠れているか" alt="" coords="1774,31,1990,90"/>
+<area shape="poly" title=" " alt="" coords="1119,685,1137,669,1148,650,1156,624,1164,561,1164,485,1159,403,1155,321,1155,244,1163,180,1172,154,1185,134,1212,105,1242,80,1275,59,1310,42,1385,18,1464,6,1544,3,1623,7,1696,16,1761,27,1760,32,1695,21,1622,12,1544,8,1465,11,1387,24,1312,47,1278,64,1245,84,1216,108,1189,137,1177,156,1168,181,1160,245,1160,320,1165,402,1169,485,1169,561,1162,626,1153,652,1141,673,1123,689"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a6ceabd9a23ea0e57b7ebfd6a11868348" title="エフェクトが要求されているか" alt="" coords="1196,643,1424,702"/>
+<area shape="poly" title=" " alt="" coords="1121,695,1180,687,1181,692,1122,701"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a7c2ef4d3985f5e98814dc6f2a6f49c2a" title="指定したエフェクトの開始" alt="" coords="1204,560,1416,619"/>
+<area shape="poly" title=" " alt="" coords="1114,680,1137,669,1161,649,1185,629,1196,623,1198,628,1188,633,1164,653,1140,673,1116,685"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#acd49841382f83d27e5380c894ae98c07" title="現れているか" alt="" coords="1494,64,1709,123"/>
+<area shape="poly" title=" " alt="" coords="1415,144,1480,125,1482,130,1417,149"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a2615772b2c3bc9d65699ee3b0b77aae1" title="死亡ステートか" alt="" coords="1494,147,1709,206"/>
+<area shape="poly" title=" " alt="" coords="1418,174,1479,174,1479,179,1418,179"/>
+<area shape="poly" title=" " alt="" coords="1709,78,1759,72,1760,78,1710,84"/>
+<area shape="rect" href="../../d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ae149ea29154d386ec71f09400d260b37" title="指定したステートか" alt="" coords="1774,147,1990,206"/>
+<area shape="poly" title=" " alt="" coords="1709,174,1759,174,1759,179,1709,179"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a25c1b678614691402c6438c6650f222c" title="状態を通常に戻す" alt="" coords="1492,875,1711,934"/>
+<area shape="poly" title=" " alt="" coords="1418,614,1435,629,1455,659,1463,689,1463,718,1460,747,1456,776,1457,804,1464,833,1483,862,1485,863,1481,867,1479,865,1459,835,1451,805,1451,776,1454,747,1458,718,1458,690,1450,662,1431,633,1414,618"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a485ceb05e15b2856991960925a060760" title="出現の開始" alt="" coords="1496,726,1707,784"/>
+<area shape="poly" title=" " alt="" coords="1417,617,1435,629,1452,650,1460,672,1467,692,1483,712,1488,716,1484,720,1479,716,1462,695,1455,673,1447,653,1431,633,1414,622"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aee292eb5b9222149ae6b78ede3d57737" title="点滅の開始" alt="" coords="1481,808,1721,851"/>
+<area shape="poly" title=" " alt="" coords="1418,615,1435,629,1450,651,1458,672,1459,714,1461,755,1468,775,1483,795,1486,797,1482,801,1479,798,1463,777,1455,756,1454,714,1453,673,1446,653,1431,633,1414,619"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a9d3311965d42e827933e8fae74699448" title="[消滅エフェクト &#45; ボス]開始" alt="" coords="1496,230,1707,288"/>
+<area shape="poly" title=" " alt="" coords="1318,559,1340,504,1373,434,1420,362,1448,328,1479,298,1484,294,1488,299,1483,303,1452,332,1424,365,1378,437,1344,506,1323,561"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a0bd20b6c1ceca769c72a6a6038058dfd" title="[消滅エフェクト &#45; 通常]開始" alt="" coords="1496,312,1707,371"/>
+<area shape="poly" title=" " alt="" coords="1326,559,1351,519,1387,471,1430,423,1479,381,1487,376,1490,381,1483,385,1434,427,1391,475,1356,522,1330,562"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#af5f671a9de94adcbc48bcdb9ad2270cb" title="消滅の開始" alt="" coords="1496,395,1707,454"/>
+<area shape="poly" title=" " alt="" coords="1344,558,1405,510,1480,463,1491,458,1493,463,1482,468,1408,515,1347,562"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ab936514e3b9dd3be1df5e2aec8559a94" title="[消滅エフェクト &#45; 瞬間消去]開始" alt="" coords="1496,478,1707,536"/>
+<area shape="poly" title=" " alt="" coords="1415,557,1480,539,1482,544,1417,562"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a448ccaa514d14053cc84a0009168f759" title="敵の選択表示アニメーション開始" alt="" coords="1496,560,1707,619"/>
+<area shape="poly" title=" " alt="" coords="1416,587,1481,587,1481,592,1416,592"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ac81db798d343153ebe47bc8f7ba49de4" title="白く変化開始" alt="" coords="1496,643,1707,702"/>
+<area shape="poly" title=" " alt="" coords="1417,617,1482,636,1480,641,1415,622"/>
+<area shape="rect" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#adfea0a47930d10d10103da5d95016fcf" title="BlendColor設定" alt="" coords="1769,1030,1995,1072"/>
+<area shape="poly" title=" " alt="" coords="1683,932,1723,950,1784,985,1839,1019,1836,1024,1782,989,1720,955,1681,937"/>
+<area shape="poly" title=" " alt="" coords="1124,1288,1250,1272,1401,1245,1563,1204,1643,1179,1720,1149,1784,1115,1839,1079,1842,1083,1787,1120,1722,1154,1645,1184,1565,1209,1402,1250,1251,1277,1125,1293"/>
+<area shape="poly" title=" " alt="" coords="1125,859,1780,1023,1778,1028,1124,864"/>
+<area shape="poly" title=" " alt="" coords="1423,1022,1755,1041,1754,1046,1423,1027"/>
+<area shape="poly" title=" " alt="" coords="1422,1088,1754,1059,1755,1065,1423,1093"/>
+<area shape="poly" title=" " alt="" coords="1422,1156,1721,1089,1780,1074,1781,1079,1722,1094,1423,1162"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d94775c2ee28f908fd4b3a55b5b3671" name="a1d94775c2ee28f908fd4b3a55b5b3671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d94775c2ee28f908fd4b3a55b5b3671">&#9670;&#160;</a></span>IsEffecting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.IsEffecting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>効果が加わっているか </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#aa02b9de15331b0235d331067c5348a1c">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a>を再実装しています。</p>
+
+</div>
+</div>
+<a id="a43be3520a2a83e0336826a6c60d200d6" name="a43be3520a2a83e0336826a6c60d200d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43be3520a2a83e0336826a6c60d200d6">&#9670;&#160;</a></span>LoadBitmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.LoadBitmap </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したビットマップ画像を読み込む </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td></td></tr>
+    <tr><td class="paramname">hue</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a43be3520a2a83e0336826a6c60d200d6_icgraph.png" border="0" usemap="#ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a43be3520a2a83e0336826a6c60d200d6_icgraph" alt=""/></div>
+<map name="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a43be3520a2a83e0336826a6c60d200d6_icgraph" id="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a43be3520a2a83e0336826a6c60d200d6_icgraph">
+<area shape="rect" title="指定したビットマップ画像を読み込む" alt="" coords="278,5,489,64"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a36c0da070699d22220c437ef4e1397b1" title="画像のアップデート" alt="" coords="5,5,230,64"/>
+<area shape="poly" title=" " alt="" coords="263,37,230,37,230,32,263,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff89cb865ec81264075c4411b526899a" name="aff89cb865ec81264075c4411b526899a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff89cb865ec81264075c4411b526899a">&#9670;&#160;</a></span>SetBattler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.SetBattler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td>
+          <td class="paramname"><em>battler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>バトラーを設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">battler</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#ae71943849e614d4781d2c98ed0b60ad8">RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteBattler</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_aff89cb865ec81264075c4411b526899a_cgraph.png" border="0" usemap="#ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_aff89cb865ec81264075c4411b526899a_cgraph" alt=""/></div>
+<map name="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_aff89cb865ec81264075c4411b526899a_cgraph" id="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_aff89cb865ec81264075c4411b526899a_cgraph">
+<area shape="rect" title="バトラーを設定" alt="" coords="5,39,209,97"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a14e61e371e7d35f34d4c1bd14243f9b3" title="基点を設定" alt="" coords="257,13,491,56"/>
+<area shape="poly" title=" " alt="" coords="209,53,241,49,242,54,209,58"/>
+<area shape="rect" href="../../d7/d4e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_state_icon.html#a5782d9c1e6423b3c35384fe9641ea0d9" title="対象バトラーに対する準備" alt="" coords="258,80,490,123"/>
+<area shape="poly" title=" " alt="" coords="209,78,243,82,243,88,209,83"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html#a4b18ab126f3a27e020a83060f30ea96d" title="位置のアップデート" alt="" coords="539,5,760,64"/>
+<area shape="poly" title=" " alt="" coords="491,32,524,32,524,37,491,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7c2ef4d3985f5e98814dc6f2a6f49c2a" name="a7c2ef4d3985f5e98814dc6f2a6f49c2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2ef4d3985f5e98814dc6f2a6f49c2a">&#9670;&#160;</a></span>StartEffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Battle.Sprites.SpriteEnemy.StartEffect </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>effectType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したエフェクトの開始 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effectType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_cgraph.png" border="0" usemap="#ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_cgraph" alt=""/></div>
+<map name="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_cgraph" id="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_cgraph">
+<area shape="rect" title="指定したエフェクトの開始" alt="" coords="5,320,217,379"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a25c1b678614691402c6438c6650f222c" title="状態を通常に戻す" alt="" coords="275,5,495,64"/>
+<area shape="poly" title=" " alt="" coords="119,319,137,267,167,201,209,133,234,102,263,74,267,70,271,75,266,78,238,105,213,136,172,203,142,269,124,321"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a485ceb05e15b2856991960925a060760" title="出現の開始" alt="" coords="279,88,491,147"/>
+<area shape="poly" title=" " alt="" coords="127,318,181,238,219,194,263,157,269,152,272,157,266,161,223,198,185,241,131,321"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#aee292eb5b9222149ae6b78ede3d57737" title="点滅の開始" alt="" coords="265,171,505,213"/>
+<area shape="poly" title=" " alt="" coords="139,318,194,269,228,244,263,223,276,217,279,222,266,228,231,249,197,273,143,322"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a9d3311965d42e827933e8fae74699448" title="[消滅エフェクト &#45; ボス]開始" alt="" coords="279,237,491,296"/>
+<area shape="poly" title=" " alt="" coords="210,317,271,298,272,303,211,322"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a0bd20b6c1ceca769c72a6a6038058dfd" title="[消滅エフェクト &#45; 通常]開始" alt="" coords="279,320,491,379"/>
+<area shape="poly" title=" " alt="" coords="217,347,265,347,265,352,217,352"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#af5f671a9de94adcbc48bcdb9ad2270cb" title="消滅の開始" alt="" coords="279,403,491,461"/>
+<area shape="poly" title=" " alt="" coords="211,377,272,395,271,400,210,382"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ab936514e3b9dd3be1df5e2aec8559a94" title="[消滅エフェクト &#45; 瞬間消去]開始" alt="" coords="279,485,491,544"/>
+<area shape="poly" title=" " alt="" coords="144,377,198,425,266,471,276,476,274,481,263,476,195,429,140,381"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a448ccaa514d14053cc84a0009168f759" title="敵の選択表示アニメーション開始" alt="" coords="279,568,491,627"/>
+<area shape="poly" title=" " alt="" coords="129,378,151,417,182,465,221,512,266,554,272,558,269,562,263,558,217,516,178,468,147,420,124,380"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ac81db798d343153ebe47bc8f7ba49de4" title="白く変化開始" alt="" coords="279,651,491,709"/>
+<area shape="poly" title=" " alt="" coords="123,378,140,433,170,502,211,574,237,607,266,637,271,640,267,644,263,641,233,611,207,577,165,505,135,435,117,380"/>
+<area shape="rect" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html#adfea0a47930d10d10103da5d95016fcf" title="BlendColor設定" alt="" coords="553,13,778,56"/>
+<area shape="poly" title=" " alt="" coords="495,32,538,32,538,37,495,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_icgraph.png" border="0" usemap="#ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_icgraph" alt=""/></div>
+<map name="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_icgraph" id="ad3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy_a7c2ef4d3985f5e98814dc6f2a6f49c2a_icgraph">
+<area shape="rect" title="指定したエフェクトの開始" alt="" coords="1094,47,1305,105"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a5ffacf5a1c9677fd42271d87d8081b0d" title="表示状態を初期化" alt="" coords="835,5,1039,64"/>
+<area shape="poly" title=" " alt="" coords="1078,60,1039,53,1039,48,1079,54"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a39aaa805516cab029f2cc9e96231d4ea" title="エフェクトの準備" alt="" coords="828,88,1046,147"/>
+<area shape="poly" title=" " alt="" coords="1079,98,1047,103,1046,98,1078,92"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a36c0da070699d22220c437ef4e1397b1" title="画像のアップデート" alt="" coords="556,5,780,64"/>
+<area shape="poly" title=" " alt="" coords="820,37,781,37,781,32,820,32"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a50803cbc5aba7b5ad0094cc0a57f3356" title="エフェクトをアップデート" alt="" coords="556,88,780,147"/>
+<area shape="poly" title=" " alt="" coords="813,120,781,120,781,115,813,115"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#a390468899d86061181dd8b47f1357bff" title="Update処理" alt="" coords="284,88,508,147"/>
+<area shape="poly" title=" " alt="" coords="541,120,509,120,509,115,541,115"/>
+<area shape="poly" title=" " alt="" coords="440,77,424,69,396,67,372,69,356,73,349,80,348,88,343,87,344,77,354,69,371,63,396,61,425,64,443,72"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html#ad0210eaf48bc01b8b4eabc34d01ee489" title="初期化" alt="" coords="5,96,236,139"/>
+<area shape="poly" title=" " alt="" coords="269,120,236,120,236,115,269,115"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Battle/Sprites/SpriteEnemy.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

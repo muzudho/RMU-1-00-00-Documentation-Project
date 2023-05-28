@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d3/def/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle.html">Battle</a></li><li class="navelem"><a class="el" href="../../db/dbd/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects.html">Objects</a></li><li class="navelem"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html">GameTroop</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="../../d1/ddf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>戦闘シーンでの[敵グループ]を定義したクラス  
+ <a href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/da1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_inherit__map">
+<area shape="rect" title="戦闘シーンでの[敵グループ]を定義したクラス" alt="" coords="5,80,209,123"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html" title="戦闘時のグループを扱うクラス" alt="" coords="67,5,147,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_battle_8_objects_8_game_troop_coll__map">
+<area shape="rect" title="戦闘シーンでの[敵グループ]を定義したクラス" alt="" coords="5,80,209,123"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html" title="戦闘時のグループを扱うクラス" alt="" coords="67,5,147,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0a1acd287c691070082ae88e2ff86936"><td class="memItemLeft" align="right" valign="top">override List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a0a1acd287c691070082ae88e2ff86936">Members</a> ()</td></tr>
+<tr class="memdesc:a0a1acd287c691070082ae88e2ff86936"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵データ（GameBattler）  <br /></td></tr>
+<tr class="separator:a0a1acd287c691070082ae88e2ff86936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab824b58cb848a59d33ffacbdea3be516"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#ab824b58cb848a59d33ffacbdea3be516">GameTroop</a> (string troopId)</td></tr>
+<tr class="memdesc:ab824b58cb848a59d33ffacbdea3be516"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:ab824b58cb848a59d33ffacbdea3be516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d0b80e12681df5fb00c7283b7ccf33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa8d0b80e12681df5fb00c7283b7ccf33">Setup</a> (string troopId)</td></tr>
+<tr class="memdesc:aa8d0b80e12681df5fb00c7283b7ccf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期設定  <br /></td></tr>
+<tr class="separator:aa8d0b80e12681df5fb00c7283b7ccf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f19e9b6c2bb2a39ac4076abf1e9e95"><td class="memItemLeft" align="right" valign="top"><a id="a75f19e9b6c2bb2a39ac4076abf1e9e95" name="a75f19e9b6c2bb2a39ac4076abf1e9e95"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeUniqueNames</b> ()</td></tr>
+<tr class="memdesc:a75f19e9b6c2bb2a39ac4076abf1e9e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">全[敵キャラ]に(A〜Zを割り振って)固有名をつける <br /></td></tr>
+<tr class="separator:a75f19e9b6c2bb2a39ac4076abf1e9e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe95d03188ab991adb3f828c8959d2f"><td class="memItemLeft" align="right" valign="top">ReadOnlyCollection&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a9fe95d03188ab991adb3f828c8959d2f">LetterTable</a> ()</td></tr>
+<tr class="memdesc:a9fe95d03188ab991adb3f828c8959d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">名前の接尾辞(A〜Z)を配列で返す  <br /></td></tr>
+<tr class="separator:a9fe95d03188ab991adb3f828c8959d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6a90e95f52ed9def28ced562b8e34b"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#add6a90e95f52ed9def28ced562b8e34b">EnemyNames</a> ()</td></tr>
+<tr class="memdesc:add6a90e95f52ed9def28ced562b8e34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[敵キャラ]の名前を配列で返す  <br /></td></tr>
+<tr class="separator:add6a90e95f52ed9def28ced562b8e34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6308b89e3b802c6ea05b4a6c3a32c9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa6308b89e3b802c6ea05b4a6c3a32c9c">MeetsConditions</a> (EventBattleDataModel.EventBattlePage page)</td></tr>
+<tr class="memdesc:aa6308b89e3b802c6ea05b4a6c3a32c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定ページが条件に合っているか  <br /></td></tr>
+<tr class="separator:aa6308b89e3b802c6ea05b4a6c3a32c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf1bc45d5b3790e67bbb6e943b2485b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a8bf1bc45d5b3790e67bbb6e943b2485b">SetupBattleEvent</a> ()</td></tr>
+<tr class="memdesc:a8bf1bc45d5b3790e67bbb6e943b2485b"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトルイベントの準備  <br /></td></tr>
+<tr class="separator:a8bf1bc45d5b3790e67bbb6e943b2485b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed26d755584e6dc6921e8f2800e54bd"><td class="memItemLeft" align="right" valign="top"><a id="a6ed26d755584e6dc6921e8f2800e54bd" name="a6ed26d755584e6dc6921e8f2800e54bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseTurn</b> ()</td></tr>
+<tr class="memdesc:a6ed26d755584e6dc6921e8f2800e54bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ターンを進める <br /></td></tr>
+<tr class="separator:a6ed26d755584e6dc6921e8f2800e54bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcb7c386d330c2d84f7ee281e0dfa13a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#abcb7c386d330c2d84f7ee281e0dfa13a">ExpTotal</a> ()</td></tr>
+<tr class="memdesc:abcb7c386d330c2d84f7ee281e0dfa13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[敵キャラ]の合計EXPを返す  <br /></td></tr>
+<tr class="separator:abcb7c386d330c2d84f7ee281e0dfa13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad90e41c9315c578c0b151c1e911a27d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aad90e41c9315c578c0b151c1e911a27d">GoldTotal</a> ()</td></tr>
+<tr class="memdesc:aad90e41c9315c578c0b151c1e911a27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">[敵キャラ]からの合計取得金額を返す  <br /></td></tr>
+<tr class="separator:aad90e41c9315c578c0b151c1e911a27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af421f8412398ac29dc65a37ae98fe831"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#af421f8412398ac29dc65a37ae98fe831">GoldRate</a> ()</td></tr>
+<tr class="memdesc:af421f8412398ac29dc65a37ae98fe831"><td class="mdescLeft">&#160;</td><td class="mdescRight">プレイヤーパーティが持つ金額の取得倍率を返す。スキルやアイテムの効果で上下する  <br /></td></tr>
+<tr class="separator:af421f8412398ac29dc65a37ae98fe831"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1938643a7a558b708d645f886ef18b06"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html">GameItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a1938643a7a558b708d645f886ef18b06">MakeDropItems</a> ()</td></tr>
+<tr class="memdesc:a1938643a7a558b708d645f886ef18b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">ドロップアイテムを作成して配列で返す  <br /></td></tr>
+<tr class="separator:a1938643a7a558b708d645f886ef18b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8247a8983e6f35f354d9d9e8b989a857"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a8247a8983e6f35f354d9d9e8b989a857">IsEventRunning</a> ()</td></tr>
+<tr class="memdesc:a8247a8983e6f35f354d9d9e8b989a857"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行中かどうかを返却する  <br /></td></tr>
+<tr class="separator:a8247a8983e6f35f354d9d9e8b989a857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html">RPGMaker.Codebase.Runtime.Battle.Objects.GameUnit</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a47931877561eb635d2604bb942faf61b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a47931877561eb635d2604bb942faf61b">InBattle</a> ()</td></tr>
+<tr class="memdesc:a47931877561eb635d2604bb942faf61b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘中か  <br /></td></tr>
+<tr class="separator:a47931877561eb635d2604bb942faf61b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f079e46aeb6622f3ab30f68dc9f38e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">virtual List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e">Members</a> ()</td></tr>
+<tr class="memdesc:a53f079e46aeb6622f3ab30f68dc9f38e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘中のバトラー生死問わず全て配列で返す  <br /></td></tr>
+<tr class="separator:a53f079e46aeb6622f3ab30f68dc9f38e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99688263aa8ddd44650be52e147f9f7a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">virtual List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a99688263aa8ddd44650be52e147f9f7a">AliveMembers</a> ()</td></tr>
+<tr class="memdesc:a99688263aa8ddd44650be52e147f9f7a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">生存しているバトラーを配列で返す  <br /></td></tr>
+<tr class="separator:a99688263aa8ddd44650be52e147f9f7a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae094fdf030bc71afebcac90e04d6ce60 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">virtual List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#ae094fdf030bc71afebcac90e04d6ce60">DeadMembers</a> ()</td></tr>
+<tr class="memdesc:ae094fdf030bc71afebcac90e04d6ce60 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">死亡しているバトラーを配列で返す  <br /></td></tr>
+<tr class="separator:ae094fdf030bc71afebcac90e04d6ce60 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5dc56ed62022d1bd2ac55bd40b65fc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a2c5dc56ed62022d1bd2ac55bd40b65fc">MovableMembers</a> ()</td></tr>
+<tr class="memdesc:a2c5dc56ed62022d1bd2ac55bd40b65fc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">動ける(死亡や麻痺などでない)バトラーを配列で返す  <br /></td></tr>
+<tr class="separator:a2c5dc56ed62022d1bd2ac55bd40b65fc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c86dace2d5d208a92cd1b0b68fd0f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearActions</b> ()</td></tr>
+<tr class="memdesc:ac8c86dace2d5d208a92cd1b0b68fd0f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクションを取り消す <br /></td></tr>
+<tr class="separator:ac8c86dace2d5d208a92cd1b0b68fd0f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdee1d170ae205cd1c2a912a0e1fb725 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#acdee1d170ae205cd1c2a912a0e1fb725">Agility</a> ()</td></tr>
+<tr class="memdesc:acdee1d170ae205cd1c2a912a0e1fb725 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユニットの素早さを返す  <br /></td></tr>
+<tr class="separator:acdee1d170ae205cd1c2a912a0e1fb725 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6a8baf5dfd3fae574757e09e0c4b01 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a4b6a8baf5dfd3fae574757e09e0c4b01">TgrSum</a> ()</td></tr>
+<tr class="memdesc:a4b6a8baf5dfd3fae574757e09e0c4b01 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">生きているメンバーの[狙われ率]の合計を返す  <br /></td></tr>
+<tr class="separator:a4b6a8baf5dfd3fae574757e09e0c4b01 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99dea491d2f719297bf73716fa26c701 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a99dea491d2f719297bf73716fa26c701">RandomTarget</a> ()</td></tr>
+<tr class="memdesc:a99dea491d2f719297bf73716fa26c701 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">含まれるバトラーからランダムに1体を返す  <br /></td></tr>
+<tr class="separator:a99dea491d2f719297bf73716fa26c701 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd23ec0e648fb35c25036817b88f3bb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a8fd23ec0e648fb35c25036817b88f3bb">RandomDeadTarget</a> ()</td></tr>
+<tr class="memdesc:a8fd23ec0e648fb35c25036817b88f3bb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">死亡したバトラーからランダムに1体を返す  <br /></td></tr>
+<tr class="separator:a8fd23ec0e648fb35c25036817b88f3bb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a85d87e051c097eab4faab4594bc545 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a5a85d87e051c097eab4faab4594bc545">SmoothTarget</a> (int index)</td></tr>
+<tr class="memdesc:a5a85d87e051c097eab4faab4594bc545 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定番号のメンバーを優先して生きているメンバーを返す  <br /></td></tr>
+<tr class="separator:a5a85d87e051c097eab4faab4594bc545 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9147e62375251793cb73c6eed4f1c9ee inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a9147e62375251793cb73c6eed4f1c9ee">SmoothDeadTarget</a> (int index)</td></tr>
+<tr class="memdesc:a9147e62375251793cb73c6eed4f1c9ee inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定番号のメンバーを優先して死亡しているメンバーを返す  <br /></td></tr>
+<tr class="separator:a9147e62375251793cb73c6eed4f1c9ee inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4677fbc5a71b8472c0594e3bfe966807 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearResults</b> ()</td></tr>
+<tr class="memdesc:a4677fbc5a71b8472c0594e3bfe966807 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">アクションの結果を取り消す <br /></td></tr>
+<tr class="separator:a4677fbc5a71b8472c0594e3bfe966807 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38ea32b3653d667d731730afea4fb1e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBattleStart</b> ()</td></tr>
+<tr class="memdesc:ad38ea32b3653d667d731730afea4fb1e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘開始時に呼ばれるハンドラ <br /></td></tr>
+<tr class="separator:ad38ea32b3653d667d731730afea4fb1e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ee082d1f5b3806983aa3f3c3c0d3cf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBattleEnd</b> ()</td></tr>
+<tr class="memdesc:a9ee082d1f5b3806983aa3f3c3c0d3cf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘終了時に呼ばれるハンドラ <br /></td></tr>
+<tr class="separator:a9ee082d1f5b3806983aa3f3c3c0d3cf6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c05f2a2d806932bdc6cd5e1f4c9784e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MakeActions</b> ()</td></tr>
+<tr class="memdesc:a0c05f2a2d806932bdc6cd5e1f4c9784e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">戦闘行動を作成する <br /></td></tr>
+<tr class="separator:a0c05f2a2d806932bdc6cd5e1f4c9784e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a882eb5e5880377d90624fd3cbd0cd720 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a882eb5e5880377d90624fd3cbd0cd720">Select</a> (<a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> activeMember)</td></tr>
+<tr class="memdesc:a882eb5e5880377d90624fd3cbd0cd720 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定されたバトラーを選択する  <br /></td></tr>
+<tr class="separator:a882eb5e5880377d90624fd3cbd0cd720 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3c10804a290d1e8c97c9c648f5a267 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a6e3c10804a290d1e8c97c9c648f5a267">IsAllDead</a> ()</td></tr>
+<tr class="memdesc:a6e3c10804a290d1e8c97c9c648f5a267 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">全バトラーが死亡したか  <br /></td></tr>
+<tr class="separator:a6e3c10804a290d1e8c97c9c648f5a267 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3609c58da5fd479168f41ba0cf2ebc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a4f3609c58da5fd479168f41ba0cf2ebc">SubstituteBattler</a> ()</td></tr>
+<tr class="memdesc:a4f3609c58da5fd479168f41ba0cf2ebc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="mdescLeft">&#160;</td><td class="mdescRight">身代わりのバトラーを返す  <br /></td></tr>
+<tr class="separator:a4f3609c58da5fd479168f41ba0cf2ebc inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a07ffd2ced6d63207d0252ccb85f59cac"><td class="memItemLeft" align="right" valign="top"><a id="a07ffd2ced6d63207d0252ccb85f59cac" name="a07ffd2ced6d63207d0252ccb85f59cac"></a>
+static readonly ReadOnlyCollection&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LetterTableHalf</b></td></tr>
+<tr class="memdesc:a07ffd2ced6d63207d0252ccb85f59cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 名前の接尾辞(A〜Zの半角記号) <br /></td></tr>
+<tr class="separator:a07ffd2ced6d63207d0252ccb85f59cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a390d7f756f9f9f45fe6612f4735a33"><td class="memItemLeft" align="right" valign="top"><a id="a9a390d7f756f9f9f45fe6612f4735a33" name="a9a390d7f756f9f9f45fe6612f4735a33"></a>
+static readonly ReadOnlyCollection&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LetterTableFull</b></td></tr>
+<tr class="memdesc:a9a390d7f756f9f9f45fe6612f4735a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 名前の接尾辞(A〜Zの全角記号) <br /></td></tr>
+<tr class="separator:a9a390d7f756f9f9f45fe6612f4735a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a3db4a3b0acae9de9ad8deb5b22a06e03"><td class="memItemLeft" align="right" valign="top"><a id="a3db4a3b0acae9de9ad8deb5b22a06e03" name="a3db4a3b0acae9de9ad8deb5b22a06e03"></a>
+TroopDataModel&#160;</td><td class="memItemRight" valign="bottom"><b>Troop</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a3db4a3b0acae9de9ad8deb5b22a06e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵グループデータ <br /></td></tr>
+<tr class="separator:a3db4a3b0acae9de9ad8deb5b22a06e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9221cf8400d8599647d9765d5bd4b013"><td class="memItemLeft" align="right" valign="top"><a id="a9221cf8400d8599647d9765d5bd4b013" name="a9221cf8400d8599647d9765d5bd4b013"></a>
+List&lt; <a class="el" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html">GameEnemy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Enemies</b> = new List&lt;<a class="el" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html">GameEnemy</a>&gt;()<code> [get]</code></td></tr>
+<tr class="memdesc:a9221cf8400d8599647d9765d5bd4b013"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵データ <br /></td></tr>
+<tr class="separator:a9221cf8400d8599647d9765d5bd4b013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3277bd5ac7bf2c2acc16e4199934db4"><td class="memItemLeft" align="right" valign="top"><a id="ab3277bd5ac7bf2c2acc16e4199934db4" name="ab3277bd5ac7bf2c2acc16e4199934db4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>TurnCount</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab3277bd5ac7bf2c2acc16e4199934db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ターン数 <br /></td></tr>
+<tr class="separator:ab3277bd5ac7bf2c2acc16e4199934db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f488182bf4f6dbc7396134c58a20e0"><td class="memItemLeft" align="right" valign="top"><a id="a40f488182bf4f6dbc7396134c58a20e0" name="a40f488182bf4f6dbc7396134c58a20e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRunningCommon</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a40f488182bf4f6dbc7396134c58a20e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">コモンイベントを実行中かどうか <br /></td></tr>
+<tr class="separator:a40f488182bf4f6dbc7396134c58a20e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>戦闘シーンでの[敵グループ]を定義したクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="ab824b58cb848a59d33ffacbdea3be516" name="ab824b58cb848a59d33ffacbdea3be516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab824b58cb848a59d33ffacbdea3be516">&#9670;&#160;</a></span>GameTroop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.GameTroop </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>troopId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">troopId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_ab824b58cb848a59d33ffacbdea3be516_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_ab824b58cb848a59d33ffacbdea3be516_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_ab824b58cb848a59d33ffacbdea3be516_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_ab824b58cb848a59d33ffacbdea3be516_cgraph">
+<area shape="rect" title="コンストラクタ" alt="" coords="5,39,252,81"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa8d0b80e12681df5fb00c7283b7ccf33" title="初期設定" alt="" coords="300,39,513,81"/>
+<area shape="poly" title=" " alt="" coords="252,57,285,57,285,63,252,63"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a75f19e9b6c2bb2a39ac4076abf1e9e95" title="全[敵キャラ]に(A〜Zを割り振って)固有名をつける" alt="" coords="561,39,853,81"/>
+<area shape="poly" title=" " alt="" coords="514,57,546,57,546,63,514,63"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a9fe95d03188ab991adb3f828c8959d2f" title="名前の接尾辞(A〜Z)を配列で返す" alt="" coords="901,5,1145,48"/>
+<area shape="poly" title=" " alt="" coords="853,42,886,38,887,44,854,47"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a0a1acd287c691070082ae88e2ff86936" title="敵データ（GameBattler）" alt="" coords="906,72,1140,115"/>
+<area shape="poly" title=" " alt="" coords="854,73,892,77,891,82,853,78"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="add6a90e95f52ed9def28ced562b8e34b" name="add6a90e95f52ed9def28ced562b8e34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6a90e95f52ed9def28ced562b8e34b">&#9670;&#160;</a></span>EnemyNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; string &gt; RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.EnemyNames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[敵キャラ]の名前を配列で返す </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_add6a90e95f52ed9def28ced562b8e34b_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_add6a90e95f52ed9def28ced562b8e34b_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_add6a90e95f52ed9def28ced562b8e34b_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_add6a90e95f52ed9def28ced562b8e34b_cgraph">
+<area shape="rect" title="[敵キャラ]の名前を配列で返す" alt="" coords="5,5,267,48"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a0a1acd287c691070082ae88e2ff86936" title="敵データ（GameBattler）" alt="" coords="315,5,548,48"/>
+<area shape="poly" title=" " alt="" coords="267,24,300,24,300,29,267,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abcb7c386d330c2d84f7ee281e0dfa13a" name="abcb7c386d330c2d84f7ee281e0dfa13a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcb7c386d330c2d84f7ee281e0dfa13a">&#9670;&#160;</a></span>ExpTotal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.ExpTotal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[敵キャラ]の合計EXPを返す </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_abcb7c386d330c2d84f7ee281e0dfa13a_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_abcb7c386d330c2d84f7ee281e0dfa13a_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_abcb7c386d330c2d84f7ee281e0dfa13a_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_abcb7c386d330c2d84f7ee281e0dfa13a_cgraph">
+<area shape="rect" title="[敵キャラ]の合計EXPを返す" alt="" coords="5,5,236,48"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#ae094fdf030bc71afebcac90e04d6ce60" title="死亡しているバトラーを配列で返す" alt="" coords="284,5,538,48"/>
+<area shape="poly" title=" " alt="" coords="236,24,269,24,269,29,236,29"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e" title="戦闘中のバトラー生死問わず全て配列で返す" alt="" coords="586,5,810,48"/>
+<area shape="poly" title=" " alt="" coords="538,24,571,24,571,29,538,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af421f8412398ac29dc65a37ae98fe831" name="af421f8412398ac29dc65a37ae98fe831"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af421f8412398ac29dc65a37ae98fe831">&#9670;&#160;</a></span>GoldRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.GoldRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>プレイヤーパーティが持つ金額の取得倍率を返す。スキルやアイテムの効果で上下する </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_af421f8412398ac29dc65a37ae98fe831_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_af421f8412398ac29dc65a37ae98fe831_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_af421f8412398ac29dc65a37ae98fe831_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_af421f8412398ac29dc65a37ae98fe831_icgraph">
+<area shape="rect" title="プレイヤーパーティが持つ金額の取得倍率を返す。スキルやアイテムの効果で上下する" alt="" coords="288,5,521,48"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aad90e41c9315c578c0b151c1e911a27d" title="[敵キャラ]からの合計取得金額を返す" alt="" coords="5,5,240,48"/>
+<area shape="poly" title=" " alt="" coords="273,29,240,29,240,24,273,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad90e41c9315c578c0b151c1e911a27d" name="aad90e41c9315c578c0b151c1e911a27d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad90e41c9315c578c0b151c1e911a27d">&#9670;&#160;</a></span>GoldTotal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.GoldTotal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>[敵キャラ]からの合計取得金額を返す </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aad90e41c9315c578c0b151c1e911a27d_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aad90e41c9315c578c0b151c1e911a27d_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aad90e41c9315c578c0b151c1e911a27d_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aad90e41c9315c578c0b151c1e911a27d_cgraph">
+<area shape="rect" title="[敵キャラ]からの合計取得金額を返す" alt="" coords="5,39,240,81"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#ae094fdf030bc71afebcac90e04d6ce60" title="死亡しているバトラーを配列で返す" alt="" coords="288,5,542,48"/>
+<area shape="poly" title=" " alt="" coords="240,44,273,40,273,45,240,49"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#af421f8412398ac29dc65a37ae98fe831" title="プレイヤーパーティが持つ金額の取得倍率を返す。スキルやアイテムの効果で上下する" alt="" coords="298,72,532,115"/>
+<area shape="poly" title=" " alt="" coords="240,71,284,76,283,81,240,76"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e" title="戦闘中のバトラー生死問わず全て配列で返す" alt="" coords="590,5,814,48"/>
+<area shape="poly" title=" " alt="" coords="542,24,575,24,575,29,542,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8247a8983e6f35f354d9d9e8b989a857" name="a8247a8983e6f35f354d9d9e8b989a857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8247a8983e6f35f354d9d9e8b989a857">&#9670;&#160;</a></span>IsEventRunning()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.IsEventRunning </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>イベント実行中かどうかを返却する </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a9fe95d03188ab991adb3f828c8959d2f" name="a9fe95d03188ab991adb3f828c8959d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe95d03188ab991adb3f828c8959d2f">&#9670;&#160;</a></span>LetterTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyCollection&lt; string &gt; RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.LetterTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>名前の接尾辞(A〜Z)を配列で返す </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a9fe95d03188ab991adb3f828c8959d2f_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a9fe95d03188ab991adb3f828c8959d2f_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a9fe95d03188ab991adb3f828c8959d2f_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a9fe95d03188ab991adb3f828c8959d2f_icgraph">
+<area shape="rect" title="名前の接尾辞(A〜Z)を配列で返す" alt="" coords="901,5,1145,48"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a75f19e9b6c2bb2a39ac4076abf1e9e95" title="全[敵キャラ]に(A〜Zを割り振って)固有名をつける" alt="" coords="561,5,853,48"/>
+<area shape="poly" title=" " alt="" coords="886,29,854,29,854,24,886,24"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa8d0b80e12681df5fb00c7283b7ccf33" title="初期設定" alt="" coords="300,5,513,48"/>
+<area shape="poly" title=" " alt="" coords="546,29,513,29,513,24,546,24"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#ab824b58cb848a59d33ffacbdea3be516" title="コンストラクタ" alt="" coords="5,5,252,48"/>
+<area shape="poly" title=" " alt="" coords="285,29,252,29,252,24,285,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1938643a7a558b708d645f886ef18b06" name="a1938643a7a558b708d645f886ef18b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1938643a7a558b708d645f886ef18b06">&#9670;&#160;</a></span>MakeDropItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="../../df/d31/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_item.html">GameItem</a> &gt; RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.MakeDropItems </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ドロップアイテムを作成して配列で返す </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_cgraph">
+<area shape="rect" title="ドロップアイテムを作成して配列で返す" alt="" coords="5,29,276,72"/>
+<area shape="poly" title=" " alt="" coords="83,29,80,19,90,10,110,5,141,3,175,5,194,12,193,17,174,11,140,8,111,10,92,15,85,21,88,28"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#ae094fdf030bc71afebcac90e04d6ce60" title="死亡しているバトラーを配列で返す" alt="" coords="324,29,578,72"/>
+<area shape="poly" title=" " alt="" coords="276,48,309,48,309,53,276,53"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e" title="戦闘中のバトラー生死問わず全て配列で返す" alt="" coords="626,29,850,72"/>
+<area shape="poly" title=" " alt="" coords="578,48,611,48,611,53,578,53"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a1938643a7a558b708d645f886ef18b06_icgraph">
+<area shape="rect" title="ドロップアイテムを作成して配列で返す" alt="" coords="5,29,276,72"/>
+<area shape="poly" title=" " alt="" coords="186,17,169,10,140,8,115,10,99,15,93,21,95,28,90,29,88,19,96,10,114,5,141,3,171,5,188,12"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa6308b89e3b802c6ea05b4a6c3a32c9c" name="aa6308b89e3b802c6ea05b4a6c3a32c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6308b89e3b802c6ea05b4a6c3a32c9c">&#9670;&#160;</a></span>MeetsConditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.MeetsConditions </td>
+          <td>(</td>
+          <td class="paramtype">EventBattleDataModel::EventBattlePage&#160;</td>
+          <td class="paramname"><em>page</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定ページが条件に合っているか </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">page</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_cgraph">
+<area shape="rect" title="指定ページが条件に合っているか" alt="" coords="5,5,221,64"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#afce47c73ae068e350dd75deaf586c580" title="ターンの終了状態か" alt="" coords="269,13,474,56"/>
+<area shape="poly" title=" " alt="" coords="221,32,254,32,254,37,221,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa6308b89e3b802c6ea05b4a6c3a32c9c_icgraph">
+<area shape="rect" title="指定ページが条件に合っているか" alt="" coords="267,5,482,64"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a8bf1bc45d5b3790e67bbb6e943b2485b" title="バトルイベントの準備" alt="" coords="5,5,219,64"/>
+<area shape="poly" title=" " alt="" coords="252,37,219,37,219,32,252,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0a1acd287c691070082ae88e2ff86936" name="a0a1acd287c691070082ae88e2ff86936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a1acd287c691070082ae88e2ff86936">&#9670;&#160;</a></span>Members()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override List&lt; <a class="el" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html">GameBattler</a> &gt; RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.Members </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>敵データ（GameBattler） </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+<p><a class="el" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e">RPGMaker.Codebase.Runtime.Battle.Objects.GameUnit</a>を再実装しています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a0a1acd287c691070082ae88e2ff86936_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a0a1acd287c691070082ae88e2ff86936_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a0a1acd287c691070082ae88e2ff86936_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a0a1acd287c691070082ae88e2ff86936_icgraph">
+<area shape="rect" title="敵データ（GameBattler）" alt="" coords="920,72,1154,115"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#add6a90e95f52ed9def28ced562b8e34b" title="[敵キャラ]の名前を配列で返す" alt="" coords="596,5,857,48"/>
+<area shape="poly" title=" " alt="" coords="920,71,828,51,829,46,921,66"/>
+<area shape="rect" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html#a8b96155476caa5490f2e36b2f97bdc12" title="[敵キャラ]の番号を返す" alt="" coords="617,72,836,115"/>
+<area shape="poly" title=" " alt="" coords="906,96,836,96,836,91,906,91"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a75f19e9b6c2bb2a39ac4076abf1e9e95" title="全[敵キャラ]に(A〜Zを割り振って)固有名をつける" alt="" coords="580,140,872,183"/>
+<area shape="poly" title=" " alt="" coords="922,121,827,142,826,137,921,116"/>
+<area shape="rect" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html#a978d2be21cefd7f8155cdd82553258d3" title="戦闘に参加しているか" alt="" coords="300,61,532,120"/>
+<area shape="poly" title=" " alt="" coords="602,95,532,94,532,89,602,90"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa8d0b80e12681df5fb00c7283b7ccf33" title="初期設定" alt="" coords="309,144,523,187"/>
+<area shape="poly" title=" " alt="" coords="565,166,523,167,523,161,565,161"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#ab824b58cb848a59d33ffacbdea3be516" title="コンストラクタ" alt="" coords="5,144,252,187"/>
+<area shape="poly" title=" " alt="" coords="294,168,252,168,252,163,294,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa8d0b80e12681df5fb00c7283b7ccf33" name="aa8d0b80e12681df5fb00c7283b7ccf33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8d0b80e12681df5fb00c7283b7ccf33">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.Setup </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>troopId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期設定 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">troopId</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_cgraph">
+<area shape="rect" title="初期設定" alt="" coords="5,39,219,81"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a75f19e9b6c2bb2a39ac4076abf1e9e95" title="全[敵キャラ]に(A〜Zを割り振って)固有名をつける" alt="" coords="267,39,559,81"/>
+<area shape="poly" title=" " alt="" coords="219,57,252,57,252,63,219,63"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a9fe95d03188ab991adb3f828c8959d2f" title="名前の接尾辞(A〜Z)を配列で返す" alt="" coords="607,5,850,48"/>
+<area shape="poly" title=" " alt="" coords="559,42,592,38,593,44,560,47"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a0a1acd287c691070082ae88e2ff86936" title="敵データ（GameBattler）" alt="" coords="612,72,845,115"/>
+<area shape="poly" title=" " alt="" coords="560,73,597,77,597,82,559,78"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_icgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_icgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_icgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_aa8d0b80e12681df5fb00c7283b7ccf33_icgraph">
+<area shape="rect" title="初期設定" alt="" coords="300,5,513,48"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#ab824b58cb848a59d33ffacbdea3be516" title="コンストラクタ" alt="" coords="5,5,252,48"/>
+<area shape="poly" title=" " alt="" coords="285,29,252,29,252,24,285,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8bf1bc45d5b3790e67bbb6e943b2485b" name="a8bf1bc45d5b3790e67bbb6e943b2485b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf1bc45d5b3790e67bbb6e943b2485b">&#9670;&#160;</a></span>SetupBattleEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Battle.Objects.GameTroop.SetupBattleEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>バトルイベントの準備 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a8bf1bc45d5b3790e67bbb6e943b2485b_cgraph.png" border="0" usemap="#ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a8bf1bc45d5b3790e67bbb6e943b2485b_cgraph" alt=""/></div>
+<map name="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a8bf1bc45d5b3790e67bbb6e943b2485b_cgraph" id="ad7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop_a8bf1bc45d5b3790e67bbb6e943b2485b_cgraph">
+<area shape="rect" title="バトルイベントの準備" alt="" coords="5,5,219,64"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#aa6308b89e3b802c6ea05b4a6c3a32c9c" title="指定ページが条件に合っているか" alt="" coords="267,5,482,64"/>
+<area shape="poly" title=" " alt="" coords="219,32,252,32,252,37,219,37"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#afce47c73ae068e350dd75deaf586c580" title="ターンの終了状態か" alt="" coords="530,13,735,56"/>
+<area shape="poly" title=" " alt="" coords="483,32,515,32,515,37,483,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Battle/Objects/GameTroop.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

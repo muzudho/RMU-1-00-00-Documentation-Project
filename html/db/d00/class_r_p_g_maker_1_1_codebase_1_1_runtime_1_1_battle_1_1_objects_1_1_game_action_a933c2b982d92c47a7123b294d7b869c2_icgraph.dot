@@ -1,0 +1,24 @@
+digraph "RPGMaker.Codebase.Runtime.Battle.Objects.GameAction.TargetsForFriends"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Targets\lForFriends",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="味方側のバトラーの配列を返す"];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="RPGMaker.Codebase.Runtime.\lBattle.Objects.GameAction.Make\lTargets",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#a5a109d0fddf38884a1cdeb5833709e80",tooltip="対象となり得るバトラーを配列で返す 使用者への影響については、対象とは別で処理されるべきもののため、ここでは含めない"];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.StartAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#abc5245ecc7cc228c39cc09d68856240d",tooltip="アクション開始"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessForced\lAction",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ad9cccdc3428a10e6f65e149664fd1ae6",tooltip="強制アクションの処理"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a5f49f9a6afb129e2863cd9ee41835cfc",tooltip="イベントのアップデートを行い、何か実行されたか返す"];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateBattle\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08",tooltip="Update処理"];
+  Node3 -> Node7 [id="edge6_Node000003_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessTurn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a2542f4b9c2a2f2c223a68bd230ab5374",tooltip="ターン継続処理"];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateTurn",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#aa394caa485e94736c2113a2c94f72631",tooltip="ターンのアップデート"];
+  Node8 -> Node6 [id="edge8_Node000008_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

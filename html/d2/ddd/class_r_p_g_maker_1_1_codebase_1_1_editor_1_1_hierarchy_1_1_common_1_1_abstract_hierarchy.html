@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d3/dc0/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy.html">Hierarchy</a></li><li class="navelem"><a class="el" href="../../d2/d0a/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html">AbstractHierarchy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-static-methods">静的限定公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="../../d8/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>各Hierarchy表示の基底クラス  
+ <a href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/d55/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_hierarchy_8_common_8_abstract_hierarchy_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_hierarchy_8_common_8_abstract_hierarchy_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_hierarchy_8_common_8_abstract_hierarchy_inherit__map">
+<area shape="rect" title="各Hierarchy表示の基底クラス" alt="" coords="5,560,246,603"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_animation_1_1_animation_hierarchy.html" title="アニメーションのHierarchy" alt="" coords="304,5,548,64"/>
+<area shape="poly" title=" " alt="" coords="125,545,134,452,144,391,160,325,181,258,209,191,246,129,292,74,306,62,310,66,296,78,250,132,214,194,186,260,165,327,150,392,140,452,131,545"/>
+<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html" title="素材管理のHierarchy" alt="" coords="305,88,547,147"/>
+<area shape="poly" title=" " alt="" coords="128,545,142,466,170,361,192,306,219,252,252,201,292,157,307,145,310,149,295,161,256,205,223,255,196,308,175,363,147,467,133,546"/>
+<area shape="rect" href="../../d2/de9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_character_1_1_battle_hierarchy.html" title="キャラクター及び、敵のHierarchy" alt="" coords="317,171,535,229"/>
+<area shape="poly" title=" " alt="" coords="132,544,150,479,182,397,203,354,228,313,258,274,292,239,315,224,318,228,295,243,262,277,233,316,208,357,187,399,155,481,137,546"/>
+<area shape="rect" href="../../da/d03/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_character_1_1_character_hierarchy.html" title="キャラクター及び、敵のHierarchy" alt="" coords="306,253,546,312"/>
+<area shape="poly" title=" " alt="" coords="138,545,161,495,194,435,238,374,264,346,292,322,310,310,313,315,295,326,268,350,242,378,199,438,166,497,143,547"/>
+<area shape="rect" href="../../d8/de4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_common_event_1_1_common_event_hierarchy.html" title="コモンイベントのHierarchy" alt="" coords="294,336,558,395"/>
+<area shape="poly" title=" " alt="" coords="148,546,208,475,248,437,292,404,314,393,316,398,295,409,252,441,212,479,152,550"/>
+<area shape="rect" href="../../de/dca/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_equip_1_1_equip_hierarchy.html" title="装備のHierarchy" alt="" coords="301,419,551,461"/>
+<area shape="poly" title=" " alt="" coords="164,549,223,508,293,471,323,459,325,464,295,476,226,513,167,553"/>
+<area shape="rect" href="../../d9/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_flags_1_1_flags_hierarchy.html" title="スイッチのHierarchy" alt="" coords="302,485,550,528"/>
+<area shape="poly" title=" " alt="" coords="228,553,336,526,338,531,229,558"/>
+<area shape="rect" href="../../d3/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_initialization_1_1_initialization_hierarchy.html" title="初期設定のHierarchy" alt="" coords="328,552,524,611"/>
+<area shape="poly" title=" " alt="" coords="261,579,327,579,327,584,261,584"/>
+<area shape="rect" href="../../d3/dc4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_map_1_1_map_hierarchy.html" title="MapのHierarchy" alt="" coords="309,635,543,677"/>
+<area shape="poly" title=" " alt="" coords="229,604,338,631,336,637,228,609"/>
+<area shape="rect" href="../../d9/def/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_map_1_1_map_sample_hierarchy.html" title="サンプルマップのHierarchy" alt="" coords="315,701,537,760"/>
+<area shape="poly" title=" " alt="" coords="168,609,227,649,295,687,322,698,320,703,292,692,224,653,165,614"/>
+<area shape="rect" href="../../dd/d97/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_outline_1_1_outline_hierarchy.html" title="アウトラインのHierarchy" alt="" coords="321,784,531,843"/>
+<area shape="poly" title=" " alt="" coords="150,614,209,692,250,734,295,770,322,784,319,789,292,774,246,738,205,696,146,617"/>
+<area shape="rect" href="../../db/d2b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_skill_1_1_skill_hierarchy.html" title="スキルのHierarchy" alt="" coords="309,867,543,909"/>
+<area shape="poly" title=" " alt="" coords="141,616,162,669,195,733,239,798,266,827,295,853,314,864,311,868,292,857,262,831,235,801,190,736,157,671,136,618"/>
+<area shape="rect" href="../../d7/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_sound_1_1_sound_hierarchy.html" title="サウンドのHierarchy" alt="" coords="297,933,555,976"/>
+<area shape="poly" title=" " alt="" coords="137,616,154,682,185,764,206,807,231,848,261,886,295,919,313,931,310,935,292,923,257,890,227,851,201,809,180,766,149,684,131,618"/>
+<area shape="rect" href="../../dc/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_state_1_1_state_hierarchy.html" title="ステートのHierarchy" alt="" coords="303,1000,549,1043"/>
+<area shape="poly" title=" " alt="" coords="133,617,147,694,176,794,197,847,223,898,256,945,295,986,311,997,308,1002,292,990,252,948,219,900,192,849,171,796,142,695,128,618"/>
+<area shape="rect" href="../../d7/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_type_1_1_type_hierarchy.html" title="タイプのHierarchy" alt="" coords="306,1067,546,1109"/>
+<area shape="poly" title=" " alt="" coords="131,617,141,706,151,762,167,824,188,886,216,947,251,1004,295,1053,311,1064,308,1068,292,1057,247,1007,211,950,183,888,162,825,146,764,136,707,126,618"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a02b9adc25314925dcc82eac3682f5132"><td class="memItemLeft" align="right" valign="top"><a id="a02b9adc25314925dcc82eac3682f5132" name="a02b9adc25314925dcc82eac3682f5132"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Refresh</b> (string updateData=null)</td></tr>
+<tr class="memdesc:a02b9adc25314925dcc82eac3682f5132"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新処理 <br /></td></tr>
+<tr class="separator:a02b9adc25314925dcc82eac3682f5132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ad7f486356e18cb389ed11b1267f14f5b"><td class="memItemLeft" align="right" valign="top"><a id="ad7f486356e18cb389ed11b1267f14f5b" name="ad7f486356e18cb389ed11b1267f14f5b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadData</b> ()</td></tr>
+<tr class="memdesc:ad7f486356e18cb389ed11b1267f14f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">データの読込 <br /></td></tr>
+<tr class="separator:ad7f486356e18cb389ed11b1267f14f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ad99928233bcb63ead2de5e3b69093"><td class="memItemLeft" align="right" valign="top"><a id="a74ad99928233bcb63ead2de5e3b69093" name="a74ad99928233bcb63ead2de5e3b69093"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateView</b> (string updateData=null)</td></tr>
+<tr class="memdesc:a74ad99928233bcb63ead2de5e3b69093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewの更新 <br /></td></tr>
+<tr class="separator:a74ad99928233bcb63ead2de5e3b69093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+静的限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac981435195ecc5958f1e37f3b6edba97"><td class="memItemLeft" align="right" valign="top">static WindowLayoutManager.WindowLayoutId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#ac981435195ecc5958f1e37f3b6edba97">GetCurrentMainWindowId</a> ()</td></tr>
+<tr class="memdesc:ac981435195ecc5958f1e37f3b6edba97"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在メインになっているWindowの取得  <br /></td></tr>
+<tr class="separator:ac981435195ecc5958f1e37f3b6edba97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a1435148c911f623b76924dee6e9750de"><td class="memItemLeft" align="right" valign="top">MapManagementService&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#a1435148c911f623b76924dee6e9750de">mapManagementService</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1435148c911f623b76924dee6e9750de"><td class="mdescLeft">&#160;</td><td class="mdescRight">MapManagementService取得  <br /></td></tr>
+<tr class="separator:a1435148c911f623b76924dee6e9750de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0ef66ea4e5e09470bbb90f8dca06b83"><td class="memItemLeft" align="right" valign="top">EventManagementService&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#ab0ef66ea4e5e09470bbb90f8dca06b83">eventManagementService</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab0ef66ea4e5e09470bbb90f8dca06b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">EventManagementService取得  <br /></td></tr>
+<tr class="separator:ab0ef66ea4e5e09470bbb90f8dca06b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1bfc584449f55c5143a49b38b4f8a17"><td class="memItemLeft" align="right" valign="top">DatabaseManagementService&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#aa1bfc584449f55c5143a49b38b4f8a17">databaseManagementService</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa1bfc584449f55c5143a49b38b4f8a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">DatabaseManagementService取得  <br /></td></tr>
+<tr class="separator:aa1bfc584449f55c5143a49b38b4f8a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a1b2793fb573eff6cee04ea79d662f"><td class="memItemLeft" align="right" valign="top">OutlineManagementService&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy.html#a63a1b2793fb573eff6cee04ea79d662f">outlineManagementService</a><code> [get]</code></td></tr>
+<tr class="memdesc:a63a1b2793fb573eff6cee04ea79d662f"><td class="mdescLeft">&#160;</td><td class="mdescRight">OutlineManagementService取得  <br /></td></tr>
+<tr class="separator:a63a1b2793fb573eff6cee04ea79d662f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>各Hierarchy表示の基底クラス </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="ac981435195ecc5958f1e37f3b6edba97" name="ac981435195ecc5958f1e37f3b6edba97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac981435195ecc5958f1e37f3b6edba97">&#9670;&#160;</a></span>GetCurrentMainWindowId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static WindowLayoutManager.WindowLayoutId RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy.GetCurrentMainWindowId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>現在メインになっているWindowの取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy_ac981435195ecc5958f1e37f3b6edba97_icgraph.png" border="0" usemap="#ad2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy_ac981435195ecc5958f1e37f3b6edba97_icgraph" alt=""/></div>
+<map name="ad2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy_ac981435195ecc5958f1e37f3b6edba97_icgraph" id="ad2/ddd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_abstract_hierarchy_ac981435195ecc5958f1e37f3b6edba97_icgraph">
+<area shape="rect" title="現在メインになっているWindowの取得" alt="" coords="334,5,578,64"/>
+<area shape="rect" href="../../d8/de4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_common_event_1_1_common_event_hierarchy.html#af42ea57e192e2fb9d70813eae746bdcc" title="コモンイベントのInspector表示" alt="" coords="5,5,286,64"/>
+<area shape="poly" title=" " alt="" coords="319,37,286,37,286,32,319,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="aa1bfc584449f55c5143a49b38b4f8a17" name="aa1bfc584449f55c5143a49b38b4f8a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bfc584449f55c5143a49b38b4f8a17">&#9670;&#160;</a></span>databaseManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DatabaseManagementService RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy.databaseManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DatabaseManagementService取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ab0ef66ea4e5e09470bbb90f8dca06b83" name="ab0ef66ea4e5e09470bbb90f8dca06b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0ef66ea4e5e09470bbb90f8dca06b83">&#9670;&#160;</a></span>eventManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventManagementService RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy.eventManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>EventManagementService取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a1435148c911f623b76924dee6e9750de" name="a1435148c911f623b76924dee6e9750de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1435148c911f623b76924dee6e9750de">&#9670;&#160;</a></span>mapManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MapManagementService RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy.mapManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>MapManagementService取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a63a1b2793fb573eff6cee04ea79d662f" name="a63a1b2793fb573eff6cee04ea79d662f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63a1b2793fb573eff6cee04ea79d662f">&#9670;&#160;</a></span>outlineManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">OutlineManagementService RPGMaker.Codebase.Editor.Hierarchy.Common.AbstractHierarchy.outlineManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>OutlineManagementService取得 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Hierarchy/Common/AbstractHierarchy.cs</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
