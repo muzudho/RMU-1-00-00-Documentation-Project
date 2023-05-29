@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.InputSystemState クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html">InputSystemState</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d8/d57/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.InputSystemState クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>入力システム状態  
+ <a href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.InputSystemState の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d9d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_inherit__map">
+<area shape="rect" title="入力システム状態" alt="" coords="5,80,209,123"/>
+<area shape="rect" title=" " alt="" coords="52,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.InputSystemState 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d3f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_input_system_state_coll__map">
+<area shape="rect" title="入力システム状態" alt="" coords="5,80,209,123"/>
+<area shape="rect" title=" " alt="" coords="52,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af33a93b4be59651111abafc607236f12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#af33a93b4be59651111abafc607236f12">OnMove</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:af33a93b4be59651111abafc607236f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">十字キー  <br /></td></tr>
+<tr class="separator:af33a93b4be59651111abafc607236f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82b351d668ed988247ea4e2e16a3f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#aa82b351d668ed988247ea4e2e16a3f3b">OnFire</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:aa82b351d668ed988247ea4e2e16a3f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">決定キー  <br /></td></tr>
+<tr class="separator:aa82b351d668ed988247ea4e2e16a3f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab212d8b0925af283ce465c74c1a79b81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#ab212d8b0925af283ce465c74c1a79b81">OnCancel</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:ab212d8b0925af283ce465c74c1a79b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャンセルキー  <br /></td></tr>
+<tr class="separator:ab212d8b0925af283ce465c74c1a79b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327874763bf3dd6728d3328490de8f49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a327874763bf3dd6728d3328490de8f49">OnMenu</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:a327874763bf3dd6728d3328490de8f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニュー  <br /></td></tr>
+<tr class="separator:a327874763bf3dd6728d3328490de8f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6540667b05d99652479434f82f741727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a6540667b05d99652479434f82f741727">OnDash</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:a6540667b05d99652479434f82f741727"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダッシュ  <br /></td></tr>
+<tr class="separator:a6540667b05d99652479434f82f741727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6a5ac6380ce5fa79864a563e09e24d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#aef6a5ac6380ce5fa79864a563e09e24d">OnLeftB</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="separator:aef6a5ac6380ce5fa79864a563e09e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe88faed5c33f9a46d1347a52d13d128"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#abe88faed5c33f9a46d1347a52d13d128">OnRightB</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="separator:abe88faed5c33f9a46d1347a52d13d128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f1c4b8df813ad435c725e6b8f4ed8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#af5f1c4b8df813ad435c725e6b8f4ed8e">CurrentInputSystemState</a> (<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a> handleType)</td></tr>
+<tr class="memdesc:af5f1c4b8df813ad435c725e6b8f4ed8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">渡されたHandleTypeの、現在の状態を返却する  <br /></td></tr>
+<tr class="separator:af5f1c4b8df813ad435c725e6b8f4ed8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3421abad1a637846716c3721000da94c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a3421abad1a637846716c3721000da94c">OnDown</a> (<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a> handleType)</td></tr>
+<tr class="memdesc:a3421abad1a637846716c3721000da94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">特定のキーがこのフレームで押されたかどうか（OnPress）  <br /></td></tr>
+<tr class="separator:a3421abad1a637846716c3721000da94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dfbf4caca4144937441894385c220d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a9dfbf4caca4144937441894385c220d1">OnUp</a> (<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a> handleType)</td></tr>
+<tr class="memdesc:a9dfbf4caca4144937441894385c220d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">特定のキーがこのフレームで離されたかどうか（OnPress）  <br /></td></tr>
+<tr class="separator:a9dfbf4caca4144937441894385c220d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a79d209ae5265a5f55a05b070b5eeb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a4a79d209ae5265a5f55a05b070b5eeb8">OnPress</a> (<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a> handleType)</td></tr>
+<tr class="memdesc:a4a79d209ae5265a5f55a05b070b5eeb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">特定のキーがこのフレームで押され続けているかどうか（OnPress）  <br /></td></tr>
+<tr class="separator:a4a79d209ae5265a5f55a05b070b5eeb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a33416f5e7df5d54f360a0fb508071698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a33416f5e7df5d54f360a0fb508071698">InputSystemState</a> ()</td></tr>
+<tr class="memdesc:a33416f5e7df5d54f360a0fb508071698"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a33416f5e7df5d54f360a0fb508071698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a54dd5b9236b896b832f431a97f400e3b"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a54dd5b9236b896b832f431a97f400e3b">_move</a></td></tr>
+<tr class="separator:a54dd5b9236b896b832f431a97f400e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb48c4a5d4d4d0c4aba63ebfe130bc3"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state.html#a6cb48c4a5d4d4d0c4aba63ebfe130bc3">_inputSystemState</a> = new Dictionary&lt;<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>, bool&gt;()</td></tr>
+<tr class="separator:a6cb48c4a5d4d4d0c4aba63ebfe130bc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>入力システム状態 </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a33416f5e7df5d54f360a0fb508071698" name="a33416f5e7df5d54f360a0fb508071698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33416f5e7df5d54f360a0fb508071698">&#9670;&#160;</a></span>InputSystemState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.Common.InputSystemState.InputSystemState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a33416f5e7df5d54f360a0fb508071698_cgraph.png" border="0" usemap="#ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a33416f5e7df5d54f360a0fb508071698_cgraph" alt=""/></div>
+<map name="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a33416f5e7df5d54f360a0fb508071698_cgraph" id="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a33416f5e7df5d54f360a0fb508071698_cgraph">
+<area shape="rect" title="コンストラクタ" alt="" coords="5,5,295,48"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#a3bffcc99f5514ed2082ac15de145afa9" title="現在のInputSystemStateの登録" alt="" coords="343,5,620,48"/>
+<area shape="poly" title=" " alt="" coords="295,24,328,24,328,29,295,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="af5f1c4b8df813ad435c725e6b8f4ed8e" name="af5f1c4b8df813ad435c725e6b8f4ed8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f1c4b8df813ad435c725e6b8f4ed8e">&#9670;&#160;</a></span>CurrentInputSystemState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.InputSystemState.CurrentInputSystemState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>&#160;</td>
+          <td class="paramname"><em>handleType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>渡されたHandleTypeの、現在の状態を返却する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handleType</td><td>HandleType</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>押下されている時true</dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_af5f1c4b8df813ad435c725e6b8f4ed8e_icgraph.png" border="0" usemap="#ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_af5f1c4b8df813ad435c725e6b8f4ed8e_icgraph" alt=""/></div>
+<map name="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_af5f1c4b8df813ad435c725e6b8f4ed8e_icgraph" id="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_af5f1c4b8df813ad435c725e6b8f4ed8e_icgraph">
+<area shape="rect" title="渡されたHandleTypeの、現在の状態を返却する" alt="" coords="1055,64,1282,123"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#a5ba9bee5e513cd1d9cd104eb7e0fa92f" title="入力監視" alt="" coords="803,72,1007,115"/>
+<area shape="poly" title=" " alt="" coords="1040,96,1007,96,1007,91,1040,91"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a89d716fd7bc25285346f66de9e0e8ad6" title=" " alt="" coords="530,5,733,48"/>
+<area shape="poly" title=" " alt="" coords="800,71,721,51,723,46,801,65"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba" title="Update処理" alt="" coords="508,72,755,115"/>
+<area shape="poly" title=" " alt="" coords="788,96,756,96,756,91,788,91"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a423a666bb2aa67001761fd172ec9090f" title=" " alt="" coords="517,139,746,181"/>
+<area shape="poly" title=" " alt="" coords="801,121,723,141,721,135,800,116"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a9231e45c15cb86d90ea7850734f317e8" title="破棄処理" alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="527,71,448,51,449,46,528,65"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="257,72,460,115"/>
+<area shape="poly" title=" " alt="" coords="493,96,460,96,460,91,493,91"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc" title=" " alt="" coords="257,139,460,181"/>
+<area shape="poly" title=" " alt="" coords="502,163,461,163,461,157,502,157"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a6e8b21d48258d3dda96299a1fe1f9a18" title=" " alt="" coords="257,205,460,248"/>
+<area shape="poly" title=" " alt="" coords="528,188,449,207,448,202,527,183"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a8514c54d190f9d2acb578100f490a861" title=" " alt="" coords="5,139,209,181"/>
+<area shape="poly" title=" " alt="" coords="242,163,209,163,209,157,242,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab212d8b0925af283ce465c74c1a79b81" name="ab212d8b0925af283ce465c74c1a79b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab212d8b0925af283ce465c74c1a79b81">&#9670;&#160;</a></span>OnCancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnCancel </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>キャンセルキー </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6540667b05d99652479434f82f741727" name="a6540667b05d99652479434f82f741727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6540667b05d99652479434f82f741727">&#9670;&#160;</a></span>OnDash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnDash </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ダッシュ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3421abad1a637846716c3721000da94c" name="a3421abad1a637846716c3721000da94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3421abad1a637846716c3721000da94c">&#9670;&#160;</a></span>OnDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.InputSystemState.OnDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>&#160;</td>
+          <td class="paramname"><em>handleType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>特定のキーがこのフレームで押されたかどうか（OnPress） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handleType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a3421abad1a637846716c3721000da94c_icgraph.png" border="0" usemap="#ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a3421abad1a637846716c3721000da94c_icgraph" alt=""/></div>
+<map name="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a3421abad1a637846716c3721000da94c_icgraph" id="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a3421abad1a637846716c3721000da94c_icgraph">
+<area shape="rect" title="特定のキーがこのフレームで押されたかどうか（OnPress）" alt="" coords="1741,337,1976,380"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#aad3041483959ce5f5b546b403476007f" title="特定のキーがこのフレームで押下されたかどうか" alt="" coords="1490,337,1693,380"/>
+<area shape="poly" title=" " alt="" coords="1727,361,1694,361,1694,356,1727,356"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#af7d623b1aae582caefa5c379f70c8847" title="引数の入力状態を返却する" alt="" coords="1200,5,1425,48"/>
+<area shape="poly" title=" " alt="" coords="1580,323,1564,265,1536,195,1496,123,1470,90,1440,62,1423,51,1426,46,1444,58,1474,87,1500,120,1541,192,1569,264,1585,322"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#afbd7070992cf80e2acf0a2ff7db4ed78" title="決定・キャンセルなどのトリガが起動されたか" alt="" coords="1201,72,1424,131"/>
+<area shape="poly" title=" " alt="" coords="1573,325,1552,283,1522,235,1485,186,1440,145,1423,134,1425,129,1444,141,1489,183,1527,232,1557,281,1578,323"/>
+<area shape="rect" href="../../dd/d7d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_input_name_1_1_input_name_window.html#ade9af008ab235ea54ccdd6d098a0eaed" title=" " alt="" coords="1198,155,1427,213"/>
+<area shape="poly" title=" " alt="" coords="1560,328,1507,277,1475,250,1441,228,1418,216,1420,211,1443,223,1478,246,1511,273,1564,324"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a20cf76123ea64b387c1344993f99b0ec" title="Update処理" alt="" coords="1211,237,1414,280"/>
+<area shape="poly" title=" " alt="" coords="1533,333,1441,295,1405,283,1407,278,1443,289,1535,328"/>
+<area shape="rect" href="../../d1/d38/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_window_button_base.html#ab7734cbff81590f0ed654fef704497f5" title="フォーカスが当たっている場合に、Highlightを有効にする フォーカスが外れている場合に、Highlightを無効にする 本設定は、GUIで AutoChangeFocusdColor にチェックが..." alt="" coords="1199,304,1426,347"/>
+<area shape="poly" title=" " alt="" coords="1475,347,1426,342,1427,336,1476,342"/>
+<area shape="rect" href="../../d0/d74/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_debug_tool_group_menu.html#ab86031c9a746158375c8820d1f0cb8ad" title=" " alt="" coords="1183,371,1442,413"/>
+<area shape="poly" title=" " alt="" coords="1475,375,1443,379,1442,374,1475,370"/>
+<area shape="rect" href="../../d3/d1d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_debug_tool_value_item.html#a1cb3d3d8081b57283fb522ddaa97f03d" title=" " alt="" coords="1187,437,1438,480"/>
+<area shape="poly" title=" " alt="" coords="1535,389,1443,428,1407,439,1405,434,1441,423,1533,384"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a1f1b1bacb27532b706c57a8e4ecbdfb7" title=" " alt="" coords="1211,504,1414,547"/>
+<area shape="poly" title=" " alt="" coords="1564,393,1512,446,1479,472,1443,494,1416,507,1414,502,1441,490,1476,468,1508,442,1561,390"/>
+<area shape="rect" href="../../d0/d73/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_sort_menu.html#af0b618853cdcfb1cc36c61b2c9c2e21f" title=" " alt="" coords="1211,571,1414,613"/>
+<area shape="poly" title=" " alt="" coords="1576,395,1555,434,1525,479,1488,523,1443,561,1416,575,1413,571,1441,556,1484,519,1521,476,1550,431,1572,392"/>
+<area shape="rect" href="../../d4/d14/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_option_controller.html#aa38f244bb3755f07025b41827f2e26df" title=" " alt="" coords="1211,637,1414,680"/>
+<area shape="poly" title=" " alt="" coords="1583,395,1565,447,1536,510,1496,573,1471,602,1444,627,1415,644,1413,639,1440,623,1468,599,1492,570,1531,508,1560,445,1578,393"/>
+<area shape="rect" href="../../d8/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_flow_control_1_1_flow_if.html#a2fd01aee89e3aaaa3812c0bd2d7e390e" title=" " alt="" coords="892,5,1096,48"/>
+<area shape="poly" title=" " alt="" coords="1185,29,1096,29,1096,24,1185,24"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#a591b5bff2a4f78f2470b6b3136862cd4" title="入力のアップデート" alt="" coords="853,80,1135,123"/>
+<area shape="poly" title=" " alt="" coords="1186,104,1135,104,1135,99,1186,99"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#a79095412e3c82f3678f584271732bea5" title="更新処理" alt="" coords="552,72,805,131"/>
+<area shape="poly" title=" " alt="" coords="838,104,806,104,806,99,838,99"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba" title="Update処理" alt="" coords="257,80,504,123"/>
+<area shape="poly" title=" " alt="" coords="537,104,505,104,505,99,537,99"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a9231e45c15cb86d90ea7850734f317e8" title="破棄処理" alt="" coords="5,47,209,89"/>
+<area shape="poly" title=" " alt="" coords="242,87,209,83,209,78,242,82"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="5,113,209,156"/>
+<area shape="poly" title=" " alt="" coords="242,121,209,125,209,120,242,116"/>
+<area shape="rect" href="../../dd/d7d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_input_name_1_1_input_name_window.html#ad8012c56d8b3f8b10386dda4c071919f" title=" " alt="" coords="880,155,1108,213"/>
+<area shape="poly" title=" " alt="" coords="1183,187,1109,187,1109,181,1183,181"/>
+<area shape="rect" href="../../dd/d7d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_input_name_1_1_input_name_window.html#a890353e0a245a3db04bca4e6d09ccbe7" title=" " alt="" coords="871,237,1117,280"/>
+<area shape="poly" title=" " alt="" coords="1184,217,1089,239,1087,234,1183,211"/>
+<area shape="rect" href="../../dd/d7d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_input_name_1_1_input_name_window.html#ae97c9b57bffdaaa181b9c81f54b734f6" title="決定キー" alt="" coords="565,155,793,213"/>
+<area shape="poly" title=" " alt="" coords="865,187,793,187,793,181,865,181"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa82b351d668ed988247ea4e2e16a3f3b" name="aa82b351d668ed988247ea4e2e16a3f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82b351d668ed988247ea4e2e16a3f3b">&#9670;&#160;</a></span>OnFire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnFire </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>決定キー </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef6a5ac6380ce5fa79864a563e09e24d" name="aef6a5ac6380ce5fa79864a563e09e24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6a5ac6380ce5fa79864a563e09e24d">&#9670;&#160;</a></span>OnLeftB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnLeftB </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a327874763bf3dd6728d3328490de8f49" name="a327874763bf3dd6728d3328490de8f49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327874763bf3dd6728d3328490de8f49">&#9670;&#160;</a></span>OnMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnMenu </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>メニュー </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af33a93b4be59651111abafc607236f12" name="af33a93b4be59651111abafc607236f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33a93b4be59651111abafc607236f12">&#9670;&#160;</a></span>OnMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnMove </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>十字キー </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a79d209ae5265a5f55a05b070b5eeb8" name="a4a79d209ae5265a5f55a05b070b5eeb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a79d209ae5265a5f55a05b070b5eeb8">&#9670;&#160;</a></span>OnPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.InputSystemState.OnPress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>&#160;</td>
+          <td class="paramname"><em>handleType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>特定のキーがこのフレームで押され続けているかどうか（OnPress） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handleType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a4a79d209ae5265a5f55a05b070b5eeb8_icgraph.png" border="0" usemap="#ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a4a79d209ae5265a5f55a05b070b5eeb8_icgraph" alt=""/></div>
+<map name="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a4a79d209ae5265a5f55a05b070b5eeb8_icgraph" id="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a4a79d209ae5265a5f55a05b070b5eeb8_icgraph">
+<area shape="rect" title="特定のキーがこのフレームで押され続けているかどうか（OnPress）" alt="" coords="4141,446,4377,489"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#a6285433ede7818ccbe08ea9b0e59ad61" title="特定のキーがこのフレームで押され続けているかどうか" alt="" coords="3889,446,4093,489"/>
+<area shape="poly" title=" " alt="" coords="4126,470,4093,470,4093,465,4126,465"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#abb7d25fe36bd98da022b7f4511c03dd3" title=" " alt="" coords="3586,305,3811,348"/>
+<area shape="poly" title=" " alt="" coords="3953,439,3902,399,3840,362,3810,351,3812,346,3842,357,3905,394,3957,435"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af61111401b6e289e7cd71c37c80bff5d" title=" " alt="" coords="2349,222,2563,265"/>
+<area shape="poly" title=" " alt="" coords="3968,435,3945,401,3916,363,3880,326,3839,295,3775,259,3718,231,3666,212,3615,200,3563,192,3506,189,3367,188,3052,188,2839,191,2628,213,2558,224,2557,219,2627,208,2839,186,3051,182,3368,182,3507,184,3564,187,3616,195,3668,207,3720,227,3777,254,3842,291,3884,322,3920,360,3950,398,3972,432"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#af7d623b1aae582caefa5c379f70c8847" title="引数の入力状態を返却する" alt="" coords="3586,372,3811,414"/>
+<area shape="poly" title=" " alt="" coords="3898,445,3840,429,3794,418,3795,412,3841,424,3900,439"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aaa88ecaa288b37b43f7c478364f5012b" title="早送りか" alt="" coords="3591,521,3806,580"/>
+<area shape="poly" title=" " alt="" coords="3900,496,3806,523,3804,518,3898,491"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#afbd7070992cf80e2acf0a2ff7db4ed78" title="決定・キャンセルなどのトリガが起動されたか" alt="" coords="3587,438,3810,497"/>
+<area shape="poly" title=" " alt="" coords="3874,470,3810,470,3810,465,3874,465"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_message_1_1_message_text_scroll.html#aa06880b02b728c516bf95b4b4e7a1a67" title=" " alt="" coords="3556,628,3841,686"/>
+<area shape="poly" title=" " alt="" coords="3958,502,3906,548,3842,594,3775,630,3772,625,3839,589,3902,543,3955,498"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ab10efbb123b9f95680a21f0595044965" title=" " alt="" coords="1766,681,1989,724"/>
+<area shape="poly" title=" " alt="" coords="3981,504,3962,551,3933,606,3893,659,3869,682,3842,701,3778,732,3720,750,3667,756,3614,753,3504,737,3441,730,3367,726,2454,726,2204,721,1989,712,1989,706,2205,716,2454,721,3368,721,3441,724,3505,732,3615,748,3666,750,3719,744,3776,727,3839,696,3866,678,3889,655,3928,603,3957,549,3976,502"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#abba89095b41defaca884c77eb2b85fa7" title=" " alt="" coords="3265,230,3468,273"/>
+<area shape="poly" title=" " alt="" coords="3585,304,3464,276,3465,271,3586,299"/>
+<area shape="rect" href="../../d6/d9e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_party_1_1_party_change.html#a8f16990a492aff64258061fe86fe417c" title="メンバー追加、削除" alt="" coords="3246,297,3486,356"/>
+<area shape="poly" title=" " alt="" coords="3571,329,3487,329,3487,324,3571,324"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a2abe6a815918a5f31af8e1031b4ce039" title=" " alt="" coords="2951,226,3155,269"/>
+<area shape="poly" title=" " alt="" coords="3249,253,3155,252,3155,246,3249,248"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="2951,293,3155,336"/>
+<area shape="poly" title=" " alt="" coords="3250,278,3156,297,3155,291,3249,272"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ade4dde4a1fa8535ef5adbeb52c1b3a3d" title=" " alt="" coords="2647,222,2862,265"/>
+<area shape="poly" title=" " alt="" coords="2936,249,2862,248,2862,243,2936,244"/>
+<area shape="rect" href="../../da/d81/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_encount_enemy_processor.html#a4fe526998868f3f73d7758da52cbc7d6" title="イベント実行処理" alt="" coords="2627,289,2882,348"/>
+<area shape="poly" title=" " alt="" coords="2946,276,2881,291,2880,286,2945,271"/>
+<area shape="poly" title=" " alt="" coords="2633,246,2563,246,2563,241,2633,241"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a1c50ac1ba190459e6f190cdbfe263778" title=" " alt="" coords="2037,429,2284,472"/>
+<area shape="poly" title=" " alt="" coords="2417,275,2333,326,2260,381,2198,431,2194,426,2256,377,2331,322,2414,271"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a568c166cd57f15308dc10ba60706bd26" title=" " alt="" coords="2042,242,2279,285"/>
+<area shape="poly" title=" " alt="" coords="2334,255,2280,258,2279,253,2333,249"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af0e1fa61778d47dccbe907bcb8ebeb4c" title=" " alt="" coords="2043,142,2278,185"/>
+<area shape="poly" title=" " alt="" coords="2333,222,2215,188,2216,183,2335,217"/>
+<area shape="poly" title=" " alt="" coords="2186,416,2250,358,2331,298,2388,263,2391,268,2333,302,2254,363,2190,420"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a3a7ad6e6d848e31770443541b2113049" title=" " alt="" coords="1189,406,1466,449"/>
+<area shape="poly" title=" " alt="" coords="2022,455,1785,454,1515,446,1466,443,1466,438,1515,441,1785,449,2022,449"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ab602fb3908c965ecbdfa140fa64e3de4" title=" " alt="" coords="1188,340,1467,382"/>
+<area shape="poly" title=" " alt="" coords="2021,438,1467,379,1468,373,2022,433"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a1d7da40eb2e0a29eda0e228f434a77ec" title=" " alt="" coords="1193,473,1462,516"/>
+<area shape="poly" title=" " alt="" coords="2022,460,1462,490,1462,485,2022,455"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a4de669f540fb731c58fe2aaf3218c235" title=" " alt="" coords="1189,540,1466,582"/>
+<area shape="poly" title=" " alt="" coords="2022,475,1989,480,1467,547,1466,542,1988,474,2022,470"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ac3d79e5a98a34a7f08f34402600f7a57" title=" " alt="" coords="1196,606,1459,649"/>
+<area shape="poly" title=" " alt="" coords="2094,480,1989,516,1849,549,1707,577,1460,615,1459,610,1706,572,1848,544,1988,511,2093,475"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a8d383409968f24c28e9393d632d207c2" title=" " alt="" coords="1776,294,1979,337"/>
+<area shape="poly" title=" " alt="" coords="2099,425,1923,340,1926,335,2101,420"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a5d00d2c525cee192d90fc53bbc0c8682" title=" " alt="" coords="892,340,1140,382"/>
+<area shape="poly" title=" " alt="" coords="1210,405,1118,386,1119,380,1211,400"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a8c6faf084ea80880467ab13a448e9bed" title=" " alt="" coords="587,369,836,412"/>
+<area shape="poly" title=" " alt="" coords="878,377,837,381,836,376,877,372"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a164b0a6efee413b3cff10ea519ab8029" title=" " alt="" coords="579,436,844,478"/>
+<area shape="poly" title=" " alt="" coords="947,391,845,426,805,438,804,433,844,421,945,386"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ae14061e8d125d7fe532437b6ba183131" title=" " alt="" coords="312,336,516,378"/>
+<area shape="poly" title=" " alt="" coords="877,360,844,360,516,359,516,354,844,354,877,355"/>
+<area shape="poly" title=" " alt="" coords="603,434,578,426,463,381,465,377,580,421,604,429"/>
+<area shape="rect" href="../../df/d12/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_move_place.html#a937507f8d3c881ce82d1d1eb38321bbf" title=" " alt="" coords="297,428,531,486"/>
+<area shape="poly" title=" " alt="" coords="564,460,531,460,531,454,564,454"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc" title=" " alt="" coords="25,336,229,378"/>
+<area shape="poly" title=" " alt="" coords="297,360,229,360,229,354,297,354"/>
+<area shape="rect" href="../../da/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_processor.html#acd1dee6b4f36de52d8a8b775d612e502" title=" " alt="" coords="5,428,249,486"/>
+<area shape="poly" title=" " alt="" coords="281,460,249,460,249,454,281,454"/>
+<area shape="poly" title=" " alt="" coords="1173,364,1140,364,1140,358,1173,358"/>
+<area shape="poly" title=" " alt="" coords="1206,471,1187,464,1109,425,1046,385,1049,381,1112,420,1189,459,1208,466"/>
+<area shape="poly" title=" " alt="" coords="1198,536,1186,530,1137,496,1093,456,1031,384,1035,381,1097,453,1140,492,1189,525,1200,531"/>
+<area shape="poly" title=" " alt="" coords="1194,602,1186,597,1156,573,1129,546,1082,487,1047,429,1024,384,1029,382,1052,426,1086,484,1133,543,1160,569,1189,592,1197,597"/>
+<area shape="poly" title=" " alt="" coords="1762,343,1719,352,1439,408,1438,403,1718,346,1761,337"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#aec356ba03028b9e11ece2ceb38d7f3cf" title=" " alt="" coords="1515,294,1718,337"/>
+<area shape="poly" title=" " alt="" coords="1761,327,1719,327,1719,322,1761,322"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a6ee6f9efcc536de03d0f38f5d3de8e9e" title=" " alt="" coords="1196,206,1459,249"/>
+<area shape="poly" title=" " alt="" coords="1812,291,1766,274,1718,261,1652,249,1585,241,1459,232,1460,227,1586,235,1653,244,1719,256,1768,269,1814,286"/>
+<area shape="poly" title=" " alt="" coords="1540,346,1516,358,1493,378,1483,387,1468,397,1440,408,1438,403,1466,392,1480,383,1490,374,1514,354,1538,341"/>
+<area shape="poly" title=" " alt="" coords="1501,337,1468,342,1467,337,1500,331"/>
+<area shape="poly" title=" " alt="" coords="1592,351,1540,409,1506,439,1468,463,1443,475,1441,470,1466,459,1502,434,1536,405,1588,347"/>
+<area shape="poly" title=" " alt="" coords="1603,352,1582,393,1552,442,1515,490,1469,530,1448,541,1445,537,1465,526,1511,486,1548,439,1577,391,1598,349"/>
+<area shape="poly" title=" " alt="" coords="1609,352,1592,407,1563,473,1523,540,1498,570,1469,597,1450,608,1448,604,1465,592,1494,566,1519,537,1559,470,1587,405,1604,350"/>
+<area shape="poly" title=" " alt="" coords="1733,304,1775,304,1775,310,1733,309"/>
+<area shape="poly" title=" " alt="" coords="1660,282,1644,276,1617,273,1592,275,1577,280,1571,286,1573,293,1567,294,1566,284,1574,275,1591,270,1617,268,1646,270,1662,277"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a476c0a4fd7efbcd64fb342d4988ba6f7" title=" " alt="" coords="1194,6,1461,49"/>
+<area shape="poly" title=" " alt="" coords="1602,281,1584,231,1555,172,1516,113,1492,86,1465,63,1447,52,1450,47,1469,59,1496,82,1520,110,1560,169,1588,229,1607,279"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a8efa0bcf03ce7e5b2b1746ccc3ee13c0" title=" " alt="" coords="1200,73,1455,116"/>
+<area shape="poly" title=" " alt="" coords="1595,282,1573,246,1544,204,1508,164,1466,130,1444,119,1447,114,1468,126,1511,160,1548,201,1578,243,1600,280"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a3ec5763f85b5b41539237530c5806901" title=" " alt="" coords="1195,140,1460,182"/>
+<area shape="poly" title=" " alt="" coords="1583,285,1531,239,1499,216,1466,197,1438,185,1440,180,1468,192,1502,212,1534,235,1586,281"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ac56d14e743bf2942bb37db5c5954063e" title=" " alt="" coords="1202,273,1453,316"/>
+<area shape="poly" title=" " alt="" coords="1500,310,1453,306,1453,301,1501,305"/>
+<area shape="poly" title=" " alt="" coords="1546,291,1466,264,1425,252,1427,247,1468,259,1548,286"/>
+<area shape="poly" title=" " alt="" coords="1195,59,1189,63,1155,94,1125,130,1099,168,1077,208,1044,284,1026,340,1021,338,1039,282,1072,206,1094,166,1121,126,1151,90,1186,59,1192,55"/>
+<area shape="poly" title=" " alt="" coords="1197,125,1189,130,1160,153,1133,179,1086,238,1052,296,1029,341,1024,338,1047,293,1082,235,1129,176,1156,149,1186,126,1194,120"/>
+<area shape="poly" title=" " alt="" coords="1200,191,1189,197,1140,230,1097,269,1035,341,1031,338,1093,266,1137,226,1186,192,1198,186"/>
+<area shape="poly" title=" " alt="" coords="1211,322,1119,342,1118,337,1210,317"/>
+<area shape="poly" title=" " alt="" coords="1208,256,1189,264,1112,302,1049,342,1046,337,1109,297,1187,259,1206,251"/>
+<area shape="poly" title=" " alt="" coords="2028,291,1980,300,1979,294,2027,286"/>
+<area shape="poly" title=" " alt="" coords="2289,187,2401,219,2400,224,2287,192"/>
+<area shape="poly" title=" " alt="" coords="2107,195,1921,296,1918,291,2105,190"/>
+<area shape="poly" title=" " alt="" coords="2123,135,2062,91,2026,71,1988,56,1920,37,1851,24,1709,10,1576,9,1461,15,1460,10,1576,4,1710,5,1851,19,1922,32,1990,51,2028,66,2065,87,2126,131"/>
+<area shape="poly" title=" " alt="" coords="2111,137,2054,108,1988,86,1919,74,1847,66,1704,61,1570,66,1455,78,1455,72,1569,61,1704,55,1848,60,1919,68,1989,81,2056,104,2113,133"/>
+<area shape="poly" title=" " alt="" coords="2086,140,2038,126,1988,116,1856,99,1752,93,1648,98,1516,116,1492,122,1468,130,1424,142,1422,137,1466,125,1490,117,1514,110,1647,93,1752,87,1856,93,1989,110,2039,121,2087,135"/>
+<area shape="poly" title=" " alt="" coords="2029,184,1790,218,1515,261,1438,275,1437,270,1515,256,1789,213,2028,179"/>
+<area shape="poly" title=" " alt="" coords="2028,145,1917,135,1787,131,1718,133,1650,140,1582,150,1516,166,1502,172,1492,180,1468,197,1436,208,1435,203,1466,192,1489,176,1499,168,1514,161,1581,145,1649,134,1718,128,1787,125,1917,129,2029,140"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="2653,372,2856,414"/>
+<area shape="poly" title=" " alt="" coords="2956,343,2882,362,2839,374,2838,369,2881,357,2955,337"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="2354,324,2557,366"/>
+<area shape="poly" title=" " alt="" coords="2638,377,2557,364,2558,359,2639,372"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a50b8a09dc9b8ad097b5d4485d6d56217" title="戦闘終了のアップデート" alt="" coords="2333,390,2578,433"/>
+<area shape="poly" title=" " alt="" coords="2638,403,2579,407,2579,401,2638,398"/>
+<area shape="rect" href="../../d9/de0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_change_process.html#afa28f25a93e48c726ccfb77f291d7b38" title="イベント実行処理" alt="" coords="2943,360,3163,418"/>
+<area shape="poly" title=" " alt="" coords="3232,356,3163,370,3162,365,3231,351"/>
+<area shape="rect" href="../../d8/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_flow_control_1_1_flow_if.html#a2fd01aee89e3aaaa3812c0bd2d7e390e" title=" " alt="" coords="3265,380,3468,422"/>
+<area shape="poly" title=" " alt="" coords="3571,399,3469,401,3468,396,3571,393"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a15879f08ae07159760d067447ef99e38" title="待ちカウントのアップデート" alt="" coords="3259,521,3473,580"/>
+<area shape="poly" title=" " alt="" coords="3577,553,3474,553,3474,548,3577,548"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a966c330754b9e870029f9fc1fc888d2b" title="待ち時間のアップデート" alt="" coords="2946,521,3160,580"/>
+<area shape="poly" title=" " alt="" coords="3244,553,3161,553,3161,548,3244,548"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a48dd95195d3da8a4445574c3348dfea1" title="Update処理" alt="" coords="2647,521,2862,580"/>
+<area shape="poly" title=" " alt="" coords="2931,553,2862,553,2862,548,2931,548"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba" title="Update処理" alt="" coords="2332,476,2579,518"/>
+<area shape="poly" title=" " alt="" coords="2632,531,2579,522,2579,516,2633,526"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#a591b5bff2a4f78f2470b6b3136862cd4" title="入力のアップデート" alt="" coords="3226,446,3507,489"/>
+<area shape="poly" title=" " alt="" coords="3572,470,3507,470,3507,465,3572,465"/>
+<area shape="rect" href="../../d1/dc2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_message.html#a79095412e3c82f3678f584271732bea5" title="更新処理" alt="" coords="2628,438,2881,497"/>
+<area shape="poly" title=" " alt="" coords="3211,470,2881,470,2881,465,3211,465"/>
+<area shape="poly" title=" " alt="" coords="2613,484,2580,488,2580,482,2613,479"/>
+<area shape="poly" title=" " alt="" coords="3747,616,3729,609,3698,606,3673,608,3656,613,3648,620,3647,628,3642,627,3643,617,3653,608,3672,603,3699,601,3730,604,3749,611"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_message_1_1_message_text_scroll.html#aed5c22a2c233d2b5c9ae2ee0d3573ec5" title=" " alt="" coords="3224,628,3508,686"/>
+<area shape="poly" title=" " alt="" coords="3541,660,3509,660,3509,654,3541,654"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a81fae9c9437b068f77ba01916649cea3" title=" " alt="" coords="2930,628,3176,686"/>
+<area shape="poly" title=" " alt="" coords="3209,660,3177,660,3177,654,3209,654"/>
+<area shape="poly" title=" " alt="" coords="1752,710,1632,711,1490,705,1337,691,1261,679,1187,664,1122,646,1057,624,933,574,827,522,750,481,752,476,829,518,936,569,1059,619,1124,641,1188,658,1262,674,1338,685,1490,700,1632,705,1752,705"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe88faed5c33f9a46d1347a52d13d128" name="abe88faed5c33f9a46d1347a52d13d128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe88faed5c33f9a46d1347a52d13d128">&#9670;&#160;</a></span>OnRightB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.InputSystemState.OnRightB </td>
+          <td>(</td>
+          <td class="paramtype">InputAction::CallbackContext&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dfbf4caca4144937441894385c220d1" name="a9dfbf4caca4144937441894385c220d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dfbf4caca4144937441894385c220d1">&#9670;&#160;</a></span>OnUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.InputSystemState.OnUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>&#160;</td>
+          <td class="paramname"><em>handleType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>特定のキーがこのフレームで離されたかどうか（OnPress） </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handleType</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a9dfbf4caca4144937441894385c220d1_icgraph.png" border="0" usemap="#ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a9dfbf4caca4144937441894385c220d1_icgraph" alt=""/></div>
+<map name="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a9dfbf4caca4144937441894385c220d1_icgraph" id="ada/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_system_state_a9dfbf4caca4144937441894385c220d1_icgraph">
+<area shape="rect" title="特定のキーがこのフレームで離されたかどうか（OnPress）" alt="" coords="781,43,1000,85"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#a02f24039442528d8e5e10ba6510b2dcd" title="特定のキーがこのフレームで離されたされたかどうか" alt="" coords="530,43,733,85"/>
+<area shape="poly" title=" " alt="" coords="767,67,734,67,734,61,767,61"/>
+<area shape="rect" href="../../d4/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_handler.html#af7d623b1aae582caefa5c379f70c8847" title="引数の入力状態を返却する" alt="" coords="257,5,482,48"/>
+<area shape="poly" title=" " alt="" coords="515,50,482,45,483,40,516,45"/>
+<area shape="rect" href="../../dd/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_selectable.html#a97ce132998617df4e617ca7e20ab4fdf" title="Update処理" alt="" coords="259,72,480,131"/>
+<area shape="poly" title=" " alt="" coords="516,83,480,88,480,83,515,78"/>
+<area shape="rect" href="../../d8/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_flow_control_1_1_flow_if.html#a2fd01aee89e3aaaa3812c0bd2d7e390e" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="242,29,209,29,209,24,242,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6cb48c4a5d4d4d0c4aba63ebfe130bc3" name="a6cb48c4a5d4d4d0c4aba63ebfe130bc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb48c4a5d4d4d0c4aba63ebfe130bc3">&#9670;&#160;</a></span>_inputSystemState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>, bool&gt; RPGMaker.Codebase.Runtime.Common.InputSystemState._inputSystemState = new Dictionary&lt;<a class="el" href="../../da/d91/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_enum.html#a9c7ecc49423c4f42b8bf81dc5f0ff094">HandleType</a>, bool&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54dd5b9236b896b832f431a97f400e3b" name="a54dd5b9236b896b832f431a97f400e3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54dd5b9236b896b832f431a97f400e3b">&#9670;&#160;</a></span>_move</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 RPGMaker.Codebase.Runtime.Common.InputSystemState._move</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/GameState/<a class="el" href="../../df/d51/_input_system_state_8cs.html">InputSystemState.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

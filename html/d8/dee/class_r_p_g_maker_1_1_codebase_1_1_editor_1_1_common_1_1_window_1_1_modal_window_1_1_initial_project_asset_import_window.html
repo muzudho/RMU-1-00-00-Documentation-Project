@@ -1,0 +1,1092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../dd/db7/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window.html">Window</a></li><li class="navelem"><a class="el" href="../../d6/ded/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window.html">ModalWindow</a></li><li class="navelem"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html">InitialProjectAssetImportWindow</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_pro0c33d9785cf0037830133333b5e5fbbd.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d97/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_pro5835ca91a2c5cc9d81d5d6c9d866a76a.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,155,248,213"/>
+<area shape="rect" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html" title=" " alt="" coords="60,80,193,107"/>
+<area shape="poly" title=" " alt="" coords="129,122,129,154,124,154,124,122"/>
+<area shape="rect" title=" " alt="" coords="76,5,177,32"/>
+<area shape="poly" title=" " alt="" coords="129,47,129,80,124,80,124,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d0a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_pro1eb7e62ca2108eac77f9a79662f09b0d.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_window_8_modal_window_8_initial_project_asset_import_window_coll__map">
+<area shape="rect" title=" " alt="" coords="563,103,806,161"/>
+<area shape="rect" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html" title=" " alt="" coords="225,5,357,32"/>
+<area shape="poly" title=" " alt="" coords="372,23,454,36,540,57,589,77,634,100,632,105,587,82,539,63,453,41,371,28"/>
+<area shape="rect" title=" " alt="" coords="25,5,127,32"/>
+<area shape="poly" title=" " alt="" coords="141,16,224,16,224,21,141,21"/>
+<area shape="rect" title=" " alt="" coords="264,56,317,83"/>
+<area shape="poly" title=" " alt="" coords="332,70,427,80,540,96,563,100,562,106,539,101,426,85,331,75"/>
+<area shape="rect" title=" " alt="" coords="245,119,336,145"/>
+<area shape="poly" title=" " alt="" coords="351,129,563,129,563,135,351,135"/>
+<area shape="rect" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html" title="UIElementsのTextFieldを、IMGUIのUIをIMGUIContainerで内包したVisualElementに差し替えるためのクラス。" alt="" coords="196,173,385,216"/>
+<area shape="poly" title=" " alt="" coords="400,185,539,167,574,159,575,165,540,172,401,190"/>
+<area shape="rect" title=" " alt="" coords="23,152,129,179"/>
+<area shape="poly" title=" " alt="" coords="144,172,196,179,195,184,143,177"/>
+<area shape="rect" title=" " alt="" coords="5,203,147,245"/>
+<area shape="poly" title=" " alt="" coords="161,210,195,205,196,210,161,215"/>
+<area shape="rect" title=" " alt="" coords="263,244,318,271"/>
+<area shape="poly" title=" " alt="" coords="333,255,429,247,484,237,538,222,596,193,645,160,648,164,599,198,540,226,486,242,429,252,333,260"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a542727dc6c239cffa6f3071ccb29e6d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a542727dc6c239cffa6f3071ccb29e6d9">ShowWindow</a> ()</td></tr>
+<tr class="separator:a542727dc6c239cffa6f3071ccb29e6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18042b9e73ac49b45ace43fdc79a5391"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a18042b9e73ac49b45ace43fdc79a5391">Init</a> ()</td></tr>
+<tr class="separator:a18042b9e73ac49b45ace43fdc79a5391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html">RPGMaker.Codebase.Editor.Common.Window.BaseModalWindow</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:afcfedd83d50948cba38ebc80217b2a63 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#afcfedd83d50948cba38ebc80217b2a63">CallBackWidow</a> (object data)</td></tr>
+<tr class="separator:afcfedd83d50948cba38ebc80217b2a63 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f79874a08d97208c3f40dfac53bfdb9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a9f79874a08d97208c3f40dfac53bfdb9">ShowWindow</a> (string modalTitle, <a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#afcfedd83d50948cba38ebc80217b2a63">CallBackWidow</a> callBack)</td></tr>
+<tr class="separator:a9f79874a08d97208c3f40dfac53bfdb9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f0bc8442faeec0be9fefa2c8c9d5cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a24f0bc8442faeec0be9fefa2c8c9d5cb">Init</a> ()</td></tr>
+<tr class="separator:a24f0bc8442faeec0be9fefa2c8c9d5cb inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a4616c945eaa5c25d61d2c4c7fccb6221"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a4616c945eaa5c25d61d2c4c7fccb6221">ModalUxml</a><code> [get]</code></td></tr>
+<tr class="separator:a4616c945eaa5c25d61d2c4c7fccb6221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html">RPGMaker.Codebase.Editor.Common.Window.BaseModalWindow</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:ad7656d617c166f63adf6cd8c6ab1d231 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#ad7656d617c166f63adf6cd8c6ab1d231">ModalUxml</a><code> [get]</code></td></tr>
+<tr class="separator:ad7656d617c166f63adf6cd8c6ab1d231 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c59346e05e9b9cc4444325f31df190 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a56c59346e05e9b9cc4444325f31df190">ModalUss</a><code> [get]</code></td></tr>
+<tr class="separator:a56c59346e05e9b9cc4444325f31df190 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7d653270cd629639f4dac71f9b8504c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a7d653270cd629639f4dac71f9b8504c8">CheckLanguageData</a> ()</td></tr>
+<tr class="separator:a7d653270cd629639f4dac71f9b8504c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30970025d76eecb3f9a5aa2ddc92e9a5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a30970025d76eecb3f9a5aa2ddc92e9a5">GetFileName</a> (string name)</td></tr>
+<tr class="separator:a30970025d76eecb3f9a5aa2ddc92e9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a216abf6029338fd2c57e7797bb5a5801"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a216abf6029338fd2c57e7797bb5a5801">folderSub</a> = 4</td></tr>
+<tr class="separator:a216abf6029338fd2c57e7797bb5a5801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ccd5231109c7aa8893ea8cb464d238"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a53ccd5231109c7aa8893ea8cb464d238">_folderPath</a></td></tr>
+<tr class="separator:a53ccd5231109c7aa8893ea8cb464d238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75668e9232d81d6cc6e114f8278c6b73"><td class="memItemLeft" align="right" valign="top">SystemLanguage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a75668e9232d81d6cc6e114f8278c6b73">_lang2</a></td></tr>
+<tr class="separator:a75668e9232d81d6cc6e114f8278c6b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19db80f22cb4591f75a2288f8d9e1df"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#ab19db80f22cb4591f75a2288f8d9e1df">_labelFromUxml</a></td></tr>
+<tr class="separator:ab19db80f22cb4591f75a2288f8d9e1df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52306d74a0cde76db23865758440bb1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a52306d74a0cde76db23865758440bb1e">_okButton</a></td></tr>
+<tr class="separator:a52306d74a0cde76db23865758440bb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cae0e45f187b637bd19509865587edd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a6cae0e45f187b637bd19509865587edd">_selectNum</a></td></tr>
+<tr class="separator:a6cae0e45f187b637bd19509865587edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee444b1b4569973840b9de1a891bc032"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#aee444b1b4569973840b9de1a891bc032">_path</a></td></tr>
+<tr class="separator:aee444b1b4569973840b9de1a891bc032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8ad9f49a772d857397e71db6c54f2f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#ae8ad9f49a772d857397e71db6c54f2f7">_pathButton</a></td></tr>
+<tr class="separator:ae8ad9f49a772d857397e71db6c54f2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4675e18669e5e6a40bcbb90c6f35db1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#ac4675e18669e5e6a40bcbb90c6f35db1">_pathLabel</a></td></tr>
+<tr class="separator:ac4675e18669e5e6a40bcbb90c6f35db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c4f77c1d219357db4adf7ce889a5e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a66c4f77c1d219357db4adf7ce889a5e2">_projectName</a></td></tr>
+<tr class="separator:a66c4f77c1d219357db4adf7ce889a5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7f7406e5bc07d7ad3d38ba2b343596c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#aa7f7406e5bc07d7ad3d38ba2b343596c">_projectNameLabel</a></td></tr>
+<tr class="separator:aa7f7406e5bc07d7ad3d38ba2b343596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:afde0f8332202c3259f7ec9c683bbcfb3"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#afde0f8332202c3259f7ec9c683bbcfb3">TITLE_TEXT</a> = &quot;WORD_2100&quot;</td></tr>
+<tr class="separator:afde0f8332202c3259f7ec9c683bbcfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47aaac8b95ba8d63e44b8f7e078670e1"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a47aaac8b95ba8d63e44b8f7e078670e1">BASIC_ASSETS</a> = &quot;WORD_2105&quot;</td></tr>
+<tr class="separator:a47aaac8b95ba8d63e44b8f7e078670e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69e10c5d8f28332c141f5d55940486a"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#aa69e10c5d8f28332c141f5d55940486a">FULL_GAME</a> = &quot;WORD_2106&quot;</td></tr>
+<tr class="separator:aa69e10c5d8f28332c141f5d55940486a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc777d1be788056194fbeb2cd56fa99"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a9bc777d1be788056194fbeb2cd56fa99">DESCRIPTION_TEXT</a> = &quot;WORD_5005&quot;</td></tr>
+<tr class="separator:a9bc777d1be788056194fbeb2cd56fa99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a696155220b43cec80a12781a5e544f"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a2a696155220b43cec80a12781a5e544f">DESCRIPTION_TEXT2</a> = &quot;WORD_5010&quot;</td></tr>
+<tr class="separator:a2a696155220b43cec80a12781a5e544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5ec839d1c63c0bee748b34589179d62"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#aa5ec839d1c63c0bee748b34589179d62">PROJECT_NAME_TEXT</a> = &quot;WORD_5008&quot;</td></tr>
+<tr class="separator:aa5ec839d1c63c0bee748b34589179d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791a68b0bac139c5416ef047759b78b8"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a791a68b0bac139c5416ef047759b78b8">PATH_TEXT</a> = &quot;WORD_5009&quot;</td></tr>
+<tr class="separator:a791a68b0bac139c5416ef047759b78b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9becf7b8ffa92baec4974d006280798a"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a9becf7b8ffa92baec4974d006280798a">DEFAULT_PROJECT_NAME</a> = &quot;New Unite Project&quot;</td></tr>
+<tr class="separator:a9becf7b8ffa92baec4974d006280798a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2efa976c133a7bf288d76bfd0103febf"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a2efa976c133a7bf288d76bfd0103febf">PROJECT_BASE</a> = &quot;project_base_v&quot;</td></tr>
+<tr class="separator:a2efa976c133a7bf288d76bfd0103febf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f855f5f45653323bcb852a3b64f9bf"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#ad9f855f5f45653323bcb852a3b64f9bf">MASTERDATA_COMMON</a> = &quot;masterdata_common_v&quot;</td></tr>
+<tr class="separator:ad9f855f5f45653323bcb852a3b64f9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c5d5f4ae779a4aae0eb517ea137b02"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a44c5d5f4ae779a4aae0eb517ea137b02">MASTERDATA_JP</a> = &quot;masterdata_jp_v&quot;</td></tr>
+<tr class="separator:a44c5d5f4ae779a4aae0eb517ea137b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663eea6f922c12514e594c8207c34ecc"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a663eea6f922c12514e594c8207c34ecc">MASTERDATA_EN</a> = &quot;masterdata_en_v&quot;</td></tr>
+<tr class="separator:a663eea6f922c12514e594c8207c34ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac7ebfbda6d48fa0a1471e10f7703755"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#aac7ebfbda6d48fa0a1471e10f7703755">MASTERDATA_CN</a> = &quot;masterdata_cn_v&quot;</td></tr>
+<tr class="separator:aac7ebfbda6d48fa0a1471e10f7703755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b041906eed25ab943e4d4a354da2f93"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a7b041906eed25ab943e4d4a354da2f93">DEFAULTGAME_COMMON</a> = &quot;defaultgame_common_v&quot;</td></tr>
+<tr class="separator:a7b041906eed25ab943e4d4a354da2f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0344417e4f993bdcd4fca1d843d603eb"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a0344417e4f993bdcd4fca1d843d603eb">DEFAULTGAME_JP</a> = &quot;defaultgame_jp_v&quot;</td></tr>
+<tr class="separator:a0344417e4f993bdcd4fca1d843d603eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd6d1c9481792e8fd82997cef0ee8fa"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a8dd6d1c9481792e8fd82997cef0ee8fa">DEFAULTGAME_EN</a> = &quot;defaultgame_en_v&quot;</td></tr>
+<tr class="separator:a8dd6d1c9481792e8fd82997cef0ee8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68eea13da5f8a3023188391fda3148c"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#ab68eea13da5f8a3023188391fda3148c">DEFAULTGAME_CN</a> = &quot;defaultgame_cn_v&quot;</td></tr>
+<tr class="separator:ab68eea13da5f8a3023188391fda3148c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a3b66e7a3657f250e33b3766006b91"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a41a3b66e7a3657f250e33b3766006b91">VERSION</a> = &quot;1.0.0&quot;</td></tr>
+<tr class="separator:a41a3b66e7a3657f250e33b3766006b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72086e9bc56ac232b9ae2f7db3d6330a"><td class="memItemLeft" align="right" valign="top">static readonly string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a72086e9bc56ac232b9ae2f7db3d6330a">LANGUAGE_NAMES</a></td></tr>
+<tr class="separator:a72086e9bc56ac232b9ae2f7db3d6330a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html">RPGMaker.Codebase.Editor.Common.Window.BaseModalWindow</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a989bdf0ec5b6e7b4bf0ed96b43e0add7 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a989bdf0ec5b6e7b4bf0ed96b43e0add7">MoveDirectory</a> (string source, string destination)</td></tr>
+<tr class="separator:a989bdf0ec5b6e7b4bf0ed96b43e0add7 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html">RPGMaker.Codebase.Editor.Common.Window.BaseModalWindow</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:aa04194e2f118382a658255cd0b980783 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#afcfedd83d50948cba38ebc80217b2a63">CallBackWidow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#aa04194e2f118382a658255cd0b980783">_callBackWindow</a></td></tr>
+<tr class="separator:aa04194e2f118382a658255cd0b980783 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a7d653270cd629639f4dac71f9b8504c8" name="a7d653270cd629639f4dac71f9b8504c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d653270cd629639f4dac71f9b8504c8">&#9670;&#160;</a></span>CheckLanguageData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.CheckLanguageData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_cgraph.png" border="0" usemap="#ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_cgraph" alt=""/></div>
+<map name="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_cgraph" id="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,308,64"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a30970025d76eecb3f9a5aa2ddc92e9a5" title=" " alt="" coords="356,5,614,64"/>
+<area shape="poly" title=" " alt="" coords="308,32,341,32,341,37,308,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_icgraph.png" border="0" usemap="#ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_icgraph" alt=""/></div>
+<map name="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_icgraph" id="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a7d653270cd629639f4dac71f9b8504c8_icgraph">
+<area shape="rect" title=" " alt="" coords="296,5,598,64"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a18042b9e73ac49b45ace43fdc79a5391" title=" " alt="" coords="5,5,248,64"/>
+<area shape="poly" title=" " alt="" coords="281,37,248,37,248,32,281,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30970025d76eecb3f9a5aa2ddc92e9a5" name="a30970025d76eecb3f9a5aa2ddc92e9a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30970025d76eecb3f9a5aa2ddc92e9a5">&#9670;&#160;</a></span>GetFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.GetFileName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a30970025d76eecb3f9a5aa2ddc92e9a5_icgraph.png" border="0" usemap="#ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a30970025d76eecb3f9a5aa2ddc92e9a5_icgraph" alt=""/></div>
+<map name="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a30970025d76eecb3f9a5aa2ddc92e9a5_icgraph" id="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a30970025d76eecb3f9a5aa2ddc92e9a5_icgraph">
+<area shape="rect" title=" " alt="" coords="646,39,904,97"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a7d653270cd629639f4dac71f9b8504c8" title=" " alt="" coords="296,5,598,64"/>
+<area shape="poly" title=" " alt="" coords="631,56,598,53,599,47,632,51"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a18042b9e73ac49b45ace43fdc79a5391" title=" " alt="" coords="5,39,248,97"/>
+<area shape="poly" title=" " alt="" coords="631,78,598,79,447,81,296,79,248,77,248,72,296,73,447,76,598,73,631,72"/>
+<area shape="poly" title=" " alt="" coords="281,55,248,58,248,53,280,49"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a18042b9e73ac49b45ace43fdc79a5391" name="a18042b9e73ac49b45ace43fdc79a5391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18042b9e73ac49b45ace43fdc79a5391">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a24f0bc8442faeec0be9fefa2c8c9d5cb">RPGMaker.Codebase.Editor.Common.Window.BaseModalWindow</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a18042b9e73ac49b45ace43fdc79a5391_cgraph.png" border="0" usemap="#ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a18042b9e73ac49b45ace43fdc79a5391_cgraph" alt=""/></div>
+<map name="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a18042b9e73ac49b45ace43fdc79a5391_cgraph" id="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a18042b9e73ac49b45ace43fdc79a5391_cgraph">
+<area shape="rect" title=" " alt="" coords="5,105,248,164"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a7d653270cd629639f4dac71f9b8504c8" title=" " alt="" coords="296,5,598,64"/>
+<area shape="poly" title=" " alt="" coords="222,102,336,66,337,71,224,107"/>
+<area shape="rect" href="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window.html#a30970025d76eecb3f9a5aa2ddc92e9a5" title=" " alt="" coords="646,39,904,97"/>
+<area shape="poly" title=" " alt="" coords="248,120,631,80,632,85,248,125"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="313,139,581,197"/>
+<area shape="poly" title=" " alt="" coords="248,145,299,150,298,155,248,150"/>
+<area shape="rect" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_base_modal_window.html#a989bdf0ec5b6e7b4bf0ed96b43e0add7" title=" " alt="" coords="326,245,568,304"/>
+<area shape="poly" title=" " alt="" coords="196,162,297,207,364,236,362,241,295,212,194,167"/>
+<area shape="poly" title=" " alt="" coords="599,47,631,51,631,56,598,53"/>
+<area shape="poly" title=" " alt="" coords="385,245,386,235,398,226,418,221,447,219,482,222,502,229,500,234,480,227,447,224,419,226,400,231,391,237,390,245"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a542727dc6c239cffa6f3071ccb29e6d9" name="a542727dc6c239cffa6f3071ccb29e6d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542727dc6c239cffa6f3071ccb29e6d9">&#9670;&#160;</a></span>ShowWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.ShowWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a542727dc6c239cffa6f3071ccb29e6d9_icgraph.png" border="0" usemap="#ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a542727dc6c239cffa6f3071ccb29e6d9_icgraph" alt=""/></div>
+<map name="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a542727dc6c239cffa6f3071ccb29e6d9_icgraph" id="ad8/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_initial_project_asset_import_window_a542727dc6c239cffa6f3071ccb29e6d9_icgraph">
+<area shape="rect" title=" " alt="" coords="1778,5,2039,64"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#ae3802aefb37b60cf71d3b3ee4e7084d5" title="新規プロジェクト" alt="" coords="1455,13,1730,56"/>
+<area shape="poly" title=" " alt="" coords="1764,37,1730,37,1730,32,1764,32"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a30e3da059bd94ba4a7aeb09b438cd09e" title=" " alt="" coords="1161,13,1407,56"/>
+<area shape="poly" title=" " alt="" coords="1440,37,1408,37,1408,32,1440,32"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#afb8aab4620f779c220f0c07130a096c2" title=" " alt="" coords="849,5,1113,64"/>
+<area shape="poly" title=" " alt="" coords="1146,37,1113,37,1113,32,1146,32"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#a7a20c8d55d6e9a2ff65fc71591f91436" title=" " alt="" coords="565,13,801,56"/>
+<area shape="poly" title=" " alt="" coords="834,37,802,37,802,32,834,32"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#aa5764fbc8db5f290210d221b5766193a" title=" " alt="" coords="293,13,517,56"/>
+<area shape="poly" title=" " alt="" coords="550,37,517,37,517,32,550,32"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#a6c8d97d38dae2fa0b5f83b1377ebf43a" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a53ccd5231109c7aa8893ea8cb464d238" name="a53ccd5231109c7aa8893ea8cb464d238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ccd5231109c7aa8893ea8cb464d238">&#9670;&#160;</a></span>_folderPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._folderPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab19db80f22cb4591f75a2288f8d9e1df" name="ab19db80f22cb4591f75a2288f8d9e1df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19db80f22cb4591f75a2288f8d9e1df">&#9670;&#160;</a></span>_labelFromUxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._labelFromUxml</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75668e9232d81d6cc6e114f8278c6b73" name="a75668e9232d81d6cc6e114f8278c6b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75668e9232d81d6cc6e114f8278c6b73">&#9670;&#160;</a></span>_lang2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SystemLanguage RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._lang2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52306d74a0cde76db23865758440bb1e" name="a52306d74a0cde76db23865758440bb1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52306d74a0cde76db23865758440bb1e">&#9670;&#160;</a></span>_okButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._okButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aee444b1b4569973840b9de1a891bc032" name="aee444b1b4569973840b9de1a891bc032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee444b1b4569973840b9de1a891bc032">&#9670;&#160;</a></span>_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8ad9f49a772d857397e71db6c54f2f7" name="ae8ad9f49a772d857397e71db6c54f2f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ad9f49a772d857397e71db6c54f2f7">&#9670;&#160;</a></span>_pathButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._pathButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4675e18669e5e6a40bcbb90c6f35db1" name="ac4675e18669e5e6a40bcbb90c6f35db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4675e18669e5e6a40bcbb90c6f35db1">&#9670;&#160;</a></span>_pathLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._pathLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66c4f77c1d219357db4adf7ce889a5e2" name="a66c4f77c1d219357db4adf7ce889a5e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c4f77c1d219357db4adf7ce889a5e2">&#9670;&#160;</a></span>_projectName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._projectName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7f7406e5bc07d7ad3d38ba2b343596c" name="aa7f7406e5bc07d7ad3d38ba2b343596c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7f7406e5bc07d7ad3d38ba2b343596c">&#9670;&#160;</a></span>_projectNameLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a> RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._projectNameLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cae0e45f187b637bd19509865587edd" name="a6cae0e45f187b637bd19509865587edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cae0e45f187b637bd19509865587edd">&#9670;&#160;</a></span>_selectNum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow._selectNum</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47aaac8b95ba8d63e44b8f7e078670e1" name="a47aaac8b95ba8d63e44b8f7e078670e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47aaac8b95ba8d63e44b8f7e078670e1">&#9670;&#160;</a></span>BASIC_ASSETS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.BASIC_ASSETS = &quot;WORD_2105&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9becf7b8ffa92baec4974d006280798a" name="a9becf7b8ffa92baec4974d006280798a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9becf7b8ffa92baec4974d006280798a">&#9670;&#160;</a></span>DEFAULT_PROJECT_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DEFAULT_PROJECT_NAME = &quot;New Unite Project&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab68eea13da5f8a3023188391fda3148c" name="ab68eea13da5f8a3023188391fda3148c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68eea13da5f8a3023188391fda3148c">&#9670;&#160;</a></span>DEFAULTGAME_CN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DEFAULTGAME_CN = &quot;defaultgame_cn_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b041906eed25ab943e4d4a354da2f93" name="a7b041906eed25ab943e4d4a354da2f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b041906eed25ab943e4d4a354da2f93">&#9670;&#160;</a></span>DEFAULTGAME_COMMON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DEFAULTGAME_COMMON = &quot;defaultgame_common_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dd6d1c9481792e8fd82997cef0ee8fa" name="a8dd6d1c9481792e8fd82997cef0ee8fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dd6d1c9481792e8fd82997cef0ee8fa">&#9670;&#160;</a></span>DEFAULTGAME_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DEFAULTGAME_EN = &quot;defaultgame_en_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0344417e4f993bdcd4fca1d843d603eb" name="a0344417e4f993bdcd4fca1d843d603eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0344417e4f993bdcd4fca1d843d603eb">&#9670;&#160;</a></span>DEFAULTGAME_JP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DEFAULTGAME_JP = &quot;defaultgame_jp_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bc777d1be788056194fbeb2cd56fa99" name="a9bc777d1be788056194fbeb2cd56fa99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc777d1be788056194fbeb2cd56fa99">&#9670;&#160;</a></span>DESCRIPTION_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DESCRIPTION_TEXT = &quot;WORD_5005&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a696155220b43cec80a12781a5e544f" name="a2a696155220b43cec80a12781a5e544f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a696155220b43cec80a12781a5e544f">&#9670;&#160;</a></span>DESCRIPTION_TEXT2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.DESCRIPTION_TEXT2 = &quot;WORD_5010&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a216abf6029338fd2c57e7797bb5a5801" name="a216abf6029338fd2c57e7797bb5a5801"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a216abf6029338fd2c57e7797bb5a5801">&#9670;&#160;</a></span>folderSub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.folderSub = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa69e10c5d8f28332c141f5d55940486a" name="aa69e10c5d8f28332c141f5d55940486a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa69e10c5d8f28332c141f5d55940486a">&#9670;&#160;</a></span>FULL_GAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.FULL_GAME = &quot;WORD_2106&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72086e9bc56ac232b9ae2f7db3d6330a" name="a72086e9bc56ac232b9ae2f7db3d6330a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72086e9bc56ac232b9ae2f7db3d6330a">&#9670;&#160;</a></span>LANGUAGE_NAMES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string [] RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.LANGUAGE_NAMES</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">= <span class="keyword">new</span>[] {</div>
+<div class="line">            <span class="stringliteral">&quot;WORD_2102&quot;</span>,<span class="stringliteral">&quot;WORD_2103&quot;</span>,<span class="stringliteral">&quot;WORD_2104&quot;</span></div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aac7ebfbda6d48fa0a1471e10f7703755" name="aac7ebfbda6d48fa0a1471e10f7703755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac7ebfbda6d48fa0a1471e10f7703755">&#9670;&#160;</a></span>MASTERDATA_CN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.MASTERDATA_CN = &quot;masterdata_cn_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad9f855f5f45653323bcb852a3b64f9bf" name="ad9f855f5f45653323bcb852a3b64f9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f855f5f45653323bcb852a3b64f9bf">&#9670;&#160;</a></span>MASTERDATA_COMMON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.MASTERDATA_COMMON = &quot;masterdata_common_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a663eea6f922c12514e594c8207c34ecc" name="a663eea6f922c12514e594c8207c34ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663eea6f922c12514e594c8207c34ecc">&#9670;&#160;</a></span>MASTERDATA_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.MASTERDATA_EN = &quot;masterdata_en_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44c5d5f4ae779a4aae0eb517ea137b02" name="a44c5d5f4ae779a4aae0eb517ea137b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c5d5f4ae779a4aae0eb517ea137b02">&#9670;&#160;</a></span>MASTERDATA_JP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.MASTERDATA_JP = &quot;masterdata_jp_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a791a68b0bac139c5416ef047759b78b8" name="a791a68b0bac139c5416ef047759b78b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791a68b0bac139c5416ef047759b78b8">&#9670;&#160;</a></span>PATH_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.PATH_TEXT = &quot;WORD_5009&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2efa976c133a7bf288d76bfd0103febf" name="a2efa976c133a7bf288d76bfd0103febf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2efa976c133a7bf288d76bfd0103febf">&#9670;&#160;</a></span>PROJECT_BASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.PROJECT_BASE = &quot;project_base_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5ec839d1c63c0bee748b34589179d62" name="aa5ec839d1c63c0bee748b34589179d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5ec839d1c63c0bee748b34589179d62">&#9670;&#160;</a></span>PROJECT_NAME_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.PROJECT_NAME_TEXT = &quot;WORD_5008&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afde0f8332202c3259f7ec9c683bbcfb3" name="afde0f8332202c3259f7ec9c683bbcfb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde0f8332202c3259f7ec9c683bbcfb3">&#9670;&#160;</a></span>TITLE_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.TITLE_TEXT = &quot;WORD_2100&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41a3b66e7a3657f250e33b3766006b91" name="a41a3b66e7a3657f250e33b3766006b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a3b66e7a3657f250e33b3766006b91">&#9670;&#160;</a></span>VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.VERSION = &quot;1.0.0&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a4616c945eaa5c25d61d2c4c7fccb6221" name="a4616c945eaa5c25d61d2c4c7fccb6221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4616c945eaa5c25d61d2c4c7fccb6221">&#9670;&#160;</a></span>ModalUxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string RPGMaker.Codebase.Editor.Common.Window.ModalWindow.InitialProjectAssetImportWindow.ModalUxml</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/Window/ModalWindow/<a class="el" href="../../d4/df0/_initial_project_asset_import_window_8cs.html">InitialProjectAssetImportWindow.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

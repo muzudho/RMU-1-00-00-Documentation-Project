@@ -1,43 +1,101 @@
 <map id="RPGMaker.Codebase.Runtime.Battle.BattleManager.ApplySubstitute" name="RPGMaker.Codebase.Runtime.Battle.BattleManager.ApplySubstitute">
-<area shape="rect" id="Node000001" title="対象が死んでいるなどしたら、代わりを選んで返す。 問題なければ、対象をそのまま返す" alt="" coords="5,291,245,333"/>
-<area shape="rect" id="Node000002" href="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a4dc2091ee3c136cdc8d0e5332cd4d19e" title="対象が死んでいるなどして代わりが必要か返す" alt="" coords="297,96,540,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,288,371,145,374,149,161,292"/>
-<area shape="rect" id="Node000010" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#adf2bd7970343a0711746e18cf1d94435" title="[かばう]行動を表示" alt="" coords="311,245,526,304"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="245,294,296,287,297,293,245,299"/>
-<area shape="rect" id="Node000019" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a1c6a9eff5d479b286388e0d14d024dd2" title="自分から見て味方キャラクターを返却" alt="" coords="293,328,544,371"/>
-<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="245,325,278,329,277,334,245,330"/>
-<area shape="rect" id="Node000020" href="$d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a4f3609c58da5fd479168f41ba0cf2ebc" title="身代わりのバトラーを返す" alt="" coords="304,395,533,453"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="176,331,294,380,312,387,310,392,292,385,174,336"/>
-<area shape="rect" id="Node000003" href="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad095789e8c06eefb1047d19856a69dc4" title="[命中タイプ]が[必中]か" alt="" coords="592,21,843,64"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,93,615,66,616,71,508,98"/>
-<area shape="rect" id="Node000004" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#af997feecd103db16a3491886176d1215" title="瀕死(規定値:最大HPの1/4以下)か" alt="" coords="610,88,825,147"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="540,115,595,115,595,120,540,120"/>
+<area shape="rect" id="Node000001" title="対象が死んでいるなどしたら、代わりを選んで返す。 問題なければ、対象をそのまま返す" alt="" coords="5,523,245,565"/>
+<area shape="rect" id="Node000002" href="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a4dc2091ee3c136cdc8d0e5332cd4d19e" title="対象が死んでいるなどして代わりが必要か返す" alt="" coords="297,193,540,236"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,521,386,245,390,249,147,524"/>
+<area shape="rect" id="Node000010" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#adf2bd7970343a0711746e18cf1d94435" title="[かばう]行動を表示" alt="" coords="311,409,526,468"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="186,520,320,471,322,476,188,525"/>
+<area shape="rect" id="Node000020" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a1c6a9eff5d479b286388e0d14d024dd2" title="自分から見て味方キャラクターを返却" alt="" coords="293,597,544,640"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="213,563,318,591,317,596,211,569"/>
+<area shape="rect" id="Node000061" href="$d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a4f3609c58da5fd479168f41ba0cf2ebc" title="身代わりのバトラーを返す" alt="" coords="304,727,533,785"/>
+<area shape="poly" id="edge48_Node000001_Node000061" title=" " alt="" coords="158,564,366,715,363,720,155,568"/>
+<area shape="rect" id="Node000003" href="$db/d00/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_action.html#ad095789e8c06eefb1047d19856a69dc4" title="[命中タイプ]が[必中]か" alt="" coords="592,119,843,161"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="506,190,615,163,616,168,508,195"/>
+<area shape="rect" id="Node000004" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#af997feecd103db16a3491886176d1215" title="瀕死(規定値:最大HPの1/4以下)か" alt="" coords="610,185,825,244"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="540,212,595,212,595,217,540,217"/>
 <area shape="rect" id="Node000005" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ab0cfe0154c253bf8dbdd917e1b83ecea" title="生きているか" alt="" coords="904,88,1120,147"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="826,115,889,115,889,120,826,120"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="808,182,842,171,907,149,908,154,844,176,810,187"/>
 <area shape="rect" id="Node000006" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#acd49841382f83d27e5380c894ae98c07" title="現れているか" alt="" coords="1181,5,1396,64"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1112,85,1173,66,1175,71,1113,90"/>
 <area shape="rect" id="Node000008" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#a2615772b2c3bc9d65699ee3b0b77aae1" title="死亡ステートか" alt="" coords="1181,88,1396,147"/>
 <area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="1120,115,1166,115,1166,120,1120,120"/>
-<area shape="rect" id="Node000007" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ab31a3ef28fe70dd09c18387b9c30946b" title="隠れているか" alt="" coords="1444,5,1659,64"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1396,32,1429,32,1429,37,1396,37"/>
-<area shape="rect" id="Node000009" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ae149ea29154d386ec71f09400d260b37" title="指定したステートか" alt="" coords="1444,88,1659,147"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1396,115,1429,115,1429,120,1396,120"/>
-<area shape="rect" id="Node000011" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#afa999dfd632e869ddfadb3d10db86dbd" title="行を追加" alt="" coords="611,171,825,229"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="525,245,596,228,597,233,527,251"/>
-<area shape="rect" id="Node000016" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a264c5ab8a5e5c7473e63b2d5d9709ab2" title="アクションの実行者の名前を返却" alt="" coords="598,253,838,296"/>
-<area shape="poly" id="edge15_Node000010_Node000016" title=" " alt="" coords="526,272,583,272,583,277,526,277"/>
-<area shape="rect" id="Node000017" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a5bab77b2e7373eb94b17b07aaca6c76c" title="[かばう]行動を適用" alt="" coords="611,320,825,379"/>
-<area shape="poly" id="edge16_Node000010_Node000017" title=" " alt="" coords="527,299,597,317,596,322,525,304"/>
-<area shape="rect" id="Node000012" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aecdd79bb0ed2b782ea57d86189e7a1fe" title="コンテンツの再描画" alt="" coords="905,171,1119,229"/>
-<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="825,197,891,197,891,203,825,203"/>
-<area shape="rect" id="Node000014" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a182476b973821574670a2c4c5fb83075" title="待つ" alt="" coords="891,253,1133,296"/>
-<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="826,225,912,247,911,252,824,230"/>
-<area shape="rect" id="Node000013" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a8cdc3af7e6a9199a8d3279294b3899c1" title="指定行の文字を描画" alt="" coords="1181,171,1396,229"/>
-<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1120,197,1167,197,1167,203,1120,203"/>
-<area shape="rect" id="Node000015" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aa17e6d5130899b650af9edc014b7b13e" title="メッセージ描画速度" alt="" coords="1181,253,1396,312"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1133,275,1166,276,1166,282,1133,281"/>
-<area shape="rect" id="Node000018" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a7033b53a8d64a667ece3d7d4193d0441" title="身代わり動作を実行" alt="" coords="897,320,1127,379"/>
-<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="825,347,882,347,882,352,825,352"/>
-<area shape="rect" id="Node000021" href="$d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e" title="戦闘中のバトラー生死問わず全て配列で返す" alt="" coords="606,403,830,445"/>
-<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="534,421,591,421,591,427,534,427"/>
+<area shape="rect" id="Node000007" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ab31a3ef28fe70dd09c18387b9c30946b" title="隠れているか" alt="" coords="1482,5,1697,64"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1396,32,1467,32,1467,37,1396,37"/>
+<area shape="rect" id="Node000009" href="$d2/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler_base.html#ae149ea29154d386ec71f09400d260b37" title="指定したステートか" alt="" coords="1482,88,1697,147"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1396,115,1467,115,1467,120,1396,120"/>
+<area shape="rect" id="Node000011" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#afa999dfd632e869ddfadb3d10db86dbd" title="行を追加" alt="" coords="611,268,825,327"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="464,407,523,371,591,336,606,330,608,335,593,341,526,376,466,411"/>
+<area shape="rect" id="Node000016" href="$d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#afffb32ddc0134a0ce2dcfa5692db6596" title=" " alt="" coords="616,351,819,393"/>
+<area shape="poly" id="edge15_Node000010_Node000016" title=" " alt="" coords="525,412,604,395,605,400,527,417"/>
+<area shape="rect" id="Node000017" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a264c5ab8a5e5c7473e63b2d5d9709ab2" title="アクションの実行者の名前を返却" alt="" coords="598,417,838,460"/>
+<area shape="poly" id="edge16_Node000010_Node000017" title=" " alt="" coords="526,436,583,436,583,441,526,441"/>
+<area shape="rect" id="Node000018" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a5bab77b2e7373eb94b17b07aaca6c76c" title="[かばう]行動を適用" alt="" coords="611,484,825,543"/>
+<area shape="poly" id="edge17_Node000010_Node000018" title=" " alt="" coords="527,463,597,481,596,486,525,468"/>
+<area shape="rect" id="Node000012" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aecdd79bb0ed2b782ea57d86189e7a1fe" title="コンテンツの再描画" alt="" coords="905,229,1119,288"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="825,281,890,272,891,277,825,286"/>
+<area shape="rect" id="Node000014" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a182476b973821574670a2c4c5fb83075" title="待つ" alt="" coords="891,316,1133,359"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="825,309,877,316,876,322,825,315"/>
+<area shape="rect" id="Node000013" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a8cdc3af7e6a9199a8d3279294b3899c1" title="指定行の文字を描画" alt="" coords="1181,228,1396,287"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="1120,255,1167,255,1167,261,1120,261"/>
+<area shape="rect" id="Node000015" href="$d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aa17e6d5130899b650af9edc014b7b13e" title="メッセージ描画速度" alt="" coords="1181,311,1396,369"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1133,336,1166,336,1166,341,1133,341"/>
+<area shape="rect" id="Node000019" href="$d6/de6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_battler.html#a7033b53a8d64a667ece3d7d4193d0441" title="身代わり動作を実行" alt="" coords="897,484,1127,543"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="825,511,882,511,882,516,825,516"/>
+<area shape="rect" id="Node000021" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a51ad2669c15aba611fa704eb84001f8c" title=" " alt="" coords="595,567,840,609"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="544,603,580,599,580,605,545,608"/>
+<area shape="rect" id="Node000022" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a56d452c7dcdd02511b8999a3cdde268a" title=" " alt="" coords="595,633,841,676"/>
+<area shape="poly" id="edge21_Node000020_Node000022" title=" " alt="" coords="545,631,580,635,579,641,544,636"/>
+<area shape="rect" id="Node000023" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="616,700,819,743"/>
+<area shape="poly" id="edge22_Node000020_Node000023" title=" " alt="" coords="471,638,593,685,616,693,614,698,591,691,469,643"/>
+<area shape="rect" id="Node000024" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="910,728,1114,771"/>
+<area shape="poly" id="edge23_Node000023_Node000024" title=" " alt="" coords="820,728,896,736,895,741,820,734"/>
+<area shape="rect" id="Node000025" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1182,757,1395,800"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="1114,757,1168,763,1167,768,1114,763"/>
+<area shape="rect" id="Node000026" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="1461,171,1717,229"/>
+<area shape="poly" id="edge25_Node000025_Node000026" title=" " alt="" coords="1293,756,1369,469,1414,316,1431,264,1442,240,1447,235,1451,239,1446,243,1436,266,1419,317,1374,470,1298,758"/>
+<area shape="rect" id="Node000028" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="1461,253,1717,312"/>
+<area shape="poly" id="edge27_Node000025_Node000028" title=" " alt="" coords="1288,757,1295,676,1304,620,1317,559,1337,495,1363,432,1398,374,1442,322,1447,318,1451,322,1446,326,1402,377,1368,435,1342,497,1322,560,1309,621,1300,676,1293,757"/>
+<area shape="rect" id="Node000030" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="1461,336,1718,395"/>
+<area shape="poly" id="edge29_Node000025_Node000030" title=" " alt="" coords="1290,756,1301,688,1328,594,1347,543,1373,492,1404,446,1442,405,1447,401,1450,405,1446,409,1408,449,1377,495,1352,545,1333,595,1307,690,1295,757"/>
+<area shape="rect" id="Node000032" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="1444,419,1734,477"/>
+<area shape="poly" id="edge31_Node000025_Node000032" title=" " alt="" coords="1292,756,1309,702,1339,629,1359,590,1382,553,1410,518,1442,487,1447,483,1451,488,1446,491,1414,521,1387,556,1363,593,1343,631,1314,703,1298,758"/>
+<area shape="rect" id="Node000034" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="1451,501,1727,560"/>
+<area shape="poly" id="edge33_Node000025_Node000034" title=" " alt="" coords="1298,756,1319,716,1351,666,1392,614,1442,570,1450,565,1452,570,1446,574,1396,618,1355,669,1323,718,1302,758"/>
+<area shape="rect" id="Node000036" href="$db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="1455,584,1724,643"/>
+<area shape="poly" id="edge35_Node000025_Node000036" title=" " alt="" coords="1309,755,1366,704,1403,676,1443,652,1455,646,1457,651,1445,657,1406,681,1370,708,1312,759"/>
+<area shape="rect" id="Node000038" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="1461,667,1717,725"/>
+<area shape="poly" id="edge37_Node000025_Node000038" title=" " alt="" coords="1368,754,1465,727,1467,732,1369,759"/>
+<area shape="rect" id="Node000040" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="1461,749,1717,808"/>
+<area shape="poly" id="edge39_Node000025_Node000040" title=" " alt="" coords="1396,776,1446,776,1446,781,1396,781"/>
+<area shape="rect" id="Node000044" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="1461,832,1717,891"/>
+<area shape="poly" id="edge40_Node000025_Node000044" title=" " alt="" coords="1369,798,1467,825,1465,830,1368,803"/>
+<area shape="rect" id="Node000046" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="1461,915,1717,973"/>
+<area shape="poly" id="edge41_Node000025_Node000046" title=" " alt="" coords="1312,798,1370,849,1406,877,1445,900,1457,906,1455,911,1443,905,1403,881,1366,854,1309,802"/>
+<area shape="rect" id="Node000048" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a2fa87c0d4f1431414d67e4943a14ae56" title=" " alt="" coords="1461,997,1717,1056"/>
+<area shape="poly" id="edge42_Node000025_Node000048" title=" " alt="" coords="1302,799,1323,839,1355,889,1396,940,1446,983,1452,988,1450,992,1442,987,1392,943,1351,892,1319,842,1298,802"/>
+<area shape="rect" id="Node000050" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ab14ced87348b79b244d7a5d975e80d25" title=" " alt="" coords="1461,1080,1717,1139"/>
+<area shape="poly" id="edge43_Node000025_Node000050" title=" " alt="" coords="1298,800,1314,854,1343,926,1363,964,1387,1001,1414,1036,1446,1066,1451,1070,1447,1074,1442,1070,1410,1040,1382,1005,1359,967,1339,928,1309,856,1292,801"/>
+<area shape="rect" id="Node000053" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a3f54f10563c3611839ddd3dfa5b65c13" title=" " alt="" coords="1461,1163,1717,1221"/>
+<area shape="poly" id="edge44_Node000025_Node000053" title=" " alt="" coords="1295,800,1307,868,1333,962,1352,1013,1377,1062,1408,1108,1446,1149,1450,1152,1447,1156,1442,1153,1404,1112,1373,1065,1347,1015,1328,964,1301,869,1290,801"/>
+<area shape="rect" id="Node000055" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ad73cc18191cf3d29c31d27f90e712965" title=" " alt="" coords="1447,1245,1732,1304"/>
+<area shape="poly" id="edge45_Node000025_Node000055" title=" " alt="" coords="1293,800,1300,881,1309,936,1322,997,1342,1060,1368,1123,1402,1181,1446,1231,1449,1234,1445,1238,1442,1235,1398,1184,1363,1125,1337,1062,1317,998,1304,937,1295,882,1288,801"/>
+<area shape="rect" id="Node000057" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a14b53a047484b6c81f8e570ff47134af" title=" " alt="" coords="1461,1328,1717,1387"/>
+<area shape="poly" id="edge46_Node000025_Node000057" title=" " alt="" coords="1292,800,1294,893,1301,959,1312,1031,1331,1107,1359,1182,1396,1253,1420,1285,1446,1314,1451,1319,1447,1322,1442,1318,1415,1288,1392,1255,1354,1185,1326,1109,1307,1033,1295,960,1289,894,1286,800"/>
+<area shape="rect" id="Node000059" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a293b136d822c9c73495b354502306eb1" title=" " alt="" coords="1461,1411,1717,1469"/>
+<area shape="poly" id="edge47_Node000025_Node000059" title=" " alt="" coords="1295,800,1311,923,1343,1103,1364,1196,1388,1281,1416,1350,1430,1377,1446,1397,1451,1402,1448,1406,1442,1400,1426,1380,1411,1352,1383,1282,1359,1197,1338,1104,1306,924,1290,801"/>
+<area shape="rect" id="Node000027" href="$d5/deb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_animation_repository.html#a57c3d4731e6bfd18e15070a940e881f4" title=" " alt="" coords="1792,171,2060,229"/>
+<area shape="poly" id="edge26_Node000026_Node000027" title=" " alt="" coords="1718,197,1778,197,1778,203,1718,203"/>
+<area shape="rect" id="Node000029" href="$d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html#abae8269b1a2721fce734183fcc5f5205" title=" " alt="" coords="1792,253,2060,312"/>
+<area shape="poly" id="edge28_Node000028_Node000029" title=" " alt="" coords="1718,280,1778,280,1778,285,1718,285"/>
+<area shape="rect" id="Node000031" href="$dc/d27/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor67544213d6af3013901ca89c3e4d5d21.html#a922f2ea3a0cd4543a7df7c51ed065242" title=" " alt="" coords="1792,336,2060,395"/>
+<area shape="poly" id="edge30_Node000030_Node000031" title=" " alt="" coords="1718,363,1778,363,1778,368,1718,368"/>
+<area shape="rect" id="Node000033" href="$d5/df3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_class_repository.html#a68866c3982e5015e3aa1d0ff8b0e5767" title=" " alt="" coords="1792,419,2060,477"/>
+<area shape="poly" id="edge32_Node000032_Node000033" title=" " alt="" coords="1735,445,1778,445,1778,451,1735,451"/>
+<area shape="rect" id="Node000035" href="$dc/dcd/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_vehicle_repository.html#a15d84b4ebddf2ff353260ef2473589e6" title=" " alt="" coords="1792,501,2060,560"/>
+<area shape="poly" id="edge34_Node000034_Node000035" title=" " alt="" coords="1728,528,1778,528,1778,533,1728,533"/>
+<area shape="rect" id="Node000037" href="$d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_repository_1_1_new_game_repository.html#a49734fde3bf86a845b6d4757ac5a250c" title="configの読み込み" alt="" coords="1782,584,2070,643"/>
+<area shape="poly" id="edge36_Node000036_Node000037" title=" " alt="" coords="1724,611,1768,611,1768,616,1724,616"/>
+<area shape="rect" id="Node000039" href="$d4/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_enemy_repository.html#a4c469baf54782a4c3411f345784e7f5c" title=" " alt="" coords="1792,667,2060,725"/>
+<area shape="poly" id="edge38_Node000038_Node000039" title=" " alt="" coords="1718,693,1778,693,1778,699,1718,699"/>
+<area shape="rect" id="Node000062" href="$d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a53f079e46aeb6622f3ab30f68dc9f38e" title="戦闘中のバトラー生死問わず全て配列で返す" alt="" coords="606,767,830,809"/>
+<area shape="poly" id="edge49_Node000061_Node000062" title=" " alt="" coords="534,766,591,772,591,777,533,771"/>
 </map>

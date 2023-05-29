@@ -1,0 +1,609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d7/d72/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map.html">Map</a></li><li class="navelem"><a class="el" href="../../d3/d74/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component.html">Component</a></li><li class="navelem"><a class="el" href="../../db/d5f/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character.html">Character</a></li><li class="navelem"><a class="el" href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html">ActorOnMap</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../d2/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>マップ上のアクター  
+ <a href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d0d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_inherit__map">
+<area shape="rect" title="マップ上のアクター" alt="" coords="5,155,259,197"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html" title="マップ上のキャラクター" alt="" coords="72,80,192,107"/>
+<area shape="poly" title=" " alt="" coords="135,122,135,154,129,154,129,122"/>
+<area shape="rect" title=" " alt="" coords="77,5,187,32"/>
+<area shape="poly" title=" " alt="" coords="135,47,135,80,129,80,129,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dc9/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_map_8_component_8_character_8_actor_on_map_coll__map">
+<area shape="rect" title="マップ上のアクター" alt="" coords="997,48,1250,91"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html" title="マップ上のキャラクター" alt="" coords="828,56,947,83"/>
+<area shape="poly" title=" " alt="" coords="962,67,996,67,996,72,962,72"/>
+<area shape="rect" title=" " alt="" coords="503,5,612,32"/>
+<area shape="poly" title=" " alt="" coords="627,22,712,31,804,45,838,53,836,58,804,51,711,36,626,27"/>
+<area shape="rect" title=" " alt="" coords="528,56,587,83"/>
+<area shape="poly" title=" " alt="" coords="601,67,828,67,828,72,601,72"/>
+<area shape="rect" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html" title="タイル・データ・モデル" alt="" coords="425,107,690,149"/>
+<area shape="poly" title=" " alt="" coords="704,106,803,88,835,81,837,86,805,93,705,111"/>
+<area shape="rect" title=" " alt="" coords="95,48,162,75"/>
+<area shape="poly" title=" " alt="" coords="177,66,425,105,424,110,177,71"/>
+<area shape="rect" href="../../d2/d0f/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_large_parts_data_model.html" title="大パーツ・データ・モデル" alt="" coords="5,99,252,157"/>
+<area shape="poly" title=" " alt="" coords="266,125,424,125,424,131,266,131"/>
+<area shape="rect" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html" title="タイル・イメージ・データ・モデル" alt="" coords="9,181,248,240"/>
+<area shape="poly" title=" " alt="" coords="262,182,442,147,443,153,263,188"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0df0c8505e012871e87f3e0c8a75b01b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html#a0df0c8505e012871e87f3e0c8a75b01b">Start</a> ()</td></tr>
+<tr class="separator:a0df0c8505e012871e87f3e0c8a75b01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23162fe2d83baeb17b74592e54701ea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html#a23162fe2d83baeb17b74592e54701ea0">OnDestroy</a> ()</td></tr>
+<tr class="separator:a23162fe2d83baeb17b74592e54701ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">RPGMaker.Codebase.Runtime.Map.Component.Character.CharacterOnMap</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a27b8186e3612dc97d5609617b01a3f20 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a27b8186e3612dc97d5609617b01a3f20">Init</a> (Vector2 positionOnTile, string assetId, string id)</td></tr>
+<tr class="memdesc:a27b8186e3612dc97d5609617b01a3f20 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="separator:a27b8186e3612dc97d5609617b01a3f20 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760a9cdc476ed0bed3bf3eec89886266 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a760a9cdc476ed0bed3bf3eec89886266">ResetActor</a> (string assetId, string id)</td></tr>
+<tr class="separator:a760a9cdc476ed0bed3bf3eec89886266 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41928ad79ad9f7867e1a03876e237d1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a41928ad79ad9f7867e1a03876e237d1c">ChangeAsset</a> (string assetId)</td></tr>
+<tr class="separator:a41928ad79ad9f7867e1a03876e237d1c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4389687a34da8ad54016a9462dc73de1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a4389687a34da8ad54016a9462dc73de1">GetTransparent</a> ()</td></tr>
+<tr class="separator:a4389687a34da8ad54016a9462dc73de1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987bd6729dca312a6d1d83c6bbf25428 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a987bd6729dca312a6d1d83c6bbf25428">SetTransparent</a> (bool flg)</td></tr>
+<tr class="separator:a987bd6729dca312a6d1d83c6bbf25428 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad595963f96c284bcc874ab574c3635f4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ad595963f96c284bcc874ab574c3635f4">GetCurrentPositionOnTile</a> ()</td></tr>
+<tr class="memdesc:ad595963f96c284bcc874ab574c3635f4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在のタイル位置を取得  <br /></td></tr>
+<tr class="separator:ad595963f96c284bcc874ab574c3635f4 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934feeffa626f31f170030f382795fd1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a934feeffa626f31f170030f382795fd1">GetDestinationPositionOnTile</a> ()</td></tr>
+<tr class="memdesc:a934feeffa626f31f170030f382795fd1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動先のタイル位置を取得  <br /></td></tr>
+<tr class="separator:a934feeffa626f31f170030f382795fd1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b43e3bb264a0f1be2000d340c29c77 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a79b43e3bb264a0f1be2000d340c29c77">GetCurrentPositionOnLoopMapTile</a> ()</td></tr>
+<tr class="memdesc:a79b43e3bb264a0f1be2000d340c29c77 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">ループマップでの現在のタイルの元の位置を取得 (イベント用)  <br /></td></tr>
+<tr class="separator:a79b43e3bb264a0f1be2000d340c29c77 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b64b6f642b7044b094821a4f9e58d98 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a6b64b6f642b7044b094821a4f9e58d98">IsMoveCheck</a> (int x, int y)</td></tr>
+<tr class="separator:a6b64b6f642b7044b094821a4f9e58d98 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a603a1b92b2a2d0052a86aef8b35c02a0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a603a1b92b2a2d0052a86aef8b35c02a0">IsAroundCheck</a> (int x, int y)</td></tr>
+<tr class="separator:a603a1b92b2a2d0052a86aef8b35c02a0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f343c1e1ea6ecf416d700ff5992d345 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a4f343c1e1ea6ecf416d700ff5992d345">IsSameCheck</a> (int x, int y)</td></tr>
+<tr class="separator:a4f343c1e1ea6ecf416d700ff5992d345 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae354fe737bb545dea05d11b2a8316a8c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ae354fe737bb545dea05d11b2a8316a8c">SetCurrentPositionOnTile</a> (Vector2 pos)</td></tr>
+<tr class="memdesc:ae354fe737bb545dea05d11b2a8316a8c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">パーティ用  <br /></td></tr>
+<tr class="separator:ae354fe737bb545dea05d11b2a8316a8c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb2129b6ab88b1ef5d20e6a304e0391 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391">GetCurrentDirection</a> ()</td></tr>
+<tr class="memdesc:a5fb2129b6ab88b1ef5d20e6a304e0391 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">現在の向きを取得  <br /></td></tr>
+<tr class="separator:a5fb2129b6ab88b1ef5d20e6a304e0391 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf1ffc447d7f9d004dc8d8c99012a47 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aabf1ffc447d7f9d004dc8d8c99012a47">GetLastMoveDirection</a> ()</td></tr>
+<tr class="memdesc:aabf1ffc447d7f9d004dc8d8c99012a47 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">最終の移動方向を取得  <br /></td></tr>
+<tr class="separator:aabf1ffc447d7f9d004dc8d8c99012a47 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d83bb2819cf2f9fc96f5ec08be04f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a52d83bb2819cf2f9fc96f5ec08be04f9">SetLastMoveDirection</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> lastMoveDirection)</td></tr>
+<tr class="memdesc:a52d83bb2819cf2f9fc96f5ec08be04f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">セーブデータから最終の移動方向を設定  <br /></td></tr>
+<tr class="separator:a52d83bb2819cf2f9fc96f5ec08be04f9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507fccb7881eebf06e4d85ac745af717 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/dc9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_ev4074a2826fab1f697690092b26346aba.html#aaf989470acd2d930978454de89acb1c9">EventMapDataModel.EventMapPage.PriorityType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a507fccb7881eebf06e4d85ac745af717">GetPriority</a> ()</td></tr>
+<tr class="memdesc:a507fccb7881eebf06e4d85ac745af717 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示プライオリティを取得を取得。  <br /></td></tr>
+<tr class="separator:a507fccb7881eebf06e4d85ac745af717 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac731d78d4f1079232ddc2462242ba477 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ac731d78d4f1079232ddc2462242ba477">MoveUpOneUnit</a> ([CanBeNull] Action callback=null)</td></tr>
+<tr class="memdesc:ac731d78d4f1079232ddc2462242ba477 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">1マス上に移動する  <br /></td></tr>
+<tr class="separator:ac731d78d4f1079232ddc2462242ba477 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace33c79a51d8a533b2ce346abf138354 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ace33c79a51d8a533b2ce346abf138354">MoveDownOneUnit</a> ([CanBeNull] Action callback=null)</td></tr>
+<tr class="memdesc:ace33c79a51d8a533b2ce346abf138354 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">1マス下に移動する  <br /></td></tr>
+<tr class="separator:ace33c79a51d8a533b2ce346abf138354 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf153046015518dcf29ddacb5bb522a6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#acf153046015518dcf29ddacb5bb522a6">MoveLeftOneUnit</a> ([CanBeNull] Action callback=null)</td></tr>
+<tr class="separator:acf153046015518dcf29ddacb5bb522a6 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60565e3d03a68398ff93f970fbeff07a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a60565e3d03a68398ff93f970fbeff07a">MoveRightOneUnit</a> ([CanBeNull] Action callback=null)</td></tr>
+<tr class="memdesc:a60565e3d03a68398ff93f970fbeff07a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">1マス右に移動する  <br /></td></tr>
+<tr class="separator:a60565e3d03a68398ff93f970fbeff07a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9efc050ae36d6307ab8a412d6226e332 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a9efc050ae36d6307ab8a412d6226e332">MoveDinagonalOneUnit</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> moveDirection, <a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> moveDir2, Vector2 offset, [CanBeNull] Action callback=null, bool changeDirection=true)</td></tr>
+<tr class="separator:a9efc050ae36d6307ab8a412d6226e332 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d967761c9c99d601e1230d00f85606 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ad2d967761c9c99d601e1230d00f85606">MoveToPositionOnTile</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> directionEnum, Vector2 destinationPositionOnTile, [CanBeNull] Action callback=null)</td></tr>
+<tr class="memdesc:ad2d967761c9c99d601e1230d00f85606 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したタイルの位置へ移動する  <br /></td></tr>
+<tr class="separator:ad2d967761c9c99d601e1230d00f85606 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a651992270bdda6f0bd081d9f55b619c0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a651992270bdda6f0bd081d9f55b619c0">SetToPositionOnTile</a> (Vector2 destinationPositionOnTile)</td></tr>
+<tr class="memdesc:a651992270bdda6f0bd081d9f55b619c0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したタイルの位置を設定  <br /></td></tr>
+<tr class="separator:a651992270bdda6f0bd081d9f55b619c0 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1997bb9d5c1a42d2d66f4115ec43bf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a0c1997bb9d5c1a42d2d66f4115ec43bf">IsMoving</a> ()</td></tr>
+<tr class="memdesc:a0c1997bb9d5c1a42d2d66f4115ec43bf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動状態の取得  <br /></td></tr>
+<tr class="separator:a0c1997bb9d5c1a42d2d66f4115ec43bf inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53fbae099d20d81e3afb03c66e4ed0a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa53fbae099d20d81e3afb03c66e4ed0a">SetMoving</a> (bool moving)</td></tr>
+<tr class="memdesc:aa53fbae099d20d81e3afb03c66e4ed0a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">移動状態の設定  <br /></td></tr>
+<tr class="separator:aa53fbae099d20d81e3afb03c66e4ed0a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a56581ee742232231968278f33b671 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ad8a56581ee742232231968278f33b671">TryChangeCharacterDirection</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> directionEnum, bool lockIgnore=false)</td></tr>
+<tr class="memdesc:ad8a56581ee742232231968278f33b671 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">向き変更を試行する。  <br /></td></tr>
+<tr class="separator:ad8a56581ee742232231968278f33b671 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcb95a5cb4a72b7940a9260b208703e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#adfcb95a5cb4a72b7940a9260b208703e">ChangeCharacterDirection</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> directionEnum, bool lockIgnore=false)</td></tr>
+<tr class="memdesc:adfcb95a5cb4a72b7940a9260b208703e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">向きを変える  <br /></td></tr>
+<tr class="separator:adfcb95a5cb4a72b7940a9260b208703e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54d6d0d19296c5dd8c73c56ab6e2fabd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a54d6d0d19296c5dd8c73c56ab6e2fabd">SetAnimation</a> (bool animation, bool step)</td></tr>
+<tr class="memdesc:a54d6d0d19296c5dd8c73c56ab6e2fabd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションの設定  <br /></td></tr>
+<tr class="separator:a54d6d0d19296c5dd8c73c56ab6e2fabd inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75617046bb83c4a700fc31e277f74e8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ac75617046bb83c4a700fc31e277f74e8">SetAnimationSettings</a> (bool animation, bool step)</td></tr>
+<tr class="separator:ac75617046bb83c4a700fc31e277f74e8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1132ebf7fd32c23b99274c46e5f041b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa1132ebf7fd32c23b99274c46e5f041b">GetAnimation</a> ()</td></tr>
+<tr class="separator:aa1132ebf7fd32c23b99274c46e5f041b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af553041359121a19ea1383d926c585ff inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#af553041359121a19ea1383d926c585ff">GetStepAnimation</a> ()</td></tr>
+<tr class="separator:af553041359121a19ea1383d926c585ff inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11eaa5f522da5a0b5a96aeda8eb10428 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a11eaa5f522da5a0b5a96aeda8eb10428">SteppingAnimation</a> ()</td></tr>
+<tr class="separator:a11eaa5f522da5a0b5a96aeda8eb10428 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63aba326dc30b7ca7390bea94966e6f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ae63aba326dc30b7ca7390bea94966e6f">SetIsLockDirection</a> (bool flg)</td></tr>
+<tr class="separator:ae63aba326dc30b7ca7390bea94966e6f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad14f6698e551c0999b28cd782cf8490 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aad14f6698e551c0999b28cd782cf8490">GetIsLockDirection</a> ()</td></tr>
+<tr class="separator:aad14f6698e551c0999b28cd782cf8490 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e69ff5fc58b69cbd55a61e811de2712 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2e69ff5fc58b69cbd55a61e811de2712">SetThrough</a> (bool flg)</td></tr>
+<tr class="separator:a2e69ff5fc58b69cbd55a61e811de2712 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d698e72e8efdb9688f1bc7140ac474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a45d698e72e8efdb9688f1bc7140ac474">GetCharacterThrough</a> ()</td></tr>
+<tr class="separator:a45d698e72e8efdb9688f1bc7140ac474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569915444810c7744dd7dfb0eb3b567f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a569915444810c7744dd7dfb0eb3b567f">GetCharacterOpacity</a> ()</td></tr>
+<tr class="separator:a569915444810c7744dd7dfb0eb3b567f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d997225397e5781414865687a414293 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a6d997225397e5781414865687a414293">SetCharacterSpeed</a> (float speed)</td></tr>
+<tr class="separator:a6d997225397e5781414865687a414293 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3728efd56f8c93ccb040cbb6523854e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a3728efd56f8c93ccb040cbb6523854e2">GetCharacterSpeed</a> ()</td></tr>
+<tr class="separator:a3728efd56f8c93ccb040cbb6523854e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b089ec6488b17ceb7a6990d08a165f3 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a4b089ec6488b17ceb7a6990d08a165f3">SetCharacterRide</a> (bool isRide, float speed=0.0f)</td></tr>
+<tr class="separator:a4b089ec6488b17ceb7a6990d08a165f3 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c04face3f99f36588b9a7aacb930463 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a9c04face3f99f36588b9a7aacb930463">SetDash</a> (bool isDash)</td></tr>
+<tr class="separator:a9c04face3f99f36588b9a7aacb930463 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fc00738746a32a3f613a3eff7fc1ee1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a3fc00738746a32a3f613a3eff7fc1ee1">CanDash</a> (bool canDash)</td></tr>
+<tr class="separator:a3fc00738746a32a3f613a3eff7fc1ee1 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44ac04bc16fcd881cbc5f5cc32c0503 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ae44ac04bc16fcd881cbc5f5cc32c0503">SetOpacity</a> (float opacity)</td></tr>
+<tr class="separator:ae44ac04bc16fcd881cbc5f5cc32c0503 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b74a6f550a69bb64bd58c3204739bb8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a7b74a6f550a69bb64bd58c3204739bb8">SetOpacityToNpc</a> (float opacity)</td></tr>
+<tr class="separator:a7b74a6f550a69bb64bd58c3204739bb8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e67954375df4c84f021519768b6c2ab inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a4e67954375df4c84f021519768b6c2ab">SetChangeBlendMode</a> (int selectIndex)</td></tr>
+<tr class="separator:a4e67954375df4c84f021519768b6c2ab inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf718d2cda019ec40703078890ab8d8a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#acf718d2cda019ec40703078890ab8d8a">ReloadCharacterImage</a> (string id)</td></tr>
+<tr class="separator:acf718d2cda019ec40703078890ab8d8a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756f1d45637d9696729bae9d07e79b81 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a756f1d45637d9696729bae9d07e79b81">SetCharacterEnable</a> (bool enable)</td></tr>
+<tr class="separator:a756f1d45637d9696729bae9d07e79b81 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a12903b9ae6df92841af6e1190f5b4c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a7a12903b9ae6df92841af6e1190f5b4c">MoveRouteCount</a> ()</td></tr>
+<tr class="separator:a7a12903b9ae6df92841af6e1190f5b4c inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f8aaa6ad6b4d38518cf852345dd019d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a9f8aaa6ad6b4d38518cf852345dd019d">SetMoveRoute</a> (List&lt; <a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> &gt; moveRoute)</td></tr>
+<tr class="separator:a9f8aaa6ad6b4d38518cf852345dd019d inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada50b7cedfa7f44c26907f853375f7df inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ada50b7cedfa7f44c26907f853375f7df">ResetMoveRoute</a> ()</td></tr>
+<tr class="separator:ada50b7cedfa7f44c26907f853375f7df inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fcd04ff7f85840f3290c29a7991ff9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ac4fcd04ff7f85840f3290c29a7991ff9">GetNextRoute</a> ()</td></tr>
+<tr class="separator:ac4fcd04ff7f85840f3290c29a7991ff9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcbc6167c0fc9cbd80dd8d96973712c5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afcbc6167c0fc9cbd80dd8d96973712c5">UpdateTimeHandler</a> ()</td></tr>
+<tr class="separator:afcbc6167c0fc9cbd80dd8d96973712c5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb13e3ca44b253bc0907c697dd2f586e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afb13e3ca44b253bc0907c697dd2f586e">MoveEnd</a> ()</td></tr>
+<tr class="separator:afb13e3ca44b253bc0907c697dd2f586e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5e6b34cf6597a7cc04190c2566f665 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5b5e6b34cf6597a7cc04190c2566f665">ResetSetting</a> ()</td></tr>
+<tr class="separator:a5b5e6b34cf6597a7cc04190c2566f665 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e72d9800bc02560ac4e34101f843e8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa8e72d9800bc02560ac4e34101f843e8">ResetBush</a> (bool isForce, bool isBush)</td></tr>
+<tr class="memdesc:aa8e72d9800bc02560ac4e34101f843e8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">茂み再設定処理  <br /></td></tr>
+<tr class="separator:aa8e72d9800bc02560ac4e34101f843e8 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a48b1d1847bd93b03ca05fc95555aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a1a48b1d1847bd93b03ca05fc95555aa9">SetGameObjectPositionWithRenderingOrder</a> (Vector2 position, float height=float.NaN)</td></tr>
+<tr class="memdesc:a1a48b1d1847bd93b03ca05fc95555aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">描画順調整値も含めた表示位置設定。  <br /></td></tr>
+<tr class="separator:a1a48b1d1847bd93b03ca05fc95555aa9 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e58b028c615372d1d66ebcd94ee699 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a51e58b028c615372d1d66ebcd94ee699">GetDamageTileData</a> ()</td></tr>
+<tr class="memdesc:a51e58b028c615372d1d66ebcd94ee699 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">ダメージ床の取得  <br /></td></tr>
+<tr class="separator:a51e58b028c615372d1d66ebcd94ee699 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">RPGMaker.Codebase.Runtime.Map.Component.Character.CharacterOnMap</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a407f8a89b8a1592caa281758b8be5089 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a407f8a89b8a1592caa281758b8be5089">x_next</a></td></tr>
+<tr class="separator:a407f8a89b8a1592caa281758b8be5089 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc64c9db2cd64d845f07098b7d5074f3 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#abc64c9db2cd64d845f07098b7d5074f3">x_now</a></td></tr>
+<tr class="separator:abc64c9db2cd64d845f07098b7d5074f3 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb87bbff70f7e196d9e510477db9fba inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a0cb87bbff70f7e196d9e510477db9fba">y_next</a></td></tr>
+<tr class="separator:a0cb87bbff70f7e196d9e510477db9fba inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2aaed3e564cb4dfe64082f0193a71945 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2aaed3e564cb4dfe64082f0193a71945">y_now</a></td></tr>
+<tr class="separator:a2aaed3e564cb4dfe64082f0193a71945 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">RPGMaker.Codebase.Runtime.Map.Component.Character.CharacterOnMap</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:addf32095a80aedbb76f8cba76b9c9d43 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#addf32095a80aedbb76f8cba76b9c9d43">SetSortingLayer</a> (bool isFlying)</td></tr>
+<tr class="memdesc:addf32095a80aedbb76f8cba76b9c9d43 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">ソートレイヤーを設定。  <br /></td></tr>
+<tr class="separator:addf32095a80aedbb76f8cba76b9c9d43 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2092428571683899e0c4befedaffcd56 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2092428571683899e0c4befedaffcd56">MoveToPositionOnTileByFrame</a> (Vector2 destinationPositionOnWorld, Action callBack)</td></tr>
+<tr class="memdesc:a2092428571683899e0c4befedaffcd56 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">目的位置へ毎フレーム移動していく  <br /></td></tr>
+<tr class="separator:a2092428571683899e0c4befedaffcd56 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">RPGMaker.Codebase.Runtime.Map.Component.Character.CharacterOnMap</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a717177276af03d6225ba2d482abc1c8b inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a717177276af03d6225ba2d482abc1c8b">_currentPositionOnTile</a></td></tr>
+<tr class="separator:a717177276af03d6225ba2d482abc1c8b inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01fedd43ccefdb4689dae8d6487beeb inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ab01fedd43ccefdb4689dae8d6487beeb">_isAnimation</a></td></tr>
+<tr class="separator:ab01fedd43ccefdb4689dae8d6487beeb inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a97baee2f7e0417a260a6b66c4bd8a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a85a97baee2f7e0417a260a6b66c4bd8a">_isLockDirection</a></td></tr>
+<tr class="separator:a85a97baee2f7e0417a260a6b66c4bd8a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1833d505767586eaa3e1ae6407509f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aed1833d505767586eaa3e1ae6407509f">_isMoving</a></td></tr>
+<tr class="separator:aed1833d505767586eaa3e1ae6407509f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f1615b1451f653be370cbf4f1ed39c1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a0f1615b1451f653be370cbf4f1ed39c1">_isSteppingAnimation</a></td></tr>
+<tr class="separator:a0f1615b1451f653be370cbf4f1ed39c1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe410c29bc7e774680d2eb93034c8f05 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#abe410c29bc7e774680d2eb93034c8f05">_isStop</a> = true</td></tr>
+<tr class="separator:abe410c29bc7e774680d2eb93034c8f05 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec42020ccdbfdc09711e8f90a8b5cdf inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a1ec42020ccdbfdc09711e8f90a8b5cdf">_isThrough</a></td></tr>
+<tr class="separator:a1ec42020ccdbfdc09711e8f90a8b5cdf inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b93a8b4c04d4439991e151a948394a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a87b93a8b4c04d4439991e151a948394a">_destinationPositionOnTile</a></td></tr>
+<tr class="separator:a87b93a8b4c04d4439991e151a948394a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9085b239eb6c2dc5191ff31ac35678fa inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a9085b239eb6c2dc5191ff31ac35678fa">_callback</a></td></tr>
+<tr class="separator:a9085b239eb6c2dc5191ff31ac35678fa inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e34e79d11df59bff7c4186f1d6b2c3 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ad6e34e79d11df59bff7c4186f1d6b2c3">_tileDataModel</a> = null</td></tr>
+<tr class="separator:ad6e34e79d11df59bff7c4186f1d6b2c3 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7248d61dfad80f0f677da44634c64420 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a7248d61dfad80f0f677da44634c64420">_opacity</a> = 1f</td></tr>
+<tr class="separator:a7248d61dfad80f0f677da44634c64420 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7ddeaaac149811a999bde7398160fc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ac7ddeaaac149811a999bde7398160fc2">_lastMoveDirectionEnum</a> = CharacterMoveDirectionEnum.Down</td></tr>
+<tr class="memdesc:ac7ddeaaac149811a999bde7398160fc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">最終の移動方向  <br /></td></tr>
+<tr class="separator:ac7ddeaaac149811a999bde7398160fc2 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c94d795c3e218b8434e4b33aded3197 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2c94d795c3e218b8434e4b33aded3197">_moveEnumerator</a></td></tr>
+<tr class="separator:a2c94d795c3e218b8434e4b33aded3197 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3658e11247f9ff25b99501418d6f8bd7 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a3658e11247f9ff25b99501418d6f8bd7">_moveSpeed</a> = 3.75f</td></tr>
+<tr class="memdesc:a3658e11247f9ff25b99501418d6f8bd7 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">MVの「標準」速度は16フレームで1マス進む。1秒間では3.75マス進む  <br /></td></tr>
+<tr class="separator:a3658e11247f9ff25b99501418d6f8bd7 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8c56ef0bdd4c02f0fb9aff2a11b59f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a8e8c56ef0bdd4c02f0fb9aff2a11b59f">_moveSpeedVehicle</a></td></tr>
+<tr class="separator:a8e8c56ef0bdd4c02f0fb9aff2a11b59f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50dcebb47b6f19ae4f23e6a98a546b5 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa50dcebb47b6f19ae4f23e6a98a546b5">_isRide</a> = false</td></tr>
+<tr class="separator:aa50dcebb47b6f19ae4f23e6a98a546b5 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">RPGMaker.Codebase.Runtime.Map.Component.Character.CharacterOnMap</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:ae7e331bad329864d2b1fa05adb122b33 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ae7e331bad329864d2b1fa05adb122b33">AssetId</a><code> [get, private set]</code></td></tr>
+<tr class="separator:ae7e331bad329864d2b1fa05adb122b33 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a915beb86b9a0612f5c175f5314b0bfde inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a915beb86b9a0612f5c175f5314b0bfde">CharacterId</a><code> [get, private set]</code></td></tr>
+<tr class="separator:a915beb86b9a0612f5c175f5314b0bfde inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af310719a70ac8886abc286c4572837b5 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html">CharacterGraphic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#af310719a70ac8886abc286c4572837b5">Graphic</a><code> [get, private set]</code></td></tr>
+<tr class="separator:af310719a70ac8886abc286c4572837b5 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3131e4e62c0f394b0f9f1d90e44a19 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memItemLeft" align="right" valign="top">Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a3f3131e4e62c0f394b0f9f1d90e44a19">actorTransform</a><code> [get]</code></td></tr>
+<tr class="separator:a3f3131e4e62c0f394b0f9f1d90e44a19 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>マップ上のアクター </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a23162fe2d83baeb17b74592e54701ea0" name="a23162fe2d83baeb17b74592e54701ea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23162fe2d83baeb17b74592e54701ea0">&#9670;&#160;</a></span>OnDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap.OnDestroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a23162fe2d83baeb17b74592e54701ea0_cgraph.png" border="0" usemap="#adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a23162fe2d83baeb17b74592e54701ea0_cgraph" alt=""/></div>
+<map name="adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a23162fe2d83baeb17b74592e54701ea0_cgraph" id="adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a23162fe2d83baeb17b74592e54701ea0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,143,234,201"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#acbacfdc0a0c421baed7613fc41529941" title="Actionの削除" alt="" coords="282,72,546,115"/>
+<area shape="poly" title=" " alt="" coords="231,139,317,116,318,122,233,145"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afcbc6167c0fc9cbd80dd8d96973712c5" title=" " alt="" coords="296,221,532,280"/>
+<area shape="poly" title=" " alt="" coords="233,199,288,214,287,220,231,205"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a5eef3d1f8380e9a82f53b599f3a3b2d5" title=" " alt="" coords="594,5,850,48"/>
+<area shape="poly" title=" " alt="" coords="515,69,606,49,607,54,516,74"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a8c7773e140b3739304925ce8a0198ee5" title=" " alt="" coords="616,72,828,115"/>
+<area shape="poly" title=" " alt="" coords="547,91,601,91,601,96,547,96"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a939f30a71fbea539bb33d4de55423543" title="タイル座標をワールド座標に変換" alt="" coords="607,304,838,363"/>
+<area shape="poly" title=" " alt="" coords="527,278,597,297,596,302,525,283"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afb13e3ca44b253bc0907c697dd2f586e" title=" " alt="" coords="604,561,840,620"/>
+<area shape="poly" title=" " alt="" coords="444,278,686,548,682,552,440,282"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2092428571683899e0c4befedaffcd56" title="目的位置へ毎フレーム移動していく" alt="" coords="598,139,846,197"/>
+<area shape="poly" title=" " alt="" coords="525,218,596,199,597,204,527,223"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a11eaa5f522da5a0b5a96aeda8eb10428" title=" " alt="" coords="604,221,840,280"/>
+<area shape="poly" title=" " alt="" coords="532,248,589,248,589,253,532,253"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a6bd3ed94e7072c1d31769481ffb80100" title="現在のマップのTilesOnThePositionを返却" alt="" coords="951,829,1170,872"/>
+<area shape="poly" title=" " alt="" coords="746,619,810,697,853,740,900,779,938,802,979,821,977,826,936,807,897,784,849,744,806,701,742,622"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#ab54dca63bd99ba458cdc5da00c2fc9cd" title=" " alt="" coords="928,479,1193,537"/>
+<area shape="poly" title=" " alt="" coords="840,559,923,539,924,544,842,564"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391" title="現在の向きを取得" alt="" coords="942,644,1179,703"/>
+<area shape="poly" title=" " alt="" coords="842,617,929,638,927,644,840,622"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#a996596de2d90d63dd2cdd55e6bc2d530" title=" " alt="" coords="928,561,1193,620"/>
+<area shape="poly" title=" " alt="" coords="841,588,913,588,913,593,841,593"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aa8adad5cfcba74f1b8ab79cbada2e67e" title=" " alt="" coords="942,345,1179,404"/>
+<area shape="poly" title=" " alt="" coords="762,559,897,464,990,409,993,414,900,469,765,563"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a8ea0f564d610d5801d66161ea5e6e0b6" title=" " alt="" coords="944,727,1177,769"/>
+<area shape="poly" title=" " alt="" coords="758,618,821,667,859,692,899,712,931,724,929,729,897,717,857,696,818,672,755,623"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#a8398da125f7b80fed7caf475f9f03da8" title=" " alt="" coords="1286,857,1552,916"/>
+<area shape="poly" title=" " alt="" coords="1170,859,1272,869,1271,875,1170,864"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4bfe1a54f4d8109cf55690420add224d" title=" " alt="" coords="1301,532,1537,591"/>
+<area shape="poly" title=" " alt="" coords="1178,642,1222,629,1270,611,1317,594,1319,599,1272,616,1224,635,1180,647"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a989e537181ea19d26d9acd928ec8a5bb" title=" " alt="" coords="1301,428,1537,487"/>
+<area shape="poly" title=" " alt="" coords="1180,399,1287,424,1286,429,1179,405"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a134cd935141a449e9086842b576c0b55" title=" " alt="" coords="1301,180,1537,239"/>
+<area shape="poly" title=" " alt="" coords="1178,354,1221,331,1237,312,1244,291,1251,270,1269,249,1286,238,1289,242,1272,253,1256,272,1249,293,1242,315,1224,335,1180,359"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4d9afb1f7a61bc689a322ee5fbf95c23" title=" " alt="" coords="1301,263,1537,321"/>
+<area shape="poly" title=" " alt="" coords="1179,345,1286,320,1287,325,1180,350"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a151b0974993da0664344e768a28a9d55" title=" " alt="" coords="1301,345,1537,404"/>
+<area shape="poly" title=" " alt="" coords="1179,372,1286,372,1286,377,1179,377"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aaa9f4eb137cf35444b27a3f9fb85b9a3" title=" " alt="" coords="1615,428,1851,487"/>
+<area shape="poly" title=" " alt="" coords="1538,455,1600,455,1600,460,1538,460"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a802f61436b5d8021cc65e2a4437bca6f" title=" " alt="" coords="1615,180,1851,239"/>
+<area shape="poly" title=" " alt="" coords="1538,207,1600,207,1600,212,1538,212"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a875120333d9e083b20bc5bcbc395bf87" title="茂み時の足元を半透明に" alt="" coords="1615,263,1851,321"/>
+<area shape="poly" title=" " alt="" coords="1538,289,1600,289,1600,295,1538,295"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aae0014cc46e66342de903c3c8358c99d" title=" " alt="" coords="1899,263,2136,321"/>
+<area shape="poly" title=" " alt="" coords="1852,289,1884,289,1884,295,1852,295"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa008ccb1bfddc97c2c6618cfe1fe9ab9" title=" " alt="" coords="1291,625,1547,684"/>
+<area shape="poly" title=" " alt="" coords="1176,724,1222,712,1270,693,1292,686,1294,691,1272,699,1223,717,1178,729"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a59387e9b0920c39fbe57677bee19e755" title=" " alt="" coords="1305,708,1533,767"/>
+<area shape="poly" title=" " alt="" coords="1177,742,1290,738,1291,744,1177,747"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="1317,791,1521,833"/>
+<area shape="poly" title=" " alt="" coords="1178,766,1303,789,1302,794,1177,771"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1632,791,1835,833"/>
+<area shape="poly" title=" " alt="" coords="1521,809,1617,809,1617,815,1521,815"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1911,791,2124,833"/>
+<area shape="poly" title=" " alt="" coords="1835,809,1896,809,1896,815,1835,815"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="2201,204,2457,263"/>
+<area shape="poly" title=" " alt="" coords="2020,790,2041,681,2078,526,2101,446,2126,373,2153,314,2182,273,2187,268,2190,272,2186,276,2158,316,2131,375,2106,448,2083,527,2047,682,2025,791"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="2201,287,2457,345"/>
+<area shape="poly" title=" " alt="" coords="2017,790,2027,709,2037,653,2052,592,2073,528,2101,465,2137,407,2182,355,2187,351,2190,355,2186,359,2141,410,2106,468,2078,530,2057,593,2042,654,2032,710,2023,791"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="2200,369,2458,428"/>
+<area shape="poly" title=" " alt="" coords="2019,790,2033,722,2062,627,2084,576,2110,526,2143,479,2182,438,2186,434,2190,438,2185,442,2147,482,2115,528,2088,578,2067,629,2038,723,2025,791"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="2184,452,2474,511"/>
+<area shape="poly" title=" " alt="" coords="2022,789,2041,735,2073,662,2120,586,2149,551,2182,521,2187,517,2190,521,2185,525,2153,555,2124,589,2078,665,2046,737,2028,791"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="2191,535,2467,593"/>
+<area shape="poly" title=" " alt="" coords="2028,789,2051,749,2086,699,2130,647,2182,603,2189,599,2192,603,2185,607,2134,651,2090,702,2056,752,2032,792"/>
+<area shape="rect" href="../../db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="2194,617,2464,676"/>
+<area shape="poly" title=" " alt="" coords="2040,788,2102,737,2141,709,2182,686,2195,680,2198,684,2185,690,2144,714,2105,741,2044,792"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="2201,700,2457,759"/>
+<area shape="poly" title=" " alt="" coords="2100,787,2201,760,2202,766,2101,793"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="2201,783,2457,841"/>
+<area shape="poly" title=" " alt="" coords="2125,809,2186,809,2186,815,2125,815"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="2201,865,2457,924"/>
+<area shape="poly" title=" " alt="" coords="2101,831,2202,858,2201,864,2100,837"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="2201,948,2457,1007"/>
+<area shape="poly" title=" " alt="" coords="2044,832,2105,883,2144,910,2185,934,2198,940,2195,944,2182,938,2141,915,2102,887,2040,836"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a2fa87c0d4f1431414d67e4943a14ae56" title=" " alt="" coords="2201,1031,2457,1089"/>
+<area shape="poly" title=" " alt="" coords="2032,832,2056,872,2090,922,2134,973,2185,1017,2192,1021,2189,1025,2182,1021,2130,977,2086,925,2051,875,2028,835"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ab14ced87348b79b244d7a5d975e80d25" title=" " alt="" coords="2201,1113,2457,1172"/>
+<area shape="poly" title=" " alt="" coords="2028,833,2046,887,2078,959,2124,1035,2153,1069,2185,1099,2190,1103,2187,1107,2182,1103,2149,1073,2120,1038,2073,962,2041,889,2022,835"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a3f54f10563c3611839ddd3dfa5b65c13" title=" " alt="" coords="2201,1196,2457,1255"/>
+<area shape="poly" title=" " alt="" coords="2025,833,2038,901,2067,995,2088,1046,2115,1096,2147,1142,2185,1182,2190,1186,2186,1190,2182,1186,2143,1145,2110,1098,2084,1048,2062,997,2033,902,2019,834"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ad73cc18191cf3d29c31d27f90e712965" title=" " alt="" coords="2186,1279,2472,1337"/>
+<area shape="poly" title=" " alt="" coords="2023,833,2032,914,2042,970,2057,1031,2078,1094,2106,1156,2141,1214,2186,1265,2188,1267,2185,1271,2182,1269,2137,1217,2101,1159,2073,1096,2052,1032,2037,971,2027,915,2017,834"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a14b53a047484b6c81f8e570ff47134af" title=" " alt="" coords="2201,1361,2457,1420"/>
+<area shape="poly" title=" " alt="" coords="2021,833,2026,927,2034,992,2047,1065,2067,1141,2096,1216,2135,1286,2159,1318,2186,1347,2190,1352,2187,1356,2182,1351,2155,1321,2131,1289,2091,1218,2062,1143,2042,1066,2028,993,2021,927,2016,834"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a1a48b1d1847bd93b03ca05fc95555aa9" title="描画順調整値も含めた表示位置設定。" alt="" coords="898,15,1223,73"/>
+<area shape="poly" title=" " alt="" coords="826,136,849,124,863,114,872,104,882,93,897,83,909,77,911,82,900,88,885,97,876,108,866,118,852,129,828,141"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a0021db759b60ebe86335286fdffbec98" title="同Y座標の場合のキャラクターの描画順値を取得する。" alt="" coords="1271,23,1567,65"/>
+<area shape="poly" title=" " alt="" coords="1223,41,1256,41,1256,47,1223,47"/>
+<area shape="poly" title=" " alt="" coords="837,278,852,290,865,306,872,323,876,355,880,386,887,400,900,414,940,440,978,452,1015,456,1052,453,1131,447,1175,450,1224,464,1249,479,1272,496,1328,523,1326,528,1269,501,1246,484,1222,469,1174,456,1131,452,1052,458,1015,461,977,458,938,445,897,418,883,403,875,387,871,356,867,324,861,309,848,294,834,282"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#ad951ef79049366dea02cf35e954ddacd" title=" " alt="" coords="942,97,1179,156"/>
+<area shape="poly" title=" " alt="" coords="826,219,849,207,863,197,872,187,882,176,897,166,927,152,929,157,900,170,885,180,876,190,866,201,852,212,828,223"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a0021a1eb1a5879155000880b8f40c16f" title=" " alt="" coords="942,180,1179,239"/>
+<area shape="poly" title=" " alt="" coords="841,234,927,223,928,228,841,239"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a55cc44caa41df8bc39066080c0db850a" title=" " alt="" coords="942,263,1179,321"/>
+<area shape="poly" title=" " alt="" coords="841,262,928,273,927,278,841,268"/>
+<area shape="poly" title=" " alt="" coords="1180,151,1287,176,1286,181,1179,157"/>
+<area shape="poly" title=" " alt="" coords="1179,207,1286,207,1286,212,1179,212"/>
+<area shape="poly" title=" " alt="" coords="1179,262,1286,237,1287,242,1180,267"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0df0c8505e012871e87f3e0c8a75b01b" name="a0df0c8505e012871e87f3e0c8a75b01b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df0c8505e012871e87f3e0c8a75b01b">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Map.Component.Character.ActorOnMap.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a0df0c8505e012871e87f3e0c8a75b01b_cgraph.png" border="0" usemap="#adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a0df0c8505e012871e87f3e0c8a75b01b_cgraph" alt=""/></div>
+<map name="adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a0df0c8505e012871e87f3e0c8a75b01b_cgraph" id="adf/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map_a0df0c8505e012871e87f3e0c8a75b01b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,545,234,604"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac9871a57a401c0da5670b07803acc775" title="実行するActionの登録（毎フレーム）" alt="" coords="282,284,523,343"/>
+<area shape="poly" title=" " alt="" coords="151,543,357,351,360,355,155,547"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afcbc6167c0fc9cbd80dd8d96973712c5" title=" " alt="" coords="284,587,521,645"/>
+<area shape="poly" title=" " alt="" coords="234,589,270,594,269,599,234,594"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac4a358a4a2136a175a780d969a5a2ae2" title="実行するActionの登録" alt="" coords="575,139,816,181"/>
+<area shape="poly" title=" " alt="" coords="459,281,639,186,641,191,462,286"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a5eef3d1f8380e9a82f53b599f3a3b2d5" title=" " alt="" coords="901,205,1158,248"/>
+<area shape="poly" title=" " alt="" coords="806,179,905,199,904,204,805,185"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="912,5,1147,48"/>
+<area shape="poly" title=" " alt="" coords="725,136,788,96,866,58,896,47,898,53,868,62,791,101,728,141"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a08635f6fd879412581bd0c23e3559838" title="現在の状態がMENUかどうかを返却する" alt="" coords="913,72,1146,115"/>
+<area shape="poly" title=" " alt="" coords="805,135,904,116,905,121,806,141"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a8c7773e140b3739304925ce8a0198ee5" title=" " alt="" coords="923,139,1136,181"/>
+<area shape="poly" title=" " alt="" coords="816,157,908,157,908,163,816,163"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a939f30a71fbea539bb33d4de55423543" title="タイル座標をワールド座標に変換" alt="" coords="580,587,811,645"/>
+<area shape="poly" title=" " alt="" coords="521,613,565,613,565,619,521,619"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#afb13e3ca44b253bc0907c697dd2f586e" title=" " alt="" coords="577,736,813,795"/>
+<area shape="poly" title=" " alt="" coords="463,643,624,727,622,731,460,648"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a2092428571683899e0c4befedaffcd56" title="目的位置へ毎フレーム移動していく" alt="" coords="571,927,819,985"/>
+<area shape="poly" title=" " alt="" coords="431,644,661,914,657,917,427,647"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a11eaa5f522da5a0b5a96aeda8eb10428" title=" " alt="" coords="577,437,813,496"/>
+<area shape="poly" title=" " alt="" coords="460,584,622,501,624,505,463,589"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a6bd3ed94e7072c1d31769481ffb80100" title="現在のマップのTilesOnThePositionを返却" alt="" coords="920,1029,1139,1072"/>
+<area shape="poly" title=" " alt="" coords="723,793,821,913,843,946,853,959,869,974,909,1000,951,1021,949,1026,906,1005,866,978,849,963,839,949,817,916,719,797"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#ab54dca63bd99ba458cdc5da00c2fc9cd" title=" " alt="" coords="897,653,1162,712"/>
+<area shape="poly" title=" " alt="" coords="813,733,893,714,895,719,815,739"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391" title="現在の向きを取得" alt="" coords="911,571,1148,629"/>
+<area shape="poly" title=" " alt="" coords="728,733,789,685,827,660,866,639,896,627,898,632,868,644,830,665,793,689,731,738"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#a996596de2d90d63dd2cdd55e6bc2d530" title=" " alt="" coords="897,736,1162,795"/>
+<area shape="poly" title=" " alt="" coords="814,763,882,763,882,768,814,768"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aa8adad5cfcba74f1b8ab79cbada2e67e" title=" " alt="" coords="911,819,1148,877"/>
+<area shape="poly" title=" " alt="" coords="815,792,897,813,896,818,813,797"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a8ea0f564d610d5801d66161ea5e6e0b6" title=" " alt="" coords="913,921,1146,964"/>
+<area shape="poly" title=" " alt="" coords="732,793,794,840,869,887,934,914,931,919,866,892,791,845,729,797"/>
+<area shape="rect" href="../../d6/dfd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_map_1_1_tiles_on_the_position.html#a8398da125f7b80fed7caf475f9f03da8" title=" " alt="" coords="1255,1115,1521,1173"/>
+<area shape="poly" title=" " alt="" coords="1115,1070,1259,1108,1258,1113,1114,1075"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4bfe1a54f4d8109cf55690420add224d" title=" " alt="" coords="1270,523,1506,581"/>
+<area shape="poly" title=" " alt="" coords="1148,582,1255,567,1255,572,1149,587"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a989e537181ea19d26d9acd928ec8a5bb" title=" " alt="" coords="1270,635,1506,693"/>
+<area shape="poly" title=" " alt="" coords="1147,828,1170,818,1190,805,1201,793,1208,781,1213,756,1219,729,1226,716,1238,703,1255,691,1258,696,1241,707,1230,719,1224,731,1218,757,1213,783,1205,796,1193,809,1172,823,1149,833"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a134cd935141a449e9086842b576c0b55" title=" " alt="" coords="1270,407,1506,465"/>
+<area shape="poly" title=" " alt="" coords="1147,833,1170,821,1190,805,1214,769,1223,734,1223,698,1217,663,1211,626,1209,588,1216,549,1237,509,1257,488,1281,471,1284,475,1261,492,1242,512,1221,551,1214,589,1216,625,1223,662,1228,698,1229,734,1219,771,1194,808,1173,826,1149,838"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4d9afb1f7a61bc689a322ee5fbf95c23" title=" " alt="" coords="1270,717,1506,776"/>
+<area shape="poly" title=" " alt="" coords="1147,817,1191,804,1239,785,1261,778,1263,783,1241,791,1193,809,1149,822"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a151b0974993da0664344e768a28a9d55" title=" " alt="" coords="1270,800,1506,859"/>
+<area shape="poly" title=" " alt="" coords="1148,839,1255,834,1255,839,1148,844"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aaa9f4eb137cf35444b27a3f9fb85b9a3" title=" " alt="" coords="1584,635,1820,693"/>
+<area shape="poly" title=" " alt="" coords="1507,661,1569,661,1569,667,1507,667"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a802f61436b5d8021cc65e2a4437bca6f" title=" " alt="" coords="1584,407,1820,465"/>
+<area shape="poly" title=" " alt="" coords="1507,433,1569,433,1569,439,1507,439"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a875120333d9e083b20bc5bcbc395bf87" title="茂み時の足元を半透明に" alt="" coords="1584,717,1820,776"/>
+<area shape="poly" title=" " alt="" coords="1507,744,1569,744,1569,749,1507,749"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#aae0014cc46e66342de903c3c8358c99d" title=" " alt="" coords="1868,717,2105,776"/>
+<area shape="poly" title=" " alt="" coords="1821,744,1853,744,1853,749,1821,749"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa008ccb1bfddc97c2c6618cfe1fe9ab9" title=" " alt="" coords="1260,883,1516,941"/>
+<area shape="poly" title=" " alt="" coords="1146,930,1245,922,1246,927,1147,935"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a59387e9b0920c39fbe57677bee19e755" title=" " alt="" coords="1274,965,1502,1024"/>
+<area shape="poly" title=" " alt="" coords="1147,957,1260,974,1260,979,1146,962"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="1286,1048,1490,1091"/>
+<area shape="poly" title=" " alt="" coords="1078,962,1167,1003,1241,1033,1273,1043,1271,1048,1239,1039,1165,1008,1076,967"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1601,1048,1804,1091"/>
+<area shape="poly" title=" " alt="" coords="1490,1067,1586,1067,1586,1072,1490,1072"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1880,1048,2093,1091"/>
+<area shape="poly" title=" " alt="" coords="1804,1067,1865,1067,1865,1072,1804,1072"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="2170,585,2426,644"/>
+<area shape="poly" title=" " alt="" coords="1995,1047,2102,787,2113,748,2117,716,2127,685,2151,654,2156,650,2159,654,2155,658,2131,688,2123,717,2118,749,2107,789,2000,1049"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="2170,668,2426,727"/>
+<area shape="poly" title=" " alt="" coords="1990,1047,2006,985,2037,902,2058,857,2084,813,2115,772,2151,737,2155,733,2159,737,2154,741,2119,776,2089,816,2063,859,2042,904,2011,987,1995,1048"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="2169,751,2427,809"/>
+<area shape="poly" title=" " alt="" coords="1994,1047,2015,999,2048,938,2094,874,2121,845,2151,819,2157,815,2160,819,2154,823,2125,849,2098,877,2053,941,2019,1002,1999,1049"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="2153,833,2443,892"/>
+<area shape="poly" title=" " alt="" coords="2001,1046,2062,975,2104,936,2151,902,2161,896,2164,901,2154,906,2107,940,2066,979,2006,1049"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="2160,916,2436,975"/>
+<area shape="poly" title=" " alt="" coords="2025,1045,2084,1014,2152,984,2170,977,2172,982,2154,989,2086,1019,2027,1050"/>
+<area shape="rect" href="../../db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="2163,999,2433,1057"/>
+<area shape="poly" title=" " alt="" coords="2093,1053,2148,1045,2149,1050,2094,1058"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="2170,1081,2426,1140"/>
+<area shape="poly" title=" " alt="" coords="2094,1081,2156,1089,2155,1094,2093,1086"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="2170,1164,2426,1223"/>
+<area shape="poly" title=" " alt="" coords="2027,1089,2086,1119,2154,1150,2172,1156,2170,1161,2152,1154,2084,1124,2025,1093"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="2170,1247,2426,1305"/>
+<area shape="poly" title=" " alt="" coords="2006,1089,2066,1160,2107,1199,2154,1232,2164,1238,2161,1242,2151,1237,2104,1203,2062,1164,2001,1093"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="2170,1329,2426,1388"/>
+<area shape="poly" title=" " alt="" coords="1999,1090,2019,1137,2053,1198,2098,1261,2125,1290,2154,1315,2160,1319,2157,1324,2151,1319,2121,1294,2094,1265,2048,1201,2015,1139,1994,1092"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a2fa87c0d4f1431414d67e4943a14ae56" title=" " alt="" coords="2170,1412,2426,1471"/>
+<area shape="poly" title=" " alt="" coords="1995,1091,2011,1152,2042,1235,2063,1279,2089,1323,2119,1363,2154,1398,2159,1401,2155,1406,2151,1402,2115,1366,2084,1326,2058,1282,2037,1237,2006,1153,1990,1092"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ab14ced87348b79b244d7a5d975e80d25" title=" " alt="" coords="2170,1495,2426,1553"/>
+<area shape="poly" title=" " alt="" coords="1993,1091,2004,1165,2031,1270,2052,1327,2079,1383,2113,1435,2155,1481,2159,1485,2156,1489,2151,1485,2109,1439,2075,1386,2047,1329,2026,1272,1999,1166,1987,1091"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a1a48b1d1847bd93b03ca05fc95555aa9" title="描画順調整値も含めた表示位置設定。" alt="" coords="867,1149,1192,1208"/>
+<area shape="poly" title=" " alt="" coords="735,984,869,1082,963,1139,960,1144,866,1086,732,988"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a0021db759b60ebe86335286fdffbec98" title="同Y座標の場合のキャラクターの描画順値を取得する。" alt="" coords="1240,1197,1536,1240"/>
+<area shape="poly" title=" " alt="" coords="1192,1194,1225,1198,1225,1203,1192,1199"/>
+<area shape="poly" title=" " alt="" coords="810,494,868,505,1071,530,1255,544,1255,549,1070,536,867,511,809,499"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#ad951ef79049366dea02cf35e954ddacd" title=" " alt="" coords="911,272,1148,331"/>
+<area shape="poly" title=" " alt="" coords="728,435,789,386,827,362,866,340,896,328,898,333,868,345,830,366,793,391,731,439"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a0021a1eb1a5879155000880b8f40c16f" title=" " alt="" coords="911,355,1148,413"/>
+<area shape="poly" title=" " alt="" coords="813,435,896,414,897,419,815,440"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a55cc44caa41df8bc39066080c0db850a" title=" " alt="" coords="911,437,1148,496"/>
+<area shape="poly" title=" " alt="" coords="814,464,896,464,896,469,814,469"/>
+<area shape="poly" title=" " alt="" coords="1149,326,1193,340,1259,368,1320,397,1318,402,1257,372,1191,345,1147,331"/>
+<area shape="poly" title=" " alt="" coords="1149,399,1255,414,1255,419,1148,404"/>
+<area shape="poly" title=" " alt="" coords="1148,454,1255,445,1255,450,1149,459"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Map/Component/Character/<a class="el" href="../../d4/d5f/_actor_on_map_8cs.html">ActorOnMap.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

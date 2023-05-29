@@ -1,0 +1,1931 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d0e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system.html">CoreSystem</a></li><li class="navelem"><a class="el" href="../../d9/db7/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper.html">Helper</a></li><li class="navelem"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html">ScriptableObjectOperator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d8/de7/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>スクリプタブル・オブジェクト演算子  
+ <a href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#details">[詳解]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a83cbb464e451cb46a9e7550cf5221e8b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a83cbb464e451cb46a9e7550cf5221e8b">CreateSO</a> ()</td></tr>
+<tr class="memdesc:a83cbb464e451cb46a9e7550cf5221e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSON→SO変換処理  <br /></td></tr>
+<tr class="separator:a83cbb464e451cb46a9e7550cf5221e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190ae5ef610b432b6f725e794bd6f084"><td class="memItemLeft" align="right" valign="top">static object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a190ae5ef610b432b6f725e794bd6f084">GetClass&lt; T &gt;</a> (string path)</td></tr>
+<tr class="memdesc:a190ae5ef610b432b6f725e794bd6f084"><td class="mdescLeft">&#160;</td><td class="mdescRight">対応したクラス名を返す  <br /></td></tr>
+<tr class="separator:a190ae5ef610b432b6f725e794bd6f084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a319b23a281c2595800a65530b2752fc7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a319b23a281c2595800a65530b2752fc7">CreateAsset</a> (<a class="el" href="../../d6/d6a/_image_utility_8cs.html#aef19bab18b9814edeef255c43e4f6bbc">Object</a> so, string path)</td></tr>
+<tr class="memdesc:a319b23a281c2595800a65530b2752fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SO出力  <br /></td></tr>
+<tr class="separator:a319b23a281c2595800a65530b2752fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a46aaaf59ed7cbf6a42384e1f8ef864d0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a46aaaf59ed7cbf6a42384e1f8ef864d0">JSON_PATH_ANIMATION</a> = &quot;Assets/RPGMaker/Storage/Animation/JSON/animation.json&quot;</td></tr>
+<tr class="memdesc:a46aaaf59ed7cbf6a42384e1f8ef864d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a46aaaf59ed7cbf6a42384e1f8ef864d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecf69445c63d6853087083bc34179f4"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a1ecf69445c63d6853087083bc34179f4">SO_PATH_ANIMATION</a> = &quot;Assets/RPGMaker/Storage/Animation/SO/animation.asset&quot;</td></tr>
+<tr class="memdesc:a1ecf69445c63d6853087083bc34179f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">アニメーションのアセットへのパス  <br /></td></tr>
+<tr class="separator:a1ecf69445c63d6853087083bc34179f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a846e76b988a2cc653a331a17946f62"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a6a846e76b988a2cc653a331a17946f62">JSON_PATH_ARMOR</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/armor.json&quot;</td></tr>
+<tr class="memdesc:a6a846e76b988a2cc653a331a17946f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">武装のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a6a846e76b988a2cc653a331a17946f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709d7b8a29d0e564ad11eab5d0552742"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a709d7b8a29d0e564ad11eab5d0552742">SO_PATH_ARMOR</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/armor.asset&quot;</td></tr>
+<tr class="memdesc:a709d7b8a29d0e564ad11eab5d0552742"><td class="mdescLeft">&#160;</td><td class="mdescRight">武装のアセットへのパス  <br /></td></tr>
+<tr class="separator:a709d7b8a29d0e564ad11eab5d0552742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abada81be40c6e045198a13e8325cd2"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a2abada81be40c6e045198a13e8325cd2">JSON_PATH_ASSETMANAGE</a> = &quot;Assets/RPGMaker/Storage/AssetManage/JSON&quot;</td></tr>
+<tr class="memdesc:a2abada81be40c6e045198a13e8325cd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">資産管理JSONフォルダーへのパス  <br /></td></tr>
+<tr class="separator:a2abada81be40c6e045198a13e8325cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0c87fec38e01bd228827023658f1ef"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#aec0c87fec38e01bd228827023658f1ef">SO_PATH_ASSETMANAGE</a> = &quot;Assets/RPGMaker/Storage/AssetManage/SO&quot;</td></tr>
+<tr class="memdesc:aec0c87fec38e01bd228827023658f1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">資産管理SOフォルダーへのパス  <br /></td></tr>
+<tr class="separator:aec0c87fec38e01bd228827023658f1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6de9ff0759b5e33e62826ce4f091b9"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#aac6de9ff0759b5e33e62826ce4f091b9">JSON_PATH_ASSETMANAGE_DATA</a> = &quot;Assets/RPGMaker/Storage/AssetManage/JSON/assetsData.json&quot;</td></tr>
+<tr class="memdesc:aac6de9ff0759b5e33e62826ce4f091b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセット・データのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:aac6de9ff0759b5e33e62826ce4f091b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af394457c674338662a2aaf968bd21b03"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#af394457c674338662a2aaf968bd21b03">SO_PATH_ASSETMANAGE_DATA</a> = &quot;Assets/RPGMaker/Storage/AssetManage/SO/assetsData.asset&quot;</td></tr>
+<tr class="memdesc:af394457c674338662a2aaf968bd21b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">アセット・データのアセットへのパス  <br /></td></tr>
+<tr class="separator:af394457c674338662a2aaf968bd21b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa1ab700adb9af2c27cfc96935d9852"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a3fa1ab700adb9af2c27cfc96935d9852">JSON_PATH_AUTOGUID</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/autoGuide.json&quot;</td></tr>
+<tr class="memdesc:a3fa1ab700adb9af2c27cfc96935d9852"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動ガイドのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a3fa1ab700adb9af2c27cfc96935d9852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d51cb072ec1e0615dabeb26d28f2f5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a92d51cb072ec1e0615dabeb26d28f2f5">SO_PATH_AUTOGUID</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/autoGuide.asset&quot;</td></tr>
+<tr class="memdesc:a92d51cb072ec1e0615dabeb26d28f2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">自動ガイドのアセットへのパス  <br /></td></tr>
+<tr class="separator:a92d51cb072ec1e0615dabeb26d28f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7928433fb3e5f764496c4cbbb5839254"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7928433fb3e5f764496c4cbbb5839254">JSON_PATH_CHARACTERACTOR</a> = &quot;Assets/RPGMaker/Storage/Character/JSON/characterActor.json&quot;</td></tr>
+<tr class="memdesc:a7928433fb3e5f764496c4cbbb5839254"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャラクター・アクターのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a7928433fb3e5f764496c4cbbb5839254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a772a410e79ace9b205f567ab1065b4b3"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a772a410e79ace9b205f567ab1065b4b3">SO_PATH_CHARACTERACTOR</a> = &quot;Assets/RPGMaker/Storage/Character/SO/characterActor.asset&quot;</td></tr>
+<tr class="memdesc:a772a410e79ace9b205f567ab1065b4b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">キャラクター・アクターのアセットへのパス  <br /></td></tr>
+<tr class="separator:a772a410e79ace9b205f567ab1065b4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31b21228d13ad9795dcca4f0b028db0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#af31b21228d13ad9795dcca4f0b028db0">JSON_PATH_CLASS</a> = &quot;Assets/RPGMaker/Storage/Character/JSON/class.json&quot;</td></tr>
+<tr class="memdesc:af31b21228d13ad9795dcca4f0b028db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">クラスのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:af31b21228d13ad9795dcca4f0b028db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07364470a7d128709d67d513bad4d9e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ad07364470a7d128709d67d513bad4d9e">SO_PATH_CLASS</a> = &quot;Assets/RPGMaker/Storage/Character/SO/class.asset&quot;</td></tr>
+<tr class="memdesc:ad07364470a7d128709d67d513bad4d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">クラスのアセットへのパス  <br /></td></tr>
+<tr class="separator:ad07364470a7d128709d67d513bad4d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6204b7de9d5899928fbd2cdf45580e8f"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a6204b7de9d5899928fbd2cdf45580e8f">JSON_PATH_ENCOUNTER</a> = &quot;Assets/RPGMaker/Storage/Encounter/JSON/encounter.json&quot;</td></tr>
+<tr class="memdesc:a6204b7de9d5899928fbd2cdf45580e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">遭遇のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a6204b7de9d5899928fbd2cdf45580e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14da92717b1fbe42649b0cdbdcc42556"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a14da92717b1fbe42649b0cdbdcc42556">SO_PATH_ENCOUNTER</a> = &quot;Assets/RPGMaker/Storage/Encounter/SO/encounter.asset&quot;</td></tr>
+<tr class="memdesc:a14da92717b1fbe42649b0cdbdcc42556"><td class="mdescLeft">&#160;</td><td class="mdescRight">遭遇のアセットへのパス  <br /></td></tr>
+<tr class="separator:a14da92717b1fbe42649b0cdbdcc42556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b4208f2cb83818ef089d8372415907"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a23b4208f2cb83818ef089d8372415907">JSON_PATH_ENEMY</a> = &quot;Assets/RPGMaker/Storage/Character/JSON/enemy.json&quot;</td></tr>
+<tr class="memdesc:a23b4208f2cb83818ef089d8372415907"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a23b4208f2cb83818ef089d8372415907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715573df2766dad24c5eaf7d2fa09920"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a715573df2766dad24c5eaf7d2fa09920">SO_PATH_ENEMY</a> = &quot;Assets/RPGMaker/Storage/Character/SO/enemy.asset&quot;</td></tr>
+<tr class="memdesc:a715573df2766dad24c5eaf7d2fa09920"><td class="mdescLeft">&#160;</td><td class="mdescRight">敵のアセットへのパス  <br /></td></tr>
+<tr class="separator:a715573df2766dad24c5eaf7d2fa09920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2479d4068aee785bdc8af1ab63cc81af"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a2479d4068aee785bdc8af1ab63cc81af">JSON_PATH_FLAGS</a> = &quot;Assets/RPGMaker/Storage/Flags/JSON/flags.json&quot;</td></tr>
+<tr class="memdesc:a2479d4068aee785bdc8af1ab63cc81af"><td class="mdescLeft">&#160;</td><td class="mdescRight">フラグのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a2479d4068aee785bdc8af1ab63cc81af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c35fcf37acbec2674b1d82d185d1065"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7c35fcf37acbec2674b1d82d185d1065">SO_PATH_FLAGS</a> = &quot;Assets/RPGMaker/Storage/Flags/SO/flags.asset&quot;</td></tr>
+<tr class="memdesc:a7c35fcf37acbec2674b1d82d185d1065"><td class="mdescLeft">&#160;</td><td class="mdescRight">フラグのアセットへのパス  <br /></td></tr>
+<tr class="separator:a7c35fcf37acbec2674b1d82d185d1065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a1f68f17447e5966589d1e9c76f360"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a72a1f68f17447e5966589d1e9c76f360">JSON_PATH_ITEM</a> = &quot;Assets/RPGMaker/Storage/Item/JSON/item.json&quot;</td></tr>
+<tr class="memdesc:a72a1f68f17447e5966589d1e9c76f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイテムのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a72a1f68f17447e5966589d1e9c76f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0569e9eab4d02deb43924d060da472df"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a0569e9eab4d02deb43924d060da472df">SO_PATH_ITEM</a> = &quot;Assets/RPGMaker/Storage/Item/SO/item.asset&quot;</td></tr>
+<tr class="memdesc:a0569e9eab4d02deb43924d060da472df"><td class="mdescLeft">&#160;</td><td class="mdescRight">アイテムのアセットへのパス  <br /></td></tr>
+<tr class="separator:a0569e9eab4d02deb43924d060da472df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b1774fc2b9517b083d1243e3b68bb2"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ad0b1774fc2b9517b083d1243e3b68bb2">JSON_PATH_SKILL</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/skill.json&quot;</td></tr>
+<tr class="memdesc:ad0b1774fc2b9517b083d1243e3b68bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">スキルのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:ad0b1774fc2b9517b083d1243e3b68bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a958dff73e1a070621dc27fed77fbe"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#aa6a958dff73e1a070621dc27fed77fbe">SO_PATH_SKILL</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/skill.asset&quot;</td></tr>
+<tr class="memdesc:aa6a958dff73e1a070621dc27fed77fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">スキルのアセットへのパス  <br /></td></tr>
+<tr class="separator:aa6a958dff73e1a070621dc27fed77fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad915a49d1e76fd4f08811aa577a980cd"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ad915a49d1e76fd4f08811aa577a980cd">JSON_PATH_SKILLCUSTOM</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/skillCustom.json&quot;</td></tr>
+<tr class="memdesc:ad915a49d1e76fd4f08811aa577a980cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">スキル・カスタムのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:ad915a49d1e76fd4f08811aa577a980cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7947e8a5610c2f29d9ab446a0a799160"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7947e8a5610c2f29d9ab446a0a799160">SO_PATH_SKILLCUSTOM</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/skillCustom.asset&quot;</td></tr>
+<tr class="memdesc:a7947e8a5610c2f29d9ab446a0a799160"><td class="mdescLeft">&#160;</td><td class="mdescRight">スキル・カスタムのアセットへのパス  <br /></td></tr>
+<tr class="separator:a7947e8a5610c2f29d9ab446a0a799160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93e06b67b4c5eb475a6b1852cd8c7fe"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ac93e06b67b4c5eb475a6b1852cd8c7fe">JSON_PATH_STATE</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/state.json&quot;</td></tr>
+<tr class="memdesc:ac93e06b67b4c5eb475a6b1852cd8c7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:ac93e06b67b4c5eb475a6b1852cd8c7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64fca9124ee58042ab67ce7974077df"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#af64fca9124ee58042ab67ce7974077df">SO_PATH_STATE</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/state.asset&quot;</td></tr>
+<tr class="memdesc:af64fca9124ee58042ab67ce7974077df"><td class="mdescLeft">&#160;</td><td class="mdescRight">状態のアセットへのパス  <br /></td></tr>
+<tr class="separator:af64fca9124ee58042ab67ce7974077df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689a509a65b96a9ce2ded5f878fa304f"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a689a509a65b96a9ce2ded5f878fa304f">JSON_PATH_SYSTEM</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/system.json&quot;</td></tr>
+<tr class="memdesc:a689a509a65b96a9ce2ded5f878fa304f"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a689a509a65b96a9ce2ded5f878fa304f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac088b2539057a233a26de53f438c69bd"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ac088b2539057a233a26de53f438c69bd">SO_PATH_SYSTEM</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/system.asset&quot;</td></tr>
+<tr class="memdesc:ac088b2539057a233a26de53f438c69bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">システムのアセットへのパス  <br /></td></tr>
+<tr class="separator:ac088b2539057a233a26de53f438c69bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe10ec604765c2a551e23665d3483515"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#afe10ec604765c2a551e23665d3483515">JSON_PATH_TITLE</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/title.json&quot;</td></tr>
+<tr class="memdesc:afe10ec604765c2a551e23665d3483515"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイトルのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:afe10ec604765c2a551e23665d3483515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fca78a0d37c060699e27ff5f2fc2df"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ad7fca78a0d37c060699e27ff5f2fc2df">SO_PATH_TITLE</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/title.asset&quot;</td></tr>
+<tr class="memdesc:ad7fca78a0d37c060699e27ff5f2fc2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイトルのアセットへのパス  <br /></td></tr>
+<tr class="separator:ad7fca78a0d37c060699e27ff5f2fc2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220d23990541effee9ec8bdbc4a27675"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a220d23990541effee9ec8bdbc4a27675">JSON_PATH_TROOP</a> = &quot;Assets/RPGMaker/Storage/Character/JSON/troop.json&quot;</td></tr>
+<tr class="memdesc:a220d23990541effee9ec8bdbc4a27675"><td class="mdescLeft">&#160;</td><td class="mdescRight">部隊のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a220d23990541effee9ec8bdbc4a27675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d3cfe7e4f1175507d6fd5d650b17d5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a36d3cfe7e4f1175507d6fd5d650b17d5">SO_PATH_TROOP</a> = &quot;Assets/RPGMaker/Storage/Character/SO/troop.asset&quot;</td></tr>
+<tr class="memdesc:a36d3cfe7e4f1175507d6fd5d650b17d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">部隊のアセットへのパス  <br /></td></tr>
+<tr class="separator:a36d3cfe7e4f1175507d6fd5d650b17d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e096aba40a96e5a3f9a6d6e51772d16"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7e096aba40a96e5a3f9a6d6e51772d16">JSON_PATH_UI</a> = &quot;Assets/RPGMaker/Storage/Ui/JSON/ui.json&quot;</td></tr>
+<tr class="memdesc:a7e096aba40a96e5a3f9a6d6e51772d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユーザー・インターフェースのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a7e096aba40a96e5a3f9a6d6e51772d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d950d3d9c406ce93192cdf1619809b"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a97d950d3d9c406ce93192cdf1619809b">SO_PATH_UI</a> = &quot;Assets/RPGMaker/Storage/Ui/SO/ui.asset&quot;</td></tr>
+<tr class="memdesc:a97d950d3d9c406ce93192cdf1619809b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ユーザー・インターフェースのアセットへのパス  <br /></td></tr>
+<tr class="separator:a97d950d3d9c406ce93192cdf1619809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96dc1246b25206d5218b8aa909257a49"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a96dc1246b25206d5218b8aa909257a49">JSON_PATH_VEHICLES</a> = &quot;Assets/RPGMaker/Storage/Character/JSON/vehicles.json&quot;</td></tr>
+<tr class="memdesc:a96dc1246b25206d5218b8aa909257a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">乗り物のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a96dc1246b25206d5218b8aa909257a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81affff57dae72305e41412541cf0938"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a81affff57dae72305e41412541cf0938">SO_PATH_VEHICLES</a> = &quot;Assets/RPGMaker/Storage/Character/SO/vehicles.asset&quot;</td></tr>
+<tr class="memdesc:a81affff57dae72305e41412541cf0938"><td class="mdescLeft">&#160;</td><td class="mdescRight">乗り物のアセットへのパス  <br /></td></tr>
+<tr class="separator:a81affff57dae72305e41412541cf0938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e02cff2cf8dcf17e3ff85c03186f8d8"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a4e02cff2cf8dcf17e3ff85c03186f8d8">JSON_PATH_WEAPON</a> = &quot;Assets/RPGMaker/Storage/Initializations/JSON/weapon.json&quot;</td></tr>
+<tr class="memdesc:a4e02cff2cf8dcf17e3ff85c03186f8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">武器のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a4e02cff2cf8dcf17e3ff85c03186f8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ccfaa5c3bc8412e4f5fc8d22ad4231"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ae6ccfaa5c3bc8412e4f5fc8d22ad4231">SO_PATH_WEAPON</a> = &quot;Assets/RPGMaker/Storage/Initializations/SO/weapon.asset&quot;</td></tr>
+<tr class="memdesc:ae6ccfaa5c3bc8412e4f5fc8d22ad4231"><td class="mdescLeft">&#160;</td><td class="mdescRight">武器のアセットへのパス  <br /></td></tr>
+<tr class="separator:ae6ccfaa5c3bc8412e4f5fc8d22ad4231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44934c9ca212a8b4c2b232afe783cc67"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a44934c9ca212a8b4c2b232afe783cc67">JSON_PATH_WORDS</a> = &quot;Assets/RPGMaker/Storage/Word/JSON/words.json&quot;</td></tr>
+<tr class="memdesc:a44934c9ca212a8b4c2b232afe783cc67"><td class="mdescLeft">&#160;</td><td class="mdescRight">単語のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a44934c9ca212a8b4c2b232afe783cc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23808db4c538a52a7f56bd61b50c4c97"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a23808db4c538a52a7f56bd61b50c4c97">SO_PATH_WORDS</a> = &quot;Assets/RPGMaker/Storage/Word/SO/words.asset&quot;</td></tr>
+<tr class="memdesc:a23808db4c538a52a7f56bd61b50c4c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">単語のアセットへのパス  <br /></td></tr>
+<tr class="separator:a23808db4c538a52a7f56bd61b50c4c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311b4ab157ba58ff41224ecf864e85e1"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a311b4ab157ba58ff41224ecf864e85e1">JSON_PATH_MAPBASE</a> = &quot;Assets/RPGMaker/Storage/Map/JSON/mapbase.json&quot;</td></tr>
+<tr class="memdesc:a311b4ab157ba58ff41224ecf864e85e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップ・ベースのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a311b4ab157ba58ff41224ecf864e85e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fe2037abb485d56c0f703b28002545"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a03fe2037abb485d56c0f703b28002545">SO_PATH_MAPBASE</a> = &quot;Assets/RPGMaker/Storage/Map/SO/mapbase.asset&quot;</td></tr>
+<tr class="memdesc:a03fe2037abb485d56c0f703b28002545"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップ・ベースのアセットへのパス  <br /></td></tr>
+<tr class="separator:a03fe2037abb485d56c0f703b28002545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ddd97863cf19bb978131991b5c0a85"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a37ddd97863cf19bb978131991b5c0a85">JSON_PATH_EVENT</a> = &quot;Assets/RPGMaker/Storage/Event/JSON/Event&quot;</td></tr>
+<tr class="memdesc:a37ddd97863cf19bb978131991b5c0a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONフォルダーのイベント・ディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:a37ddd97863cf19bb978131991b5c0a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fcf613159f46a838b0c51d8b9e5f38"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a32fcf613159f46a838b0c51d8b9e5f38">SO_PATH_EVENT</a> = &quot;Assets/RPGMaker/Storage/Event/SO/Event&quot;</td></tr>
+<tr class="memdesc:a32fcf613159f46a838b0c51d8b9e5f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOフォルダーのイベント・ディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:a32fcf613159f46a838b0c51d8b9e5f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ee62d3e11368aba60ac204d3fbac38"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#ad6ee62d3e11368aba60ac204d3fbac38">JSON_PATH_EVENTMAP</a> = &quot;Assets/RPGMaker/Storage/Event/JSON/eventMap.json&quot;</td></tr>
+<tr class="memdesc:ad6ee62d3e11368aba60ac204d3fbac38"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント・マップのJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:ad6ee62d3e11368aba60ac204d3fbac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ccbd8e7d2462aaffc84610014039dcb"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7ccbd8e7d2462aaffc84610014039dcb">SO_PATH_EVENTMAP</a> = &quot;Assets/RPGMaker/Storage/Event/SO/eventMap.asset&quot;</td></tr>
+<tr class="memdesc:a7ccbd8e7d2462aaffc84610014039dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント・マップのアセットへのパス  <br /></td></tr>
+<tr class="separator:a7ccbd8e7d2462aaffc84610014039dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bee1585ba04edde3990261dd4db905"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a20bee1585ba04edde3990261dd4db905">JSON_PATH_EVENTCOMMON</a> = &quot;Assets/RPGMaker/Storage/Event/JSON/eventCommon.json&quot;</td></tr>
+<tr class="memdesc:a20bee1585ba04edde3990261dd4db905"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント共通のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a20bee1585ba04edde3990261dd4db905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ca69c3ecb19c5505eb1821b37dd5cd"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a63ca69c3ecb19c5505eb1821b37dd5cd">SO_PATH_EVENTCOMMON</a> = &quot;Assets/RPGMaker/Storage/Event/SO/eventCommon.asset&quot;</td></tr>
+<tr class="memdesc:a63ca69c3ecb19c5505eb1821b37dd5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント共通のアセットへのパス  <br /></td></tr>
+<tr class="separator:a63ca69c3ecb19c5505eb1821b37dd5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ed1a920a25f200e3b653a06e416409"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a88ed1a920a25f200e3b653a06e416409">JSON_PATH_EVENTBATTLE</a> = &quot;Assets/RPGMaker/Storage/Event/JSON/eventBattle.json&quot;</td></tr>
+<tr class="memdesc:a88ed1a920a25f200e3b653a06e416409"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント戦闘のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a88ed1a920a25f200e3b653a06e416409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c483ca3486277487e0a043bab6d1d19"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a8c483ca3486277487e0a043bab6d1d19">SO_PATH_EVENTBATTLE</a> = &quot;Assets/RPGMaker/Storage/Event/SO/eventBattle.asset&quot;</td></tr>
+<tr class="memdesc:a8c483ca3486277487e0a043bab6d1d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント戦闘のアセットへのパス  <br /></td></tr>
+<tr class="separator:a8c483ca3486277487e0a043bab6d1d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf12af67f80dd7f4cecf391173e62f88"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#abf12af67f80dd7f4cecf391173e62f88">JSON_PATH_MAP</a> = &quot;Assets/RPGMaker/Storage/Map/JSON/Map&quot;</td></tr>
+<tr class="memdesc:abf12af67f80dd7f4cecf391173e62f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">JSONフォルダーのマップ・ディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:abf12af67f80dd7f4cecf391173e62f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeabde898aea178687c757f37ee1af4d"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#abeabde898aea178687c757f37ee1af4d">SO_PATH_MAP</a> = &quot;Assets/RPGMaker/Storage/Map/SO/Map&quot;</td></tr>
+<tr class="memdesc:abeabde898aea178687c757f37ee1af4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">SOフォルダーのマップ・ディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:abeabde898aea178687c757f37ee1af4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dfb2d47b7d118ff2865fa9646227125"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a3dfb2d47b7d118ff2865fa9646227125">SO_PATH_MAP_FOLDER</a> = &quot;Assets/RPGMaker/Storage/Map/SO&quot;</td></tr>
+<tr class="memdesc:a3dfb2d47b7d118ff2865fa9646227125"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップ・フォルダーのSOディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:a3dfb2d47b7d118ff2865fa9646227125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2e520ecf71174f673ac7dc32b3e372d"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#af2e520ecf71174f673ac7dc32b3e372d">ASSET_PATH_TILE</a> = &quot;Assets/RPGMaker/Storage/Map/TileAssets&quot;</td></tr>
+<tr class="memdesc:af2e520ecf71174f673ac7dc32b3e372d"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイル・アセット・ディレクトリーへのパス  <br /></td></tr>
+<tr class="separator:af2e520ecf71174f673ac7dc32b3e372d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac246521b36f5398f923fa2b440efc0a"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#aac246521b36f5398f923fa2b440efc0a">SO_PATH_TILE</a> = &quot;Assets/RPGMaker/Storage/Map/SO/TileAssets.asset&quot;</td></tr>
+<tr class="memdesc:aac246521b36f5398f923fa2b440efc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">タイル・アセットのアセットへのパス  <br /></td></tr>
+<tr class="separator:aac246521b36f5398f923fa2b440efc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f476e6b3c34f7d25b3ebbbc64c68be5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a0f476e6b3c34f7d25b3ebbbc64c68be5">JSON_PATH_BGM_LOOP</a> = &quot;Assets/RPGMaker/Storage/Sounds/bgmLoopInfo.json&quot;</td></tr>
+<tr class="memdesc:a0f476e6b3c34f7d25b3ebbbc64c68be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音楽ループ情報のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a0f476e6b3c34f7d25b3ebbbc64c68be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b77cfb515e03ba114ad3f2d14f96de5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7b77cfb515e03ba114ad3f2d14f96de5">SO_PATH_BGM_LOOP</a> = &quot;Assets/RPGMaker/Storage/Sounds/bgmLoopInfo.asset&quot;</td></tr>
+<tr class="memdesc:a7b77cfb515e03ba114ad3f2d14f96de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音楽ループ情報のアセットへのパス  <br /></td></tr>
+<tr class="separator:a7b77cfb515e03ba114ad3f2d14f96de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e8b42bde182b8615306b9da1a804f0"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a96e8b42bde182b8615306b9da1a804f0">JSON_PATH_BGS_LOOP</a> = &quot;Assets/RPGMaker/Storage/Sounds/bgsLoopInfo.json&quot;</td></tr>
+<tr class="memdesc:a96e8b42bde182b8615306b9da1a804f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音ループ情報のJSONファイルへのパス  <br /></td></tr>
+<tr class="separator:a96e8b42bde182b8615306b9da1a804f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a733b526cadc1d1e771eaf2ddad2652"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a7a733b526cadc1d1e771eaf2ddad2652">SO_PATH_BGS_LOOP</a> = &quot;Assets/RPGMaker/Storage/Sounds/bgsLoopInfo.asset&quot;</td></tr>
+<tr class="memdesc:a7a733b526cadc1d1e771eaf2ddad2652"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景音ループ情報のアセットへのパス  <br /></td></tr>
+<tr class="separator:a7a733b526cadc1d1e771eaf2ddad2652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>スクリプタブル・オブジェクト演算子 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a319b23a281c2595800a65530b2752fc7" name="a319b23a281c2595800a65530b2752fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319b23a281c2595800a65530b2752fc7">&#9670;&#160;</a></span>CreateAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.CreateAsset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d6a/_image_utility_8cs.html#aef19bab18b9814edeef255c43e4f6bbc">Object</a>&#160;</td>
+          <td class="paramname"><em>so</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SO出力 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">so</td><td></td></tr>
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_cgraph.png" border="0" usemap="#add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_cgraph" alt=""/></div>
+<map name="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_cgraph" id="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_cgraph">
+<area shape="rect" title="SO出力" alt="" coords="5,47,233,105"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ae93b23bca5bd9fdc6117fb61fd78f1bf" title=" " alt="" coords="281,5,549,64"/>
+<area shape="poly" title=" " alt="" coords="233,57,265,53,266,58,234,63"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="281,88,549,147"/>
+<area shape="poly" title=" " alt="" coords="234,89,266,94,265,99,233,95"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_icgraph.png" border="0" usemap="#add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_icgraph" alt=""/></div>
+<map name="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_icgraph" id="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a319b23a281c2595800a65530b2752fc7_icgraph">
+<area shape="rect" title="SO出力" alt="" coords="281,5,508,64"/>
+<area shape="rect" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a83cbb464e451cb46a9e7550cf5221e8b" title="JSON→SO変換処理" alt="" coords="5,5,233,64"/>
+<area shape="poly" title=" " alt="" coords="265,37,233,37,233,32,265,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a83cbb464e451cb46a9e7550cf5221e8b" name="a83cbb464e451cb46a9e7550cf5221e8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cbb464e451cb46a9e7550cf5221e8b">&#9670;&#160;</a></span>CreateSO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.CreateSO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSON→SO変換処理 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a83cbb464e451cb46a9e7550cf5221e8b_cgraph.png" border="0" usemap="#add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a83cbb464e451cb46a9e7550cf5221e8b_cgraph" alt=""/></div>
+<map name="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a83cbb464e451cb46a9e7550cf5221e8b_cgraph" id="add/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator_a83cbb464e451cb46a9e7550cf5221e8b_cgraph">
+<area shape="rect" title="JSON→SO変換処理" alt="" coords="5,171,233,229"/>
+<area shape="rect" href="../../dd/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_scriptable_object_operator.html#a319b23a281c2595800a65530b2752fc7" title="SO出力" alt="" coords="301,47,529,105"/>
+<area shape="poly" title=" " alt="" coords="172,168,280,115,297,108,298,113,282,120,174,172"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="281,129,549,188"/>
+<area shape="poly" title=" " alt="" coords="233,181,265,177,266,182,234,187"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ab1557b81ee60a7dc4f85349106fe4244" title=" " alt="" coords="281,212,549,271"/>
+<area shape="poly" title=" " alt="" coords="234,213,266,218,265,223,233,219"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ae52ac0cf88d7d660713d2c01b24207e2" title=" " alt="" coords="296,295,534,353"/>
+<area shape="poly" title=" " alt="" coords="174,228,282,280,298,287,297,292,280,285,172,232"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ae93b23bca5bd9fdc6117fb61fd78f1bf" title=" " alt="" coords="597,5,865,64"/>
+<area shape="poly" title=" " alt="" coords="529,58,582,51,583,57,529,64"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="597,88,865,147"/>
+<area shape="poly" title=" " alt="" coords="529,88,583,95,582,101,529,94"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a712ec3f11afbdf696f89f34c65583346" title=" " alt="" coords="613,253,850,312"/>
+<area shape="poly" title=" " alt="" coords="534,306,597,297,598,303,534,311"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#aac8a4802465c30e6b280e54872da1e8d" title=" " alt="" coords="613,336,850,395"/>
+<area shape="poly" title=" " alt="" coords="534,337,598,345,597,351,534,342"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a190ae5ef610b432b6f725e794bd6f084" name="a190ae5ef610b432b6f725e794bd6f084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190ae5ef610b432b6f725e794bd6f084">&#9670;&#160;</a></span>GetClass&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static object RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.GetClass&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>対応したクラス名を返す </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="af2e520ecf71174f673ac7dc32b3e372d" name="af2e520ecf71174f673ac7dc32b3e372d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e520ecf71174f673ac7dc32b3e372d">&#9670;&#160;</a></span>ASSET_PATH_TILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.ASSET_PATH_TILE = &quot;Assets/RPGMaker/Storage/Map/TileAssets&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイル・アセット・ディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a46aaaf59ed7cbf6a42384e1f8ef864d0" name="a46aaaf59ed7cbf6a42384e1f8ef864d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46aaaf59ed7cbf6a42384e1f8ef864d0">&#9670;&#160;</a></span>JSON_PATH_ANIMATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ANIMATION = &quot;Assets/RPGMaker/Storage/Animation/JSON/animation.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションのJSONファイルへのパス </p>
+<ul>
+<li>
+（※翻訳者追記）ファイル・パスをハードコーディングしたら拡張性無いのでは？ 外部ファイルやデータベースにしないの？ ユニティの作法知らんけど </li>
+<li>
+（※翻訳者追記）オブジェクト指向になってない。アニメーション・クラスのように <b>オブジェクト</b> 毎にクラスを作って、そのクラスがファイルパスを持つべきでは？ </li>
+</ul>
+
+</div>
+</div>
+<a id="a6a846e76b988a2cc653a331a17946f62" name="a6a846e76b988a2cc653a331a17946f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a846e76b988a2cc653a331a17946f62">&#9670;&#160;</a></span>JSON_PATH_ARMOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ARMOR = &quot;Assets/RPGMaker/Storage/Initializations/JSON/armor.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>武装のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a2abada81be40c6e045198a13e8325cd2" name="a2abada81be40c6e045198a13e8325cd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2abada81be40c6e045198a13e8325cd2">&#9670;&#160;</a></span>JSON_PATH_ASSETMANAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ASSETMANAGE = &quot;Assets/RPGMaker/Storage/AssetManage/JSON&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>資産管理JSONフォルダーへのパス </p>
+
+</div>
+</div>
+<a id="aac6de9ff0759b5e33e62826ce4f091b9" name="aac6de9ff0759b5e33e62826ce4f091b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6de9ff0759b5e33e62826ce4f091b9">&#9670;&#160;</a></span>JSON_PATH_ASSETMANAGE_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ASSETMANAGE_DATA = &quot;Assets/RPGMaker/Storage/AssetManage/JSON/assetsData.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセット・データのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a3fa1ab700adb9af2c27cfc96935d9852" name="a3fa1ab700adb9af2c27cfc96935d9852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa1ab700adb9af2c27cfc96935d9852">&#9670;&#160;</a></span>JSON_PATH_AUTOGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_AUTOGUID = &quot;Assets/RPGMaker/Storage/Initializations/JSON/autoGuide.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動ガイドのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a0f476e6b3c34f7d25b3ebbbc64c68be5" name="a0f476e6b3c34f7d25b3ebbbc64c68be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f476e6b3c34f7d25b3ebbbc64c68be5">&#9670;&#160;</a></span>JSON_PATH_BGM_LOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_BGM_LOOP = &quot;Assets/RPGMaker/Storage/Sounds/bgmLoopInfo.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音楽ループ情報のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a96e8b42bde182b8615306b9da1a804f0" name="a96e8b42bde182b8615306b9da1a804f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e8b42bde182b8615306b9da1a804f0">&#9670;&#160;</a></span>JSON_PATH_BGS_LOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_BGS_LOOP = &quot;Assets/RPGMaker/Storage/Sounds/bgsLoopInfo.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音ループ情報のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a7928433fb3e5f764496c4cbbb5839254" name="a7928433fb3e5f764496c4cbbb5839254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7928433fb3e5f764496c4cbbb5839254">&#9670;&#160;</a></span>JSON_PATH_CHARACTERACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_CHARACTERACTOR = &quot;Assets/RPGMaker/Storage/Character/JSON/characterActor.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>キャラクター・アクターのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="af31b21228d13ad9795dcca4f0b028db0" name="af31b21228d13ad9795dcca4f0b028db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af31b21228d13ad9795dcca4f0b028db0">&#9670;&#160;</a></span>JSON_PATH_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_CLASS = &quot;Assets/RPGMaker/Storage/Character/JSON/class.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>クラスのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a6204b7de9d5899928fbd2cdf45580e8f" name="a6204b7de9d5899928fbd2cdf45580e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6204b7de9d5899928fbd2cdf45580e8f">&#9670;&#160;</a></span>JSON_PATH_ENCOUNTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ENCOUNTER = &quot;Assets/RPGMaker/Storage/Encounter/JSON/encounter.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>遭遇のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a23b4208f2cb83818ef089d8372415907" name="a23b4208f2cb83818ef089d8372415907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b4208f2cb83818ef089d8372415907">&#9670;&#160;</a></span>JSON_PATH_ENEMY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ENEMY = &quot;Assets/RPGMaker/Storage/Character/JSON/enemy.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>敵のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a37ddd97863cf19bb978131991b5c0a85" name="a37ddd97863cf19bb978131991b5c0a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ddd97863cf19bb978131991b5c0a85">&#9670;&#160;</a></span>JSON_PATH_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_EVENT = &quot;Assets/RPGMaker/Storage/Event/JSON/Event&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSONフォルダーのイベント・ディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a88ed1a920a25f200e3b653a06e416409" name="a88ed1a920a25f200e3b653a06e416409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88ed1a920a25f200e3b653a06e416409">&#9670;&#160;</a></span>JSON_PATH_EVENTBATTLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_EVENTBATTLE = &quot;Assets/RPGMaker/Storage/Event/JSON/eventBattle.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント戦闘のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a20bee1585ba04edde3990261dd4db905" name="a20bee1585ba04edde3990261dd4db905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bee1585ba04edde3990261dd4db905">&#9670;&#160;</a></span>JSON_PATH_EVENTCOMMON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_EVENTCOMMON = &quot;Assets/RPGMaker/Storage/Event/JSON/eventCommon.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント共通のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="ad6ee62d3e11368aba60ac204d3fbac38" name="ad6ee62d3e11368aba60ac204d3fbac38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ee62d3e11368aba60ac204d3fbac38">&#9670;&#160;</a></span>JSON_PATH_EVENTMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_EVENTMAP = &quot;Assets/RPGMaker/Storage/Event/JSON/eventMap.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント・マップのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a2479d4068aee785bdc8af1ab63cc81af" name="a2479d4068aee785bdc8af1ab63cc81af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2479d4068aee785bdc8af1ab63cc81af">&#9670;&#160;</a></span>JSON_PATH_FLAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_FLAGS = &quot;Assets/RPGMaker/Storage/Flags/JSON/flags.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>フラグのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a72a1f68f17447e5966589d1e9c76f360" name="a72a1f68f17447e5966589d1e9c76f360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a1f68f17447e5966589d1e9c76f360">&#9670;&#160;</a></span>JSON_PATH_ITEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_ITEM = &quot;Assets/RPGMaker/Storage/Item/JSON/item.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アイテムのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="abf12af67f80dd7f4cecf391173e62f88" name="abf12af67f80dd7f4cecf391173e62f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf12af67f80dd7f4cecf391173e62f88">&#9670;&#160;</a></span>JSON_PATH_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_MAP = &quot;Assets/RPGMaker/Storage/Map/JSON/Map&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>JSONフォルダーのマップ・ディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a311b4ab157ba58ff41224ecf864e85e1" name="a311b4ab157ba58ff41224ecf864e85e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311b4ab157ba58ff41224ecf864e85e1">&#9670;&#160;</a></span>JSON_PATH_MAPBASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_MAPBASE = &quot;Assets/RPGMaker/Storage/Map/JSON/mapbase.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マップ・ベースのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="ad0b1774fc2b9517b083d1243e3b68bb2" name="ad0b1774fc2b9517b083d1243e3b68bb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b1774fc2b9517b083d1243e3b68bb2">&#9670;&#160;</a></span>JSON_PATH_SKILL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_SKILL = &quot;Assets/RPGMaker/Storage/Initializations/JSON/skill.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スキルのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="ad915a49d1e76fd4f08811aa577a980cd" name="ad915a49d1e76fd4f08811aa577a980cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad915a49d1e76fd4f08811aa577a980cd">&#9670;&#160;</a></span>JSON_PATH_SKILLCUSTOM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_SKILLCUSTOM = &quot;Assets/RPGMaker/Storage/Initializations/JSON/skillCustom.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スキル・カスタムのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="ac93e06b67b4c5eb475a6b1852cd8c7fe" name="ac93e06b67b4c5eb475a6b1852cd8c7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93e06b67b4c5eb475a6b1852cd8c7fe">&#9670;&#160;</a></span>JSON_PATH_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_STATE = &quot;Assets/RPGMaker/Storage/Initializations/JSON/state.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>状態のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a689a509a65b96a9ce2ded5f878fa304f" name="a689a509a65b96a9ce2ded5f878fa304f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689a509a65b96a9ce2ded5f878fa304f">&#9670;&#160;</a></span>JSON_PATH_SYSTEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_SYSTEM = &quot;Assets/RPGMaker/Storage/Initializations/JSON/system.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>システムのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="afe10ec604765c2a551e23665d3483515" name="afe10ec604765c2a551e23665d3483515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe10ec604765c2a551e23665d3483515">&#9670;&#160;</a></span>JSON_PATH_TITLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_TITLE = &quot;Assets/RPGMaker/Storage/Initializations/JSON/title.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイトルのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a220d23990541effee9ec8bdbc4a27675" name="a220d23990541effee9ec8bdbc4a27675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220d23990541effee9ec8bdbc4a27675">&#9670;&#160;</a></span>JSON_PATH_TROOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_TROOP = &quot;Assets/RPGMaker/Storage/Character/JSON/troop.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>部隊のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a7e096aba40a96e5a3f9a6d6e51772d16" name="a7e096aba40a96e5a3f9a6d6e51772d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e096aba40a96e5a3f9a6d6e51772d16">&#9670;&#160;</a></span>JSON_PATH_UI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_UI = &quot;Assets/RPGMaker/Storage/Ui/JSON/ui.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ユーザー・インターフェースのJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a96dc1246b25206d5218b8aa909257a49" name="a96dc1246b25206d5218b8aa909257a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96dc1246b25206d5218b8aa909257a49">&#9670;&#160;</a></span>JSON_PATH_VEHICLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_VEHICLES = &quot;Assets/RPGMaker/Storage/Character/JSON/vehicles.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>乗り物のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a4e02cff2cf8dcf17e3ff85c03186f8d8" name="a4e02cff2cf8dcf17e3ff85c03186f8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e02cff2cf8dcf17e3ff85c03186f8d8">&#9670;&#160;</a></span>JSON_PATH_WEAPON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_WEAPON = &quot;Assets/RPGMaker/Storage/Initializations/JSON/weapon.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>武器のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a44934c9ca212a8b4c2b232afe783cc67" name="a44934c9ca212a8b4c2b232afe783cc67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44934c9ca212a8b4c2b232afe783cc67">&#9670;&#160;</a></span>JSON_PATH_WORDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.JSON_PATH_WORDS = &quot;Assets/RPGMaker/Storage/Word/JSON/words.json&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>単語のJSONファイルへのパス </p>
+
+</div>
+</div>
+<a id="a1ecf69445c63d6853087083bc34179f4" name="a1ecf69445c63d6853087083bc34179f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecf69445c63d6853087083bc34179f4">&#9670;&#160;</a></span>SO_PATH_ANIMATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ANIMATION = &quot;Assets/RPGMaker/Storage/Animation/SO/animation.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アニメーションのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a709d7b8a29d0e564ad11eab5d0552742" name="a709d7b8a29d0e564ad11eab5d0552742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a709d7b8a29d0e564ad11eab5d0552742">&#9670;&#160;</a></span>SO_PATH_ARMOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ARMOR = &quot;Assets/RPGMaker/Storage/Initializations/SO/armor.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>武装のアセットへのパス </p>
+
+</div>
+</div>
+<a id="aec0c87fec38e01bd228827023658f1ef" name="aec0c87fec38e01bd228827023658f1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0c87fec38e01bd228827023658f1ef">&#9670;&#160;</a></span>SO_PATH_ASSETMANAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ASSETMANAGE = &quot;Assets/RPGMaker/Storage/AssetManage/SO&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>資産管理SOフォルダーへのパス </p>
+
+</div>
+</div>
+<a id="af394457c674338662a2aaf968bd21b03" name="af394457c674338662a2aaf968bd21b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af394457c674338662a2aaf968bd21b03">&#9670;&#160;</a></span>SO_PATH_ASSETMANAGE_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ASSETMANAGE_DATA = &quot;Assets/RPGMaker/Storage/AssetManage/SO/assetsData.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アセット・データのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a92d51cb072ec1e0615dabeb26d28f2f5" name="a92d51cb072ec1e0615dabeb26d28f2f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92d51cb072ec1e0615dabeb26d28f2f5">&#9670;&#160;</a></span>SO_PATH_AUTOGUID</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_AUTOGUID = &quot;Assets/RPGMaker/Storage/Initializations/SO/autoGuide.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>自動ガイドのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a7b77cfb515e03ba114ad3f2d14f96de5" name="a7b77cfb515e03ba114ad3f2d14f96de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b77cfb515e03ba114ad3f2d14f96de5">&#9670;&#160;</a></span>SO_PATH_BGM_LOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_BGM_LOOP = &quot;Assets/RPGMaker/Storage/Sounds/bgmLoopInfo.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音楽ループ情報のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a7a733b526cadc1d1e771eaf2ddad2652" name="a7a733b526cadc1d1e771eaf2ddad2652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a733b526cadc1d1e771eaf2ddad2652">&#9670;&#160;</a></span>SO_PATH_BGS_LOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_BGS_LOOP = &quot;Assets/RPGMaker/Storage/Sounds/bgsLoopInfo.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景音ループ情報のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a772a410e79ace9b205f567ab1065b4b3" name="a772a410e79ace9b205f567ab1065b4b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a772a410e79ace9b205f567ab1065b4b3">&#9670;&#160;</a></span>SO_PATH_CHARACTERACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_CHARACTERACTOR = &quot;Assets/RPGMaker/Storage/Character/SO/characterActor.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>キャラクター・アクターのアセットへのパス </p>
+
+</div>
+</div>
+<a id="ad07364470a7d128709d67d513bad4d9e" name="ad07364470a7d128709d67d513bad4d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07364470a7d128709d67d513bad4d9e">&#9670;&#160;</a></span>SO_PATH_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_CLASS = &quot;Assets/RPGMaker/Storage/Character/SO/class.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>クラスのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a14da92717b1fbe42649b0cdbdcc42556" name="a14da92717b1fbe42649b0cdbdcc42556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14da92717b1fbe42649b0cdbdcc42556">&#9670;&#160;</a></span>SO_PATH_ENCOUNTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ENCOUNTER = &quot;Assets/RPGMaker/Storage/Encounter/SO/encounter.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>遭遇のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a715573df2766dad24c5eaf7d2fa09920" name="a715573df2766dad24c5eaf7d2fa09920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715573df2766dad24c5eaf7d2fa09920">&#9670;&#160;</a></span>SO_PATH_ENEMY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ENEMY = &quot;Assets/RPGMaker/Storage/Character/SO/enemy.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>敵のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a32fcf613159f46a838b0c51d8b9e5f38" name="a32fcf613159f46a838b0c51d8b9e5f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32fcf613159f46a838b0c51d8b9e5f38">&#9670;&#160;</a></span>SO_PATH_EVENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_EVENT = &quot;Assets/RPGMaker/Storage/Event/SO/Event&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SOフォルダーのイベント・ディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a8c483ca3486277487e0a043bab6d1d19" name="a8c483ca3486277487e0a043bab6d1d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c483ca3486277487e0a043bab6d1d19">&#9670;&#160;</a></span>SO_PATH_EVENTBATTLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_EVENTBATTLE = &quot;Assets/RPGMaker/Storage/Event/SO/eventBattle.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント戦闘のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a63ca69c3ecb19c5505eb1821b37dd5cd" name="a63ca69c3ecb19c5505eb1821b37dd5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ca69c3ecb19c5505eb1821b37dd5cd">&#9670;&#160;</a></span>SO_PATH_EVENTCOMMON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_EVENTCOMMON = &quot;Assets/RPGMaker/Storage/Event/SO/eventCommon.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント共通のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a7ccbd8e7d2462aaffc84610014039dcb" name="a7ccbd8e7d2462aaffc84610014039dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ccbd8e7d2462aaffc84610014039dcb">&#9670;&#160;</a></span>SO_PATH_EVENTMAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_EVENTMAP = &quot;Assets/RPGMaker/Storage/Event/SO/eventMap.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント・マップのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a7c35fcf37acbec2674b1d82d185d1065" name="a7c35fcf37acbec2674b1d82d185d1065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c35fcf37acbec2674b1d82d185d1065">&#9670;&#160;</a></span>SO_PATH_FLAGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_FLAGS = &quot;Assets/RPGMaker/Storage/Flags/SO/flags.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>フラグのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a0569e9eab4d02deb43924d060da472df" name="a0569e9eab4d02deb43924d060da472df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0569e9eab4d02deb43924d060da472df">&#9670;&#160;</a></span>SO_PATH_ITEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_ITEM = &quot;Assets/RPGMaker/Storage/Item/SO/item.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アイテムのアセットへのパス </p>
+
+</div>
+</div>
+<a id="abeabde898aea178687c757f37ee1af4d" name="abeabde898aea178687c757f37ee1af4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeabde898aea178687c757f37ee1af4d">&#9670;&#160;</a></span>SO_PATH_MAP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_MAP = &quot;Assets/RPGMaker/Storage/Map/SO/Map&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SOフォルダーのマップ・ディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a3dfb2d47b7d118ff2865fa9646227125" name="a3dfb2d47b7d118ff2865fa9646227125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dfb2d47b7d118ff2865fa9646227125">&#9670;&#160;</a></span>SO_PATH_MAP_FOLDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_MAP_FOLDER = &quot;Assets/RPGMaker/Storage/Map/SO&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マップ・フォルダーのSOディレクトリーへのパス </p>
+
+</div>
+</div>
+<a id="a03fe2037abb485d56c0f703b28002545" name="a03fe2037abb485d56c0f703b28002545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fe2037abb485d56c0f703b28002545">&#9670;&#160;</a></span>SO_PATH_MAPBASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_MAPBASE = &quot;Assets/RPGMaker/Storage/Map/SO/mapbase.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>マップ・ベースのアセットへのパス </p>
+
+</div>
+</div>
+<a id="aa6a958dff73e1a070621dc27fed77fbe" name="aa6a958dff73e1a070621dc27fed77fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a958dff73e1a070621dc27fed77fbe">&#9670;&#160;</a></span>SO_PATH_SKILL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_SKILL = &quot;Assets/RPGMaker/Storage/Initializations/SO/skill.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スキルのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a7947e8a5610c2f29d9ab446a0a799160" name="a7947e8a5610c2f29d9ab446a0a799160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7947e8a5610c2f29d9ab446a0a799160">&#9670;&#160;</a></span>SO_PATH_SKILLCUSTOM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_SKILLCUSTOM = &quot;Assets/RPGMaker/Storage/Initializations/SO/skillCustom.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>スキル・カスタムのアセットへのパス </p>
+
+</div>
+</div>
+<a id="af64fca9124ee58042ab67ce7974077df" name="af64fca9124ee58042ab67ce7974077df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64fca9124ee58042ab67ce7974077df">&#9670;&#160;</a></span>SO_PATH_STATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_STATE = &quot;Assets/RPGMaker/Storage/Initializations/SO/state.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>状態のアセットへのパス </p>
+
+</div>
+</div>
+<a id="ac088b2539057a233a26de53f438c69bd" name="ac088b2539057a233a26de53f438c69bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac088b2539057a233a26de53f438c69bd">&#9670;&#160;</a></span>SO_PATH_SYSTEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_SYSTEM = &quot;Assets/RPGMaker/Storage/Initializations/SO/system.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>システムのアセットへのパス </p>
+
+</div>
+</div>
+<a id="aac246521b36f5398f923fa2b440efc0a" name="aac246521b36f5398f923fa2b440efc0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac246521b36f5398f923fa2b440efc0a">&#9670;&#160;</a></span>SO_PATH_TILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_TILE = &quot;Assets/RPGMaker/Storage/Map/SO/TileAssets.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイル・アセットのアセットへのパス </p>
+
+</div>
+</div>
+<a id="ad7fca78a0d37c060699e27ff5f2fc2df" name="ad7fca78a0d37c060699e27ff5f2fc2df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7fca78a0d37c060699e27ff5f2fc2df">&#9670;&#160;</a></span>SO_PATH_TITLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_TITLE = &quot;Assets/RPGMaker/Storage/Initializations/SO/title.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>タイトルのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a36d3cfe7e4f1175507d6fd5d650b17d5" name="a36d3cfe7e4f1175507d6fd5d650b17d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d3cfe7e4f1175507d6fd5d650b17d5">&#9670;&#160;</a></span>SO_PATH_TROOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_TROOP = &quot;Assets/RPGMaker/Storage/Character/SO/troop.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>部隊のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a97d950d3d9c406ce93192cdf1619809b" name="a97d950d3d9c406ce93192cdf1619809b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d950d3d9c406ce93192cdf1619809b">&#9670;&#160;</a></span>SO_PATH_UI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_UI = &quot;Assets/RPGMaker/Storage/Ui/SO/ui.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ユーザー・インターフェースのアセットへのパス </p>
+
+</div>
+</div>
+<a id="a81affff57dae72305e41412541cf0938" name="a81affff57dae72305e41412541cf0938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81affff57dae72305e41412541cf0938">&#9670;&#160;</a></span>SO_PATH_VEHICLES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_VEHICLES = &quot;Assets/RPGMaker/Storage/Character/SO/vehicles.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>乗り物のアセットへのパス </p>
+
+</div>
+</div>
+<a id="ae6ccfaa5c3bc8412e4f5fc8d22ad4231" name="ae6ccfaa5c3bc8412e4f5fc8d22ad4231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ccfaa5c3bc8412e4f5fc8d22ad4231">&#9670;&#160;</a></span>SO_PATH_WEAPON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_WEAPON = &quot;Assets/RPGMaker/Storage/Initializations/SO/weapon.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>武器のアセットへのパス </p>
+
+</div>
+</div>
+<a id="a23808db4c538a52a7f56bd61b50c4c97" name="a23808db4c538a52a7f56bd61b50c4c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23808db4c538a52a7f56bd61b50c4c97">&#9670;&#160;</a></span>SO_PATH_WORDS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.CoreSystem.Helper.ScriptableObjectOperator.SO_PATH_WORDS = &quot;Assets/RPGMaker/Storage/Word/SO/words.asset&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>単語のアセットへのパス </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/CoreSystem/Helper/ScriptableObject/<a class="el" href="../../da/d67/_scriptable_object_operator_8cs.html">ScriptableObjectOperator.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

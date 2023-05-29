@@ -1,0 +1,1085 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d1/dbc/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor.html">MapEditor</a></li><li class="navelem"><a class="el" href="../../d0/d77/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window.html">Window</a></li><li class="navelem"><a class="el" href="../../d0/d4b/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit.html">EventEdit</a></li><li class="navelem"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html">CommandSettingWindow</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d4/d0e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d86/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,155,258,213"/>
+<area shape="rect" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_base_window.html" title="メニュー、ヒエラルキー、シーン、インスペクターウィンドウの基底抽象クラス." alt="" coords="83,80,180,107"/>
+<area shape="poly" title=" " alt="" coords="134,122,134,154,129,154,129,122"/>
+<area shape="rect" title=" " alt="" coords="81,5,182,32"/>
+<area shape="poly" title=" " alt="" coords="134,47,134,80,129,80,129,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d49/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_window_8_event_edit_8_command_setting_window_coll__map">
+<area shape="rect" title=" " alt="" coords="797,33,1049,92"/>
+<area shape="rect" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_base_window.html" title="メニュー、ヒエラルキー、シーン、インスペクターウィンドウの基底抽象クラス." alt="" coords="400,11,497,37"/>
+<area shape="poly" title=" " alt="" coords="512,26,797,50,796,55,512,32"/>
+<area shape="rect" title=" " alt="" coords="5,5,107,32"/>
+<area shape="poly" title=" " alt="" coords="122,17,399,21,399,26,121,22"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="306,65,591,124"/>
+<area shape="poly" title=" " alt="" coords="605,81,797,68,797,74,606,87"/>
+<area shape="rect" title=" " alt="" coords="29,89,83,116"/>
+<area shape="poly" title=" " alt="" coords="97,99,305,95,305,100,97,105"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_s8026c164492a3578afbb10b54d5fca5f.html">CommandSettingWindowParam</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa141882bdba9442fab5810902c454886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#aa141882bdba9442fab5810902c454886">Init</a> ()</td></tr>
+<tr class="separator:aa141882bdba9442fab5810902c454886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ff304b21e7e1fd046f284e79c77468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468">InsertEventCommand</a> (string commandCode, int index, EventDataModel.EventCommand eventCommand)</td></tr>
+<tr class="memdesc:ae0ff304b21e7e1fd046f284e79c77468"><td class="mdescLeft">&#160;</td><td class="mdescRight">コマンドの追加  <br /></td></tr>
+<tr class="separator:ae0ff304b21e7e1fd046f284e79c77468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462ccdb6e962f1559d8436b3412d3787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787">SetEventCommand</a> (int code, int eventIndex, int eventCommandIndex)</td></tr>
+<tr class="separator:a462ccdb6e962f1559d8436b3412d3787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef855be14a3e5a008afcbe43b3cb618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#aaef855be14a3e5a008afcbe43b3cb618">DeleteEvent</a> (int index, bool last)</td></tr>
+<tr class="separator:aaef855be14a3e5a008afcbe43b3cb618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab625ecb06993d79fef88bf50c6ffbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a4ab625ecb06993d79fef88bf50c6ffbf">SetEventId</a> (string eventID)</td></tr>
+<tr class="separator:a4ab625ecb06993d79fef88bf50c6ffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbeb671c6d24d616b32a1e5c7acdec2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#afbeb671c6d24d616b32a1e5c7acdec2d">SetEventPage</a> (int eventPage)</td></tr>
+<tr class="separator:afbeb671c6d24d616b32a1e5c7acdec2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4047f3d1c24fff8b76c2b919d6dd3a1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a4047f3d1c24fff8b76c2b919d6dd3a1e">HideScreen</a> ()</td></tr>
+<tr class="separator:a4047f3d1c24fff8b76c2b919d6dd3a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae9f7253ee9d320a1da31b565ec92553d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae9f7253ee9d320a1da31b565ec92553d">Awake</a> ()</td></tr>
+<tr class="separator:ae9f7253ee9d320a1da31b565ec92553d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4b8d1f7730f4da26dc364e8adf67911"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#af4b8d1f7730f4da26dc364e8adf67911">InitializeButtonLabel</a> ()</td></tr>
+<tr class="memdesc:af4b8d1f7730f4da26dc364e8adf67911"><td class="mdescLeft">&#160;</td><td class="mdescRight">ボタンの幅で、ラベルに3点リーダーをつける  <br /></td></tr>
+<tr class="separator:af4b8d1f7730f4da26dc364e8adf67911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13d4688e7adcc59b0107eb40fedc9803"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a13d4688e7adcc59b0107eb40fedc9803">GetTextWidth</a> (string text)</td></tr>
+<tr class="memdesc:a13d4688e7adcc59b0107eb40fedc9803"><td class="mdescLeft">&#160;</td><td class="mdescRight">テキストの長さからWidthを取得  <br /></td></tr>
+<tr class="separator:a13d4688e7adcc59b0107eb40fedc9803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2913f054dfe3312299ceda57c60adb20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a2913f054dfe3312299ceda57c60adb20">GetAllButton</a> (List&lt; <a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a> &gt; data, VisualElement me)</td></tr>
+<tr class="memdesc:a2913f054dfe3312299ceda57c60adb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">画面内に存在する全てのButtonを取得する  <br /></td></tr>
+<tr class="separator:a2913f054dfe3312299ceda57c60adb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a4f2129706d92351a3151f0fb89292bc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html">ExecutionContentsWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a4f2129706d92351a3151f0fb89292bc7">executionContentsWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a4f2129706d92351a3151f0fb89292bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3bcea8407141c8a4454ff6bb3eb84aec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a3bcea8407141c8a4454ff6bb3eb84aec">InitUI</a> ()</td></tr>
+<tr class="separator:a3bcea8407141c8a4454ff6bb3eb84aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0849a2097c7f8ce9a6cdbea9cc53f355"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355">ShowSettingWindow</a> (int code)</td></tr>
+<tr class="separator:a0849a2097c7f8ce9a6cdbea9cc53f355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a52c13f99712fd81af658f25ba60661ce"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a52c13f99712fd81af658f25ba60661ce">_commandSetting</a></td></tr>
+<tr class="separator:a52c13f99712fd81af658f25ba60661ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd607db8253b0c907b817c724adf06f"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a3cd607db8253b0c907b817c724adf06f">_eventDataModels</a></td></tr>
+<tr class="separator:a3cd607db8253b0c907b817c724adf06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94255794b7e5a44ec06874a4ea943fde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html">EventManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a94255794b7e5a44ec06874a4ea943fde">_eventManagementService</a></td></tr>
+<tr class="separator:a94255794b7e5a44ec06874a4ea943fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ed9458c1ac0e0f389cc2e6a1e832e1"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a91ed9458c1ac0e0f389cc2e6a1e832e1">_root</a></td></tr>
+<tr class="separator:a91ed9458c1ac0e0f389cc2e6a1e832e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ae9f7253ee9d320a1da31b565ec92553d" name="ae9f7253ee9d320a1da31b565ec92553d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f7253ee9d320a1da31b565ec92553d">&#9670;&#160;</a></span>Awake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.Awake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,258,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#aa141882bdba9442fab5810902c454886" title=" " alt="" coords="322,5,575,64"/>
+<area shape="poly" title=" " alt="" coords="258,57,307,50,308,56,258,62"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#aeaed214f12d8e6bfbe007a19b46a305d" title=" " alt="" coords="306,88,591,147"/>
+<area shape="poly" title=" " alt="" coords="258,90,291,94,290,99,258,95"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a3bcea8407141c8a4454ff6bb3eb84aec" title=" " alt="" coords="639,5,891,64"/>
+<area shape="poly" title=" " alt="" coords="575,32,624,32,624,37,575,37"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#aa07a22564e7e157ac3cb0b8861980079" title=" " alt="" coords="643,88,887,147"/>
+<area shape="poly" title=" " alt="" coords="592,115,628,115,628,120,592,120"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#a362b89e9d43c8ed34a1fd0ad62001db2" title=" " alt="" coords="939,88,1184,147"/>
+<area shape="poly" title=" " alt="" coords="888,115,924,115,924,120,888,120"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae9f7253ee9d320a1da31b565ec92553d_icgraph">
+<area shape="rect" title=" " alt="" coords="606,47,858,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaef855be14a3e5a008afcbe43b3cb618" name="aaef855be14a3e5a008afcbe43b3cb618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef855be14a3e5a008afcbe43b3cb618">&#9670;&#160;</a></span>DeleteEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.DeleteEvent </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aaef855be14a3e5a008afcbe43b3cb618_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aaef855be14a3e5a008afcbe43b3cb618_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aaef855be14a3e5a008afcbe43b3cb618_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aaef855be14a3e5a008afcbe43b3cb618_cgraph">
+<area shape="rect" title=" " alt="" coords="5,328,258,387"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#aeaed214f12d8e6bfbe007a19b46a305d" title=" " alt="" coords="639,295,924,353"/>
+<area shape="poly" title=" " alt="" coords="258,348,624,329,624,335,258,354"/>
+<area shape="rect" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html#ada78c1325d8f5758dbd450eacfae38bc" title=" " alt="" coords="323,212,574,271"/>
+<area shape="poly" title=" " alt="" coords="213,325,351,274,353,279,215,330"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="314,444,583,503"/>
+<area shape="poly" title=" " alt="" coords="198,385,307,430,326,436,325,441,305,434,196,390"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#ab4076d36d7d412ee2420c7e81d02ab4a" title=" " alt="" coords="306,361,591,420"/>
+<area shape="poly" title=" " alt="" coords="258,368,291,371,291,377,258,373"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#aa07a22564e7e157ac3cb0b8861980079" title=" " alt="" coords="1306,288,1550,347"/>
+<area shape="poly" title=" " alt="" coords="925,320,1291,316,1291,321,925,325"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#a362b89e9d43c8ed34a1fd0ad62001db2" title=" " alt="" coords="1598,288,1842,347"/>
+<area shape="poly" title=" " alt="" coords="1550,315,1583,315,1583,320,1550,320"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#afbaee6161fa32554f067a71c268db72a" title=" " alt="" coords="670,141,893,184"/>
+<area shape="poly" title=" " alt="" coords="574,209,673,185,675,191,575,214"/>
+<area shape="rect" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html#a9cc2e2e0d91372b62808204f1671de92" title=" " alt="" coords="649,212,914,271"/>
+<area shape="poly" title=" " alt="" coords="574,239,634,239,634,244,574,244"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="1309,39,1547,97"/>
+<area shape="poly" title=" " alt="" coords="892,138,972,124,1294,80,1295,86,973,129,893,143"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="996,5,1234,64"/>
+<area shape="poly" title=" " alt="" coords="831,138,971,80,1008,67,1010,72,973,85,833,143"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#ad41822cfd87959b5dd4db750820f4dd3" title=" " alt="" coords="972,139,1258,197"/>
+<area shape="poly" title=" " alt="" coords="894,162,958,163,958,168,894,167"/>
+<area shape="poly" title=" " alt="" coords="1234,45,1295,51,1294,56,1234,50"/>
+<area shape="poly" title=" " alt="" coords="1231,196,1259,207,1322,241,1377,277,1374,282,1319,245,1257,212,1229,200"/>
+<area shape="rect" href="../../d1/d0c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_name.html#ae341e22b20b6b97ec0151b828c51666b" title="基点となる[アクター設定の変更]のインデックスを取得する" alt="" coords="975,221,1255,280"/>
+<area shape="poly" title=" " alt="" coords="915,242,960,244,960,249,915,248"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#a85d97192a962f0e45d63429ec5e5dc2d" title=" " alt="" coords="660,399,904,457"/>
+<area shape="poly" title=" " alt="" coords="592,404,645,410,645,415,591,409"/>
+<area shape="poly" title=" " alt="" coords="904,443,984,449,1074,449,1167,442,1257,423,1291,410,1324,393,1380,354,1383,358,1327,397,1293,415,1258,428,1167,447,1074,455,984,454,904,448"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#a04ab7e6ca381cb3a66957ab68af0ee05" title=" " alt="" coords="993,355,1237,413"/>
+<area shape="poly" title=" " alt="" coords="904,409,978,399,978,405,905,415"/>
+<area shape="rect" href="../../d8/dd0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_json_helper.html#a769989dc78ae92d5e53c0aec69a8bec7" title=" " alt="" coords="1001,488,1229,531"/>
+<area shape="poly" title=" " alt="" coords="905,455,1011,481,1010,487,904,460"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2913f054dfe3312299ceda57c60adb20" name="a2913f054dfe3312299ceda57c60adb20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2913f054dfe3312299ceda57c60adb20">&#9670;&#160;</a></span>GetAllButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.GetAllButton </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>me</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>画面内に存在する全てのButtonを取得する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramname">me</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_cgraph">
+<area shape="rect" title="画面内に存在する全てのButtonを取得する" alt="" coords="5,29,258,88"/>
+<area shape="poly" title=" " alt="" coords="82,29,83,19,92,10,108,5,132,3,159,6,175,13,173,18,157,11,131,8,109,10,95,15,88,21,87,29"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a2913f054dfe3312299ceda57c60adb20_icgraph">
+<area shape="rect" title="画面内に存在する全てのButtonを取得する" alt="" coords="906,47,1159,105"/>
+<area shape="poly" title=" " alt="" coords="1082,35,1064,28,1032,25,1006,27,989,32,980,39,980,47,974,46,975,36,986,27,1005,22,1033,20,1065,23,1084,30"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#af4b8d1f7730f4da26dc364e8adf67911" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="606,47,858,105"/>
+<area shape="poly" title=" " alt="" coords="891,79,859,79,859,73,891,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13d4688e7adcc59b0107eb40fedc9803" name="a13d4688e7adcc59b0107eb40fedc9803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13d4688e7adcc59b0107eb40fedc9803">&#9670;&#160;</a></span>GetTextWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.GetTextWidth </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テキストの長さからWidthを取得 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a13d4688e7adcc59b0107eb40fedc9803_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a13d4688e7adcc59b0107eb40fedc9803_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a13d4688e7adcc59b0107eb40fedc9803_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a13d4688e7adcc59b0107eb40fedc9803_icgraph">
+<area shape="rect" title="テキストの長さからWidthを取得" alt="" coords="906,47,1159,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#af4b8d1f7730f4da26dc364e8adf67911" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="606,47,858,105"/>
+<area shape="poly" title=" " alt="" coords="891,79,859,79,859,73,891,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4047f3d1c24fff8b76c2b919d6dd3a1e" name="a4047f3d1c24fff8b76c2b919d6dd3a1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4047f3d1c24fff8b76c2b919d6dd3a1e">&#9670;&#160;</a></span>HideScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.HideScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a4047f3d1c24fff8b76c2b919d6dd3a1e_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a4047f3d1c24fff8b76c2b919d6dd3a1e_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a4047f3d1c24fff8b76c2b919d6dd3a1e_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a4047f3d1c24fff8b76c2b919d6dd3a1e_icgraph">
+<area shape="rect" title=" " alt="" coords="306,47,558,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa141882bdba9442fab5810902c454886" name="aa141882bdba9442fab5810902c454886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa141882bdba9442fab5810902c454886">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>初期化 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,258,64"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a3bcea8407141c8a4454ff6bb3eb84aec" title=" " alt="" coords="306,5,558,64"/>
+<area shape="poly" title=" " alt="" coords="258,32,291,32,291,37,258,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_aa141882bdba9442fab5810902c454886_icgraph">
+<area shape="rect" title=" " alt="" coords="906,47,1159,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae9f7253ee9d320a1da31b565ec92553d" title=" " alt="" coords="606,47,858,105"/>
+<area shape="poly" title=" " alt="" coords="891,79,859,79,859,73,891,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af4b8d1f7730f4da26dc364e8adf67911" name="af4b8d1f7730f4da26dc364e8adf67911"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4b8d1f7730f4da26dc364e8adf67911">&#9670;&#160;</a></span>InitializeButtonLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.InitializeButtonLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ボタンの幅で、ラベルに3点リーダーをつける </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_cgraph">
+<area shape="rect" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="5,71,258,129"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a2913f054dfe3312299ceda57c60adb20" title="画面内に存在する全てのButtonを取得する" alt="" coords="306,29,558,88"/>
+<area shape="poly" title=" " alt="" coords="258,80,291,75,291,81,259,85"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a13d4688e7adcc59b0107eb40fedc9803" title="テキストの長さからWidthを取得" alt="" coords="306,112,558,171"/>
+<area shape="poly" title=" " alt="" coords="259,115,291,119,291,125,258,120"/>
+<area shape="poly" title=" " alt="" coords="374,29,375,19,385,10,404,5,432,3,464,6,483,13,481,18,463,11,432,8,405,10,388,15,379,21,379,29"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_af4b8d1f7730f4da26dc364e8adf67911_icgraph">
+<area shape="rect" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="606,47,858,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3bcea8407141c8a4454ff6bb3eb84aec" name="a3bcea8407141c8a4454ff6bb3eb84aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcea8407141c8a4454ff6bb3eb84aec">&#9670;&#160;</a></span>InitUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.InitUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a3bcea8407141c8a4454ff6bb3eb84aec_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a3bcea8407141c8a4454ff6bb3eb84aec_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a3bcea8407141c8a4454ff6bb3eb84aec_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a3bcea8407141c8a4454ff6bb3eb84aec_icgraph">
+<area shape="rect" title=" " alt="" coords="1207,47,1459,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#aa141882bdba9442fab5810902c454886" title=" " alt="" coords="906,47,1159,105"/>
+<area shape="poly" title=" " alt="" coords="1192,79,1159,79,1159,73,1192,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae9f7253ee9d320a1da31b565ec92553d" title=" " alt="" coords="606,47,858,105"/>
+<area shape="poly" title=" " alt="" coords="891,79,859,79,859,73,891,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,558,79,558,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0ff304b21e7e1fd046f284e79c77468" name="ae0ff304b21e7e1fd046f284e79c77468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ff304b21e7e1fd046f284e79c77468">&#9670;&#160;</a></span>InsertEventCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.InsertEventCommand </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>commandCode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>eventCommand</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コマンドの追加 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commandCode</td><td>コマンドコード</td></tr>
+    <tr><td class="paramname">index</td><td>コマンドを追加/挿入するインデックス</td></tr>
+    <tr><td class="paramname">parameters</td><td>追加時に適用するパラメータ</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae0ff304b21e7e1fd046f284e79c77468_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae0ff304b21e7e1fd046f284e79c77468_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae0ff304b21e7e1fd046f284e79c77468_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_ae0ff304b21e7e1fd046f284e79c77468_cgraph">
+<area shape="rect" title="コマンドの追加" alt="" coords="5,121,258,180"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a4047f3d1c24fff8b76c2b919d6dd3a1e" title=" " alt="" coords="306,5,558,64"/>
+<area shape="poly" title=" " alt="" coords="197,118,305,74,323,67,325,72,307,78,199,123"/>
+<area shape="rect" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html#ada78c1325d8f5758dbd450eacfae38bc" title=" " alt="" coords="306,88,558,147"/>
+<area shape="poly" title=" " alt="" coords="258,134,291,130,292,136,259,139"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#ab4076d36d7d412ee2420c7e81d02ab4a" title=" " alt="" coords="944,2891,1230,2949"/>
+<area shape="poly" title=" " alt="" coords="258,156,653,182,822,196,898,207,916,232,933,267,963,366,989,499,1012,662,1030,847,1046,1051,1068,1490,1081,1936,1087,2345,1089,2876,1083,2876,1082,2345,1076,1936,1063,1491,1040,1051,1025,848,1006,662,984,500,958,367,928,269,912,235,895,212,822,201,653,187,258,161"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,1875,558,1933"/>
+<area shape="poly" title=" " alt="" coords="141,180,426,1859,420,1860,135,181"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#afbaee6161fa32554f067a71c268db72a" title=" " alt="" coords="640,21,863,64"/>
+<area shape="poly" title=" " alt="" coords="557,85,605,73,640,65,641,71,607,79,558,90"/>
+<area shape="rect" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html#a9cc2e2e0d91372b62808204f1671de92" title=" " alt="" coords="619,88,884,147"/>
+<area shape="poly" title=" " alt="" coords="558,115,603,115,603,120,558,120"/>
+<area shape="rect" href="../../d9/d21/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_repository.html#a85d97192a962f0e45d63429ec5e5dc2d" title=" " alt="" coords="1278,2891,1522,2949"/>
+<area shape="poly" title=" " alt="" coords="1230,2917,1263,2917,1263,2923,1230,2923"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae9f7253ee9d320a1da31b565ec92553d" title=" " alt="" coords="625,221,877,280"/>
+<area shape="poly" title=" " alt="" coords="432,1874,447,1556,481,1052,505,793,533,563,549,466,566,387,584,327,604,290,612,282,615,286,608,294,589,329,571,388,554,467,538,563,510,793,486,1052,453,1556,437,1874"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#af4b8d1f7730f4da26dc364e8adf67911" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="625,304,877,363"/>
+<area shape="poly" title=" " alt="" coords="432,1874,449,1570,484,1092,507,847,535,630,551,539,568,464,585,408,604,373,612,365,615,369,608,376,590,410,573,466,556,540,541,631,513,848,489,1093,454,1571,437,1874"/>
+<area shape="rect" href="../../d3/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_actor_heal.html#a2cb0836ccf258774393565e7a9bf8b13" title=" " alt="" coords="626,387,877,445"/>
+<area shape="poly" title=" " alt="" coords="432,1874,450,1586,486,1134,510,903,538,698,569,542,586,489,604,456,612,447,616,451,608,459,591,491,574,543,543,699,515,904,491,1135,455,1586,437,1875"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_class.html#a7a70975f7f39c6be8a22ab2e92fd2910" title=" " alt="" coords="626,469,877,528"/>
+<area shape="poly" title=" " alt="" coords="430,1874,431,1619,436,1428,448,1218,469,1006,483,905,500,811,521,725,544,649,572,586,604,538,612,530,616,534,608,542,577,589,549,651,526,726,505,812,488,906,474,1007,454,1218,442,1428,436,1619,435,1874"/>
+<area shape="rect" href="../../dd/d00/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_equipment.html#a50daf2d2f229ac4e1335ae5ff94261e6" title=" " alt="" coords="626,552,877,611"/>
+<area shape="poly" title=" " alt="" coords="430,1874,433,1633,440,1453,453,1256,474,1059,505,876,525,795,547,725,574,666,604,621,612,613,616,617,608,624,579,668,552,726,530,797,510,877,479,1059,458,1257,445,1454,439,1633,436,1874"/>
+<area shape="rect" href="../../d3/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_exp.html#a6da833885d204a10fe870d818fa2385c" title=" " alt="" coords="626,635,877,693"/>
+<area shape="poly" title=" " alt="" coords="431,1874,436,1647,444,1479,458,1296,479,1111,510,941,529,866,551,800,576,745,604,704,612,696,616,699,608,707,580,748,556,802,534,867,515,942,484,1112,463,1296,449,1480,441,1647,436,1875"/>
+<area shape="rect" href="../../db/dad/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_hp.html#a45c9f3a024dbb159d87f3d9217f75a42" title=" " alt="" coords="626,717,877,776"/>
+<area shape="poly" title=" " alt="" coords="431,1874,438,1661,448,1505,463,1334,484,1163,514,1006,533,936,554,875,577,825,604,786,612,778,616,782,608,790,582,828,559,877,538,938,520,1007,490,1164,468,1335,453,1505,444,1661,436,1875"/>
+<area shape="rect" href="../../d2/d2f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_level.html#ac0ab7622f5c5d9b38483616c195fc593" title=" " alt="" coords="626,800,877,859"/>
+<area shape="poly" title=" " alt="" coords="431,1874,441,1674,452,1530,468,1373,490,1215,519,1070,537,1007,557,951,579,904,604,869,612,861,616,865,608,872,584,907,562,953,542,1008,524,1072,495,1216,473,1373,457,1530,446,1675,437,1874"/>
+<area shape="rect" href="../../de/d35/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_mp.html#a67c48793420dc47cf61e14eedd8e2c64" title=" " alt="" coords="626,883,877,941"/>
+<area shape="poly" title=" " alt="" coords="432,1874,444,1688,456,1556,472,1412,495,1268,524,1135,541,1077,560,1026,581,984,604,952,612,944,616,948,608,955,585,987,565,1028,546,1079,529,1137,500,1269,478,1412,461,1556,449,1689,437,1874"/>
+<area shape="rect" href="../../d1/d0c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_name.html#a1d21361bf63a3b339eb5ebb62ed429b2" title=" " alt="" coords="626,965,877,1024"/>
+<area shape="poly" title=" " alt="" coords="432,1874,447,1702,477,1451,500,1320,529,1200,563,1102,583,1063,604,1034,612,1027,616,1030,608,1038,587,1066,568,1104,534,1202,506,1321,483,1451,452,1703,438,1874"/>
+<area shape="rect" href="../../de/dbc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_parameter.html#a3f282794bfce425e4ef38c4560be91c9" title=" " alt="" coords="626,1048,877,1107"/>
+<area shape="poly" title=" " alt="" coords="433,1874,450,1717,483,1490,506,1373,533,1266,566,1177,584,1143,604,1117,612,1109,616,1113,608,1120,589,1146,571,1180,539,1267,511,1374,488,1491,455,1718,438,1875"/>
+<area shape="rect" href="../../d7/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_skill.html#af75a44afa9d6095fa9c3be551bda52b2" title=" " alt="" coords="626,1131,877,1189"/>
+<area shape="poly" title=" " alt="" coords="434,1874,453,1732,488,1529,511,1426,538,1331,569,1253,586,1223,604,1200,612,1192,616,1196,608,1203,591,1226,574,1255,543,1333,516,1427,493,1531,458,1733,439,1875"/>
+<area shape="rect" href="../../d0/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_state.html#a1d1ec7c779d2f1806c7076ecbbc2e84d" title=" " alt="" coords="626,1213,877,1272"/>
+<area shape="poly" title=" " alt="" coords="435,1874,456,1747,493,1569,517,1479,543,1396,572,1329,588,1302,604,1282,611,1275,615,1279,608,1286,592,1305,577,1331,548,1398,522,1480,498,1571,462,1748,440,1875"/>
+<area shape="rect" href="../../d7/d5f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_tp.html#aa7a29316730cad970861bd2993863784" title=" " alt="" coords="626,1296,877,1355"/>
+<area shape="poly" title=" " alt="" coords="431,1874,438,1777,447,1711,462,1640,484,1566,514,1493,554,1425,604,1365,611,1358,615,1362,608,1369,558,1428,519,1495,489,1568,468,1641,453,1712,443,1777,436,1874"/>
+<area shape="rect" href="../../d8/dad/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_addons_1_1_addon_command.html#aecf18262f4a5a9f69f4ad66ed95efa72" title=" " alt="" coords="626,1379,877,1437"/>
+<area shape="poly" title=" " alt="" coords="433,1874,445,1790,456,1735,473,1676,495,1614,524,1553,560,1497,604,1447,612,1441,615,1445,608,1451,564,1500,528,1556,500,1616,478,1677,461,1737,450,1791,438,1875"/>
+<area shape="rect" href="../../d8/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_aue8ece366bac6854988be9df70a0a9594.html#a65e14e463a570af7011fd890d1e21f89" title=" " alt="" coords="626,1461,877,1520"/>
+<area shape="poly" title=" " alt="" coords="436,1874,452,1804,484,1711,506,1662,533,1614,566,1569,604,1530,611,1525,614,1529,608,1534,570,1572,538,1617,511,1664,489,1713,457,1805,441,1875"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_au83c523342da66548895bc047ebc6e186.html#a86b63ac76aa825c236162eec38c33f83" title=" " alt="" coords="626,1544,877,1603"/>
+<area shape="poly" title=" " alt="" coords="440,1873,461,1818,496,1747,543,1675,572,1642,604,1613,611,1608,614,1612,608,1617,576,1645,547,1678,500,1750,466,1820,445,1875"/>
+<area shape="rect" href="../../d7/d4c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgm_play.html#a159bebd107e1b8a74f56ebbba0eccbe8" title=" " alt="" coords="626,1627,877,1685"/>
+<area shape="poly" title=" " alt="" coords="448,1873,474,1833,509,1785,553,1736,604,1695,612,1691,615,1695,608,1700,557,1740,513,1788,478,1836,452,1876"/>
+<area shape="rect" href="../../d9/d23/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgm_save.html#a63f290fa7a1638ce8b09aef7ccfb0029" title=" " alt="" coords="626,1709,877,1768"/>
+<area shape="poly" title=" " alt="" coords="466,1872,528,1824,605,1778,618,1771,621,1776,607,1782,531,1828,469,1876"/>
+<area shape="rect" href="../../d1/d59/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_au4159905911e845f08ebd2081170c2015.html#a73185481b5be5cb571342e8ff0020b7a" title=" " alt="" coords="626,1792,877,1851"/>
+<area shape="poly" title=" " alt="" coords="547,1871,620,1852,622,1858,549,1877"/>
+<area shape="rect" href="../../de/d4c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgs_play.html#af27fe4d8a6bdc0cadb11cbc4b6457124" title=" " alt="" coords="626,1875,877,1933"/>
+<area shape="poly" title=" " alt="" coords="558,1901,611,1901,611,1907,558,1907"/>
+<area shape="rect" href="../../d4/d36/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_me_play.html#a4fa18841f922ca78f28f535d7d041ca5" title=" " alt="" coords="626,1957,877,2016"/>
+<area shape="poly" title=" " alt="" coords="549,1931,622,1950,620,1956,547,1937"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_movie_play.html#a3d8ff83fbd8a69f9862ad5f50d75108d" title=" " alt="" coords="626,2064,877,2123"/>
+<area shape="poly" title=" " alt="" coords="472,1932,534,1978,607,2026,665,2055,662,2060,605,2030,531,1982,469,1936"/>
+<area shape="rect" href="../../d4/d10/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_se_play.html#a4173078a5d4d76b1c5dcdb88d3421d14" title=" " alt="" coords="626,2147,877,2205"/>
+<area shape="poly" title=" " alt="" coords="450,1932,474,1977,509,2031,554,2086,608,2133,614,2137,612,2141,604,2137,550,2090,505,2034,469,1980,445,1935"/>
+<area shape="rect" href="../../d6/d4b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_se_stop.html#ade2f76e87e693da47287411dede2b98d" title=" " alt="" coords="626,2229,877,2288"/>
+<area shape="poly" title=" " alt="" coords="444,1933,464,1993,497,2069,519,2109,544,2148,574,2184,608,2215,614,2220,611,2225,604,2219,570,2188,540,2151,514,2112,492,2071,459,1994,439,1934"/>
+<area shape="rect" href="../../dc/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_animation.html#a08a564c25ec2d5dc5f52236473d6bcac" title=" " alt="" coords="626,2312,877,2371"/>
+<area shape="poly" title=" " alt="" coords="440,1933,455,2007,486,2106,508,2158,535,2209,568,2257,608,2298,615,2304,612,2308,604,2302,564,2260,531,2212,503,2160,481,2108,450,2009,435,1934"/>
+<area shape="rect" href="../../d6/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ba5a63ea01876c23645ad9da9c00c2f8b1.html#a3b08d7d0e3ef2fcfcb15c85fba5b0df0" title=" " alt="" coords="626,2395,877,2453"/>
+<area shape="poly" title=" " alt="" coords="438,1933,448,2021,459,2079,475,2141,497,2206,526,2270,562,2329,608,2381,615,2387,612,2391,604,2385,558,2332,521,2272,492,2208,470,2143,454,2080,443,2022,432,1934"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_forced.html#a0fa91e9358e18ff7d40f38c702e25b6e" title=" " alt="" coords="626,2477,877,2536"/>
+<area shape="poly" title=" " alt="" coords="436,1934,442,2035,450,2103,465,2177,486,2254,516,2330,556,2401,581,2434,608,2463,615,2470,612,2474,604,2467,577,2437,552,2404,512,2333,481,2256,459,2178,445,2103,436,2035,430,1934"/>
+<area shape="rect" href="../../d7/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_state.html#a4c8cb481335025e6bf65839361f40a7f" title=" " alt="" coords="626,2560,877,2619"/>
+<area shape="poly" title=" " alt="" coords="440,1933,461,2065,497,2249,520,2343,547,2429,576,2499,592,2526,608,2546,615,2553,611,2557,604,2550,587,2529,571,2501,542,2431,515,2345,492,2250,455,2065,435,1934"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_status.html#a4b08c67bdd5811d83424d2436564919a" title=" " alt="" coords="626,2643,877,2701"/>
+<area shape="poly" title=" " alt="" coords="439,1934,457,2080,492,2289,515,2396,542,2494,573,2575,590,2606,608,2629,616,2636,612,2640,604,2632,586,2609,568,2577,537,2496,510,2398,486,2290,452,2081,434,1934"/>
+<area shape="rect" href="../../d3/de5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_transform.html#af72e9ac9fa694b6f6cd4963cf606d555" title=" " alt="" coords="626,2725,877,2784"/>
+<area shape="poly" title=" " alt="" coords="438,1933,454,2094,486,2328,509,2449,537,2560,570,2650,588,2685,608,2712,616,2719,612,2723,604,2715,584,2688,565,2653,532,2561,504,2450,481,2329,449,2095,433,1934"/>
+<area shape="rect" href="../../d7/d06/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_suspension.html#a9ac42ab3a3f306845fb660610d06ec7b" title=" " alt="" coords="626,2808,877,2867"/>
+<area shape="poly" title=" " alt="" coords="438,1934,451,2109,464,2233,481,2368,504,2502,532,2625,567,2726,587,2765,608,2794,616,2802,612,2805,604,2798,582,2768,562,2728,527,2626,499,2503,476,2369,458,2234,446,2109,432,1934"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#aae6efe8e2b25e3148bb450be5cb122c8" title=" " alt="" coords="626,2891,877,2949"/>
+<area shape="poly" title=" " alt="" coords="437,1933,448,2123,460,2259,476,2407,499,2554,528,2690,545,2749,564,2801,585,2844,608,2877,616,2884,612,2888,604,2880,580,2847,559,2804,540,2751,522,2691,493,2555,471,2407,454,2259,443,2123,432,1934"/>
+<area shape="rect" href="../../dc/dc4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chad51d60e953e6ca5caefd076ed9903aa.html#ae7aaaf5a08987ebb9b61e7f58816e087" title=" " alt="" coords="610,2973,892,3032"/>
+<area shape="poly" title=" " alt="" coords="437,1933,445,2137,456,2285,471,2446,493,2607,523,2755,541,2820,561,2877,583,2924,608,2960,610,2962,606,2965,604,2963,579,2927,556,2879,536,2822,518,2756,488,2608,466,2446,450,2285,440,2137,431,1934"/>
+<area shape="rect" href="../../d2/da5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_animation_view.html#a3898aa32b586936821d32bcd4807020b" title=" " alt="" coords="626,3056,877,3115"/>
+<area shape="poly" title=" " alt="" coords="436,1934,443,2151,452,2310,467,2485,488,2659,518,2820,537,2891,558,2952,581,3004,608,3042,616,3050,612,3054,604,3046,577,3006,553,2954,532,2892,513,2821,483,2660,461,2485,447,2311,437,2151,431,1934"/>
+<area shape="rect" href="../../d6/d4e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chc73f0690f4654f93f9bac758a298826f.html#a1e56fcd1334d2ad191f8965787a36e05" title=" " alt="" coords="626,3139,877,3197"/>
+<area shape="poly" title=" " alt="" coords="436,1933,440,2165,448,2336,462,2523,483,2711,513,2885,533,2961,555,3028,580,3083,608,3125,616,3133,612,3136,604,3128,575,3086,550,3030,527,2963,508,2886,478,2712,456,2524,443,2336,435,2165,430,1934"/>
+<area shape="rect" href="../../d2/db1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch234a588198e811fb309bbc6e2c162ce3.html#a51258cdd4be69584f1132fb7af62a1d3" title=" " alt="" coords="626,3221,877,3280"/>
+<area shape="poly" title=" " alt="" coords="436,1934,438,2179,444,2362,457,2562,478,2764,509,2950,529,3032,552,3103,578,3163,608,3208,616,3215,612,3219,604,3211,573,3165,547,3105,523,3033,504,2951,473,2765,452,2563,439,2362,433,2179,430,1934"/>
+<area shape="rect" href="../../d3/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch7c00052f59d6831dd51643ce40573324.html#a49a30a3515e24105fe89750160674fe9" title=" " alt="" coords="606,3304,896,3363"/>
+<area shape="poly" title=" " alt="" coords="438,1933,456,2211,493,2644,517,2865,545,3061,575,3210,592,3260,608,3290,610,3292,606,3296,604,3294,587,3262,570,3211,540,3062,512,2866,488,2645,451,2212,432,1934"/>
+<area shape="rect" href="../../d8/d8a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chddb1ebff374bd34a10d383acd2737385.html#ac9b70fe8e163fd216fb01a1859b141c2" title=" " alt="" coords="618,3387,884,3445"/>
+<area shape="poly" title=" " alt="" coords="437,1933,455,2226,490,2685,515,2920,542,3129,574,3287,591,3341,608,3373,610,3375,606,3378,604,3376,586,3343,569,3289,537,3129,509,2921,485,2685,450,2226,432,1934"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#aa0e5660dc6dfd220b1c101e6c9ea735d" title=" " alt="" coords="626,3469,877,3528"/>
+<area shape="poly" title=" " alt="" coords="437,1934,454,2241,488,2727,512,2976,540,3197,556,3289,572,3365,590,3421,608,3456,616,3464,612,3467,604,3459,585,3424,567,3366,550,3290,535,3197,507,2976,483,2727,448,2241,432,1934"/>
+<area shape="rect" href="../../da/d77/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chc0b27d937fae249d0578ef0e7d278dcc.html#a3a65fd2ca103bdf3b801f36cd1fee396" title=" " alt="" coords="626,3552,877,3611"/>
+<area shape="poly" title=" " alt="" coords="437,1934,452,2256,486,2768,509,3031,538,3264,554,3362,571,3442,589,3502,608,3538,616,3546,612,3550,604,3542,584,3504,565,3444,548,3363,532,3265,504,3032,480,2768,447,2256,432,1934"/>
+<area shape="rect" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch2f01df71dc37a1c67cf66ddce1f7bc73.html#a27c4a0f1e437657f55045373b3daad4f" title=" " alt="" coords="625,3635,877,3693"/>
+<area shape="poly" title=" " alt="" coords="437,1934,451,2270,483,2809,507,3086,535,3332,551,3435,569,3519,588,3583,608,3621,615,3629,612,3632,604,3624,583,3585,564,3521,546,3436,530,3333,501,3086,478,2809,446,2270,432,1934"/>
+<area shape="poly" title=" " alt="" coords="689,2063,691,2053,702,2045,722,2039,751,2037,786,2040,806,2048,804,2053,785,2045,751,2043,723,2045,704,2049,695,2056,695,2064"/>
+<area shape="poly" title=" " alt="" coords="877,2917,929,2917,929,2923,877,2923"/>
+<area shape="poly" title=" " alt="" coords="867,3053,895,3042,970,3000,1035,2956,1038,2960,973,3005,897,3046,869,3058"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a462ccdb6e962f1559d8436b3412d3787" name="a462ccdb6e962f1559d8436b3412d3787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462ccdb6e962f1559d8436b3412d3787">&#9670;&#160;</a></span>SetEventCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.SetEventCommand </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventCommandIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a462ccdb6e962f1559d8436b3412d3787_cgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a462ccdb6e962f1559d8436b3412d3787_cgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a462ccdb6e962f1559d8436b3412d3787_cgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a462ccdb6e962f1559d8436b3412d3787_cgraph">
+<area shape="rect" title=" " alt="" coords="5,1931,258,1989"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a4047f3d1c24fff8b76c2b919d6dd3a1e" title=" " alt="" coords="306,1848,558,1907"/>
+<area shape="poly" title=" " alt="" coords="240,1927,308,1909,309,1914,241,1933"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,1931,558,1989"/>
+<area shape="poly" title=" " alt="" coords="258,1957,291,1957,291,1963,258,1963"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a28b7ae4eb77376beb3692e4ae57da844" title=" " alt="" coords="944,3708,1198,3751"/>
+<area shape="poly" title=" " alt="" coords="138,1990,177,2335,215,2602,265,2897,295,3046,329,3193,367,3333,407,3463,452,3580,500,3680,552,3761,579,3792,608,3818,632,3834,658,3845,713,3857,770,3856,829,3844,886,3826,939,3803,1024,3756,1027,3761,941,3808,888,3831,830,3849,771,3861,712,3862,656,3850,629,3838,604,3822,576,3796,548,3764,495,3683,447,3582,402,3464,361,3334,324,3194,290,3047,260,2898,209,2603,172,2335,133,1990"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae9f7253ee9d320a1da31b565ec92553d" title=" " alt="" coords="625,5,877,64"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,566,1898,575,1872,587,1799,594,1701,597,1584,591,1306,578,997,565,687,560,409,563,292,570,195,584,121,593,94,604,74,611,66,615,69,608,78,598,96,589,122,576,195,568,292,565,409,571,687,583,996,596,1306,602,1584,600,1702,593,1799,580,1873,571,1900,560,1920,549,1932"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#af4b8d1f7730f4da26dc364e8adf67911" title="ボタンの幅で、ラベルに3点リーダーをつける" alt="" coords="625,88,877,147"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,566,1899,574,1874,586,1804,593,1711,595,1599,590,1334,578,1038,566,742,562,477,564,365,572,272,584,202,593,176,604,157,611,149,615,152,608,160,598,178,590,203,577,273,570,365,567,477,572,742,583,1038,596,1333,601,1599,598,1711,591,1805,579,1875,571,1901,560,1920,549,1932"/>
+<area shape="rect" href="../../d3/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_actor_heal.html#a2cb0836ccf258774393565e7a9bf8b13" title=" " alt="" coords="626,171,877,229"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,565,1900,573,1876,585,1809,591,1721,594,1614,589,1361,578,1079,567,797,563,545,566,438,573,349,585,282,594,258,604,240,612,230,616,234,608,243,599,260,590,283,578,350,571,438,569,545,573,797,584,1079,595,1361,599,1614,597,1721,590,1810,578,1877,570,1902,560,1920,549,1932"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_class.html#a7a70975f7f39c6be8a22ab2e92fd2910" title=" " alt="" coords="626,253,877,312"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,572,1878,583,1815,590,1731,592,1629,588,1389,578,1121,568,853,565,612,568,511,574,427,586,363,594,339,604,322,612,313,616,317,608,326,599,342,591,364,580,427,573,511,570,612,574,853,584,1120,594,1388,598,1629,595,1731,589,1815,577,1880,560,1920,549,1932"/>
+<area shape="rect" href="../../dd/d00/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_equipment.html#a50daf2d2f229ac4e1335ae5ff94261e6" title=" " alt="" coords="626,336,877,395"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,571,1880,582,1820,588,1740,591,1644,587,1416,578,1162,569,908,566,680,569,584,576,504,587,443,604,405,612,396,616,399,608,408,592,445,581,505,575,584,572,680,575,908,584,1162,593,1416,596,1644,594,1741,587,1821,577,1882,560,1920,549,1932"/>
+<area shape="rect" href="../../d3/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_exp.html#a6da833885d204a10fe870d818fa2385c" title=" " alt="" coords="626,419,877,477"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,571,1882,581,1826,587,1750,589,1659,587,1444,578,1203,570,963,568,748,571,657,577,581,588,524,604,488,612,478,616,482,608,491,593,525,582,582,576,657,573,748,576,963,584,1203,592,1443,595,1659,592,1750,586,1826,576,1884,560,1920,549,1932"/>
+<area shape="rect" href="../../db/dad/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_hp.html#a45c9f3a024dbb159d87f3d9217f75a42" title=" " alt="" coords="626,501,877,560"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,570,1884,579,1831,585,1760,588,1674,586,1471,578,1245,571,1018,570,815,572,730,579,658,589,604,604,571,612,561,616,565,608,573,594,606,584,659,578,730,575,815,577,1018,584,1245,591,1471,593,1674,591,1760,585,1832,575,1886,560,1920,549,1932"/>
+<area shape="rect" href="../../d2/d2f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_level.html#ac0ab7622f5c5d9b38483616c195fc593" title=" " alt="" coords="626,584,877,643"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,569,1886,578,1836,584,1770,586,1689,585,1499,578,1286,572,1074,571,883,574,803,580,736,590,685,604,653,612,644,616,647,608,656,595,687,585,737,579,803,576,883,578,1074,584,1286,590,1498,592,1689,589,1770,583,1837,574,1888,560,1920,549,1932"/>
+<area shape="rect" href="../../de/d35/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_mp.html#a67c48793420dc47cf61e14eedd8e2c64" title=" " alt="" coords="626,667,877,725"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,568,1888,577,1842,585,1704,584,1526,579,1327,573,1129,573,951,581,813,590,766,604,736,612,726,616,730,608,739,596,767,587,814,578,951,579,1129,584,1327,589,1526,590,1704,582,1842,573,1890,560,1920,549,1932"/>
+<area shape="rect" href="../../d1/d0c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_name.html#a1d21361bf63a3b339eb5ebb62ed429b2" title=" " alt="" coords="626,749,877,808"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,567,1891,575,1847,583,1719,583,1554,579,1369,574,1184,574,1018,583,890,591,846,604,819,612,809,616,813,608,821,596,848,588,891,580,1019,580,1184,584,1369,588,1553,589,1719,581,1848,572,1892,560,1920,549,1932"/>
+<area shape="rect" href="../../de/dbc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_parameter.html#a3f282794bfce425e4ef38c4560be91c9" title=" " alt="" coords="626,832,877,891"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,577,1879,591,1830,598,1773,601,1709,594,1565,578,1410,563,1255,556,1111,559,1047,567,989,581,940,604,901,612,892,616,895,608,904,586,942,572,990,564,1047,561,1111,568,1254,583,1409,599,1565,606,1709,604,1773,596,1831,582,1881,560,1920,549,1932"/>
+<area shape="rect" href="../../d7/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_skill.html#af75a44afa9d6095fa9c3be551bda52b2" title=" " alt="" coords="626,915,877,973"/>
+<area shape="poly" title=" " alt="" coords="545,1929,556,1917,575,1882,588,1837,595,1785,598,1726,592,1594,578,1451,565,1309,559,1177,562,1117,569,1065,583,1020,604,984,612,975,616,978,608,987,588,1022,575,1066,567,1118,564,1177,570,1308,583,1451,597,1593,603,1726,601,1785,594,1838,580,1884,560,1920,549,1932"/>
+<area shape="rect" href="../../d0/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_state.html#a1d1ec7c779d2f1806c7076ecbbc2e84d" title=" " alt="" coords="626,997,877,1056"/>
+<area shape="poly" title=" " alt="" coords="545,1929,556,1917,574,1885,586,1844,592,1797,595,1743,590,1623,578,1493,567,1363,562,1242,565,1188,572,1140,585,1099,604,1066,612,1057,616,1061,608,1070,590,1101,577,1141,570,1189,568,1242,572,1362,584,1492,595,1622,600,1743,598,1797,591,1846,579,1887,560,1920,549,1932"/>
+<area shape="rect" href="../../d7/d5f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_actor_1_1_change_tp.html#aa7a29316730cad970861bd2993863784" title=" " alt="" coords="626,1080,877,1139"/>
+<area shape="poly" title=" " alt="" coords="545,1929,556,1917,572,1888,583,1852,589,1809,592,1760,588,1651,578,1534,569,1417,565,1308,568,1259,575,1216,587,1179,604,1149,613,1140,616,1144,608,1152,591,1181,580,1217,573,1260,571,1308,574,1416,584,1534,593,1651,597,1760,595,1809,588,1853,577,1890,560,1920,549,1932"/>
+<area shape="rect" href="../../d8/dad/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_addons_1_1_addon_command.html#aecf18262f4a5a9f69f4ad66ed95efa72" title=" " alt="" coords="626,1163,877,1221"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,570,1891,580,1859,586,1821,589,1777,586,1680,578,1575,571,1471,568,1373,571,1330,578,1291,588,1258,604,1232,612,1223,616,1227,608,1235,593,1260,583,1293,577,1331,574,1374,576,1470,584,1575,592,1680,594,1777,592,1821,586,1860,575,1893,560,1920,549,1932"/>
+<area shape="rect" href="../../d8/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_aue8ece366bac6854988be9df70a0a9594.html#a65e14e463a570af7011fd890d1e21f89" title=" " alt="" coords="626,1245,877,1304"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,569,1895,578,1866,586,1794,585,1709,579,1617,573,1525,572,1439,580,1367,590,1338,604,1314,612,1306,616,1310,608,1318,595,1340,586,1368,577,1439,578,1524,584,1617,590,1709,591,1795,583,1867,574,1897,560,1920,548,1932"/>
+<area shape="rect" href="../../d1/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_au83c523342da66548895bc047ebc6e186.html#a86b63ac76aa825c236162eec38c33f83" title=" " alt="" coords="626,1328,877,1387"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,567,1898,575,1873,583,1811,583,1738,579,1658,575,1579,575,1505,583,1442,592,1417,604,1397,612,1389,616,1392,608,1400,596,1419,588,1444,580,1505,580,1578,584,1658,588,1738,588,1812,580,1874,572,1900,560,1920,548,1932"/>
+<area shape="rect" href="../../d7/d4c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgm_play.html#a159bebd107e1b8a74f56ebbba0eccbe8" title=" " alt="" coords="626,1411,877,1469"/>
+<area shape="poly" title=" " alt="" coords="545,1928,556,1917,575,1889,588,1861,595,1834,597,1807,591,1753,578,1700,565,1646,560,1591,563,1564,570,1536,584,1508,604,1480,612,1471,616,1475,608,1483,588,1511,575,1538,568,1565,565,1591,571,1645,583,1698,597,1752,602,1807,600,1835,593,1863,580,1892,560,1920,548,1932"/>
+<area shape="rect" href="../../d9/d23/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgm_save.html#a63f290fa7a1638ce8b09aef7ccfb0029" title=" " alt="" coords="626,1493,877,1552"/>
+<area shape="poly" title=" " alt="" coords="544,1928,556,1917,572,1894,582,1872,591,1828,588,1785,578,1741,569,1697,566,1653,576,1608,587,1585,604,1562,612,1554,616,1558,608,1566,592,1588,581,1610,572,1653,575,1696,584,1740,593,1784,596,1829,587,1874,576,1897,560,1920,548,1932"/>
+<area shape="rect" href="../../d1/d59/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_au4159905911e845f08ebd2081170c2015.html#a73185481b5be5cb571342e8ff0020b7a" title=" " alt="" coords="626,1576,877,1635"/>
+<area shape="poly" title=" " alt="" coords="544,1928,556,1917,577,1883,585,1850,584,1816,579,1782,573,1749,572,1714,581,1680,604,1645,612,1637,616,1641,608,1648,586,1682,578,1715,579,1748,584,1782,589,1816,590,1850,582,1885,560,1920,547,1932"/>
+<area shape="rect" href="../../de/d4c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_bgs_play.html#af27fe4d8a6bdc0cadb11cbc4b6457124" title=" " alt="" coords="626,1659,877,1717"/>
+<area shape="poly" title=" " alt="" coords="543,1928,556,1917,572,1894,579,1871,581,1847,579,1824,577,1800,579,1776,587,1752,604,1728,612,1720,616,1724,608,1731,591,1754,584,1777,583,1800,584,1823,586,1847,585,1872,577,1896,560,1920,546,1932"/>
+<area shape="rect" href="../../d4/d36/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_me_play.html#a4fa18841f922ca78f28f535d7d041ca5" title=" " alt="" coords="626,1741,877,1800"/>
+<area shape="poly" title=" " alt="" coords="541,1928,556,1917,567,1904,574,1891,579,1865,585,1837,592,1823,604,1810,611,1805,614,1809,608,1814,596,1826,590,1839,584,1866,579,1893,572,1907,560,1921,544,1932"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_movie_play.html#a3d8ff83fbd8a69f9862ad5f50d75108d" title=" " alt="" coords="626,1848,877,1907"/>
+<area shape="poly" title=" " alt="" coords="547,1927,620,1908,622,1914,549,1933"/>
+<area shape="rect" href="../../d4/d10/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_se_play.html#a4173078a5d4d76b1c5dcdb88d3421d14" title=" " alt="" coords="626,1931,877,1989"/>
+<area shape="poly" title=" " alt="" coords="558,1957,611,1957,611,1963,558,1963"/>
+<area shape="rect" href="../../d6/d4b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_audio_video_1_1_audio_se_stop.html#ade2f76e87e693da47287411dede2b98d" title=" " alt="" coords="626,2013,877,2072"/>
+<area shape="poly" title=" " alt="" coords="549,1987,622,2006,620,2012,547,1993"/>
+<area shape="rect" href="../../dc/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_animation.html#a08a564c25ec2d5dc5f52236473d6bcac" title=" " alt="" coords="626,2096,877,2155"/>
+<area shape="poly" title=" " alt="" coords="469,1988,531,2036,607,2082,621,2088,618,2093,605,2086,528,2040,466,1992"/>
+<area shape="rect" href="../../d6/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ba5a63ea01876c23645ad9da9c00c2f8b1.html#a3b08d7d0e3ef2fcfcb15c85fba5b0df0" title=" " alt="" coords="626,2179,877,2237"/>
+<area shape="poly" title=" " alt="" coords="452,1988,478,2028,513,2076,557,2124,608,2164,615,2169,612,2173,604,2169,553,2128,509,2079,474,2031,448,1991"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_forced.html#a0fa91e9358e18ff7d40f38c702e25b6e" title=" " alt="" coords="626,2261,877,2320"/>
+<area shape="poly" title=" " alt="" coords="445,1989,466,2044,500,2114,547,2186,576,2219,608,2247,614,2252,611,2256,604,2251,572,2222,543,2189,496,2117,461,2046,440,1991"/>
+<area shape="rect" href="../../d7/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_state.html#a4c8cb481335025e6bf65839361f40a7f" title=" " alt="" coords="626,2344,877,2403"/>
+<area shape="poly" title=" " alt="" coords="441,1989,457,2059,489,2151,511,2200,538,2247,570,2292,608,2330,614,2335,611,2339,604,2334,566,2295,533,2250,506,2202,484,2153,452,2060,436,1990"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_status.html#a4b08c67bdd5811d83424d2436564919a" title=" " alt="" coords="626,2427,877,2485"/>
+<area shape="poly" title=" " alt="" coords="438,1989,450,2073,461,2127,478,2187,500,2248,528,2308,564,2364,608,2413,615,2419,612,2423,604,2417,560,2367,524,2311,495,2250,473,2188,456,2129,445,2074,433,1990"/>
+<area shape="rect" href="../../d3/de5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_enemy_transform.html#af72e9ac9fa694b6f6cd4963cf606d555" title=" " alt="" coords="626,2509,877,2568"/>
+<area shape="poly" title=" " alt="" coords="436,1990,443,2087,453,2152,468,2223,489,2296,519,2369,558,2436,608,2495,615,2502,611,2506,604,2499,554,2439,514,2371,484,2298,462,2224,447,2153,438,2087,431,1990"/>
+<area shape="rect" href="../../d7/d06/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_battle_1_1_battle_suspension.html#a9ac42ab3a3f306845fb660610d06ec7b" title=" " alt="" coords="626,2592,877,2651"/>
+<area shape="poly" title=" " alt="" coords="440,1989,462,2116,498,2293,522,2384,548,2466,577,2533,592,2559,608,2578,615,2585,611,2589,604,2582,588,2562,572,2535,543,2468,517,2385,493,2295,456,2117,435,1990"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#aae6efe8e2b25e3148bb450be5cb122c8" title=" " alt="" coords="626,2675,877,2733"/>
+<area shape="poly" title=" " alt="" coords="439,1989,458,2131,493,2333,516,2437,543,2531,574,2609,591,2638,608,2661,616,2668,612,2672,604,2664,586,2641,569,2611,538,2533,511,2438,488,2335,453,2132,434,1990"/>
+<area shape="rect" href="../../dc/dc4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chad51d60e953e6ca5caefd076ed9903aa.html#ae7aaaf5a08987ebb9b61e7f58816e087" title=" " alt="" coords="610,2757,892,2816"/>
+<area shape="poly" title=" " alt="" coords="438,1989,455,2146,488,2373,511,2490,539,2597,571,2684,589,2718,608,2744,610,2746,606,2750,604,2747,584,2721,566,2687,533,2598,506,2491,483,2374,450,2147,433,1990"/>
+<area shape="rect" href="../../d2/da5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_animation_view.html#a3898aa32b586936821d32bcd4807020b" title=" " alt="" coords="626,2840,877,2899"/>
+<area shape="poly" title=" " alt="" coords="438,1990,452,2161,483,2413,506,2543,534,2662,568,2760,587,2798,608,2826,616,2834,612,2837,604,2830,583,2801,563,2762,529,2664,500,2544,477,2413,447,2162,432,1990"/>
+<area shape="rect" href="../../d6/d4e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chc73f0690f4654f93f9bac758a298826f.html#a1e56fcd1334d2ad191f8965787a36e05" title=" " alt="" coords="626,2923,877,2981"/>
+<area shape="poly" title=" " alt="" coords="437,1990,449,2175,461,2308,478,2452,500,2595,529,2727,546,2785,565,2836,585,2877,608,2909,616,2916,612,2920,604,2912,581,2880,560,2838,541,2787,524,2729,495,2596,472,2452,456,2308,444,2176,432,1990"/>
+<area shape="rect" href="../../d2/db1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch234a588198e811fb309bbc6e2c162ce3.html#a51258cdd4be69584f1132fb7af62a1d3" title=" " alt="" coords="626,3005,877,3064"/>
+<area shape="poly" title=" " alt="" coords="437,1990,446,2189,457,2334,473,2491,495,2648,524,2792,542,2856,562,2911,584,2957,608,2992,616,2999,612,3003,604,2995,579,2960,557,2913,537,2857,519,2794,490,2649,468,2491,452,2334,441,2190,431,1990"/>
+<area shape="rect" href="../../d3/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch7c00052f59d6831dd51643ce40573324.html#a49a30a3515e24105fe89750160674fe9" title=" " alt="" coords="606,3088,896,3147"/>
+<area shape="poly" title=" " alt="" coords="436,1989,444,2203,453,2359,468,2529,490,2700,520,2857,538,2926,559,2987,582,3036,608,3074,610,3076,606,3080,604,3078,577,3039,554,2989,533,2928,514,2858,484,2701,463,2530,448,2359,438,2203,431,1990"/>
+<area shape="rect" href="../../d8/d8a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chddb1ebff374bd34a10d383acd2737385.html#ac9b70fe8e163fd216fb01a1859b141c2" title=" " alt="" coords="618,3171,884,3229"/>
+<area shape="poly" title=" " alt="" coords="436,1989,441,2217,449,2384,463,2568,484,2752,515,2922,534,2997,556,3062,580,3116,608,3157,610,3159,606,3162,604,3160,576,3119,551,3064,529,2998,510,2923,479,2753,458,2568,444,2385,436,2217,431,1990"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#aa0e5660dc6dfd220b1c101e6c9ea735d" title=" " alt="" coords="626,3253,877,3312"/>
+<area shape="poly" title=" " alt="" coords="436,1990,439,2231,445,2410,458,2607,479,2805,510,2987,530,3067,552,3138,579,3196,608,3240,616,3247,612,3251,604,3243,574,3198,547,3139,525,3069,505,2988,474,2805,453,2608,440,2411,433,2231,430,1990"/>
+<area shape="rect" href="../../da/d77/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chc0b27d937fae249d0578ef0e7d278dcc.html#a3a65fd2ca103bdf3b801f36cd1fee396" title=" " alt="" coords="626,3336,877,3395"/>
+<area shape="poly" title=" " alt="" coords="435,1990,436,2245,442,2436,454,2646,474,2857,488,2958,505,3052,526,3138,549,3213,577,3275,608,3322,616,3330,612,3334,604,3326,572,3278,544,3215,521,3139,500,3053,483,2959,469,2858,448,2646,436,2436,431,2245,430,1990"/>
+<area shape="rect" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_ch2f01df71dc37a1c67cf66ddce1f7bc73.html#a27c4a0f1e437657f55045373b3daad4f" title=" " alt="" coords="625,3419,877,3477"/>
+<area shape="poly" title=" " alt="" coords="437,1989,455,2278,491,2729,515,2960,543,3165,574,3321,591,3373,608,3405,615,3413,612,3416,604,3408,586,3375,569,3322,538,3166,510,2961,486,2730,450,2278,432,1990"/>
+<area shape="rect" href="../../df/d09/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_chc3fc21f577932751e9e9fe56affe02fc.html#a257175dc15e79cb2666146a92315f52d" title=" " alt="" coords="626,3501,877,3560"/>
+<area shape="poly" title=" " alt="" coords="437,1990,454,2293,489,2771,513,3016,541,3233,556,3324,573,3398,590,3454,608,3488,616,3496,612,3499,604,3491,585,3456,568,3400,551,3325,535,3234,507,3017,484,2772,449,2294,432,1990"/>
+<area shape="rect" href="../../d5/dae/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_place_move.html#a63284a1efe0276963c2849c9f29a06fa" title=" " alt="" coords="626,3584,877,3643"/>
+<area shape="poly" title=" " alt="" coords="437,1990,453,2308,486,2812,510,3071,538,3301,554,3397,571,3476,589,3535,608,3570,616,3578,612,3582,604,3574,584,3537,566,3477,549,3398,533,3301,505,3071,481,2812,447,2308,432,1990"/>
+<area shape="rect" href="../../da/dc0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_step_move.html#a91609493d45dc95a6753d165e312e3a4" title=" " alt="" coords="626,3667,877,3725"/>
+<area shape="poly" title=" " alt="" coords="437,1990,451,2322,484,2853,507,3126,536,3368,552,3470,570,3553,588,3615,608,3653,616,3661,612,3665,604,3656,583,3617,564,3554,547,3471,531,3369,502,3127,479,2854,446,2323,432,1990"/>
+<area shape="rect" href="../../d5/d0a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_pop_icon_view.html#a72c0e345f4a44a311117a622d301a379" title=" " alt="" coords="626,3749,877,3808"/>
+<area shape="poly" title=" " alt="" coords="437,1990,450,2336,463,2603,482,2894,505,3181,534,3436,550,3542,568,3630,587,3696,608,3736,616,3744,612,3747,604,3739,582,3698,563,3632,545,3543,528,3437,499,3181,476,2894,458,2603,445,2336,431,1990"/>
+<area shape="poly" title=" " alt="" coords="689,1847,691,1837,702,1829,722,1823,751,1821,786,1824,806,1832,804,1837,785,1829,751,1827,723,1829,704,1833,695,1840,695,1848"/>
+<area shape="poly" title=" " alt="" coords="863,3641,897,3652,1011,3699,1009,3704,895,3657,861,3646"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4ab625ecb06993d79fef88bf50c6ffbf" name="a4ab625ecb06993d79fef88bf50c6ffbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab625ecb06993d79fef88bf50c6ffbf">&#9670;&#160;</a></span>SetEventId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.SetEventId </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afbeb671c6d24d616b32a1e5c7acdec2d" name="afbeb671c6d24d616b32a1e5c7acdec2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbeb671c6d24d616b32a1e5c7acdec2d">&#9670;&#160;</a></span>SetEventPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.SetEventPage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventPage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0849a2097c7f8ce9a6cdbea9cc53f355" name="a0849a2097c7f8ce9a6cdbea9cc53f355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0849a2097c7f8ce9a6cdbea9cc53f355">&#9670;&#160;</a></span>ShowSettingWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.ShowSettingWindow </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a0849a2097c7f8ce9a6cdbea9cc53f355_icgraph.png" border="0" usemap="#ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a0849a2097c7f8ce9a6cdbea9cc53f355_icgraph" alt=""/></div>
+<map name="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a0849a2097c7f8ce9a6cdbea9cc53f355_icgraph" id="ad4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window_a0849a2097c7f8ce9a6cdbea9cc53f355_icgraph">
+<area shape="rect" title=" " alt="" coords="306,47,558,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a52c13f99712fd81af658f25ba60661ce" name="a52c13f99712fd81af658f25ba60661ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c13f99712fd81af658f25ba60661ce">&#9670;&#160;</a></span>_commandSetting</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow._commandSetting</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cd607db8253b0c907b817c724adf06f" name="a3cd607db8253b0c907b817c724adf06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd607db8253b0c907b817c724adf06f">&#9670;&#160;</a></span>_eventDataModels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&gt; RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow._eventDataModels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94255794b7e5a44ec06874a4ea943fde" name="a94255794b7e5a44ec06874a4ea943fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94255794b7e5a44ec06874a4ea943fde">&#9670;&#160;</a></span>_eventManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html">EventManagementService</a> RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow._eventManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91ed9458c1ac0e0f389cc2e6a1e832e1" name="a91ed9458c1ac0e0f389cc2e6a1e832e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ed9458c1ac0e0f389cc2e6a1e832e1">&#9670;&#160;</a></span>_root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow._root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a4f2129706d92351a3151f0fb89292bc7" name="a4f2129706d92351a3151f0fb89292bc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f2129706d92351a3151f0fb89292bc7">&#9670;&#160;</a></span>executionContentsWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html">ExecutionContentsWindow</a> RPGMaker.Codebase.Editor.MapEditor.Window.EventEdit.CommandSettingWindow.executionContentsWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/MapEditor/Window/EventEdit/<a class="el" href="../../da/d4c/_command_setting_window_8cs.html">CommandSettingWindow.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

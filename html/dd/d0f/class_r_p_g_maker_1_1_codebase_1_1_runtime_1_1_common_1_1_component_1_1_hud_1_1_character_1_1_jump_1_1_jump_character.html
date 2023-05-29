@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d1/d83/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component.html">Component</a></li><li class="navelem"><a class="el" href="../../da/d2c/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud.html">Hud</a></li><li class="navelem"><a class="el" href="../../dd/dfc/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character.html">Character</a></li><li class="navelem"><a class="el" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html">Jump</a></li><li class="navelem"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html">JumpCharacter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d9/dce/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dbe/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jub0f624d7592f6ee226c17cfc6a287abd.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_component_8_hud_8_character_8_jump_8_jump_character_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_component_8_hud_8_character_8_jump_8_jump_character_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_component_8_hud_8_character_8_jump_8_jump_character_coll__map">
+<area shape="rect" title=" " alt="" coords="1256,165,1491,224"/>
+<area shape="rect" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html" title="イベントコマンド『ジャンプ』用コンポーネント。" alt="" coords="837,111,1102,153"/>
+<area shape="poly" title=" " alt="" coords="1117,152,1256,174,1256,179,1116,157"/>
+<area shape="rect" title=" " alt="" coords="503,219,612,245"/>
+<area shape="poly" title=" " alt="" coords="627,227,713,219,805,201,917,152,920,156,807,207,713,225,627,233"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html" title="マップ上のキャラクター" alt="" coords="830,205,1108,248"/>
+<area shape="poly" title=" " alt="" coords="627,232,714,235,806,235,830,234,830,239,806,240,714,240,627,238"/>
+<area shape="rect" href="../../d8/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_commons.html" title="Runtime, Editorのプレビュー, EditorのUIで共用するもの。" alt="" coords="456,5,659,48"/>
+<area shape="poly" title=" " alt="" coords="674,48,807,80,900,107,899,113,805,85,673,53"/>
+<area shape="rect" title=" " alt="" coords="528,144,587,171"/>
+<area shape="poly" title=" " alt="" coords="601,152,836,137,836,143,601,157"/>
+<area shape="poly" title=" " alt="" coords="602,162,838,202,838,207,601,167"/>
+<area shape="rect" title=" " alt="" coords="500,72,615,99"/>
+<area shape="poly" title=" " alt="" coords="630,91,836,114,836,120,629,96"/>
+<area shape="poly" title=" " alt="" coords="1123,216,1232,208,1256,206,1256,211,1233,213,1124,221"/>
+<area shape="rect" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html" title="タイル・データ・モデル" alt="" coords="425,271,690,313"/>
+<area shape="poly" title=" " alt="" coords="704,272,806,257,867,246,868,251,806,263,705,278"/>
+<area shape="rect" title=" " alt="" coords="95,212,162,239"/>
+<area shape="poly" title=" " alt="" coords="177,230,425,269,424,274,177,235"/>
+<area shape="rect" href="../../d2/d0f/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_large_parts_data_model.html" title="大パーツ・データ・モデル" alt="" coords="5,263,252,321"/>
+<area shape="poly" title=" " alt="" coords="266,289,424,289,424,295,266,295"/>
+<area shape="rect" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html" title="タイル・イメージ・データ・モデル" alt="" coords="9,345,248,404"/>
+<area shape="poly" title=" " alt="" coords="262,346,442,311,443,317,263,352"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a41478dadd3209274318e77a753e9d221"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a41478dadd3209274318e77a753e9d221">JumpCharacter</a> (<a class="el" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html">Jump</a> <a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#ae9ffddfaff77f6f5a6b2c1c64f4a6cb9">jump</a>, <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a> <a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a4a9204880ff44869616dea18e79a631f">characterOnMap</a>)</td></tr>
+<tr class="separator:a41478dadd3209274318e77a753e9d221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2634a87e68cdcf2db51e3438fcc7bd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#ae2634a87e68cdcf2db51e3438fcc7bd4">Init</a> ()</td></tr>
+<tr class="separator:ae2634a87e68cdcf2db51e3438fcc7bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a31da77c812e785d1abb44d0e04936f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a4a31da77c812e785d1abb44d0e04936f">Update</a> (float moveRate)</td></tr>
+<tr class="separator:a4a31da77c812e785d1abb44d0e04936f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36bd39087cc0f895b342338897d7dc98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a36bd39087cc0f895b342338897d7dc98">Term</a> ()</td></tr>
+<tr class="separator:a36bd39087cc0f895b342338897d7dc98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:ae3df3f51bd1d3f697b620d244fa8f59d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#ae3df3f51bd1d3f697b620d244fa8f59d">CharacterOnMap</a><code> [get]</code></td></tr>
+<tr class="separator:ae3df3f51bd1d3f697b620d244fa8f59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ae9ffddfaff77f6f5a6b2c1c64f4a6cb9"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html">Jump</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#ae9ffddfaff77f6f5a6b2c1c64f4a6cb9">jump</a></td></tr>
+<tr class="separator:ae9ffddfaff77f6f5a6b2c1c64f4a6cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a9204880ff44869616dea18e79a631f"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a4a9204880ff44869616dea18e79a631f">characterOnMap</a></td></tr>
+<tr class="separator:a4a9204880ff44869616dea18e79a631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6265dd51770bd69db45e38ea5f8e2e2a"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a6265dd51770bd69db45e38ea5f8e2e2a">startPos</a></td></tr>
+<tr class="separator:a6265dd51770bd69db45e38ea5f8e2e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aa87e7fedff0e85dd1b2b599b7fc540"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character.html#a5aa87e7fedff0e85dd1b2b599b7fc540">maxJumpHeight</a></td></tr>
+<tr class="separator:a5aa87e7fedff0e85dd1b2b599b7fc540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a41478dadd3209274318e77a753e9d221" name="a41478dadd3209274318e77a753e9d221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41478dadd3209274318e77a753e9d221">&#9670;&#160;</a></span>JumpCharacter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.JumpCharacter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html">Jump</a>&#160;</td>
+          <td class="paramname"><em>jump</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a>&#160;</td>
+          <td class="paramname"><em>characterOnMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ae2634a87e68cdcf2db51e3438fcc7bd4" name="ae2634a87e68cdcf2db51e3438fcc7bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2634a87e68cdcf2db51e3438fcc7bd4">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_ae2634a87e68cdcf2db51e3438fcc7bd4_cgraph.png" border="0" usemap="#add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_ae2634a87e68cdcf2db51e3438fcc7bd4_cgraph" alt=""/></div>
+<map name="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_ae2634a87e68cdcf2db51e3438fcc7bd4_cgraph" id="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_ae2634a87e68cdcf2db51e3438fcc7bd4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,137,240,196"/>
+<area shape="rect" href="../../d8/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_commons.html#a9a48faa84d1ec4ee59937831120f2406" title=" " alt="" coords="299,29,511,72"/>
+<area shape="poly" title=" " alt="" coords="176,134,229,107,287,82,306,74,308,79,289,86,231,112,178,139"/>
+<area shape="rect" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html#a9f7c46af0961bd09f9e1590cf5378679" title=" " alt="" coords="288,96,522,155"/>
+<area shape="poly" title=" " alt="" coords="240,147,272,142,273,147,240,152"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a817675e160b7bd9a30fe17d34c1bf7fc" title="ワールド座標をタイル座標に変換" alt="" coords="296,179,514,237"/>
+<area shape="poly" title=" " alt="" coords="240,181,282,187,281,193,240,186"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a939f30a71fbea539bb33d4de55423543" title="タイル座標をワールド座標に変換" alt="" coords="289,261,521,320"/>
+<area shape="poly" title=" " alt="" coords="180,194,289,247,303,253,301,258,287,252,178,199"/>
+<area shape="poly" title=" " alt="" coords="352,29,350,19,359,10,377,5,405,3,436,5,454,12,452,17,435,10,405,8,378,10,361,15,355,21,357,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a36bd39087cc0f895b342338897d7dc98" name="a36bd39087cc0f895b342338897d7dc98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36bd39087cc0f895b342338897d7dc98">&#9670;&#160;</a></span>Term()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.Term </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a36bd39087cc0f895b342338897d7dc98_cgraph.png" border="0" usemap="#add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a36bd39087cc0f895b342338897d7dc98_cgraph" alt=""/></div>
+<map name="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a36bd39087cc0f895b342338897d7dc98_cgraph" id="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a36bd39087cc0f895b342338897d7dc98_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,240,64"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a939f30a71fbea539bb33d4de55423543" title="タイル座標をワールド座標に変換" alt="" coords="288,5,519,64"/>
+<area shape="poly" title=" " alt="" coords="240,32,272,32,272,37,240,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4a31da77c812e785d1abb44d0e04936f" name="a4a31da77c812e785d1abb44d0e04936f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a31da77c812e785d1abb44d0e04936f">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.Update </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>moveRate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a4a31da77c812e785d1abb44d0e04936f_cgraph.png" border="0" usemap="#add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a4a31da77c812e785d1abb44d0e04936f_cgraph" alt=""/></div>
+<map name="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a4a31da77c812e785d1abb44d0e04936f_cgraph" id="add/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump_1_1_jump_character_a4a31da77c812e785d1abb44d0e04936f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,63,240,121"/>
+<area shape="rect" href="../../d8/df4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_commons_1_1_direction.html#a65533210e04ab17a0d7c37bf7d99ff84" title="向きを取得。" alt="" coords="288,21,560,80"/>
+<area shape="poly" title=" " alt="" coords="240,73,272,69,273,74,241,79"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a939f30a71fbea539bb33d4de55423543" title="タイル座標をワールド座標に変換" alt="" coords="308,104,540,163"/>
+<area shape="poly" title=" " alt="" coords="241,105,294,113,293,118,240,111"/>
+<area shape="rect" href="../../d8/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_commons.html#a9a48faa84d1ec4ee59937831120f2406" title=" " alt="" coords="608,29,820,72"/>
+<area shape="poly" title=" " alt="" coords="561,48,593,48,593,53,561,53"/>
+<area shape="poly" title=" " alt="" coords="660,29,658,19,667,10,686,5,714,3,746,5,765,12,763,17,745,11,714,8,687,10,669,15,663,21,665,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a4a9204880ff44869616dea18e79a631f" name="a4a9204880ff44869616dea18e79a631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a9204880ff44869616dea18e79a631f">&#9670;&#160;</a></span>characterOnMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a> RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.characterOnMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9ffddfaff77f6f5a6b2c1c64f4a6cb9" name="ae9ffddfaff77f6f5a6b2c1c64f4a6cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ffddfaff77f6f5a6b2c1c64f4a6cb9">&#9670;&#160;</a></span>jump</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d4/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_jump.html">Jump</a> RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.jump</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5aa87e7fedff0e85dd1b2b599b7fc540" name="a5aa87e7fedff0e85dd1b2b599b7fc540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aa87e7fedff0e85dd1b2b599b7fc540">&#9670;&#160;</a></span>maxJumpHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.maxJumpHeight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6265dd51770bd69db45e38ea5f8e2e2a" name="a6265dd51770bd69db45e38ea5f8e2e2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6265dd51770bd69db45e38ea5f8e2e2a">&#9670;&#160;</a></span>startPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.startPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="ae3df3f51bd1d3f697b620d244fa8f59d" name="ae3df3f51bd1d3f697b620d244fa8f59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3df3f51bd1d3f697b620d244fa8f59d">&#9670;&#160;</a></span>CharacterOnMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a> RPGMaker.Codebase.Runtime.Common.Component.Hud.Character.Jump.JumpCharacter.CharacterOnMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Common/Component/Hud/Character/<a class="el" href="../../d1/d67/_runtime_2_common_2_component_2_hud_2_character_2_jump_8cs.html">Jump.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

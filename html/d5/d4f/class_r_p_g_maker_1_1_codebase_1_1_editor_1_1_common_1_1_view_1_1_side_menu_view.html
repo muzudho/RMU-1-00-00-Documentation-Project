@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.View.SideMenuView クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d8/d5b/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view.html">View</a></li><li class="navelem"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html">SideMenuView</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../de/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.View.SideMenuView クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.View.SideMenuView の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,201,123"/>
+<area shape="rect" title=" " alt="" coords="50,5,156,32"/>
+<area shape="poly" title=" " alt="" coords="106,47,106,80,100,80,100,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.View.SideMenuView 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/ddb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_side_menu_view_coll__map">
+<area shape="rect" title=" " alt="" coords="12,128,208,171"/>
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="poly" title=" " alt="" coords="71,45,104,127,99,129,66,47"/>
+<area shape="rect" title=" " alt="" coords="134,5,193,32"/>
+<area shape="poly" title=" " alt="" coords="155,47,121,129,116,127,150,45"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8f8ef1214aa81a942d05a0b0242dda72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72">SideMenuView</a> (Action zoomin, Action zoomOut, Action actualSize)</td></tr>
+<tr class="separator:a8f8ef1214aa81a942d05a0b0242dda72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ab9cb0a6da019a2ac7b7749d0becc7"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ab3ab9cb0a6da019a2ac7b7749d0becc7">GetSideMenuElement</a> ()</td></tr>
+<tr class="separator:ab3ab9cb0a6da019a2ac7b7749d0becc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae8df46efc60ac15316de803ba0ebb097"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097">InitUi</a> ()</td></tr>
+<tr class="separator:ae8df46efc60ac15316de803ba0ebb097"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb7bcef057701f792f037c099321e1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#abbb7bcef057701f792f037c099321e1b">MouseOverEvent</a> (MouseEventBase&lt; MouseOverEvent &gt; evt)</td></tr>
+<tr class="separator:abbb7bcef057701f792f037c099321e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9465a67e6c1c2b5e16b4701f5f85fafc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a9465a67e6c1c2b5e16b4701f5f85fafc">OnMouseUpEvent</a> (MouseEventBase&lt; MouseUpEvent &gt; evt)</td></tr>
+<tr class="separator:a9465a67e6c1c2b5e16b4701f5f85fafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcaf92d16a6656016cf4b3915459729"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#afbcaf92d16a6656016cf4b3915459729">OnMouseDownEvent</a> (MouseEventBase&lt; MouseDownEvent &gt; evt)</td></tr>
+<tr class="separator:afbcaf92d16a6656016cf4b3915459729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad523b383f70a244756f21bf6eed285cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ad523b383f70a244756f21bf6eed285cc">SelectAction</a> (int selectbutton)</td></tr>
+<tr class="separator:ad523b383f70a244756f21bf6eed285cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a857b1e115b9e23f5e87d6c1a4d8591b2"><td class="memItemLeft" align="right" valign="top">readonly List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a857b1e115b9e23f5e87d6c1a4d8591b2">_btnTypes</a></td></tr>
+<tr class="separator:a857b1e115b9e23f5e87d6c1a4d8591b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c237ab362a87a701df868a09a73aaa"><td class="memItemLeft" align="right" valign="top">readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#aa1c237ab362a87a701df868a09a73aaa">mainUxml</a> = &quot;Assets/RPGMaker/Codebase/Editor/Common/Asset/Uxml/sideMenu.uxml&quot;</td></tr>
+<tr class="separator:aa1c237ab362a87a701df868a09a73aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef6d26ef86646774c21fbecde8e73d0"><td class="memItemLeft" align="right" valign="top">readonly Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a9ef6d26ef86646774c21fbecde8e73d0">_actualSizeAction</a></td></tr>
+<tr class="separator:a9ef6d26ef86646774c21fbecde8e73d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c781a010a838140a3e9176a81009a3f"><td class="memItemLeft" align="right" valign="top">readonly VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a6c781a010a838140a3e9176a81009a3f">_menuArea</a></td></tr>
+<tr class="separator:a6c781a010a838140a3e9176a81009a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebdb8a3e1be08b519e823ceb699392e"><td class="memItemLeft" align="right" valign="top">readonly Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a0ebdb8a3e1be08b519e823ceb699392e">_zoomInAction</a></td></tr>
+<tr class="separator:a0ebdb8a3e1be08b519e823ceb699392e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016f6359fb90307f1c621672cd122030"><td class="memItemLeft" align="right" valign="top">readonly Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a016f6359fb90307f1c621672cd122030">_zoomOutAction</a></td></tr>
+<tr class="separator:a016f6359fb90307f1c621672cd122030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a8f8ef1214aa81a942d05a0b0242dda72" name="a8f8ef1214aa81a942d05a0b0242dda72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8ef1214aa81a942d05a0b0242dda72">&#9670;&#160;</a></span>SideMenuView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.Common.View.SideMenuView.SideMenuView </td>
+          <td>(</td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>zoomin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>zoomOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>actualSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a8f8ef1214aa81a942d05a0b0242dda72_cgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a8f8ef1214aa81a942d05a0b0242dda72_cgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a8f8ef1214aa81a942d05a0b0242dda72_cgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a8f8ef1214aa81a942d05a0b0242dda72_cgraph">
+<area shape="rect" title=" " alt="" coords="5,86,291,128"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097" title=" " alt="" coords="339,86,567,128"/>
+<area shape="poly" title=" " alt="" coords="291,104,324,104,324,110,291,110"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#ad8fb22c685724d48b6e384395ecd7d51" title=" " alt="" coords="918,86,1192,128"/>
+<area shape="poly" title=" " alt="" coords="484,83,543,49,578,34,614,22,685,7,742,3,800,8,871,22,943,45,1006,76,1004,81,941,50,870,27,799,13,742,8,686,12,616,27,580,39,545,54,487,88"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#abbb7bcef057701f792f037c099321e1b" title=" " alt="" coords="624,36,862,95"/>
+<area shape="poly" title=" " alt="" coords="567,88,608,82,609,88,568,93"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#afbcaf92d16a6656016cf4b3915459729" title=" " alt="" coords="615,202,870,260"/>
+<area shape="poly" title=" " alt="" coords="494,127,551,157,616,187,632,194,630,199,614,192,548,162,491,131"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a9465a67e6c1c2b5e16b4701f5f85fafc" title=" " alt="" coords="615,119,870,178"/>
+<area shape="poly" title=" " alt="" coords="568,121,601,126,600,131,567,126"/>
+<area shape="poly" title=" " alt="" coords="863,79,904,84,903,90,862,84"/>
+<area shape="poly" title=" " alt="" coords="838,199,869,187,994,133,997,138,871,192,840,204"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ad523b383f70a244756f21bf6eed285cc" title=" " alt="" coords="937,202,1173,260"/>
+<area shape="poly" title=" " alt="" coords="871,228,922,228,922,234,871,234"/>
+<area shape="poly" title=" " alt="" coords="870,129,903,125,904,130,871,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ab3ab9cb0a6da019a2ac7b7749d0becc7" name="ab3ab9cb0a6da019a2ac7b7749d0becc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ab9cb0a6da019a2ac7b7749d0becc7">&#9670;&#160;</a></span>GetSideMenuElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.Common.View.SideMenuView.GetSideMenuElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8df46efc60ac15316de803ba0ebb097" name="ae8df46efc60ac15316de803ba0ebb097"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8df46efc60ac15316de803ba0ebb097">&#9670;&#160;</a></span>InitUi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.SideMenuView.InitUi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_cgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_cgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_cgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_cgraph">
+<area shape="rect" title=" " alt="" coords="5,86,234,128"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#ad8fb22c685724d48b6e384395ecd7d51" title=" " alt="" coords="585,86,858,128"/>
+<area shape="poly" title=" " alt="" coords="151,83,209,49,245,34,281,22,352,7,409,3,466,8,538,22,610,45,673,76,670,81,608,50,536,27,465,13,409,8,353,12,282,27,246,39,212,54,154,88"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#abbb7bcef057701f792f037c099321e1b" title=" " alt="" coords="290,36,529,95"/>
+<area shape="poly" title=" " alt="" coords="234,88,275,82,276,88,235,93"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#afbcaf92d16a6656016cf4b3915459729" title=" " alt="" coords="282,202,537,260"/>
+<area shape="poly" title=" " alt="" coords="160,127,217,157,283,187,299,194,297,199,281,192,215,162,158,131"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a9465a67e6c1c2b5e16b4701f5f85fafc" title=" " alt="" coords="282,119,537,178"/>
+<area shape="poly" title=" " alt="" coords="235,121,267,126,266,131,234,126"/>
+<area shape="poly" title=" " alt="" coords="529,79,570,84,570,90,529,84"/>
+<area shape="poly" title=" " alt="" coords="505,199,536,187,661,133,663,138,538,192,507,204"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ad523b383f70a244756f21bf6eed285cc" title=" " alt="" coords="604,202,840,260"/>
+<area shape="poly" title=" " alt="" coords="538,228,589,228,589,234,538,234"/>
+<area shape="poly" title=" " alt="" coords="537,129,570,125,571,130,538,134"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_icgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_icgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_icgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ae8df46efc60ac15316de803ba0ebb097_icgraph">
+<area shape="rect" title=" " alt="" coords="339,5,567,48"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72" title=" " alt="" coords="5,5,291,48"/>
+<area shape="poly" title=" " alt="" coords="324,29,291,29,291,24,324,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abbb7bcef057701f792f037c099321e1b" name="abbb7bcef057701f792f037c099321e1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb7bcef057701f792f037c099321e1b">&#9670;&#160;</a></span>MouseOverEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.SideMenuView.MouseOverEvent </td>
+          <td>(</td>
+          <td class="paramtype">MouseEventBase&lt; MouseOverEvent &gt;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_cgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_cgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_cgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,244,64"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#ad8fb22c685724d48b6e384395ecd7d51" title=" " alt="" coords="292,13,565,56"/>
+<area shape="poly" title=" " alt="" coords="244,32,277,32,277,37,244,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_icgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_icgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_icgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_abbb7bcef057701f792f037c099321e1b_icgraph">
+<area shape="rect" title=" " alt="" coords="615,5,853,64"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097" title=" " alt="" coords="339,13,567,56"/>
+<area shape="poly" title=" " alt="" coords="600,37,568,37,568,32,600,32"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72" title=" " alt="" coords="5,13,291,56"/>
+<area shape="poly" title=" " alt="" coords="324,37,291,37,291,32,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbcaf92d16a6656016cf4b3915459729" name="afbcaf92d16a6656016cf4b3915459729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbcaf92d16a6656016cf4b3915459729">&#9670;&#160;</a></span>OnMouseDownEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.SideMenuView.OnMouseDownEvent </td>
+          <td>(</td>
+          <td class="paramtype">MouseEventBase&lt; MouseDownEvent &gt;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_cgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_cgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_cgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,261,93"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#ad8fb22c685724d48b6e384395ecd7d51" title=" " alt="" coords="309,5,582,48"/>
+<area shape="poly" title=" " alt="" coords="261,46,294,42,294,47,261,51"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ad523b383f70a244756f21bf6eed285cc" title=" " alt="" coords="327,72,564,131"/>
+<area shape="poly" title=" " alt="" coords="261,77,313,83,312,88,261,82"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_icgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_icgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_icgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_afbcaf92d16a6656016cf4b3915459729_icgraph">
+<area shape="rect" title=" " alt="" coords="615,5,870,64"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097" title=" " alt="" coords="339,13,567,56"/>
+<area shape="poly" title=" " alt="" coords="600,37,568,37,568,32,600,32"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72" title=" " alt="" coords="5,13,291,56"/>
+<area shape="poly" title=" " alt="" coords="324,37,291,37,291,32,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9465a67e6c1c2b5e16b4701f5f85fafc" name="a9465a67e6c1c2b5e16b4701f5f85fafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9465a67e6c1c2b5e16b4701f5f85fafc">&#9670;&#160;</a></span>OnMouseUpEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.SideMenuView.OnMouseUpEvent </td>
+          <td>(</td>
+          <td class="paramtype">MouseEventBase&lt; MouseUpEvent &gt;&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_cgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_cgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_cgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,261,64"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#ad8fb22c685724d48b6e384395ecd7d51" title=" " alt="" coords="309,13,582,56"/>
+<area shape="poly" title=" " alt="" coords="261,32,294,32,294,37,261,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_icgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_icgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_icgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_a9465a67e6c1c2b5e16b4701f5f85fafc_icgraph">
+<area shape="rect" title=" " alt="" coords="615,5,870,64"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097" title=" " alt="" coords="339,13,567,56"/>
+<area shape="poly" title=" " alt="" coords="600,37,568,37,568,32,600,32"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72" title=" " alt="" coords="5,13,291,56"/>
+<area shape="poly" title=" " alt="" coords="324,37,291,37,291,32,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad523b383f70a244756f21bf6eed285cc" name="ad523b383f70a244756f21bf6eed285cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad523b383f70a244756f21bf6eed285cc">&#9670;&#160;</a></span>SelectAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.SideMenuView.SelectAction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>selectbutton</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ad523b383f70a244756f21bf6eed285cc_icgraph.png" border="0" usemap="#ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ad523b383f70a244756f21bf6eed285cc_icgraph" alt=""/></div>
+<map name="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ad523b383f70a244756f21bf6eed285cc_icgraph" id="ad5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view_ad523b383f70a244756f21bf6eed285cc_icgraph">
+<area shape="rect" title=" " alt="" coords="918,5,1155,64"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#afbcaf92d16a6656016cf4b3915459729" title=" " alt="" coords="615,5,870,64"/>
+<area shape="poly" title=" " alt="" coords="903,37,871,37,871,32,903,32"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#ae8df46efc60ac15316de803ba0ebb097" title=" " alt="" coords="339,13,567,56"/>
+<area shape="poly" title=" " alt="" coords="600,37,568,37,568,32,600,32"/>
+<area shape="rect" href="../../d5/d4f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_side_menu_view.html#a8f8ef1214aa81a942d05a0b0242dda72" title=" " alt="" coords="5,13,291,56"/>
+<area shape="poly" title=" " alt="" coords="324,37,291,37,291,32,324,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a9ef6d26ef86646774c21fbecde8e73d0" name="a9ef6d26ef86646774c21fbecde8e73d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef6d26ef86646774c21fbecde8e73d0">&#9670;&#160;</a></span>_actualSizeAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Action RPGMaker.Codebase.Editor.Common.View.SideMenuView._actualSizeAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a857b1e115b9e23f5e87d6c1a4d8591b2" name="a857b1e115b9e23f5e87d6c1a4d8591b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857b1e115b9e23f5e87d6c1a4d8591b2">&#9670;&#160;</a></span>_btnTypes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;int&gt; RPGMaker.Codebase.Editor.Common.View.SideMenuView._btnTypes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> List&lt;int&gt;</div>
+<div class="line">        {</div>
+<div class="line">            (int) MenuWindow.BtnType.ZoomIn,</div>
+<div class="line">            (<span class="keywordtype">int</span>) MenuWindow.BtnType.ZoomOut,</div>
+<div class="line">            (int) MenuWindow.BtnType.ActualSize</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6c781a010a838140a3e9176a81009a3f" name="a6c781a010a838140a3e9176a81009a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c781a010a838140a3e9176a81009a3f">&#9670;&#160;</a></span>_menuArea</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly VisualElement RPGMaker.Codebase.Editor.Common.View.SideMenuView._menuArea</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ebdb8a3e1be08b519e823ceb699392e" name="a0ebdb8a3e1be08b519e823ceb699392e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ebdb8a3e1be08b519e823ceb699392e">&#9670;&#160;</a></span>_zoomInAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Action RPGMaker.Codebase.Editor.Common.View.SideMenuView._zoomInAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a016f6359fb90307f1c621672cd122030" name="a016f6359fb90307f1c621672cd122030"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016f6359fb90307f1c621672cd122030">&#9670;&#160;</a></span>_zoomOutAction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Action RPGMaker.Codebase.Editor.Common.View.SideMenuView._zoomOutAction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1c237ab362a87a701df868a09a73aaa" name="aa1c237ab362a87a701df868a09a73aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c237ab362a87a701df868a09a73aaa">&#9670;&#160;</a></span>mainUxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string RPGMaker.Codebase.Editor.Common.View.SideMenuView.mainUxml = &quot;Assets/RPGMaker/Codebase/Editor/Common/Asset/Uxml/sideMenu.uxml&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/View/<a class="el" href="../../d0/d86/_side_menu_view_8cs.html">SideMenuView.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

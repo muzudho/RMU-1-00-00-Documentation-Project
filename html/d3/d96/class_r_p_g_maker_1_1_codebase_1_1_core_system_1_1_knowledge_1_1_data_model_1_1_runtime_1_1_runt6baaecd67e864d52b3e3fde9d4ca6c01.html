@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d0e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system.html">CoreSystem</a></li><li class="navelem"><a class="el" href="../../de/daa/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge.html">Knowledge</a></li><li class="navelem"><a class="el" href="../../d7/d9e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model.html">DataModel</a></li><li class="navelem"><a class="el" href="../../dc/d5b/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d2/d91/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_on_map_data_model.html">RuntimeOnMapDataModel</a></li><li class="navelem"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../df/db3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt20502967156a49ec06d31f961a1e63d9.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d1c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt3c3b89e024a5a6127c3480e36e804e6d.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_on_map_data_model_8_on_map_data_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_on_map_data_model_8_on_map_data_coll__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_on_map_data_model_8_on_map_data_coll__map">
+<area shape="rect" title=" " alt="" coords="1068,47,1323,105"/>
+<area shape="rect" href="../../d1/de1/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtd1ac8c7a13af84bf9d579ceb3511e869.html" title=" " alt="" coords="646,5,959,64"/>
+<area shape="poly" title=" " alt="" coords="975,50,1068,60,1068,65,974,55"/>
+<area shape="rect" href="../../d8/de0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt4d3cf0704f104076e59817254d03a9e4.html" title=" " alt="" coords="647,88,958,147"/>
+<area shape="poly" title=" " alt="" coords="973,97,1068,87,1068,92,974,102"/>
+<area shape="rect" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html" title="イベント・データ・モデル" alt="" coords="217,96,501,139"/>
+<area shape="poly" title=" " alt="" coords="516,115,647,115,647,120,516,120"/>
+<area shape="rect" title=" " alt="" coords="5,104,59,131"/>
+<area shape="poly" title=" " alt="" coords="74,115,216,115,216,120,74,120"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:abb4e8c2f41d3abafc3f7a41b712a1f69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#abb4e8c2f41d3abafc3f7a41b712a1f69">Create</a> (<a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a> data)</td></tr>
+<tr class="separator:abb4e8c2f41d3abafc3f7a41b712a1f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b6231424d76373e236815126dcfb87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#ad1b6231424d76373e236815126dcfb87">Create</a> (<a class="el" href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html">ActorOnMap</a> data, int num)</td></tr>
+<tr class="separator:ad1b6231424d76373e236815126dcfb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:afe483d01964213361837e3f41c77b32b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#afe483d01964213361837e3f41c77b32b">isActor</a></td></tr>
+<tr class="separator:afe483d01964213361837e3f41c77b32b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3b7af4e152c315eddcd432d7e4ad08"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a9b3b7af4e152c315eddcd432d7e4ad08">id</a></td></tr>
+<tr class="separator:a9b3b7af4e152c315eddcd432d7e4ad08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5f8200a46fd5c20871933d2fe9f839"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#ade5f8200a46fd5c20871933d2fe9f839">AssetId</a></td></tr>
+<tr class="separator:ade5f8200a46fd5c20871933d2fe9f839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ef39fc100355a2a7ce7d0b3ddc427d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a51ef39fc100355a2a7ce7d0b3ddc427d">x_next</a></td></tr>
+<tr class="separator:a51ef39fc100355a2a7ce7d0b3ddc427d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27eac2543ece5edf6ea892e33bb87ab1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a27eac2543ece5edf6ea892e33bb87ab1">x_now</a></td></tr>
+<tr class="separator:a27eac2543ece5edf6ea892e33bb87ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba8c9cd52a06b29ef92bc8070725fe8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a4ba8c9cd52a06b29ef92bc8070725fe8">y_next</a></td></tr>
+<tr class="separator:a4ba8c9cd52a06b29ef92bc8070725fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb61e42d836ec6e81bb8aac52cf4a485"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#afb61e42d836ec6e81bb8aac52cf4a485">y_now</a></td></tr>
+<tr class="separator:afb61e42d836ec6e81bb8aac52cf4a485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaff36e45fcb0e1e151d01f61791bd74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#afaff36e45fcb0e1e151d01f61791bd74">direction</a></td></tr>
+<tr class="separator:afaff36e45fcb0e1e151d01f61791bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a8f8b1046d1b08a80a153aa1440c01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a87a8f8b1046d1b08a80a153aa1440c01">lastMoveDirectionEnum</a></td></tr>
+<tr class="separator:a87a8f8b1046d1b08a80a153aa1440c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef62d974f9722ef06919ff064772d22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a9ef62d974f9722ef06919ff064772d22">isLockDirection</a></td></tr>
+<tr class="separator:a9ef62d974f9722ef06919ff064772d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e47469718995fca8c83684b926870a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a32e47469718995fca8c83684b926870a">isAnimation</a></td></tr>
+<tr class="separator:a32e47469718995fca8c83684b926870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba9e1d4ea852728527f29314b92ef08"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a5ba9e1d4ea852728527f29314b92ef08">isSteppingAnimation</a></td></tr>
+<tr class="separator:a5ba9e1d4ea852728527f29314b92ef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52470c5828cbef2f2da0e8627ae7f33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#ab52470c5828cbef2f2da0e8627ae7f33">isThrough</a></td></tr>
+<tr class="separator:ab52470c5828cbef2f2da0e8627ae7f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c802158c091e6ddc1766b2fde59f5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a54c802158c091e6ddc1766b2fde59f5c">isValid</a></td></tr>
+<tr class="separator:a54c802158c091e6ddc1766b2fde59f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3c7d24a186699505bd90ce8f177970"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a5b3c7d24a186699505bd90ce8f177970">opacity</a> = 1f</td></tr>
+<tr class="separator:a5b3c7d24a186699505bd90ce8f177970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908fa280e5690103bbae9ed70f8fca95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/de1/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtd1ac8c7a13af84bf9d579ceb3511e869.html">RuntimeOnMapEventDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a908fa280e5690103bbae9ed70f8fca95">eventData</a></td></tr>
+<tr class="separator:a908fa280e5690103bbae9ed70f8fca95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af038d8e99367a0f4b84c7303b21e4f9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/de0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt4d3cf0704f104076e59817254d03a9e4.html">RuntimeOnMapMoveDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#af038d8e99367a0f4b84c7303b21e4f9b">moveData</a></td></tr>
+<tr class="separator:af038d8e99367a0f4b84c7303b21e4f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6b5be45f541c0b3bcc858af89243385c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a6b5be45f541c0b3bcc858af89243385c">SetData</a> (<a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a> character, <a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a> onMapData)</td></tr>
+<tr class="separator:a6b5be45f541c0b3bcc858af89243385c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69e5b6f25756c6f86397eb158e567f2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a69e5b6f25756c6f86397eb158e567f2d">SetEventData</a> (<a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a> character, <a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a> onMapData)</td></tr>
+<tr class="separator:a69e5b6f25756c6f86397eb158e567f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645773c594f787831a4a857b0c5993d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a645773c594f787831a4a857b0c5993d0">SetMoveData</a> (<a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a> character, <a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a> onMapData)</td></tr>
+<tr class="separator:a645773c594f787831a4a857b0c5993d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ad1b6231424d76373e236815126dcfb87" name="ad1b6231424d76373e236815126dcfb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b6231424d76373e236815126dcfb87">&#9670;&#160;</a></span>Create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_actor_on_map.html">ActorOnMap</a>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_ad1b6231424d76373e236815126dcfb87_cgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_ad1b6231424d76373e236815126dcfb87_cgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_ad1b6231424d76373e236815126dcfb87_cgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_ad1b6231424d76373e236815126dcfb87_cgraph">
+<area shape="rect" title=" " alt="" coords="5,253,260,312"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a6b5be45f541c0b3bcc858af89243385c" title=" " alt="" coords="308,253,562,312"/>
+<area shape="poly" title=" " alt="" coords="260,280,293,280,293,285,260,285"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa1132ebf7fd32c23b99274c46e5f041b" title=" " alt="" coords="610,5,846,64"/>
+<area shape="poly" title=" " alt="" coords="452,252,478,212,514,164,558,116,608,74,615,69,618,74,612,78,562,120,518,168,482,215,456,254"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a569915444810c7744dd7dfb0eb3b567f" title=" " alt="" coords="610,88,846,147"/>
+<area shape="poly" title=" " alt="" coords="470,251,533,203,609,156,620,151,622,155,611,161,536,208,473,255"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a45d698e72e8efdb9688f1bc7140ac474" title=" " alt="" coords="610,171,846,229"/>
+<area shape="poly" title=" " alt="" coords="541,250,607,231,609,236,542,255"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391" title="現在の向きを取得" alt="" coords="610,253,846,312"/>
+<area shape="poly" title=" " alt="" coords="562,280,595,280,595,285,562,285"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aad14f6698e551c0999b28cd782cf8490" title=" " alt="" coords="610,336,846,395"/>
+<area shape="poly" title=" " alt="" coords="542,310,609,329,607,334,541,315"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aabf1ffc447d7f9d004dc8d8c99012a47" title="最終の移動方向を取得" alt="" coords="610,419,846,477"/>
+<area shape="poly" title=" " alt="" coords="473,310,536,358,611,404,622,410,620,415,609,409,533,362,470,315"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#af553041359121a19ea1383d926c585ff" title=" " alt="" coords="610,501,846,560"/>
+<area shape="poly" title=" " alt="" coords="456,311,482,350,518,398,562,446,612,487,618,492,615,496,608,491,558,449,514,401,478,353,452,314"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4bfe1a54f4d8109cf55690420add224d" title=" " alt="" coords="894,253,1131,312"/>
+<area shape="poly" title=" " alt="" coords="847,280,879,280,879,285,847,285"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abb4e8c2f41d3abafc3f7a41b712a1f69" name="abb4e8c2f41d3abafc3f7a41b712a1f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb4e8c2f41d3abafc3f7a41b712a1f69">&#9670;&#160;</a></span>Create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.Create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a>&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_cgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_cgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_cgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_cgraph">
+<area shape="rect" title=" " alt="" coords="5,584,260,643"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a6b5be45f541c0b3bcc858af89243385c" title=" " alt="" coords="321,295,576,353"/>
+<area shape="poly" title=" " alt="" coords="164,582,403,361,406,365,168,585"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a69e5b6f25756c6f86397eb158e567f2d" title=" " alt="" coords="308,584,589,643"/>
+<area shape="poly" title=" " alt="" coords="260,611,293,611,293,616,260,616"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#a645773c594f787831a4a857b0c5993d0" title=" " alt="" coords="309,667,588,725"/>
+<area shape="poly" title=" " alt="" coords="248,641,320,660,319,665,247,646"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa1132ebf7fd32c23b99274c46e5f041b" title=" " alt="" coords="638,5,874,64"/>
+<area shape="poly" title=" " alt="" coords="462,293,489,245,528,187,577,126,635,74,642,70,645,74,639,78,581,130,532,190,494,248,467,296"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a569915444810c7744dd7dfb0eb3b567f" title=" " alt="" coords="638,88,874,147"/>
+<area shape="poly" title=" " alt="" coords="474,293,543,225,588,189,636,156,645,151,648,156,638,161,591,193,547,229,478,296"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a45d698e72e8efdb9688f1bc7140ac474" title=" " alt="" coords="638,171,874,229"/>
+<area shape="poly" title=" " alt="" coords="513,292,636,239,653,232,655,237,638,244,515,296"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391" title="現在の向きを取得" alt="" coords="638,253,874,312"/>
+<area shape="poly" title=" " alt="" coords="576,304,623,298,624,303,576,310"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aad14f6698e551c0999b28cd782cf8490" title=" " alt="" coords="638,336,874,395"/>
+<area shape="poly" title=" " alt="" coords="576,338,624,345,623,350,576,344"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aabf1ffc447d7f9d004dc8d8c99012a47" title="最終の移動方向を取得" alt="" coords="638,419,874,477"/>
+<area shape="poly" title=" " alt="" coords="515,352,638,404,655,411,653,416,636,409,513,356"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#af553041359121a19ea1383d926c585ff" title=" " alt="" coords="638,501,874,560"/>
+<area shape="poly" title=" " alt="" coords="478,352,547,419,591,455,638,487,648,492,645,497,636,492,588,459,543,423,474,355"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4bfe1a54f4d8109cf55690420add224d" title=" " alt="" coords="923,253,1160,312"/>
+<area shape="poly" title=" " alt="" coords="875,280,908,280,908,285,875,285"/>
+<area shape="rect" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html#a703b6eabf9204e47bee2c3ba116741ef" title="セーブデータ用のイベントデータ返却" alt="" coords="642,584,871,643"/>
+<area shape="poly" title=" " alt="" coords="589,611,627,611,627,616,589,616"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ac9f4ad4a107fbe8a15db096315c3b20f" title="セーブ、コンティニュー用の、現在実行中のイベント種別取得" alt="" coords="929,501,1154,560"/>
+<area shape="poly" title=" " alt="" coords="859,581,923,562,925,567,861,586"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a6b29b879966e16924d8deaf295e5c694" title="現在実行中のCommandIndex取得" alt="" coords="926,584,1157,643"/>
+<area shape="poly" title=" " alt="" coords="871,611,911,611,911,616,871,616"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a851a78614947e421ef6cbe7b2ca5d83a" title="現在イベントが実行中かどうかを返却する" alt="" coords="926,667,1157,725"/>
+<area shape="poly" title=" " alt="" coords="861,641,925,659,923,665,859,646"/>
+<area shape="rect" href="../../d9/dcc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_move_set_move_point.html#a852fe2d20d8b6cbb82ca6ac4f325894c" title="セーブデータ用の移動データ取得" alt="" coords="637,667,875,725"/>
+<area shape="poly" title=" " alt="" coords="588,693,622,693,622,699,588,699"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_icgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_icgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_icgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_abb4e8c2f41d3abafc3f7a41b712a1f69_icgraph">
+<area shape="rect" title=" " alt="" coords="1684,5,1939,64"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#afa35060e6bf300ed4abee7884ae5b4e6" title="セーブデータ項目をクリックした際に呼び出すコールバック" alt="" coords="1373,13,1636,56"/>
+<area shape="poly" title=" " alt="" coords="1669,37,1637,37,1637,32,1669,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a3ade3cc9b5c2e918e944e906b9aa89fa" title="セーブデータ項目の作成" alt="" coords="1084,13,1325,56"/>
+<area shape="poly" title=" " alt="" coords="1358,37,1325,37,1325,32,1358,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#ae646bacc545c1db28ba997265ac6ba8f" title="セーブデータの配置" alt="" coords="771,13,1036,56"/>
+<area shape="poly" title=" " alt="" coords="1068,37,1036,37,1036,32,1068,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a2750d05aca07b04211daaa900c164d58" title=" " alt="" coords="520,13,723,56"/>
+<area shape="poly" title=" " alt="" coords="756,37,724,37,724,32,756,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a718c7dc01963e22713b0af685e67e28d" title="セーブ画面を開く。ロード可能なセーブデータが無い場合はブザーを鳴らす。" alt="" coords="269,13,472,56"/>
+<area shape="poly" title=" " alt="" coords="505,37,473,37,473,32,505,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a888d1cf5956bfdc0564890efcbdb0929" title="コンテニュー" alt="" coords="5,13,221,56"/>
+<area shape="poly" title=" " alt="" coords="254,37,221,37,221,32,254,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b5be45f541c0b3bcc858af89243385c" name="a6b5be45f541c0b3bcc858af89243385c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b5be45f541c0b3bcc858af89243385c">&#9670;&#160;</a></span>SetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.SetData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html">CharacterOnMap</a>&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a>&#160;</td>
+          <td class="paramname"><em>onMapData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_cgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_cgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_cgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,253,260,312"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aa1132ebf7fd32c23b99274c46e5f041b" title=" " alt="" coords="308,5,544,64"/>
+<area shape="poly" title=" " alt="" coords="149,252,176,212,212,164,256,116,306,74,313,69,316,74,309,78,259,120,216,168,180,215,154,254"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a569915444810c7744dd7dfb0eb3b567f" title=" " alt="" coords="308,88,544,147"/>
+<area shape="poly" title=" " alt="" coords="168,251,230,203,306,156,318,151,320,155,309,161,233,208,171,255"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a45d698e72e8efdb9688f1bc7140ac474" title=" " alt="" coords="308,171,544,229"/>
+<area shape="poly" title=" " alt="" coords="238,250,305,231,306,236,240,255"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a5fb2129b6ab88b1ef5d20e6a304e0391" title="現在の向きを取得" alt="" coords="308,253,544,312"/>
+<area shape="poly" title=" " alt="" coords="260,280,292,280,292,285,260,285"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aad14f6698e551c0999b28cd782cf8490" title=" " alt="" coords="308,336,544,395"/>
+<area shape="poly" title=" " alt="" coords="240,310,306,329,305,334,238,315"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#aabf1ffc447d7f9d004dc8d8c99012a47" title="最終の移動方向を取得" alt="" coords="308,419,544,477"/>
+<area shape="poly" title=" " alt="" coords="171,310,233,358,309,404,320,410,318,415,306,409,230,362,168,315"/>
+<area shape="rect" href="../../d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#af553041359121a19ea1383d926c585ff" title=" " alt="" coords="308,501,544,560"/>
+<area shape="poly" title=" " alt="" coords="154,311,180,350,216,398,259,446,309,487,316,492,313,496,306,491,256,449,212,401,176,353,149,314"/>
+<area shape="rect" href="../../da/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_graphic.html#a4bfe1a54f4d8109cf55690420add224d" title=" " alt="" coords="592,253,828,312"/>
+<area shape="poly" title=" " alt="" coords="545,280,577,280,577,285,545,285"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_icgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_icgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_icgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a6b5be45f541c0b3bcc858af89243385c_icgraph">
+<area shape="rect" title=" " alt="" coords="1987,47,2241,105"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#ad1b6231424d76373e236815126dcfb87" title=" " alt="" coords="1684,5,1939,64"/>
+<area shape="poly" title=" " alt="" coords="1972,59,1939,55,1939,49,1972,54"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#abb4e8c2f41d3abafc3f7a41b712a1f69" title=" " alt="" coords="1684,88,1939,147"/>
+<area shape="poly" title=" " alt="" coords="1972,98,1939,103,1939,97,1972,93"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#afa35060e6bf300ed4abee7884ae5b4e6" title="セーブデータ項目をクリックした際に呼び出すコールバック" alt="" coords="1373,96,1636,139"/>
+<area shape="poly" title=" " alt="" coords="1669,120,1637,120,1637,115,1669,115"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a3ade3cc9b5c2e918e944e906b9aa89fa" title="セーブデータ項目の作成" alt="" coords="1084,96,1325,139"/>
+<area shape="poly" title=" " alt="" coords="1358,120,1325,120,1325,115,1358,115"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#ae646bacc545c1db28ba997265ac6ba8f" title="セーブデータの配置" alt="" coords="771,96,1036,139"/>
+<area shape="poly" title=" " alt="" coords="1068,120,1036,120,1036,115,1068,115"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a2750d05aca07b04211daaa900c164d58" title=" " alt="" coords="520,96,723,139"/>
+<area shape="poly" title=" " alt="" coords="756,120,724,120,724,115,756,115"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a718c7dc01963e22713b0af685e67e28d" title="セーブ画面を開く。ロード可能なセーブデータが無い場合はブザーを鳴らす。" alt="" coords="269,96,472,139"/>
+<area shape="poly" title=" " alt="" coords="505,120,473,120,473,115,505,115"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a888d1cf5956bfdc0564890efcbdb0929" title="コンテニュー" alt="" coords="5,96,221,139"/>
+<area shape="poly" title=" " alt="" coords="254,120,221,120,221,115,254,115"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a69e5b6f25756c6f86397eb158e567f2d" name="a69e5b6f25756c6f86397eb158e567f2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69e5b6f25756c6f86397eb158e567f2d">&#9670;&#160;</a></span>SetEventData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.SetEventData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a>&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a>&#160;</td>
+          <td class="paramname"><em>onMapData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_cgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_cgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_cgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,88,287,147"/>
+<area shape="rect" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html#a703b6eabf9204e47bee2c3ba116741ef" title="セーブデータ用のイベントデータ返却" alt="" coords="335,88,564,147"/>
+<area shape="poly" title=" " alt="" coords="287,115,320,115,320,120,287,120"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ac9f4ad4a107fbe8a15db096315c3b20f" title="セーブ、コンティニュー用の、現在実行中のイベント種別取得" alt="" coords="615,5,839,64"/>
+<area shape="poly" title=" " alt="" coords="550,85,611,66,613,71,551,90"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a6b29b879966e16924d8deaf295e5c694" title="現在実行中のCommandIndex取得" alt="" coords="612,88,842,147"/>
+<area shape="poly" title=" " alt="" coords="565,115,597,115,597,120,565,120"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a851a78614947e421ef6cbe7b2ca5d83a" title="現在イベントが実行中かどうかを返却する" alt="" coords="612,171,842,229"/>
+<area shape="poly" title=" " alt="" coords="551,145,613,163,611,168,550,150"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_icgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_icgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_icgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a69e5b6f25756c6f86397eb158e567f2d_icgraph">
+<area shape="rect" title=" " alt="" coords="1987,5,2268,64"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#abb4e8c2f41d3abafc3f7a41b712a1f69" title=" " alt="" coords="1684,5,1939,64"/>
+<area shape="poly" title=" " alt="" coords="1972,37,1939,37,1939,32,1972,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#afa35060e6bf300ed4abee7884ae5b4e6" title="セーブデータ項目をクリックした際に呼び出すコールバック" alt="" coords="1373,13,1636,56"/>
+<area shape="poly" title=" " alt="" coords="1669,37,1637,37,1637,32,1669,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a3ade3cc9b5c2e918e944e906b9aa89fa" title="セーブデータ項目の作成" alt="" coords="1084,13,1325,56"/>
+<area shape="poly" title=" " alt="" coords="1358,37,1325,37,1325,32,1358,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#ae646bacc545c1db28ba997265ac6ba8f" title="セーブデータの配置" alt="" coords="771,13,1036,56"/>
+<area shape="poly" title=" " alt="" coords="1068,37,1036,37,1036,32,1068,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a2750d05aca07b04211daaa900c164d58" title=" " alt="" coords="520,13,723,56"/>
+<area shape="poly" title=" " alt="" coords="756,37,724,37,724,32,756,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a718c7dc01963e22713b0af685e67e28d" title="セーブ画面を開く。ロード可能なセーブデータが無い場合はブザーを鳴らす。" alt="" coords="269,13,472,56"/>
+<area shape="poly" title=" " alt="" coords="505,37,473,37,473,32,505,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a888d1cf5956bfdc0564890efcbdb0929" title="コンテニュー" alt="" coords="5,13,221,56"/>
+<area shape="poly" title=" " alt="" coords="254,37,221,37,221,32,254,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a645773c594f787831a4a857b0c5993d0" name="a645773c594f787831a4a857b0c5993d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a645773c594f787831a4a857b0c5993d0">&#9670;&#160;</a></span>SetMoveData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.SetMoveData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d39/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_event_on_map.html">EventOnMap</a>&#160;</td>
+          <td class="paramname"><em>character</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html">OnMapData</a>&#160;</td>
+          <td class="paramname"><em>onMapData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_cgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_cgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_cgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,285,64"/>
+<area shape="rect" href="../../d9/dcc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_move_set_move_point.html#a852fe2d20d8b6cbb82ca6ac4f325894c" title="セーブデータ用の移動データ取得" alt="" coords="333,5,571,64"/>
+<area shape="poly" title=" " alt="" coords="285,32,318,32,318,37,285,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_icgraph.png" border="0" usemap="#ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_icgraph" alt=""/></div>
+<map name="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_icgraph" id="ad3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01_a645773c594f787831a4a857b0c5993d0_icgraph">
+<area shape="rect" title=" " alt="" coords="1987,5,2266,64"/>
+<area shape="rect" href="../../d3/d96/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt6baaecd67e864d52b3e3fde9d4ca6c01.html#abb4e8c2f41d3abafc3f7a41b712a1f69" title=" " alt="" coords="1684,5,1939,64"/>
+<area shape="poly" title=" " alt="" coords="1972,37,1939,37,1939,32,1972,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#afa35060e6bf300ed4abee7884ae5b4e6" title="セーブデータ項目をクリックした際に呼び出すコールバック" alt="" coords="1373,13,1636,56"/>
+<area shape="poly" title=" " alt="" coords="1669,37,1637,37,1637,32,1669,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a3ade3cc9b5c2e918e944e906b9aa89fa" title="セーブデータ項目の作成" alt="" coords="1084,13,1325,56"/>
+<area shape="poly" title=" " alt="" coords="1358,37,1325,37,1325,32,1358,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#ae646bacc545c1db28ba997265ac6ba8f" title="セーブデータの配置" alt="" coords="771,13,1036,56"/>
+<area shape="poly" title=" " alt="" coords="1068,37,1036,37,1036,32,1068,32"/>
+<area shape="rect" href="../../dc/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_save_menu.html#a2750d05aca07b04211daaa900c164d58" title=" " alt="" coords="520,13,723,56"/>
+<area shape="poly" title=" " alt="" coords="756,37,724,37,724,32,756,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a718c7dc01963e22713b0af685e67e28d" title="セーブ画面を開く。ロード可能なセーブデータが無い場合はブザーを鳴らす。" alt="" coords="269,13,472,56"/>
+<area shape="poly" title=" " alt="" coords="505,37,473,37,473,32,505,32"/>
+<area shape="rect" href="../../df/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_title_1_1_title_controller.html#a888d1cf5956bfdc0564890efcbdb0929" title="コンテニュー" alt="" coords="5,13,221,56"/>
+<area shape="poly" title=" " alt="" coords="254,37,221,37,221,32,254,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ade5f8200a46fd5c20871933d2fe9f839" name="ade5f8200a46fd5c20871933d2fe9f839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5f8200a46fd5c20871933d2fe9f839">&#9670;&#160;</a></span>AssetId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.AssetId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaff36e45fcb0e1e151d01f61791bd74" name="afaff36e45fcb0e1e151d01f61791bd74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaff36e45fcb0e1e151d01f61791bd74">&#9670;&#160;</a></span>direction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.direction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a908fa280e5690103bbae9ed70f8fca95" name="a908fa280e5690103bbae9ed70f8fca95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a908fa280e5690103bbae9ed70f8fca95">&#9670;&#160;</a></span>eventData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/de1/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtd1ac8c7a13af84bf9d579ceb3511e869.html">RuntimeOnMapEventDataModel</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.eventData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b3b7af4e152c315eddcd432d7e4ad08" name="a9b3b7af4e152c315eddcd432d7e4ad08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3b7af4e152c315eddcd432d7e4ad08">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe483d01964213361837e3f41c77b32b" name="afe483d01964213361837e3f41c77b32b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe483d01964213361837e3f41c77b32b">&#9670;&#160;</a></span>isActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isActor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a32e47469718995fca8c83684b926870a" name="a32e47469718995fca8c83684b926870a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32e47469718995fca8c83684b926870a">&#9670;&#160;</a></span>isAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isAnimation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ef62d974f9722ef06919ff064772d22" name="a9ef62d974f9722ef06919ff064772d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef62d974f9722ef06919ff064772d22">&#9670;&#160;</a></span>isLockDirection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isLockDirection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ba9e1d4ea852728527f29314b92ef08" name="a5ba9e1d4ea852728527f29314b92ef08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba9e1d4ea852728527f29314b92ef08">&#9670;&#160;</a></span>isSteppingAnimation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isSteppingAnimation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab52470c5828cbef2f2da0e8627ae7f33" name="ab52470c5828cbef2f2da0e8627ae7f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52470c5828cbef2f2da0e8627ae7f33">&#9670;&#160;</a></span>isThrough</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isThrough</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54c802158c091e6ddc1766b2fde59f5c" name="a54c802158c091e6ddc1766b2fde59f5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54c802158c091e6ddc1766b2fde59f5c">&#9670;&#160;</a></span>isValid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.isValid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87a8f8b1046d1b08a80a153aa1440c01" name="a87a8f8b1046d1b08a80a153aa1440c01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a8f8b1046d1b08a80a153aa1440c01">&#9670;&#160;</a></span>lastMoveDirectionEnum</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#a1ff1a86c7a4b9a887c2998aefe6fac97">CharacterMoveDirectionEnum</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.lastMoveDirectionEnum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af038d8e99367a0f4b84c7303b21e4f9b" name="af038d8e99367a0f4b84c7303b21e4f9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af038d8e99367a0f4b84c7303b21e4f9b">&#9670;&#160;</a></span>moveData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/de0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt4d3cf0704f104076e59817254d03a9e4.html">RuntimeOnMapMoveDataModel</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.moveData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b3c7d24a186699505bd90ce8f177970" name="a5b3c7d24a186699505bd90ce8f177970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3c7d24a186699505bd90ce8f177970">&#9670;&#160;</a></span>opacity</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.opacity = 1f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51ef39fc100355a2a7ce7d0b3ddc427d" name="a51ef39fc100355a2a7ce7d0b3ddc427d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51ef39fc100355a2a7ce7d0b3ddc427d">&#9670;&#160;</a></span>x_next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.x_next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27eac2543ece5edf6ea892e33bb87ab1" name="a27eac2543ece5edf6ea892e33bb87ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27eac2543ece5edf6ea892e33bb87ab1">&#9670;&#160;</a></span>x_now</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.x_now</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ba8c9cd52a06b29ef92bc8070725fe8" name="a4ba8c9cd52a06b29ef92bc8070725fe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba8c9cd52a06b29ef92bc8070725fe8">&#9670;&#160;</a></span>y_next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.y_next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb61e42d836ec6e81bb8aac52cf4a485" name="afb61e42d836ec6e81bb8aac52cf4a485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb61e42d836ec6e81bb8aac52cf4a485">&#9670;&#160;</a></span>y_now</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeOnMapDataModel.OnMapData.y_now</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/CoreSystem/Knowledge/DataModel/Runtime/<a class="el" href="../../d4/d5f/_runtime_on_map_data_model_8cs.html">RuntimeOnMapDataModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

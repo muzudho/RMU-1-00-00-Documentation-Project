@@ -1,17 +1,107 @@
 <map id="RPGMaker.Codebase.Runtime.Map.MenuBase.MenuOpen" name="RPGMaker.Codebase.Runtime.Map.MenuBase.MenuOpen">
-<area shape="rect" id="Node000001" title="メニュー表示、非表示切り替え処理" alt="" coords="5,113,209,156"/>
-<area shape="rect" id="Node000002" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aeaee3de09388ebf0bd140c0e4c831d56" title="イベント実行中で、MAPやバトル側でキー操作を受け付け可能かどうかを返却する" alt="" coords="556,5,780,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,110,256,80,403,54,541,40,541,45,404,59,257,85,163,115"/>
-<area shape="rect" id="Node000003" href="$de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#adce58ef0480f995976ab60592c9add27" title="現在の状態を返却する." alt="" coords="1138,72,1371,131"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="209,126,257,124,735,109,1123,101,1123,106,735,114,257,129,209,132"/>
-<area shape="rect" id="Node000004" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a72f349b3e4a807f238790e131e08b465" title="現在実行中のイベントを一時中断 メニュー表示やバトル表示など、別の画面へ遷移する際に利用" alt="" coords="257,139,481,197"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="210,145,242,149,241,154,209,150"/>
-<area shape="rect" id="Node000005" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="257,221,481,280"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="150,154,258,207,272,213,270,218,256,212,148,159"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="780,45,1090,80,1123,84,1122,89,1089,85,780,50"/>
-<area shape="rect" id="Node000006" href="$de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b" title="新しい状態を登録する." alt="" coords="529,208,806,251"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="481,240,514,238,514,243,481,245"/>
-<area shape="rect" id="Node000007" href="$d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="854,159,1090,217"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="806,208,839,203,840,209,807,213"/>
-<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="1069,156,1142,133,1143,138,1071,161"/>
+<area shape="rect" id="Node000001" title="メニュー表示、非表示切り替え処理" alt="" coords="5,379,209,421"/>
+<area shape="rect" id="Node000002" href="$d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a09c9b32db375ba2624e228c47fcbc64f" title="GameState切り替え処理" alt="" coords="539,127,765,169"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,377,129,331,158,271,200,212,226,186,255,164,287,149,320,137,390,123,459,119,524,123,524,128,459,125,390,128,322,142,289,154,258,169,229,190,204,215,162,274,134,333,117,379"/>
+<area shape="rect" id="Node000005" href="$de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#adce58ef0480f995976ab60592c9add27" title="現在の状態を返却する." alt="" coords="1458,127,1691,185"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="110,378,125,324,152,254,172,218,195,182,223,151,255,124,307,95,355,77,399,70,443,69,536,79,590,84,651,87,963,87,1187,88,1285,95,1410,112,1453,120,1452,125,1410,117,1285,101,1187,93,963,92,651,92,589,90,535,84,443,74,400,75,356,82,310,100,258,129,226,155,199,186,176,220,157,256,130,326,115,379"/>
+<area shape="rect" id="Node000007" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#aeaee3de09388ebf0bd140c0e4c831d56" title="イベント実行中で、MAPやバトル側でキー操作を受け付け可能かどうかを返却する" alt="" coords="540,391,764,449"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="191,419,257,431,326,436,395,437,525,431,526,436,396,442,325,441,256,436,190,425"/>
+<area shape="rect" id="Node000008" href="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a0204fc27cbe0a60a9450680ec9a4406b" title=" " alt="" coords="259,379,484,421"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="209,397,244,397,244,403,209,403"/>
+<area shape="rect" id="Node000010" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a72f349b3e4a807f238790e131e08b465" title="現在実行中のイベントを一時中断 メニュー表示やバトル表示など、別の画面へ遷移する際に利用" alt="" coords="259,296,484,355"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="185,375,251,357,252,362,186,381"/>
+<area shape="rect" id="Node000011" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#ac7b8d39ef1c764cd1c8ce2931d7dfd11" title=" " alt="" coords="266,496,477,539"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="148,420,258,475,290,488,288,493,256,480,145,424"/>
+<area shape="rect" id="Node000019" href="$db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="540,193,764,252"/>
+<area shape="poly" id="edge22_Node000001_Node000019" title=" " alt="" coords="127,376,182,327,217,302,256,282,304,267,372,253,525,233,526,238,373,259,306,272,258,286,220,307,185,332,130,380"/>
+<area shape="rect" id="Node000020" href="$d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#afd14042ed347759133ad2856e206aea4" title="イベントに復帰する" alt="" coords="270,179,473,221"/>
+<area shape="poly" id="edge24_Node000001_Node000020" title=" " alt="" coords="121,377,175,309,213,271,255,238,278,225,280,230,258,242,216,275,179,312,125,380"/>
+<area shape="rect" id="Node000021" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#aca0898033e6c728c94d26ad955dc4968" title=" " alt="" coords="270,563,473,605"/>
+<area shape="poly" id="edge26_Node000001_Node000021" title=" " alt="" coords="126,420,180,484,217,519,258,548,268,554,265,558,255,553,214,523,176,488,122,424"/>
+<area shape="rect" id="Node000022" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a0618a93ba58b7dbf31684f62cf69a8dd" title=" " alt="" coords="264,629,479,672"/>
+<area shape="poly" id="edge27_Node000001_Node000022" title=" " alt="" coords="120,421,139,462,169,515,209,569,233,594,258,615,265,620,262,624,255,619,229,598,205,573,165,518,134,465,115,423"/>
+<area shape="rect" id="Node000023" href="$d7/d96/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_1_1_main_menu.html#a6cae78af97a831d84a3fd20a469459ba" title="メニュー更新" alt="" coords="257,700,486,743"/>
+<area shape="poly" id="edge28_Node000001_Node000023" title=" " alt="" coords="116,421,132,474,160,544,202,618,228,652,258,682,270,690,266,694,255,686,224,656,198,621,156,546,127,476,111,422"/>
+<area shape="rect" id="Node000003" href="$de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b" title="新しい状態を登録する." alt="" coords="823,168,1100,211"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="766,161,808,166,808,171,766,166"/>
+<area shape="rect" id="Node000004" href="$d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="1164,127,1399,185"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1100,172,1148,167,1149,172,1101,178"/>
+<area shape="rect" id="Node000006" href="$de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a90d4308ec6a2f804e3d7b7fd7892b46e" title=" " alt="" coords="1156,209,1407,252"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1101,205,1142,210,1141,215,1100,210"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1400,153,1443,153,1443,159,1400,159"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="751,388,769,377,783,361,791,344,800,327,817,312,859,292,899,277,937,267,973,262,1041,263,1108,271,1174,282,1245,288,1322,283,1364,275,1409,261,1441,248,1473,230,1527,192,1530,197,1475,235,1444,253,1411,267,1365,280,1323,288,1245,293,1174,287,1107,276,1041,268,973,268,938,273,901,282,861,296,820,317,804,331,796,346,788,364,772,381,753,392"/>
+<area shape="rect" id="Node000009" href="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a0c1997bb9d5c1a42d2d66f4115ec43bf" title="移動状態の取得" alt="" coords="534,308,770,367"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="469,375,519,364,520,370,471,381"/>
+<area shape="rect" id="Node000012" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#afeb381d3d8889091583df950cc926c62" title=" " alt="" coords="547,497,758,540"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="477,515,531,515,531,521,477,521"/>
+<area shape="poly" id="edge14_Node000012_Node000012" title=" " alt="" coords="599,497,597,487,606,478,624,473,652,471,683,473,701,480,699,485,682,478,652,476,625,478,609,483,602,489,605,496"/>
+<area shape="rect" id="Node000013" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a7228afa99df4d81a360c14edb0d411f8" title=" " alt="" coords="834,500,1089,543"/>
+<area shape="poly" id="edge15_Node000012_Node000013" title=" " alt="" coords="758,517,820,517,819,523,758,522"/>
+<area shape="rect" id="Node000014" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#ac75b7dca570d7fd62b1664eb0fef3307" title=" " alt="" coords="845,567,1078,609"/>
+<area shape="poly" id="edge16_Node000012_Node000014" title=" " alt="" coords="751,538,850,560,849,565,750,543"/>
+<area shape="rect" id="Node000016" href="$d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="827,327,1096,385"/>
+<area shape="poly" id="edge18_Node000012_Node000016" title=" " alt="" coords="710,494,740,479,769,459,783,443,791,427,800,411,817,395,824,391,827,395,820,399,804,414,796,430,787,446,772,463,743,483,713,499"/>
+<area shape="rect" id="Node000017" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a8c0191bb79baa4d8c4eb38ee21540139" title=" " alt="" coords="836,433,1087,476"/>
+<area shape="poly" id="edge19_Node000012_Node000017" title=" " alt="" coords="758,494,840,477,841,482,759,499"/>
+<area shape="rect" id="Node000015" href="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#aae0e1f5a36b0bc87012e6f9324d5dfef" title=" " alt="" coords="1159,567,1404,609"/>
+<area shape="poly" id="edge17_Node000014_Node000015" title=" " alt="" coords="1079,585,1144,585,1144,591,1079,591"/>
+<area shape="poly" id="edge21_Node000017_Node000017" title=" " alt="" coords="904,433,901,423,911,414,931,409,962,407,996,409,1015,416,1014,421,995,415,961,412,932,414,914,419,906,425,909,432"/>
+<area shape="rect" id="Node000018" href="$d8/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_addressable_manager_1_1_load.html#a31f36cbb565794e2193951b24a8ef831" title=" " alt="" coords="1153,425,1410,484"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1088,452,1138,452,1138,457,1088,457"/>
+<area shape="poly" id="edge23_Node000019_Node000003" title=" " alt="" coords="764,208,807,203,808,209,765,213"/>
+<area shape="poly" id="edge25_Node000020_Node000019" title=" " alt="" coords="474,206,525,210,525,215,473,211"/>
+<area shape="rect" id="Node000024" href="$d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a8fa566df21c304a9028269d880911028" title=" " alt="" coords="551,707,754,749"/>
+<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="487,721,535,723,535,728,487,727"/>
+<area shape="rect" id="Node000025" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa008ccb1bfddc97c2c6618cfe1fe9ab9" title=" " alt="" coords="834,700,1089,759"/>
+<area shape="poly" id="edge30_Node000024_Node000025" title=" " alt="" coords="754,726,819,726,819,731,754,731"/>
+<area shape="rect" id="Node000026" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#acdc0251471c3db50b36db22a1f9b9d83" title=" " alt="" coords="818,783,1105,825"/>
+<area shape="poly" id="edge31_Node000024_Node000026" title=" " alt="" coords="737,747,819,768,852,776,851,781,818,773,736,753"/>
+<area shape="rect" id="Node000027" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="860,633,1063,676"/>
+<area shape="poly" id="edge32_Node000024_Node000027" title=" " alt="" coords="743,703,818,685,852,677,853,683,819,691,744,709"/>
+<area shape="rect" id="Node000028" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1180,633,1383,676"/>
+<area shape="poly" id="edge33_Node000027_Node000028" title=" " alt="" coords="1064,652,1165,652,1165,657,1064,657"/>
+<area shape="rect" id="Node000029" href="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1468,633,1681,676"/>
+<area shape="poly" id="edge34_Node000028_Node000029" title=" " alt="" coords="1384,652,1453,652,1453,657,1384,657"/>
+<area shape="rect" id="Node000030" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="1756,5,2013,64"/>
+<area shape="poly" id="edge35_Node000029_Node000030" title=" " alt="" coords="1579,632,1660,323,1707,157,1725,101,1737,74,1742,70,1746,73,1742,78,1730,103,1712,158,1665,324,1584,634"/>
+<area shape="rect" id="Node000032" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="1756,88,2013,147"/>
+<area shape="poly" id="edge37_Node000029_Node000032" title=" " alt="" coords="1574,633,1580,546,1589,485,1603,418,1624,348,1652,278,1690,214,1737,157,1742,152,1746,156,1741,161,1694,217,1657,281,1629,349,1608,419,1594,486,1586,546,1579,633"/>
+<area shape="rect" id="Node000034" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="1756,171,2013,229"/>
+<area shape="poly" id="edge39_Node000029_Node000034" title=" " alt="" coords="1575,633,1587,558,1613,452,1634,395,1662,338,1696,285,1737,239,1742,236,1745,240,1741,243,1700,289,1666,341,1639,397,1618,454,1592,559,1581,633"/>
+<area shape="rect" id="Node000036" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="1739,253,2030,312"/>
+<area shape="poly" id="edge41_Node000029_Node000036" title=" " alt="" coords="1578,632,1594,571,1624,487,1645,442,1671,398,1702,358,1738,322,1742,318,1745,323,1741,326,1706,361,1676,401,1650,445,1629,489,1599,572,1583,633"/>
+<area shape="rect" id="Node000038" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="1746,336,2023,395"/>
+<area shape="poly" id="edge43_Node000029_Node000038" title=" " alt="" coords="1582,632,1602,585,1636,523,1681,459,1708,430,1738,405,1744,400,1747,405,1741,409,1711,434,1685,463,1640,526,1607,587,1587,634"/>
+<area shape="rect" id="Node000040" href="$db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="1750,419,2019,477"/>
+<area shape="poly" id="edge45_Node000029_Node000040" title=" " alt="" coords="1589,631,1649,560,1691,521,1738,487,1747,482,1750,487,1741,492,1694,525,1653,564,1594,635"/>
+<area shape="rect" id="Node000042" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="1756,501,2013,560"/>
+<area shape="poly" id="edge46_Node000029_Node000042" title=" " alt="" coords="1613,630,1671,600,1738,570,1756,563,1758,568,1740,574,1673,605,1615,635"/>
+<area shape="rect" id="Node000044" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="1756,584,2013,643"/>
+<area shape="poly" id="edge47_Node000029_Node000044" title=" " alt="" coords="1681,638,1742,630,1742,635,1682,643"/>
+<area shape="rect" id="Node000048" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="1756,667,2013,725"/>
+<area shape="poly" id="edge48_Node000029_Node000048" title=" " alt="" coords="1682,666,1742,674,1742,680,1681,672"/>
+<area shape="rect" id="Node000050" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="1756,749,2013,808"/>
+<area shape="poly" id="edge49_Node000029_Node000050" title=" " alt="" coords="1615,674,1673,705,1740,735,1758,742,1756,747,1738,740,1671,710,1613,679"/>
+<area shape="rect" id="Node000052" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a2fa87c0d4f1431414d67e4943a14ae56" title=" " alt="" coords="1756,832,2013,891"/>
+<area shape="poly" id="edge50_Node000029_Node000052" title=" " alt="" coords="1594,675,1653,745,1694,784,1741,818,1750,823,1747,827,1738,822,1691,788,1649,749,1589,678"/>
+<area shape="rect" id="Node000054" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ab14ced87348b79b244d7a5d975e80d25" title=" " alt="" coords="1756,915,2013,973"/>
+<area shape="poly" id="edge51_Node000029_Node000054" title=" " alt="" coords="1587,675,1607,722,1640,783,1685,847,1711,875,1741,901,1747,905,1744,909,1738,905,1708,879,1681,850,1636,786,1602,725,1582,677"/>
+<area shape="rect" id="Node000057" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a3f54f10563c3611839ddd3dfa5b65c13" title=" " alt="" coords="1756,997,2013,1056"/>
+<area shape="poly" id="edge52_Node000029_Node000057" title=" " alt="" coords="1583,676,1599,737,1629,820,1650,865,1676,908,1706,948,1741,983,1745,987,1742,991,1738,987,1702,952,1671,911,1645,867,1624,822,1594,739,1578,677"/>
+<area shape="rect" id="Node000059" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ad73cc18191cf3d29c31d27f90e712965" title=" " alt="" coords="1742,1080,2027,1139"/>
+<area shape="poly" id="edge53_Node000029_Node000059" title=" " alt="" coords="1581,676,1592,750,1618,856,1639,913,1666,969,1700,1021,1741,1066,1745,1069,1741,1073,1737,1070,1696,1024,1662,971,1634,915,1613,857,1587,751,1575,677"/>
+<area shape="rect" id="Node000061" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a14b53a047484b6c81f8e570ff47134af" title=" " alt="" coords="1756,1163,2013,1221"/>
+<area shape="poly" id="edge54_Node000029_Node000061" title=" " alt="" coords="1579,676,1586,763,1594,824,1608,890,1629,960,1657,1029,1694,1093,1741,1149,1746,1153,1742,1157,1737,1153,1690,1096,1652,1031,1624,962,1603,892,1589,824,1580,764,1574,676"/>
+<area shape="rect" id="Node000063" href="$db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a293b136d822c9c73495b354502306eb1" title=" " alt="" coords="1756,1245,2013,1304"/>
+<area shape="poly" id="edge55_Node000029_Node000063" title=" " alt="" coords="1578,676,1580,776,1586,846,1598,925,1618,1007,1647,1088,1688,1165,1713,1200,1741,1231,1746,1236,1742,1240,1737,1235,1709,1203,1683,1168,1643,1090,1613,1008,1593,926,1581,847,1575,776,1573,676"/>
+<area shape="rect" id="Node000031" href="$d5/deb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_animation_repository.html#a57c3d4731e6bfd18e15070a940e881f4" title=" " alt="" coords="2078,5,2345,64"/>
+<area shape="poly" id="edge36_Node000030_Node000031" title=" " alt="" coords="2013,32,2063,32,2063,37,2013,37"/>
+<area shape="rect" id="Node000033" href="$d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html#abae8269b1a2721fce734183fcc5f5205" title=" " alt="" coords="2078,88,2345,147"/>
+<area shape="poly" id="edge38_Node000032_Node000033" title=" " alt="" coords="2013,115,2063,115,2063,120,2013,120"/>
+<area shape="rect" id="Node000035" href="$dc/d27/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor67544213d6af3013901ca89c3e4d5d21.html#a922f2ea3a0cd4543a7df7c51ed065242" title=" " alt="" coords="2078,171,2345,229"/>
+<area shape="poly" id="edge40_Node000034_Node000035" title=" " alt="" coords="2013,197,2063,197,2063,203,2013,203"/>
+<area shape="rect" id="Node000037" href="$d5/df3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_class_repository.html#a68866c3982e5015e3aa1d0ff8b0e5767" title=" " alt="" coords="2078,253,2345,312"/>
+<area shape="poly" id="edge42_Node000036_Node000037" title=" " alt="" coords="2030,280,2063,280,2063,285,2030,285"/>
+<area shape="rect" id="Node000039" href="$dc/dcd/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_vehicle_repository.html#a15d84b4ebddf2ff353260ef2473589e6" title=" " alt="" coords="2078,336,2345,395"/>
+<area shape="poly" id="edge44_Node000038_Node000039" title=" " alt="" coords="2023,363,2063,363,2063,368,2023,368"/>
 </map>

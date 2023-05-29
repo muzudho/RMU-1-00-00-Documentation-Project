@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.ResolutionManager クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html">ResolutionManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../d1/d7f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.ResolutionManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>解像度管理機  
+ <a href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.ResolutionManager の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_inherit__map">
+<area shape="rect" title="解像度管理機" alt="" coords="163,39,366,81"/>
+<area shape="rect" href="../../d9/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_camera_resolution_manager.html" title="カメラ解像度管理機" alt="" coords="414,5,647,48"/>
+<area shape="poly" title=" " alt="" coords="380,43,413,39,414,44,381,48"/>
+<area shape="rect" href="../../d1/d74/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_canvas_resolution_manager.html" title="キャンバス解像度管理機" alt="" coords="416,72,646,115"/>
+<area shape="poly" title=" " alt="" coords="381,72,415,76,415,82,380,77"/>
+<area shape="rect" title=" " alt="" coords="5,47,115,73"/>
+<area shape="poly" title=" " alt="" coords="129,57,162,57,162,63,129,63"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.ResolutionManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d97/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_resolution_manager_coll__map">
+<area shape="rect" title="解像度管理機" alt="" coords="5,80,209,123"/>
+<area shape="rect" title=" " alt="" coords="52,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7146c393b86c2e74e9eb2d95d0d3c433"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a7146c393b86c2e74e9eb2d95d0d3c433">UpdateResolution</a> ()</td></tr>
+<tr class="separator:a7146c393b86c2e74e9eb2d95d0d3c433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a30a1c6dc1e9c13e6463536dccb7d18ba"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a30a1c6dc1e9c13e6463536dccb7d18ba">RESOLUTION_RATIO_WIDTH</a> = 16</td></tr>
+<tr class="separator:a30a1c6dc1e9c13e6463536dccb7d18ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe2c91ca09fb5b32ffe4f31e948ff80"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a8fe2c91ca09fb5b32ffe4f31e948ff80">RESOLUTION_RATIO_HEIGHT</a> = 9</td></tr>
+<tr class="separator:a8fe2c91ca09fb5b32ffe4f31e948ff80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03aad3bb59b8bad7e2e415a0dadc833e"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a03aad3bb59b8bad7e2e415a0dadc833e">RESOLUTION_WIDTH</a> = 1920</td></tr>
+<tr class="separator:a03aad3bb59b8bad7e2e415a0dadc833e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38896e8cac563a60ac4eee7a535988b0"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a38896e8cac563a60ac4eee7a535988b0">RESOLUTION_HEIGHT</a> = 1080</td></tr>
+<tr class="separator:a38896e8cac563a60ac4eee7a535988b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb15f3d7b767b81f43ee4c969d1d80a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a7cb15f3d7b767b81f43ee4c969d1d80a">_screenHeight</a> = 0</td></tr>
+<tr class="separator:a7cb15f3d7b767b81f43ee4c969d1d80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e013d5c55b22449d9cce621d107b2ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a4e013d5c55b22449d9cce621d107b2ff">_screenWidth</a> = 0</td></tr>
+<tr class="separator:a4e013d5c55b22449d9cce621d107b2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8931fce173a6b956614726882ee4a639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a8931fce173a6b956614726882ee4a639">Start</a> ()</td></tr>
+<tr class="separator:a8931fce173a6b956614726882ee4a639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbdeda7d0c69fa0211eb65e2cc1b9fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#afdbdeda7d0c69fa0211eb65e2cc1b9fc">Update</a> ()</td></tr>
+<tr class="separator:afdbdeda7d0c69fa0211eb65e2cc1b9fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>解像度管理機 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a8931fce173a6b956614726882ee4a639" name="a8931fce173a6b956614726882ee4a639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8931fce173a6b956614726882ee4a639">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.ResolutionManager.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a8931fce173a6b956614726882ee4a639_cgraph.png" border="0" usemap="#ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a8931fce173a6b956614726882ee4a639_cgraph" alt=""/></div>
+<map name="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a8931fce173a6b956614726882ee4a639_cgraph" id="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a8931fce173a6b956614726882ee4a639_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,226,56"/>
+<area shape="rect" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a7146c393b86c2e74e9eb2d95d0d3c433" title=" " alt="" coords="274,5,507,64"/>
+<area shape="poly" title=" " alt="" coords="226,32,259,32,259,37,226,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afdbdeda7d0c69fa0211eb65e2cc1b9fc" name="afdbdeda7d0c69fa0211eb65e2cc1b9fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdbdeda7d0c69fa0211eb65e2cc1b9fc">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.ResolutionManager.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_afdbdeda7d0c69fa0211eb65e2cc1b9fc_cgraph.png" border="0" usemap="#ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_afdbdeda7d0c69fa0211eb65e2cc1b9fc_cgraph" alt=""/></div>
+<map name="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_afdbdeda7d0c69fa0211eb65e2cc1b9fc_cgraph" id="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_afdbdeda7d0c69fa0211eb65e2cc1b9fc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,239,56"/>
+<area shape="rect" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a7146c393b86c2e74e9eb2d95d0d3c433" title=" " alt="" coords="287,5,520,64"/>
+<area shape="poly" title=" " alt="" coords="239,32,272,32,272,37,239,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7146c393b86c2e74e9eb2d95d0d3c433" name="a7146c393b86c2e74e9eb2d95d0d3c433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7146c393b86c2e74e9eb2d95d0d3c433">&#9670;&#160;</a></span>UpdateResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Common.ResolutionManager.UpdateResolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d9/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_camera_resolution_manager.html#aed3ff1c47686a285c675be48365c8451">RPGMaker.Codebase.Runtime.Common.CameraResolutionManager</a>, <a class="el" href="../../d1/d74/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_canvas_resolution_manager.html#a05979b74e9fe2343d091a4a48367e69f">RPGMaker.Codebase.Runtime.Common.CanvasResolutionManager</a>で再実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a7146c393b86c2e74e9eb2d95d0d3c433_icgraph.png" border="0" usemap="#ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a7146c393b86c2e74e9eb2d95d0d3c433_icgraph" alt=""/></div>
+<map name="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a7146c393b86c2e74e9eb2d95d0d3c433_icgraph" id="ad0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager_a7146c393b86c2e74e9eb2d95d0d3c433_icgraph">
+<area shape="rect" title=" " alt="" coords="287,31,520,89"/>
+<area shape="rect" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#a8931fce173a6b956614726882ee4a639" title=" " alt="" coords="12,5,232,48"/>
+<area shape="poly" title=" " alt="" coords="272,47,232,42,233,37,272,42"/>
+<area shape="rect" href="../../d0/d1e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_resolution_manager.html#afdbdeda7d0c69fa0211eb65e2cc1b9fc" title=" " alt="" coords="5,72,239,115"/>
+<area shape="poly" title=" " alt="" coords="272,78,239,82,239,77,272,73"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a7cb15f3d7b767b81f43ee4c969d1d80a" name="a7cb15f3d7b767b81f43ee4c969d1d80a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cb15f3d7b767b81f43ee4c969d1d80a">&#9670;&#160;</a></span>_screenHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.ResolutionManager._screenHeight = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e013d5c55b22449d9cce621d107b2ff" name="a4e013d5c55b22449d9cce621d107b2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e013d5c55b22449d9cce621d107b2ff">&#9670;&#160;</a></span>_screenWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.ResolutionManager._screenWidth = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38896e8cac563a60ac4eee7a535988b0" name="a38896e8cac563a60ac4eee7a535988b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38896e8cac563a60ac4eee7a535988b0">&#9670;&#160;</a></span>RESOLUTION_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int RPGMaker.Codebase.Runtime.Common.ResolutionManager.RESOLUTION_HEIGHT = 1080</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fe2c91ca09fb5b32ffe4f31e948ff80" name="a8fe2c91ca09fb5b32ffe4f31e948ff80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe2c91ca09fb5b32ffe4f31e948ff80">&#9670;&#160;</a></span>RESOLUTION_RATIO_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int RPGMaker.Codebase.Runtime.Common.ResolutionManager.RESOLUTION_RATIO_HEIGHT = 9</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30a1c6dc1e9c13e6463536dccb7d18ba" name="a30a1c6dc1e9c13e6463536dccb7d18ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a1c6dc1e9c13e6463536dccb7d18ba">&#9670;&#160;</a></span>RESOLUTION_RATIO_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int RPGMaker.Codebase.Runtime.Common.ResolutionManager.RESOLUTION_RATIO_WIDTH = 16</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03aad3bb59b8bad7e2e415a0dadc833e" name="a03aad3bb59b8bad7e2e415a0dadc833e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03aad3bb59b8bad7e2e415a0dadc833e">&#9670;&#160;</a></span>RESOLUTION_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly int RPGMaker.Codebase.Runtime.Common.ResolutionManager.RESOLUTION_WIDTH = 1920</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Common/<a class="el" href="../../d8/d57/_resolution_manager_8cs.html">ResolutionManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

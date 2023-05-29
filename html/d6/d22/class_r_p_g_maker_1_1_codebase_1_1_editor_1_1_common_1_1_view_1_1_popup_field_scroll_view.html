@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d8/d5b/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view.html">View</a></li><li class="navelem"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html">PopupFieldScrollView</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d8/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dee/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,241,123"/>
+<area shape="rect" title=" " alt="" coords="48,5,198,32"/>
+<area shape="poly" title=" " alt="" coords="126,47,126,80,120,80,120,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d5d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_view_8_popup_field_scroll_view_coll__map">
+<area shape="rect" title=" " alt="" coords="542,56,778,99"/>
+<area shape="rect" title=" " alt="" coords="216,5,365,32"/>
+<area shape="poly" title=" " alt="" coords="380,30,542,56,541,61,379,35"/>
+<area shape="rect" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html" title="UIElementsのTextFieldを、IMGUIのUIをIMGUIContainerで内包したVisualElementに差し替えるためのクラス。" alt="" coords="196,56,385,99"/>
+<area shape="poly" title=" " alt="" coords="400,75,542,75,542,80,400,80"/>
+<area shape="rect" title=" " alt="" coords="23,35,129,61"/>
+<area shape="poly" title=" " alt="" coords="144,54,196,62,195,67,143,60"/>
+<area shape="rect" title=" " alt="" coords="5,85,147,128"/>
+<area shape="poly" title=" " alt="" coords="161,92,195,88,196,93,161,98"/>
+<area shape="rect" title=" " alt="" coords="234,123,348,149"/>
+<area shape="poly" title=" " alt="" coords="363,122,541,93,542,99,363,127"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5a75a08474b0a050ebb1f076d6a89633"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a5a75a08474b0a050ebb1f076d6a89633">PopupFieldScrollView</a> (List&lt; string &gt; lists, int defaultSelect, List&lt; string &gt; noItemList=null)</td></tr>
+<tr class="separator:a5a75a08474b0a050ebb1f076d6a89633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbe7825012c2cf5a7d2b6437c32d07c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a7dbe7825012c2cf5a7d2b6437c32d07c">OnGUI</a> (Rect rect)</td></tr>
+<tr class="separator:a7dbe7825012c2cf5a7d2b6437c32d07c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71cbce583f7765ea4c6459deabc46d32"><td class="memItemLeft" align="right" valign="top">override Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a71cbce583f7765ea4c6459deabc46d32">GetWindowSize</a> ()</td></tr>
+<tr class="separator:a71cbce583f7765ea4c6459deabc46d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876d56a97a18704cbe21cfee4dbcb0bb"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a876d56a97a18704cbe21cfee4dbcb0bb">OnOpen</a> ()</td></tr>
+<tr class="separator:a876d56a97a18704cbe21cfee4dbcb0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75385598a316e8372080986b1ab119f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a75385598a316e8372080986b1ab119f1">NoSelectNameList</a> (List&lt; string &gt; lists)</td></tr>
+<tr class="separator:a75385598a316e8372080986b1ab119f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a35e5fe42d2a3d45e4afb0a32c7228df6"><td class="memItemLeft" align="right" valign="top">Action&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a35e5fe42d2a3d45e4afb0a32c7228df6">OnSelectChanged</a></td></tr>
+<tr class="separator:a35e5fe42d2a3d45e4afb0a32c7228df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:abce730ccc7fdf619e592d3199d9313ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#abce730ccc7fdf619e592d3199d9313ac">Load</a> (List&lt; string &gt; lists)</td></tr>
+<tr class="separator:abce730ccc7fdf619e592d3199d9313ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d4c8b1bd9d688ecac719d90239574f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a15d4c8b1bd9d688ecac719d90239574f">CreateTextField</a> (VisualElement content)</td></tr>
+<tr class="separator:a15d4c8b1bd9d688ecac719d90239574f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26d1737bda6398beb066d75e5ec579d"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af26d1737bda6398beb066d75e5ec579d">CreateListView</a> ()</td></tr>
+<tr class="separator:af26d1737bda6398beb066d75e5ec579d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af738b9ebf5b8b022d9f9810861cd1fa8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af738b9ebf5b8b022d9f9810861cd1fa8">CreateList</a> (ScrollView scrollView)</td></tr>
+<tr class="separator:af738b9ebf5b8b022d9f9810861cd1fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a0901e0c2c3d1b57676795d304673b81f"><td class="memItemLeft" align="right" valign="top">readonly List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a0901e0c2c3d1b57676795d304673b81f">_itemList</a> = new List&lt;string&gt;()</td></tr>
+<tr class="separator:a0901e0c2c3d1b57676795d304673b81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a683197efd0546db45e2dbfa625084207"><td class="memItemLeft" align="right" valign="top">readonly string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a683197efd0546db45e2dbfa625084207">_items</a></td></tr>
+<tr class="separator:a683197efd0546db45e2dbfa625084207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cde807d60f1026bef63a3f2f7a0059"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a17cde807d60f1026bef63a3f2f7a0059">_width</a></td></tr>
+<tr class="separator:a17cde807d60f1026bef63a3f2f7a0059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5aba6f254d5054ae4e51fab25d0d837"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#aa5aba6f254d5054ae4e51fab25d0d837">_height</a></td></tr>
+<tr class="separator:aa5aba6f254d5054ae4e51fab25d0d837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a582f1c694b9620a6de764d88119df671"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a582f1c694b9620a6de764d88119df671">_noItemList</a></td></tr>
+<tr class="separator:a582f1c694b9620a6de764d88119df671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f852080e322983607b119f289b12d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a84f852080e322983607b119f289b12d6">_textField</a></td></tr>
+<tr class="separator:a84f852080e322983607b119f289b12d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc18e8775eea75057637a3e0c5df6cdf"><td class="memItemLeft" align="right" valign="top">ScrollView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#afc18e8775eea75057637a3e0c5df6cdf">_scrollView</a></td></tr>
+<tr class="separator:afc18e8775eea75057637a3e0c5df6cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6d5ba3b32e5fd1b79c153b01643947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a6f6d5ba3b32e5fd1b79c153b01643947">_defaultSelect</a></td></tr>
+<tr class="separator:a6f6d5ba3b32e5fd1b79c153b01643947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06547b381b2a5f039d8ebd24e88f91dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a06547b381b2a5f039d8ebd24e88f91dd">_isInitialize</a></td></tr>
+<tr class="separator:a06547b381b2a5f039d8ebd24e88f91dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:afa82c8a40b9657f474c7b1f3d82d1273"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#afa82c8a40b9657f474c7b1f3d82d1273">UssDarkPath</a> = &quot;Assets/RPGMaker/Codebase/Editor/Hierarchy/<a class="el" href="../../d1/d6e/_switch_edit_inspector_element_8cs.html#a9251f2cd78c797507f084a6722e7b835">Region</a>/Base/Asset/hierarchyDark.uss&quot;</td></tr>
+<tr class="separator:afa82c8a40b9657f474c7b1f3d82d1273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd367c77a910d8d01bfc4d80998f10fd"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#afd367c77a910d8d01bfc4d80998f10fd">UssLightPath</a> = &quot;Assets/RPGMaker/Codebase/Editor/Hierarchy/<a class="el" href="../../d1/d6e/_switch_edit_inspector_element_8cs.html#a9251f2cd78c797507f084a6722e7b835">Region</a>/Base/Asset/hierarchyLight.uss&quot;</td></tr>
+<tr class="separator:afd367c77a910d8d01bfc4d80998f10fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac63828dbfc86d2a2f86645262b91dc7c"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#ac63828dbfc86d2a2f86645262b91dc7c">SEARCH_HEIGHT</a> = 20f</td></tr>
+<tr class="separator:ac63828dbfc86d2a2f86645262b91dc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61575e01b99020c62a13f19e7d82eb75"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a61575e01b99020c62a13f19e7d82eb75">BUTTON_HEIGHT</a> = 22f</td></tr>
+<tr class="separator:a61575e01b99020c62a13f19e7d82eb75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa757ace359b6cae1278a01a865f21933"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#aa757ace359b6cae1278a01a865f21933">WINDOW_WIDTH</a> = 200f</td></tr>
+<tr class="separator:aa757ace359b6cae1278a01a865f21933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19bee615dfedd519b2bed2fe083ddc86"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a19bee615dfedd519b2bed2fe083ddc86">WINDOW_MAX_HEIGHT</a> = 500f</td></tr>
+<tr class="separator:a19bee615dfedd519b2bed2fe083ddc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f15a1803c7257ec17c7428ded89f9b2"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a9f15a1803c7257ec17c7428ded89f9b2">SCROLLBAR_WIDTH</a> = 18f</td></tr>
+<tr class="separator:a9f15a1803c7257ec17c7428ded89f9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a5a75a08474b0a050ebb1f076d6a89633" name="a5a75a08474b0a050ebb1f076d6a89633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a75a08474b0a050ebb1f076d6a89633">&#9670;&#160;</a></span>PopupFieldScrollView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.PopupFieldScrollView </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>lists</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>defaultSelect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>noItemList</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a5a75a08474b0a050ebb1f076d6a89633_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a5a75a08474b0a050ebb1f076d6a89633_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a5a75a08474b0a050ebb1f076d6a89633_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a5a75a08474b0a050ebb1f076d6a89633_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#abce730ccc7fdf619e592d3199d9313ac" title=" " alt="" coords="293,13,560,56"/>
+<area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="af738b9ebf5b8b022d9f9810861cd1fa8" name="af738b9ebf5b8b022d9f9810861cd1fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af738b9ebf5b8b022d9f9810861cd1fa8">&#9670;&#160;</a></span>CreateList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.CreateList </td>
+          <td>(</td>
+          <td class="paramtype">ScrollView&#160;</td>
+          <td class="paramname"><em>scrollView</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af738b9ebf5b8b022d9f9810861cd1fa8_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af738b9ebf5b8b022d9f9810861cd1fa8_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af738b9ebf5b8b022d9f9810861cd1fa8_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af738b9ebf5b8b022d9f9810861cd1fa8_icgraph">
+<area shape="rect" title=" " alt="" coords="867,47,1107,105"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af26d1737bda6398beb066d75e5ec579d" title=" " alt="" coords="580,5,819,64"/>
+<area shape="poly" title=" " alt="" coords="852,59,820,55,820,49,853,54"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a15d4c8b1bd9d688ecac719d90239574f" title=" " alt="" coords="580,88,819,147"/>
+<area shape="poly" title=" " alt="" coords="853,98,820,103,820,97,852,93"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a876d56a97a18704cbe21cfee4dbcb0bb" title=" " alt="" coords="293,47,532,105"/>
+<area shape="poly" title=" " alt="" coords="566,57,533,61,532,56,565,51"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a75385598a316e8372080986b1ab119f1" title=" " alt="" coords="5,47,245,105"/>
+<area shape="poly" title=" " alt="" coords="278,79,245,79,245,73,278,73"/>
+<area shape="poly" title=" " alt="" coords="565,101,532,96,533,91,566,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af26d1737bda6398beb066d75e5ec579d" name="af26d1737bda6398beb066d75e5ec579d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26d1737bda6398beb066d75e5ec579d">&#9670;&#160;</a></span>CreateListView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.CreateListView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af738b9ebf5b8b022d9f9810861cd1fa8" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_af26d1737bda6398beb066d75e5ec579d_icgraph">
+<area shape="rect" title=" " alt="" coords="580,5,819,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a876d56a97a18704cbe21cfee4dbcb0bb" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="565,37,533,37,533,32,565,32"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a75385598a316e8372080986b1ab119f1" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15d4c8b1bd9d688ecac719d90239574f" name="a15d4c8b1bd9d688ecac719d90239574f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d4c8b1bd9d688ecac719d90239574f">&#9670;&#160;</a></span>CreateTextField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a> RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.CreateTextField </td>
+          <td>(</td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af738b9ebf5b8b022d9f9810861cd1fa8" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a15d4c8b1bd9d688ecac719d90239574f_icgraph">
+<area shape="rect" title=" " alt="" coords="580,5,819,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a876d56a97a18704cbe21cfee4dbcb0bb" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="565,37,533,37,533,32,565,32"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a75385598a316e8372080986b1ab119f1" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71cbce583f7765ea4c6459deabc46d32" name="a71cbce583f7765ea4c6459deabc46d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71cbce583f7765ea4c6459deabc46d32">&#9670;&#160;</a></span>GetWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override Vector2 RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.GetWindowSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a71cbce583f7765ea4c6459deabc46d32_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a71cbce583f7765ea4c6459deabc46d32_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a71cbce583f7765ea4c6459deabc46d32_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a71cbce583f7765ea4c6459deabc46d32_icgraph">
+<area shape="rect" title=" " alt="" coords="332,5,571,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a7dbe7825012c2cf5a7d2b6437c32d07c" title=" " alt="" coords="5,13,284,56"/>
+<area shape="poly" title=" " alt="" coords="316,37,284,37,284,32,316,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abce730ccc7fdf619e592d3199d9313ac" name="abce730ccc7fdf619e592d3199d9313ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce730ccc7fdf619e592d3199d9313ac">&#9670;&#160;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.Load </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>lists</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_abce730ccc7fdf619e592d3199d9313ac_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_abce730ccc7fdf619e592d3199d9313ac_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_abce730ccc7fdf619e592d3199d9313ac_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_abce730ccc7fdf619e592d3199d9313ac_icgraph">
+<area shape="rect" title=" " alt="" coords="293,13,560,56"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a5a75a08474b0a050ebb1f076d6a89633" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75385598a316e8372080986b1ab119f1" name="a75385598a316e8372080986b1ab119f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75385598a316e8372080986b1ab119f1">&#9670;&#160;</a></span>NoSelectNameList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.NoSelectNameList </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>lists</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a75385598a316e8372080986b1ab119f1_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a75385598a316e8372080986b1ab119f1_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a75385598a316e8372080986b1ab119f1_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a75385598a316e8372080986b1ab119f1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,245,105"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a876d56a97a18704cbe21cfee4dbcb0bb" title=" " alt="" coords="293,47,532,105"/>
+<area shape="poly" title=" " alt="" coords="245,73,278,73,278,79,245,79"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af26d1737bda6398beb066d75e5ec579d" title=" " alt="" coords="580,5,819,64"/>
+<area shape="poly" title=" " alt="" coords="532,56,565,51,565,57,533,61"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a15d4c8b1bd9d688ecac719d90239574f" title=" " alt="" coords="580,88,819,147"/>
+<area shape="poly" title=" " alt="" coords="533,91,565,95,565,101,532,96"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af738b9ebf5b8b022d9f9810861cd1fa8" title=" " alt="" coords="867,47,1107,105"/>
+<area shape="poly" title=" " alt="" coords="820,49,853,54,852,59,819,55"/>
+<area shape="poly" title=" " alt="" coords="819,97,852,93,853,98,820,103"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7dbe7825012c2cf5a7d2b6437c32d07c" name="a7dbe7825012c2cf5a7d2b6437c32d07c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbe7825012c2cf5a7d2b6437c32d07c">&#9670;&#160;</a></span>OnGUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.OnGUI </td>
+          <td>(</td>
+          <td class="paramtype">Rect&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a7dbe7825012c2cf5a7d2b6437c32d07c_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a7dbe7825012c2cf5a7d2b6437c32d07c_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a7dbe7825012c2cf5a7d2b6437c32d07c_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a7dbe7825012c2cf5a7d2b6437c32d07c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,284,56"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a71cbce583f7765ea4c6459deabc46d32" title=" " alt="" coords="332,5,571,64"/>
+<area shape="poly" title=" " alt="" coords="284,32,317,32,317,37,284,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a876d56a97a18704cbe21cfee4dbcb0bb" name="a876d56a97a18704cbe21cfee4dbcb0bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876d56a97a18704cbe21cfee4dbcb0bb">&#9670;&#160;</a></span>OnOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.OnOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_cgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_cgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_cgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,245,105"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af26d1737bda6398beb066d75e5ec579d" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="245,56,277,51,278,57,245,61"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a15d4c8b1bd9d688ecac719d90239574f" title=" " alt="" coords="293,88,532,147"/>
+<area shape="poly" title=" " alt="" coords="245,91,278,95,277,101,245,96"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#af738b9ebf5b8b022d9f9810861cd1fa8" title=" " alt="" coords="580,47,819,105"/>
+<area shape="poly" title=" " alt="" coords="533,49,565,54,565,59,532,55"/>
+<area shape="poly" title=" " alt="" coords="532,97,565,93,565,98,533,103"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_icgraph.png" border="0" usemap="#ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_icgraph" alt=""/></div>
+<map name="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_icgraph" id="ad6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view_a876d56a97a18704cbe21cfee4dbcb0bb_icgraph">
+<area shape="rect" title=" " alt="" coords="293,5,532,64"/>
+<area shape="rect" href="../../d6/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_scroll_view.html#a75385598a316e8372080986b1ab119f1" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6f6d5ba3b32e5fd1b79c153b01643947" name="a6f6d5ba3b32e5fd1b79c153b01643947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6d5ba3b32e5fd1b79c153b01643947">&#9670;&#160;</a></span>_defaultSelect</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._defaultSelect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5aba6f254d5054ae4e51fab25d0d837" name="aa5aba6f254d5054ae4e51fab25d0d837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5aba6f254d5054ae4e51fab25d0d837">&#9670;&#160;</a></span>_height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._height</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06547b381b2a5f039d8ebd24e88f91dd" name="a06547b381b2a5f039d8ebd24e88f91dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06547b381b2a5f039d8ebd24e88f91dd">&#9670;&#160;</a></span>_isInitialize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._isInitialize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0901e0c2c3d1b57676795d304673b81f" name="a0901e0c2c3d1b57676795d304673b81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0901e0c2c3d1b57676795d304673b81f">&#9670;&#160;</a></span>_itemList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;string&gt; RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._itemList = new List&lt;string&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a683197efd0546db45e2dbfa625084207" name="a683197efd0546db45e2dbfa625084207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a683197efd0546db45e2dbfa625084207">&#9670;&#160;</a></span>_items</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string [] RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._items</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a582f1c694b9620a6de764d88119df671" name="a582f1c694b9620a6de764d88119df671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a582f1c694b9620a6de764d88119df671">&#9670;&#160;</a></span>_noItemList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._noItemList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc18e8775eea75057637a3e0c5df6cdf" name="afc18e8775eea75057637a3e0c5df6cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc18e8775eea75057637a3e0c5df6cdf">&#9670;&#160;</a></span>_scrollView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScrollView RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._scrollView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84f852080e322983607b119f289b12d6" name="a84f852080e322983607b119f289b12d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84f852080e322983607b119f289b12d6">&#9670;&#160;</a></span>_textField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d1/d60/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_im_text_field.html">ImTextField</a> RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._textField</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17cde807d60f1026bef63a3f2f7a0059" name="a17cde807d60f1026bef63a3f2f7a0059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cde807d60f1026bef63a3f2f7a0059">&#9670;&#160;</a></span>_width</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView._width</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61575e01b99020c62a13f19e7d82eb75" name="a61575e01b99020c62a13f19e7d82eb75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61575e01b99020c62a13f19e7d82eb75">&#9670;&#160;</a></span>BUTTON_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.BUTTON_HEIGHT = 22f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35e5fe42d2a3d45e4afb0a32c7228df6" name="a35e5fe42d2a3d45e4afb0a32c7228df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35e5fe42d2a3d45e4afb0a32c7228df6">&#9670;&#160;</a></span>OnSelectChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;string&gt; RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.OnSelectChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f15a1803c7257ec17c7428ded89f9b2" name="a9f15a1803c7257ec17c7428ded89f9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f15a1803c7257ec17c7428ded89f9b2">&#9670;&#160;</a></span>SCROLLBAR_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.SCROLLBAR_WIDTH = 18f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac63828dbfc86d2a2f86645262b91dc7c" name="ac63828dbfc86d2a2f86645262b91dc7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac63828dbfc86d2a2f86645262b91dc7c">&#9670;&#160;</a></span>SEARCH_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.SEARCH_HEIGHT = 20f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa82c8a40b9657f474c7b1f3d82d1273" name="afa82c8a40b9657f474c7b1f3d82d1273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa82c8a40b9657f474c7b1f3d82d1273">&#9670;&#160;</a></span>UssDarkPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.UssDarkPath = &quot;Assets/RPGMaker/Codebase/Editor/Hierarchy/<a class="el" href="../../d1/d6e/_switch_edit_inspector_element_8cs.html#a9251f2cd78c797507f084a6722e7b835">Region</a>/Base/Asset/hierarchyDark.uss&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd367c77a910d8d01bfc4d80998f10fd" name="afd367c77a910d8d01bfc4d80998f10fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd367c77a910d8d01bfc4d80998f10fd">&#9670;&#160;</a></span>UssLightPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.UssLightPath = &quot;Assets/RPGMaker/Codebase/Editor/Hierarchy/<a class="el" href="../../d1/d6e/_switch_edit_inspector_element_8cs.html#a9251f2cd78c797507f084a6722e7b835">Region</a>/Base/Asset/hierarchyLight.uss&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19bee615dfedd519b2bed2fe083ddc86" name="a19bee615dfedd519b2bed2fe083ddc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19bee615dfedd519b2bed2fe083ddc86">&#9670;&#160;</a></span>WINDOW_MAX_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.WINDOW_MAX_HEIGHT = 500f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa757ace359b6cae1278a01a865f21933" name="aa757ace359b6cae1278a01a865f21933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa757ace359b6cae1278a01a865f21933">&#9670;&#160;</a></span>WINDOW_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float RPGMaker.Codebase.Editor.Common.View.PopupFieldScrollView.WINDOW_WIDTH = 200f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/View/<a class="el" href="../../d0/da0/_popup_field_scroll_view_8cs.html">PopupFieldScrollView.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,2592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.TextManager クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html">TextManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="../../dd/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.TextManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>テキスト管理機  
+ <a href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.TextManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/de3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_text_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_text_manager_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_text_manager_coll__map">
+<area shape="rect" title="テキスト管理機" alt="" coords="5,96,209,139"/>
+<area shape="rect" title=" " alt="" coords="80,5,134,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,95,104,95,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:afffb32ddc0134a0ce2dcfa5692db6596"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#afffb32ddc0134a0ce2dcfa5692db6596">Format</a> (string baseString, params string[] args)</td></tr>
+<tr class="separator:afffb32ddc0134a0ce2dcfa5692db6596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:af886c6deedf2bbd257fdcc2cefba3d80"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d82/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_word_definition_1_1_word_definition_data_model.html">WordDefinitionDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#af886c6deedf2bbd257fdcc2cefba3d80">WordDefinitionDataModel</a> = DataManager.Self().GetWordDefinitionDataModel()</td></tr>
+<tr class="separator:af886c6deedf2bbd257fdcc2cefba3d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a0b063663c267c9c708d6f7eb5f10b59b"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0b063663c267c9c708d6f7eb5f10b59b">level</a><code> [get]</code></td></tr>
+<tr class="separator:a0b063663c267c9c708d6f7eb5f10b59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a55ed0af1e6554a220ee358ce693be"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a31a55ed0af1e6554a220ee358ce693be">levelA</a><code> [get]</code></td></tr>
+<tr class="separator:a31a55ed0af1e6554a220ee358ce693be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907eb713371bb745a217c92fdfb0f716"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a907eb713371bb745a217c92fdfb0f716">hp</a><code> [get]</code></td></tr>
+<tr class="separator:a907eb713371bb745a217c92fdfb0f716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d42adddac571c6951663df2d888c5c1"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a5d42adddac571c6951663df2d888c5c1">hpA</a><code> [get]</code></td></tr>
+<tr class="separator:a5d42adddac571c6951663df2d888c5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdea7cda437ecb8161ce1e523d2496c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a4fdea7cda437ecb8161ce1e523d2496c">mp</a><code> [get]</code></td></tr>
+<tr class="separator:a4fdea7cda437ecb8161ce1e523d2496c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e6a1e98b426497b1ec11828cd22a31"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a43e6a1e98b426497b1ec11828cd22a31">mpA</a><code> [get]</code></td></tr>
+<tr class="separator:a43e6a1e98b426497b1ec11828cd22a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98459019d8132ee58690773ce3caedb"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#aa98459019d8132ee58690773ce3caedb">tp</a><code> [get]</code></td></tr>
+<tr class="separator:aa98459019d8132ee58690773ce3caedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c9584df13cf9cfbb6b3e09f109dfb5"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a60c9584df13cf9cfbb6b3e09f109dfb5">tpA</a><code> [get]</code></td></tr>
+<tr class="separator:a60c9584df13cf9cfbb6b3e09f109dfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae68b639fc46d093600ce291f3b2e8b58"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ae68b639fc46d093600ce291f3b2e8b58">exp</a><code> [get]</code></td></tr>
+<tr class="separator:ae68b639fc46d093600ce291f3b2e8b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad728db46b9080dd181cb3c090d69f4f0"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ad728db46b9080dd181cb3c090d69f4f0">expA</a><code> [get]</code></td></tr>
+<tr class="separator:ad728db46b9080dd181cb3c090d69f4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790ab0ce10a1ccea1b95ebfc86208fb9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a790ab0ce10a1ccea1b95ebfc86208fb9">money</a><code> [get]</code></td></tr>
+<tr class="separator:a790ab0ce10a1ccea1b95ebfc86208fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a815b467a66326e09203e89af897430b3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a815b467a66326e09203e89af897430b3">fight</a><code> [get]</code></td></tr>
+<tr class="separator:a815b467a66326e09203e89af897430b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ef68f8af9d468804be4c17152fae38"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ad5ef68f8af9d468804be4c17152fae38">escape</a><code> [get]</code></td></tr>
+<tr class="separator:ad5ef68f8af9d468804be4c17152fae38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c60d08bda48560749e3f2e3f9c2d15"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ad1c60d08bda48560749e3f2e3f9c2d15">attack</a><code> [get]</code></td></tr>
+<tr class="separator:ad1c60d08bda48560749e3f2e3f9c2d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed2b91acd5bfaaee953a63b8cdac838"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a3ed2b91acd5bfaaee953a63b8cdac838">guard</a><code> [get]</code></td></tr>
+<tr class="separator:a3ed2b91acd5bfaaee953a63b8cdac838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaa5cf1fbf31a0c3d2a1197132d38427"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#afaa5cf1fbf31a0c3d2a1197132d38427">item</a><code> [get]</code></td></tr>
+<tr class="separator:afaa5cf1fbf31a0c3d2a1197132d38427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e73002c77e9ee27a372a9632870d0a6"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a8e73002c77e9ee27a372a9632870d0a6">skill</a><code> [get]</code></td></tr>
+<tr class="separator:a8e73002c77e9ee27a372a9632870d0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5c4ca30edd8805d06999940c9a6b09f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ad5c4ca30edd8805d06999940c9a6b09f">equip</a><code> [get]</code></td></tr>
+<tr class="separator:ad5c4ca30edd8805d06999940c9a6b09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a041e8512cc054b6a3a983dcdb0a9f18b"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a041e8512cc054b6a3a983dcdb0a9f18b">status</a><code> [get]</code></td></tr>
+<tr class="separator:a041e8512cc054b6a3a983dcdb0a9f18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e3219ff22ed3272a5b507e8a6cdf397"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a6e3219ff22ed3272a5b507e8a6cdf397">formation</a><code> [get]</code></td></tr>
+<tr class="separator:a6e3219ff22ed3272a5b507e8a6cdf397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811ed0270361ebc9b46fb9330cf37c87"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a811ed0270361ebc9b46fb9330cf37c87">save</a><code> [get]</code></td></tr>
+<tr class="separator:a811ed0270361ebc9b46fb9330cf37c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2052a67dd28264b78ad043e2026d593"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab2052a67dd28264b78ad043e2026d593">gameEnd</a><code> [get]</code></td></tr>
+<tr class="separator:ab2052a67dd28264b78ad043e2026d593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf542b846b1abee81b5084cfa61abb3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a4bf542b846b1abee81b5084cfa61abb3">options</a><code> [get]</code></td></tr>
+<tr class="separator:a4bf542b846b1abee81b5084cfa61abb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b0a05eb87af579f807fb5017b010ea"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a44b0a05eb87af579f807fb5017b010ea">weapon</a><code> [get]</code></td></tr>
+<tr class="separator:a44b0a05eb87af579f807fb5017b010ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a932d4409532c8af7235a2dbf69bacee9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a932d4409532c8af7235a2dbf69bacee9">armor</a><code> [get]</code></td></tr>
+<tr class="separator:a932d4409532c8af7235a2dbf69bacee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae908f516c9949e1dca8069a9e9b75807"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ae908f516c9949e1dca8069a9e9b75807">keyItem</a><code> [get]</code></td></tr>
+<tr class="separator:ae908f516c9949e1dca8069a9e9b75807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1f2941c07d4f987d27b7703fb5044d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a1a1f2941c07d4f987d27b7703fb5044d">equipment2</a><code> [get]</code></td></tr>
+<tr class="separator:a1a1f2941c07d4f987d27b7703fb5044d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a581d7154ebe9608fce35c34d03837e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0a581d7154ebe9608fce35c34d03837e">optimize</a><code> [get]</code></td></tr>
+<tr class="separator:a0a581d7154ebe9608fce35c34d03837e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b442e7d6d48fb6ed9b129bf6538539a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0b442e7d6d48fb6ed9b129bf6538539a">clear</a><code> [get]</code></td></tr>
+<tr class="separator:a0b442e7d6d48fb6ed9b129bf6538539a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54a57452c215aed940aabf878702d94"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#af54a57452c215aed940aabf878702d94">newGame</a><code> [get]</code></td></tr>
+<tr class="separator:af54a57452c215aed940aabf878702d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2a1ec2d11397fdbd52438d7382bdd8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a4c2a1ec2d11397fdbd52438d7382bdd8">continue_</a><code> [get]</code></td></tr>
+<tr class="separator:a4c2a1ec2d11397fdbd52438d7382bdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b5e8b67140d6376080880972eba4f6"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a65b5e8b67140d6376080880972eba4f6">toTitle</a><code> [get]</code></td></tr>
+<tr class="separator:a65b5e8b67140d6376080880972eba4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a454e072103baec9a2a3a0211a0c5890f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a454e072103baec9a2a3a0211a0c5890f">cancel</a><code> [get]</code></td></tr>
+<tr class="separator:a454e072103baec9a2a3a0211a0c5890f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39951d1c82719a8b23ebb6d9a73b9ba1"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a39951d1c82719a8b23ebb6d9a73b9ba1">buy</a><code> [get]</code></td></tr>
+<tr class="separator:a39951d1c82719a8b23ebb6d9a73b9ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b97ed35c00c4a0e48d32a7b817e16e1"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a9b97ed35c00c4a0e48d32a7b817e16e1">sell</a><code> [get]</code></td></tr>
+<tr class="separator:a9b97ed35c00c4a0e48d32a7b817e16e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1f243d7a21ffb11a5cf7059f9ec338"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0d1f243d7a21ffb11a5cf7059f9ec338">alwaysDash</a><code> [get]</code></td></tr>
+<tr class="separator:a0d1f243d7a21ffb11a5cf7059f9ec338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0686af04a5097579ff3cdb735888daf2"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0686af04a5097579ff3cdb735888daf2">commandRemember</a><code> [get]</code></td></tr>
+<tr class="separator:a0686af04a5097579ff3cdb735888daf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac837e588a214d4851f83c2ec749b83e7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ac837e588a214d4851f83c2ec749b83e7">bgmVolume</a><code> [get]</code></td></tr>
+<tr class="separator:ac837e588a214d4851f83c2ec749b83e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af111c07fb7b0c98aace9b46f03071f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a4af111c07fb7b0c98aace9b46f03071f">bgsVolume</a><code> [get]</code></td></tr>
+<tr class="separator:a4af111c07fb7b0c98aace9b46f03071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd115a5a3e96ddab4f36c9e9293e4d8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a5dd115a5a3e96ddab4f36c9e9293e4d8">meVolume</a><code> [get]</code></td></tr>
+<tr class="separator:a5dd115a5a3e96ddab4f36c9e9293e4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5176bf4221cdf3fdb079e3109441fb38"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a5176bf4221cdf3fdb079e3109441fb38">seVolume</a><code> [get]</code></td></tr>
+<tr class="separator:a5176bf4221cdf3fdb079e3109441fb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f9f7a1db5df9072c5007001b525e53"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab6f9f7a1db5df9072c5007001b525e53">possession</a><code> [get]</code></td></tr>
+<tr class="separator:ab6f9f7a1db5df9072c5007001b525e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9689fa329146b79d46cd078259bbb090"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a9689fa329146b79d46cd078259bbb090">stMaxHp</a><code> [get]</code></td></tr>
+<tr class="separator:a9689fa329146b79d46cd078259bbb090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dbb4356472dee23ff7ca898d9f895da"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a5dbb4356472dee23ff7ca898d9f895da">stMaxMp</a><code> [get]</code></td></tr>
+<tr class="separator:a5dbb4356472dee23ff7ca898d9f895da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ec3de099aee4b198908a88586c49d8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a21ec3de099aee4b198908a88586c49d8">stAttack</a><code> [get]</code></td></tr>
+<tr class="separator:a21ec3de099aee4b198908a88586c49d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a92b16f63baea29025f90997d05050"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a15a92b16f63baea29025f90997d05050">stGuard</a><code> [get]</code></td></tr>
+<tr class="separator:a15a92b16f63baea29025f90997d05050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a3d6f73be0f5d783511a6e1deca9d3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a05a3d6f73be0f5d783511a6e1deca9d3">stMagic</a><code> [get]</code></td></tr>
+<tr class="separator:a05a3d6f73be0f5d783511a6e1deca9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46157ae4c0b75e4cb5dc18e9470a67f"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ac46157ae4c0b75e4cb5dc18e9470a67f">stMagicGuard</a><code> [get]</code></td></tr>
+<tr class="separator:ac46157ae4c0b75e4cb5dc18e9470a67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c51f1f4a5a821ca8016e32eb7039505"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a7c51f1f4a5a821ca8016e32eb7039505">stSpeed</a><code> [get]</code></td></tr>
+<tr class="separator:a7c51f1f4a5a821ca8016e32eb7039505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6928e3ed96615e0ad5343dd9535e55e3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a6928e3ed96615e0ad5343dd9535e55e3">stLuck</a><code> [get]</code></td></tr>
+<tr class="separator:a6928e3ed96615e0ad5343dd9535e55e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c3a61c3c031253603a719db2cf963f4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a9c3a61c3c031253603a719db2cf963f4">stEvasion</a><code> [get]</code></td></tr>
+<tr class="separator:a9c3a61c3c031253603a719db2cf963f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa208c1895b8b1cda5e729f3f91487056"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#aa208c1895b8b1cda5e729f3f91487056">expTotal</a><code> [get]</code></td></tr>
+<tr class="separator:aa208c1895b8b1cda5e729f3f91487056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e389f79e590331e6653f33e0f935c9"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a58e389f79e590331e6653f33e0f935c9">expNext</a><code> [get]</code></td></tr>
+<tr class="separator:a58e389f79e590331e6653f33e0f935c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8b5e36c43242cd5f4f04ffef33f3e7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a7f8b5e36c43242cd5f4f04ffef33f3e7">saveMessage</a><code> [get]</code></td></tr>
+<tr class="separator:a7f8b5e36c43242cd5f4f04ffef33f3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ca855d6f6be18d783bb41b7bd7e12a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a04ca855d6f6be18d783bb41b7bd7e12a">loadMessage</a><code> [get]</code></td></tr>
+<tr class="separator:a04ca855d6f6be18d783bb41b7bd7e12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7320cc1ef0ca4121783d79438f1b67"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a6c7320cc1ef0ca4121783d79438f1b67">file</a><code> [get]</code></td></tr>
+<tr class="separator:a6c7320cc1ef0ca4121783d79438f1b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092c6f6316023bd94ca90d77c59f186c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a092c6f6316023bd94ca90d77c59f186c">partyName</a><code> [get]</code></td></tr>
+<tr class="separator:a092c6f6316023bd94ca90d77c59f186c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6380f4f750def0cc89d716d8090cb17"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#aa6380f4f750def0cc89d716d8090cb17">emerge</a><code> [get]</code></td></tr>
+<tr class="separator:aa6380f4f750def0cc89d716d8090cb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811141ca828c809e12ce3c8046d8efc3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a811141ca828c809e12ce3c8046d8efc3">preemptive</a><code> [get]</code></td></tr>
+<tr class="separator:a811141ca828c809e12ce3c8046d8efc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7900e270a8d72680b87f8285d4632141"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a7900e270a8d72680b87f8285d4632141">surprise</a><code> [get]</code></td></tr>
+<tr class="separator:a7900e270a8d72680b87f8285d4632141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf9859e11932b9e6db8c938680561ef"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#acdf9859e11932b9e6db8c938680561ef">escapeStart</a><code> [get]</code></td></tr>
+<tr class="separator:acdf9859e11932b9e6db8c938680561ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab16e5dde53a5ec2bf0a5dbf494f616e8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab16e5dde53a5ec2bf0a5dbf494f616e8">escapeFailure</a><code> [get]</code></td></tr>
+<tr class="separator:ab16e5dde53a5ec2bf0a5dbf494f616e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc135bf295f68e76613bc58dc4d4e5cb"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#afc135bf295f68e76613bc58dc4d4e5cb">victory</a><code> [get]</code></td></tr>
+<tr class="separator:afc135bf295f68e76613bc58dc4d4e5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71997f354d3236809a7729150ffa472"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#af71997f354d3236809a7729150ffa472">defeat</a><code> [get]</code></td></tr>
+<tr class="separator:af71997f354d3236809a7729150ffa472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8d17148d5ba14222f7784f0e4052dd"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a3d8d17148d5ba14222f7784f0e4052dd">obtainExp</a><code> [get]</code></td></tr>
+<tr class="separator:a3d8d17148d5ba14222f7784f0e4052dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15c390669b7c7cfff0fc754e29dd84ac"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a15c390669b7c7cfff0fc754e29dd84ac">obtainGold</a><code> [get]</code></td></tr>
+<tr class="separator:a15c390669b7c7cfff0fc754e29dd84ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c208656273d96babfd5a4b338c663b5"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a8c208656273d96babfd5a4b338c663b5">obtainItem</a><code> [get]</code></td></tr>
+<tr class="separator:a8c208656273d96babfd5a4b338c663b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c88013e96a13edc3a56bb4a84d7a03"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a99c88013e96a13edc3a56bb4a84d7a03">levelUp</a><code> [get]</code></td></tr>
+<tr class="separator:a99c88013e96a13edc3a56bb4a84d7a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a89b17c0f4f03f9b15cfcede2257667"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a9a89b17c0f4f03f9b15cfcede2257667">obtainSkill</a><code> [get]</code></td></tr>
+<tr class="separator:a9a89b17c0f4f03f9b15cfcede2257667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a206b6bf78b4cb039a062657832c2d486"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a206b6bf78b4cb039a062657832c2d486">useItem</a><code> [get]</code></td></tr>
+<tr class="separator:a206b6bf78b4cb039a062657832c2d486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72e81c4c96e5846e37c52754d87b4d6"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#af72e81c4c96e5846e37c52754d87b4d6">criticalToEnemy</a><code> [get]</code></td></tr>
+<tr class="separator:af72e81c4c96e5846e37c52754d87b4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916036fdc55a0e79712ff6ca5ff6181a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a916036fdc55a0e79712ff6ca5ff6181a">criticalToActor</a><code> [get]</code></td></tr>
+<tr class="separator:a916036fdc55a0e79712ff6ca5ff6181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0826a512dcd90cbcc5bfd88fc1b8ebb"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ae0826a512dcd90cbcc5bfd88fc1b8ebb">actorDamage</a><code> [get]</code></td></tr>
+<tr class="separator:ae0826a512dcd90cbcc5bfd88fc1b8ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f17367c5d9fd4bccc2f6626af581c1d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a1f17367c5d9fd4bccc2f6626af581c1d">actorRecovery</a><code> [get]</code></td></tr>
+<tr class="separator:a1f17367c5d9fd4bccc2f6626af581c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a321e76a05610f69d598bc6f3451ca2"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a5a321e76a05610f69d598bc6f3451ca2">actorGain</a><code> [get]</code></td></tr>
+<tr class="separator:a5a321e76a05610f69d598bc6f3451ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ee2652f43785c3e0b9f7dc5c86f95cd"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a4ee2652f43785c3e0b9f7dc5c86f95cd">actorLoss</a><code> [get]</code></td></tr>
+<tr class="separator:a4ee2652f43785c3e0b9f7dc5c86f95cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ff8c54c5ecf7757b97e5076bae7240"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a82ff8c54c5ecf7757b97e5076bae7240">actorDrain</a><code> [get]</code></td></tr>
+<tr class="separator:a82ff8c54c5ecf7757b97e5076bae7240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af709020de7af5f3ad88fb55021b1afa2"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#af709020de7af5f3ad88fb55021b1afa2">actorNoDamage</a><code> [get]</code></td></tr>
+<tr class="separator:af709020de7af5f3ad88fb55021b1afa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02a6b6c13ddce9a0c2880b78802c328"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ae02a6b6c13ddce9a0c2880b78802c328">actorNoHit</a><code> [get]</code></td></tr>
+<tr class="separator:ae02a6b6c13ddce9a0c2880b78802c328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b09416714ae23383683988d265ea168"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a0b09416714ae23383683988d265ea168">enemyDamage</a><code> [get]</code></td></tr>
+<tr class="separator:a0b09416714ae23383683988d265ea168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9746c04201743eaa1de3fbec53a2d84"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ae9746c04201743eaa1de3fbec53a2d84">enemyRecovery</a><code> [get]</code></td></tr>
+<tr class="separator:ae9746c04201743eaa1de3fbec53a2d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0dc6fed52caf8a8d0769d075c1b3d3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#aaa0dc6fed52caf8a8d0769d075c1b3d3">enemyGain</a><code> [get]</code></td></tr>
+<tr class="separator:aaa0dc6fed52caf8a8d0769d075c1b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6644a0c6221791867cedcfc477672285"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a6644a0c6221791867cedcfc477672285">enemyLoss</a><code> [get]</code></td></tr>
+<tr class="separator:a6644a0c6221791867cedcfc477672285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e7b0160340aeebad48bb4207351db7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab4e7b0160340aeebad48bb4207351db7">enemyDrain</a><code> [get]</code></td></tr>
+<tr class="separator:ab4e7b0160340aeebad48bb4207351db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d18514201011f37eb3dc388cc96111"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ad8d18514201011f37eb3dc388cc96111">enemyNoDamage</a><code> [get]</code></td></tr>
+<tr class="separator:ad8d18514201011f37eb3dc388cc96111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03cb0c3a54097d49e4b5af2732e282e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ac03cb0c3a54097d49e4b5af2732e282e">enemyNoHit</a><code> [get]</code></td></tr>
+<tr class="separator:ac03cb0c3a54097d49e4b5af2732e282e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f4ec1b1c5be5a1f4fbb32c717064b4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab8f4ec1b1c5be5a1f4fbb32c717064b4">evasion</a><code> [get]</code></td></tr>
+<tr class="separator:ab8f4ec1b1c5be5a1f4fbb32c717064b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed45342a21c4c51ade11e9c3b5647fb5"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#aed45342a21c4c51ade11e9c3b5647fb5">magicEvasion</a><code> [get]</code></td></tr>
+<tr class="separator:aed45342a21c4c51ade11e9c3b5647fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6dfdaf803be8ab83e4df81a848f5b4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a1a6dfdaf803be8ab83e4df81a848f5b4">magicReflection</a><code> [get]</code></td></tr>
+<tr class="separator:a1a6dfdaf803be8ab83e4df81a848f5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993e0b1d4b140cfca87aaa3656c63948"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a993e0b1d4b140cfca87aaa3656c63948">counterAttack</a><code> [get]</code></td></tr>
+<tr class="separator:a993e0b1d4b140cfca87aaa3656c63948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a9d1e01ce36d033e102cb50b717132"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a41a9d1e01ce36d033e102cb50b717132">substitute</a><code> [get]</code></td></tr>
+<tr class="separator:a41a9d1e01ce36d033e102cb50b717132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a47687b6181e816b0a1bfcf2d92dc4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab1a47687b6181e816b0a1bfcf2d92dc4">buffAdd</a><code> [get]</code></td></tr>
+<tr class="separator:ab1a47687b6181e816b0a1bfcf2d92dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab328c7397bddfe9d4ad1444943ee64e4"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#ab328c7397bddfe9d4ad1444943ee64e4">debuffAdd</a><code> [get]</code></td></tr>
+<tr class="separator:ab328c7397bddfe9d4ad1444943ee64e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ed57d886c5e7a9f0485b41b0fb5a26"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a39ed57d886c5e7a9f0485b41b0fb5a26">buffRemove</a><code> [get]</code></td></tr>
+<tr class="separator:a39ed57d886c5e7a9f0485b41b0fb5a26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c4210c1da1d10d02c37863847a16e3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager.html#a36c4210c1da1d10d02c37863847a16e3">actionFailure</a><code> [get]</code></td></tr>
+<tr class="separator:a36c4210c1da1d10d02c37863847a16e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>テキスト管理機 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="afffb32ddc0134a0ce2dcfa5692db6596" name="afffb32ddc0134a0ce2dcfa5692db6596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffb32ddc0134a0ce2dcfa5692db6596">&#9670;&#160;</a></span>Format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Runtime.Common.TextManager.Format </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>baseString</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params string[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager_afffb32ddc0134a0ce2dcfa5692db6596_icgraph.png" border="0" usemap="#ad7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager_afffb32ddc0134a0ce2dcfa5692db6596_icgraph" alt=""/></div>
+<map name="ad7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager_afffb32ddc0134a0ce2dcfa5692db6596_icgraph" id="ad7/da4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_text_manager_afffb32ddc0134a0ce2dcfa5692db6596_icgraph">
+<area shape="rect" title=" " alt="" coords="1728,842,1932,885"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a0957b5d6bc654c73f092734220230af8" title="レベルアップ時のメッセージ作成" alt="" coords="1155,9,1371,67"/>
+<area shape="poly" title=" " alt="" coords="1825,827,1816,664,1806,554,1792,435,1773,319,1748,214,1717,129,1699,97,1679,73,1646,49,1609,31,1570,19,1530,12,1448,9,1372,17,1371,11,1448,4,1530,7,1572,14,1611,27,1649,45,1682,69,1703,94,1722,126,1753,212,1778,318,1797,435,1811,553,1821,664,1830,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a10bf343b39b1e421716106cf289ef0d7" title="指定された行動( [スキル][アイテム]の使用 )を表示" alt="" coords="1449,259,1663,318"/>
+<area shape="poly" title=" " alt="" coords="1826,827,1821,731,1813,669,1801,601,1782,531,1756,462,1722,397,1678,338,1657,321,1660,317,1682,335,1727,394,1761,460,1787,530,1806,600,1819,668,1826,731,1832,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a1892f9b37dca453e1536cee38aa0c817" title="追加されたステートを表示" alt="" coords="1449,875,1663,934"/>
+<area shape="poly" title=" " alt="" coords="1714,883,1663,891,1663,886,1713,878"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a3c145b5338377893c59403520e4f3089" title="バフ表示" alt="" coords="1449,1009,1663,1067"/>
+<area shape="poly" title=" " alt="" coords="1800,897,1747,945,1682,992,1646,1011,1643,1006,1679,988,1743,941,1796,893"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aa376d393f6db742fc866bde9339cecf6" title="カウンター攻撃を表示" alt="" coords="580,481,794,539"/>
+<area shape="poly" title=" " alt="" coords="1821,828,1802,722,1771,586,1751,520,1729,460,1705,413,1679,383,1659,371,1634,362,1572,351,1499,348,1420,350,1263,366,1143,383,1040,402,939,428,769,483,767,478,938,423,1039,397,1142,378,1263,361,1420,345,1499,342,1573,346,1635,357,1661,366,1682,379,1709,410,1734,458,1756,518,1776,585,1807,721,1826,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a792f3792a182a78120a1e4465bf961b4" title="現在のステートを表示" alt="" coords="865,189,1079,247"/>
+<area shape="poly" title=" " alt="" coords="1823,828,1808,697,1780,521,1761,433,1738,354,1710,290,1695,267,1679,250,1648,238,1593,229,1433,219,1246,216,1080,218,1080,213,1246,211,1433,214,1594,224,1650,233,1682,245,1699,263,1715,288,1743,352,1766,431,1786,520,1814,696,1828,827"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a3ed9f2746cd4744e9dd5f2c95e343e6e" title="[敗北]メッセージを表示" alt="" coords="1149,1046,1377,1105"/>
+<area shape="poly" title=" " alt="" coords="1819,899,1800,944,1771,995,1732,1044,1708,1065,1682,1082,1645,1098,1606,1109,1527,1119,1448,1117,1377,1107,1377,1101,1448,1111,1526,1114,1605,1104,1643,1093,1679,1077,1705,1060,1728,1040,1766,992,1795,941,1814,897"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ae00ddfbd9e34363f8935582d70f00ec3" title="[アイテム獲得]メッセージを表示" alt="" coords="1431,1411,1680,1454"/>
+<area shape="poly" title=" " alt="" coords="1832,899,1828,996,1821,1060,1809,1128,1790,1200,1764,1270,1728,1336,1682,1395,1658,1413,1654,1409,1678,1391,1724,1333,1759,1268,1785,1198,1804,1127,1816,1059,1823,996,1827,899"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab2127edfd9ca51fd6628471ad7641d38" title="[逃走失敗]メッセージを表示" alt="" coords="1146,1129,1380,1187"/>
+<area shape="poly" title=" " alt="" coords="1822,900,1805,952,1777,1014,1736,1075,1711,1102,1682,1124,1647,1143,1609,1158,1531,1175,1453,1181,1380,1178,1381,1173,1452,1175,1530,1170,1608,1153,1644,1138,1679,1120,1707,1098,1732,1072,1772,1011,1800,950,1817,898"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab554a64eac9ffa059993976cb7fb9d42" title="[逃走成功]メッセージを表示" alt="" coords="1146,1211,1380,1270"/>
+<area shape="poly" title=" " alt="" coords="1830,899,1821,976,1812,1023,1799,1073,1780,1124,1755,1171,1722,1214,1682,1249,1644,1270,1603,1284,1560,1292,1517,1295,1432,1289,1356,1273,1357,1268,1432,1283,1517,1289,1560,1287,1602,1279,1642,1266,1679,1245,1718,1211,1750,1169,1775,1121,1794,1072,1807,1022,1816,975,1825,899"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#adc4b58bb53ad6e1ed8d39dfdb2793848" title="回避を表示" alt="" coords="1156,641,1370,699"/>
+<area shape="poly" title=" " alt="" coords="1806,831,1783,800,1754,766,1719,734,1679,708,1642,693,1603,681,1521,666,1442,660,1371,662,1370,656,1442,655,1522,660,1604,676,1644,688,1682,704,1722,729,1758,762,1787,797,1810,828"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a24b7d633a99de14c50426e6b26b3a708" title="[経験値獲得]メッセージを表示" alt="" coords="1449,1478,1662,1521"/>
+<area shape="poly" title=" " alt="" coords="1827,900,1810,1026,1780,1196,1760,1282,1737,1360,1712,1424,1697,1449,1682,1468,1664,1482,1661,1478,1678,1464,1693,1446,1707,1422,1732,1358,1755,1281,1775,1195,1805,1025,1822,899"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a55b4dcabe09b1d54057da4da1f27b838" title="行動失敗を表示" alt="" coords="865,782,1079,841"/>
+<area shape="poly" title=" " alt="" coords="1787,835,1737,806,1680,783,1611,769,1557,767,1502,773,1432,783,1408,790,1384,797,1304,806,1224,812,1080,816,1080,811,1224,807,1304,801,1382,791,1406,785,1430,778,1501,768,1557,762,1612,764,1681,778,1739,801,1789,831"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a0bcb9c1ac3f07b190cdffba6b8a4aa3b" title="[お金獲得]メッセージを表示" alt="" coords="1447,1545,1664,1587"/>
+<area shape="poly" title=" " alt="" coords="1828,900,1813,1039,1785,1229,1765,1325,1741,1413,1714,1485,1699,1513,1682,1534,1667,1547,1663,1543,1678,1531,1694,1510,1709,1483,1736,1411,1760,1324,1779,1228,1808,1038,1823,899"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#acbc04d15e0825744a9e79ef6c40da93e" title="レベルアップの表示" alt="" coords="1152,91,1374,150"/>
+<area shape="poly" title=" " alt="" coords="1825,827,1815,671,1805,566,1791,454,1772,345,1747,246,1716,167,1698,137,1679,116,1642,92,1601,77,1558,68,1513,66,1469,69,1425,75,1348,93,1346,88,1424,69,1468,63,1513,61,1559,63,1603,72,1644,88,1682,112,1703,134,1721,164,1752,244,1777,344,1796,453,1810,565,1820,671,1830,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aedf28322d31b0a6b31d5b85ecae93a76" title="攻撃の失敗を表示" alt="" coords="1156,723,1370,782"/>
+<area shape="poly" title=" " alt="" coords="1801,832,1749,781,1716,757,1679,739,1641,728,1601,720,1520,714,1441,719,1371,729,1370,724,1441,714,1520,709,1602,715,1642,722,1681,734,1718,753,1752,777,1804,828"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#abd3ba598601d98f56a096b29d28af429" title="反射を表示" alt="" coords="580,907,794,966"/>
+<area shape="poly" title=" " alt="" coords="1789,896,1739,925,1681,949,1560,974,1436,988,1311,995,1189,995,1073,989,967,980,795,958,795,953,967,975,1074,984,1189,989,1311,990,1435,983,1559,968,1680,943,1737,921,1787,891"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a0638e6ce860374c4f1e6c0d11714f8d6" title="ステートが外れたことを表示" alt="" coords="1449,793,1663,851"/>
+<area shape="poly" title=" " alt="" coords="1713,848,1663,841,1663,835,1714,843"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a54b908b95809651df2167e908c6fd026" title="[出現]メッセージを表示" alt="" coords="1154,1294,1372,1353"/>
+<area shape="poly" title=" " alt="" coords="1831,900,1825,985,1817,1038,1805,1095,1786,1153,1760,1208,1726,1258,1682,1300,1659,1312,1628,1321,1549,1332,1459,1334,1372,1333,1372,1327,1459,1329,1549,1326,1627,1316,1657,1307,1679,1296,1721,1255,1755,1205,1781,1151,1799,1094,1812,1037,1820,984,1826,899"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#adf2bd7970343a0711746e18cf1d94435" title="[かばう]行動を表示" alt="" coords="1449,1611,1663,1670"/>
+<area shape="poly" title=" " alt="" coords="1829,900,1815,1050,1787,1260,1768,1367,1744,1464,1716,1545,1700,1577,1682,1601,1665,1616,1662,1612,1678,1598,1695,1574,1711,1543,1739,1463,1763,1365,1782,1259,1810,1050,1823,899"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a349ea5677abcbc27c76e88d9f8c44012" title="[勝利]メッセージを表示" alt="" coords="1147,1377,1379,1435"/>
+<area shape="poly" title=" " alt="" coords="1832,900,1827,990,1820,1048,1807,1110,1788,1173,1762,1235,1727,1291,1682,1340,1660,1354,1631,1365,1554,1383,1465,1396,1379,1403,1378,1398,1465,1390,1553,1378,1629,1360,1658,1349,1679,1336,1723,1288,1757,1232,1783,1171,1802,1108,1814,1047,1822,989,1827,899"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a57a2d3a9b264758d6c53124987efdffa" title="レベルアップ時のテキスト情報返却" alt="" coords="1452,126,1659,185"/>
+<area shape="poly" title=" " alt="" coords="1822,827,1806,691,1776,505,1756,411,1733,325,1707,254,1693,226,1678,205,1658,187,1661,183,1682,202,1698,223,1712,252,1739,323,1762,410,1781,504,1811,691,1828,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#afc5ac451ed8f152ec218f592e51d5394" title="HPへのダメージのメッセージを生成" alt="" coords="1449,393,1663,451"/>
+<area shape="poly" title=" " alt="" coords="1823,828,1811,752,1787,655,1768,604,1744,554,1714,507,1679,465,1661,452,1665,448,1682,461,1719,504,1749,551,1773,602,1792,654,1817,751,1828,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aa1e29dfddd42b3b236c3802adfe9727f" title="MPへのダメージのメッセージを生成" alt="" coords="1449,475,1663,534"/>
+<area shape="poly" title=" " alt="" coords="1819,828,1803,768,1776,692,1757,653,1735,615,1709,579,1679,548,1662,536,1665,531,1682,544,1713,576,1739,612,1762,651,1780,690,1808,766,1824,827"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a517fb1458c794bb661017f3d675b795a" title="TPへのダメージのメッセージを生成" alt="" coords="1449,558,1663,617"/>
+<area shape="poly" title=" " alt="" coords="1812,829,1791,786,1761,735,1724,683,1679,637,1651,619,1653,615,1682,633,1728,679,1766,732,1796,783,1817,827"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#acb1f26518e8d482175768364997f45e3" title="パーティの名前を返す。 ひとりの時は「アクター名」、複数いる時は「アクター名たち」(規定値)" alt="" coords="1450,1193,1662,1235"/>
+<area shape="poly" title=" " alt="" coords="1824,900,1808,959,1780,1034,1739,1110,1712,1145,1682,1176,1654,1194,1651,1190,1679,1172,1708,1141,1734,1107,1775,1031,1803,958,1819,898"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a700ae58c5077b967dac66f1e08724008" title="経験値を加え、必要ならレベルアップ処理を行う" alt="" coords="849,41,1095,83"/>
+<area shape="poly" title=" " alt="" coords="1140,51,1096,54,1095,49,1139,45"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#af1b0001a4d86c7c444da5e631990cc40" title="経験値取得処理" alt="" coords="573,41,801,83"/>
+<area shape="poly" title=" " alt="" coords="835,65,802,65,802,59,835,59"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html#a464a3c706d9eda7e7498f7a30d5e35c4" title="指定レベルに変更する" alt="" coords="274,70,525,113"/>
+<area shape="poly" title=" " alt="" coords="559,78,526,81,525,76,558,72"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#ae73efc13c80e664d1f3e78f0402fdc26" title="行動の開始" alt="" coords="1156,259,1370,318"/>
+<area shape="poly" title=" " alt="" coords="1434,291,1371,291,1371,286,1434,286"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#abc5245ecc7cc228c39cc09d68856240d" title="アクション開始" alt="" coords="866,271,1078,314"/>
+<area shape="poly" title=" " alt="" coords="1141,293,1078,294,1078,289,1141,288"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a2542f4b9c2a2f2c223a68bd230ab5374" title="ターン継続処理" alt="" coords="577,234,797,277"/>
+<area shape="poly" title=" " alt="" coords="851,279,797,272,798,267,851,274"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#aa394caa485e94736c2113a2c94f72631" title="ターンのアップデート" alt="" coords="293,234,506,277"/>
+<area shape="poly" title=" " alt="" coords="562,258,507,258,507,253,562,253"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a40b394bbdae0bf85ca1ed7d623ae7444" title="ステートの変化を表示" alt="" coords="1156,865,1370,923"/>
+<area shape="poly" title=" " alt="" coords="1433,903,1370,901,1371,895,1434,898"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#ac7bd22053583ffffe3dc17a808e6d3e8" title="能力値変化を表示" alt="" coords="865,865,1079,923"/>
+<area shape="poly" title=" " alt="" coords="1140,897,1079,897,1079,891,1140,891"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#ab246a22877ff89da0618ce6b9af9135e" title="行動結果を表示" alt="" coords="580,782,794,841"/>
+<area shape="poly" title=" " alt="" coords="854,863,790,844,792,839,855,857"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#aa5e71d48a02fd25c7b1ca22dd8bc51f3" title="指定対象が指定目標に対しての反撃アクションを起動する" alt="" coords="285,741,514,799"/>
+<area shape="poly" title=" " alt="" coords="565,796,514,789,514,784,566,791"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a44fa0b5be0eb1e4ef8ddb382c1954835" title="指定対象が指定目標に対しての魔法反射アクションを起動する" alt="" coords="290,823,509,882"/>
+<area shape="poly" title=" " alt="" coords="566,831,509,840,508,834,565,826"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a95f3c0da75e16c8679e47a5d11c0f9d6" title="指定対象が指定目標に対してのアクションを起動する" alt="" coords="5,790,226,833"/>
+<area shape="poly" title=" " alt="" coords="271,791,226,798,226,793,270,786"/>
+<area shape="poly" title=" " alt="" coords="275,837,226,830,226,825,276,832"/>
+<area shape="poly" title=" " alt="" coords="644,551,435,742,432,738,641,547"/>
+<area shape="poly" title=" " alt="" coords="850,237,798,243,798,238,850,231"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab7d517d19ac44790fa3fe4109887adc9" title="敗北処理" alt="" coords="856,1054,1088,1097"/>
+<area shape="poly" title=" " alt="" coords="1134,1078,1089,1078,1089,1073,1134,1073"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a0b52a11a196ebfced24c9040f0649b8d" title="報酬(経験値・お金・アイテム)メッセージを表示" alt="" coords="1143,1469,1383,1511"/>
+<area shape="poly" title=" " alt="" coords="1430,1460,1376,1471,1375,1465,1429,1455"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a10d228bcabfa660dda1837b88cf139f9" title="勝利処理" alt="" coords="854,1426,1090,1469"/>
+<area shape="poly" title=" " alt="" coords="1127,1473,1090,1467,1091,1462,1128,1468"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a038e353195b544c8608e572e8a12cc40" title="逃走処理を行い、逃走が成功したか返す" alt="" coords="852,1178,1092,1221"/>
+<area shape="poly" title=" " alt="" coords="1131,1179,1092,1185,1092,1180,1130,1174"/>
+<area shape="poly" title=" " alt="" coords="1130,1225,1092,1219,1092,1214,1131,1219"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#abf115ed20be7d209c4c29e677ed0ee8b" title="ダメージ表示" alt="" coords="865,599,1079,658"/>
+<area shape="poly" title=" " alt="" coords="1141,655,1079,646,1080,641,1141,650"/>
+<area shape="poly" title=" " alt="" coords="914,669,736,784,733,779,911,664"/>
+<area shape="poly" title=" " alt="" coords="1434,1498,1384,1496,1384,1491,1434,1493"/>
+<area shape="poly" title=" " alt="" coords="850,814,795,814,795,809,850,809"/>
+<area shape="poly" title=" " alt="" coords="1456,1543,1347,1514,1349,1509,1457,1538"/>
+<area shape="poly" title=" " alt="" coords="1137,98,1081,87,1082,81,1138,93"/>
+<area shape="poly" title=" " alt="" coords="1137,119,525,98,526,93,1137,114"/>
+<area shape="poly" title=" " alt="" coords="1158,720,1142,714,1029,661,1031,656,1144,709,1160,715"/>
+<area shape="poly" title=" " alt="" coords="569,905,502,885,503,880,571,900"/>
+<area shape="poly" title=" " alt="" coords="1435,854,1371,870,1370,865,1434,849"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a229709f8943369d529f47e3ebf1b8b49" title="戦闘開始" alt="" coords="867,1302,1077,1345"/>
+<area shape="poly" title=" " alt="" coords="1139,1326,1077,1326,1077,1321,1139,1321"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af4e4839300137c597bddc0c87bbde721" title="対象が死んでいるなどしたら、代わりを選んで返す。 問題なければ、対象をそのまま返す" alt="" coords="1143,1619,1383,1662"/>
+<area shape="poly" title=" " alt="" coords="1433,1643,1383,1643,1383,1638,1433,1638"/>
+<area shape="poly" title=" " alt="" coords="1133,1427,1091,1433,1090,1428,1132,1422"/>
+<area shape="poly" title=" " alt="" coords="1437,144,1374,136,1374,131,1438,139"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#aa86e662541d42ced737d1d6324f7815d" title="HPへのダメージを表示" alt="" coords="1156,393,1370,451"/>
+<area shape="poly" title=" " alt="" coords="1434,425,1371,425,1371,419,1434,419"/>
+<area shape="poly" title=" " alt="" coords="1152,461,1144,466,1100,497,1060,533,999,601,995,597,1057,529,1097,493,1141,461,1150,456"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a16e23966974ad6a04bdc3fce7ed1b734" title="MPへのダメージを表示" alt="" coords="1156,475,1370,534"/>
+<area shape="poly" title=" " alt="" coords="1434,507,1371,507,1371,502,1434,502"/>
+<area shape="poly" title=" " alt="" coords="1160,542,1144,548,1031,601,1029,596,1142,544,1158,537"/>
+<area shape="rect" href="../../d9/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle_log.html#a79ecb04ece0dfef5ea7ee5bfb89da8f2" title="TPへのダメージを表示" alt="" coords="1156,558,1370,617"/>
+<area shape="poly" title=" " alt="" coords="1434,590,1371,590,1371,585,1434,585"/>
+<area shape="poly" title=" " alt="" coords="1141,607,1080,616,1079,611,1141,602"/>
+<area shape="poly" title=" " alt="" coords="1507,1187,1448,1153,1382,1119,1355,1108,1357,1103,1384,1114,1451,1148,1510,1182"/>
+<area shape="poly" title=" " alt="" coords="1434,1194,1380,1183,1381,1178,1435,1188"/>
+<area shape="poly" title=" " alt="" coords="1435,1228,1381,1233,1380,1227,1435,1222"/>
+<area shape="poly" title=" " alt="" coords="1488,1244,1384,1284,1352,1296,1350,1291,1382,1279,1486,1239"/>
+<area shape="poly" title=" " alt="" coords="1527,1248,1464,1308,1426,1339,1384,1367,1362,1379,1359,1374,1382,1362,1423,1335,1461,1304,1523,1245"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="af886c6deedf2bbd257fdcc2cefba3d80" name="af886c6deedf2bbd257fdcc2cefba3d80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af886c6deedf2bbd257fdcc2cefba3d80">&#9670;&#160;</a></span>WordDefinitionDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d82/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_word_definition_1_1_word_definition_data_model.html">WordDefinitionDataModel</a> RPGMaker.Codebase.Runtime.Common.TextManager.WordDefinitionDataModel = DataManager.Self().GetWordDefinitionDataModel()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a36c4210c1da1d10d02c37863847a16e3" name="a36c4210c1da1d10d02c37863847a16e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36c4210c1da1d10d02c37863847a16e3">&#9670;&#160;</a></span>actionFailure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actionFailure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0826a512dcd90cbcc5bfd88fc1b8ebb" name="ae0826a512dcd90cbcc5bfd88fc1b8ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0826a512dcd90cbcc5bfd88fc1b8ebb">&#9670;&#160;</a></span>actorDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorDamage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82ff8c54c5ecf7757b97e5076bae7240" name="a82ff8c54c5ecf7757b97e5076bae7240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ff8c54c5ecf7757b97e5076bae7240">&#9670;&#160;</a></span>actorDrain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorDrain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a321e76a05610f69d598bc6f3451ca2" name="a5a321e76a05610f69d598bc6f3451ca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a321e76a05610f69d598bc6f3451ca2">&#9670;&#160;</a></span>actorGain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorGain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ee2652f43785c3e0b9f7dc5c86f95cd" name="a4ee2652f43785c3e0b9f7dc5c86f95cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee2652f43785c3e0b9f7dc5c86f95cd">&#9670;&#160;</a></span>actorLoss</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorLoss</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af709020de7af5f3ad88fb55021b1afa2" name="af709020de7af5f3ad88fb55021b1afa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af709020de7af5f3ad88fb55021b1afa2">&#9670;&#160;</a></span>actorNoDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorNoDamage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae02a6b6c13ddce9a0c2880b78802c328" name="ae02a6b6c13ddce9a0c2880b78802c328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02a6b6c13ddce9a0c2880b78802c328">&#9670;&#160;</a></span>actorNoHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorNoHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f17367c5d9fd4bccc2f6626af581c1d" name="a1f17367c5d9fd4bccc2f6626af581c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f17367c5d9fd4bccc2f6626af581c1d">&#9670;&#160;</a></span>actorRecovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.actorRecovery</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d1f243d7a21ffb11a5cf7059f9ec338" name="a0d1f243d7a21ffb11a5cf7059f9ec338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1f243d7a21ffb11a5cf7059f9ec338">&#9670;&#160;</a></span>alwaysDash</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.alwaysDash</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a932d4409532c8af7235a2dbf69bacee9" name="a932d4409532c8af7235a2dbf69bacee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a932d4409532c8af7235a2dbf69bacee9">&#9670;&#160;</a></span>armor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.armor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1c60d08bda48560749e3f2e3f9c2d15" name="ad1c60d08bda48560749e3f2e3f9c2d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c60d08bda48560749e3f2e3f9c2d15">&#9670;&#160;</a></span>attack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.attack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac837e588a214d4851f83c2ec749b83e7" name="ac837e588a214d4851f83c2ec749b83e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac837e588a214d4851f83c2ec749b83e7">&#9670;&#160;</a></span>bgmVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.bgmVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4af111c07fb7b0c98aace9b46f03071f" name="a4af111c07fb7b0c98aace9b46f03071f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af111c07fb7b0c98aace9b46f03071f">&#9670;&#160;</a></span>bgsVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.bgsVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1a47687b6181e816b0a1bfcf2d92dc4" name="ab1a47687b6181e816b0a1bfcf2d92dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1a47687b6181e816b0a1bfcf2d92dc4">&#9670;&#160;</a></span>buffAdd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.buffAdd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39ed57d886c5e7a9f0485b41b0fb5a26" name="a39ed57d886c5e7a9f0485b41b0fb5a26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39ed57d886c5e7a9f0485b41b0fb5a26">&#9670;&#160;</a></span>buffRemove</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.buffRemove</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39951d1c82719a8b23ebb6d9a73b9ba1" name="a39951d1c82719a8b23ebb6d9a73b9ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39951d1c82719a8b23ebb6d9a73b9ba1">&#9670;&#160;</a></span>buy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.buy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a454e072103baec9a2a3a0211a0c5890f" name="a454e072103baec9a2a3a0211a0c5890f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a454e072103baec9a2a3a0211a0c5890f">&#9670;&#160;</a></span>cancel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.cancel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b442e7d6d48fb6ed9b129bf6538539a" name="a0b442e7d6d48fb6ed9b129bf6538539a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b442e7d6d48fb6ed9b129bf6538539a">&#9670;&#160;</a></span>clear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.clear</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0686af04a5097579ff3cdb735888daf2" name="a0686af04a5097579ff3cdb735888daf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0686af04a5097579ff3cdb735888daf2">&#9670;&#160;</a></span>commandRemember</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.commandRemember</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c2a1ec2d11397fdbd52438d7382bdd8" name="a4c2a1ec2d11397fdbd52438d7382bdd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c2a1ec2d11397fdbd52438d7382bdd8">&#9670;&#160;</a></span>continue_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.continue_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a993e0b1d4b140cfca87aaa3656c63948" name="a993e0b1d4b140cfca87aaa3656c63948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a993e0b1d4b140cfca87aaa3656c63948">&#9670;&#160;</a></span>counterAttack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.counterAttack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a916036fdc55a0e79712ff6ca5ff6181a" name="a916036fdc55a0e79712ff6ca5ff6181a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916036fdc55a0e79712ff6ca5ff6181a">&#9670;&#160;</a></span>criticalToActor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.criticalToActor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af72e81c4c96e5846e37c52754d87b4d6" name="af72e81c4c96e5846e37c52754d87b4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72e81c4c96e5846e37c52754d87b4d6">&#9670;&#160;</a></span>criticalToEnemy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.criticalToEnemy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab328c7397bddfe9d4ad1444943ee64e4" name="ab328c7397bddfe9d4ad1444943ee64e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab328c7397bddfe9d4ad1444943ee64e4">&#9670;&#160;</a></span>debuffAdd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.debuffAdd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af71997f354d3236809a7729150ffa472" name="af71997f354d3236809a7729150ffa472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71997f354d3236809a7729150ffa472">&#9670;&#160;</a></span>defeat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.defeat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6380f4f750def0cc89d716d8090cb17" name="aa6380f4f750def0cc89d716d8090cb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6380f4f750def0cc89d716d8090cb17">&#9670;&#160;</a></span>emerge</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.emerge</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b09416714ae23383683988d265ea168" name="a0b09416714ae23383683988d265ea168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b09416714ae23383683988d265ea168">&#9670;&#160;</a></span>enemyDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyDamage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4e7b0160340aeebad48bb4207351db7" name="ab4e7b0160340aeebad48bb4207351db7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4e7b0160340aeebad48bb4207351db7">&#9670;&#160;</a></span>enemyDrain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyDrain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa0dc6fed52caf8a8d0769d075c1b3d3" name="aaa0dc6fed52caf8a8d0769d075c1b3d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa0dc6fed52caf8a8d0769d075c1b3d3">&#9670;&#160;</a></span>enemyGain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyGain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6644a0c6221791867cedcfc477672285" name="a6644a0c6221791867cedcfc477672285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6644a0c6221791867cedcfc477672285">&#9670;&#160;</a></span>enemyLoss</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyLoss</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8d18514201011f37eb3dc388cc96111" name="ad8d18514201011f37eb3dc388cc96111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d18514201011f37eb3dc388cc96111">&#9670;&#160;</a></span>enemyNoDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyNoDamage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac03cb0c3a54097d49e4b5af2732e282e" name="ac03cb0c3a54097d49e4b5af2732e282e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03cb0c3a54097d49e4b5af2732e282e">&#9670;&#160;</a></span>enemyNoHit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyNoHit</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9746c04201743eaa1de3fbec53a2d84" name="ae9746c04201743eaa1de3fbec53a2d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9746c04201743eaa1de3fbec53a2d84">&#9670;&#160;</a></span>enemyRecovery</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.enemyRecovery</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5c4ca30edd8805d06999940c9a6b09f" name="ad5c4ca30edd8805d06999940c9a6b09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5c4ca30edd8805d06999940c9a6b09f">&#9670;&#160;</a></span>equip</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.equip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a1f2941c07d4f987d27b7703fb5044d" name="a1a1f2941c07d4f987d27b7703fb5044d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1f2941c07d4f987d27b7703fb5044d">&#9670;&#160;</a></span>equipment2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.equipment2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5ef68f8af9d468804be4c17152fae38" name="ad5ef68f8af9d468804be4c17152fae38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ef68f8af9d468804be4c17152fae38">&#9670;&#160;</a></span>escape</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.escape</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab16e5dde53a5ec2bf0a5dbf494f616e8" name="ab16e5dde53a5ec2bf0a5dbf494f616e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab16e5dde53a5ec2bf0a5dbf494f616e8">&#9670;&#160;</a></span>escapeFailure</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.escapeFailure</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdf9859e11932b9e6db8c938680561ef" name="acdf9859e11932b9e6db8c938680561ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdf9859e11932b9e6db8c938680561ef">&#9670;&#160;</a></span>escapeStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.escapeStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8f4ec1b1c5be5a1f4fbb32c717064b4" name="ab8f4ec1b1c5be5a1f4fbb32c717064b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f4ec1b1c5be5a1f4fbb32c717064b4">&#9670;&#160;</a></span>evasion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.evasion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae68b639fc46d093600ce291f3b2e8b58" name="ae68b639fc46d093600ce291f3b2e8b58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68b639fc46d093600ce291f3b2e8b58">&#9670;&#160;</a></span>exp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.exp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad728db46b9080dd181cb3c090d69f4f0" name="ad728db46b9080dd181cb3c090d69f4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad728db46b9080dd181cb3c090d69f4f0">&#9670;&#160;</a></span>expA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.expA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58e389f79e590331e6653f33e0f935c9" name="a58e389f79e590331e6653f33e0f935c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e389f79e590331e6653f33e0f935c9">&#9670;&#160;</a></span>expNext</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.expNext</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa208c1895b8b1cda5e729f3f91487056" name="aa208c1895b8b1cda5e729f3f91487056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa208c1895b8b1cda5e729f3f91487056">&#9670;&#160;</a></span>expTotal</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.expTotal</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a815b467a66326e09203e89af897430b3" name="a815b467a66326e09203e89af897430b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a815b467a66326e09203e89af897430b3">&#9670;&#160;</a></span>fight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.fight</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c7320cc1ef0ca4121783d79438f1b67" name="a6c7320cc1ef0ca4121783d79438f1b67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c7320cc1ef0ca4121783d79438f1b67">&#9670;&#160;</a></span>file</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.file</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e3219ff22ed3272a5b507e8a6cdf397" name="a6e3219ff22ed3272a5b507e8a6cdf397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e3219ff22ed3272a5b507e8a6cdf397">&#9670;&#160;</a></span>formation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.formation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2052a67dd28264b78ad043e2026d593" name="ab2052a67dd28264b78ad043e2026d593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2052a67dd28264b78ad043e2026d593">&#9670;&#160;</a></span>gameEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.gameEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ed2b91acd5bfaaee953a63b8cdac838" name="a3ed2b91acd5bfaaee953a63b8cdac838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed2b91acd5bfaaee953a63b8cdac838">&#9670;&#160;</a></span>guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.guard</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a907eb713371bb745a217c92fdfb0f716" name="a907eb713371bb745a217c92fdfb0f716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a907eb713371bb745a217c92fdfb0f716">&#9670;&#160;</a></span>hp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.hp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d42adddac571c6951663df2d888c5c1" name="a5d42adddac571c6951663df2d888c5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d42adddac571c6951663df2d888c5c1">&#9670;&#160;</a></span>hpA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.hpA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afaa5cf1fbf31a0c3d2a1197132d38427" name="afaa5cf1fbf31a0c3d2a1197132d38427"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afaa5cf1fbf31a0c3d2a1197132d38427">&#9670;&#160;</a></span>item</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.item</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae908f516c9949e1dca8069a9e9b75807" name="ae908f516c9949e1dca8069a9e9b75807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae908f516c9949e1dca8069a9e9b75807">&#9670;&#160;</a></span>keyItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.keyItem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b063663c267c9c708d6f7eb5f10b59b" name="a0b063663c267c9c708d6f7eb5f10b59b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b063663c267c9c708d6f7eb5f10b59b">&#9670;&#160;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31a55ed0af1e6554a220ee358ce693be" name="a31a55ed0af1e6554a220ee358ce693be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a55ed0af1e6554a220ee358ce693be">&#9670;&#160;</a></span>levelA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.levelA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99c88013e96a13edc3a56bb4a84d7a03" name="a99c88013e96a13edc3a56bb4a84d7a03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99c88013e96a13edc3a56bb4a84d7a03">&#9670;&#160;</a></span>levelUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.levelUp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a04ca855d6f6be18d783bb41b7bd7e12a" name="a04ca855d6f6be18d783bb41b7bd7e12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ca855d6f6be18d783bb41b7bd7e12a">&#9670;&#160;</a></span>loadMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.loadMessage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed45342a21c4c51ade11e9c3b5647fb5" name="aed45342a21c4c51ade11e9c3b5647fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed45342a21c4c51ade11e9c3b5647fb5">&#9670;&#160;</a></span>magicEvasion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.magicEvasion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a6dfdaf803be8ab83e4df81a848f5b4" name="a1a6dfdaf803be8ab83e4df81a848f5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a6dfdaf803be8ab83e4df81a848f5b4">&#9670;&#160;</a></span>magicReflection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.magicReflection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dd115a5a3e96ddab4f36c9e9293e4d8" name="a5dd115a5a3e96ddab4f36c9e9293e4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd115a5a3e96ddab4f36c9e9293e4d8">&#9670;&#160;</a></span>meVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.meVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a790ab0ce10a1ccea1b95ebfc86208fb9" name="a790ab0ce10a1ccea1b95ebfc86208fb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790ab0ce10a1ccea1b95ebfc86208fb9">&#9670;&#160;</a></span>money</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.money</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fdea7cda437ecb8161ce1e523d2496c" name="a4fdea7cda437ecb8161ce1e523d2496c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdea7cda437ecb8161ce1e523d2496c">&#9670;&#160;</a></span>mp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.mp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43e6a1e98b426497b1ec11828cd22a31" name="a43e6a1e98b426497b1ec11828cd22a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e6a1e98b426497b1ec11828cd22a31">&#9670;&#160;</a></span>mpA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.mpA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af54a57452c215aed940aabf878702d94" name="af54a57452c215aed940aabf878702d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54a57452c215aed940aabf878702d94">&#9670;&#160;</a></span>newGame</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.newGame</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8d17148d5ba14222f7784f0e4052dd" name="a3d8d17148d5ba14222f7784f0e4052dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8d17148d5ba14222f7784f0e4052dd">&#9670;&#160;</a></span>obtainExp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.obtainExp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15c390669b7c7cfff0fc754e29dd84ac" name="a15c390669b7c7cfff0fc754e29dd84ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15c390669b7c7cfff0fc754e29dd84ac">&#9670;&#160;</a></span>obtainGold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.obtainGold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c208656273d96babfd5a4b338c663b5" name="a8c208656273d96babfd5a4b338c663b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c208656273d96babfd5a4b338c663b5">&#9670;&#160;</a></span>obtainItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.obtainItem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a89b17c0f4f03f9b15cfcede2257667" name="a9a89b17c0f4f03f9b15cfcede2257667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a89b17c0f4f03f9b15cfcede2257667">&#9670;&#160;</a></span>obtainSkill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.obtainSkill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a581d7154ebe9608fce35c34d03837e" name="a0a581d7154ebe9608fce35c34d03837e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a581d7154ebe9608fce35c34d03837e">&#9670;&#160;</a></span>optimize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.optimize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf542b846b1abee81b5084cfa61abb3" name="a4bf542b846b1abee81b5084cfa61abb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf542b846b1abee81b5084cfa61abb3">&#9670;&#160;</a></span>options</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.options</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a092c6f6316023bd94ca90d77c59f186c" name="a092c6f6316023bd94ca90d77c59f186c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092c6f6316023bd94ca90d77c59f186c">&#9670;&#160;</a></span>partyName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.partyName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab6f9f7a1db5df9072c5007001b525e53" name="ab6f9f7a1db5df9072c5007001b525e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6f9f7a1db5df9072c5007001b525e53">&#9670;&#160;</a></span>possession</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.possession</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a811141ca828c809e12ce3c8046d8efc3" name="a811141ca828c809e12ce3c8046d8efc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811141ca828c809e12ce3c8046d8efc3">&#9670;&#160;</a></span>preemptive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.preemptive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a811ed0270361ebc9b46fb9330cf37c87" name="a811ed0270361ebc9b46fb9330cf37c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811ed0270361ebc9b46fb9330cf37c87">&#9670;&#160;</a></span>save</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.save</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7f8b5e36c43242cd5f4f04ffef33f3e7" name="a7f8b5e36c43242cd5f4f04ffef33f3e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8b5e36c43242cd5f4f04ffef33f3e7">&#9670;&#160;</a></span>saveMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.saveMessage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b97ed35c00c4a0e48d32a7b817e16e1" name="a9b97ed35c00c4a0e48d32a7b817e16e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b97ed35c00c4a0e48d32a7b817e16e1">&#9670;&#160;</a></span>sell</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.sell</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5176bf4221cdf3fdb079e3109441fb38" name="a5176bf4221cdf3fdb079e3109441fb38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5176bf4221cdf3fdb079e3109441fb38">&#9670;&#160;</a></span>seVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.seVolume</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e73002c77e9ee27a372a9632870d0a6" name="a8e73002c77e9ee27a372a9632870d0a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e73002c77e9ee27a372a9632870d0a6">&#9670;&#160;</a></span>skill</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.skill</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21ec3de099aee4b198908a88586c49d8" name="a21ec3de099aee4b198908a88586c49d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ec3de099aee4b198908a88586c49d8">&#9670;&#160;</a></span>stAttack</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stAttack</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a041e8512cc054b6a3a983dcdb0a9f18b" name="a041e8512cc054b6a3a983dcdb0a9f18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a041e8512cc054b6a3a983dcdb0a9f18b">&#9670;&#160;</a></span>status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c3a61c3c031253603a719db2cf963f4" name="a9c3a61c3c031253603a719db2cf963f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3a61c3c031253603a719db2cf963f4">&#9670;&#160;</a></span>stEvasion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stEvasion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15a92b16f63baea29025f90997d05050" name="a15a92b16f63baea29025f90997d05050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a92b16f63baea29025f90997d05050">&#9670;&#160;</a></span>stGuard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stGuard</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6928e3ed96615e0ad5343dd9535e55e3" name="a6928e3ed96615e0ad5343dd9535e55e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6928e3ed96615e0ad5343dd9535e55e3">&#9670;&#160;</a></span>stLuck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stLuck</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05a3d6f73be0f5d783511a6e1deca9d3" name="a05a3d6f73be0f5d783511a6e1deca9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05a3d6f73be0f5d783511a6e1deca9d3">&#9670;&#160;</a></span>stMagic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stMagic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac46157ae4c0b75e4cb5dc18e9470a67f" name="ac46157ae4c0b75e4cb5dc18e9470a67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46157ae4c0b75e4cb5dc18e9470a67f">&#9670;&#160;</a></span>stMagicGuard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stMagicGuard</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9689fa329146b79d46cd078259bbb090" name="a9689fa329146b79d46cd078259bbb090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9689fa329146b79d46cd078259bbb090">&#9670;&#160;</a></span>stMaxHp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stMaxHp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dbb4356472dee23ff7ca898d9f895da" name="a5dbb4356472dee23ff7ca898d9f895da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dbb4356472dee23ff7ca898d9f895da">&#9670;&#160;</a></span>stMaxMp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stMaxMp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c51f1f4a5a821ca8016e32eb7039505" name="a7c51f1f4a5a821ca8016e32eb7039505"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c51f1f4a5a821ca8016e32eb7039505">&#9670;&#160;</a></span>stSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.stSpeed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41a9d1e01ce36d033e102cb50b717132" name="a41a9d1e01ce36d033e102cb50b717132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a9d1e01ce36d033e102cb50b717132">&#9670;&#160;</a></span>substitute</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.substitute</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7900e270a8d72680b87f8285d4632141" name="a7900e270a8d72680b87f8285d4632141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7900e270a8d72680b87f8285d4632141">&#9670;&#160;</a></span>surprise</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.surprise</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65b5e8b67140d6376080880972eba4f6" name="a65b5e8b67140d6376080880972eba4f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b5e8b67140d6376080880972eba4f6">&#9670;&#160;</a></span>toTitle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.toTitle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa98459019d8132ee58690773ce3caedb" name="aa98459019d8132ee58690773ce3caedb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa98459019d8132ee58690773ce3caedb">&#9670;&#160;</a></span>tp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.tp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60c9584df13cf9cfbb6b3e09f109dfb5" name="a60c9584df13cf9cfbb6b3e09f109dfb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60c9584df13cf9cfbb6b3e09f109dfb5">&#9670;&#160;</a></span>tpA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.tpA</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a206b6bf78b4cb039a062657832c2d486" name="a206b6bf78b4cb039a062657832c2d486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a206b6bf78b4cb039a062657832c2d486">&#9670;&#160;</a></span>useItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.useItem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc135bf295f68e76613bc58dc4d4e5cb" name="afc135bf295f68e76613bc58dc4d4e5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc135bf295f68e76613bc58dc4d4e5cb">&#9670;&#160;</a></span>victory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.victory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44b0a05eb87af579f807fb5017b010ea" name="a44b0a05eb87af579f807fb5017b010ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b0a05eb87af579f807fb5017b010ea">&#9670;&#160;</a></span>weapon</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.TextManager.weapon</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Common/<a class="el" href="../../d7/dd5/_text_manager_8cs.html">TextManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.TemplateInstallHelper クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html">TemplateInstallHelper</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../db/d0c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.TemplateInstallHelper クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.TemplateInstallHelper 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d3a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_template_install_helper_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_template_install_helper_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_template_install_helper_coll__map">
+<area shape="rect" title=" " alt="" coords="5,144,207,187"/>
+<area shape="rect" title=" " alt="" coords="79,5,133,32"/>
+<area shape="poly" title=" " alt="" coords="109,47,109,144,103,144,103,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa84b06cfa04f5637f2eac7508e482abc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aa84b06cfa04f5637f2eac7508e482abc">InstallRPGMakerUniteTemplates</a> ()</td></tr>
+<tr class="memdesc:aa84b06cfa04f5637f2eac7508e482abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">テンプレート配置処理/Install template files to Unity  <br /></td></tr>
+<tr class="separator:aa84b06cfa04f5637f2eac7508e482abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd8909715c01407024eee438530cad3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a7dd8909715c01407024eee438530cad3">InitializeDefaultStorage</a> ()</td></tr>
+<tr class="separator:a7dd8909715c01407024eee438530cad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1961ac03bc5d36dd8ee3684c856f635e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1961ac03bc5d36dd8ee3684c856f635e">IsTemplateAvailableForInstall</a> ()</td></tr>
+<tr class="separator:a1961ac03bc5d36dd8ee3684c856f635e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2050eddc3318b8f29c214d2b4649c2"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1e2050eddc3318b8f29c214d2b4649c2">GetFileName</a> (string name)</td></tr>
+<tr class="separator:a1e2050eddc3318b8f29c214d2b4649c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985fc4d62c1709cbf77bd386f0f2fea2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a985fc4d62c1709cbf77bd386f0f2fea2">MoveDirectory</a> (string source, string destination)</td></tr>
+<tr class="separator:a985fc4d62c1709cbf77bd386f0f2fea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a603bdc74b41cb15c668f4e9be546d6f6"><td class="memItemLeft" align="right" valign="top">static readonly List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a603bdc74b41cb15c668f4e9be546d6f6">s_templateNames</a></td></tr>
+<tr class="separator:a603bdc74b41cb15c668f4e9be546d6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5170ee21cbb3984ed2142b08f286a63e"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a5170ee21cbb3984ed2142b08f286a63e">DEFAULTGAME_COMMON</a> = &quot;defaultgame_common_v&quot;</td></tr>
+<tr class="separator:a5170ee21cbb3984ed2142b08f286a63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511d604d64701b0bff78a66990184df7"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a511d604d64701b0bff78a66990184df7">DEFAULTGAME_JP</a> = &quot;defaultgame_jp_v&quot;</td></tr>
+<tr class="separator:a511d604d64701b0bff78a66990184df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23ba091dc4d30108f637299b48c02f75"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a23ba091dc4d30108f637299b48c02f75">DEFAULTGAME_EN</a> = &quot;defaultgame_en_v&quot;</td></tr>
+<tr class="separator:a23ba091dc4d30108f637299b48c02f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea80e04367a856001963d9bc0afd336b"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aea80e04367a856001963d9bc0afd336b">DEFAULTGAME_CN</a> = &quot;defaultgame_cn_v&quot;</td></tr>
+<tr class="separator:aea80e04367a856001963d9bc0afd336b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8d20688da787d70f87f154384673768"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#af8d20688da787d70f87f154384673768">VERSION</a> = &quot;1.0.0&quot;</td></tr>
+<tr class="separator:af8d20688da787d70f87f154384673768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba72cb3acdd13c0ef861f719aaf033e1"><td class="memItemLeft" align="right" valign="top">static readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aba72cb3acdd13c0ef861f719aaf033e1">localTemplatePath</a> = Directory.GetCurrentDirectory() + &quot;/Assets/RPGMaker/Storage/System/Archive/&quot;</td></tr>
+<tr class="separator:aba72cb3acdd13c0ef861f719aaf033e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38df6e2c060b120b6b08d8fc3043b406"><td class="memItemLeft" align="right" valign="top">static readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a38df6e2c060b120b6b08d8fc3043b406">localCheckPath</a> = Directory.GetCurrentDirectory() + &quot;/Assets/RPGMaker/Storage/Initializations&quot;</td></tr>
+<tr class="separator:a38df6e2c060b120b6b08d8fc3043b406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f1811d7e54baa559cc5aabd699d200"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a16f1811d7e54baa559cc5aabd699d200">folderSub</a> = 4</td></tr>
+<tr class="separator:a16f1811d7e54baa559cc5aabd699d200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a1e2050eddc3318b8f29c214d2b4649c2" name="a1e2050eddc3318b8f29c214d2b4649c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e2050eddc3318b8f29c214d2b4649c2">&#9670;&#160;</a></span>GetFileName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.GetFileName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1e2050eddc3318b8f29c214d2b4649c2_icgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1e2050eddc3318b8f29c214d2b4649c2_icgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1e2050eddc3318b8f29c214d2b4649c2_icgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1e2050eddc3318b8f29c214d2b4649c2_icgraph">
+<area shape="rect" title=" " alt="" coords="838,56,1065,115"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a7dd8909715c01407024eee438530cad3" title=" " alt="" coords="275,5,527,64"/>
+<area shape="poly" title=" " alt="" coords="823,76,527,49,528,44,824,71"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aa84b06cfa04f5637f2eac7508e482abc" title="テンプレート配置処理/Install template files to Unity" alt="" coords="281,88,521,147"/>
+<area shape="poly" title=" " alt="" coords="824,95,521,113,521,108,823,90"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1961ac03bc5d36dd8ee3684c856f635e" title=" " alt="" coords="575,123,790,181"/>
+<area shape="poly" title=" " alt="" coords="824,120,791,128,790,123,823,114"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074" title="Unity立ち上げ時の処理" alt="" coords="5,47,227,105"/>
+<area shape="poly" title=" " alt="" coords="260,58,228,63,227,57,259,52"/>
+<area shape="poly" title=" " alt="" coords="266,100,227,95,227,89,267,95"/>
+<area shape="poly" title=" " alt="" coords="560,140,521,135,521,129,560,134"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7dd8909715c01407024eee438530cad3" name="a7dd8909715c01407024eee438530cad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd8909715c01407024eee438530cad3">&#9670;&#160;</a></span>InitializeDefaultStorage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.InitializeDefaultStorage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_cgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_cgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_cgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,258,64"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1e2050eddc3318b8f29c214d2b4649c2" title=" " alt="" coords="306,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="258,32,291,32,291,37,258,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_icgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_icgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_icgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a7dd8909715c01407024eee438530cad3_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,527,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074" title="Unity立ち上げ時の処理" alt="" coords="5,5,227,64"/>
+<area shape="poly" title=" " alt="" coords="260,37,227,37,227,32,260,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa84b06cfa04f5637f2eac7508e482abc" name="aa84b06cfa04f5637f2eac7508e482abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84b06cfa04f5637f2eac7508e482abc">&#9670;&#160;</a></span>InstallRPGMakerUniteTemplates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.InstallRPGMakerUniteTemplates </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>テンプレート配置処理/Install template files to Unity </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_cgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_cgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_cgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_cgraph">
+<area shape="rect" title="テンプレート配置処理/Install template files to Unity" alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1e2050eddc3318b8f29c214d2b4649c2" title=" " alt="" coords="556,5,782,64"/>
+<area shape="poly" title=" " alt="" coords="245,26,293,24,508,24,541,25,541,30,508,29,293,29,245,31"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1961ac03bc5d36dd8ee3684c856f635e" title=" " alt="" coords="293,39,508,97"/>
+<area shape="poly" title=" " alt="" coords="245,47,278,51,278,56,245,52"/>
+<area shape="poly" title=" " alt="" coords="508,52,541,48,541,53,509,57"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_icgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_icgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_icgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_aa84b06cfa04f5637f2eac7508e482abc_icgraph">
+<area shape="rect" title="テンプレート配置処理/Install template files to Unity" alt="" coords="275,5,514,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074" title="Unity立ち上げ時の処理" alt="" coords="5,5,227,64"/>
+<area shape="poly" title=" " alt="" coords="260,37,227,37,227,32,260,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1961ac03bc5d36dd8ee3684c856f635e" name="a1961ac03bc5d36dd8ee3684c856f635e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1961ac03bc5d36dd8ee3684c856f635e">&#9670;&#160;</a></span>IsTemplateAvailableForInstall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.IsTemplateAvailableForInstall </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_cgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_cgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_cgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,221,64"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1e2050eddc3318b8f29c214d2b4649c2" title=" " alt="" coords="269,5,495,64"/>
+<area shape="poly" title=" " alt="" coords="221,32,254,32,254,37,221,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_icgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_icgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_icgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a1961ac03bc5d36dd8ee3684c856f635e_icgraph">
+<area shape="rect" title=" " alt="" coords="562,5,777,64"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aa84b06cfa04f5637f2eac7508e482abc" title="テンプレート配置処理/Install template files to Unity" alt="" coords="275,5,514,64"/>
+<area shape="poly" title=" " alt="" coords="547,37,515,37,515,32,547,32"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074" title="Unity立ち上げ時の処理" alt="" coords="5,5,227,64"/>
+<area shape="poly" title=" " alt="" coords="260,37,227,37,227,32,260,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a985fc4d62c1709cbf77bd386f0f2fea2" name="a985fc4d62c1709cbf77bd386f0f2fea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a985fc4d62c1709cbf77bd386f0f2fea2">&#9670;&#160;</a></span>MoveDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.MoveDirectory </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>destination</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_cgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_cgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_cgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,241,88"/>
+<area shape="poly" title=" " alt="" coords="77,29,78,19,86,10,101,5,123,3,149,6,164,13,161,18,147,11,123,8,102,10,89,15,83,21,82,29"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_icgraph.png" border="0" usemap="#ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_icgraph" alt=""/></div>
+<map name="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_icgraph" id="ada/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper_a985fc4d62c1709cbf77bd386f0f2fea2_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,241,88"/>
+<area shape="poly" title=" " alt="" coords="161,18,147,11,123,8,102,10,89,15,83,21,82,29,77,29,78,19,86,10,101,5,123,3,149,6,164,13"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="aea80e04367a856001963d9bc0afd336b" name="aea80e04367a856001963d9bc0afd336b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea80e04367a856001963d9bc0afd336b">&#9670;&#160;</a></span>DEFAULTGAME_CN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.DEFAULTGAME_CN = &quot;defaultgame_cn_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5170ee21cbb3984ed2142b08f286a63e" name="a5170ee21cbb3984ed2142b08f286a63e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5170ee21cbb3984ed2142b08f286a63e">&#9670;&#160;</a></span>DEFAULTGAME_COMMON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.DEFAULTGAME_COMMON = &quot;defaultgame_common_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23ba091dc4d30108f637299b48c02f75" name="a23ba091dc4d30108f637299b48c02f75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ba091dc4d30108f637299b48c02f75">&#9670;&#160;</a></span>DEFAULTGAME_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.DEFAULTGAME_EN = &quot;defaultgame_en_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a511d604d64701b0bff78a66990184df7" name="a511d604d64701b0bff78a66990184df7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511d604d64701b0bff78a66990184df7">&#9670;&#160;</a></span>DEFAULTGAME_JP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.DEFAULTGAME_JP = &quot;defaultgame_jp_v&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16f1811d7e54baa559cc5aabd699d200" name="a16f1811d7e54baa559cc5aabd699d200"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f1811d7e54baa559cc5aabd699d200">&#9670;&#160;</a></span>folderSub</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.folderSub = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38df6e2c060b120b6b08d8fc3043b406" name="a38df6e2c060b120b6b08d8fc3043b406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38df6e2c060b120b6b08d8fc3043b406">&#9670;&#160;</a></span>localCheckPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.localCheckPath = Directory.GetCurrentDirectory() + &quot;/Assets/RPGMaker/Storage/Initializations&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba72cb3acdd13c0ef861f719aaf033e1" name="aba72cb3acdd13c0ef861f719aaf033e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba72cb3acdd13c0ef861f719aaf033e1">&#9670;&#160;</a></span>localTemplatePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.localTemplatePath = Directory.GetCurrentDirectory() + &quot;/Assets/RPGMaker/Storage/System/Archive/&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a603bdc74b41cb15c668f4e9be546d6f6" name="a603bdc74b41cb15c668f4e9be546d6f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a603bdc74b41cb15c668f4e9be546d6f6">&#9670;&#160;</a></span>s_templateNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;string&gt; RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.s_templateNames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> List&lt;string&gt;</div>
+<div class="line">        {</div>
+<div class="line">            <span class="stringliteral">&quot;project_base_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;masterdata_common_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;masterdata_jp_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;masterdata_en_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;masterdata_cn_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;defaultgame_common_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;defaultgame_jp_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;defaultgame_en_v&quot;</span>,</div>
+<div class="line">            <span class="stringliteral">&quot;defaultgame_cn_v&quot;</span>,</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af8d20688da787d70f87f154384673768" name="af8d20688da787d70f87f154384673768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8d20688da787d70f87f154384673768">&#9670;&#160;</a></span>VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.TemplateInstallHelper.VERSION = &quot;1.0.0&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/Helpers/<a class="el" href="../../d7/d1a/_template_install_helper_8cs.html">TemplateInstallHelper.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

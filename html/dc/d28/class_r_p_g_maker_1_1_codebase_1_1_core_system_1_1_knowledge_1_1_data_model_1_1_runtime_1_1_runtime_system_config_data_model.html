@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d0e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system.html">CoreSystem</a></li><li class="navelem"><a class="el" href="../../de/daa/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge.html">Knowledge</a></li><li class="navelem"><a class="el" href="../../d7/d9e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model.html">DataModel</a></li><li class="navelem"><a class="el" href="../../dc/d5b/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html">RuntimeSystemConfigDataModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="../../d1/da2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtf6806bf92578fb45dfcf503e14ea70a8.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>実行時システム設定データ・モデル  
+ <a href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runt107ac0e48125902da5967945d06b5a91.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_system_config_data_model_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_system_config_data_model_coll__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_runtime_8_runtime_system_config_data_model_coll__map">
+<area shape="rect" title="実行時システム設定データ・モデル" alt="" coords="378,88,632,147"/>
+<area shape="rect" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html" title=" " alt="" coords="5,88,260,147"/>
+<area shape="poly" title=" " alt="" coords="274,115,377,115,377,120,274,120"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a5a813338ade64b99e510ed760d366e55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a5a813338ade64b99e510ed760d366e55">RuntimeSystemConfigDataModel</a> (int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a727c25ab4cdcec16c049cf68a46b6076">saveEnabled</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a57d2cae66a9aabdc7f7a88a254665fd7">menuEnabled</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a856bd7c64a543c8f762309bae65629e5">encounterEnabled</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a6784e2780c89f1ad6201af046686fbf1">formationEnabled</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ade29e392228a248e7e58a14abaef5eb5">battleCount</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a11654a147ec7bf8e87d8c10245bd8ce2">winCount</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a4188367f17302b238aa329650b7b1995">escapeCount</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a6e26a9c781b8a4e07d3b022f84a3095b">saveCount</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aa345829d1becd7c34adc16c9a34f6798">playTime</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aca9b34e774eae39ba9078920daa976c7">bgmOnSave</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#adc94dc244311ea786ca7d98a73def5e3">bgsOnSave</a>, List&lt; int &gt; <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#abf06c44cc60dd6347b5cb3a127374eed">windowTone</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ad464505ed638ac1adeb712262e443254">battleBgm</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ad65a192c566303b1c464aac870502ba1">victoryMe</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#adbf739a5be3d99da2ee6aca01a085b30">defeatMe</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a94ba2cde84a90b14071cea25556078a0">savedBgm</a>, <a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aba8fbddc1759a073dfd562884a034c92">walkingBgm</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a8eb0f27bea63a32c6332d83459e0d628">chapterId</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a0ce86a9dc36f86818088d17df76adcd9">sectionId</a>, int <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aa2eb00eace5c6838b04ce4e9f6481307">follow</a>=-1)</td></tr>
+<tr class="separator:a5a813338ade64b99e510ed760d366e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4bfc78b70f0afeaf216bf45813d28682"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html">RuntimeSystemConfigDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a4bfc78b70f0afeaf216bf45813d28682">CreateDefault</a> ()</td></tr>
+<tr class="separator:a4bfc78b70f0afeaf216bf45813d28682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:ad464505ed638ac1adeb712262e443254"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ad464505ed638ac1adeb712262e443254">battleBgm</a></td></tr>
+<tr class="separator:ad464505ed638ac1adeb712262e443254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade29e392228a248e7e58a14abaef5eb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ade29e392228a248e7e58a14abaef5eb5">battleCount</a></td></tr>
+<tr class="separator:ade29e392228a248e7e58a14abaef5eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9b34e774eae39ba9078920daa976c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aca9b34e774eae39ba9078920daa976c7">bgmOnSave</a></td></tr>
+<tr class="separator:aca9b34e774eae39ba9078920daa976c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc94dc244311ea786ca7d98a73def5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#adc94dc244311ea786ca7d98a73def5e3">bgsOnSave</a></td></tr>
+<tr class="separator:adc94dc244311ea786ca7d98a73def5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb0f27bea63a32c6332d83459e0d628"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a8eb0f27bea63a32c6332d83459e0d628">chapterId</a></td></tr>
+<tr class="separator:a8eb0f27bea63a32c6332d83459e0d628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf739a5be3d99da2ee6aca01a085b30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#adbf739a5be3d99da2ee6aca01a085b30">defeatMe</a></td></tr>
+<tr class="separator:adbf739a5be3d99da2ee6aca01a085b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a856bd7c64a543c8f762309bae65629e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a856bd7c64a543c8f762309bae65629e5">encounterEnabled</a></td></tr>
+<tr class="separator:a856bd7c64a543c8f762309bae65629e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4188367f17302b238aa329650b7b1995"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a4188367f17302b238aa329650b7b1995">escapeCount</a></td></tr>
+<tr class="separator:a4188367f17302b238aa329650b7b1995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6784e2780c89f1ad6201af046686fbf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a6784e2780c89f1ad6201af046686fbf1">formationEnabled</a></td></tr>
+<tr class="separator:a6784e2780c89f1ad6201af046686fbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa345829d1becd7c34adc16c9a34f6798"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aa345829d1becd7c34adc16c9a34f6798">playTime</a></td></tr>
+<tr class="separator:aa345829d1becd7c34adc16c9a34f6798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d2cae66a9aabdc7f7a88a254665fd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a57d2cae66a9aabdc7f7a88a254665fd7">menuEnabled</a></td></tr>
+<tr class="separator:a57d2cae66a9aabdc7f7a88a254665fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e26a9c781b8a4e07d3b022f84a3095b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a6e26a9c781b8a4e07d3b022f84a3095b">saveCount</a></td></tr>
+<tr class="separator:a6e26a9c781b8a4e07d3b022f84a3095b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ba2cde84a90b14071cea25556078a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a94ba2cde84a90b14071cea25556078a0">savedBgm</a></td></tr>
+<tr class="separator:a94ba2cde84a90b14071cea25556078a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727c25ab4cdcec16c049cf68a46b6076"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a727c25ab4cdcec16c049cf68a46b6076">saveEnabled</a></td></tr>
+<tr class="separator:a727c25ab4cdcec16c049cf68a46b6076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce86a9dc36f86818088d17df76adcd9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a0ce86a9dc36f86818088d17df76adcd9">sectionId</a></td></tr>
+<tr class="separator:a0ce86a9dc36f86818088d17df76adcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65a192c566303b1c464aac870502ba1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#ad65a192c566303b1c464aac870502ba1">victoryMe</a></td></tr>
+<tr class="separator:ad65a192c566303b1c464aac870502ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8fbddc1759a073dfd562884a034c92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aba8fbddc1759a073dfd562884a034c92">walkingBgm</a></td></tr>
+<tr class="separator:aba8fbddc1759a073dfd562884a034c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11654a147ec7bf8e87d8c10245bd8ce2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#a11654a147ec7bf8e87d8c10245bd8ce2">winCount</a></td></tr>
+<tr class="separator:a11654a147ec7bf8e87d8c10245bd8ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf06c44cc60dd6347b5cb3a127374eed"><td class="memItemLeft" align="right" valign="top">List&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#abf06c44cc60dd6347b5cb3a127374eed">windowTone</a></td></tr>
+<tr class="separator:abf06c44cc60dd6347b5cb3a127374eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2eb00eace5c6838b04ce4e9f6481307"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html#aa2eb00eace5c6838b04ce4e9f6481307">follow</a> = -1</td></tr>
+<tr class="separator:aa2eb00eace5c6838b04ce4e9f6481307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>実行時システム設定データ・モデル </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a5a813338ade64b99e510ed760d366e55" name="a5a813338ade64b99e510ed760d366e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a813338ade64b99e510ed760d366e55">&#9670;&#160;</a></span>RuntimeSystemConfigDataModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.RuntimeSystemConfigDataModel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>saveEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>menuEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>encounterEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>formationEnabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>battleCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>winCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>escapeCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>saveCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>bgmOnSave</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>bgsOnSave</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>windowTone</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>battleBgm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>victoryMe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>defeatMe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>savedBgm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a>&#160;</td>
+          <td class="paramname"><em>walkingBgm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>chapterId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sectionId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>follow</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a4bfc78b70f0afeaf216bf45813d28682" name="a4bfc78b70f0afeaf216bf45813d28682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bfc78b70f0afeaf216bf45813d28682">&#9670;&#160;</a></span>CreateDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html">RuntimeSystemConfigDataModel</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.CreateDefault </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_cgraph.png" border="0" usemap="#adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_cgraph" alt=""/></div>
+<map name="adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_cgraph" id="adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,260,64"/>
+<area shape="rect" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html#a21e30a53b5a00c5e4317a2511ad03337" title=" " alt="" coords="308,5,595,64"/>
+<area shape="poly" title=" " alt="" coords="260,32,293,32,293,37,260,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_icgraph.png" border="0" usemap="#adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_icgraph" alt=""/></div>
+<map name="adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_icgraph" id="adc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model_a4bfc78b70f0afeaf216bf45813d28682_icgraph">
+<area shape="rect" title=" " alt="" coords="308,5,562,64"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_save_data_model.html#a56f95cf83be2f626a2f69fe20967f749" title=" " alt="" coords="5,5,260,64"/>
+<area shape="poly" title=" " alt="" coords="293,37,260,37,260,32,293,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ad464505ed638ac1adeb712262e443254" name="ad464505ed638ac1adeb712262e443254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad464505ed638ac1adeb712262e443254">&#9670;&#160;</a></span>battleBgm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.battleBgm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade29e392228a248e7e58a14abaef5eb5" name="ade29e392228a248e7e58a14abaef5eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade29e392228a248e7e58a14abaef5eb5">&#9670;&#160;</a></span>battleCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.battleCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca9b34e774eae39ba9078920daa976c7" name="aca9b34e774eae39ba9078920daa976c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9b34e774eae39ba9078920daa976c7">&#9670;&#160;</a></span>bgmOnSave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.bgmOnSave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc94dc244311ea786ca7d98a73def5e3" name="adc94dc244311ea786ca7d98a73def5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc94dc244311ea786ca7d98a73def5e3">&#9670;&#160;</a></span>bgsOnSave</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.bgsOnSave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eb0f27bea63a32c6332d83459e0d628" name="a8eb0f27bea63a32c6332d83459e0d628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb0f27bea63a32c6332d83459e0d628">&#9670;&#160;</a></span>chapterId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.chapterId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbf739a5be3d99da2ee6aca01a085b30" name="adbf739a5be3d99da2ee6aca01a085b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf739a5be3d99da2ee6aca01a085b30">&#9670;&#160;</a></span>defeatMe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.defeatMe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a856bd7c64a543c8f762309bae65629e5" name="a856bd7c64a543c8f762309bae65629e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856bd7c64a543c8f762309bae65629e5">&#9670;&#160;</a></span>encounterEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.encounterEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4188367f17302b238aa329650b7b1995" name="a4188367f17302b238aa329650b7b1995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4188367f17302b238aa329650b7b1995">&#9670;&#160;</a></span>escapeCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.escapeCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2eb00eace5c6838b04ce4e9f6481307" name="aa2eb00eace5c6838b04ce4e9f6481307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2eb00eace5c6838b04ce4e9f6481307">&#9670;&#160;</a></span>follow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.follow = -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6784e2780c89f1ad6201af046686fbf1" name="a6784e2780c89f1ad6201af046686fbf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6784e2780c89f1ad6201af046686fbf1">&#9670;&#160;</a></span>formationEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.formationEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57d2cae66a9aabdc7f7a88a254665fd7" name="a57d2cae66a9aabdc7f7a88a254665fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d2cae66a9aabdc7f7a88a254665fd7">&#9670;&#160;</a></span>menuEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.menuEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa345829d1becd7c34adc16c9a34f6798" name="aa345829d1becd7c34adc16c9a34f6798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa345829d1becd7c34adc16c9a34f6798">&#9670;&#160;</a></span>playTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.playTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e26a9c781b8a4e07d3b022f84a3095b" name="a6e26a9c781b8a4e07d3b022f84a3095b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e26a9c781b8a4e07d3b022f84a3095b">&#9670;&#160;</a></span>saveCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.saveCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94ba2cde84a90b14071cea25556078a0" name="a94ba2cde84a90b14071cea25556078a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ba2cde84a90b14071cea25556078a0">&#9670;&#160;</a></span>savedBgm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.savedBgm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a727c25ab4cdcec16c049cf68a46b6076" name="a727c25ab4cdcec16c049cf68a46b6076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a727c25ab4cdcec16c049cf68a46b6076">&#9670;&#160;</a></span>saveEnabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.saveEnabled</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ce86a9dc36f86818088d17df76adcd9" name="a0ce86a9dc36f86818088d17df76adcd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce86a9dc36f86818088d17df76adcd9">&#9670;&#160;</a></span>sectionId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.sectionId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad65a192c566303b1c464aac870502ba1" name="ad65a192c566303b1c464aac870502ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65a192c566303b1c464aac870502ba1">&#9670;&#160;</a></span>victoryMe</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.victoryMe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba8fbddc1759a073dfd562884a034c92" name="aba8fbddc1759a073dfd562884a034c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8fbddc1759a073dfd562884a034c92">&#9670;&#160;</a></span>walkingBgm</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html">Sound</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.walkingBgm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11654a147ec7bf8e87d8c10245bd8ce2" name="a11654a147ec7bf8e87d8c10245bd8ce2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11654a147ec7bf8e87d8c10245bd8ce2">&#9670;&#160;</a></span>winCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.winCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf06c44cc60dd6347b5cb3a127374eed" name="abf06c44cc60dd6347b5cb3a127374eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf06c44cc60dd6347b5cb3a127374eed">&#9670;&#160;</a></span>windowTone</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;int&gt; RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.Runtime.RuntimeSystemConfigDataModel.windowTone</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/CoreSystem/Knowledge/DataModel/Runtime/<a class="el" href="../../d4/d12/_runtime_system_config_data_model_8cs.html">RuntimeSystemConfigDataModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

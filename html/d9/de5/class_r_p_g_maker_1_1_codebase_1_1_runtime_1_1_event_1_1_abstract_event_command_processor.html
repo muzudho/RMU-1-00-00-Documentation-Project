@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/d71/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event.html">Event</a></li><li class="navelem"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html">AbstractEventCommandProcessor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../d1/da3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>抽象イベント・コマンド処理機  
+ <a href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#details">[詳解]</a></p>
+
+<p><a class="el" href="../../d1/dd6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_class_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeClassProcessor</a>, <a class="el" href="../../de/daa/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_equipment_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeEquipmentProcessor</a>, <a class="el" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_exp_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeExpProcessor</a>, <a class="el" href="../../d0/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_hp_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeHpProcessor</a>, <a class="el" href="../../db/d3d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_level_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeLevelProcessor</a>, <a class="el" href="../../d2/d3d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_mp_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeMpProcessor</a>, <a class="el" href="../../d6/d14/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_parameter_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeParameterProcessor</a>, <a class="el" href="../../da/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_skill_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeSkillProcessor</a>, <a class="el" href="../../d0/da7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_state_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeStateProcessor</a>, <a class="el" href="../../d8/d1f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_tp_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeTpProcessor</a>, <a class="el" href="../../d9/da1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_heal_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorHealProcessor</a>, <a class="el" href="../../da/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_settings_processor.html">RPGMaker.Codebase.Runtime.Event.Actor.ActorSettingsProcessor</a>, <a class="el" href="../../d5/dc9/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_addon_command_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.AddonCommandProcessor</a>, <a class="el" href="../../d2/dff/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_continue_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmContinueProcessor</a>, <a class="el" href="../../d0/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_fadeout_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmFadeoutProcessor</a>, <a class="el" href="../../d5/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_play_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmPlayProcessor</a>, <a class="el" href="../../d0/d8d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_save_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmSaveProcessor</a>, <a class="el" href="../../da/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgs_fadeout_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgsFadeoutProcessor</a>, <a class="el" href="../../da/d4c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgs_play_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgsPlayProcessor</a>, <a class="el" href="../../d7/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_me_play_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.MePlayProcessor</a>, <a class="el" href="../../d1/d13/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_movie_play_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.MoviePlayProcessor</a>, <a class="el" href="../../da/dfa/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_se_play_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.SePlayProcessor</a>, <a class="el" href="../../de/dcb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_se_stop_processor.html">RPGMaker.Codebase.Runtime.Event.AudioVideo.SeStopProcessor</a>, <a class="el" href="../../d8/d32/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_appear.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleAppear</a>, <a class="el" href="../../d9/d51/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_change_state.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleChangeState</a>, <a class="el" href="../../d7/dc8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_change_status.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleChangeStatus</a>, <a class="el" href="../../d2/d17/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_exec_command.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleExecCommand</a>, <a class="el" href="../../d2/d26/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_show_animation.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleShowAnimation</a>, <a class="el" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_stop.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleStop</a>, <a class="el" href="../../d6/dae/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_transform.html">RPGMaker.Codebase.Runtime.Event.Battle.BattleTransform</a>, <a class="el" href="../../d8/d59/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_animation_settings_processor.html">RPGMaker.Codebase.Runtime.Event.Character.AnimationSettingsProcessor</a>, <a class="el" href="../../de/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_image_processor.html">RPGMaker.Codebase.Runtime.Event.Character.ChangeImageProcessor</a>, <a class="el" href="../../d2/dd3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_move_frequency_processor.html">RPGMaker.Codebase.Runtime.Event.Character.ChangeMoveFrequencyProcessor</a>, <a class="el" href="../../da/d9d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_move_speed_processor.html">RPGMaker.Codebase.Runtime.Event.Character.ChangeMoveSpeedProcessor</a>, <a class="el" href="../../d7/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_character_direction_processor.html">RPGMaker.Codebase.Runtime.Event.Character.CharacterDirectionProcessor</a>, <a class="el" href="../../db/d56/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_is_event_processor.html">RPGMaker.Codebase.Runtime.Event.Character.IsEventProcessor</a>, <a class="el" href="../../db/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_jump_processor.html">RPGMaker.Codebase.Runtime.Event.Character.JumpProcessor</a>, <a class="el" href="../../da/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_processor.html">RPGMaker.Codebase.Runtime.Event.Character.MovePlaceProcessor</a>, <a class="el" href="../../df/d26/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_ship_processor.html">RPGMaker.Codebase.Runtime.Event.Character.MovePlaceShipProcessor</a>, <a class="el" href="../../db/dea/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_ride_ship_processor.html">RPGMaker.Codebase.Runtime.Event.Character.MoveRideShipProcessor</a>, <a class="el" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_set_move_point_processor.html">RPGMaker.Codebase.Runtime.Event.Character.MoveSetMovePointProcessor</a>, <a class="el" href="../../da/dcf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_one_step_backward_processor.html">RPGMaker.Codebase.Runtime.Event.Character.OneStepBackwardProcessor</a>, <a class="el" href="../../d3/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_one_step_forward_processor.html">RPGMaker.Codebase.Runtime.Event.Character.OneStepForwardProcessor</a>, <a class="el" href="../../d4/d8c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_pass_through_processor.html">RPGMaker.Codebase.Runtime.Event.Character.PassThroughProcessor</a>, <a class="el" href="../../d7/da9/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_show_animation_processor.html">RPGMaker.Codebase.Runtime.Event.Character.ShowAnimationProcessor</a>, <a class="el" href="../../da/d07/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_show_icon_processor.html">RPGMaker.Codebase.Runtime.Event.Character.ShowIconProcessor</a>, <a class="el" href="../../d8/d46/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_step_move_processor.html">RPGMaker.Codebase.Runtime.Event.Character.StepMoveProcessor</a>, <a class="el" href="../../d3/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_change_color_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayChangeColorProcessor</a>, <a class="el" href="../../db/d7e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_change_weather_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayChangeWeatherProcessor</a>, <a class="el" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_fade_in_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayFadeInProcessor</a>, <a class="el" href="../../d7/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_fade_out_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayFadeOutProcessor</a>, <a class="el" href="../../d1/d4a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_flash_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayFlashProcessor</a>, <a class="el" href="../../dd/d5c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_shake_processor.html">RPGMaker.Codebase.Runtime.Event.Display.DisplayShakeProcessor</a>, <a class="el" href="../../d9/dfe/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_self_switch_processor.html">RPGMaker.Codebase.Runtime.Event.GameProgress.GameSelfSwitchProcessor</a>, <a class="el" href="../../dd/db6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_switch_processor.html">RPGMaker.Codebase.Runtime.Event.GameProgress.GameSwitchProcessor</a>, <a class="el" href="../../d0/d79/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_timer_processor.html">RPGMaker.Codebase.Runtime.Event.GameProgress.GameTimerProcessor</a>, <a class="el" href="../../dc/d1a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_val_processor.html">RPGMaker.Codebase.Runtime.Event.GameProgress.GameValProcessor</a>, <a class="el" href="../../d3/dca/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_battle_background.html">RPGMaker.Codebase.Runtime.Event.Map.MapChangeBattleBackground</a>, <a class="el" href="../../d9/d69/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_distant_view.html">RPGMaker.Codebase.Runtime.Event.Map.MapChangeDistantView</a>, <a class="el" href="../../d4/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_name_processor.html">RPGMaker.Codebase.Runtime.Event.Map.MapChangeNameProcessor</a>, <a class="el" href="../../de/dbd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_get_point.html">RPGMaker.Codebase.Runtime.Event.Map.MapGetPoint</a>, <a class="el" href="../../d8/dc6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_scroll_processor.html">RPGMaker.Codebase.Runtime.Event.Map.MapScrollProcessor</a>, <a class="el" href="../../d3/dc1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_number_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputNumberProcessor</a>, <a class="el" href="../../dc/d32/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_canceld.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectCanceld</a>, <a class="el" href="../../d2/da0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_end_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectEndProcessor</a>, <a class="el" href="../../d8/d19/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_item_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectItemProcessor</a>, <a class="el" href="../../d4/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectProcessor</a>, <a class="el" href="../../d6/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_selected_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectedProcessor</a>, <a class="el" href="../../d7/de4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_on_line_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageTextOnLineProcessor</a>, <a class="el" href="../../d1/d72/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageTextProcessor</a>, <a class="el" href="../../d1/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_scroll_on_line_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageTextScrollOnLineProcessor</a>, <a class="el" href="../../da/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_scroll_processor.html">RPGMaker.Codebase.Runtime.Event.Message.MessageTextScrollProcessor</a>, <a class="el" href="../../da/dc5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_alpha_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyAlphaProcess</a>, <a class="el" href="../../d3/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_arms_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyArmsProcess</a>, <a class="el" href="../../d9/de0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_change_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyChangeProcess</a>, <a class="el" href="../../d2/dd8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_change_walk_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyChangeWalkProcess</a>, <a class="el" href="../../dc/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_character_change_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyCharacterChangeProcess</a>, <a class="el" href="../../d1/d10/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_gold_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyGoldProcess</a>, <a class="el" href="../../d9/d09/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_item_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyItemProcess</a>, <a class="el" href="../../db/d10/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_weapon_process.html">RPGMaker.Codebase.Runtime.Event.Party.PartyWeaponProcess</a>, <a class="el" href="../../d6/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_change_color_processor.html">RPGMaker.Codebase.Runtime.Event.Picture.PictureChangeColorProcessor</a>, <a class="el" href="../../df/d7c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_erase.html">RPGMaker.Codebase.Runtime.Event.Picture.PictureErase</a>, <a class="el" href="../../d3/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_move_processor.html">RPGMaker.Codebase.Runtime.Event.Picture.PictureMoveProcessor</a>, <a class="el" href="../../d3/da2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_rotate_processor.html">RPGMaker.Codebase.Runtime.Event.Picture.PictureRotateProcessor</a>, <a class="el" href="../../d6/ddc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_show_processor.html">RPGMaker.Codebase.Runtime.Event.Picture.PictureShowProcessor</a>, <a class="el" href="../../da/d81/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_encount_enemy_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.EncountEnemyProcessor</a>, <a class="el" href="../../d7/dd7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_end_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.EndProcessor</a>, <a class="el" href="../../db/db5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_escape_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.EscapeProcessor</a>, <a class="el" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor</a>, <a class="el" href="../../d6/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_go_to_title_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.GoToTitleProcessor</a>, <a class="el" href="../../de/d45/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_input_name_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.InputNameProcessor</a>, <a class="el" href="../../d8/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_lose_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.LoseProcessor</a>, <a class="el" href="../../d3/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_menu_window_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.OpenMenuWindowProcessor</a>, <a class="el" href="../../db/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_save_window_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.OpenSaveWindowProcessor</a>, <a class="el" href="../../de/df4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_shop_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.OpenShopProcessor</a>, <a class="el" href="../../dd/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_win_processor.html">RPGMaker.Codebase.Runtime.Event.Screen.WinProcessor</a>, <a class="el" href="../../d8/d38/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_bgm_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleBgmProcessor</a>, <a class="el" href="../../db/dbb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_lose_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleLoseProcessor</a>, <a class="el" href="../../df/d7a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_win_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleWinProcessor</a>, <a class="el" href="../../d2/d8b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_change_actor_image_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemChangeActorImageProcessor</a>, <a class="el" href="../../d4/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_change_ship_image_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemChangeShipImageProcessor</a>, <a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_encount_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsEncountProcessor</a>, <a class="el" href="../../d2/d68/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_menu_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsMenuProcessor</a>, <a class="el" href="../../db/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_save_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsSaveProcessor</a>, <a class="el" href="../../d3/d5f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_sort_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsSortProcessor</a>, <a class="el" href="../../d6/d69/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_ship_bgm_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemShipBgmProcessor</a>, <a class="el" href="../../db/d8c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_window_color_processor.html">RPGMaker.Codebase.Runtime.Event.Systems.SystemWindowColorProcessor</a>, <a class="el" href="../../db/d46/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_wait_1_1_timing_wait_processor.html">RPGMaker.Codebase.Runtime.Event.Wait.TimingWaitProcessor</a> (計108項目)に継承されています。</p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/df5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_event_8_abstract_event_command_processor_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_abstract_event_command_processor_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_abstract_event_command_processor_coll__map">
+<area shape="rect" title="抽象イベント・コマンド処理機" alt="" coords="1208,213,1465,256"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html" title="イベントのChainLauncherの基底クラス" alt="" coords="749,125,979,184"/>
+<area shape="poly" title=" " alt="" coords="995,174,1208,210,1207,216,994,179"/>
+<area shape="rect" title=" " alt="" coords="304,123,497,165"/>
+<area shape="poly" title=" " alt="" coords="512,144,749,149,749,155,512,149"/>
+<area shape="rect" title=" " alt="" coords="343,205,458,232"/>
+<area shape="poly" title=" " alt="" coords="472,217,1208,230,1208,235,472,223"/>
+<area shape="poly" title=" " alt="" coords="471,206,748,168,749,173,472,212"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="258,40,543,99"/>
+<area shape="poly" title=" " alt="" coords="558,95,725,125,749,130,748,135,725,131,557,100"/>
+<area shape="rect" title=" " alt="" coords="5,56,59,83"/>
+<area shape="poly" title=" " alt="" coords="73,67,257,67,257,72,73,72"/>
+<area shape="rect" title=" " alt="" coords="835,283,893,309"/>
+<area shape="poly" title=" " alt="" coords="908,292,1032,284,1184,267,1249,254,1250,259,1185,272,1033,289,908,297"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae8bd158df928c659d1c2151daa9a1a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ae8bd158df928c659d1c2151daa9a1a43">Invoke</a> (<a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a> eventCommandChainLauncher, string eventID, EventDataModel.EventCommand command, Action&lt; string &gt; callback)</td></tr>
+<tr class="memdesc:ae8bd158df928c659d1c2151daa9a1a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントを実行する  <br /></td></tr>
+<tr class="separator:ae8bd158df928c659d1c2151daa9a1a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f7aa404d3dab8fd9d4f1e05c5b253a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#af9f7aa404d3dab8fd9d4f1e05c5b253a">Invoke</a> (<a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a> eventCommandChainLauncher, string eventID, EventDataModel.EventCommand command, Action&lt; string &gt; callback, List&lt; EventDataModel.EventCommand &gt; eventCommands)</td></tr>
+<tr class="memdesc:af9f7aa404d3dab8fd9d4f1e05c5b253a"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理 選択肢用  <br /></td></tr>
+<tr class="separator:af9f7aa404d3dab8fd9d4f1e05c5b253a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8573e9ed8a8d62fb8a212d7440109c30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a8573e9ed8a8d62fb8a212d7440109c30">SetNoWait</a> ()</td></tr>
+<tr class="memdesc:a8573e9ed8a8d62fb8a212d7440109c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回のCB処理のウェイトを行わない  <br /></td></tr>
+<tr class="separator:a8573e9ed8a8d62fb8a212d7440109c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad337b6f41b9fbe347c31f080079f69a9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ad337b6f41b9fbe347c31f080079f69a9">Process</a> (string eventID, EventDataModel.EventCommand command)</td></tr>
+<tr class="memdesc:ad337b6f41b9fbe347c31f080079f69a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理  <br /></td></tr>
+<tr class="separator:ad337b6f41b9fbe347c31f080079f69a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0c6eee2246393717c8c5b61fecb936"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a7a0c6eee2246393717c8c5b61fecb936">Process</a> (string eventID, EventDataModel.EventCommand command, List&lt; EventDataModel.EventCommand &gt; eventCommands)</td></tr>
+<tr class="memdesc:a7a0c6eee2246393717c8c5b61fecb936"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理 選択肢用  <br /></td></tr>
+<tr class="separator:a7a0c6eee2246393717c8c5b61fecb936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a51c3c1508c5bbdf78095bd490cbc9f65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a51c3c1508c5bbdf78095bd490cbc9f65">EventCommandChainLauncher</a></td></tr>
+<tr class="separator:a51c3c1508c5bbdf78095bd490cbc9f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26872f8b3c9056896da8dd75a7a43a1f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a26872f8b3c9056896da8dd75a7a43a1f">EventId</a></td></tr>
+<tr class="separator:a26872f8b3c9056896da8dd75a7a43a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac629457337b6e0c74a4c8ccba6b63acf"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ac629457337b6e0c74a4c8ccba6b63acf">SendBackToLauncher</a></td></tr>
+<tr class="separator:ac629457337b6e0c74a4c8ccba6b63acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6e12caad7aeeb1cefc01eb17fe292a"><td class="memItemLeft" align="right" valign="top">Action&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a5b6e12caad7aeeb1cefc01eb17fe292a">SendBackToLauncherEventId</a></td></tr>
+<tr class="separator:a5b6e12caad7aeeb1cefc01eb17fe292a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6002ccaace5bdac06a29ab37d8630eaa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a6002ccaace5bdac06a29ab37d8630eaa">_skipWait</a></td></tr>
+<tr class="separator:a6002ccaace5bdac06a29ab37d8630eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6a3729c23c607d4ef52b710b3cc92280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a6a3729c23c607d4ef52b710b3cc92280">SendBackToLauncherProcess</a> ()</td></tr>
+<tr class="memdesc:a6a3729c23c607d4ef52b710b3cc92280"><td class="mdescLeft">&#160;</td><td class="mdescRight">次イベントコマンドへシーケンスを流す  <br /></td></tr>
+<tr class="separator:a6a3729c23c607d4ef52b710b3cc92280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348df9c0022a937722824032b8fc5a08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a348df9c0022a937722824032b8fc5a08">SendBackToLauncherProcessAfterWait</a> ()</td></tr>
+<tr class="memdesc:a348df9c0022a937722824032b8fc5a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">次イベントコマンドへシーケンスを流す（ウェイト実行）  <br /></td></tr>
+<tr class="separator:a348df9c0022a937722824032b8fc5a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>抽象イベント・コマンド処理機 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="ae8bd158df928c659d1c2151daa9a1a43" name="ae8bd158df928c659d1c2151daa9a1a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bd158df928c659d1c2151daa9a1a43">&#9670;&#160;</a></span>Invoke() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.Invoke </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a>&#160;</td>
+          <td class="paramname"><em>eventCommandChainLauncher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>イベントを実行する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventCommandChainLauncher</td><td></td></tr>
+    <tr><td class="paramname">eventID</td><td></td></tr>
+    <tr><td class="paramname">command</td><td></td></tr>
+    <tr><td class="paramname">callback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_cgraph.png" border="0" usemap="#ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_cgraph" alt=""/></div>
+<map name="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_cgraph" id="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_cgraph">
+<area shape="rect" title="イベントを実行する" alt="" coords="5,47,266,105"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ad337b6f41b9fbe347c31f080079f69a9" title="イベント実行処理" alt="" coords="314,5,574,64"/>
+<area shape="poly" title=" " alt="" coords="266,56,299,51,299,57,266,61"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a6a3729c23c607d4ef52b710b3cc92280" title="次イベントコマンドへシーケンスを流す" alt="" coords="314,88,574,147"/>
+<area shape="poly" title=" " alt="" coords="266,91,299,95,299,101,266,96"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_icgraph.png" border="0" usemap="#ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_icgraph" alt=""/></div>
+<map name="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_icgraph" id="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ae8bd158df928c659d1c2151daa9a1a43_icgraph">
+<area shape="rect" title="イベントを実行する" alt="" coords="257,5,517,64"/>
+<area shape="rect" href="../../d6/d5c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_shop_1_1_item_shop.html#a3d324d19c6a2a246dcc2860c09a8eec1" title=" " alt="" coords="5,13,209,56"/>
+<area shape="poly" title=" " alt="" coords="242,37,209,37,209,32,242,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9f7aa404d3dab8fd9d4f1e05c5b253a" name="af9f7aa404d3dab8fd9d4f1e05c5b253a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9f7aa404d3dab8fd9d4f1e05c5b253a">&#9670;&#160;</a></span>Invoke() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.Invoke </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a>&#160;</td>
+          <td class="paramname"><em>eventCommandChainLauncher</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; string &gt;&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; EventDataModel::EventCommand &gt;&#160;</td>
+          <td class="paramname"><em>eventCommands</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>イベント実行処理 選択肢用 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventCommandChainLauncher</td><td></td></tr>
+    <tr><td class="paramname">eventID</td><td></td></tr>
+    <tr><td class="paramname">command</td><td></td></tr>
+    <tr><td class="paramname">callback</td><td></td></tr>
+    <tr><td class="paramname">eventCommands</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_af9f7aa404d3dab8fd9d4f1e05c5b253a_cgraph.png" border="0" usemap="#ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_af9f7aa404d3dab8fd9d4f1e05c5b253a_cgraph" alt=""/></div>
+<map name="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_af9f7aa404d3dab8fd9d4f1e05c5b253a_cgraph" id="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_af9f7aa404d3dab8fd9d4f1e05c5b253a_cgraph">
+<area shape="rect" title="イベント実行処理 選択肢用" alt="" coords="5,47,266,105"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ad337b6f41b9fbe347c31f080079f69a9" title="イベント実行処理" alt="" coords="314,5,574,64"/>
+<area shape="poly" title=" " alt="" coords="266,56,299,51,299,57,266,61"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a6a3729c23c607d4ef52b710b3cc92280" title="次イベントコマンドへシーケンスを流す" alt="" coords="314,88,574,147"/>
+<area shape="poly" title=" " alt="" coords="266,91,299,95,299,101,266,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad337b6f41b9fbe347c31f080079f69a9" name="ad337b6f41b9fbe347c31f080079f69a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad337b6f41b9fbe347c31f080079f69a9">&#9670;&#160;</a></span>Process() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.Process </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント実行処理 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventID</td><td></td></tr>
+    <tr><td class="paramname">command</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="../../d1/dd6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_class_processor.html#a0d6fb642ad6f3e33a84b3b551978d727">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeClassProcessor</a>, <a class="el" href="../../de/daa/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_equipment_processor.html#a4d1191cc3137d2742702d26bac4c6d31">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeEquipmentProcessor</a>, <a class="el" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_exp_processor.html#a607d3adb426893fe2faae88273eeae8a">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeExpProcessor</a>, <a class="el" href="../../d0/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_hp_processor.html#aaef3626749fd46d2753ab2ea8f7d404f">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeHpProcessor</a>, <a class="el" href="../../db/d3d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_level_processor.html#aedfcaa45dadae7b7b42a5622ad5678f2">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeLevelProcessor</a>, <a class="el" href="../../d2/d3d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_mp_processor.html#a4da2a2134f0e3582157275d019e60475">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeMpProcessor</a>, <a class="el" href="../../d6/d14/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_parameter_processor.html#aa971e5093601006f9944d077c3294394">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeParameterProcessor</a>, <a class="el" href="../../da/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_skill_processor.html#ace32ab757fa643a4f18224e30a1ae75f">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeSkillProcessor</a>, <a class="el" href="../../d0/da7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_state_processor.html#a958936dd9b3b8d187cd1863c88c214de">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeStateProcessor</a>, <a class="el" href="../../d8/d1f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_change_tp_processor.html#a37a16548591a5121b79bd8cf911f198f">RPGMaker.Codebase.Runtime.Event.Actor.ActorChangeTpProcessor</a>, <a class="el" href="../../d9/da1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_heal_processor.html#a9e76093d50274bfdef3b4338db936220">RPGMaker.Codebase.Runtime.Event.Actor.ActorHealProcessor</a>, <a class="el" href="../../da/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_actor_1_1_actor_settings_processor.html#a065012680afb94da624fe767a8f95d54">RPGMaker.Codebase.Runtime.Event.Actor.ActorSettingsProcessor</a>, <a class="el" href="../../d5/dc9/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_addon_command_processor.html#ad8f3ed9213a738de70bc2fb8c0298349">RPGMaker.Codebase.Runtime.Event.AudioVideo.AddonCommandProcessor</a>, <a class="el" href="../../d2/dff/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_continue_processor.html#a306d9c377605e7f7fb40d0e597ffc080">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmContinueProcessor</a>, <a class="el" href="../../d0/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_fadeout_processor.html#af0d39d7a34160406a5a317e437bc3088">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmFadeoutProcessor</a>, <a class="el" href="../../d5/d94/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_play_processor.html#ad65a3f12b4666d6060ba7966eaa66806">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmPlayProcessor</a>, <a class="el" href="../../d0/d8d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgm_save_processor.html#a05d02a8d6dda23f6b6a7ed193315648e">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgmSaveProcessor</a>, <a class="el" href="../../da/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgs_fadeout_processor.html#a369d030d1c8794ab2e413e586e646416">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgsFadeoutProcessor</a>, <a class="el" href="../../da/d4c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_bgs_play_processor.html#af9f9e8b5917b220db786fd2fbdbeff1d">RPGMaker.Codebase.Runtime.Event.AudioVideo.BgsPlayProcessor</a>, <a class="el" href="../../d7/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_me_play_processor.html#a0f6817a5bed7f75223d2763286b13280">RPGMaker.Codebase.Runtime.Event.AudioVideo.MePlayProcessor</a>, <a class="el" href="../../d1/d13/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_movie_play_processor.html#a3cb21f535d6d0b83a968d07574b0f842">RPGMaker.Codebase.Runtime.Event.AudioVideo.MoviePlayProcessor</a>, <a class="el" href="../../da/dfa/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_se_play_processor.html#a884ac57bcf0a59e9dfdbba5ec5fd81de">RPGMaker.Codebase.Runtime.Event.AudioVideo.SePlayProcessor</a>, <a class="el" href="../../de/dcb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_se_stop_processor.html#a281d7eb32637a6d958b45348df524c50">RPGMaker.Codebase.Runtime.Event.AudioVideo.SeStopProcessor</a>, <a class="el" href="../../d8/d32/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_appear.html#a97acd5f580a95d5902b6c99f72ec246f">RPGMaker.Codebase.Runtime.Event.Battle.BattleAppear</a>, <a class="el" href="../../d9/d51/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_change_state.html#ac92baad74c8787d5028f6b1b488733e2">RPGMaker.Codebase.Runtime.Event.Battle.BattleChangeState</a>, <a class="el" href="../../d7/dc8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_change_status.html#a5d019e603a1d5988b2dd9636f49d05c9">RPGMaker.Codebase.Runtime.Event.Battle.BattleChangeStatus</a>, <a class="el" href="../../d2/d17/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_exec_command.html#a9f465e4223eed07c0fea6fd9763ead11">RPGMaker.Codebase.Runtime.Event.Battle.BattleExecCommand</a>, <a class="el" href="../../d2/d26/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_show_animation.html#aa602f1d1ac4ec3bf1cdbf726a933d279">RPGMaker.Codebase.Runtime.Event.Battle.BattleShowAnimation</a>, <a class="el" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_stop.html#a00188b63131b8c324da5b2c4aeadb706">RPGMaker.Codebase.Runtime.Event.Battle.BattleStop</a>, <a class="el" href="../../d6/dae/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_battle_1_1_battle_transform.html#a05ac3cc0826eba9d53bbdd77085c1be5">RPGMaker.Codebase.Runtime.Event.Battle.BattleTransform</a>, <a class="el" href="../../d8/d59/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_animation_settings_processor.html#afc2d7fd3455f0d8ffd77b23e63ad988b">RPGMaker.Codebase.Runtime.Event.Character.AnimationSettingsProcessor</a>, <a class="el" href="../../de/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_image_processor.html#ac01506a7b60883acdc68c2637fa84d36">RPGMaker.Codebase.Runtime.Event.Character.ChangeImageProcessor</a>, <a class="el" href="../../d2/dd3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_move_frequency_processor.html#a2ba79adff6dd1d17bb25ecd66359c543">RPGMaker.Codebase.Runtime.Event.Character.ChangeMoveFrequencyProcessor</a>, <a class="el" href="../../da/d9d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_change_move_speed_processor.html#a4fcd0cc9fbd2a83f2a0772299f32884c">RPGMaker.Codebase.Runtime.Event.Character.ChangeMoveSpeedProcessor</a>, <a class="el" href="../../d7/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_character_direction_processor.html#a88e33acdabb710d78f462758c38d63c7">RPGMaker.Codebase.Runtime.Event.Character.CharacterDirectionProcessor</a>, <a class="el" href="../../db/d56/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_is_event_processor.html#a40078b95bd63faa27412f60b487d8871">RPGMaker.Codebase.Runtime.Event.Character.IsEventProcessor</a>, <a class="el" href="../../db/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_jump_processor.html#afc804ca9422661f0f4957a993741d279">RPGMaker.Codebase.Runtime.Event.Character.JumpProcessor</a>, <a class="el" href="../../da/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_processor.html#aba5383aa8e47e83fd4141571af071932">RPGMaker.Codebase.Runtime.Event.Character.MovePlaceProcessor</a>, <a class="el" href="../../df/d26/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_ship_processor.html#a529c9f8d4cbc0f8acb538ec1f1ffb790">RPGMaker.Codebase.Runtime.Event.Character.MovePlaceShipProcessor</a>, <a class="el" href="../../db/dea/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_ride_ship_processor.html#ae9d6fa0140ad420b3607b15b970830f6">RPGMaker.Codebase.Runtime.Event.Character.MoveRideShipProcessor</a>, <a class="el" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_set_move_point_processor.html#a63eb19e984504a0eff588225fdcd93ad">RPGMaker.Codebase.Runtime.Event.Character.MoveSetMovePointProcessor</a>, <a class="el" href="../../da/dcf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_one_step_backward_processor.html#a6eda9092e1425f0977efd99695dc02f2">RPGMaker.Codebase.Runtime.Event.Character.OneStepBackwardProcessor</a>, <a class="el" href="../../d3/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_one_step_forward_processor.html#aae1b3a6db4031b5a8b71ee150b408f27">RPGMaker.Codebase.Runtime.Event.Character.OneStepForwardProcessor</a>, <a class="el" href="../../d4/d8c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_pass_through_processor.html#a39e90a26d22e738dfe076cc007ddfa14">RPGMaker.Codebase.Runtime.Event.Character.PassThroughProcessor</a>, <a class="el" href="../../d7/da9/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_show_animation_processor.html#ac2d99814a3a02691c0d1100f305ae674">RPGMaker.Codebase.Runtime.Event.Character.ShowAnimationProcessor</a>, <a class="el" href="../../da/d07/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_show_icon_processor.html#aa463cc61714773a66fe3e96fb272390c">RPGMaker.Codebase.Runtime.Event.Character.ShowIconProcessor</a>, <a class="el" href="../../d8/d46/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_step_move_processor.html#a18aea84c929012a67ab05c031c95d373">RPGMaker.Codebase.Runtime.Event.Character.StepMoveProcessor</a>, <a class="el" href="../../d3/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_change_color_processor.html#aae855bde28945aea61db538df729e0e8">RPGMaker.Codebase.Runtime.Event.Display.DisplayChangeColorProcessor</a>, <a class="el" href="../../db/d7e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_change_weather_processor.html#a38c868e840a61a855dfe9efabaeeeac6">RPGMaker.Codebase.Runtime.Event.Display.DisplayChangeWeatherProcessor</a>, <a class="el" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_fade_in_processor.html#a86b3cb4f55d6f0f809a27947ca3b20fe">RPGMaker.Codebase.Runtime.Event.Display.DisplayFadeInProcessor</a>, <a class="el" href="../../d7/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_fade_out_processor.html#ad2e4dc1e7f2e0ecf87dc1e467d86af2b">RPGMaker.Codebase.Runtime.Event.Display.DisplayFadeOutProcessor</a>, <a class="el" href="../../d1/d4a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_flash_processor.html#a517d95a447e1e1d31a9b59172bbc52f0">RPGMaker.Codebase.Runtime.Event.Display.DisplayFlashProcessor</a>, <a class="el" href="../../dd/d5c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_display_1_1_display_shake_processor.html#a58b661c67475fc9401a22bb0f5514c1a">RPGMaker.Codebase.Runtime.Event.Display.DisplayShakeProcessor</a>, <a class="el" href="../../d9/dfe/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_self_switch_processor.html#af0b1211070e81ff24533655c837af46a">RPGMaker.Codebase.Runtime.Event.GameProgress.GameSelfSwitchProcessor</a>, <a class="el" href="../../dd/db6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_switch_processor.html#a8004768e82e5312c08a1e129b94a2908">RPGMaker.Codebase.Runtime.Event.GameProgress.GameSwitchProcessor</a>, <a class="el" href="../../d0/d79/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_timer_processor.html#afa314e55facb9a51a295f54920af84e0">RPGMaker.Codebase.Runtime.Event.GameProgress.GameTimerProcessor</a>, <a class="el" href="../../dc/d1a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_game_progress_1_1_game_val_processor.html#a263adc0a79496f91cfe67bde1321b49d">RPGMaker.Codebase.Runtime.Event.GameProgress.GameValProcessor</a>, <a class="el" href="../../d3/dca/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_battle_background.html#aac216578023f853bbce8f2a16216be06">RPGMaker.Codebase.Runtime.Event.Map.MapChangeBattleBackground</a>, <a class="el" href="../../d9/d69/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_distant_view.html#a2a35cf39f5df86ce49035c0188517f02">RPGMaker.Codebase.Runtime.Event.Map.MapChangeDistantView</a>, <a class="el" href="../../d4/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_change_name_processor.html#afdbe5dd88505eaa17359899d8f76db5b">RPGMaker.Codebase.Runtime.Event.Map.MapChangeNameProcessor</a>, <a class="el" href="../../de/dbd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_get_point.html#a5466b44f547c2a673ace46103efa70b8">RPGMaker.Codebase.Runtime.Event.Map.MapGetPoint</a>, <a class="el" href="../../d8/dc6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_map_1_1_map_scroll_processor.html#aa2f4e179f87e73d0ff902b129b67d99b">RPGMaker.Codebase.Runtime.Event.Map.MapScrollProcessor</a>, <a class="el" href="../../d3/dc1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_number_processor.html#aa80dd3a5b7bc5c2800164c75ff899e02">RPGMaker.Codebase.Runtime.Event.Message.MessageInputNumberProcessor</a>, <a class="el" href="../../dc/d32/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_canceld.html#a93cec4dff6cf7e9f7b06c8f5749d5304">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectCanceld</a>, <a class="el" href="../../d6/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_selected_processor.html#a4c0ce5f084d65777687ca056d09bb794">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectedProcessor</a>, <a class="el" href="../../d2/da0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_end_processor.html#ac63234de7594a877c43b0599cbae6a95">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectEndProcessor</a>, <a class="el" href="../../d8/d19/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_input_select_item_processor.html#a64cf2075d585741ddb16ecef3ecbaae2">RPGMaker.Codebase.Runtime.Event.Message.MessageInputSelectItemProcessor</a>, <a class="el" href="../../d7/de4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_on_line_processor.html#a1108d3828d1385de192adf7e7f32a683">RPGMaker.Codebase.Runtime.Event.Message.MessageTextOnLineProcessor</a>, <a class="el" href="../../d1/d72/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_processor.html#ae659d2d764a617cb20d354b21eb3aa10">RPGMaker.Codebase.Runtime.Event.Message.MessageTextProcessor</a>, <a class="el" href="../../d1/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_scroll_on_line_processor.html#ab21311e89d04348efdfef5b965b07129">RPGMaker.Codebase.Runtime.Event.Message.MessageTextScrollOnLineProcessor</a>, <a class="el" href="../../da/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_message_1_1_message_text_scroll_processor.html#a24c62d472e068f4fda2884bb8d12862c">RPGMaker.Codebase.Runtime.Event.Message.MessageTextScrollProcessor</a>, <a class="el" href="../../da/dc5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_alpha_process.html#a2699320afa933b8c6207f81062728b96">RPGMaker.Codebase.Runtime.Event.Party.PartyAlphaProcess</a>, <a class="el" href="../../d3/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_arms_process.html#a1ff07002be9951a23bb6ca1b7f103908">RPGMaker.Codebase.Runtime.Event.Party.PartyArmsProcess</a>, <a class="el" href="../../d9/de0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_change_process.html#afa28f25a93e48c726ccfb77f291d7b38">RPGMaker.Codebase.Runtime.Event.Party.PartyChangeProcess</a>, <a class="el" href="../../d2/dd8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_change_walk_process.html#a4d59c1aef8aade756491a6cd8c17698a">RPGMaker.Codebase.Runtime.Event.Party.PartyChangeWalkProcess</a>, <a class="el" href="../../dc/dee/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_character_change_process.html#ae0f898626129d655b3cd7452f9cd043d">RPGMaker.Codebase.Runtime.Event.Party.PartyCharacterChangeProcess</a>, <a class="el" href="../../d1/d10/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_gold_process.html#a2b245e82b8b987304cc2dcccc8e53aec">RPGMaker.Codebase.Runtime.Event.Party.PartyGoldProcess</a>, <a class="el" href="../../d9/d09/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_item_process.html#a96dbb2a7fa158da96311145947619832">RPGMaker.Codebase.Runtime.Event.Party.PartyItemProcess</a>, <a class="el" href="../../db/d10/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_party_1_1_party_weapon_process.html#aabedfafb913208f74e3eaa3a9d524679">RPGMaker.Codebase.Runtime.Event.Party.PartyWeaponProcess</a>, <a class="el" href="../../d6/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_change_color_processor.html#a3a91aca9a6b532b9048163796501c2ab">RPGMaker.Codebase.Runtime.Event.Picture.PictureChangeColorProcessor</a>, <a class="el" href="../../df/d7c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_erase.html#a47ec326d8e8be3d69356eec278966435">RPGMaker.Codebase.Runtime.Event.Picture.PictureErase</a>, <a class="el" href="../../d3/dbf/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_move_processor.html#a100fde1b895d86b927e9311186399bd6">RPGMaker.Codebase.Runtime.Event.Picture.PictureMoveProcessor</a>, <a class="el" href="../../d3/da2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_rotate_processor.html#a1c93d6820b1b7f4c5561693bc55fc2bd">RPGMaker.Codebase.Runtime.Event.Picture.PictureRotateProcessor</a>, <a class="el" href="../../d6/ddc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_picture_1_1_picture_show_processor.html#a955ae33515958e1bc5eb664afc6f9f95">RPGMaker.Codebase.Runtime.Event.Picture.PictureShowProcessor</a>, <a class="el" href="../../da/d81/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_encount_enemy_processor.html#a4fe526998868f3f73d7758da52cbc7d6">RPGMaker.Codebase.Runtime.Event.Screen.EncountEnemyProcessor</a>, <a class="el" href="../../d7/dd7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_end_processor.html#a9770e0a03fe787161456c2d5d09428e7">RPGMaker.Codebase.Runtime.Event.Screen.EndProcessor</a>, <a class="el" href="../../db/db5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_escape_processor.html#a2f9d18f15ce1814e15943a014f2eb495">RPGMaker.Codebase.Runtime.Event.Screen.EscapeProcessor</a>, <a class="el" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#a8bdcf1390df1e7e2fc6f52900e84e235">RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor</a>, <a class="el" href="../../d6/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_go_to_title_processor.html#a530143dd1c5a96a8b6ff0d45d665e27f">RPGMaker.Codebase.Runtime.Event.Screen.GoToTitleProcessor</a>, <a class="el" href="../../de/d45/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_input_name_processor.html#a3c4ba55ac29e4f947cb7572618467e16">RPGMaker.Codebase.Runtime.Event.Screen.InputNameProcessor</a>, <a class="el" href="../../d8/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_lose_processor.html#a96bbd79e2e6858ad2cf98467dc6a43a8">RPGMaker.Codebase.Runtime.Event.Screen.LoseProcessor</a>, <a class="el" href="../../d3/d64/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_menu_window_processor.html#ab5b3959e9528198dbff089e3c10d3876">RPGMaker.Codebase.Runtime.Event.Screen.OpenMenuWindowProcessor</a>, <a class="el" href="../../db/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_save_window_processor.html#abe5dc6e6430317e691a3009ff6e9dea0">RPGMaker.Codebase.Runtime.Event.Screen.OpenSaveWindowProcessor</a>, <a class="el" href="../../de/df4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_open_shop_processor.html#a74b2aff934a45b73e841f439afba7f84">RPGMaker.Codebase.Runtime.Event.Screen.OpenShopProcessor</a>, <a class="el" href="../../dd/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_win_processor.html#a946afda39117a11a196277dbb50fff03">RPGMaker.Codebase.Runtime.Event.Screen.WinProcessor</a>, <a class="el" href="../../d8/d38/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_bgm_processor.html#a464427850fa7374ad5d505ad0ed1cfb5">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleBgmProcessor</a>, <a class="el" href="../../db/dbb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_lose_processor.html#aaf1cf5c90ee1ae4eda73f72ab6a6c2be">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleLoseProcessor</a>, <a class="el" href="../../df/d7a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_battle_win_processor.html#a59a65addc3d74aa41e28d9db2b2b6075">RPGMaker.Codebase.Runtime.Event.Systems.SystemBattleWinProcessor</a>, <a class="el" href="../../d2/d8b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_change_actor_image_processor.html#a5f26365eb4234486c0f3dc9d2ae8d44d">RPGMaker.Codebase.Runtime.Event.Systems.SystemChangeActorImageProcessor</a>, <a class="el" href="../../d4/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_change_ship_image_processor.html#af92d9347e520204ac71cc27ca865c846">RPGMaker.Codebase.Runtime.Event.Systems.SystemChangeShipImageProcessor</a>, <a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_encount_processor.html#a98c68634e2c5ebf9ccfa1a1a57eb870a">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsEncountProcessor</a>, <a class="el" href="../../d2/d68/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_menu_processor.html#a2f8518f607ec147660ef03875485cd30">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsMenuProcessor</a>, <a class="el" href="../../db/ded/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_save_processor.html#ad5b137d513dd56c81946b1f6c336c21a">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsSaveProcessor</a>, <a class="el" href="../../d3/d5f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_is_sort_processor.html#a3e38d17798b149efca8ab20543bf5aa4">RPGMaker.Codebase.Runtime.Event.Systems.SystemIsSortProcessor</a>, <a class="el" href="../../d6/d69/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_ship_bgm_processor.html#a3ea8839fe85605fa8fc1ddc9bafffcaf">RPGMaker.Codebase.Runtime.Event.Systems.SystemShipBgmProcessor</a>, <a class="el" href="../../db/d8c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_systems_1_1_system_window_color_processor.html#adeb3989711ff069200b3dda2a8b96118">RPGMaker.Codebase.Runtime.Event.Systems.SystemWindowColorProcessor</a>, <a class="el" href="../../db/d46/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_wait_1_1_timing_wait_processor.html#aa631cdad6cf0e18e565cabb944bc21a6">RPGMaker.Codebase.Runtime.Event.Wait.TimingWaitProcessor</a> (計107項目)で再実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ad337b6f41b9fbe347c31f080079f69a9_icgraph.png" border="0" usemap="#ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ad337b6f41b9fbe347c31f080079f69a9_icgraph" alt=""/></div>
+<map name="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ad337b6f41b9fbe347c31f080079f69a9_icgraph" id="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_ad337b6f41b9fbe347c31f080079f69a9_icgraph">
+<area shape="rect" title="イベント実行処理" alt="" coords="565,47,825,105"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ae8bd158df928c659d1c2151daa9a1a43" title="イベントを実行する" alt="" coords="257,5,517,64"/>
+<area shape="poly" title=" " alt="" coords="550,59,517,55,518,49,551,54"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#af9f7aa404d3dab8fd9d4f1e05c5b253a" title="イベント実行処理 選択肢用" alt="" coords="257,88,517,147"/>
+<area shape="poly" title=" " alt="" coords="551,98,518,103,517,97,550,93"/>
+<area shape="rect" href="../../d6/d5c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_shop_1_1_item_shop.html#a3d324d19c6a2a246dcc2860c09a8eec1" title=" " alt="" coords="5,13,209,56"/>
+<area shape="poly" title=" " alt="" coords="242,37,209,37,209,32,242,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7a0c6eee2246393717c8c5b61fecb936" name="a7a0c6eee2246393717c8c5b61fecb936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0c6eee2246393717c8c5b61fecb936">&#9670;&#160;</a></span>Process() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.Process </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; EventDataModel::EventCommand &gt;&#160;</td>
+          <td class="paramname"><em>eventCommands</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント実行処理 選択肢用 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventID</td><td></td></tr>
+    <tr><td class="paramname">command</td><td></td></tr>
+    <tr><td class="paramname">eventCommands</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a3729c23c607d4ef52b710b3cc92280" name="a6a3729c23c607d4ef52b710b3cc92280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a3729c23c607d4ef52b710b3cc92280">&#9670;&#160;</a></span>SendBackToLauncherProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.SendBackToLauncherProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>次イベントコマンドへシーケンスを流す </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_a6a3729c23c607d4ef52b710b3cc92280_icgraph.png" border="0" usemap="#ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_a6a3729c23c607d4ef52b710b3cc92280_icgraph" alt=""/></div>
+<map name="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_a6a3729c23c607d4ef52b710b3cc92280_icgraph" id="ad9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor_a6a3729c23c607d4ef52b710b3cc92280_icgraph">
+<area shape="rect" title="次イベントコマンドへシーケンスを流す" alt="" coords="565,47,825,105"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ae8bd158df928c659d1c2151daa9a1a43" title="イベントを実行する" alt="" coords="257,5,517,64"/>
+<area shape="poly" title=" " alt="" coords="550,59,517,55,518,49,551,54"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#af9f7aa404d3dab8fd9d4f1e05c5b253a" title="イベント実行処理 選択肢用" alt="" coords="257,88,517,147"/>
+<area shape="poly" title=" " alt="" coords="551,98,518,103,517,97,550,93"/>
+<area shape="rect" href="../../d6/d5c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_shop_1_1_item_shop.html#a3d324d19c6a2a246dcc2860c09a8eec1" title=" " alt="" coords="5,13,209,56"/>
+<area shape="poly" title=" " alt="" coords="242,37,209,37,209,32,242,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a348df9c0022a937722824032b8fc5a08" name="a348df9c0022a937722824032b8fc5a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a348df9c0022a937722824032b8fc5a08">&#9670;&#160;</a></span>SendBackToLauncherProcessAfterWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.SendBackToLauncherProcessAfterWait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>次イベントコマンドへシーケンスを流す（ウェイト実行） </p>
+
+</div>
+</div>
+<a id="a8573e9ed8a8d62fb8a212d7440109c30" name="a8573e9ed8a8d62fb8a212d7440109c30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8573e9ed8a8d62fb8a212d7440109c30">&#9670;&#160;</a></span>SetNoWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.SetNoWait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>次回のCB処理のウェイトを行わない </p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a6002ccaace5bdac06a29ab37d8630eaa" name="a6002ccaace5bdac06a29ab37d8630eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6002ccaace5bdac06a29ab37d8630eaa">&#9670;&#160;</a></span>_skipWait</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor._skipWait</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51c3c1508c5bbdf78095bd490cbc9f65" name="a51c3c1508c5bbdf78095bd490cbc9f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c3c1508c5bbdf78095bd490cbc9f65">&#9670;&#160;</a></span>EventCommandChainLauncher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a> RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.EventCommandChainLauncher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26872f8b3c9056896da8dd75a7a43a1f" name="a26872f8b3c9056896da8dd75a7a43a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26872f8b3c9056896da8dd75a7a43a1f">&#9670;&#160;</a></span>EventId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.EventId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac629457337b6e0c74a4c8ccba6b63acf" name="ac629457337b6e0c74a4c8ccba6b63acf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac629457337b6e0c74a4c8ccba6b63acf">&#9670;&#160;</a></span>SendBackToLauncher</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.SendBackToLauncher</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b6e12caad7aeeb1cefc01eb17fe292a" name="a5b6e12caad7aeeb1cefc01eb17fe292a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b6e12caad7aeeb1cefc01eb17fe292a">&#9670;&#160;</a></span>SendBackToLauncherEventId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;string&gt; RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor.SendBackToLauncherEventId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Event/<a class="el" href="../../d8/d3a/_abstract_event_command_processor_8cs.html">AbstractEventCommandProcessor.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

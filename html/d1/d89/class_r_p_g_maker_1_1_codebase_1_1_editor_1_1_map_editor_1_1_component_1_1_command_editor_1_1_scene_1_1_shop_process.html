@@ -1,0 +1,838 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d1/dbc/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor.html">MapEditor</a></li><li class="navelem"><a class="el" href="../../dd/db9/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component.html">Component</a></li><li class="navelem"><a class="el" href="../../d9/d4d/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor.html">CommandEditor</a></li><li class="navelem"><a class="el" href="../../d0/d9e/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene.html">Scene</a></li><li class="navelem"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html">ShopProcess</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d1/d55/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_sc6eabb21b901ac056e0fb2920493118b9.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,257,139"/>
+<area shape="rect" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html" title=" " alt="" coords="49,5,213,32"/>
+<area shape="poly" title=" " alt="" coords="134,47,134,79,128,79,128,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/df4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_sc962a9b6752a0ec985e5d9ed3be36969f.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_command_editor_8_scene_8_shop_process_coll__map">
+<area shape="rect" title=" " alt="" coords="1800,1160,2051,1219"/>
+<area shape="rect" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html" title=" " alt="" coords="1510,1176,1673,1203"/>
+<area shape="poly" title=" " alt="" coords="1688,1187,1800,1187,1800,1192,1688,1192"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html" title=" " alt="" coords="1013,879,1269,937"/>
+<area shape="poly" title=" " alt="" coords="1240,940,1842,1157,1840,1162,1238,945"/>
+<area shape="poly" title=" " alt="" coords="1160,950,1181,998,1211,1054,1252,1107,1276,1130,1302,1150,1352,1173,1405,1187,1459,1193,1509,1194,1509,1199,1459,1198,1405,1192,1350,1178,1299,1154,1272,1134,1248,1110,1207,1056,1176,1001,1155,952"/>
+<area shape="rect" href="../../d5/deb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_animation_repository.html" title=" " alt="" coords="405,92,672,151"/>
+<area shape="poly" title=" " alt="" coords="687,124,774,131,861,143,934,161,963,173,983,187,1002,210,1020,241,1050,320,1076,417,1097,523,1126,732,1140,878,1135,878,1121,732,1092,524,1071,418,1045,321,1015,243,998,213,980,191,960,178,932,166,860,148,774,136,687,129"/>
+<area shape="rect" title=" " alt="" coords="9,100,196,143"/>
+<area shape="poly" title=" " alt="" coords="211,119,404,119,404,124,211,124"/>
+<area shape="rect" href="../../d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html" title=" " alt="" coords="405,175,672,233"/>
+<area shape="poly" title=" " alt="" coords="687,207,774,215,861,227,934,246,962,257,983,271,1000,291,1016,318,1045,386,1070,471,1091,564,1123,747,1139,878,1134,878,1117,748,1086,565,1065,472,1040,388,1012,320,996,294,980,275,960,262,932,251,860,233,774,220,687,213"/>
+<area shape="rect" title=" " alt="" coords="9,183,196,225"/>
+<area shape="poly" title=" " alt="" coords="211,201,404,201,404,207,211,207"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_asset_manage_repository.html" title=" " alt="" coords="405,1415,672,1473"/>
+<area shape="poly" title=" " alt="" coords="662,1405,670,1401,682,1389,694,1377,736,1355,774,1344,844,1335,877,1331,910,1323,944,1307,980,1279,1015,1240,1045,1195,1070,1147,1091,1099,1119,1007,1133,937,1138,938,1124,1008,1096,1100,1075,1150,1050,1198,1019,1243,983,1283,947,1311,912,1328,878,1336,845,1340,775,1349,738,1360,698,1381,686,1393,674,1405,664,1410"/>
+<area shape="rect" title=" " alt="" coords="76,1539,129,1565"/>
+<area shape="poly" title=" " alt="" coords="142,1536,223,1512,404,1469,405,1474,224,1517,144,1542"/>
+<area shape="rect" href="../../dc/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_auto_guide_repository.html" title=" " alt="" coords="405,1084,672,1143"/>
+<area shape="poly" title=" " alt="" coords="102,1523,108,1456,126,1366,142,1319,162,1272,189,1229,222,1191,252,1173,296,1157,404,1132,405,1137,297,1162,254,1178,225,1195,193,1232,167,1275,147,1321,131,1368,114,1457,107,1524"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_flags_repository.html" title=" " alt="" coords="405,1332,672,1391"/>
+<area shape="poly" title=" " alt="" coords="118,1525,161,1472,190,1444,222,1422,266,1401,312,1386,404,1367,405,1372,313,1391,268,1406,225,1426,193,1448,165,1475,122,1528"/>
+<area shape="rect" href="../../d6/d55/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_system_repository.html" title=" " alt="" coords="405,1497,672,1556"/>
+<area shape="poly" title=" " alt="" coords="144,1547,404,1532,405,1537,144,1552"/>
+<area shape="rect" href="../../d6/d61/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_title_repository.html" title=" " alt="" coords="405,1580,672,1639"/>
+<area shape="poly" title=" " alt="" coords="144,1555,405,1589,404,1594,144,1560"/>
+<area shape="rect" href="../../de/d41/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_ui_setting_repository.html" title=" " alt="" coords="405,1167,672,1225"/>
+<area shape="poly" title=" " alt="" coords="104,1523,114,1466,134,1393,149,1355,169,1318,193,1285,222,1255,252,1239,297,1226,404,1207,405,1212,298,1231,254,1244,225,1259,197,1288,173,1321,154,1358,139,1395,119,1467,109,1524"/>
+<area shape="rect" href="../../d0/d25/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor810f9e3871d1afeaa788d9c5df5cdd13.html" title=" " alt="" coords="405,1249,672,1308"/>
+<area shape="poly" title=" " alt="" coords="108,1523,122,1481,145,1429,178,1377,199,1354,222,1334,253,1319,297,1307,404,1289,405,1294,299,1312,255,1324,225,1338,202,1358,182,1380,150,1431,127,1483,113,1525"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="696,1967,981,2025"/>
+<area shape="poly" title=" " alt="" coords="110,1580,123,1676,146,1804,162,1868,180,1925,202,1970,225,1999,255,2019,287,2036,354,2058,426,2069,499,2071,571,2065,639,2053,754,2023,755,2028,640,2058,571,2070,499,2076,426,2075,353,2064,285,2041,252,2024,222,2003,197,1973,175,1927,157,1869,141,1805,117,1677,104,1580"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html" title="マップ置き場" alt="" coords="420,1911,657,1969"/>
+<area shape="poly" title=" " alt="" coords="107,1580,113,1646,130,1732,145,1778,166,1821,192,1861,225,1895,257,1911,305,1922,420,1934,419,1939,304,1927,255,1916,222,1899,188,1865,161,1824,140,1780,125,1734,107,1647,102,1580"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_repository.html" title=" " alt="" coords="420,1663,657,1721"/>
+<area shape="poly" title=" " alt="" coords="123,1576,165,1626,193,1651,225,1670,272,1686,322,1696,372,1701,419,1701,419,1706,371,1706,321,1701,271,1691,223,1674,190,1655,161,1630,119,1580"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_group_repository.html" title=" " alt="" coords="420,1745,657,1804"/>
+<area shape="poly" title=" " alt="" coords="115,1579,130,1616,154,1660,185,1703,204,1722,225,1738,258,1750,306,1760,419,1769,419,1775,305,1765,256,1755,222,1742,200,1726,181,1707,149,1663,126,1619,110,1581"/>
+<area shape="rect" href="../../d4/d79/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_image_repository.html" title=" " alt="" coords="420,1828,657,1887"/>
+<area shape="poly" title=" " alt="" coords="111,1579,122,1629,144,1691,177,1753,199,1781,225,1804,257,1820,305,1832,420,1847,419,1852,304,1837,256,1825,222,1809,195,1785,173,1756,139,1693,117,1631,106,1581"/>
+<area shape="poly" title=" " alt="" coords="656,1076,671,1070,682,1062,695,1055,738,1044,775,1039,840,1042,904,1044,939,1038,980,1026,1018,1007,1052,984,1109,936,1112,940,1056,988,1020,1012,982,1030,941,1044,904,1049,839,1048,775,1045,739,1049,697,1060,685,1067,673,1074,658,1081"/>
+<area shape="rect" title=" " alt="" coords="9,1092,196,1135"/>
+<area shape="poly" title=" " alt="" coords="211,1111,404,1111,404,1116,211,1116"/>
+<area shape="rect" href="../../dc/d27/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor67544213d6af3013901ca89c3e4d5d21.html" title=" " alt="" coords="405,257,672,316"/>
+<area shape="poly" title=" " alt="" coords="687,291,774,299,860,312,934,330,962,342,983,355,998,372,1013,395,1040,453,1064,525,1085,605,1119,762,1138,878,1133,879,1113,763,1080,606,1059,527,1035,455,1008,397,994,375,980,359,960,346,932,335,859,317,773,304,686,296"/>
+<area shape="rect" title=" " alt="" coords="5,265,200,308"/>
+<area shape="poly" title=" " alt="" coords="214,284,404,284,404,289,214,289"/>
+<area shape="rect" href="../../d5/df3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_class_repository.html" title=" " alt="" coords="405,340,672,399"/>
+<area shape="poly" title=" " alt="" coords="687,375,774,383,860,396,933,414,962,426,983,439,1029,488,1066,545,1093,607,1113,671,1127,733,1136,791,1142,878,1137,878,1130,791,1122,734,1108,673,1088,609,1061,548,1025,491,980,443,959,431,932,419,859,401,773,388,687,380"/>
+<area shape="rect" title=" " alt="" coords="9,348,196,391"/>
+<area shape="poly" title=" " alt="" coords="211,367,404,367,404,372,211,372"/>
+<area shape="rect" href="../../d3/dae/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_encounter_repository.html" title=" " alt="" coords="405,423,672,481"/>
+<area shape="poly" title=" " alt="" coords="687,458,773,466,859,479,933,497,961,508,983,521,1023,559,1056,605,1082,655,1102,706,1128,804,1140,878,1134,879,1123,805,1097,708,1077,657,1051,608,1019,563,980,525,959,513,931,502,858,484,773,471,686,463"/>
+<area shape="rect" title=" " alt="" coords="9,431,196,473"/>
+<area shape="poly" title=" " alt="" coords="211,449,404,449,404,455,211,455"/>
+<area shape="rect" href="../../d4/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_enemy_repository.html" title=" " alt="" coords="405,505,672,564"/>
+<area shape="poly" title=" " alt="" coords="687,539,773,547,859,558,932,574,961,585,983,596,1017,626,1046,661,1071,700,1091,740,1120,817,1137,878,1131,879,1115,819,1086,742,1066,702,1042,664,1013,630,980,601,959,589,931,579,858,563,773,552,687,544"/>
+<area shape="rect" title=" " alt="" coords="9,513,196,556"/>
+<area shape="poly" title=" " alt="" coords="211,532,404,532,404,537,211,537"/>
+<area shape="poly" title=" " alt="" coords="667,1321,670,1318,679,1304,681,1289,683,1273,694,1258,731,1234,767,1223,802,1222,837,1224,872,1227,907,1227,942,1218,980,1196,1011,1169,1038,1136,1062,1101,1082,1064,1112,993,1130,937,1135,939,1117,995,1087,1067,1067,1104,1043,1140,1015,1172,983,1201,944,1223,907,1232,871,1233,837,1230,802,1227,768,1229,734,1239,698,1262,688,1275,686,1290,684,1306,674,1322,670,1325"/>
+<area shape="rect" href="../../dd/d1d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_item_repository.html" title=" " alt="" coords="405,588,672,647"/>
+<area shape="poly" title=" " alt="" coords="687,612,759,618,836,631,912,654,983,688,1010,708,1034,731,1076,782,1108,834,1130,877,1125,880,1103,836,1072,785,1030,734,1006,712,980,693,910,659,835,636,759,623,687,617"/>
+<area shape="rect" title=" " alt="" coords="9,596,196,639"/>
+<area shape="poly" title=" " alt="" coords="211,615,404,615,404,620,211,620"/>
+<area shape="rect" href="../../da/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_common_repository.html" title=" " alt="" coords="405,671,672,729"/>
+<area shape="poly" title=" " alt="" coords="687,707,758,717,833,732,909,752,982,780,1020,801,1056,826,1113,876,1109,880,1053,830,1018,806,980,785,908,757,832,737,757,722,686,712"/>
+<area shape="rect" title=" " alt="" coords="9,679,196,721"/>
+<area shape="poly" title=" " alt="" coords="211,697,404,697,404,703,211,703"/>
+<area shape="rect" href="../../df/d9d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_custom_repository.html" title=" " alt="" coords="405,753,672,812"/>
+<area shape="poly" title=" " alt="" coords="687,799,831,822,982,853,1057,875,1056,881,981,859,830,827,686,804"/>
+<area shape="rect" title=" " alt="" coords="9,761,196,804"/>
+<area shape="poly" title=" " alt="" coords="211,780,404,780,404,785,211,785"/>
+<area shape="rect" href="../../d0/d34/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_state_repository.html" title=" " alt="" coords="405,836,672,895"/>
+<area shape="poly" title=" " alt="" coords="687,873,1013,896,1012,902,687,878"/>
+<area shape="rect" title=" " alt="" coords="9,844,196,887"/>
+<area shape="poly" title=" " alt="" coords="211,863,404,863,404,868,211,868"/>
+<area shape="poly" title=" " alt="" coords="686,1517,762,1503,840,1481,914,1447,949,1424,979,1398,1025,1345,1060,1283,1087,1218,1107,1151,1121,1087,1130,1027,1137,938,1142,938,1135,1028,1126,1087,1112,1152,1092,1220,1065,1286,1029,1348,983,1402,952,1429,917,1451,841,1486,763,1509,687,1522"/>
+<area shape="poly" title=" " alt="" coords="687,1621,762,1618,840,1605,878,1594,915,1579,949,1560,979,1535,996,1516,1011,1491,1040,1423,1064,1340,1086,1248,1117,1067,1134,937,1139,938,1122,1068,1091,1249,1070,1341,1045,1425,1016,1493,1000,1520,983,1539,952,1564,917,1584,880,1599,841,1610,763,1623,687,1626"/>
+<area shape="rect" href="../../d6/d3e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_troop_repository.html" title=" " alt="" coords="405,919,672,977"/>
+<area shape="poly" title=" " alt="" coords="687,936,981,917,1012,915,1012,920,982,923,687,942"/>
+<area shape="rect" title=" " alt="" coords="9,927,196,969"/>
+<area shape="poly" title=" " alt="" coords="211,945,404,945,404,951,211,951"/>
+<area shape="poly" title=" " alt="" coords="665,1156,670,1153,678,1143,681,1133,685,1121,694,1111,733,1092,769,1084,803,1084,836,1089,869,1094,904,1096,940,1091,980,1076,1025,1046,1064,1009,1096,970,1120,936,1124,939,1100,974,1068,1013,1028,1051,983,1081,941,1097,904,1101,869,1099,836,1094,803,1089,770,1089,735,1097,698,1115,689,1124,686,1134,683,1146,674,1157,669,1161"/>
+<area shape="rect" href="../../dc/dcd/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_vehicle_repository.html" title=" " alt="" coords="405,1001,672,1060"/>
+<area shape="poly" title=" " alt="" coords="686,1006,981,957,1056,935,1058,940,982,963,687,1011"/>
+<area shape="rect" title=" " alt="" coords="9,1009,196,1052"/>
+<area shape="poly" title=" " alt="" coords="211,1028,404,1028,404,1033,211,1033"/>
+<area shape="rect" href="../../de/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_weapon_repository.html" title=" " alt="" coords="405,9,672,68"/>
+<area shape="poly" title=" " alt="" coords="687,19,763,21,842,33,881,44,918,60,952,80,983,105,1004,130,1023,165,1056,254,1082,364,1103,484,1129,717,1141,878,1136,878,1124,718,1097,485,1077,365,1051,256,1018,167,1000,133,979,109,949,84,915,64,879,49,841,38,763,26,687,24"/>
+<area shape="rect" title=" " alt="" coords="9,17,196,60"/>
+<area shape="poly" title=" " alt="" coords="211,36,404,36,404,41,211,41"/>
+<area shape="poly" title=" " alt="" coords="667,1238,670,1236,679,1221,681,1206,683,1190,694,1175,732,1153,767,1144,802,1144,836,1149,870,1154,905,1156,941,1150,980,1132,1007,1113,1032,1089,1073,1036,1105,982,1126,937,1131,939,1110,984,1078,1039,1036,1093,1010,1117,983,1137,943,1155,905,1161,869,1160,835,1154,802,1149,768,1149,734,1158,698,1179,688,1192,686,1207,684,1223,674,1239,670,1242"/>
+<area shape="poly" title=" " alt="" coords="995,1965,1066,1944,1140,1915,1211,1877,1275,1830,1323,1783,1360,1739,1388,1696,1408,1653,1440,1556,1474,1433,1479,1384,1479,1320,1483,1258,1489,1232,1499,1213,1512,1201,1516,1205,1503,1216,1494,1234,1488,1258,1485,1320,1484,1385,1479,1434,1445,1558,1413,1655,1392,1699,1364,1742,1327,1786,1278,1834,1214,1882,1142,1920,1068,1949,996,1970"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html" title=" " alt="" coords="1005,1745,1277,1804"/>
+<area shape="poly" title=" " alt="" coords="1155,1730,1199,1625,1231,1557,1271,1485,1317,1410,1371,1338,1432,1271,1499,1212,1520,1201,1522,1206,1502,1217,1435,1275,1375,1341,1322,1413,1276,1487,1236,1560,1204,1627,1160,1732"/>
+<area shape="poly" title=" " alt="" coords="671,1922,821,1896,902,1877,980,1853,1038,1829,1089,1802,1092,1807,1040,1834,982,1859,903,1882,822,1901,672,1928"/>
+<area shape="poly" title=" " alt="" coords="672,1708,1005,1753,1004,1759,671,1713"/>
+<area shape="poly" title=" " alt="" coords="672,1772,1005,1772,1005,1777,672,1777"/>
+<area shape="poly" title=" " alt="" coords="671,1836,1004,1791,1005,1796,672,1842"/>
+<area shape="rect" title=" " alt="" coords="1546,1227,1637,1253"/>
+<area shape="poly" title=" " alt="" coords="1651,1228,1799,1206,1800,1211,1652,1234"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a40739d34cc1f4ec1b2742ec2280de9ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a40739d34cc1f4ec1b2742ec2280de9ef">ShopProcess</a> (VisualElement rootElement, List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt; eventDataModels, int eventIndex, int eventCommandIndex)</td></tr>
+<tr class="separator:a40739d34cc1f4ec1b2742ec2280de9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99287151ee0f682cec2f572b334ee325"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a99287151ee0f682cec2f572b334ee325">Invoke</a> ()</td></tr>
+<tr class="separator:a99287151ee0f682cec2f572b334ee325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b689c2f9ac241639d18ccfbfaa05b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a63b689c2f9ac241639d18ccfbfaa05b5">Invoke</a> ()</td></tr>
+<tr class="separator:a63b689c2f9ac241639d18ccfbfaa05b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8ea221e13a987116534b3453d38f9adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a8ea221e13a987116534b3453d38f9adf">ItemPage</a> (VisualElement Items, string category=&quot;0&quot;, string itemId=&quot;0&quot;, string priceSwitch=&quot;0&quot;, string priceValue=&quot;0&quot;)</td></tr>
+<tr class="separator:a8ea221e13a987116534b3453d38f9adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246661653f11485086bed9fe519102d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a246661653f11485086bed9fe519102d3">Save</a> ()</td></tr>
+<tr class="separator:a246661653f11485086bed9fe519102d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:ac02aad120bd9584f2854970da4dc65dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#ac02aad120bd9584f2854970da4dc65dd">_addButton</a></td></tr>
+<tr class="separator:ac02aad120bd9584f2854970da4dc65dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab82eecf447c96fab1861fc3ee6d4577e"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../dd/d35/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_armor_1_1_armor_data_model.html">ArmorDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#ab82eecf447c96fab1861fc3ee6d4577e">_armorDataModels</a></td></tr>
+<tr class="separator:ab82eecf447c96fab1861fc3ee6d4577e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcfce0c462956a436d2615ebfe23187"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html">DatabaseManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a3fcfce0c462956a436d2615ebfe23187">_databaseManagementService</a></td></tr>
+<tr class="separator:a3fcfce0c462956a436d2615ebfe23187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ecd3391f7b57e0a80131900271a6c09"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a1ecd3391f7b57e0a80131900271a6c09">_isBuy</a></td></tr>
+<tr class="separator:a1ecd3391f7b57e0a80131900271a6c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a542119b834b952b7cc2abcf26ca0cc"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d7/d5c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_item_1_1_item_data_model.html">ItemDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a1a542119b834b952b7cc2abcf26ca0cc">_itemDataModels</a></td></tr>
+<tr class="separator:a1a542119b834b952b7cc2abcf26ca0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c4717fd97d392d04c114de2e596985"><td class="memItemLeft" align="right" valign="top">readonly List&lt; object &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a34c4717fd97d392d04c114de2e596985">_itemList</a> = new List&lt;object&gt;()</td></tr>
+<tr class="separator:a34c4717fd97d392d04c114de2e596985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36eaab600bda75e1a426f9fca66c4177"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a36eaab600bda75e1a426f9fca66c4177">_items</a></td></tr>
+<tr class="separator:a36eaab600bda75e1a426f9fca66c4177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fd9c1c6105fc2a500f71beed2cb547"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../dc/dfb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_weapon_1_1_weapon_data_model.html">WeaponDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#aa6fd9c1c6105fc2a500f71beed2cb547">_weaponDataModels</a></td></tr>
+<tr class="separator:aa6fd9c1c6105fc2a500f71beed2cb547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a48dded8b39f845020769b9b0022fd190"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a48dded8b39f845020769b9b0022fd190">SettingUxml</a></td></tr>
+<tr class="separator:a48dded8b39f845020769b9b0022fd190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4aaff81262b85dac871b411b8f0615"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a0d4aaff81262b85dac871b411b8f0615">ItemUxml</a></td></tr>
+<tr class="separator:a0d4aaff81262b85dac871b411b8f0615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366740841ef6c57783e9bad57572710a"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a366740841ef6c57783e9bad57572710a">_categoryWidth</a> = 70</td></tr>
+<tr class="separator:a366740841ef6c57783e9bad57572710a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f1d852f4028f5969c994044080d246"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a00f1d852f4028f5969c994044080d246">_itemNameWidth</a> = 90</td></tr>
+<tr class="separator:a00f1d852f4028f5969c994044080d246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a> に属する継承静的公開メンバ関数</td></tr>
+<tr class="memitem:a8a7277f0ecd7f3f34e246c3fd9fdcde9 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a8a7277f0ecd7f3f34e246c3fd9fdcde9">IsCommonEvent</a> (string eventId)</td></tr>
+<tr class="separator:a8a7277f0ecd7f3f34e246c3fd9fdcde9 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ca3097aa767d59e4a01691fe0733b9 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a74ca3097aa767d59e4a01691fe0733b9">FindEventCommonDataModel</a> (string eventId)</td></tr>
+<tr class="separator:a74ca3097aa767d59e4a01691fe0733b9 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd71fc41f5857e62b3a834b249d0e124 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="../../df/d2c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_event_map_data_model.html">EventMapDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#acd71fc41f5857e62b3a834b249d0e124">GetEventMapDataModelsInMap</a> (string mapId)</td></tr>
+<tr class="memdesc:acd71fc41f5857e62b3a834b249d0e124 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定idのマップに配置されている、全EventMapDataModel列を取得する。  <br /></td></tr>
+<tr class="separator:acd71fc41f5857e62b3a834b249d0e124 inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aafa154213e0efb8069c983f87453bb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/d2c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_event_map_data_model.html">EventMapDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a9aafa154213e0efb8069c983f87453bb">GetEventMapDataModelByEventId</a> (string eventId)</td></tr>
+<tr class="memdesc:a9aafa154213e0efb8069c983f87453bb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定idのイベントが配置されている、EventMapDataModelを取得する。  <br /></td></tr>
+<tr class="separator:a9aafa154213e0efb8069c983f87453bb inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8687d10d57f37001d4912b9cd5d4a74f inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a8687d10d57f37001d4912b9cd5d4a74f">GetEventDisplayName</a> (<a class="el" href="../../df/d2c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_event_map_data_model.html">EventMapDataModel</a> data)</td></tr>
+<tr class="memdesc:a8687d10d57f37001d4912b9cd5d4a74f inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">画面に表示するイベントの名称を返却  <br /></td></tr>
+<tr class="separator:a8687d10d57f37001d4912b9cd5d4a74f inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a35ed610e82499f2e6ab3eaf8cdb2c inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">static ? Vector2Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a55a35ed610e82499f2e6ab3eaf8cdb2c">GetMoveFromTilePositon</a> (<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> eventDataModel, string targetCharacterId, string provisionalMapId)</td></tr>
+<tr class="memdesc:a55a35ed610e82499f2e6ab3eaf8cdb2c inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">『移動ルート指定』『ジャンプ』の移動元のタイル座標を取得。  <br /></td></tr>
+<tr class="separator:a55a35ed610e82499f2e6ab3eaf8cdb2c inherit pub_static_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a> に属する継承限定公開型</td></tr>
+<tr class="memitem:a82bb7eb7b4d5881ee5aacbbe025c8e44 inherit pro_types_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44">EventType</a> { <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44a46f3ea056caa3126b91f3f70beea068c">Map</a>
+, <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44ad13bc5b68b2bd9e18f29777db17cc563">Common</a>
+ }</td></tr>
+<tr class="memdesc:a82bb7eb7b4d5881ee5aacbbe025c8e44"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップからかコモンからか  <a href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44">[詳解]</a><br /></td></tr>
+<tr class="separator:a82bb7eb7b4d5881ee5aacbbe025c8e44 inherit pro_types_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a2c238cc1410409595532aa12dc3b8f2d inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a2c238cc1410409595532aa12dc3b8f2d">AbstractCommandEditor</a> (VisualElement rootElement, List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt; eventDataModels, int eventIndex, int eventCommandIndex)</td></tr>
+<tr class="separator:a2c238cc1410409595532aa12dc3b8f2d inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6eb76da3da67bd2c8fd9be2d63748a inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a8a6eb76da3da67bd2c8fd9be2d63748a">IsCommonEvent</a> ()</td></tr>
+<tr class="separator:a8a6eb76da3da67bd2c8fd9be2d63748a inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d70c8001877159775144afa889c7e4 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a68d70c8001877159775144afa889c7e4">QRoot</a> (string name)</td></tr>
+<tr class="separator:a68d70c8001877159775144afa889c7e4 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d38c3665363d6d6f018b0a966a985b9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/df8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_generic_popup_field_base.html">GenericPopupFieldBase</a>&lt; <a class="el" href="../../d2/da9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_map_data_choice.html">MapDataChoice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a3d38c3665363d6d6f018b0a966a985b9">AddOrHideProvisionalMapAndAddTargetCharacterPopupField</a> (int targetCharacterParameterIndex, System.Action&lt; <a class="el" href="../../d6/df8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_generic_popup_field_base.html">GenericPopupFieldBase</a>&lt; <a class="el" href="../../d2/da9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_map_data_choice.html">MapDataChoice</a> &gt; &gt; addTargetCharacterPopupFieldAction)</td></tr>
+<tr class="memdesc:a3d38c3665363d6d6f018b0a966a985b9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">コモンイベント用の仮マップの『マップ選択』PopupFieldの追加もしくは追加先項目UIを非表示と 『キャラクター』PopupFieldの追加。  <br /></td></tr>
+<tr class="separator:a3d38c3665363d6d6f018b0a966a985b9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432e4720fc6a4a2139ff87825f17e616 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/df8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_generic_popup_field_base.html">GenericPopupFieldBase</a>&lt; <a class="el" href="../../d2/da9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_map_data_choice.html">MapDataChoice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a432e4720fc6a4a2139ff87825f17e616">AddProvisionalMapPopupFieldOrHide</a> (VisualElement container, string targetCharacterId)</td></tr>
+<tr class="memdesc:a432e4720fc6a4a2139ff87825f17e616 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">コモンイベント用の仮のマップを選択するPopupFieldを追加もしくは追加先項目UIを非表示にする。  <br /></td></tr>
+<tr class="separator:a432e4720fc6a4a2139ff87825f17e616 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf41d59400a9718c22e00f6076ac9d05 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/df8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_generic_popup_field_base.html">GenericPopupFieldBase</a>&lt; <a class="el" href="../../d7/d3e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_target_character_choice.html">TargetCharacterChoice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#acf41d59400a9718c22e00f6076ac9d05">AddTargetCharacterPopupField</a> (VisualElement container, int parameterIndex, System.Action&lt; ChangeEvent&lt; <a class="el" href="../../d7/d3e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_target_character_choice.html">TargetCharacterChoice</a> &gt; &gt; alternativeSaveAction=null, bool forceDefaultIndexIsZero=false, bool excludePlayer=false, string forceMapId=null, bool forceInitialize=true)</td></tr>
+<tr class="memdesc:acf41d59400a9718c22e00f6076ac9d05 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象キャラクターを選択するPopupFieldを追加する。  <br /></td></tr>
+<tr class="separator:acf41d59400a9718c22e00f6076ac9d05 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ca3c0da1e28c5faa50d538a2f8ab68 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#af4ca3c0da1e28c5faa50d538a2f8ab68">Save</a> (<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> eventDataModelEntity)</td></tr>
+<tr class="separator:af4ca3c0da1e28c5faa50d538a2f8ab68 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e28eda2cfddc26a5f77c6eba05af23 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d5/d65/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_enemy_1_1_enemy_data_model.html">EnemyDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#af7e28eda2cfddc26a5f77c6eba05af23">GetEnemyList</a> ()</td></tr>
+<tr class="memdesc:af7e28eda2cfddc26a5f77c6eba05af23 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトルイベントで利用する、敵データリスト取得  <br /></td></tr>
+<tr class="separator:af7e28eda2cfddc26a5f77c6eba05af23 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa76b690876619be5980e8c5bd22c53f7 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#aa76b690876619be5980e8c5bd22c53f7">GetEnemyNameList</a> (bool needAllEnemy=false)</td></tr>
+<tr class="memdesc:aa76b690876619be5980e8c5bd22c53f7 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="mdescLeft">&#160;</td><td class="mdescRight">バトルイベントで利用する、敵の名称リスト取得  <br /></td></tr>
+<tr class="separator:aa76b690876619be5980e8c5bd22c53f7 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:ac6c273f492ecaa1d22c7a7a18cde0e23 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html">DatabaseManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#ac6c273f492ecaa1d22c7a7a18cde0e23">DatabaseManagementService</a></td></tr>
+<tr class="separator:ac6c273f492ecaa1d22c7a7a18cde0e23 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad63eb4bb8d4cb402f881ccdb72dd51 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a5ad63eb4bb8d4cb402f881ccdb72dd51">EventDataModels</a></td></tr>
+<tr class="separator:a5ad63eb4bb8d4cb402f881ccdb72dd51 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d84ab0f8b3cac92799f8a436e91587 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a24d84ab0f8b3cac92799f8a436e91587">EventIndex</a></td></tr>
+<tr class="separator:a24d84ab0f8b3cac92799f8a436e91587 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee635d424aa0d3444d79d8a8034b52d9 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#aee635d424aa0d3444d79d8a8034b52d9">EventCommandIndex</a></td></tr>
+<tr class="separator:aee635d424aa0d3444d79d8a8034b52d9 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6da9753a63ba931242aa1e229f48af inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html">EventManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#aca6da9753a63ba931242aa1e229f48af">EventManagementService</a></td></tr>
+<tr class="separator:aca6da9753a63ba931242aa1e229f48af inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48b38be5c92318d60800b3f174c83e1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html">MapManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#ac48b38be5c92318d60800b3f174c83e1">MapManagementService</a></td></tr>
+<tr class="separator:ac48b38be5c92318d60800b3f174c83e1 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06222a534d5ce0f558d0a365a2d9b099 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">readonly VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a06222a534d5ce0f558d0a365a2d9b099">RootElement</a></td></tr>
+<tr class="separator:a06222a534d5ce0f558d0a365a2d9b099 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a233fa7ccaad772b41c116fc5bb981e84 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44">EventType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a233fa7ccaad772b41c116fc5bb981e84">Type</a> = <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a82bb7eb7b4d5881ee5aacbbe025c8e44a46f3ea056caa3126b91f3f70beea068c">EventType.Map</a></td></tr>
+<tr class="separator:a233fa7ccaad772b41c116fc5bb981e84 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:a5f20f0b85a843132ba62c4351ccb997c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a5f20f0b85a843132ba62c4351ccb997c">EventDataModel</a><code> [get]</code></td></tr>
+<tr class="separator:a5f20f0b85a843132ba62c4351ccb997c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b3275bad18ff3c538ed81cb9dd619a inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">EventDataModel.EventCommand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#ab4b3275bad18ff3c538ed81cb9dd619a">EventCommand</a><code> [get]</code></td></tr>
+<tr class="separator:ab4b3275bad18ff3c538ed81cb9dd619a inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6c6b8d5eecb087702bfe54538f914c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#add6c6b8d5eecb087702bfe54538f914c">ThisEventMapId</a><code> [get]</code></td></tr>
+<tr class="separator:add6c6b8d5eecb087702bfe54538f914c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1330f91d14f939f2c43c0ae47278d971 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_execution_contents_window.html">ExecutionContentsWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a1330f91d14f939f2c43c0ae47278d971">ExecutionContentsWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a1330f91d14f939f2c43c0ae47278d971 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a40739d34cc1f4ec1b2742ec2280de9ef" name="a40739d34cc1f4ec1b2742ec2280de9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40739d34cc1f4ec1b2742ec2280de9ef">&#9670;&#160;</a></span>ShopProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.ShopProcess </td>
+          <td>(</td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>rootElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>eventDataModels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventCommandIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a99287151ee0f682cec2f572b334ee325" name="a99287151ee0f682cec2f572b334ee325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99287151ee0f682cec2f572b334ee325">&#9670;&#160;</a></span>Invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.Invoke </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d3/ded/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_abstract_command_editor.html#a63b689c2f9ac241639d18ccfbfaa05b5">RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.AbstractCommandEditor</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_cgraph.png" border="0" usemap="#ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_cgraph" alt=""/></div>
+<map name="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_cgraph" id="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,257,239"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a8ea221e13a987116534b3453d38f9adf" title=" " alt="" coords="313,5,565,64"/>
+<area shape="poly" title=" " alt="" coords="165,177,227,129,303,80,330,68,332,73,306,85,230,133,168,182"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a246661653f11485086bed9fe519102d3" title=" " alt="" coords="629,31,880,89"/>
+<area shape="poly" title=" " alt="" coords="183,177,240,149,304,124,361,111,439,97,614,73,615,79,440,103,362,116,305,129,242,154,185,182"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="311,139,567,197"/>
+<area shape="poly" title=" " alt="" coords="257,190,296,184,297,190,257,195"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="311,221,567,280"/>
+<area shape="poly" title=" " alt="" coords="257,224,297,229,296,234,257,229"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a14b53a047484b6c81f8e570ff47134af" title=" " alt="" coords="311,304,567,363"/>
+<area shape="poly" title=" " alt="" coords="190,237,306,290,323,296,321,301,304,294,188,242"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="305,387,573,445"/>
+<area shape="poly" title=" " alt="" coords="157,237,220,305,261,341,306,372,315,377,313,382,303,377,258,345,216,309,153,241"/>
+<area shape="poly" title=" " alt="" coords="565,42,614,46,614,51,565,47"/>
+<area shape="rect" href="../../d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html#abae8269b1a2721fce734183fcc5f5205" title=" " alt="" coords="621,139,888,197"/>
+<area shape="poly" title=" " alt="" coords="568,165,606,165,606,171,568,171"/>
+<area shape="rect" href="../../dd/d1d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_item_repository.html#a46360e92f219e5394a8c6e09b8424ac4" title=" " alt="" coords="621,221,888,280"/>
+<area shape="poly" title=" " alt="" coords="568,248,606,248,606,253,568,253"/>
+<area shape="rect" href="../../de/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_weapon_repository.html#a234682fdd452ea066e287d631bf73fb1" title=" " alt="" coords="621,304,888,363"/>
+<area shape="poly" title=" " alt="" coords="568,331,606,331,606,336,568,336"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_icgraph.png" border="0" usemap="#ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_icgraph" alt=""/></div>
+<map name="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_icgraph" id="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a99287151ee0f682cec2f572b334ee325_icgraph">
+<area shape="rect" title=" " alt="" coords="606,47,857,105"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,559,79,559,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8ea221e13a987116534b3453d38f9adf" name="a8ea221e13a987116534b3453d38f9adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea221e13a987116534b3453d38f9adf">&#9670;&#160;</a></span>ItemPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.ItemPage </td>
+          <td>(</td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>Items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>category</em> = <code>&quot;0&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>itemId</em> = <code>&quot;0&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>priceSwitch</em> = <code>&quot;0&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>priceValue</em> = <code>&quot;0&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_cgraph.png" border="0" usemap="#ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_cgraph" alt=""/></div>
+<map name="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_cgraph" id="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,257,64"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a246661653f11485086bed9fe519102d3" title=" " alt="" coords="305,5,556,64"/>
+<area shape="poly" title=" " alt="" coords="257,32,290,32,290,37,257,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_icgraph.png" border="0" usemap="#ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_icgraph" alt=""/></div>
+<map name="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_icgraph" id="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a8ea221e13a987116534b3453d38f9adf_icgraph">
+<area shape="rect" title=" " alt="" coords="905,47,1157,105"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a99287151ee0f682cec2f572b334ee325" title=" " alt="" coords="606,47,857,105"/>
+<area shape="poly" title=" " alt="" coords="890,79,858,79,858,73,890,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,559,79,559,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a246661653f11485086bed9fe519102d3" name="a246661653f11485086bed9fe519102d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246661653f11485086bed9fe519102d3">&#9670;&#160;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.Save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a246661653f11485086bed9fe519102d3_icgraph.png" border="0" usemap="#ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a246661653f11485086bed9fe519102d3_icgraph" alt=""/></div>
+<map name="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a246661653f11485086bed9fe519102d3_icgraph" id="ad1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process_a246661653f11485086bed9fe519102d3_icgraph">
+<area shape="rect" title=" " alt="" coords="1205,47,1456,105"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a99287151ee0f682cec2f572b334ee325" title=" " alt="" coords="606,47,857,105"/>
+<area shape="poly" title=" " alt="" coords="1190,72,1157,71,905,71,858,72,858,67,905,65,1157,65,1190,66"/>
+<area shape="rect" href="../../d1/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_scene_1_1_shop_process.html#a8ea221e13a987116534b3453d38f9adf" title=" " alt="" coords="905,80,1157,139"/>
+<area shape="poly" title=" " alt="" coords="1190,94,1157,98,1157,93,1189,89"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="306,47,558,105"/>
+<area shape="poly" title=" " alt="" coords="591,79,559,79,559,73,591,73"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="290,59,258,55,258,49,291,54"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,88,258,147"/>
+<area shape="poly" title=" " alt="" coords="291,98,258,103,258,97,290,93"/>
+<area shape="poly" title=" " alt="" coords="890,96,858,93,858,87,891,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ac02aad120bd9584f2854970da4dc65dd" name="ac02aad120bd9584f2854970da4dc65dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02aad120bd9584f2854970da4dc65dd">&#9670;&#160;</a></span>_addButton</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d6c/_abstract_preview_8cs.html#abba961300de52a61a94338570c9a3f2d">Button</a> RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._addButton</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab82eecf447c96fab1861fc3ee6d4577e" name="ab82eecf447c96fab1861fc3ee6d4577e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab82eecf447c96fab1861fc3ee6d4577e">&#9670;&#160;</a></span>_armorDataModels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../dd/d35/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_armor_1_1_armor_data_model.html">ArmorDataModel</a>&gt; RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._armorDataModels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a366740841ef6c57783e9bad57572710a" name="a366740841ef6c57783e9bad57572710a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a366740841ef6c57783e9bad57572710a">&#9670;&#160;</a></span>_categoryWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._categoryWidth = 70</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fcfce0c462956a436d2615ebfe23187" name="a3fcfce0c462956a436d2615ebfe23187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcfce0c462956a436d2615ebfe23187">&#9670;&#160;</a></span>_databaseManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html">DatabaseManagementService</a> RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._databaseManagementService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ecd3391f7b57e0a80131900271a6c09" name="a1ecd3391f7b57e0a80131900271a6c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ecd3391f7b57e0a80131900271a6c09">&#9670;&#160;</a></span>_isBuy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._isBuy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a542119b834b952b7cc2abcf26ca0cc" name="a1a542119b834b952b7cc2abcf26ca0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a542119b834b952b7cc2abcf26ca0cc">&#9670;&#160;</a></span>_itemDataModels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d7/d5c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_item_1_1_item_data_model.html">ItemDataModel</a>&gt; RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._itemDataModels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a34c4717fd97d392d04c114de2e596985" name="a34c4717fd97d392d04c114de2e596985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c4717fd97d392d04c114de2e596985">&#9670;&#160;</a></span>_itemList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;object&gt; RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._itemList = new List&lt;object&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00f1d852f4028f5969c994044080d246" name="a00f1d852f4028f5969c994044080d246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f1d852f4028f5969c994044080d246">&#9670;&#160;</a></span>_itemNameWidth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._itemNameWidth = 90</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36eaab600bda75e1a426f9fca66c4177" name="a36eaab600bda75e1a426f9fca66c4177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36eaab600bda75e1a426f9fca66c4177">&#9670;&#160;</a></span>_items</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._items</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6fd9c1c6105fc2a500f71beed2cb547" name="aa6fd9c1c6105fc2a500f71beed2cb547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fd9c1c6105fc2a500f71beed2cb547">&#9670;&#160;</a></span>_weaponDataModels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../dc/dfb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_weapon_1_1_weapon_data_model.html">WeaponDataModel</a>&gt; RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess._weaponDataModels</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d4aaff81262b85dac871b411b8f0615" name="a0d4aaff81262b85dac871b411b8f0615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4aaff81262b85dac871b411b8f0615">&#9670;&#160;</a></span>ItemUxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.ItemUxml</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Assets/RPGMaker/Codebase/Editor/MapEditor/Component/Canvas/QuickEvent/ModalWindow/Uxml/quickevent_tool_shop_items.uxml&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a48dded8b39f845020769b9b0022fd190" name="a48dded8b39f845020769b9b0022fd190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48dded8b39f845020769b9b0022fd190">&#9670;&#160;</a></span>SettingUxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.MapEditor.Component.CommandEditor.Scene.ShopProcess.SettingUxml</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Assets/RPGMaker/Codebase/Editor/MapEditor/Asset/Uxml/EventCommand/inspector_mapEvent_shop_process.uxml&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/MapEditor/Component/CommandEditor/Scene/<a class="el" href="../../de/de4/_shop_process_8cs.html">ShopProcess.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

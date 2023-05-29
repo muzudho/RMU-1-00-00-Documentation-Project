@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.UiManager クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html">UiManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d8/d70/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.UiManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>UI管理機  
+ <a href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.UiManager の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_inherit__map">
+<area shape="rect" title="UI管理機" alt="" coords="5,229,209,272"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html" title="メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト MV の Winow_Base Unite では Prefab を利用するため、ほとんどの処理が不要" alt="" coords="56,155,158,181"/>
+<area shape="poly" title=" " alt="" coords="110,196,110,229,104,229,104,196"/>
+<area shape="rect" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html" title="ウィンドウ・ベース" alt="" coords="58,80,156,107"/>
+<area shape="poly" title=" " alt="" coords="110,122,110,154,104,154,104,122"/>
+<area shape="rect" title=" " alt="" coords="52,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,80,104,80,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.UiManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/deb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_ui_manager_coll__map">
+<area shape="rect" title="UI管理機" alt="" coords="1614,57,1818,100"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html" title="メッセージやステータスなどを描くためのメソッドを多く持つ、ウィンドウオブジェクト MV の Winow_Base Unite では Prefab を利用するため、ほとんどの処理が不要" alt="" coords="1464,107,1565,133"/>
+<area shape="poly" title=" " alt="" coords="1579,104,1613,97,1614,102,1580,109"/>
+<area shape="rect" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html" title="ウィンドウ・ベース" alt="" coords="1289,157,1387,184"/>
+<area shape="poly" title=" " alt="" coords="1400,150,1464,131,1466,136,1401,155"/>
+<area shape="rect" title=" " alt="" coords="882,157,991,184"/>
+<area shape="poly" title=" " alt="" coords="1006,168,1289,168,1289,173,1006,173"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html" title="ゲーム実行中の、ゲームの状態を保持するクラス" alt="" coords="835,91,1038,133"/>
+<area shape="poly" title=" " alt="" coords="1053,123,1238,149,1289,159,1288,164,1237,155,1052,129"/>
+<area shape="rect" title=" " alt="" coords="490,59,544,85"/>
+<area shape="poly" title=" " alt="" coords="558,66,723,57,935,51,1516,51,1614,58,1614,63,1516,56,935,56,723,62,559,72"/>
+<area shape="poly" title=" " alt="" coords="559,74,668,85,834,101,834,106,668,91,558,79"/>
+<area shape="rect" href="../../d0/dd2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1_1_system_setting_data_model.html" title="システム設定データ・モデル" alt="" coords="814,413,1058,472"/>
+<area shape="poly" title=" " alt="" coords="992,403,1236,236,1315,182,1318,187,1239,241,995,407"/>
+<area shape="rect" href="../../df/d0c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_17ce0ed53697912195b01e8a552e37932.html" title=" " alt="" coords="395,455,639,513"/>
+<area shape="poly" title=" " alt="" coords="653,468,813,452,814,457,654,473"/>
+<area shape="rect" href="../../d8/d7d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_13c37c0ac7a3e126c1b06c1462a6db3a9.html" title=" " alt="" coords="395,537,639,596"/>
+<area shape="poly" title=" " alt="" coords="639,530,784,488,842,470,844,475,786,493,641,535"/>
+<area shape="rect" href="../../df/dcd/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_common_1_1_sound_common_data_model.html" title="音共通データ・モデル" alt="" coords="5,608,253,667"/>
+<area shape="poly" title=" " alt="" coords="187,598,230,577,276,561,335,553,395,551,395,557,336,558,277,567,232,582,189,603"/>
+<area shape="rect" href="../../d9/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1fc90e68ad3a4642899cf508b2c75ae0f.html" title=" " alt="" coords="391,651,643,709"/>
+<area shape="poly" title=" " alt="" coords="173,674,221,710,248,726,277,737,301,743,325,744,375,739,421,725,462,708,464,712,423,730,376,744,326,750,300,748,276,743,246,730,218,714,169,678"/>
+<area shape="rect" href="../../dc/dfb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1539107dbc80fc9072f4fd2f8782921fe.html" title=" " alt="" coords="395,289,639,348"/>
+<area shape="poly" title=" " alt="" coords="637,350,786,393,841,410,839,415,784,399,636,355"/>
+<area shape="rect" href="../../dd/d74/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1783ee6b6efe4675c8c39db7c7a3a93f6.html" title=" " alt="" coords="7,289,251,348"/>
+<area shape="poly" title=" " alt="" coords="266,316,394,316,394,321,266,321"/>
+<area shape="rect" href="../../d8/d86/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_10d0bcdd35160aa829ac5668189dd2dd2.html" title=" " alt="" coords="391,372,643,431"/>
+<area shape="poly" title=" " alt="" coords="658,412,814,428,813,433,657,418"/>
+<area shape="poly" title=" " alt="" coords="595,642,686,596,784,543,893,470,896,475,786,548,689,601,597,646"/>
+<area shape="rect" href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_system_config_data_model.html" title="実行時システム設定データ・モデル" alt="" coords="809,208,1063,267"/>
+<area shape="poly" title=" " alt="" coords="1078,215,1237,189,1288,179,1289,184,1238,195,1078,221"/>
+<area shape="rect" href="../../de/d30/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtc183c944cc34eae5d27229c3eef23a60.html" title=" " alt="" coords="390,207,644,265"/>
+<area shape="poly" title=" " alt="" coords="659,234,808,234,808,240,658,239"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a300aa30156c99283463bf173379f8c8c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a300aa30156c99283463bf173379f8c8c">partyCommandWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a300aa30156c99283463bf173379f8c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeddc39317523745fab6a31c6992a4a7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#aeeddc39317523745fab6a31c6992a4a7">partyCommandLine</a><code> [get]</code></td></tr>
+<tr class="separator:aeeddc39317523745fab6a31c6992a4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916dfe18bc9d036e15fa713537c261c3"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a916dfe18bc9d036e15fa713537c261c3">actorCommandWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a916dfe18bc9d036e15fa713537c261c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc0a7af05f9f4fd8a4ea7ef26094e7d"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a4bc0a7af05f9f4fd8a4ea7ef26094e7d">actorCommandLine</a><code> [get]</code></td></tr>
+<tr class="separator:a4bc0a7af05f9f4fd8a4ea7ef26094e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2f559928652b6d0df7d2ba0d89aa61"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a7e2f559928652b6d0df7d2ba0d89aa61">battleStatusWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a7e2f559928652b6d0df7d2ba0d89aa61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cfe2f0a90d14166e8dc88ad0ef34f7c"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a1cfe2f0a90d14166e8dc88ad0ef34f7c">battleStatusLine</a><code> [get]</code></td></tr>
+<tr class="separator:a1cfe2f0a90d14166e8dc88ad0ef34f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1d9a497c8dcd38d3fb4eb750d49c77"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a8b1d9a497c8dcd38d3fb4eb750d49c77">battleActorWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a8b1d9a497c8dcd38d3fb4eb750d49c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1092e6289266d4c49d2daf5b6b03e50"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#ae1092e6289266d4c49d2daf5b6b03e50">battleActorLine</a><code> [get]</code></td></tr>
+<tr class="separator:ae1092e6289266d4c49d2daf5b6b03e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36b9b5432c683f477c09a32d72b2bd49"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a36b9b5432c683f477c09a32d72b2bd49">messageWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a36b9b5432c683f477c09a32d72b2bd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5fb60a7bfadf4d367d9e83920a2634"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a1d5fb60a7bfadf4d367d9e83920a2634">messageLine</a><code> [get]</code></td></tr>
+<tr class="separator:a1d5fb60a7bfadf4d367d9e83920a2634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f43a37b99046afa3263ed28fc40c43"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a28f43a37b99046afa3263ed28fc40c43">battleEnemyWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a28f43a37b99046afa3263ed28fc40c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393363c0ab84232d4a5ac454a696b840"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a393363c0ab84232d4a5ac454a696b840">battleEnemyLine</a><code> [get]</code></td></tr>
+<tr class="separator:a393363c0ab84232d4a5ac454a696b840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d1d126b68c77b3a9dd1506170bb573"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a42d1d126b68c77b3a9dd1506170bb573">battleSkillWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a42d1d126b68c77b3a9dd1506170bb573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afafdb24c6aef1fa7f4cdce984fd2c6d0"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#afafdb24c6aef1fa7f4cdce984fd2c6d0">battleSkillLine</a><code> [get]</code></td></tr>
+<tr class="separator:afafdb24c6aef1fa7f4cdce984fd2c6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed7a59f9d38a90fbfff6a55bcc3a671"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a4ed7a59f9d38a90fbfff6a55bcc3a671">battleItemWindow</a><code> [get]</code></td></tr>
+<tr class="separator:a4ed7a59f9d38a90fbfff6a55bcc3a671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38008f9b80319b88a4890196e64d3e0a"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a38008f9b80319b88a4890196e64d3e0a">battleItemLine</a><code> [get]</code></td></tr>
+<tr class="separator:a38008f9b80319b88a4890196e64d3e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承プロパティ</td></tr>
+<tr class="memitem:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#acb9242f6fd315718711deeddfada92b6">Visible</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">表示状態  <br /></td></tr>
+<tr class="separator:acb9242f6fd315718711deeddfada92b6 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ab28e9742db297ca59316737d79217d78">Active</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activeかどうか  <br /></td></tr>
+<tr class="separator:ab28e9742db297ca59316737d79217d78 inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a50e62e4d7281156963d7bb97a1e9501c">Opacity</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">透過度  <br /></td></tr>
+<tr class="separator:a50e62e4d7281156963d7bb97a1e9501c inherit properties_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:aabd8b4ae1a8ed386e8a9c48c9cd930ee"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/da0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_ui_setting_1_1_ucad05db80c4a60f0d76309e372b16bf0.html">UiSettingDataModel.CommonMenu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#aabd8b4ae1a8ed386e8a9c48c9cd930ee">_commonMenu</a></td></tr>
+<tr class="separator:aabd8b4ae1a8ed386e8a9c48c9cd930ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa061e45f8154d18490f160fae4bb1b9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/dd2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1_1_system_setting_data_model.html">SystemSettingDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#aaa061e45f8154d18490f160fae4bb1b9">_systemSettingDataModel</a></td></tr>
+<tr class="separator:aaa061e45f8154d18490f160fae4bb1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bed46e953b0f48b2415b609de06c74"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_ui_manager.html#a26bed46e953b0f48b2415b609de06c74">_uiPattern</a></td></tr>
+<tr class="separator:a26bed46e953b0f48b2415b609de06c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ac48a251dfe6117f283e2cde3de3f9797">Initialize</a> ()</td></tr>
+<tr class="memdesc:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期化  <br /></td></tr>
+<tr class="separator:ac48a251dfe6117f283e2cde3de3f9797 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#afdbb244c947757c550d2e1f9f5d2b3ca">UpdateTimeHandler</a> ()</td></tr>
+<tr class="memdesc:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update処理  <br /></td></tr>
+<tr class="separator:afdbb244c947757c550d2e1f9f5d2b3ca inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a620ea180720fb4c831e19f8b41815534">UpdateOpen</a> ()</td></tr>
+<tr class="memdesc:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを開いている状態をアップデート  <br /></td></tr>
+<tr class="separator:a620ea180720fb4c831e19f8b41815534 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ade49f2962fda60f1ad6c83617a2c9414">IsOpen</a> ()</td></tr>
+<tr class="memdesc:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが完全に開いているか  <br /></td></tr>
+<tr class="separator:ade49f2962fda60f1ad6c83617a2c9414 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a88c98c800abbcda4dab46adb3ae97474">IsClosed</a> ()</td></tr>
+<tr class="memdesc:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが完全に閉じているか  <br /></td></tr>
+<tr class="separator:a88c98c800abbcda4dab46adb3ae97474 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#aa03a8b4d0d0ffdbfe8055eb49181f66f">UpdateClose</a> ()</td></tr>
+<tr class="memdesc:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを閉じている状態をアップデート  <br /></td></tr>
+<tr class="separator:aa03a8b4d0d0ffdbfe8055eb49181f66f inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a4145c2e26a271a5610193c0fb97e880b">Open</a> ()</td></tr>
+<tr class="memdesc:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを開く  <br /></td></tr>
+<tr class="separator:a4145c2e26a271a5610193c0fb97e880b inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a30d8201325917fd21fb249d2e99bb7e2">Close</a> ()</td></tr>
+<tr class="memdesc:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを閉じる  <br /></td></tr>
+<tr class="separator:a30d8201325917fd21fb249d2e99bb7e2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a8787808799001295954d1e16f25b6af5">IsOpening</a> ()</td></tr>
+<tr class="memdesc:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが開いている途中か  <br /></td></tr>
+<tr class="separator:a8787808799001295954d1e16f25b6af5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a9dc4fb6eb7e051fc762cddfaf34a35f2">IsClosing</a> ()</td></tr>
+<tr class="memdesc:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウが閉じている途中か  <br /></td></tr>
+<tr class="separator:a9dc4fb6eb7e051fc762cddfaf34a35f2 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#af8237f0ea253d09740d656139a583f0e">Show</a> ()</td></tr>
+<tr class="memdesc:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを表示  <br /></td></tr>
+<tr class="separator:af8237f0ea253d09740d656139a583f0e inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a9d17ffa21af7ce8e1ff44396e7e27078">Hide</a> ()</td></tr>
+<tr class="memdesc:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウを非表示(閉じるわけではない)  <br /></td></tr>
+<tr class="separator:a9d17ffa21af7ce8e1ff44396e7e27078 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a5122bcb16ca5eb4b00724e77b5059be5">Activate</a> ()</td></tr>
+<tr class="memdesc:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウをアクティブにする  <br /></td></tr>
+<tr class="separator:a5122bcb16ca5eb4b00724e77b5059be5 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html">RPGMaker.Codebase.Runtime.Common.WindowBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a6f5d8bd37bf6478c2b928d1b6c17c4a7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">delegate void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a6f5d8bd37bf6478c2b928d1b6c17c4a7">OnComplete</a> ()</td></tr>
+<tr class="separator:a6f5d8bd37bf6478c2b928d1b6c17c4a7 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa566df21c304a9028269d880911028 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a8fa566df21c304a9028269d880911028">Init</a> ()</td></tr>
+<tr class="separator:a8fa566df21c304a9028269d880911028 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bce2bb65583515c3b58faa4948e267 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#ab3bce2bb65583515c3b58faa4948e267">Update</a> ()</td></tr>
+<tr class="separator:ab3bce2bb65583515c3b58faa4948e267 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a576411ba4cf8dcf5f923836bee044252 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a576411ba4cf8dcf5f923836bee044252">Back</a> ()</td></tr>
+<tr class="separator:a576411ba4cf8dcf5f923836bee044252 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ae032a81692de5d1334f06cbd92c62b84">Openness</a></td></tr>
+<tr class="memdesc:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">開放度(0 〜 255)  <br /></td></tr>
+<tr class="separator:ae032a81692de5d1334f06cbd92c62b84 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#aabfca36af5edf308dddb722457396be1">Pause</a></td></tr>
+<tr class="memdesc:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">ポーズサインが表示中か  <br /></td></tr>
+<tr class="separator:aabfca36af5edf308dddb722457396be1 inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html">RPGMaker.Codebase.Runtime.Common.WindowBase</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:a5ab3840b37517bcf7e82e01dcb80d00e inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">GameObject[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a5ab3840b37517bcf7e82e01dcb80d00e">commonWindowObject</a></td></tr>
+<tr class="separator:a5ab3840b37517bcf7e82e01dcb80d00e inherit pub_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html">RPGMaker.Codebase.Runtime.Common.WindowBase</a> に属する継承静的公開変数類</td></tr>
+<tr class="memitem:aea2b086b6c55b32a924787be83969799 inherit pub_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#aea2b086b6c55b32a924787be83969799">UI_PATH</a> = &quot;Assets/RPGMaker/Storage/Images/Ui/&quot;</td></tr>
+<tr class="separator:aea2b086b6c55b32a924787be83969799 inherit pub_static_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a4ed5e6f054ab7170ffd73e1312ada80e">Deactivate</a> ()</td></tr>
+<tr class="memdesc:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">非アクティブにする  <br /></td></tr>
+<tr class="separator:a4ed5e6f054ab7170ffd73e1312ada80e inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html">RPGMaker.Codebase.Runtime.Battle.Window.WindowBattle</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ae6e16f105184c08468236332fc293eab">_iconWidth</a> = 32</td></tr>
+<tr class="memdesc:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本のアイコン幅 (規定値 : 32)  <br /></td></tr>
+<tr class="separator:ae6e16f105184c08468236332fc293eab inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ac10c53461c90fead259d7227e7b28f72">_iconHeight</a> = 32</td></tr>
+<tr class="memdesc:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本のアイコン高さ (規定値 : 32)  <br /></td></tr>
+<tr class="separator:ac10c53461c90fead259d7227e7b28f72 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a6468cb0fdaa8da77fd7743f4b2cfd648">_faceWidth</a> = 144</td></tr>
+<tr class="memdesc:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本の顔画像の幅 (規定値 : 144)  <br /></td></tr>
+<tr class="separator:a6468cb0fdaa8da77fd7743f4b2cfd648 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#aa5f83eafdbe518397217afd7910ea318">_faceHeight</a> = 144</td></tr>
+<tr class="memdesc:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="mdescLeft">&#160;</td><td class="mdescRight">[static] 基本の顔画像の高さ (規定値 : 144)  <br /></td></tr>
+<tr class="separator:aa5f83eafdbe518397217afd7910ea318 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2a54934c3d135516030c63513947fc0 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">new GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#ac2a54934c3d135516030c63513947fc0">gameObject</a></td></tr>
+<tr class="separator:ac2a54934c3d135516030c63513947fc0 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4bbb38ce5d5047304c006242300686 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a4c4bbb38ce5d5047304c006242300686">GraphicLineObject</a></td></tr>
+<tr class="separator:a4c4bbb38ce5d5047304c006242300686 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621c7c34b07f3ee20ed5c090abd7daed inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a621c7c34b07f3ee20ed5c090abd7daed">GraphicObject</a></td></tr>
+<tr class="separator:a621c7c34b07f3ee20ed5c090abd7daed inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html">RPGMaker.Codebase.Runtime.Common.WindowBase</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a793a6b2d9bc794b990df666bd3f87a4c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a3b9c47bb5660582b48bba3ad0e0cda21">GameStateHandler.GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#a793a6b2d9bc794b990df666bd3f87a4c">_gameState</a> = GameStateHandler.GameState.TITLE</td></tr>
+<tr class="memdesc:a793a6b2d9bc794b990df666bd3f87a4c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Window表示時のゲームの状態 キー入力  <br /></td></tr>
+<tr class="separator:a793a6b2d9bc794b990df666bd3f87a4c inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4f27ef440d273650981fa8cad9882b inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#aee4f27ef440d273650981fa8cad9882b">_selectedItem</a></td></tr>
+<tr class="separator:aee4f27ef440d273650981fa8cad9882b inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba0c634c0b1cc0a4dc75a84da113e5ad inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dd2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1_1_system_setting_data_model.html">SystemSettingDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d52/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base.html#aba0c634c0b1cc0a4dc75a84da113e5ad">systemSettingDataModel</a></td></tr>
+<tr class="separator:aba0c634c0b1cc0a4dc75a84da113e5ad inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_window_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>UI管理機 </p>
+</div><h2 class="groupheader">メンバ詳解</h2>
+<a id="aabd8b4ae1a8ed386e8a9c48c9cd930ee" name="aabd8b4ae1a8ed386e8a9c48c9cd930ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabd8b4ae1a8ed386e8a9c48c9cd930ee">&#9670;&#160;</a></span>_commonMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/da0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_ui_setting_1_1_ucad05db80c4a60f0d76309e372b16bf0.html">UiSettingDataModel.CommonMenu</a> RPGMaker.Codebase.Runtime.Common.UiManager._commonMenu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa061e45f8154d18490f160fae4bb1b9" name="aaa061e45f8154d18490f160fae4bb1b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa061e45f8154d18490f160fae4bb1b9">&#9670;&#160;</a></span>_systemSettingDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dd2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1_1_system_setting_data_model.html">SystemSettingDataModel</a> RPGMaker.Codebase.Runtime.Common.UiManager._systemSettingDataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26bed46e953b0f48b2415b609de06c74" name="a26bed46e953b0f48b2415b609de06c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26bed46e953b0f48b2415b609de06c74">&#9670;&#160;</a></span>_uiPattern</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.UiManager._uiPattern</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a4bc0a7af05f9f4fd8a4ea7ef26094e7d" name="a4bc0a7af05f9f4fd8a4ea7ef26094e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc0a7af05f9f4fd8a4ea7ef26094e7d">&#9670;&#160;</a></span>actorCommandLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.actorCommandLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a916dfe18bc9d036e15fa713537c261c3" name="a916dfe18bc9d036e15fa713537c261c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916dfe18bc9d036e15fa713537c261c3">&#9670;&#160;</a></span>actorCommandWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.actorCommandWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1092e6289266d4c49d2daf5b6b03e50" name="ae1092e6289266d4c49d2daf5b6b03e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1092e6289266d4c49d2daf5b6b03e50">&#9670;&#160;</a></span>battleActorLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleActorLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b1d9a497c8dcd38d3fb4eb750d49c77" name="a8b1d9a497c8dcd38d3fb4eb750d49c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1d9a497c8dcd38d3fb4eb750d49c77">&#9670;&#160;</a></span>battleActorWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleActorWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a393363c0ab84232d4a5ac454a696b840" name="a393363c0ab84232d4a5ac454a696b840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393363c0ab84232d4a5ac454a696b840">&#9670;&#160;</a></span>battleEnemyLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleEnemyLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a28f43a37b99046afa3263ed28fc40c43" name="a28f43a37b99046afa3263ed28fc40c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f43a37b99046afa3263ed28fc40c43">&#9670;&#160;</a></span>battleEnemyWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleEnemyWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38008f9b80319b88a4890196e64d3e0a" name="a38008f9b80319b88a4890196e64d3e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38008f9b80319b88a4890196e64d3e0a">&#9670;&#160;</a></span>battleItemLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleItemLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ed7a59f9d38a90fbfff6a55bcc3a671" name="a4ed7a59f9d38a90fbfff6a55bcc3a671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed7a59f9d38a90fbfff6a55bcc3a671">&#9670;&#160;</a></span>battleItemWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleItemWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afafdb24c6aef1fa7f4cdce984fd2c6d0" name="afafdb24c6aef1fa7f4cdce984fd2c6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afafdb24c6aef1fa7f4cdce984fd2c6d0">&#9670;&#160;</a></span>battleSkillLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleSkillLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42d1d126b68c77b3a9dd1506170bb573" name="a42d1d126b68c77b3a9dd1506170bb573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d1d126b68c77b3a9dd1506170bb573">&#9670;&#160;</a></span>battleSkillWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleSkillWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cfe2f0a90d14166e8dc88ad0ef34f7c" name="a1cfe2f0a90d14166e8dc88ad0ef34f7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cfe2f0a90d14166e8dc88ad0ef34f7c">&#9670;&#160;</a></span>battleStatusLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleStatusLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e2f559928652b6d0df7d2ba0d89aa61" name="a7e2f559928652b6d0df7d2ba0d89aa61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2f559928652b6d0df7d2ba0d89aa61">&#9670;&#160;</a></span>battleStatusWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.battleStatusWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d5fb60a7bfadf4d367d9e83920a2634" name="a1d5fb60a7bfadf4d367d9e83920a2634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5fb60a7bfadf4d367d9e83920a2634">&#9670;&#160;</a></span>messageLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.messageLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36b9b5432c683f477c09a32d72b2bd49" name="a36b9b5432c683f477c09a32d72b2bd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36b9b5432c683f477c09a32d72b2bd49">&#9670;&#160;</a></span>messageWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.messageWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeeddc39317523745fab6a31c6992a4a7" name="aeeddc39317523745fab6a31c6992a4a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeddc39317523745fab6a31c6992a4a7">&#9670;&#160;</a></span>partyCommandLine</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.partyCommandLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a300aa30156c99283463bf173379f8c8c" name="a300aa30156c99283463bf173379f8c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300aa30156c99283463bf173379f8c8c">&#9670;&#160;</a></span>partyCommandWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.Common.UiManager.partyCommandWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Common/<a class="el" href="../../d7/d14/_ui_manager_8cs.html">UiManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

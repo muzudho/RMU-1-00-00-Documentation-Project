@@ -1,0 +1,1927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.RpgMakerEditor クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html">RpgMakerEditor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="#pac-static-attribs">静的変数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d3/dc8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.RpgMakerEditor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.RpgMakerEditor 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/de7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_rpg_maker_editor_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_rpg_maker_editor_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_rpg_maker_editor_coll__map">
+<area shape="rect" title=" " alt="" coords="5,192,195,235"/>
+<area shape="rect" title=" " alt="" coords="73,5,127,32"/>
+<area shape="poly" title=" " alt="" coords="103,47,103,192,97,192,97,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae2daf57e53a85da4278ab9fd65469074"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074">InitializeOnLoad</a> ()</td></tr>
+<tr class="memdesc:ae2daf57e53a85da4278ab9fd65469074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unity立ち上げ時の処理  <br /></td></tr>
+<tr class="separator:ae2daf57e53a85da4278ab9fd65469074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685fc96fbc14b252acee744e52578c1b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b">InitWindows</a> ()</td></tr>
+<tr class="separator:a685fc96fbc14b252acee744e52578c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80911d66b594e26c7b9ad0f227c60210"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a80911d66b594e26c7b9ad0f227c60210">RuntimeInitWindows</a> ()</td></tr>
+<tr class="separator:a80911d66b594e26c7b9ad0f227c60210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75f0424598d08e04bd09bdc54e458827"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a75f0424598d08e04bd09bdc54e458827">WindowMaximizationRecoveringProcess</a> ()</td></tr>
+<tr class="memdesc:a75f0424598d08e04bd09bdc54e458827"><td class="mdescLeft">&#160;</td><td class="mdescRight">ウィンドウ最大化から復帰時の処理。  <br /></td></tr>
+<tr class="separator:a75f0424598d08e04bd09bdc54e458827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc9987edae9dcaba69edf81d0466703"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a3bc9987edae9dcaba69edf81d0466703">DataCheckMenuButton</a> (bool flg)</td></tr>
+<tr class="separator:a3bc9987edae9dcaba69edf81d0466703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:ad2aad73b3f3dbdc5ba00ccee37729c56"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2aad73b3f3dbdc5ba00ccee37729c56">IsImportEffekseer</a> = false</td></tr>
+<tr class="separator:ad2aad73b3f3dbdc5ba00ccee37729c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-static-attribs" name="pac-static-attribs"></a>
+静的変数</h2></td></tr>
+<tr class="memitem:a73263f12ad0ef4ffbd04d48971ae6c87"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a73263f12ad0ef4ffbd04d48971ae6c87">RpgMakerUniteMenuItemPath</a> = &quot;Window/RPG Maker/Mode/RPG Maker Focused Mode&quot;</td></tr>
+<tr class="separator:a73263f12ad0ef4ffbd04d48971ae6c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d7df4a7b2543420dbfa5512be892817"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a5d7df4a7b2543420dbfa5512be892817">UnityEditorMenuItemPath</a> = &quot;Window/RPG Maker/Mode/Unity Editor&quot;</td></tr>
+<tr class="separator:a5d7df4a7b2543420dbfa5512be892817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bce720e903edd4364342810a032c45"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad0bce720e903edd4364342810a032c45">RpgMakerUniteWindowMenuItemPath</a> = &quot;Window/RPG Maker/Mode/RPG Maker+Unity Editor&quot;</td></tr>
+<tr class="separator:ad0bce720e903edd4364342810a032c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ab57e2df2dc4ea9acea5c95f80d26bd09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09">StartRPGMakerAsync</a> ()</td></tr>
+<tr class="separator:ab57e2df2dc4ea9acea5c95f80d26bd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:addf49cd1d80f9d52a8ed4aea8adc512d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#addf49cd1d80f9d52a8ed4aea8adc512d">InitRPGMakerEditor</a> ()</td></tr>
+<tr class="separator:addf49cd1d80f9d52a8ed4aea8adc512d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d7454926ed17027c8037084372a6d0"><td class="memItemLeft" align="right" valign="top">static async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0">DelayAuth</a> ()</td></tr>
+<tr class="separator:a93d7454926ed17027c8037084372a6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8705552a61684781a125bf19abeb8a20"><td class="memItemLeft" align="right" valign="top">static async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20">AuthRpgMaker</a> ()</td></tr>
+<tr class="memdesc:a8705552a61684781a125bf19abeb8a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">RpgMakerを認証。  <br /></td></tr>
+<tr class="separator:a8705552a61684781a125bf19abeb8a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2749737405424c923be9fad4f4bff96"><td class="memItemLeft" align="right" valign="top">static IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96">StartRpgMaker</a> ()</td></tr>
+<tr class="separator:ad2749737405424c923be9fad4f4bff96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac06d3426691dff9c290dc5f0edd05382"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382">ApplyEditorMode</a> (string targetModeId)</td></tr>
+<tr class="separator:ac06d3426691dff9c290dc5f0edd05382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9de78c8ee4ea02dba89b856b14a262"><td class="memItemLeft" align="right" valign="top">static async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262">RpgMakerUniteMenu</a> ()</td></tr>
+<tr class="memdesc:aed9de78c8ee4ea02dba89b856b14a262"><td class="mdescLeft">&#160;</td><td class="mdescRight">RPG Maker Uniteを開く  <br /></td></tr>
+<tr class="separator:aed9de78c8ee4ea02dba89b856b14a262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaadeffb9e70648c3ac33dceea418cc8"><td class="memItemLeft" align="right" valign="top">static async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8">RpgMakerUniteWindow</a> ()</td></tr>
+<tr class="memdesc:abaadeffb9e70648c3ac33dceea418cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">RPG Maker Unite Window (開発用)を開く  <br /></td></tr>
+<tr class="separator:abaadeffb9e70648c3ac33dceea418cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92ea60667756e1dd017f8ede4a13324"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#af92ea60667756e1dd017f8ede4a13324">UnityEditorMenu</a> ()</td></tr>
+<tr class="memdesc:af92ea60667756e1dd017f8ede4a13324"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unity Editor。  <br /></td></tr>
+<tr class="separator:af92ea60667756e1dd017f8ede4a13324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92a34b9dc62881e03aca23f7d6ac3c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2">SetEditorModeMenuChecked</a> ()</td></tr>
+<tr class="memdesc:ae92a34b9dc62881e03aca23f7d6ac3c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニュー項目のチェック表示/非表示設定。  <br /></td></tr>
+<tr class="separator:ae92a34b9dc62881e03aca23f7d6ac3c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf61a533037696ee1f39c724bd4d997"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#afcf61a533037696ee1f39c724bd4d997">HelpMenu</a> ()</td></tr>
+<tr class="memdesc:afcf61a533037696ee1f39c724bd4d997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Help。  <br /></td></tr>
+<tr class="separator:afcf61a533037696ee1f39c724bd4d997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac519c0ea74b0cfd64dbd0f820191fe1f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac519c0ea74b0cfd64dbd0f820191fe1f">AboutMenu</a> ()</td></tr>
+<tr class="memdesc:ac519c0ea74b0cfd64dbd0f820191fe1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">About。  <br /></td></tr>
+<tr class="separator:ac519c0ea74b0cfd64dbd0f820191fe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f37a971a2db67ce3654c510ef8e6c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a44f37a971a2db67ce3654c510ef8e6c7">RuntimeExec</a> ()</td></tr>
+<tr class="separator:a44f37a971a2db67ce3654c510ef8e6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7953cb08d000aa1372607267ea639cb"><td class="memItemLeft" align="right" valign="top">static async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab7953cb08d000aa1372607267ea639cb">SetWindows</a> ()</td></tr>
+<tr class="separator:ab7953cb08d000aa1372607267ea639cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2aa8b6fcd6d513c7a5308335a26cd4"><td class="memItemLeft" align="right" valign="top">static async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8e2aa8b6fcd6d513c7a5308335a26cd4">OnPlayModeStateChanged</a> (PlayModeStateChange state)</td></tr>
+<tr class="memdesc:a8e2aa8b6fcd6d513c7a5308335a26cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playmodeの状態が変わった時に実行される  <br /></td></tr>
+<tr class="separator:a8e2aa8b6fcd6d513c7a5308335a26cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:ae1de9a43ee5eeecdcb8a5562a8304af4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html">MenuWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae1de9a43ee5eeecdcb8a5562a8304af4">_menuWindow</a></td></tr>
+<tr class="separator:ae1de9a43ee5eeecdcb8a5562a8304af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a500582c388428da994a204771b2d9993"><td class="memItemLeft" align="right" valign="top">static EditorWindow&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a500582c388428da994a204771b2d9993">_gameView</a></td></tr>
+<tr class="separator:a500582c388428da994a204771b2d9993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658c7b8a0fe61e9a28d806b54bc31d5c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a658c7b8a0fe61e9a28d806b54bc31d5c">_initialized</a></td></tr>
+<tr class="separator:a658c7b8a0fe61e9a28d806b54bc31d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce748a8a2bb1ff5e5369fef49068019"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a6ce748a8a2bb1ff5e5369fef49068019">_isStart</a></td></tr>
+<tr class="separator:a6ce748a8a2bb1ff5e5369fef49068019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cb0bdc89a4f0300c1236e64aef907d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac7cb0bdc89a4f0300c1236e64aef907d">_isStartMenu</a></td></tr>
+<tr class="separator:ac7cb0bdc89a4f0300c1236e64aef907d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a290d83ef76411f2be0ac569c30713"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a65a290d83ef76411f2be0ac569c30713">_timeSinceStartUp</a></td></tr>
+<tr class="separator:a65a290d83ef76411f2be0ac569c30713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ac519c0ea74b0cfd64dbd0f820191fe1f" name="ac519c0ea74b0cfd64dbd0f820191fe1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac519c0ea74b0cfd64dbd0f820191fe1f">&#9670;&#160;</a></span>AboutMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.AboutMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>About。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac519c0ea74b0cfd64dbd0f820191fe1f_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac519c0ea74b0cfd64dbd0f820191fe1f_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac519c0ea74b0cfd64dbd0f820191fe1f_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac519c0ea74b0cfd64dbd0f820191fe1f_cgraph">
+<area shape="rect" title="About。" alt="" coords="5,5,246,48"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#a09c82c88be857eee802d94dd4846fcba" title=" " alt="" coords="294,5,535,48"/>
+<area shape="poly" title=" " alt="" coords="246,24,279,24,279,29,246,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac06d3426691dff9c290dc5f0edd05382" name="ac06d3426691dff9c290dc5f0edd05382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac06d3426691dff9c290dc5f0edd05382">&#9670;&#160;</a></span>ApplyEditorMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.ApplyEditorMode </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>targetModeId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,279,56"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="327,5,555,64"/>
+<area shape="poly" title=" " alt="" coords="279,32,312,32,312,37,279,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="603,13,830,56"/>
+<area shape="poly" title=" " alt="" coords="556,32,588,32,588,37,556,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ac06d3426691dff9c290dc5f0edd05382_icgraph">
+<area shape="rect" title=" " alt="" coords="984,96,1258,139"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="685,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1021,94,917,67,918,62,1022,89"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="685,88,918,147"/>
+<area shape="poly" title=" " alt="" coords="969,120,918,120,918,115,969,115"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#af92ea60667756e1dd017f8ede4a13324" title="Unity Editor。" alt="" coords="666,171,936,213"/>
+<area shape="poly" title=" " alt="" coords="1013,145,896,173,895,167,1011,140"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,55,618,97"/>
+<area shape="poly" title=" " alt="" coords="670,55,619,61,618,56,669,49"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,55,309,97"/>
+<area shape="poly" title=" " alt="" coords="342,79,309,79,309,73,342,73"/>
+<area shape="poly" title=" " alt="" coords="669,103,618,96,619,91,670,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8705552a61684781a125bf19abeb8a20" name="a8705552a61684781a125bf19abeb8a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8705552a61684781a125bf19abeb8a20">&#9670;&#160;</a></span>AuthRpgMaker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async Task RPGMaker.Codebase.Editor.Common.RpgMakerEditor.AuthRpgMaker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RpgMakerを認証。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_cgraph">
+<area shape="rect" title="RpgMakerを認証。" alt="" coords="5,13,266,56"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="314,5,553,64"/>
+<area shape="poly" title=" " alt="" coords="266,32,299,32,299,37,266,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8705552a61684781a125bf19abeb8a20_icgraph">
+<area shape="rect" title="RpgMakerを認証。" alt="" coords="1230,55,1490,97"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0" title=" " alt="" coords="947,55,1182,97"/>
+<area shape="poly" title=" " alt="" coords="1215,79,1182,79,1182,73,1215,73"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="666,5,899,64"/>
+<area shape="poly" title=" " alt="" coords="932,59,899,54,900,49,933,54"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="666,88,899,147"/>
+<area shape="poly" title=" " alt="" coords="933,98,900,103,899,98,932,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,55,618,97"/>
+<area shape="poly" title=" " alt="" coords="652,56,619,60,618,55,651,50"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,55,309,97"/>
+<area shape="poly" title=" " alt="" coords="342,79,309,79,309,73,342,73"/>
+<area shape="poly" title=" " alt="" coords="651,102,618,97,619,92,652,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3bc9987edae9dcaba69edf81d0466703" name="a3bc9987edae9dcaba69edf81d0466703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bc9987edae9dcaba69edf81d0466703">&#9670;&#160;</a></span>DataCheckMenuButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.DataCheckMenuButton </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,244,64"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a17ec3338198638870e740981feb72fbb" title="ボタンの状態更新" alt="" coords="292,5,559,64"/>
+<area shape="poly" title=" " alt="" coords="244,32,277,32,277,37,244,37"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#a4c9677718e8b1b9877f4b54fe88ddd5a" title=" " alt="" coords="607,5,835,64"/>
+<area shape="poly" title=" " alt="" coords="560,32,592,32,592,37,560,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a3bc9987edae9dcaba69edf81d0466703_icgraph">
+<area shape="rect" title=" " alt="" coords="3319,252,3557,311"/>
+<area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a0f050a1b3bb5dcef78216fffc4986ebb" title="メニューウィンドウのボタン状態更新" alt="" coords="3059,252,3271,311"/>
+<area shape="poly" title=" " alt="" coords="3304,284,3271,284,3271,279,3304,279"/>
+<area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a9c331a740e7fdcf488a584c4fff714dc" title="Hierarchy更新" alt="" coords="2810,227,2999,269"/>
+<area shape="poly" title=" " alt="" coords="3044,269,2999,263,3000,257,3044,263"/>
+<area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a2b194448f5fcca77e60d5bc10f9ddbb7" title="最後に開いていたインスペクターを開く" alt="" coords="2798,293,3011,336"/>
+<area shape="poly" title=" " alt="" coords="3044,299,3011,304,3011,298,3044,294"/>
+<area shape="rect" href="../../d7/d82/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_map_create_for_sample_map_modal_window.html#ae1963a8801aa0424c69cda1d2c48db63" title=" " alt="" coords="2178,32,2453,91"/>
+<area shape="poly" title=" " alt="" coords="2874,217,2820,164,2786,138,2749,117,2676,91,2600,74,2524,65,2453,61,2454,55,2524,59,2600,69,2678,86,2751,112,2789,133,2824,160,2878,213"/>
+<area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a6dd9786e9a11e17d4b9f0c6d8589bf69" title="初期化処理" alt="" coords="2543,127,2732,169"/>
+<area shape="poly" title=" " alt="" coords="2843,223,2749,184,2716,172,2717,167,2751,179,2845,218"/>
+<area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a3130f60d2d278ab755e982aed4e4dfd4" title="Mapで最後に選択された項目を再設定する" alt="" coords="2524,193,2750,236"/>
+<area shape="poly" title=" " alt="" coords="2795,237,2750,231,2751,226,2795,232"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a21639d7ea25e8e8fa115837424361ac4" title=" " alt="" coords="2531,260,2743,303"/>
+<area shape="poly" title=" " alt="" coords="2796,264,2744,271,2743,265,2795,259"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#abc547ec94625b31944b5fa4532ac1d2d" title=" " alt="" coords="2528,453,2747,496"/>
+<area shape="poly" title=" " alt="" coords="2808,279,2800,283,2751,324,2709,372,2676,418,2653,455,2648,452,2671,415,2705,368,2747,320,2797,279,2805,274"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a6915ccd01a813674846fc834c822bdc8" title=" " alt="" coords="2534,620,2741,679"/>
+<area shape="poly" title=" " alt="" coords="2803,281,2800,283,2781,310,2770,337,2767,362,2767,388,2769,444,2765,475,2753,509,2735,541,2714,572,2671,621,2667,618,2710,568,2730,538,2748,507,2760,474,2764,444,2762,388,2762,362,2765,335,2776,308,2796,280,2799,277"/>
+<area shape="poly" title=" " alt="" coords="2528,188,2522,183,2505,163,2498,143,2491,123,2474,105,2452,91,2455,87,2478,101,2495,120,2503,141,2510,161,2526,179,2532,183"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a8d633a3f6c60768898e5afb9e6a6d771" title=" " alt="" coords="2198,280,2433,339"/>
+<area shape="poly" title=" " alt="" coords="2516,295,2433,302,2433,296,2516,289"/>
+<area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#a00ce66b13f0b8103dfe807d02ce5490e" title=" " alt="" coords="2207,363,2424,421"/>
+<area shape="poly" title=" " alt="" coords="2578,312,2477,353,2425,369,2424,364,2475,348,2576,307"/>
+<area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#ae2dab8834e4a81860aca7a3bcb65bf77" title=" " alt="" coords="2207,115,2424,173"/>
+<area shape="poly" title=" " alt="" coords="2531,255,2522,250,2506,234,2498,218,2490,202,2474,187,2450,174,2424,164,2425,159,2452,169,2478,183,2494,199,2502,215,2511,231,2526,246,2533,251"/>
+<area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#a15ef11f2f342b76aff35e3a613ad626c" title=" " alt="" coords="2207,197,2424,256"/>
+<area shape="poly" title=" " alt="" coords="2516,263,2424,248,2425,242,2517,258"/>
+<area shape="rect" href="../../d0/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector.html#a83fa66f5f702f704947246cbdbceeb12" title=" " alt="" coords="1875,117,2097,176"/>
+<area shape="poly" title=" " alt="" coords="2183,282,2154,270,2115,250,2079,226,2019,178,2022,174,2082,221,2118,245,2156,266,2185,278"/>
+<area shape="rect" href="../../d0/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector.html#a6618b000a1794a52f2c15538e8c2bbd0" title=" " alt="" coords="1586,5,1807,64"/>
+<area shape="poly" title=" " alt="" coords="1894,114,1774,67,1776,62,1896,109"/>
+<area shape="rect" href="../../d0/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector.html#afb3dc80dcb8de1dbbf604c32ab9b3391" title="初期化処理" alt="" coords="1301,5,1523,64"/>
+<area shape="poly" title=" " alt="" coords="1571,37,1523,37,1523,32,1571,32"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a23522bcdd0f3c96a9e5447833bbe66a6" title=" " alt="" coords="2199,445,2432,504"/>
+<area shape="poly" title=" " alt="" coords="2512,477,2432,477,2432,472,2512,472"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a8676f768957dc03cc2c11dfceffe4009" title=" " alt="" coords="966,499,1198,557"/>
+<area shape="poly" title=" " alt="" coords="2550,503,2476,519,2340,537,2233,544,1987,544,1695,544,1428,541,1198,535,1198,529,1428,535,1695,539,1987,539,2233,538,2339,531,2476,513,2549,498"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#ad6b0f7d721103e7fd954dee75b8bf3c2" title=" " alt="" coords="1870,312,2102,371"/>
+<area shape="poly" title=" " alt="" coords="2184,447,2154,436,2089,406,2033,374,2035,369,2092,401,2156,431,2186,442"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a48de8645c7ed3cce340b1bd0b8fab281" title="新規作成" alt="" coords="1581,445,1813,504"/>
+<area shape="poly" title=" " alt="" coords="2184,477,1813,477,1813,472,2184,472"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#ab26bd30cbeb774d79fb2f72aba7d48b0" title=" " alt="" coords="1581,312,1813,371"/>
+<area shape="poly" title=" " alt="" coords="1855,344,1813,344,1813,339,1855,339"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a35a123f6a34a500ff553754503a99294" title=" " alt="" coords="1296,312,1528,371"/>
+<area shape="poly" title=" " alt="" coords="1566,344,1528,344,1528,339,1566,339"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a4a88198269c75ee5977b9997ea031127" title=" " alt="" coords="1296,395,1528,453"/>
+<area shape="poly" title=" " alt="" coords="1580,378,1516,397,1515,391,1579,373"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a78803b998253513023cb9706e7ed1f94" title=" " alt="" coords="1296,229,1528,288"/>
+<area shape="poly" title=" " alt="" coords="1579,310,1515,291,1516,286,1580,305"/>
+<area shape="rect" href="../../de/dde/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_quick_even0f401f0183987560bc8ad020c341b628.html#a54af667d1a538ef4d6db080c64000b40" title=" " alt="" coords="916,139,1248,197"/>
+<area shape="poly" title=" " alt="" coords="1300,227,1247,212,1204,201,1206,195,1248,207,1301,222"/>
+<area shape="rect" href="../../db/d5b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_quick_evenc693a89f60a651f3e44ecd247236fa71.html#a6dcf528c1fa5425b0765970cffa02acb" title=" " alt="" coords="949,221,1215,296"/>
+<area shape="poly" title=" " alt="" coords="1281,261,1215,261,1215,256,1281,256"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a4dd3e69274e66cba6093f9c28c41460a" title=" " alt="" coords="969,320,1195,379"/>
+<area shape="poly" title=" " alt="" coords="1301,295,1248,311,1196,325,1194,319,1247,305,1300,290"/>
+<area shape="poly" title=" " alt="" coords="1299,300,1298,302,1283,323,1276,344,1275,387,1273,431,1266,453,1250,475,1226,494,1200,508,1198,503,1224,490,1246,472,1261,450,1268,430,1269,387,1270,343,1278,321,1294,298,1296,296"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a7c14942946148397f62c7b4fc3d011d9" title=" " alt="" coords="969,403,1195,461"/>
+<area shape="poly" title=" " alt="" coords="1302,299,1298,302,1281,324,1275,347,1268,370,1249,393,1224,409,1196,420,1194,415,1222,404,1246,389,1263,368,1270,345,1276,322,1294,298,1298,294"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a4ff85adeafc8399792ae8ad76fb60980" title=" " alt="" coords="640,320,865,379"/>
+<area shape="poly" title=" " alt="" coords="955,352,865,352,865,347,955,347"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a71376b1294e8e033b5137a4d4c10136e" title="座標指定" alt="" coords="347,237,588,296"/>
+<area shape="poly" title=" " alt="" coords="634,318,570,299,572,294,636,313"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a5c2e2c5f2fde0eeeb7228718cfbe0eb8" title=" " alt="" coords="347,320,588,379"/>
+<area shape="poly" title=" " alt="" coords="624,352,588,352,588,347,624,347"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a9332dde4703a160f0ccb15baac16bbe6" title=" " alt="" coords="357,72,578,131"/>
+<area shape="poly" title=" " alt="" coords="725,309,701,270,669,226,630,182,586,145,568,134,571,129,590,141,634,179,673,222,705,267,730,306"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a2c5f7de25efddd1120bb5f8e519bc324" title=" " alt="" coords="357,403,578,461"/>
+<area shape="poly" title=" " alt="" coords="636,386,572,405,570,399,634,381"/>
+<area shape="rect" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_event_edit_window.html#a34653d2ea392ff315a4670d1568cb7a7" title=" " alt="" coords="355,155,580,213"/>
+<area shape="poly" title=" " alt="" coords="705,312,651,269,587,228,563,216,565,211,589,223,654,264,709,308"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#a9f860dcb065011f6e95faecec0a5b174" title="座標の設定開始。" alt="" coords="11,155,293,213"/>
+<area shape="poly" title=" " alt="" coords="338,236,266,217,267,211,339,230"/>
+<area shape="rect" href="../../d5/dae/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_place_move.html#a75729e5e7e04d63e3c8ba0a159a3a078" title=" " alt="" coords="15,237,289,296"/>
+<area shape="poly" title=" " alt="" coords="332,269,290,269,290,264,332,264"/>
+<area shape="rect" href="../../d7/dac/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_vehicle_1_1_vehicle.html#abd28acc5cfb3333dad267b2716e06b47" title=" " alt="" coords="18,320,286,379"/>
+<area shape="poly" title=" " alt="" coords="339,303,267,322,266,317,338,298"/>
+<area shape="rect" href="../../dd/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_event_1_1_move_set_event_point.html#a886f246f2e0383e9b67c5cbe9e6907bc" title=" " alt="" coords="19,403,285,461"/>
+<area shape="poly" title=" " alt="" coords="353,307,349,310,332,330,325,351,318,372,300,393,283,404,280,400,297,389,313,369,320,349,328,327,345,306,349,302"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#ac86a8cabb58a5f4ddfd053b5bbb2a541" title=" " alt="" coords="5,56,299,131"/>
+<area shape="poly" title=" " alt="" coords="349,231,345,227,328,206,320,185,313,164,297,145,281,133,284,129,300,141,318,162,325,183,332,204,349,223,353,227"/>
+<area shape="poly" title=" " alt="" coords="592,99,1081,99,1413,99,1494,105,1575,123,1653,148,1727,180,1795,214,1855,249,1946,309,1943,314,1853,254,1792,219,1725,185,1651,153,1573,128,1494,110,1413,104,1081,104,592,104"/>
+<area shape="rect" href="../../df/d64/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_event_edit_canvas.html#a12f00b58b7d3a594e87001b6d90e5b5c" title=" " alt="" coords="636,536,868,595"/>
+<area shape="poly" title=" " alt="" coords="951,545,869,555,869,550,951,540"/>
+<area shape="poly" title=" " alt="" coords="954,403,916,393,865,380,866,375,917,388,955,398"/>
+<area shape="poly" title=" " alt="" coords="965,469,918,489,894,504,870,520,831,538,829,533,867,515,891,499,915,484,963,464"/>
+<area shape="rect" href="../../d1/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_event_inspector.html#aea628a54f04e14d379c90d79d8d63e7a" title=" " alt="" coords="353,485,582,544"/>
+<area shape="poly" title=" " alt="" coords="955,461,869,476,719,495,582,508,582,503,719,490,868,471,954,456"/>
+<area shape="rect" href="../../d1/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_event_inspector.html#aaa8ef139f586dfa5b220590c2bc59788" title=" " alt="" coords="638,403,866,461"/>
+<area shape="poly" title=" " alt="" coords="955,435,867,435,867,429,955,429"/>
+<area shape="rect" href="../../d1/d3b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_event_inspector.html#a9d0110ec9a7c148858f20d09c01d8ee2" title="初期化処理" alt="" coords="38,485,266,544"/>
+<area shape="poly" title=" " alt="" coords="338,517,267,517,267,512,338,512"/>
+<area shape="poly" title=" " alt="" coords="636,469,572,487,570,482,634,463"/>
+<area shape="poly" title=" " alt="" coords="1566,489,1199,521,1199,515,1565,483"/>
+<area shape="rect" href="../../d6/d17/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_tile_group_edit_window.html#a9d2bfc803a258e395d0ceaedfeeb0302" title=" " alt="" coords="2174,661,2457,720"/>
+<area shape="poly" title=" " alt="" coords="2519,667,2457,675,2457,670,2518,662"/>
+<area shape="rect" href="../../d6/d17/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_tile_group_edit_window.html#a4b0db371feecaf2df578bc4fbcbdce31" title=" " alt="" coords="2155,744,2476,803"/>
+<area shape="poly" title=" " alt="" coords="2574,689,2527,713,2477,734,2444,746,2442,741,2475,730,2525,708,2571,684"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#afb120f869c22fffd4ce5f89492393618" title=" " alt="" coords="2193,579,2438,637"/>
+<area shape="poly" title=" " alt="" coords="2518,637,2438,626,2438,621,2519,632"/>
+<area shape="rect" href="../../d6/d17/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_tile_group_edit_window.html#a44e500bb340500baaf1899a72b20de67" title=" " alt="" coords="1865,703,2107,761"/>
+<area shape="poly" title=" " alt="" coords="2160,713,2107,719,2107,714,2159,708"/>
+<area shape="rect" href="../../d6/d17/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_tile_group_edit_window.html#a98cbf5ce6139afec5a4169b0dd2b0297" title=" " alt="" coords="1576,703,1817,761"/>
+<area shape="poly" title=" " alt="" coords="1850,735,1818,735,1818,729,1850,729"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a9c4ebe5b49203325b025d4f654116459" title=" " alt="" coords="1307,703,1517,761"/>
+<area shape="poly" title=" " alt="" coords="1561,735,1517,735,1517,729,1561,729"/>
+<area shape="poly" title=" " alt="" coords="2139,754,2107,750,2107,744,2140,749"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a93d7454926ed17027c8037084372a6d0" name="a93d7454926ed17027c8037084372a6d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d7454926ed17027c8037084372a6d0">&#9670;&#160;</a></span>DelayAuth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async Task RPGMaker.Codebase.Editor.Common.RpgMakerEditor.DelayAuth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,51,240,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20" title="RpgMakerを認証。" alt="" coords="288,13,548,56"/>
+<area shape="poly" title=" " alt="" coords="240,55,272,50,273,56,240,60"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_unity_sign_in_prompt_window.html#abd87c347be347023476a19a33a445ffe" title=" " alt="" coords="297,80,539,139"/>
+<area shape="poly" title=" " alt="" coords="240,84,282,89,281,95,240,89"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="596,5,835,64"/>
+<area shape="poly" title=" " alt="" coords="549,32,581,32,581,37,549,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a93d7454926ed17027c8037084372a6d0_icgraph">
+<area shape="rect" title=" " alt="" coords="947,55,1182,97"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="666,5,899,64"/>
+<area shape="poly" title=" " alt="" coords="932,59,899,54,900,49,933,54"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="666,88,899,147"/>
+<area shape="poly" title=" " alt="" coords="933,98,900,103,899,98,932,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,55,618,97"/>
+<area shape="poly" title=" " alt="" coords="652,56,619,60,618,55,651,50"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,55,309,97"/>
+<area shape="poly" title=" " alt="" coords="342,79,309,79,309,73,342,73"/>
+<area shape="poly" title=" " alt="" coords="651,102,618,97,619,92,652,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afcf61a533037696ee1f39c724bd4d997" name="afcf61a533037696ee1f39c724bd4d997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf61a533037696ee1f39c724bd4d997">&#9670;&#160;</a></span>HelpMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.HelpMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Help。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_afcf61a533037696ee1f39c724bd4d997_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_afcf61a533037696ee1f39c724bd4d997_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_afcf61a533037696ee1f39c724bd4d997_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_afcf61a533037696ee1f39c724bd4d997_cgraph">
+<area shape="rect" title="Help。" alt="" coords="5,117,238,160"/>
+<area shape="rect" href="../../da/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_menu_editor_view.html#a31a6459f15a06f4a002563f1af753520" title=" " alt="" coords="286,117,519,160"/>
+<area shape="poly" title=" " alt="" coords="238,136,271,136,271,141,238,141"/>
+<area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ac9c8eb375170074c4c9fa7380bb0e2f0" title=" " alt="" coords="567,117,811,160"/>
+<area shape="poly" title=" " alt="" coords="520,136,552,136,552,141,520,141"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="871,5,1099,48"/>
+<area shape="poly" title=" " alt="" coords="731,114,791,86,858,58,879,50,881,55,860,62,793,90,733,119"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a3c92e24ab22e37895c85b170dced4b05" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="870,72,1100,131"/>
+<area shape="poly" title=" " alt="" coords="812,121,855,115,856,120,812,126"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a8f4bb360c1249e71a330db4ceb40d4a6" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="871,155,1099,197"/>
+<area shape="poly" title=" " alt="" coords="812,151,857,157,856,162,812,157"/>
+<area shape="rect" href="../../d5/d47/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_1_1_event_name_or_paramater.html#ab858ced173906c96d2bf928e04afe2d7" title=" " alt="" coords="859,221,1111,280"/>
+<area shape="poly" title=" " alt="" coords="741,158,860,207,878,213,877,218,858,212,739,163"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#aa7a83b1c2a4a5c9b605ac827ac953e0c" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="1159,80,1402,123"/>
+<area shape="poly" title=" " alt="" coords="1100,99,1144,99,1144,104,1100,104"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="1167,155,1394,197"/>
+<area shape="poly" title=" " alt="" coords="1099,173,1152,173,1152,179,1099,179"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2daf57e53a85da4278ab9fd65469074" name="ae2daf57e53a85da4278ab9fd65469074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2daf57e53a85da4278ab9fd65469074">&#9670;&#160;</a></span>InitializeOnLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.InitializeOnLoad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unity立ち上げ時の処理 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae2daf57e53a85da4278ab9fd65469074_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae2daf57e53a85da4278ab9fd65469074_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae2daf57e53a85da4278ab9fd65469074_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae2daf57e53a85da4278ab9fd65469074_cgraph">
+<area shape="rect" title="Unity立ち上げ時の処理" alt="" coords="5,264,227,323"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a7dd8909715c01407024eee438530cad3" title=" " alt="" coords="276,264,529,323"/>
+<area shape="poly" title=" " alt="" coords="227,291,261,291,261,296,227,296"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#addf49cd1d80f9d52a8ed4aea8adc512d" title=" " alt="" coords="275,421,530,480"/>
+<area shape="poly" title=" " alt="" coords="173,321,336,412,334,416,170,326"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#aa84b06cfa04f5637f2eac7508e482abc" title="テンプレート配置処理/Install template files to Unity" alt="" coords="283,181,522,240"/>
+<area shape="poly" title=" " alt="" coords="219,261,283,242,285,247,221,266"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1e2050eddc3318b8f29c214d2b4649c2" title=" " alt="" coords="883,156,1109,215"/>
+<area shape="poly" title=" " alt="" coords="529,298,597,296,672,290,748,278,821,258,835,251,845,242,869,224,881,219,884,223,872,229,848,247,838,255,823,262,749,283,673,296,598,302,529,303"/>
+<area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ac9c8eb375170074c4c9fa7380bb0e2f0" title=" " alt="" coords="578,744,822,787"/>
+<area shape="poly" title=" " alt="" coords="433,478,670,731,666,735,429,482"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#afae97ba7405636d4468020e80ddf020e" title="Reload and initialize Add&#45;ons." alt="" coords="599,429,802,472"/>
+<area shape="poly" title=" " alt="" coords="531,448,583,448,583,453,531,453"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="882,669,1110,712"/>
+<area shape="poly" title=" " alt="" coords="787,741,894,714,895,719,789,746"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a3c92e24ab22e37895c85b170dced4b05" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="881,736,1111,795"/>
+<area shape="poly" title=" " alt="" coords="823,763,867,763,867,768,823,768"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a8f4bb360c1249e71a330db4ceb40d4a6" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="882,819,1110,861"/>
+<area shape="poly" title=" " alt="" coords="789,785,895,812,894,817,787,790"/>
+<area shape="rect" href="../../d5/d47/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_1_1_event_name_or_paramater.html#ab858ced173906c96d2bf928e04afe2d7" title=" " alt="" coords="870,885,1122,944"/>
+<area shape="poly" title=" " alt="" coords="732,785,795,828,872,871,884,877,882,882,869,876,792,832,729,789"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#aa7a83b1c2a4a5c9b605ac827ac953e0c" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="1178,744,1422,787"/>
+<area shape="poly" title=" " alt="" coords="1111,763,1163,763,1163,768,1111,768"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="1186,819,1414,861"/>
+<area shape="poly" title=" " alt="" coords="1110,837,1171,837,1171,843,1110,843"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a0f5e13aed7f703b705cd3d40aa5858a7" title="アドオンの実体化" alt="" coords="889,321,1103,380"/>
+<area shape="poly" title=" " alt="" coords="765,426,893,383,894,388,767,431"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#aae790b8dcabf362d24d74f3ab0f95b28" title="アドオン情報読込" alt="" coords="872,587,1120,645"/>
+<area shape="poly" title=" " alt="" coords="727,470,790,521,830,548,872,572,883,578,881,583,869,577,827,553,787,525,724,474"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#a59b588f4347a239f7dca88672c273fd7" title="アドオン・リスト読込" alt="" coords="872,504,1120,563"/>
+<area shape="poly" title=" " alt="" coords="780,470,875,497,874,502,779,475"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#a23ab9e13e184f35ddb443a4088b0283a" title="アドオン情報保存" alt="" coords="872,239,1120,297"/>
+<area shape="poly" title=" " alt="" coords="720,427,783,368,825,336,869,307,879,302,881,306,872,312,828,340,787,372,724,431"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#ad818a7dd569849091be7b76071903ebb" title="アドオン・リスト保存" alt="" coords="872,421,1120,480"/>
+<area shape="poly" title=" " alt="" coords="802,448,857,448,857,453,802,453"/>
+<area shape="rect" href="../../dd/d3c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_instance_container.html#a030cf676462246412d2ce27f61365e8b" title="追加" alt="" coords="1185,155,1415,197"/>
+<area shape="poly" title=" " alt="" coords="1102,320,1120,307,1131,295,1137,283,1143,258,1149,233,1156,220,1168,207,1173,203,1176,207,1171,211,1160,223,1154,235,1148,259,1142,285,1135,298,1123,311,1105,325"/>
+<area shape="rect" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html#ad00e900b3083314bc15f58a9991aea60" title="～へコピー" alt="" coords="1195,421,1405,464"/>
+<area shape="poly" title=" " alt="" coords="1082,378,1170,407,1197,414,1195,419,1169,412,1080,383"/>
+<area shape="rect" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html#a5600b64fa43d80e75365f6eee90e3b49" title="作成" alt="" coords="1198,288,1402,331"/>
+<area shape="poly" title=" " alt="" coords="1103,334,1183,323,1183,328,1103,339"/>
+<area shape="rect" href="../../d5/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info_container.html#ab6bf58bd8b61ebb09bac4e8b3895d523" title="アドオン情報取得" alt="" coords="1172,221,1428,264"/>
+<area shape="poly" title=" " alt="" coords="1095,318,1120,307,1144,290,1168,274,1184,267,1186,272,1171,278,1147,295,1123,312,1097,323"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#af9d5a490e9dea4d2a0538a0a4ea61ec6" title="初期値取得" alt="" coords="1181,355,1419,397"/>
+<area shape="poly" title=" " alt="" coords="1103,357,1166,362,1166,368,1103,362"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a15fcdc57b260a48bc2917e68f2148346" title="型取得" alt="" coords="1195,88,1405,131"/>
+<area shape="poly" title=" " alt="" coords="1101,322,1120,307,1134,287,1141,267,1142,225,1144,183,1152,162,1168,141,1181,130,1184,135,1172,145,1156,164,1149,184,1148,225,1147,268,1139,290,1124,311,1105,326"/>
+<area shape="rect" href="../../de/dd7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_instance.html#a66abdc82746a84bc49a23b6d38b3fade" title="名前取得" alt="" coords="1509,155,1716,197"/>
+<area shape="poly" title=" " alt="" coords="1416,173,1494,173,1494,179,1416,179"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#acbeb1b6c6b4fee0dd345a48c3878de1f" title="アドオンをJSONへ変換" alt="" coords="1499,459,1726,517"/>
+<area shape="poly" title=" " alt="" coords="1406,455,1484,467,1483,472,1405,461"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#acc73fd24080223f730ca001446f92c37" title="生成" alt="" coords="1499,553,1726,612"/>
+<area shape="poly" title=" " alt="" coords="1406,461,1431,474,1447,487,1457,501,1465,514,1480,527,1508,544,1506,549,1476,531,1461,517,1452,504,1443,491,1429,478,1404,466"/>
+<area shape="rect" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html#aee3ccf123913eebbc2cc670543fd8d1e" title="情報取得" alt="" coords="1511,284,1714,327"/>
+<area shape="poly" title=" " alt="" coords="1397,351,1500,328,1501,333,1398,357"/>
+<area shape="rect" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html#a06bf21102dcd45c23a84346743e3be79" title="値取得" alt="" coords="1503,351,1721,409"/>
+<area shape="poly" title=" " alt="" coords="1419,375,1488,376,1488,381,1419,380"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a344e577c1c56bca294719e3a926f2f54" title="引数タイプ取得" alt="" coords="1481,88,1743,131"/>
+<area shape="poly" title=" " alt="" coords="1405,107,1466,107,1466,112,1405,112"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#a69ae5b3979a729e5d0f56d17611b8840" title="アドオン情報取得" alt="" coords="1175,653,1425,696"/>
+<area shape="poly" title=" " alt="" coords="1121,637,1172,647,1171,653,1120,643"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ab1557b81ee60a7dc4f85349106fe4244" title=" " alt="" coords="1478,643,1746,701"/>
+<area shape="poly" title=" " alt="" coords="1425,671,1463,671,1463,676,1425,676"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#aceb981f220b4db0722f8fbad595cd342" title="アドオンデータをJSONから読み出す." alt="" coords="1188,571,1412,629"/>
+<area shape="poly" title=" " alt="" coords="1121,558,1174,570,1173,575,1120,563"/>
+<area shape="poly" title=" " alt="" coords="1412,591,1483,587,1484,592,1412,596"/>
+<area shape="poly" title=" " alt="" coords="1413,623,1469,636,1467,641,1411,628"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#a18e0940370bb61a9dc6b58b696cab4f5" title="アドオン情報をJSONに保存する." alt="" coords="1170,17,1430,60"/>
+<area shape="poly" title=" " alt="" coords="1106,236,1120,225,1134,207,1140,188,1143,151,1145,113,1153,93,1168,74,1177,66,1181,70,1172,78,1157,96,1150,114,1148,151,1146,189,1138,209,1124,229,1110,240"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#ab6f04c7fe3884022e225a382e7b66335" title="アドオン情報をJSONへ変換" alt="" coords="1499,5,1726,64"/>
+<area shape="poly" title=" " alt="" coords="1430,34,1484,34,1484,39,1430,40"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#ab0aa4138c2186d2831f9feded61d4d9f" title="アドオンデータをJSONに保存する." alt="" coords="1183,488,1417,547"/>
+<area shape="poly" title=" " alt="" coords="1121,475,1169,486,1168,491,1120,481"/>
+<area shape="poly" title=" " alt="" coords="1417,504,1484,497,1484,503,1417,509"/>
+<area shape="poly" title=" " alt="" coords="522,182,578,175,728,169,868,173,868,178,728,174,578,180,523,188"/>
+<area shape="rect" href="../../da/d68/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_template_install_helper.html#a1961ac03bc5d36dd8ee3684c856f635e" title=" " alt="" coords="593,189,808,248"/>
+<area shape="poly" title=" " alt="" coords="523,211,578,213,578,218,522,217"/>
+<area shape="poly" title=" " alt="" coords="808,204,868,197,868,202,808,209"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="addf49cd1d80f9d52a8ed4aea8adc512d" name="addf49cd1d80f9d52a8ed4aea8adc512d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addf49cd1d80f9d52a8ed4aea8adc512d">&#9670;&#160;</a></span>InitRPGMakerEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.InitRPGMakerEditor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,312,261,371"/>
+<area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ac9c8eb375170074c4c9fa7380bb0e2f0" title=" " alt="" coords="309,163,553,205"/>
+<area shape="poly" title=" " alt="" coords="189,309,374,210,377,215,192,314"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#afae97ba7405636d4468020e80ddf020e" title="Reload and initialize Add&#45;ons." alt="" coords="329,436,533,479"/>
+<area shape="poly" title=" " alt="" coords="211,369,361,428,359,433,209,374"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="613,237,840,280"/>
+<area shape="poly" title=" " alt="" coords="519,203,626,231,624,236,518,209"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a3c92e24ab22e37895c85b170dced4b05" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="612,5,841,64"/>
+<area shape="poly" title=" " alt="" coords="460,160,523,117,600,74,613,68,615,73,602,78,525,122,463,164"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a8f4bb360c1249e71a330db4ceb40d4a6" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="613,88,840,131"/>
+<area shape="poly" title=" " alt="" coords="518,159,624,132,626,137,519,165"/>
+<area shape="rect" href="../../d5/d47/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_1_1_event_name_or_paramater.html#ab858ced173906c96d2bf928e04afe2d7" title=" " alt="" coords="601,155,852,213"/>
+<area shape="poly" title=" " alt="" coords="554,181,586,181,586,187,554,187"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#aa7a83b1c2a4a5c9b605ac827ac953e0c" title="デバッグ用ログをファイルに出力をするフラグを設定する。" alt="" coords="909,13,1152,56"/>
+<area shape="poly" title=" " alt="" coords="842,32,894,32,894,37,842,37"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="917,88,1144,131"/>
+<area shape="poly" title=" " alt="" coords="841,107,902,107,902,112,841,112"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a0f5e13aed7f703b705cd3d40aa5858a7" title="アドオンの実体化" alt="" coords="620,757,833,816"/>
+<area shape="poly" title=" " alt="" coords="453,477,692,745,688,748,449,481"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#aae790b8dcabf362d24d74f3ab0f95b28" title="アドオン情報読込" alt="" coords="603,387,851,445"/>
+<area shape="poly" title=" " alt="" coords="533,440,588,433,588,438,533,446"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#a59b588f4347a239f7dca88672c273fd7" title="アドオン・リスト読込" alt="" coords="603,552,851,611"/>
+<area shape="poly" title=" " alt="" coords="474,477,602,538,618,544,616,549,600,542,472,482"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#a23ab9e13e184f35ddb443a4088b0283a" title="アドオン情報保存" alt="" coords="603,304,851,363"/>
+<area shape="poly" title=" " alt="" coords="472,433,600,372,616,366,618,371,602,377,474,438"/>
+<area shape="rect" href="../../d8/dc4/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_management_service.html#ad818a7dd569849091be7b76071903ebb" title="アドオン・リスト保存" alt="" coords="603,469,851,528"/>
+<area shape="poly" title=" " alt="" coords="533,469,588,477,588,482,533,474"/>
+<area shape="rect" href="../../dd/d3c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_instance_container.html#a030cf676462246412d2ce27f61365e8b" title="追加" alt="" coords="915,765,1146,808"/>
+<area shape="poly" title=" " alt="" coords="834,784,900,784,900,789,834,789"/>
+<area shape="rect" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html#ad00e900b3083314bc15f58a9991aea60" title="～へコピー" alt="" coords="926,632,1135,675"/>
+<area shape="poly" title=" " alt="" coords="770,755,830,718,899,684,918,677,920,682,901,689,833,723,773,759"/>
+<area shape="rect" href="../../d9/db8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_data_model.html#a5600b64fa43d80e75365f6eee90e3b49" title="作成" alt="" coords="929,832,1132,875"/>
+<area shape="poly" title=" " alt="" coords="834,807,917,826,916,831,833,813"/>
+<area shape="rect" href="../../d5/d44/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_info_container.html#ab6bf58bd8b61ebb09bac4e8b3895d523" title="アドオン情報取得" alt="" coords="902,899,1159,941"/>
+<area shape="poly" title=" " alt="" coords="773,814,833,850,901,884,920,891,918,896,899,889,830,855,770,819"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#af9d5a490e9dea4d2a0538a0a4ea61ec6" title="初期値取得" alt="" coords="912,965,1149,1008"/>
+<area shape="poly" title=" " alt="" coords="752,814,815,884,856,920,902,951,913,957,910,961,899,956,853,924,811,887,748,818"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a15fcdc57b260a48bc2917e68f2148346" title="型取得" alt="" coords="926,699,1135,741"/>
+<area shape="poly" title=" " alt="" coords="833,761,916,742,917,748,834,766"/>
+<area shape="rect" href="../../de/dd7/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_instance.html#a66abdc82746a84bc49a23b6d38b3fade" title="名前取得" alt="" coords="1239,765,1447,808"/>
+<area shape="poly" title=" " alt="" coords="1146,784,1224,784,1224,789,1146,789"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#acbeb1b6c6b4fee0dd345a48c3878de1f" title="アドオンをJSONへ変換" alt="" coords="1229,512,1457,571"/>
+<area shape="poly" title=" " alt="" coords="1125,629,1160,618,1208,595,1255,574,1257,579,1210,600,1162,622,1126,634"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#acc73fd24080223f730ca001446f92c37" title="生成" alt="" coords="1229,609,1457,668"/>
+<area shape="poly" title=" " alt="" coords="1136,646,1214,642,1214,647,1136,651"/>
+<area shape="rect" href="../../d1/d84/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_param_info.html#aee3ccf123913eebbc2cc670543fd8d1e" title="情報取得" alt="" coords="1241,1003,1445,1045"/>
+<area shape="poly" title=" " alt="" coords="1150,998,1226,1007,1226,1013,1149,1004"/>
+<area shape="rect" href="../../de/d6e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_parameter_container.html#a06bf21102dcd45c23a84346743e3be79" title="値取得" alt="" coords="1234,920,1452,979"/>
+<area shape="poly" title=" " alt="" coords="1149,970,1219,961,1219,967,1150,975"/>
+<area shape="rect" href="../../d4/df3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_manager.html#a344e577c1c56bca294719e3a926f2f54" title="引数タイプ取得" alt="" coords="1212,699,1474,741"/>
+<area shape="poly" title=" " alt="" coords="1136,717,1197,717,1197,723,1136,723"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#a69ae5b3979a729e5d0f56d17611b8840" title="アドオン情報取得" alt="" coords="905,399,1156,441"/>
+<area shape="poly" title=" " alt="" coords="851,415,890,415,890,421,851,420"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ab1557b81ee60a7dc4f85349106fe4244" title=" " alt="" coords="1209,400,1477,459"/>
+<area shape="poly" title=" " alt="" coords="1156,421,1194,422,1194,428,1156,426"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#aceb981f220b4db0722f8fbad595cd342" title="アドオンデータをJSONから読み出す." alt="" coords="919,549,1142,608"/>
+<area shape="poly" title=" " alt="" coords="851,578,904,577,904,582,851,583"/>
+<area shape="poly" title=" " alt="" coords="1143,598,1215,611,1214,617,1142,603"/>
+<area shape="poly" title=" " alt="" coords="1135,546,1159,535,1183,517,1207,498,1266,464,1269,468,1210,502,1187,522,1162,540,1137,551"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#a18e0940370bb61a9dc6b58b696cab4f5" title="アドオン情報をJSONに保存する." alt="" coords="900,312,1161,355"/>
+<area shape="poly" title=" " alt="" coords="851,331,886,331,886,336,851,336"/>
+<area shape="rect" href="../../df/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_data_converter.html#ab6f04c7fe3884022e225a382e7b66335" title="アドオン情報をJSONへ変換" alt="" coords="1229,304,1457,363"/>
+<area shape="poly" title=" " alt="" coords="1161,331,1214,331,1214,336,1161,336"/>
+<area shape="rect" href="../../d5/dd2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_addon_1_1_addon_repository.html#ab0aa4138c2186d2831f9feded61d4d9f" title="アドオンデータをJSONに保存する." alt="" coords="914,467,1147,525"/>
+<area shape="poly" title=" " alt="" coords="851,495,899,494,899,500,851,500"/>
+<area shape="poly" title=" " alt="" coords="1148,510,1215,520,1214,525,1147,516"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_addf49cd1d80f9d52a8ed4aea8adc512d_icgraph">
+<area shape="rect" title=" " alt="" coords="275,5,530,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae2daf57e53a85da4278ab9fd65469074" title="Unity立ち上げ時の処理" alt="" coords="5,5,227,64"/>
+<area shape="poly" title=" " alt="" coords="260,37,227,37,227,32,260,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a685fc96fbc14b252acee744e52578c1b" name="a685fc96fbc14b252acee744e52578c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685fc96fbc14b252acee744e52578c1b">&#9670;&#160;</a></span>InitWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.InitWindows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,250,97"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="298,8,535,67"/>
+<area shape="poly" title=" " alt="" coords="250,57,283,53,283,58,251,62"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="303,92,530,135"/>
+<area shape="poly" title=" " alt="" coords="251,89,289,94,288,99,250,94"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="589,5,826,64"/>
+<area shape="poly" title=" " alt="" coords="535,34,574,33,574,39,536,39"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="583,88,832,147"/>
+<area shape="poly" title=" " alt="" coords="530,112,568,113,568,118,530,118"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a685fc96fbc14b252acee744e52578c1b_icgraph">
+<area shape="rect" title=" " alt="" coords="1019,220,1264,263"/>
+<area shape="rect" href="../../d9/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_editor_scene_controller.html#a04935caccbf205d685fcb9df90c36ffd" title=" " alt="" coords="713,47,932,105"/>
+<area shape="poly" title=" " alt="" coords="1104,212,1044,165,1008,141,970,120,932,104,934,99,972,115,1010,136,1047,160,1107,208"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8e2aa8b6fcd6d513c7a5308335a26cd4" title="Playmodeの状態が変わった時に実行される" alt="" coords="698,129,947,188"/>
+<area shape="poly" title=" " alt="" coords="1042,218,938,191,939,186,1043,213"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="706,212,939,271"/>
+<area shape="poly" title=" " alt="" coords="1005,244,940,244,940,239,1005,239"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="706,295,939,353"/>
+<area shape="poly" title=" " alt="" coords="1043,269,939,297,938,291,1042,264"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a75f0424598d08e04bd09bdc54e458827" title="ウィンドウ最大化から復帰時の処理。" alt="" coords="674,377,971,436"/>
+<area shape="poly" title=" " alt="" coords="1107,275,1047,322,1010,347,973,368,946,379,944,374,970,363,1008,342,1044,318,1104,271"/>
+<area shape="rect" href="../../d9/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_editor_scene_controller.html#a842f3aa54e61947da1b773428834dc57" title="シーン終了通知受信。" alt="" coords="381,47,602,105"/>
+<area shape="poly" title=" " alt="" coords="698,79,602,79,602,73,698,73"/>
+<area shape="rect" href="../../d9/d2a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_editor_scene_controller.html#a5618c8aa6e4c306c60b81abcbabe49ac" title="静的コンストラクタ。" alt="" coords="35,5,279,64"/>
+<area shape="poly" title=" " alt="" coords="366,63,279,52,279,47,367,58"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a229491a27c98aa08b8534c05d97626bf" title="初期化処理" alt="" coords="26,88,288,147"/>
+<area shape="poly" title=" " alt="" coords="367,94,289,104,288,98,366,89"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a44f37a971a2db67ce3654c510ef8e6c7" title=" " alt="" coords="365,137,618,180"/>
+<area shape="poly" title=" " alt="" coords="683,161,618,161,618,156,683,156"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="361,251,622,293"/>
+<area shape="poly" title=" " alt="" coords="692,256,623,263,622,257,691,251"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,251,309,293"/>
+<area shape="poly" title=" " alt="" coords="346,275,309,275,309,269,346,269"/>
+<area shape="poly" title=" " alt="" coords="691,306,622,295,623,290,692,301"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#aba0228bca2d75bdc87beb71937df0884" title=" " alt="" coords="357,348,626,391"/>
+<area shape="poly" title=" " alt="" coords="659,391,626,387,627,382,659,386"/>
+<area shape="rect" href="../../d7/d82/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_base_1_1_view_1_1_hierarchy_window.html#a319573096a62c33fd6f5a1b3401f9373" title=" " alt="" coords="369,415,614,473"/>
+<area shape="poly" title=" " alt="" coords="659,428,615,433,614,428,659,422"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8e2aa8b6fcd6d513c7a5308335a26cd4" name="a8e2aa8b6fcd6d513c7a5308335a26cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e2aa8b6fcd6d513c7a5308335a26cd4">&#9670;&#160;</a></span>OnPlayModeStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.OnPlayModeStateChanged </td>
+          <td>(</td>
+          <td class="paramtype">PlayModeStateChange&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Playmodeの状態が変わった時に実行される </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_cgraph">
+<area shape="rect" title="Playmodeの状態が変わった時に実行される" alt="" coords="5,164,255,223"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="316,93,561,136"/>
+<area shape="poly" title=" " alt="" coords="247,161,337,138,339,143,248,166"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html#a3f92381b21f56c096a14df175e99dc90" title=" " alt="" coords="303,243,574,301"/>
+<area shape="poly" title=" " alt="" coords="248,221,307,236,306,241,247,226"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="636,7,873,65"/>
+<area shape="poly" title=" " alt="" coords="526,90,621,67,622,72,528,95"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="642,93,868,136"/>
+<area shape="poly" title=" " alt="" coords="561,112,627,112,627,117,561,117"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="941,5,1179,64"/>
+<area shape="poly" title=" " alt="" coords="874,33,926,33,927,38,874,38"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="935,88,1185,147"/>
+<area shape="poly" title=" " alt="" coords="868,113,920,113,920,119,868,118"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ad2cbaf7d0c87e72860d4cbc631148cb5" title=" " alt="" coords="636,160,873,219"/>
+<area shape="poly" title=" " alt="" coords="553,239,625,220,626,226,554,245"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_repository.html#aac7453bee613ad547be3b2ac53851853" title=" " alt="" coords="636,243,873,301"/>
+<area shape="poly" title=" " alt="" coords="575,269,621,269,621,275,575,275"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_group_repository.html#a1ddaf64b33a4ba6857e8911e1c116d63" title=" " alt="" coords="622,325,887,384"/>
+<area shape="poly" title=" " alt="" coords="554,299,626,318,625,324,553,305"/>
+<area shape="rect" href="../../d4/d79/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_image_repository.html#a09b809487def5db9e760614cc603f648" title=" " alt="" coords="622,408,887,467"/>
+<area shape="poly" title=" " alt="" coords="478,300,544,347,623,394,636,399,634,404,621,398,541,352,475,304"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a8e2aa8b6fcd6d513c7a5308335a26cd4_icgraph">
+<area shape="rect" title="Playmodeの状態が変わった時に実行される" alt="" coords="306,5,555,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a44f37a971a2db67ce3654c510ef8e6c7" title=" " alt="" coords="5,13,258,56"/>
+<area shape="poly" title=" " alt="" coords="290,37,258,37,258,32,290,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed9de78c8ee4ea02dba89b856b14a262" name="aed9de78c8ee4ea02dba89b856b14a262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed9de78c8ee4ea02dba89b856b14a262">&#9670;&#160;</a></span>RpgMakerUniteMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RpgMakerUniteMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RPG Maker Uniteを開く </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_cgraph">
+<area shape="rect" title="RPG Maker Uniteを開く" alt="" coords="5,320,239,379"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="288,76,561,119"/>
+<area shape="poly" title=" " alt="" coords="148,318,209,255,285,186,373,124,376,129,288,190,213,259,152,321"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0" title=" " alt="" coords="307,200,542,243"/>
+<area shape="poly" title=" " alt="" coords="192,317,358,246,360,251,194,322"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a742e82e63fe73d0c8759939d79f56826" title=" " alt="" coords="287,320,562,379"/>
+<area shape="poly" title=" " alt="" coords="239,347,272,347,272,352,239,352"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="302,493,547,536"/>
+<area shape="poly" title=" " alt="" coords="179,377,372,483,369,488,176,382"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a10bb8ac75549d55ff459c6ab40d09226" title=" " alt="" coords="314,597,535,640"/>
+<area shape="poly" title=" " alt="" coords="144,378,204,459,244,504,288,546,322,569,357,588,355,593,319,574,285,550,240,508,199,462,140,381"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="634,9,862,68"/>
+<area shape="poly" title=" " alt="" coords="545,73,619,59,620,65,546,78"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="951,5,1179,48"/>
+<area shape="poly" title=" " alt="" coords="863,32,936,29,936,34,863,37"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20" title="RpgMakerを認証。" alt="" coords="618,103,878,145"/>
+<area shape="poly" title=" " alt="" coords="497,197,660,148,661,153,499,202"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_unity_sign_in_prompt_window.html#abd87c347be347023476a19a33a445ffe" title=" " alt="" coords="627,192,869,251"/>
+<area shape="poly" title=" " alt="" coords="542,219,612,219,612,224,542,224"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="945,72,1185,131"/>
+<area shape="poly" title=" " alt="" coords="878,112,931,108,931,114,879,117"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a666846063103e4b9fec68779f295a650" title=" " alt="" coords="610,320,886,379"/>
+<area shape="poly" title=" " alt="" coords="562,347,595,347,595,352,562,352"/>
+<area shape="rect" href="../../d0/d27/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_editor_build_settings_helper.html#a25987f4b02dc4b8983ae6521fcd00bdd" title=" " alt="" coords="950,155,1180,213"/>
+<area shape="poly" title=" " alt="" coords="798,317,885,261,908,241,933,223,944,217,947,222,936,228,911,245,888,265,800,322"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a126351c2a0b85b68ac83fd37088e47b6" title=" " alt="" coords="956,237,1174,296"/>
+<area shape="poly" title=" " alt="" coords="863,317,941,296,942,301,864,322"/>
+<area shape="rect" href="../../d2/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_project_settings_helper.html#abb24575433950413f99da397f7da3a58" title=" " alt="" coords="934,320,1196,379"/>
+<area shape="poly" title=" " alt="" coords="887,347,920,347,920,352,887,352"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#a3fd58e73f5a0c865d0f75ec00f2caeff" title=" " alt="" coords="942,403,1188,461"/>
+<area shape="poly" title=" " alt="" coords="864,377,936,396,935,401,863,382"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_tag_manager_helper.html#a31290e7d030420afea0951347b92da23" title=" " alt="" coords="943,485,1187,544"/>
+<area shape="poly" title=" " alt="" coords="789,377,855,425,936,471,948,477,946,482,933,476,853,429,786,381"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a288bd75966e7d1771ebee0bb0667ca1f" title=" " alt="" coords="1276,196,1494,255"/>
+<area shape="poly" title=" " alt="" coords="1174,250,1261,239,1261,244,1175,255"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#ade588b4edf8e24dc122a730437263e39" title=" " alt="" coords="1276,279,1494,337"/>
+<area shape="poly" title=" " alt="" coords="1175,278,1261,289,1261,295,1174,283"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#ab12df90c40092d8f5cdb1dee38716c94" title=" " alt="" coords="1244,411,1526,453"/>
+<area shape="poly" title=" " alt="" coords="1188,429,1228,429,1228,435,1188,435"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="630,485,867,544"/>
+<area shape="poly" title=" " alt="" coords="547,512,614,512,614,517,547,517"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="635,568,861,611"/>
+<area shape="poly" title=" " alt="" coords="521,534,639,562,638,567,520,539"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="946,568,1184,627"/>
+<area shape="poly" title=" " alt="" coords="864,542,936,561,935,566,863,547"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="940,651,1190,709"/>
+<area shape="poly" title=" " alt="" coords="845,609,887,620,935,636,957,643,955,648,933,641,886,625,843,614"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a408c9c5ce0108e9267a1c068633b314e" title=" " alt="" coords="640,635,857,677"/>
+<area shape="poly" title=" " alt="" coords="535,629,625,639,624,644,535,634"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_aed9de78c8ee4ea02dba89b856b14a262_icgraph">
+<area shape="rect" title="RPG Maker Uniteを開く" alt="" coords="666,5,899,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,13,618,56"/>
+<area shape="poly" title=" " alt="" coords="651,37,618,37,618,32,651,32"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,13,309,56"/>
+<area shape="poly" title=" " alt="" coords="342,37,309,37,309,32,342,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abaadeffb9e70648c3ac33dceea418cc8" name="abaadeffb9e70648c3ac33dceea418cc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaadeffb9e70648c3ac33dceea418cc8">&#9670;&#160;</a></span>RpgMakerUniteWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RpgMakerUniteWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RPG Maker Unite Window (開発用)を開く </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_cgraph">
+<area shape="rect" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="5,320,239,379"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="288,76,561,119"/>
+<area shape="poly" title=" " alt="" coords="148,318,209,255,285,186,373,124,376,129,288,190,213,259,152,321"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0" title=" " alt="" coords="307,200,542,243"/>
+<area shape="poly" title=" " alt="" coords="192,317,358,246,360,251,194,322"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a742e82e63fe73d0c8759939d79f56826" title=" " alt="" coords="287,320,562,379"/>
+<area shape="poly" title=" " alt="" coords="239,347,272,347,272,352,239,352"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="302,493,547,536"/>
+<area shape="poly" title=" " alt="" coords="179,377,372,483,369,488,176,382"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a10bb8ac75549d55ff459c6ab40d09226" title=" " alt="" coords="314,597,535,640"/>
+<area shape="poly" title=" " alt="" coords="144,378,204,459,244,504,288,546,322,569,357,588,355,593,319,574,285,550,240,508,199,462,140,381"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="634,9,862,68"/>
+<area shape="poly" title=" " alt="" coords="545,73,619,59,620,65,546,78"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="951,5,1179,48"/>
+<area shape="poly" title=" " alt="" coords="863,32,936,29,936,34,863,37"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20" title="RpgMakerを認証。" alt="" coords="618,103,878,145"/>
+<area shape="poly" title=" " alt="" coords="497,197,660,148,661,153,499,202"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_unity_sign_in_prompt_window.html#abd87c347be347023476a19a33a445ffe" title=" " alt="" coords="627,192,869,251"/>
+<area shape="poly" title=" " alt="" coords="542,219,612,219,612,224,542,224"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="945,72,1185,131"/>
+<area shape="poly" title=" " alt="" coords="878,112,931,108,931,114,879,117"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a666846063103e4b9fec68779f295a650" title=" " alt="" coords="610,320,886,379"/>
+<area shape="poly" title=" " alt="" coords="562,347,595,347,595,352,562,352"/>
+<area shape="rect" href="../../d0/d27/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_editor_build_settings_helper.html#a25987f4b02dc4b8983ae6521fcd00bdd" title=" " alt="" coords="950,155,1180,213"/>
+<area shape="poly" title=" " alt="" coords="798,317,885,261,908,241,933,223,944,217,947,222,936,228,911,245,888,265,800,322"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a126351c2a0b85b68ac83fd37088e47b6" title=" " alt="" coords="956,237,1174,296"/>
+<area shape="poly" title=" " alt="" coords="863,317,941,296,942,301,864,322"/>
+<area shape="rect" href="../../d2/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_project_settings_helper.html#abb24575433950413f99da397f7da3a58" title=" " alt="" coords="934,320,1196,379"/>
+<area shape="poly" title=" " alt="" coords="887,347,920,347,920,352,887,352"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#a3fd58e73f5a0c865d0f75ec00f2caeff" title=" " alt="" coords="942,403,1188,461"/>
+<area shape="poly" title=" " alt="" coords="864,377,936,396,935,401,863,382"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_tag_manager_helper.html#a31290e7d030420afea0951347b92da23" title=" " alt="" coords="943,485,1187,544"/>
+<area shape="poly" title=" " alt="" coords="789,377,855,425,936,471,948,477,946,482,933,476,853,429,786,381"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a288bd75966e7d1771ebee0bb0667ca1f" title=" " alt="" coords="1276,196,1494,255"/>
+<area shape="poly" title=" " alt="" coords="1174,250,1261,239,1261,244,1175,255"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#ade588b4edf8e24dc122a730437263e39" title=" " alt="" coords="1276,279,1494,337"/>
+<area shape="poly" title=" " alt="" coords="1175,278,1261,289,1261,295,1174,283"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#ab12df90c40092d8f5cdb1dee38716c94" title=" " alt="" coords="1244,411,1526,453"/>
+<area shape="poly" title=" " alt="" coords="1188,429,1228,429,1228,435,1188,435"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="630,485,867,544"/>
+<area shape="poly" title=" " alt="" coords="547,512,614,512,614,517,547,517"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="635,568,861,611"/>
+<area shape="poly" title=" " alt="" coords="521,534,639,562,638,567,520,539"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="946,568,1184,627"/>
+<area shape="poly" title=" " alt="" coords="864,542,936,561,935,566,863,547"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="940,651,1190,709"/>
+<area shape="poly" title=" " alt="" coords="845,609,887,620,935,636,957,643,955,648,933,641,886,625,843,614"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a408c9c5ce0108e9267a1c068633b314e" title=" " alt="" coords="640,635,857,677"/>
+<area shape="poly" title=" " alt="" coords="535,629,625,639,624,644,535,634"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_abaadeffb9e70648c3ac33dceea418cc8_icgraph">
+<area shape="rect" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="666,5,899,64"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,13,618,56"/>
+<area shape="poly" title=" " alt="" coords="651,37,618,37,618,32,651,32"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,13,309,56"/>
+<area shape="poly" title=" " alt="" coords="342,37,309,37,309,32,342,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44f37a971a2db67ce3654c510ef8e6c7" name="a44f37a971a2db67ce3654c510ef8e6c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44f37a971a2db67ce3654c510ef8e6c7">&#9670;&#160;</a></span>RuntimeExec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RuntimeExec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a44f37a971a2db67ce3654c510ef8e6c7_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a44f37a971a2db67ce3654c510ef8e6c7_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a44f37a971a2db67ce3654c510ef8e6c7_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a44f37a971a2db67ce3654c510ef8e6c7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,189,258,232"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8e2aa8b6fcd6d513c7a5308335a26cd4" title="Playmodeの状態が変わった時に実行される" alt="" coords="306,181,555,240"/>
+<area shape="poly" title=" " alt="" coords="258,208,291,208,291,213,258,213"/>
+<area shape="rect" href="../../d4/dfe/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_font_manager.html#a1dabce4a154023c7f6749d11d8de1aa5" title="フォントのリセット" alt="" coords="318,264,543,307"/>
+<area shape="poly" title=" " alt="" coords="221,230,328,257,327,262,219,235"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a80911d66b594e26c7b9ad0f227c60210" title=" " alt="" coords="311,85,550,144"/>
+<area shape="poly" title=" " alt="" coords="200,186,322,147,324,152,201,191"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="617,189,861,232"/>
+<area shape="poly" title=" " alt="" coords="556,208,602,208,602,213,556,213"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html#a3f92381b21f56c096a14df175e99dc90" title=" " alt="" coords="603,320,874,379"/>
+<area shape="poly" title=" " alt="" coords="527,238,556,250,618,279,675,310,673,315,616,284,554,254,525,243"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="936,155,1174,213"/>
+<area shape="poly" title=" " alt="" coords="861,198,921,193,922,198,861,203"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="942,88,1168,131"/>
+<area shape="poly" title=" " alt="" coords="793,186,922,140,947,133,949,138,923,145,795,191"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="1242,155,1479,213"/>
+<area shape="poly" title=" " alt="" coords="1174,181,1227,181,1227,187,1174,187"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="1236,39,1485,97"/>
+<area shape="poly" title=" " alt="" coords="1168,91,1221,84,1222,89,1169,97"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ad2cbaf7d0c87e72860d4cbc631148cb5" title=" " alt="" coords="936,485,1174,544"/>
+<area shape="poly" title=" " alt="" coords="778,377,844,425,924,471,936,477,934,482,921,476,841,429,775,381"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_repository.html#aac7453bee613ad547be3b2ac53851853" title=" " alt="" coords="936,237,1174,296"/>
+<area shape="poly" title=" " alt="" coords="853,317,925,298,927,303,854,322"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_group_repository.html#a1ddaf64b33a4ba6857e8911e1c116d63" title=" " alt="" coords="922,320,1188,379"/>
+<area shape="poly" title=" " alt="" coords="875,347,908,347,908,352,875,352"/>
+<area shape="rect" href="../../d4/d79/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_tile_image_repository.html#a09b809487def5db9e760614cc603f648" title=" " alt="" coords="922,403,1188,461"/>
+<area shape="poly" title=" " alt="" coords="854,377,927,396,925,401,853,382"/>
+<area shape="poly" title=" " alt="" coords="551,125,922,167,921,172,550,131"/>
+<area shape="poly" title=" " alt="" coords="550,111,927,108,927,113,551,116"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab7953cb08d000aa1372607267ea639cb" title=" " alt="" coords="615,17,862,60"/>
+<area shape="poly" title=" " alt="" coords="550,83,634,61,636,67,551,88"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#ab62241fbd2d6bc7981dd510d9a026fec" title=" " alt="" coords="930,5,1180,64"/>
+<area shape="poly" title=" " alt="" coords="863,34,916,34,916,39,863,40"/>
+<area shape="poly" title=" " alt="" coords="1181,46,1221,50,1220,55,1180,51"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a80911d66b594e26c7b9ad0f227c60210" name="a80911d66b594e26c7b9ad0f227c60210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80911d66b594e26c7b9ad0f227c60210">&#9670;&#160;</a></span>RuntimeInitWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RuntimeInitWindows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_cgraph">
+<area shape="rect" title=" " alt="" coords="5,80,245,139"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="298,9,535,68"/>
+<area shape="poly" title=" " alt="" coords="244,78,282,68,284,74,246,83"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="600,88,826,131"/>
+<area shape="poly" title=" " alt="" coords="245,107,585,107,585,112,245,112"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab7953cb08d000aa1372607267ea639cb" title=" " alt="" coords="293,155,540,197"/>
+<area shape="poly" title=" " alt="" coords="246,134,306,148,305,153,244,139"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="594,5,831,64"/>
+<area shape="poly" title=" " alt="" coords="535,34,579,34,579,39,535,40"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="885,117,1135,176"/>
+<area shape="poly" title=" " alt="" coords="827,121,871,127,870,132,826,126"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#ab62241fbd2d6bc7981dd510d9a026fec" title=" " alt="" coords="588,155,837,213"/>
+<area shape="poly" title=" " alt="" coords="541,177,573,178,573,183,540,182"/>
+<area shape="poly" title=" " alt="" coords="837,166,870,162,871,167,838,171"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a80911d66b594e26c7b9ad0f227c60210_icgraph">
+<area shape="rect" title=" " alt="" coords="668,35,907,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a44f37a971a2db67ce3654c510ef8e6c7" title=" " alt="" coords="345,5,598,48"/>
+<area shape="poly" title=" " alt="" coords="653,51,597,44,598,39,654,46"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a75f0424598d08e04bd09bdc54e458827" title="ウィンドウ最大化から復帰時の処理。" alt="" coords="323,72,620,131"/>
+<area shape="poly" title=" " alt="" coords="654,82,621,86,620,81,653,77"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#aba0228bca2d75bdc87beb71937df0884" title=" " alt="" coords="5,43,275,85"/>
+<area shape="poly" title=" " alt="" coords="307,86,275,82,275,77,308,80"/>
+<area shape="rect" href="../../d7/d82/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_base_1_1_view_1_1_hierarchy_window.html#a319573096a62c33fd6f5a1b3401f9373" title=" " alt="" coords="17,109,263,168"/>
+<area shape="poly" title=" " alt="" coords="308,122,263,128,263,122,307,117"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae92a34b9dc62881e03aca23f7d6ac3c2" name="ae92a34b9dc62881e03aca23f7d6ac3c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92a34b9dc62881e03aca23f7d6ac3c2">&#9670;&#160;</a></span>SetEditorModeMenuChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.SetEditorModeMenuChecked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メニュー項目のチェック表示/非表示設定。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_cgraph">
+<area shape="rect" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="5,5,234,64"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="282,13,509,56"/>
+<area shape="poly" title=" " alt="" coords="234,32,267,32,267,37,234,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ae92a34b9dc62881e03aca23f7d6ac3c2_icgraph">
+<area shape="rect" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="1306,192,1534,251"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="984,133,1258,176"/>
+<area shape="poly" title=" " alt="" coords="1290,195,1219,179,1221,174,1292,190"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,96,618,139"/>
+<area shape="poly" title=" " alt="" coords="1292,246,1160,260,1002,267,917,265,832,259,747,247,665,228,621,211,579,188,513,141,516,137,581,184,623,206,667,223,748,241,832,254,917,260,1001,262,1159,255,1291,240"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="685,5,918,64"/>
+<area shape="poly" title=" " alt="" coords="1058,129,935,78,902,67,904,62,937,74,1060,124"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="685,88,918,147"/>
+<area shape="poly" title=" " alt="" coords="969,140,918,134,918,128,970,134"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#af92ea60667756e1dd017f8ede4a13324" title="Unity Editor。" alt="" coords="666,171,936,213"/>
+<area shape="poly" title=" " alt="" coords="970,175,937,179,936,174,969,170"/>
+<area shape="poly" title=" " alt="" coords="674,71,572,98,571,93,672,66"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,96,309,139"/>
+<area shape="poly" title=" " alt="" coords="342,120,309,120,309,115,342,115"/>
+<area shape="poly" title=" " alt="" coords="670,120,618,120,618,115,670,115"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab7953cb08d000aa1372607267ea639cb" name="ab7953cb08d000aa1372607267ea639cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7953cb08d000aa1372607267ea639cb">&#9670;&#160;</a></span>SetWindows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.SetWindows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,253,56"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#ab62241fbd2d6bc7981dd510d9a026fec" title=" " alt="" coords="301,5,550,64"/>
+<area shape="poly" title=" " alt="" coords="253,32,286,32,286,37,253,37"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="598,5,847,64"/>
+<area shape="poly" title=" " alt="" coords="550,32,583,32,583,37,550,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab7953cb08d000aa1372607267ea639cb_icgraph">
+<area shape="rect" title=" " alt="" coords="955,43,1203,85"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a80911d66b594e26c7b9ad0f227c60210" title=" " alt="" coords="668,35,907,93"/>
+<area shape="poly" title=" " alt="" coords="940,67,908,67,908,61,940,61"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a44f37a971a2db67ce3654c510ef8e6c7" title=" " alt="" coords="345,5,598,48"/>
+<area shape="poly" title=" " alt="" coords="653,51,597,44,598,39,654,46"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a75f0424598d08e04bd09bdc54e458827" title="ウィンドウ最大化から復帰時の処理。" alt="" coords="323,72,620,131"/>
+<area shape="poly" title=" " alt="" coords="654,82,621,86,620,81,653,77"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#aba0228bca2d75bdc87beb71937df0884" title=" " alt="" coords="5,43,275,85"/>
+<area shape="poly" title=" " alt="" coords="307,86,275,82,275,77,308,80"/>
+<area shape="rect" href="../../d7/d82/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_base_1_1_view_1_1_hierarchy_window.html#a319573096a62c33fd6f5a1b3401f9373" title=" " alt="" coords="17,109,263,168"/>
+<area shape="poly" title=" " alt="" coords="308,122,263,128,263,122,307,117"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad2749737405424c923be9fad4f4bff96" name="ad2749737405424c923be9fad4f4bff96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2749737405424c923be9fad4f4bff96">&#9670;&#160;</a></span>StartRpgMaker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static IEnumerator RPGMaker.Codebase.Editor.Common.RpgMakerEditor.StartRpgMaker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_cgraph">
+<area shape="rect" title=" " alt="" coords="5,555,267,597"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a742e82e63fe73d0c8759939d79f56826" title=" " alt="" coords="596,405,871,464"/>
+<area shape="poly" title=" " alt="" coords="174,552,238,520,314,491,381,474,450,460,581,442,582,448,451,465,382,479,315,496,240,525,177,557"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="315,588,548,647"/>
+<area shape="poly" title=" " alt="" coords="267,592,300,596,300,602,267,597"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="943,756,1172,815"/>
+<area shape="poly" title=" " alt="" coords="181,595,244,626,316,656,454,706,516,723,596,740,682,754,769,765,928,778,928,783,769,770,681,760,596,745,515,728,452,711,314,661,242,631,178,600"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="315,505,548,564"/>
+<area shape="poly" title=" " alt="" coords="267,555,300,550,300,556,267,560"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a666846063103e4b9fec68779f295a650" title=" " alt="" coords="919,212,1196,271"/>
+<area shape="poly" title=" " alt="" coords="783,402,993,276,996,281,786,407"/>
+<area shape="rect" href="../../d0/d27/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_editor_build_settings_helper.html#a25987f4b02dc4b8983ae6521fcd00bdd" title=" " alt="" coords="1260,253,1489,312"/>
+<area shape="poly" title=" " alt="" coords="1197,257,1246,263,1245,269,1196,262"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a126351c2a0b85b68ac83fd37088e47b6" title=" " alt="" coords="1265,336,1484,395"/>
+<area shape="poly" title=" " alt="" coords="1122,269,1245,322,1263,328,1261,333,1243,326,1120,274"/>
+<area shape="rect" href="../../d2/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_project_settings_helper.html#abb24575433950413f99da397f7da3a58" title=" " alt="" coords="1244,5,1505,64"/>
+<area shape="poly" title=" " alt="" coords="1083,210,1151,142,1195,105,1242,74,1252,68,1255,73,1245,78,1198,110,1154,146,1087,213"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#a3fd58e73f5a0c865d0f75ec00f2caeff" title=" " alt="" coords="1252,88,1497,147"/>
+<area shape="poly" title=" " alt="" coords="1120,209,1243,156,1261,150,1263,155,1245,161,1122,214"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_tag_manager_helper.html#a31290e7d030420afea0951347b92da23" title=" " alt="" coords="1253,171,1496,229"/>
+<area shape="poly" title=" " alt="" coords="1196,221,1238,215,1238,220,1197,226"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a288bd75966e7d1771ebee0bb0667ca1f" title=" " alt="" coords="1585,377,1803,436"/>
+<area shape="poly" title=" " alt="" coords="1484,377,1571,388,1570,393,1484,382"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#ade588b4edf8e24dc122a730437263e39" title=" " alt="" coords="1585,295,1803,353"/>
+<area shape="poly" title=" " alt="" coords="1484,349,1570,337,1571,343,1484,354"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#ab12df90c40092d8f5cdb1dee38716c94" title=" " alt="" coords="1553,96,1835,139"/>
+<area shape="poly" title=" " alt="" coords="1497,115,1538,115,1538,120,1497,120"/>
+<area shape="poly" title=" " alt="" coords="531,585,546,574,557,562,563,550,569,525,575,500,583,487,594,474,599,470,602,475,598,478,587,490,580,501,574,526,568,552,561,565,550,578,534,590"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="597,688,870,731"/>
+<area shape="poly" title=" " alt="" coords="511,645,597,673,624,681,623,686,595,679,510,650"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0" title=" " alt="" coords="617,488,851,531"/>
+<area shape="poly" title=" " alt="" coords="522,585,547,574,570,557,595,540,612,533,614,538,597,545,573,561,549,578,524,590"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="612,555,856,597"/>
+<area shape="poly" title=" " alt="" coords="548,599,597,592,598,597,549,604"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a10bb8ac75549d55ff459c6ab40d09226" title=" " alt="" coords="624,621,844,664"/>
+<area shape="poly" title=" " alt="" coords="549,624,609,630,609,635,548,630"/>
+<area shape="poly" title=" " alt="" coords="829,729,930,753,929,758,827,734"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="1261,764,1488,807"/>
+<area shape="poly" title=" " alt="" coords="1172,783,1246,783,1246,788,1172,788"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20" title="RpgMakerを認証。" alt="" coords="927,391,1188,433"/>
+<area shape="poly" title=" " alt="" coords="839,485,870,474,894,458,918,443,936,436,938,441,921,448,897,463,873,478,841,490"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_unity_sign_in_prompt_window.html#abd87c347be347023476a19a33a445ffe" title=" " alt="" coords="936,457,1179,516"/>
+<area shape="poly" title=" " alt="" coords="851,498,921,494,922,499,852,504"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="1255,419,1494,477"/>
+<area shape="poly" title=" " alt="" coords="1188,424,1240,430,1240,435,1188,429"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="939,540,1176,599"/>
+<area shape="poly" title=" " alt="" coords="856,571,924,569,924,575,856,576"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="944,623,1171,665"/>
+<area shape="poly" title=" " alt="" coords="839,595,939,616,938,622,838,601"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="1256,536,1493,595"/>
+<area shape="poly" title=" " alt="" coords="1177,565,1241,564,1241,570,1177,570"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="1250,619,1499,677"/>
+<area shape="poly" title=" " alt="" coords="1171,643,1235,644,1235,649,1171,648"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a408c9c5ce0108e9267a1c068633b314e" title=" " alt="" coords="949,689,1166,732"/>
+<area shape="poly" title=" " alt="" coords="839,662,939,683,938,688,838,667"/>
+<area shape="poly" title=" " alt="" coords="513,502,595,473,617,466,619,471,597,479,514,507"/>
+<area shape="poly" title=" " alt="" coords="534,562,550,574,561,587,568,600,574,626,580,651,587,663,598,674,603,678,599,682,594,678,582,666,575,653,569,627,563,602,557,590,546,578,531,567"/>
+<area shape="poly" title=" " alt="" coords="548,522,602,518,602,523,549,528"/>
+<area shape="poly" title=" " alt="" coords="549,548,598,555,597,560,548,553"/>
+<area shape="poly" title=" " alt="" coords="524,562,549,574,573,591,597,607,614,614,612,619,595,612,570,595,547,578,522,567"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ad2749737405424c923be9fad4f4bff96_icgraph">
+<area shape="rect" title=" " alt="" coords="357,5,618,48"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab57e2df2dc4ea9acea5c95f80d26bd09" title=" " alt="" coords="5,5,309,48"/>
+<area shape="poly" title=" " alt="" coords="342,29,309,29,309,24,342,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab57e2df2dc4ea9acea5c95f80d26bd09" name="ab57e2df2dc4ea9acea5c95f80d26bd09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab57e2df2dc4ea9acea5c95f80d26bd09">&#9670;&#160;</a></span>StartRPGMakerAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.StartRPGMakerAsync </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab57e2df2dc4ea9acea5c95f80d26bd09_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab57e2df2dc4ea9acea5c95f80d26bd09_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab57e2df2dc4ea9acea5c95f80d26bd09_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_ab57e2df2dc4ea9acea5c95f80d26bd09_cgraph">
+<area shape="rect" title=" " alt="" coords="5,555,309,597"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ad2749737405424c923be9fad4f4bff96" title=" " alt="" coords="357,555,618,597"/>
+<area shape="poly" title=" " alt="" coords="309,573,342,573,342,579,309,579"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a742e82e63fe73d0c8759939d79f56826" title=" " alt="" coords="947,405,1223,464"/>
+<area shape="poly" title=" " alt="" coords="526,552,590,520,665,491,732,474,801,460,932,442,933,448,802,465,733,479,667,496,592,525,528,557"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#aed9de78c8ee4ea02dba89b856b14a262" title="RPG Maker Uniteを開く" alt="" coords="666,588,899,647"/>
+<area shape="poly" title=" " alt="" coords="619,592,652,596,651,602,618,597"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="1295,756,1523,815"/>
+<area shape="poly" title=" " alt="" coords="532,595,595,626,667,656,805,706,867,723,948,740,1033,754,1120,765,1280,778,1279,783,1120,770,1033,760,947,745,866,728,804,711,665,661,593,631,530,600"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#abaadeffb9e70648c3ac33dceea418cc8" title="RPG Maker Unite Window (開発用)を開く" alt="" coords="666,505,899,564"/>
+<area shape="poly" title=" " alt="" coords="618,555,651,550,652,556,619,560"/>
+<area shape="rect" href="../../d0/de0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_r_p_g_maker_default_config_singleton.html#a666846063103e4b9fec68779f295a650" title=" " alt="" coords="1271,212,1547,271"/>
+<area shape="poly" title=" " alt="" coords="1135,402,1344,276,1347,281,1138,407"/>
+<area shape="rect" href="../../d0/d27/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_editor_build_settings_helper.html#a25987f4b02dc4b8983ae6521fcd00bdd" title=" " alt="" coords="1611,253,1840,312"/>
+<area shape="poly" title=" " alt="" coords="1548,257,1597,263,1596,269,1547,262"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a126351c2a0b85b68ac83fd37088e47b6" title=" " alt="" coords="1617,336,1835,395"/>
+<area shape="poly" title=" " alt="" coords="1473,269,1596,322,1614,328,1612,333,1594,326,1471,274"/>
+<area shape="rect" href="../../d2/d22/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_project_settings_helper.html#abb24575433950413f99da397f7da3a58" title=" " alt="" coords="1595,5,1856,64"/>
+<area shape="poly" title=" " alt="" coords="1434,210,1502,142,1546,105,1594,74,1604,68,1606,73,1596,78,1549,110,1506,146,1438,213"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#a3fd58e73f5a0c865d0f75ec00f2caeff" title=" " alt="" coords="1603,88,1848,147"/>
+<area shape="poly" title=" " alt="" coords="1471,209,1594,156,1612,150,1614,155,1596,161,1473,214"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_tag_manager_helper.html#a31290e7d030420afea0951347b92da23" title=" " alt="" coords="1604,171,1847,229"/>
+<area shape="poly" title=" " alt="" coords="1547,221,1589,215,1590,220,1548,226"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#a288bd75966e7d1771ebee0bb0667ca1f" title=" " alt="" coords="1936,377,2155,436"/>
+<area shape="poly" title=" " alt="" coords="1836,377,1922,388,1921,393,1835,382"/>
+<area shape="rect" href="../../dd/dec/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_graphics_settings_helper.html#ade588b4edf8e24dc122a730437263e39" title=" " alt="" coords="1936,295,2155,353"/>
+<area shape="poly" title=" " alt="" coords="1835,349,1921,337,1922,343,1836,354"/>
+<area shape="rect" href="../../da/d30/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_sorting_layer_helper.html#ab12df90c40092d8f5cdb1dee38716c94" title=" " alt="" coords="1904,96,2187,139"/>
+<area shape="poly" title=" " alt="" coords="1849,115,1889,115,1889,120,1849,120"/>
+<area shape="poly" title=" " alt="" coords="882,585,898,574,908,562,915,550,920,525,927,500,934,487,946,474,950,470,953,475,949,478,938,490,932,501,926,526,920,552,913,565,901,578,885,590"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="948,688,1222,731"/>
+<area shape="poly" title=" " alt="" coords="863,645,948,673,975,681,974,686,947,679,861,650"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a93d7454926ed17027c8037084372a6d0" title=" " alt="" coords="968,488,1202,531"/>
+<area shape="poly" title=" " alt="" coords="873,585,898,574,922,557,946,540,963,533,965,538,949,545,925,561,901,578,876,590"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="963,555,1207,597"/>
+<area shape="poly" title=" " alt="" coords="899,599,948,592,949,597,900,604"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a10bb8ac75549d55ff459c6ab40d09226" title=" " alt="" coords="975,621,1195,664"/>
+<area shape="poly" title=" " alt="" coords="900,624,960,630,960,635,900,630"/>
+<area shape="poly" title=" " alt="" coords="1180,729,1281,753,1280,758,1179,734"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="1612,764,1839,807"/>
+<area shape="poly" title=" " alt="" coords="1524,783,1597,783,1597,788,1524,788"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a8705552a61684781a125bf19abeb8a20" title="RpgMakerを認証。" alt="" coords="1279,391,1539,433"/>
+<area shape="poly" title=" " alt="" coords="1190,485,1221,474,1245,458,1269,443,1288,436,1290,441,1272,448,1248,463,1224,478,1192,490"/>
+<area shape="rect" href="../../d6/de6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_unity_sign_in_prompt_window.html#abd87c347be347023476a19a33a445ffe" title=" " alt="" coords="1288,457,1530,516"/>
+<area shape="poly" title=" " alt="" coords="1203,498,1273,494,1273,499,1203,504"/>
+<area shape="rect" href="../../db/d5e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_modal_window_1_1_auth_error_window.html#a50227f04625bba1b508ff36296d073a0" title=" " alt="" coords="1606,419,1845,477"/>
+<area shape="poly" title=" " alt="" coords="1540,424,1592,430,1591,435,1539,429"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="1290,540,1528,599"/>
+<area shape="poly" title=" " alt="" coords="1208,571,1275,569,1275,575,1208,576"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="1296,623,1522,665"/>
+<area shape="poly" title=" " alt="" coords="1191,595,1290,616,1289,622,1190,601"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="1607,536,1844,595"/>
+<area shape="poly" title=" " alt="" coords="1528,565,1592,564,1592,570,1528,570"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="1601,619,1850,677"/>
+<area shape="poly" title=" " alt="" coords="1522,643,1586,644,1586,649,1522,648"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a408c9c5ce0108e9267a1c068633b314e" title=" " alt="" coords="1300,689,1518,732"/>
+<area shape="poly" title=" " alt="" coords="1191,662,1290,683,1289,688,1190,667"/>
+<area shape="poly" title=" " alt="" coords="864,502,946,473,969,466,970,471,948,479,866,507"/>
+<area shape="poly" title=" " alt="" coords="885,562,901,574,913,587,919,600,925,626,931,651,938,663,949,674,954,678,951,682,946,678,934,666,926,653,920,627,914,602,908,590,898,578,882,567"/>
+<area shape="poly" title=" " alt="" coords="900,522,953,518,954,523,900,528"/>
+<area shape="poly" title=" " alt="" coords="900,548,949,555,948,560,899,553"/>
+<area shape="poly" title=" " alt="" coords="876,562,901,574,925,591,949,607,965,614,963,619,946,612,922,595,898,578,873,567"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af92ea60667756e1dd017f8ede4a13324" name="af92ea60667756e1dd017f8ede4a13324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92ea60667756e1dd017f8ede4a13324">&#9670;&#160;</a></span>UnityEditorMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.UnityEditorMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unity Editor。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_af92ea60667756e1dd017f8ede4a13324_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_af92ea60667756e1dd017f8ede4a13324_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_af92ea60667756e1dd017f8ede4a13324_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_af92ea60667756e1dd017f8ede4a13324_cgraph">
+<area shape="rect" title="Unity Editor。" alt="" coords="5,51,276,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ac06d3426691dff9c290dc5f0edd05382" title=" " alt="" coords="324,16,597,59"/>
+<area shape="poly" title=" " alt="" coords="276,55,309,51,309,56,276,60"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a10bb8ac75549d55ff459c6ab40d09226" title=" " alt="" coords="350,84,571,127"/>
+<area shape="poly" title=" " alt="" coords="276,83,336,90,335,95,276,89"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ae92a34b9dc62881e03aca23f7d6ac3c2" title="メニュー項目のチェック表示/非表示設定。" alt="" coords="645,5,873,64"/>
+<area shape="poly" title=" " alt="" coords="598,33,630,33,630,38,598,39"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#ae769554710c95a408921ec8596769145" title="オブジェクトを文字列化してUnityコンソールに表示する。" alt="" coords="921,13,1149,56"/>
+<area shape="poly" title=" " alt="" coords="874,32,906,32,906,37,874,37"/>
+<area shape="rect" href="../../de/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_layout_utility.html#a408c9c5ce0108e9267a1c068633b314e" title=" " alt="" coords="651,88,868,131"/>
+<area shape="poly" title=" " alt="" coords="571,104,636,105,636,110,571,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75f0424598d08e04bd09bdc54e458827" name="a75f0424598d08e04bd09bdc54e458827"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75f0424598d08e04bd09bdc54e458827">&#9670;&#160;</a></span>WindowMaximizationRecoveringProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void RPGMaker.Codebase.Editor.Common.RpgMakerEditor.WindowMaximizationRecoveringProcess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ウィンドウ最大化から復帰時の処理。 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_cgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_cgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_cgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_cgraph">
+<area shape="rect" title="ウィンドウ最大化から復帰時の処理。" alt="" coords="5,35,303,93"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a685fc96fbc14b252acee744e52578c1b" title=" " alt="" coords="351,5,595,48"/>
+<area shape="poly" title=" " alt="" coords="303,44,335,40,336,45,304,49"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#a80911d66b594e26c7b9ad0f227c60210" title=" " alt="" coords="353,72,593,131"/>
+<area shape="poly" title=" " alt="" coords="304,79,338,83,338,88,303,84"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="648,72,885,131"/>
+<area shape="poly" title=" " alt="" coords="561,46,636,65,634,70,559,51"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a31c99a480f2ad731618855bba460ca9d" title=" " alt="" coords="654,5,880,48"/>
+<area shape="poly" title=" " alt="" coords="596,24,639,24,639,29,596,29"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="944,64,1182,123"/>
+<area shape="poly" title=" " alt="" coords="886,95,929,94,929,100,886,101"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a57f6967903bb83daf5aadaf1a5a67d71" title=" " alt="" coords="1236,72,1485,131"/>
+<area shape="poly" title=" " alt="" coords="880,24,1027,31,1108,38,1188,49,1256,65,1255,70,1187,55,1108,43,1027,36,880,29"/>
+<area shape="poly" title=" " alt="" coords="593,99,633,99,633,104,593,104"/>
+<area shape="poly" title=" " alt="" coords="590,69,665,50,667,55,592,74"/>
+<area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#ab7953cb08d000aa1372607267ea639cb" title=" " alt="" coords="643,155,890,197"/>
+<area shape="poly" title=" " alt="" coords="592,129,667,148,665,153,590,134"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#ab62241fbd2d6bc7981dd510d9a026fec" title=" " alt="" coords="938,147,1188,205"/>
+<area shape="poly" title=" " alt="" coords="891,173,924,173,924,179,891,179"/>
+<area shape="poly" title=" " alt="" coords="1182,143,1226,132,1227,137,1183,149"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_icgraph.png" border="0" usemap="#ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_icgraph" alt=""/></div>
+<map name="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_icgraph" id="ad9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor_a75f0424598d08e04bd09bdc54e458827_icgraph">
+<area shape="rect" title="ウィンドウ最大化から復帰時の処理。" alt="" coords="323,35,620,93"/>
+<area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#aba0228bca2d75bdc87beb71937df0884" title=" " alt="" coords="5,5,275,48"/>
+<area shape="poly" title=" " alt="" coords="307,48,275,44,275,39,308,43"/>
+<area shape="rect" href="../../d7/d82/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_base_1_1_view_1_1_hierarchy_window.html#a319573096a62c33fd6f5a1b3401f9373" title=" " alt="" coords="17,72,263,131"/>
+<area shape="poly" title=" " alt="" coords="308,85,263,90,263,85,307,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a500582c388428da994a204771b2d9993" name="a500582c388428da994a204771b2d9993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a500582c388428da994a204771b2d9993">&#9670;&#160;</a></span>_gameView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EditorWindow RPGMaker.Codebase.Editor.Common.RpgMakerEditor._gameView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a658c7b8a0fe61e9a28d806b54bc31d5c" name="a658c7b8a0fe61e9a28d806b54bc31d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658c7b8a0fe61e9a28d806b54bc31d5c">&#9670;&#160;</a></span>_initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.RpgMakerEditor._initialized</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ce748a8a2bb1ff5e5369fef49068019" name="a6ce748a8a2bb1ff5e5369fef49068019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ce748a8a2bb1ff5e5369fef49068019">&#9670;&#160;</a></span>_isStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Editor.Common.RpgMakerEditor._isStart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7cb0bdc89a4f0300c1236e64aef907d" name="ac7cb0bdc89a4f0300c1236e64aef907d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7cb0bdc89a4f0300c1236e64aef907d">&#9670;&#160;</a></span>_isStartMenu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Editor.Common.RpgMakerEditor._isStartMenu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1de9a43ee5eeecdcb8a5562a8304af4" name="ae1de9a43ee5eeecdcb8a5562a8304af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1de9a43ee5eeecdcb8a5562a8304af4">&#9670;&#160;</a></span>_menuWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html">MenuWindow</a> RPGMaker.Codebase.Editor.Common.RpgMakerEditor._menuWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a65a290d83ef76411f2be0ac569c30713" name="a65a290d83ef76411f2be0ac569c30713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a290d83ef76411f2be0ac569c30713">&#9670;&#160;</a></span>_timeSinceStartUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double RPGMaker.Codebase.Editor.Common.RpgMakerEditor._timeSinceStartUp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2aad73b3f3dbdc5ba00ccee37729c56" name="ad2aad73b3f3dbdc5ba00ccee37729c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2aad73b3f3dbdc5ba00ccee37729c56">&#9670;&#160;</a></span>IsImportEffekseer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Editor.Common.RpgMakerEditor.IsImportEffekseer = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73263f12ad0ef4ffbd04d48971ae6c87" name="a73263f12ad0ef4ffbd04d48971ae6c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73263f12ad0ef4ffbd04d48971ae6c87">&#9670;&#160;</a></span>RpgMakerUniteMenuItemPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RpgMakerUniteMenuItemPath = &quot;Window/RPG Maker/Mode/RPG Maker Focused Mode&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0bce720e903edd4364342810a032c45" name="ad0bce720e903edd4364342810a032c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bce720e903edd4364342810a032c45">&#9670;&#160;</a></span>RpgMakerUniteWindowMenuItemPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.RpgMakerEditor.RpgMakerUniteWindowMenuItemPath = &quot;Window/RPG Maker/Mode/RPG Maker+Unity Editor&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d7df4a7b2543420dbfa5512be892817" name="a5d7df4a7b2543420dbfa5512be892817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d7df4a7b2543420dbfa5512be892817">&#9670;&#160;</a></span>UnityEditorMenuItemPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Common.RpgMakerEditor.UnityEditorMenuItemPath = &quot;Window/RPG Maker/Mode/Unity Editor&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/<a class="el" href="../../d0/d46/_rpg_maker_editor_8cs.html">RpgMakerEditor.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

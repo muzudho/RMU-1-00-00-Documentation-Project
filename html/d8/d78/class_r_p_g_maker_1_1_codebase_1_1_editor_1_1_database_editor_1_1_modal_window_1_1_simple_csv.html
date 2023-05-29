@@ -1,0 +1,517 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d8/dce/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor.html">DatabaseEditor</a></li><li class="navelem"><a class="el" href="../../d3/df5/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window.html">ModalWindow</a></li><li class="navelem"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html">SimpleCsv</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d8/dd4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/db4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_modal_window_8_simple_csv_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_modal_window_8_simple_csv_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_modal_window_8_simple_csv_coll__map">
+<area shape="rect" title=" " alt="" coords="5,160,266,203"/>
+<area shape="rect" title=" " alt="" coords="109,5,162,32"/>
+<area shape="poly" title=" " alt="" coords="138,47,138,160,133,160,133,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a6e949e280d7479b9df805533d98a7e87"><td class="memItemLeft" align="right" valign="top">static string[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a6e949e280d7479b9df805533d98a7e87">ReadCsv</a> (string filename)</td></tr>
+<tr class="separator:a6e949e280d7479b9df805533d98a7e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab115e1f1a470f9f5c983a1ab68762119"><td class="memItemLeft" align="right" valign="top">static string[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ab115e1f1a470f9f5c983a1ab68762119">ParseCSV</a> (string text)</td></tr>
+<tr class="separator:ab115e1f1a470f9f5c983a1ab68762119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab750c919b827caa90af62163ffeaf932"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ab750c919b827caa90af62163ffeaf932">ConvertAsCSV</a> (string[,] table)</td></tr>
+<tr class="separator:ab750c919b827caa90af62163ffeaf932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0cd870195d2b213c220b02dc3a922fe"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ae0cd870195d2b213c220b02dc3a922fe">WriteCsv</a> (string filename, string[,] table)</td></tr>
+<tr class="separator:ae0cd870195d2b213c220b02dc3a922fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:afd3de342c2afc5c15f98938db7580ebc"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#afd3de342c2afc5c15f98938db7580ebc">Comma</a> = ','</td></tr>
+<tr class="separator:afd3de342c2afc5c15f98938db7580ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311bafafea87ec53dd9129a531596238"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a311bafafea87ec53dd9129a531596238">DoubleQuote</a> = '&quot;'</td></tr>
+<tr class="separator:a311bafafea87ec53dd9129a531596238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02768e26000ed1ac8ceaf8a06866be43"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a02768e26000ed1ac8ceaf8a06866be43">DoubleQuote2</a> = &quot;\&quot;\&quot;&quot;</td></tr>
+<tr class="separator:a02768e26000ed1ac8ceaf8a06866be43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87afebc4cb8a60033ce803fae717282a"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a87afebc4cb8a60033ce803fae717282a">NL</a> = '\n'</td></tr>
+<tr class="separator:a87afebc4cb8a60033ce803fae717282a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb20b8e2b89542dce6a4140d25a228b"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a3bb20b8e2b89542dce6a4140d25a228b">CR</a> = '\r'</td></tr>
+<tr class="separator:a3bb20b8e2b89542dce6a4140d25a228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ab750c919b827caa90af62163ffeaf932" name="ab750c919b827caa90af62163ffeaf932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab750c919b827caa90af62163ffeaf932">&#9670;&#160;</a></span>ConvertAsCSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.ConvertAsCSV </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>table</em>[,]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab750c919b827caa90af62163ffeaf932_icgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab750c919b827caa90af62163ffeaf932_icgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab750c919b827caa90af62163ffeaf932_icgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab750c919b827caa90af62163ffeaf932_icgraph">
+<area shape="rect" title=" " alt="" coords="1639,272,1878,331"/>
+<area shape="rect" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ae0cd870195d2b213c220b02dc3a922fe" title=" " alt="" coords="1352,272,1591,331"/>
+<area shape="poly" title=" " alt="" coords="1624,304,1592,304,1592,299,1624,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#afbfb62c59cd7fd4f5c69005c0fcbc60a" title=" " alt="" coords="1004,272,1304,331"/>
+<area shape="poly" title=" " alt="" coords="1337,304,1304,304,1304,299,1337,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a5ba1083e2d9cedbd3a9d9d09c58ac850" title=" " alt="" coords="691,115,956,189"/>
+<area shape="poly" title=" " alt="" coords="1077,268,955,210,914,192,916,187,957,206,1080,263"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a276b6fc351b3a2e8ae0cbe66f5e523bf" title=" " alt="" coords="375,264,643,339"/>
+<area shape="poly" title=" " alt="" coords="990,312,643,311,643,306,990,307"/>
+<area shape="poly" title=" " alt="" coords="731,198,590,266,588,261,729,194"/>
+<area shape="poly" title=" " alt="" coords="658,291,1004,291,1004,296,658,296"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a0cba45fb96f15a3d18da3b65a603891f" title=" " alt="" coords="5,5,327,64"/>
+<area shape="poly" title=" " alt="" coords="478,252,451,210,416,162,373,117,325,78,305,67,307,62,328,74,377,113,420,159,455,207,483,250"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ac701ee9a6c97240f94a8bfa370fb7191" title=" " alt="" coords="15,187,317,245"/>
+<area shape="poly" title=" " alt="" coords="359,267,286,249,287,243,361,262"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a223718ff45216085b83a77bc7735c7f8" title=" " alt="" coords="44,269,288,328"/>
+<area shape="poly" title=" " alt="" coords="359,303,289,302,289,297,359,298"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#abb8a1a074ffaf8084067cef188237617" title=" " alt="" coords="13,352,319,411"/>
+<area shape="poly" title=" " alt="" coords="360,339,295,354,294,349,359,333"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ae9eb8027f11a0e94746528c790e431f7" title=" " alt="" coords="23,435,309,493"/>
+<area shape="poly" title=" " alt="" coords="451,350,393,390,328,425,299,437,297,432,326,420,390,385,448,346"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#aba249d358bd59d9b969b36a4dd2748b9" title=" " alt="" coords="18,88,314,163"/>
+<area shape="poly" title=" " alt="" coords="449,257,391,215,325,177,300,166,302,161,328,172,394,211,452,253"/>
+<area shape="poly" title=" " alt="" coords="341,14,480,10,557,12,638,19,720,30,802,46,881,70,957,100,987,117,1015,137,1066,182,1106,230,1136,270,1132,273,1102,233,1062,186,1012,141,984,121,955,105,880,75,800,52,719,35,637,24,557,18,480,15,342,19"/>
+<area shape="poly" title=" " alt="" coords="342,63,691,126,690,131,341,68"/>
+<area shape="poly" title=" " alt="" coords="332,221,623,238,957,268,1004,274,1004,279,956,273,623,244,332,226"/>
+<area shape="poly" title=" " alt="" coords="332,197,690,162,691,168,332,203"/>
+<area shape="poly" title=" " alt="" coords="333,369,643,348,1004,314,1004,320,643,353,334,375"/>
+<area shape="poly" title=" " alt="" coords="323,444,618,406,788,380,956,349,1045,329,1046,334,957,355,789,385,619,411,324,450"/>
+<area shape="poly" title=" " alt="" coords="329,129,691,144,690,149,329,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab115e1f1a470f9f5c983a1ab68762119" name="ab115e1f1a470f9f5c983a1ab68762119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab115e1f1a470f9f5c983a1ab68762119">&#9670;&#160;</a></span>ParseCSV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string[,] RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.ParseCSV </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab115e1f1a470f9f5c983a1ab68762119_icgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab115e1f1a470f9f5c983a1ab68762119_icgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab115e1f1a470f9f5c983a1ab68762119_icgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ab115e1f1a470f9f5c983a1ab68762119_icgraph">
+<area shape="rect" title=" " alt="" coords="1639,272,1878,331"/>
+<area shape="rect" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#a6e949e280d7479b9df805533d98a7e87" title=" " alt="" coords="1352,272,1591,331"/>
+<area shape="poly" title=" " alt="" coords="1624,304,1592,304,1592,299,1624,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#afbfb62c59cd7fd4f5c69005c0fcbc60a" title=" " alt="" coords="1004,272,1304,331"/>
+<area shape="poly" title=" " alt="" coords="1337,304,1304,304,1304,299,1337,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a5ba1083e2d9cedbd3a9d9d09c58ac850" title=" " alt="" coords="691,115,956,189"/>
+<area shape="poly" title=" " alt="" coords="1077,268,955,210,914,192,916,187,957,206,1080,263"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a276b6fc351b3a2e8ae0cbe66f5e523bf" title=" " alt="" coords="375,264,643,339"/>
+<area shape="poly" title=" " alt="" coords="990,312,643,311,643,306,990,307"/>
+<area shape="poly" title=" " alt="" coords="731,198,590,266,588,261,729,194"/>
+<area shape="poly" title=" " alt="" coords="658,291,1004,291,1004,296,658,296"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a0cba45fb96f15a3d18da3b65a603891f" title=" " alt="" coords="5,5,327,64"/>
+<area shape="poly" title=" " alt="" coords="478,252,451,210,416,162,373,117,325,78,305,67,307,62,328,74,377,113,420,159,455,207,483,250"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ac701ee9a6c97240f94a8bfa370fb7191" title=" " alt="" coords="15,187,317,245"/>
+<area shape="poly" title=" " alt="" coords="359,267,286,249,287,243,361,262"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a223718ff45216085b83a77bc7735c7f8" title=" " alt="" coords="44,269,288,328"/>
+<area shape="poly" title=" " alt="" coords="359,303,289,302,289,297,359,298"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#abb8a1a074ffaf8084067cef188237617" title=" " alt="" coords="13,352,319,411"/>
+<area shape="poly" title=" " alt="" coords="360,339,295,354,294,349,359,333"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ae9eb8027f11a0e94746528c790e431f7" title=" " alt="" coords="23,435,309,493"/>
+<area shape="poly" title=" " alt="" coords="451,350,393,390,328,425,299,437,297,432,326,420,390,385,448,346"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#aba249d358bd59d9b969b36a4dd2748b9" title=" " alt="" coords="18,88,314,163"/>
+<area shape="poly" title=" " alt="" coords="449,257,391,215,325,177,300,166,302,161,328,172,394,211,452,253"/>
+<area shape="poly" title=" " alt="" coords="341,14,480,10,557,12,638,19,720,30,802,46,881,70,957,100,987,117,1015,137,1066,182,1106,230,1136,270,1132,273,1102,233,1062,186,1012,141,984,121,955,105,880,75,800,52,719,35,637,24,557,18,480,15,342,19"/>
+<area shape="poly" title=" " alt="" coords="342,63,691,126,690,131,341,68"/>
+<area shape="poly" title=" " alt="" coords="332,221,623,238,957,268,1004,274,1004,279,956,273,623,244,332,226"/>
+<area shape="poly" title=" " alt="" coords="332,197,690,162,691,168,332,203"/>
+<area shape="poly" title=" " alt="" coords="333,369,643,348,1004,314,1004,320,643,353,334,375"/>
+<area shape="poly" title=" " alt="" coords="323,444,618,406,788,380,956,349,1045,329,1046,334,957,355,789,385,619,411,324,450"/>
+<area shape="poly" title=" " alt="" coords="329,129,691,144,690,149,329,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6e949e280d7479b9df805533d98a7e87" name="a6e949e280d7479b9df805533d98a7e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e949e280d7479b9df805533d98a7e87">&#9670;&#160;</a></span>ReadCsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string[,] RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.ReadCsv </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_cgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_cgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_cgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ab115e1f1a470f9f5c983a1ab68762119" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_icgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_icgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_icgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_a6e949e280d7479b9df805533d98a7e87_icgraph">
+<area shape="rect" title=" " alt="" coords="1352,272,1591,331"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#afbfb62c59cd7fd4f5c69005c0fcbc60a" title=" " alt="" coords="1004,272,1304,331"/>
+<area shape="poly" title=" " alt="" coords="1337,304,1304,304,1304,299,1337,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a5ba1083e2d9cedbd3a9d9d09c58ac850" title=" " alt="" coords="691,115,956,189"/>
+<area shape="poly" title=" " alt="" coords="1077,268,955,210,914,192,916,187,957,206,1080,263"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a276b6fc351b3a2e8ae0cbe66f5e523bf" title=" " alt="" coords="375,264,643,339"/>
+<area shape="poly" title=" " alt="" coords="990,312,643,311,643,306,990,307"/>
+<area shape="poly" title=" " alt="" coords="731,198,590,266,588,261,729,194"/>
+<area shape="poly" title=" " alt="" coords="658,291,1004,291,1004,296,658,296"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a0cba45fb96f15a3d18da3b65a603891f" title=" " alt="" coords="5,5,327,64"/>
+<area shape="poly" title=" " alt="" coords="478,252,451,210,416,162,373,117,325,78,305,67,307,62,328,74,377,113,420,159,455,207,483,250"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ac701ee9a6c97240f94a8bfa370fb7191" title=" " alt="" coords="15,187,317,245"/>
+<area shape="poly" title=" " alt="" coords="359,267,286,249,287,243,361,262"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a223718ff45216085b83a77bc7735c7f8" title=" " alt="" coords="44,269,288,328"/>
+<area shape="poly" title=" " alt="" coords="359,303,289,302,289,297,359,298"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#abb8a1a074ffaf8084067cef188237617" title=" " alt="" coords="13,352,319,411"/>
+<area shape="poly" title=" " alt="" coords="360,339,295,354,294,349,359,333"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ae9eb8027f11a0e94746528c790e431f7" title=" " alt="" coords="23,435,309,493"/>
+<area shape="poly" title=" " alt="" coords="451,350,393,390,328,425,299,437,297,432,326,420,390,385,448,346"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#aba249d358bd59d9b969b36a4dd2748b9" title=" " alt="" coords="18,88,314,163"/>
+<area shape="poly" title=" " alt="" coords="449,257,391,215,325,177,300,166,302,161,328,172,394,211,452,253"/>
+<area shape="poly" title=" " alt="" coords="341,14,480,10,557,12,638,19,720,30,802,46,881,70,957,100,987,117,1015,137,1066,182,1106,230,1136,270,1132,273,1102,233,1062,186,1012,141,984,121,955,105,880,75,800,52,719,35,637,24,557,18,480,15,342,19"/>
+<area shape="poly" title=" " alt="" coords="342,63,691,126,690,131,341,68"/>
+<area shape="poly" title=" " alt="" coords="332,221,623,238,957,268,1004,274,1004,279,956,273,623,244,332,226"/>
+<area shape="poly" title=" " alt="" coords="332,197,690,162,691,168,332,203"/>
+<area shape="poly" title=" " alt="" coords="333,369,643,348,1004,314,1004,320,643,353,334,375"/>
+<area shape="poly" title=" " alt="" coords="323,444,618,406,788,380,956,349,1045,329,1046,334,957,355,789,385,619,411,324,450"/>
+<area shape="poly" title=" " alt="" coords="329,129,691,144,690,149,329,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae0cd870195d2b213c220b02dc3a922fe" name="ae0cd870195d2b213c220b02dc3a922fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0cd870195d2b213c220b02dc3a922fe">&#9670;&#160;</a></span>WriteCsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.WriteCsv </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>table</em>[,]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_cgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_cgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_cgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" href="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv.html#ab750c919b827caa90af62163ffeaf932" title=" " alt="" coords="293,5,532,64"/>
+<area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_icgraph.png" border="0" usemap="#ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_icgraph" alt=""/></div>
+<map name="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_icgraph" id="ad8/d78/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_simple_csv_ae0cd870195d2b213c220b02dc3a922fe_icgraph">
+<area shape="rect" title=" " alt="" coords="1352,272,1591,331"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#afbfb62c59cd7fd4f5c69005c0fcbc60a" title=" " alt="" coords="1004,272,1304,331"/>
+<area shape="poly" title=" " alt="" coords="1337,304,1304,304,1304,299,1337,299"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a5ba1083e2d9cedbd3a9d9d09c58ac850" title=" " alt="" coords="691,115,956,189"/>
+<area shape="poly" title=" " alt="" coords="1077,268,955,210,914,192,916,187,957,206,1080,263"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a276b6fc351b3a2e8ae0cbe66f5e523bf" title=" " alt="" coords="375,264,643,339"/>
+<area shape="poly" title=" " alt="" coords="990,312,643,311,643,306,990,307"/>
+<area shape="poly" title=" " alt="" coords="731,198,590,266,588,261,729,194"/>
+<area shape="poly" title=" " alt="" coords="658,291,1004,291,1004,296,658,296"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a0cba45fb96f15a3d18da3b65a603891f" title=" " alt="" coords="5,5,327,64"/>
+<area shape="poly" title=" " alt="" coords="478,252,451,210,416,162,373,117,325,78,305,67,307,62,328,74,377,113,420,159,455,207,483,250"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ac701ee9a6c97240f94a8bfa370fb7191" title=" " alt="" coords="15,187,317,245"/>
+<area shape="poly" title=" " alt="" coords="359,267,286,249,287,243,361,262"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#a223718ff45216085b83a77bc7735c7f8" title=" " alt="" coords="44,269,288,328"/>
+<area shape="poly" title=" " alt="" coords="359,303,289,302,289,297,359,298"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#abb8a1a074ffaf8084067cef188237617" title=" " alt="" coords="13,352,319,411"/>
+<area shape="poly" title=" " alt="" coords="360,339,295,354,294,349,359,333"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#ae9eb8027f11a0e94746528c790e431f7" title=" " alt="" coords="23,435,309,493"/>
+<area shape="poly" title=" " alt="" coords="451,350,393,390,328,425,299,437,297,432,326,420,390,385,448,346"/>
+<area shape="rect" href="../../da/d1b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_modal_window_1_1_addon_parameter_edit_array2_modal_window.html#aba249d358bd59d9b969b36a4dd2748b9" title=" " alt="" coords="18,88,314,163"/>
+<area shape="poly" title=" " alt="" coords="449,257,391,215,325,177,300,166,302,161,328,172,394,211,452,253"/>
+<area shape="poly" title=" " alt="" coords="341,14,480,10,557,12,638,19,720,30,802,46,881,70,957,100,987,117,1015,137,1066,182,1106,230,1136,270,1132,273,1102,233,1062,186,1012,141,984,121,955,105,880,75,800,52,719,35,637,24,557,18,480,15,342,19"/>
+<area shape="poly" title=" " alt="" coords="342,63,691,126,690,131,341,68"/>
+<area shape="poly" title=" " alt="" coords="332,221,623,238,957,268,1004,274,1004,279,956,273,623,244,332,226"/>
+<area shape="poly" title=" " alt="" coords="332,197,690,162,691,168,332,203"/>
+<area shape="poly" title=" " alt="" coords="333,369,643,348,1004,314,1004,320,643,353,334,375"/>
+<area shape="poly" title=" " alt="" coords="323,444,618,406,788,380,956,349,1045,329,1046,334,957,355,789,385,619,411,324,450"/>
+<area shape="poly" title=" " alt="" coords="329,129,691,144,690,149,329,135"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="afd3de342c2afc5c15f98938db7580ebc" name="afd3de342c2afc5c15f98938db7580ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3de342c2afc5c15f98938db7580ebc">&#9670;&#160;</a></span>Comma</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.Comma = ','</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3bb20b8e2b89542dce6a4140d25a228b" name="a3bb20b8e2b89542dce6a4140d25a228b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb20b8e2b89542dce6a4140d25a228b">&#9670;&#160;</a></span>CR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.CR = '\r'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a311bafafea87ec53dd9129a531596238" name="a311bafafea87ec53dd9129a531596238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311bafafea87ec53dd9129a531596238">&#9670;&#160;</a></span>DoubleQuote</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.DoubleQuote = '&quot;'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02768e26000ed1ac8ceaf8a06866be43" name="a02768e26000ed1ac8ceaf8a06866be43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02768e26000ed1ac8ceaf8a06866be43">&#9670;&#160;</a></span>DoubleQuote2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.DoubleQuote2 = &quot;\&quot;\&quot;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87afebc4cb8a60033ce803fae717282a" name="a87afebc4cb8a60033ce803fae717282a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87afebc4cb8a60033ce803fae717282a">&#9670;&#160;</a></span>NL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char RPGMaker.Codebase.Editor.DatabaseEditor.ModalWindow.SimpleCsv.NL = '\n'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/DatabaseEditor/ModalWindow/<a class="el" href="../../d3/d48/_addon_parameter_edit_array2_modal_window_8cs.html">AddonParameterEditArray2ModalWindow.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

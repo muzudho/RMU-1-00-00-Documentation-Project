@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d7/d08/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor.html">OutlineEditor</a></li><li class="navelem"><a class="el" href="../../d9/d9a/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component.html">Component</a></li><li class="navelem"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html">StartNodePart</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d0/d95/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,258,123"/>
+<area shape="rect" title=" " alt="" coords="70,5,193,32"/>
+<area shape="poly" title=" " alt="" coords="134,47,134,80,129,80,129,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/df7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_outline_editor_8_component_8_start_node_part_coll__map">
+<area shape="rect" title=" " alt="" coords="5,112,258,155"/>
+<area shape="rect" title=" " alt="" coords="14,5,137,32"/>
+<area shape="poly" title=" " alt="" coords="91,44,124,110,119,113,86,47"/>
+<area shape="rect" title=" " alt="" coords="161,5,217,32"/>
+<area shape="poly" title=" " alt="" coords="178,47,144,113,140,110,173,44"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7a55c682fa999f0cfd8f1e8947b79871"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html">StartNodePart</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a7a55c682fa999f0cfd8f1e8947b79871">Create</a> (string name, IGraphElementModel model, IModelUI modelUI, string parentClassName)</td></tr>
+<tr class="separator:a7a55c682fa999f0cfd8f1e8947b79871"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8807a93b6f93eff7d91c6556eea8532e"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a8807a93b6f93eff7d91c6556eea8532e">BuildPartUI</a> (VisualElement container)</td></tr>
+<tr class="separator:a8807a93b6f93eff7d91c6556eea8532e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f32f702bedfd316c7346cbd7649286"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a10f32f702bedfd316c7346cbd7649286">PostBuildPartUI</a> ()</td></tr>
+<tr class="separator:a10f32f702bedfd316c7346cbd7649286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2788cf94ca78edcf6c7733fd77a575e7"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a2788cf94ca78edcf6c7733fd77a575e7">UpdatePartFromModel</a> ()</td></tr>
+<tr class="separator:a2788cf94ca78edcf6c7733fd77a575e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a18425e02ee8381eabece85e4cfc1e0e2"><td class="memItemLeft" align="right" valign="top">override VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a18425e02ee8381eabece85e4cfc1e0e2">Root</a><code> [get]</code></td></tr>
+<tr class="separator:a18425e02ee8381eabece85e4cfc1e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3e49cf18ae50bf257311c66528eb16c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a3e49cf18ae50bf257311c66528eb16c9">StartNodePart</a> (string name, IGraphElementModel model, IModelUI ownerElement, string parentClassName)</td></tr>
+<tr class="separator:a3e49cf18ae50bf257311c66528eb16c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a3f1824fda7dbe8941481578704ecd005"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a3f1824fda7dbe8941481578704ecd005">_baseContainer</a></td></tr>
+<tr class="separator:a3f1824fda7dbe8941481578704ecd005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7102a9d76325a740d8f6d3ad90fd6d94"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a7102a9d76325a740d8f6d3ad90fd6d94">_parentContainer</a></td></tr>
+<tr class="separator:a7102a9d76325a740d8f6d3ad90fd6d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c14f90a6e69524f14900ac612baa6d"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#ac8c14f90a6e69524f14900ac612baa6d">_titleBackgroundImage</a></td></tr>
+<tr class="separator:ac8c14f90a6e69524f14900ac612baa6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd935ea2363ba50b7b6d1f361dc2ab0"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a7cd935ea2363ba50b7b6d1f361dc2ab0">_titleFrontImage</a></td></tr>
+<tr class="separator:a7cd935ea2363ba50b7b6d1f361dc2ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a4a08855ae482b9aab629337c5c303"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#ab4a4a08855ae482b9aab629337c5c303">_titleLabel</a></td></tr>
+<tr class="separator:ab4a4a08855ae482b9aab629337c5c303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0e78c9edc2a4b76e27100eae2cef67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a8a0e78c9edc2a4b76e27100eae2cef67">_typeLabel</a></td></tr>
+<tr class="separator:a8a0e78c9edc2a4b76e27100eae2cef67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a40195dc53fa2ad5dcff71b8c5f324fde"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#a40195dc53fa2ad5dcff71b8c5f324fde">StartNodeColor</a> = &quot;#5d4f6a&quot;</td></tr>
+<tr class="separator:a40195dc53fa2ad5dcff71b8c5f324fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd152580ab27b0dcbea8a73c8de2a0eb"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#afd152580ab27b0dcbea8a73c8de2a0eb">NoImageFilePath</a> = &quot;Assets/RPGMaker/Codebase/Editor/<a class="el" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_outline_editor.html">OutlineEditor</a>/Asset/NoImage.png&quot;</td></tr>
+<tr class="separator:afd152580ab27b0dcbea8a73c8de2a0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71a3bf06e44343c2dd8719a02c59145"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html#ae71a3bf06e44343c2dd8719a02c59145">UssClassName</a> = &quot;oe-node-part&quot;</td></tr>
+<tr class="separator:ae71a3bf06e44343c2dd8719a02c59145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a3e49cf18ae50bf257311c66528eb16c9" name="a3e49cf18ae50bf257311c66528eb16c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e49cf18ae50bf257311c66528eb16c9">&#9670;&#160;</a></span>StartNodePart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.StartNodePart </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IGraphElementModel&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IModelUI&#160;</td>
+          <td class="paramname"><em>ownerElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>parentClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a8807a93b6f93eff7d91c6556eea8532e" name="a8807a93b6f93eff7d91c6556eea8532e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8807a93b6f93eff7d91c6556eea8532e">&#9670;&#160;</a></span>BuildPartUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.BuildPartUI </td>
+          <td>(</td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>container</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a55c682fa999f0cfd8f1e8947b79871" name="a7a55c682fa999f0cfd8f1e8947b79871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a55c682fa999f0cfd8f1e8947b79871">&#9670;&#160;</a></span>Create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part.html">StartNodePart</a> RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.Create </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IGraphElementModel&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IModelUI&#160;</td>
+          <td class="paramname"><em>modelUI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>parentClassName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a7a55c682fa999f0cfd8f1e8947b79871_icgraph.png" border="0" usemap="#ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a7a55c682fa999f0cfd8f1e8947b79871_icgraph" alt=""/></div>
+<map name="ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a7a55c682fa999f0cfd8f1e8947b79871_icgraph" id="ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a7a55c682fa999f0cfd8f1e8947b79871_icgraph">
+<area shape="rect" title=" " alt="" coords="286,5,514,64"/>
+<area shape="rect" href="../../dc/df6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node.html#a0579ebe71be2ae84c5c6c9d806c36895" title=" " alt="" coords="5,5,238,64"/>
+<area shape="poly" title=" " alt="" coords="271,37,238,37,238,32,271,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10f32f702bedfd316c7346cbd7649286" name="a10f32f702bedfd316c7346cbd7649286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f32f702bedfd316c7346cbd7649286">&#9670;&#160;</a></span>PostBuildPartUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.PostBuildPartUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2788cf94ca78edcf6c7733fd77a575e7" name="a2788cf94ca78edcf6c7733fd77a575e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2788cf94ca78edcf6c7733fd77a575e7">&#9670;&#160;</a></span>UpdatePartFromModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.UpdatePartFromModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a2788cf94ca78edcf6c7733fd77a575e7_cgraph.png" border="0" usemap="#ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a2788cf94ca78edcf6c7733fd77a575e7_cgraph" alt=""/></div>
+<map name="ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a2788cf94ca78edcf6c7733fd77a575e7_cgraph" id="ad9/daf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_component_1_1_start_node_part_a2788cf94ca78edcf6c7733fd77a575e7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,234,105"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a01927fd8dc7cbaec3937125b3ad292a6" title=" " alt="" coords="282,5,500,64"/>
+<area shape="poly" title=" " alt="" coords="234,56,266,51,267,56,234,61"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a6fb1c514518cf046326afbfc09704756" title=" " alt="" coords="282,88,500,147"/>
+<area shape="poly" title=" " alt="" coords="234,91,267,96,266,101,234,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a3f1824fda7dbe8941481578704ecd005" name="a3f1824fda7dbe8941481578704ecd005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f1824fda7dbe8941481578704ecd005">&#9670;&#160;</a></span>_baseContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._baseContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7102a9d76325a740d8f6d3ad90fd6d94" name="a7102a9d76325a740d8f6d3ad90fd6d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7102a9d76325a740d8f6d3ad90fd6d94">&#9670;&#160;</a></span>_parentContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._parentContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8c14f90a6e69524f14900ac612baa6d" name="ac8c14f90a6e69524f14900ac612baa6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c14f90a6e69524f14900ac612baa6d">&#9670;&#160;</a></span>_titleBackgroundImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._titleBackgroundImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7cd935ea2363ba50b7b6d1f361dc2ab0" name="a7cd935ea2363ba50b7b6d1f361dc2ab0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd935ea2363ba50b7b6d1f361dc2ab0">&#9670;&#160;</a></span>_titleFrontImage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._titleFrontImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4a4a08855ae482b9aab629337c5c303" name="ab4a4a08855ae482b9aab629337c5c303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a4a08855ae482b9aab629337c5c303">&#9670;&#160;</a></span>_titleLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a> RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._titleLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a0e78c9edc2a4b76e27100eae2cef67" name="a8a0e78c9edc2a4b76e27100eae2cef67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a0e78c9edc2a4b76e27100eae2cef67">&#9670;&#160;</a></span>_typeLabel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d4c/_command_setting_window_8cs.html#a26e9eb124da82ffb95b03857b1fb9070">Label</a> RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart._typeLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd152580ab27b0dcbea8a73c8de2a0eb" name="afd152580ab27b0dcbea8a73c8de2a0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd152580ab27b0dcbea8a73c8de2a0eb">&#9670;&#160;</a></span>NoImageFilePath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.NoImageFilePath = &quot;Assets/RPGMaker/Codebase/Editor/<a class="el" href="../../db/d92/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_outline_editor.html">OutlineEditor</a>/Asset/NoImage.png&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40195dc53fa2ad5dcff71b8c5f324fde" name="a40195dc53fa2ad5dcff71b8c5f324fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40195dc53fa2ad5dcff71b8c5f324fde">&#9670;&#160;</a></span>StartNodeColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.StartNodeColor = &quot;#5d4f6a&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71a3bf06e44343c2dd8719a02c59145" name="ae71a3bf06e44343c2dd8719a02c59145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71a3bf06e44343c2dd8719a02c59145">&#9670;&#160;</a></span>UssClassName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.UssClassName = &quot;oe-node-part&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a18425e02ee8381eabece85e4cfc1e0e2" name="a18425e02ee8381eabece85e4cfc1e0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18425e02ee8381eabece85e4cfc1e0e2">&#9670;&#160;</a></span>Root</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override VisualElement RPGMaker.Codebase.Editor.OutlineEditor.Component.StartNodePart.Root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/OutlineEditor/Component/<a class="el" href="../../d9/de3/_start_node_8cs.html">StartNode.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

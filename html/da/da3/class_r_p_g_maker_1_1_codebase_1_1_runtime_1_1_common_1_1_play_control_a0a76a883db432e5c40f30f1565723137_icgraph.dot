@@ -1,0 +1,44 @@
+digraph "RPGMaker.Codebase.Runtime.Common.PlayControl.Pause"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lCommon.PlayControl.Pause",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="RPGMaker.Codebase.Runtime.\lCommon.SoundManager.PlayMe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a9435659bc5d992f9824451ed5189b812",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.PlayDefeatMe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#adec3bb5d9c26b535782ffc2efcdead70",tooltip="敗北MEを再生"];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessDefeat",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab7d517d19ac44790fa3fe4109887adc9",tooltip="敗北処理"];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.CheckBattleEnd",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ae5cd0667f987a8cb66a47a7f138e50b9",tooltip="味方か敵が全滅しているなど戦闘終了状態なら終了し、終了を実行したか返す"];
+  Node5 -> Node6 [id="edge5_Node000005_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateEventMain",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ad376e35f53fd14f73a1aaa2c7409846a",tooltip="イベント主要部分のアップデートを行い、何か実行されたか返す"];
+  Node6 -> Node7 [id="edge6_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateEvent",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a5f49f9a6afb129e2863cd9ee41835cfc",tooltip="イベントのアップデートを行い、何か実行されたか返す"];
+  Node7 -> Node8 [id="edge7_Node000007_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.UpdateBattle\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ab1b1a217800bdf216e587050b9916a08",tooltip="Update処理"];
+  Node8 -> Node9 [id="edge8_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="RPGMaker.Codebase.Runtime.\lBattle.SceneBattle.UpdateBattle\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1f31a5ebcfb8ed4ad9bb74914a71a113",tooltip="戦闘段階のアップデート"];
+  Node9 -> Node10 [id="edge9_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="RPGMaker.Codebase.Runtime.\lBattle.SceneBattle.UpdateTimeHandler",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba",tooltip="Update処理"];
+  Node10 -> Node11 [id="edge10_Node000010_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="RPGMaker.Codebase.Runtime.\lBattle.SceneBattle.OnDestroy",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a9231e45c15cb86d90ea7850734f317e8",tooltip="破棄処理"];
+  Node10 -> Node12 [id="edge11_Node000010_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="RPGMaker.Codebase.Runtime.\lBattle.SceneBattle.Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d",tooltip="シーンの開始"];
+  Node2 -> Node13 [id="edge12_Node000002_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="RPGMaker.Codebase.Runtime.\lGameOver.SceneGameOver.PlayMe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a6a54777ec9855ab4ea99a411df9b1ffe",tooltip=" "];
+  Node13 -> Node14 [id="edge13_Node000013_Node000014",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="RPGMaker.Codebase.Runtime.\lGameOver.SceneGameOver.Start",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a9767fcab975bab8d17de6eb61371f185",tooltip=" "];
+  Node2 -> Node15 [id="edge14_Node000002_Node000015",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node15 [id="Node000015",label="RPGMaker.Codebase.Runtime.\lEvent.AudioVideo.MePlayProcessor.\lPlaySound",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_me_play_processor.html#a357625b731ae531e34ec1f17c601b53f",tooltip=" "];
+  Node15 -> Node16 [id="edge15_Node000015_Node000016",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node16 [id="Node000016",label="RPGMaker.Codebase.Runtime.\lEvent.AudioVideo.MePlayProcessor.\lProcess",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d7/d66/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_audio_video_1_1_me_play_processor.html#a0f6817a5bed7f75223d2763286b13280",tooltip="イベント実行処理"];
+  Node2 -> Node17 [id="edge16_Node000002_Node000017",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node17 [id="Node000017",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.PlayVictoryMe",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#abd331004b803a81f6366ef19eb53c6af",tooltip="勝利MEを再生"];
+  Node17 -> Node18 [id="edge17_Node000017_Node000018",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node18 [id="Node000018",label="RPGMaker.Codebase.Runtime.\lBattle.BattleManager.ProcessVictory",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#a10d228bcabfa660dda1837b88cf139f9",tooltip="勝利処理"];
+  Node18 -> Node5 [id="edge18_Node000018_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

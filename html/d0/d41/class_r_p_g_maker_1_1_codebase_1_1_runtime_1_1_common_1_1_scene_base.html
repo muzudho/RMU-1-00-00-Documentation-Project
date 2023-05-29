@@ -1,0 +1,1483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.SceneBase クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html">SceneBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d3/d63/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.SceneBase クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>シーン・ベース  
+ <a href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.SceneBase の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/dab/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_inherit__map">
+<area shape="rect" title="シーン・ベース" alt="" coords="266,72,469,115"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html" title="戦闘シーンのコマンドやメッセージのウィンドウ、[敵キャラ]やサイドビューの[アクター]の画像を管理するクラス" alt="" coords="517,5,721,48"/>
+<area shape="poly" title=" " alt="" coords="464,65,535,46,537,51,465,70"/>
+<area shape="rect" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html" title="シーン・ゲーム・オーバー" alt="" coords="517,72,721,115"/>
+<area shape="poly" title=" " alt="" coords="484,91,517,91,517,96,484,96"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html" title="シーン・マップ" alt="" coords="517,139,721,181"/>
+<area shape="poly" title=" " alt="" coords="465,116,537,135,535,141,464,121"/>
+<area shape="rect" href="../../d8/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_stage.html" title="ステージ" alt="" coords="163,80,218,107"/>
+<area shape="poly" title=" " alt="" coords="233,91,265,91,265,96,233,96"/>
+<area shape="rect" title=" " alt="" coords="5,80,115,107"/>
+<area shape="poly" title=" " alt="" coords="130,91,162,91,162,96,130,96"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.SceneBase 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_scene_base_coll__map">
+<area shape="rect" title="シーン・ベース" alt="" coords="56,204,259,247"/>
+<area shape="rect" href="../../d8/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_stage.html" title="ステージ" alt="" coords="32,81,88,108"/>
+<area shape="poly" title=" " alt="" coords="80,118,144,202,140,205,76,121"/>
+<area shape="rect" title=" " alt="" coords="5,5,115,32"/>
+<area shape="poly" title=" " alt="" coords="63,47,63,81,57,81,57,47"/>
+<area shape="rect" title=" " alt="" coords="112,81,203,108"/>
+<area shape="poly" title=" " alt="" coords="160,123,160,204,155,204,155,123"/>
+<area shape="rect" title=" " alt="" coords="228,81,338,108"/>
+<area shape="poly" title=" " alt="" coords="271,123,252,152,227,182,197,206,193,201,223,178,248,149,267,120"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a869e2e8753de397a2b0de37fa5aa4e2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2d">INPUT_KEY_TYPE</a> { <br />
+&#160;&#160;<a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2dab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2dafbaedde498cdead4f2780217646e9ba1">UP</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2dac4e0e4e3118472beeb2ae75827450f1f">DOWN</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2da684d325a7303f52e64011467ff5c5758">LEFT</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2da21507b40c80068eda19865706fdc2403">RIGHT</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2da21c2e59531c8710156d34a3c30ac81d5">Z</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2da02129bb861061d1a052c592e2dc6b383">X</a>
+, <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2dadaaedac409335b869929ea43fa44be5d">ESCAPE</a>
+, <br />
+&#160;&#160;<a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2da4942090d783bfdcdce9830654f9fb6a4">LEFTCLICK</a>
+<br />
+ }</td></tr>
+<tr class="separator:a869e2e8753de397a2b0de37fa5aa4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a3806d9a2c867bd99a2d366bb0c339f54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a3806d9a2c867bd99a2d366bb0c339f54">Update</a> ()</td></tr>
+<tr class="separator:a3806d9a2c867bd99a2d366bb0c339f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059a51d4419a23f61a0641b085c7fd94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a059a51d4419a23f61a0641b085c7fd94">Stop</a> ()</td></tr>
+<tr class="separator:a059a51d4419a23f61a0641b085c7fd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8630769a8684c97fd493e0ece4a42bd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a8630769a8684c97fd493e0ece4a42bd8">ExecEvent</a> ()</td></tr>
+<tr class="separator:a8630769a8684c97fd493e0ece4a42bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cff2f309c68cc006bdaece234c66e4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a7cff2f309c68cc006bdaece234c66e4e">CreateTintColor</a> ()</td></tr>
+<tr class="separator:a7cff2f309c68cc006bdaece234c66e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442dc8b0226af697745ca2d116f7fd78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a442dc8b0226af697745ca2d116f7fd78">CreateFlashColor</a> ()</td></tr>
+<tr class="separator:a442dc8b0226af697745ca2d116f7fd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae5821ac91e5282efda0874c46052b464"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#ae5821ac91e5282efda0874c46052b464">IsActive</a> ()</td></tr>
+<tr class="separator:ae5821ac91e5282efda0874c46052b464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75056b32a86aeb1e27fd2871f7e55711"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a75056b32a86aeb1e27fd2871f7e55711">Start</a> ()</td></tr>
+<tr class="separator:a75056b32a86aeb1e27fd2871f7e55711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa310a042f0e287eba51956597e8e5af4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aa310a042f0e287eba51956597e8e5af4">Init</a> ()</td></tr>
+<tr class="separator:aa310a042f0e287eba51956597e8e5af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a762669756b7028c302e6e7a4bf22fe16"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a762669756b7028c302e6e7a4bf22fe16">IsBusy</a> ()</td></tr>
+<tr class="separator:a762669756b7028c302e6e7a4bf22fe16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cb8f12b2d84b260092f6fe4ac05e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#af8cb8f12b2d84b260092f6fe4ac05e34">StartFadeIn</a> (int duration, bool white)</td></tr>
+<tr class="separator:af8cb8f12b2d84b260092f6fe4ac05e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf86944effa72086616f5ccb3d70628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#adaf86944effa72086616f5ccb3d70628">StartFadeOut</a> (int duration, bool white)</td></tr>
+<tr class="separator:adaf86944effa72086616f5ccb3d70628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f05ad0142afba01c896d1e0dc360e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a47f05ad0142afba01c896d1e0dc360e7">CreateFadeSprite</a> (bool white)</td></tr>
+<tr class="separator:a47f05ad0142afba01c896d1e0dc360e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc79faea5566e71581637399c0b9b2aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#adc79faea5566e71581637399c0b9b2aa">UpdateFade</a> ()</td></tr>
+<tr class="separator:adc79faea5566e71581637399c0b9b2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8997041b8540a79ab3a6d18d967b82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aca8997041b8540a79ab3a6d18d967b82">SetFadeActive</a> (bool isActive)</td></tr>
+<tr class="separator:aca8997041b8540a79ab3a6d18d967b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869f0a76b90ff83f3fb15aa45d3a2051"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869f0a76b90ff83f3fb15aa45d3a2051">FadeSpeed</a> ()</td></tr>
+<tr class="separator:a869f0a76b90ff83f3fb15aa45d3a2051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442e59b576d23ae4b47b2f03f717e231"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a442e59b576d23ae4b47b2f03f717e231">SlowFadeSpeed</a> ()</td></tr>
+<tr class="separator:a442e59b576d23ae4b47b2f03f717e231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266ebe390549838da91ea3cb943b7bdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a266ebe390549838da91ea3cb943b7bdb">StartTintOut</a> (int duration, Color tint)</td></tr>
+<tr class="separator:a266ebe390549838da91ea3cb943b7bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ac75ce8c7dcfc95fafe99b4b7fe7f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aa9ac75ce8c7dcfc95fafe99b4b7fe7f4">UpdateTint</a> ()</td></tr>
+<tr class="separator:aa9ac75ce8c7dcfc95fafe99b4b7fe7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d634a03f179de072eba20f16408f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a38d634a03f179de072eba20f16408f69">StartFlash</a> (int duration, Color flash, int a)</td></tr>
+<tr class="separator:a38d634a03f179de072eba20f16408f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec6e5025e42b2d73184d792cc2ed5a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#afec6e5025e42b2d73184d792cc2ed5a2">UpdateFlash</a> ()</td></tr>
+<tr class="separator:afec6e5025e42b2d73184d792cc2ed5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af09841a886bd0b1108219a605dc6952e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#af09841a886bd0b1108219a605dc6952e">StartWeather</a> (string type, int power, int frame)</td></tr>
+<tr class="separator:af09841a886bd0b1108219a605dc6952e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:a451f82407f6c71ae6931e30d98da0141"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a451f82407f6c71ae6931e30d98da0141">active</a></td></tr>
+<tr class="separator:a451f82407f6c71ae6931e30d98da0141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b6f3544275d9c202fb86e966d27066"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a73b6f3544275d9c202fb86e966d27066">alpha</a> = 1.0f</td></tr>
+<tr class="separator:a73b6f3544275d9c202fb86e966d27066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa00ede696be519fb54f9f6fb0c9bd10f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aa00ede696be519fb54f9f6fb0c9bd10f">fadeDuration</a></td></tr>
+<tr class="separator:aa00ede696be519fb54f9f6fb0c9bd10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac791c5e296db27d0a491619efd84d71"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aac791c5e296db27d0a491619efd84d71">fadeSign</a></td></tr>
+<tr class="separator:aac791c5e296db27d0a491619efd84d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6862455ee6cb4dcfb7bab650aa7a22e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a6862455ee6cb4dcfb7bab650aa7a22e5">fadeSprite</a></td></tr>
+<tr class="separator:a6862455ee6cb4dcfb7bab650aa7a22e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479cff3d2cea21541087f995973c09d0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a479cff3d2cea21541087f995973c09d0">flashAlpha</a> = 1.0f</td></tr>
+<tr class="separator:a479cff3d2cea21541087f995973c09d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c396677b4c37311fee76c0e4297a9c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a7c396677b4c37311fee76c0e4297a9c5">flashDuration</a></td></tr>
+<tr class="separator:a7c396677b4c37311fee76c0e4297a9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45200219ccbe9c16ed8c67e93f19b72e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a45200219ccbe9c16ed8c67e93f19b72e">flashSign</a></td></tr>
+<tr class="separator:a45200219ccbe9c16ed8c67e93f19b72e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382019a98af779f070447e626cc90ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a382019a98af779f070447e626cc90ba2">flashSprite</a></td></tr>
+<tr class="separator:a382019a98af779f070447e626cc90ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a898141e5638df06591f4294687a82f"><td class="memItemLeft" align="right" valign="top">ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a5a898141e5638df06591f4294687a82f">rainParticle</a></td></tr>
+<tr class="separator:a5a898141e5638df06591f4294687a82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6336e7e898e5eb2956f44f865106ac79"><td class="memItemLeft" align="right" valign="top">ParticleSystem&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a6336e7e898e5eb2956f44f865106ac79">snowParticle</a></td></tr>
+<tr class="separator:a6336e7e898e5eb2956f44f865106ac79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd9c397781118da21eb3df5a7208ab8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a0bd9c397781118da21eb3df5a7208ab8">tintAlpha</a> = 1.0f</td></tr>
+<tr class="separator:a0bd9c397781118da21eb3df5a7208ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecbb58af4521c724b5f769dd895d9ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#afecbb58af4521c724b5f769dd895d9ba">tintDuration</a></td></tr>
+<tr class="separator:afecbb58af4521c724b5f769dd895d9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c9c801995869ad225b9bfdfb8639212"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a8c9c801995869ad225b9bfdfb8639212">tintSign</a></td></tr>
+<tr class="separator:a8c9c801995869ad225b9bfdfb8639212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6080ffd7030108237ad2c5b7c9b86d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#ac6080ffd7030108237ad2c5b7c9b86d1">tintSprite</a></td></tr>
+<tr class="separator:ac6080ffd7030108237ad2c5b7c9b86d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:a6b3026a2d4f81566b5d0c4eef17addfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html">SoundManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a6b3026a2d4f81566b5d0c4eef17addfb">soundManager</a> = null<code> [get]</code></td></tr>
+<tr class="separator:a6b3026a2d4f81566b5d0c4eef17addfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a7cc324f15b3190a929caa5d039a94e86"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a7cc324f15b3190a929caa5d039a94e86">_fadeColor</a> = Color.black</td></tr>
+<tr class="separator:a7cc324f15b3190a929caa5d039a94e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b469dc2a770e36aef9bbd04e5a1cfff"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a9b469dc2a770e36aef9bbd04e5a1cfff">_flashColor</a> = Color.black</td></tr>
+<tr class="separator:a9b469dc2a770e36aef9bbd04e5a1cfff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e071a249330991ad1e2aad60e5dc87"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a13e071a249330991ad1e2aad60e5dc87">_tintColor</a> = Color.black</td></tr>
+<tr class="separator:a13e071a249330991ad1e2aad60e5dc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シーン・ベース </p>
+</div><h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a869e2e8753de397a2b0de37fa5aa4e2d" name="a869e2e8753de397a2b0de37fa5aa4e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869e2e8753de397a2b0de37fa5aa4e2d">&#9670;&#160;</a></span>INPUT_KEY_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869e2e8753de397a2b0de37fa5aa4e2d">RPGMaker.Codebase.Runtime.Common.SceneBase.INPUT_KEY_TYPE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2dab50339a10e1de285ac99d4c3990b8693" name="a869e2e8753de397a2b0de37fa5aa4e2dab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2dafbaedde498cdead4f2780217646e9ba1" name="a869e2e8753de397a2b0de37fa5aa4e2dafbaedde498cdead4f2780217646e9ba1"></a>UP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2dac4e0e4e3118472beeb2ae75827450f1f" name="a869e2e8753de397a2b0de37fa5aa4e2dac4e0e4e3118472beeb2ae75827450f1f"></a>DOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2da684d325a7303f52e64011467ff5c5758" name="a869e2e8753de397a2b0de37fa5aa4e2da684d325a7303f52e64011467ff5c5758"></a>LEFT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2da21507b40c80068eda19865706fdc2403" name="a869e2e8753de397a2b0de37fa5aa4e2da21507b40c80068eda19865706fdc2403"></a>RIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2da21c2e59531c8710156d34a3c30ac81d5" name="a869e2e8753de397a2b0de37fa5aa4e2da21c2e59531c8710156d34a3c30ac81d5"></a>Z&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2da02129bb861061d1a052c592e2dc6b383" name="a869e2e8753de397a2b0de37fa5aa4e2da02129bb861061d1a052c592e2dc6b383"></a>X&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2dadaaedac409335b869929ea43fa44be5d" name="a869e2e8753de397a2b0de37fa5aa4e2dadaaedac409335b869929ea43fa44be5d"></a>ESCAPE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a869e2e8753de397a2b0de37fa5aa4e2da4942090d783bfdcdce9830654f9fb6a4" name="a869e2e8753de397a2b0de37fa5aa4e2da4942090d783bfdcdce9830654f9fb6a4"></a>LEFTCLICK&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a47f05ad0142afba01c896d1e0dc360e7" name="a47f05ad0142afba01c896d1e0dc360e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47f05ad0142afba01c896d1e0dc360e7">&#9670;&#160;</a></span>CreateFadeSprite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.CreateFadeSprite </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>white</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,255,56"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="303,5,571,64"/>
+<area shape="poly" title=" " alt="" coords="255,32,288,32,288,37,255,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a47f05ad0142afba01c896d1e0dc360e7_icgraph">
+<area shape="rect" title=" " alt="" coords="280,39,529,81"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#af8cb8f12b2d84b260092f6fe4ac05e34" title=" " alt="" coords="11,5,226,48"/>
+<area shape="poly" title=" " alt="" coords="264,46,226,42,227,37,265,41"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#adaf86944effa72086616f5ccb3d70628" title=" " alt="" coords="5,72,232,115"/>
+<area shape="poly" title=" " alt="" coords="265,79,233,83,232,77,265,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a442dc8b0226af697745ca2d116f7fd78" name="a442dc8b0226af697745ca2d116f7fd78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442dc8b0226af697745ca2d116f7fd78">&#9670;&#160;</a></span>CreateFlashColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.CreateFlashColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,254,56"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="302,5,570,64"/>
+<area shape="poly" title=" " alt="" coords="254,32,287,32,287,37,254,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442dc8b0226af697745ca2d116f7fd78_icgraph">
+<area shape="rect" title=" " alt="" coords="262,5,510,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a38d634a03f179de072eba20f16408f69" title=" " alt="" coords="5,5,214,48"/>
+<area shape="poly" title=" " alt="" coords="247,29,214,29,214,24,247,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7cff2f309c68cc006bdaece234c66e4e" name="a7cff2f309c68cc006bdaece234c66e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cff2f309c68cc006bdaece234c66e4e">&#9670;&#160;</a></span>CreateTintColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.CreateTintColor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,243,56"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="291,5,559,64"/>
+<area shape="poly" title=" " alt="" coords="243,32,276,32,276,37,243,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a7cff2f309c68cc006bdaece234c66e4e_icgraph">
+<area shape="rect" title=" " alt="" coords="272,5,509,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a266ebe390549838da91ea3cb943b7bdb" title=" " alt="" coords="5,5,224,48"/>
+<area shape="poly" title=" " alt="" coords="257,29,224,29,224,24,257,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8630769a8684c97fd493e0ece4a42bd8" name="a8630769a8684c97fd493e0ece4a42bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8630769a8684c97fd493e0ece4a42bd8">&#9670;&#160;</a></span>ExecEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.ExecEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a869f0a76b90ff83f3fb15aa45d3a2051" name="a869f0a76b90ff83f3fb15aa45d3a2051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869f0a76b90ff83f3fb15aa45d3a2051">&#9670;&#160;</a></span>FadeSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.FadeSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a869f0a76b90ff83f3fb15aa45d3a2051_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a869f0a76b90ff83f3fb15aa45d3a2051_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a869f0a76b90ff83f3fb15aa45d3a2051_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a869f0a76b90ff83f3fb15aa45d3a2051_icgraph">
+<area shape="rect" title=" " alt="" coords="296,5,510,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a442e59b576d23ae4b47b2f03f717e231" title=" " alt="" coords="5,5,248,48"/>
+<area shape="poly" title=" " alt="" coords="281,29,248,29,248,24,281,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa310a042f0e287eba51956597e8e5af4" name="aa310a042f0e287eba51956597e8e5af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa310a042f0e287eba51956597e8e5af4">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Common.SceneBase.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a5b78081110fe9498bdba747c70a49133">RPGMaker.Codebase.Runtime.GameOver.SceneGameOver</a>, <a class="el" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc">RPGMaker.Codebase.Runtime.Map.SceneMap</a>で再実装されています。</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aa310a042f0e287eba51956597e8e5af4_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aa310a042f0e287eba51956597e8e5af4_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aa310a042f0e287eba51956597e8e5af4_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aa310a042f0e287eba51956597e8e5af4_icgraph">
+<area shape="rect" title=" " alt="" coords="257,5,460,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a75056b32a86aeb1e27fd2871f7e55711" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="242,29,209,29,209,24,242,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae5821ac91e5282efda0874c46052b464" name="ae5821ac91e5282efda0874c46052b464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5821ac91e5282efda0874c46052b464">&#9670;&#160;</a></span>IsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.SceneBase.IsActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_ae5821ac91e5282efda0874c46052b464_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_ae5821ac91e5282efda0874c46052b464_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_ae5821ac91e5282efda0874c46052b464_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_ae5821ac91e5282efda0874c46052b464_icgraph">
+<area shape="rect" title=" " alt="" coords="813,47,1017,89"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a233bc1ab55afdb0a6c991c4e441f89ef" title="[ステータス]ウィンドウのアップデート" alt="" coords="552,5,765,64"/>
+<area shape="poly" title=" " alt="" coords="798,55,765,51,766,46,799,50"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba" title="Update処理" alt="" coords="257,47,504,89"/>
+<area shape="poly" title=" " alt="" coords="798,77,765,79,552,79,504,77,505,72,552,73,765,73,798,72"/>
+<area shape="poly" title=" " alt="" coords="538,52,505,56,504,51,537,47"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a9231e45c15cb86d90ea7850734f317e8" title="破棄処理" alt="" coords="5,13,209,56"/>
+<area shape="poly" title=" " alt="" coords="242,54,209,50,209,44,242,48"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="5,80,209,123"/>
+<area shape="poly" title=" " alt="" coords="242,88,209,92,209,86,242,82"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a762669756b7028c302e6e7a4bf22fe16" name="a762669756b7028c302e6e7a4bf22fe16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762669756b7028c302e6e7a4bf22fe16">&#9670;&#160;</a></span>IsBusy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.SceneBase.IsBusy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a762669756b7028c302e6e7a4bf22fe16_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a762669756b7028c302e6e7a4bf22fe16_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a762669756b7028c302e6e7a4bf22fe16_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a762669756b7028c302e6e7a4bf22fe16_icgraph">
+<area shape="rect" title=" " alt="" coords="552,39,755,81"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ae66aece195b0814c37fae654108f21ba" title="Update処理" alt="" coords="257,39,504,81"/>
+<area shape="poly" title=" " alt="" coords="537,63,505,63,505,57,537,57"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a9231e45c15cb86d90ea7850734f317e8" title="破棄処理" alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="242,46,209,42,209,36,242,40"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d" title="シーンの開始" alt="" coords="5,72,209,115"/>
+<area shape="poly" title=" " alt="" coords="242,80,209,84,209,78,242,74"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aca8997041b8540a79ab3a6d18d967b82" name="aca8997041b8540a79ab3a6d18d967b82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca8997041b8540a79ab3a6d18d967b82">&#9670;&#160;</a></span>SetFadeActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.SetFadeActive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aca8997041b8540a79ab3a6d18d967b82_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aca8997041b8540a79ab3a6d18d967b82_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aca8997041b8540a79ab3a6d18d967b82_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_aca8997041b8540a79ab3a6d18d967b82_icgraph">
+<area shape="rect" title=" " alt="" coords="336,79,568,121"/>
+<area shape="rect" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a1512cb2d041eb281e5550aa252dde5c2" title=" " alt="" coords="5,29,288,72"/>
+<area shape="poly" title=" " alt="" coords="321,82,282,75,283,70,321,76"/>
+<area shape="rect" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a8be2c65b1d7ced546fa2df8df869cb80" title=" " alt="" coords="27,120,266,179"/>
+<area shape="poly" title=" " alt="" coords="321,124,267,133,266,127,320,119"/>
+<area shape="poly" title=" " alt="" coords="198,17,179,11,146,8,117,10,99,15,92,21,95,28,89,29,87,19,97,10,116,5,147,3,180,5,200,12"/>
+<area shape="poly" title=" " alt="" coords="197,109,178,101,146,99,120,101,102,105,93,112,93,120,87,119,89,109,99,101,119,95,147,93,179,96,199,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a442e59b576d23ae4b47b2f03f717e231" name="a442e59b576d23ae4b47b2f03f717e231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442e59b576d23ae4b47b2f03f717e231">&#9670;&#160;</a></span>SlowFadeSpeed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.SlowFadeSpeed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442e59b576d23ae4b47b2f03f717e231_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442e59b576d23ae4b47b2f03f717e231_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442e59b576d23ae4b47b2f03f717e231_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a442e59b576d23ae4b47b2f03f717e231_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,248,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a869f0a76b90ff83f3fb15aa45d3a2051" title=" " alt="" coords="296,5,510,48"/>
+<area shape="poly" title=" " alt="" coords="248,24,281,24,281,29,248,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a75056b32a86aeb1e27fd2871f7e55711" name="a75056b32a86aeb1e27fd2871f7e55711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75056b32a86aeb1e27fd2871f7e55711">&#9670;&#160;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Common.SceneBase.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a52668ac9e236a1452c2290bae1331f7d">RPGMaker.Codebase.Runtime.Battle.SceneBattle</a>, <a class="el" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a9767fcab975bab8d17de6eb61371f185">RPGMaker.Codebase.Runtime.GameOver.SceneGameOver</a>, <a class="el" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a8514c54d190f9d2acb578100f490a861">RPGMaker.Codebase.Runtime.Map.SceneMap</a>で再実装されています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a75056b32a86aeb1e27fd2871f7e55711_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a75056b32a86aeb1e27fd2871f7e55711_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a75056b32a86aeb1e27fd2871f7e55711_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a75056b32a86aeb1e27fd2871f7e55711_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,209,48"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#aa310a042f0e287eba51956597e8e5af4" title=" " alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="209,24,241,24,241,29,209,29"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af8cb8f12b2d84b260092f6fe4ac05e34" name="af8cb8f12b2d84b260092f6fe4ac05e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8cb8f12b2d84b260092f6fe4ac05e34">&#9670;&#160;</a></span>StartFadeIn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.StartFadeIn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>white</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_af8cb8f12b2d84b260092f6fe4ac05e34_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_af8cb8f12b2d84b260092f6fe4ac05e34_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_af8cb8f12b2d84b260092f6fe4ac05e34_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_af8cb8f12b2d84b260092f6fe4ac05e34_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,221,56"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a47f05ad0142afba01c896d1e0dc360e7" title=" " alt="" coords="269,13,518,56"/>
+<area shape="poly" title=" " alt="" coords="221,32,254,32,254,37,221,37"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="566,5,834,64"/>
+<area shape="poly" title=" " alt="" coords="518,32,551,32,551,37,518,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adaf86944effa72086616f5ccb3d70628" name="adaf86944effa72086616f5ccb3d70628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf86944effa72086616f5ccb3d70628">&#9670;&#160;</a></span>StartFadeOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.StartFadeOut </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>white</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adaf86944effa72086616f5ccb3d70628_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adaf86944effa72086616f5ccb3d70628_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adaf86944effa72086616f5ccb3d70628_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adaf86944effa72086616f5ccb3d70628_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,232,56"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a47f05ad0142afba01c896d1e0dc360e7" title=" " alt="" coords="280,13,529,56"/>
+<area shape="poly" title=" " alt="" coords="232,32,265,32,265,37,232,37"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="577,5,845,64"/>
+<area shape="poly" title=" " alt="" coords="529,32,562,32,562,37,529,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38d634a03f179de072eba20f16408f69" name="a38d634a03f179de072eba20f16408f69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d634a03f179de072eba20f16408f69">&#9670;&#160;</a></span>StartFlash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.StartFlash </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>flash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a38d634a03f179de072eba20f16408f69_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a38d634a03f179de072eba20f16408f69_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a38d634a03f179de072eba20f16408f69_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a38d634a03f179de072eba20f16408f69_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,214,56"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a442dc8b0226af697745ca2d116f7fd78" title=" " alt="" coords="262,13,510,56"/>
+<area shape="poly" title=" " alt="" coords="214,32,247,32,247,37,214,37"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="558,5,826,64"/>
+<area shape="poly" title=" " alt="" coords="510,32,543,32,543,37,510,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a266ebe390549838da91ea3cb943b7bdb" name="a266ebe390549838da91ea3cb943b7bdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266ebe390549838da91ea3cb943b7bdb">&#9670;&#160;</a></span>StartTintOut()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.StartTintOut </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>duration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Color&#160;</td>
+          <td class="paramname"><em>tint</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a266ebe390549838da91ea3cb943b7bdb_cgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a266ebe390549838da91ea3cb943b7bdb_cgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a266ebe390549838da91ea3cb943b7bdb_cgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_a266ebe390549838da91ea3cb943b7bdb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,224,56"/>
+<area shape="rect" href="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base.html#a7cff2f309c68cc006bdaece234c66e4e" title=" " alt="" coords="272,13,509,56"/>
+<area shape="poly" title=" " alt="" coords="224,32,257,32,257,37,224,37"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="557,5,825,64"/>
+<area shape="poly" title=" " alt="" coords="510,32,542,32,542,37,510,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af09841a886bd0b1108219a605dc6952e" name="af09841a886bd0b1108219a605dc6952e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09841a886bd0b1108219a605dc6952e">&#9670;&#160;</a></span>StartWeather()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.StartWeather </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a059a51d4419a23f61a0641b085c7fd94" name="a059a51d4419a23f61a0641b085c7fd94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059a51d4419a23f61a0641b085c7fd94">&#9670;&#160;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Common.SceneBase.Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae">RPGMaker.Codebase.Runtime.Battle.SceneBattle</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a3806d9a2c867bd99a2d366bb0c339f54" name="a3806d9a2c867bd99a2d366bb0c339f54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3806d9a2c867bd99a2d366bb0c339f54">&#9670;&#160;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RPGMaker.Codebase.Runtime.Common.SceneBase.Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#ada9b1df305b2529b856d11995a33cb27">RPGMaker.Codebase.Runtime.GameOver.SceneGameOver</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="adc79faea5566e71581637399c0b9b2aa" name="adc79faea5566e71581637399c0b9b2aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc79faea5566e71581637399c0b9b2aa">&#9670;&#160;</a></span>UpdateFade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.UpdateFade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adc79faea5566e71581637399c0b9b2aa_icgraph.png" border="0" usemap="#ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adc79faea5566e71581637399c0b9b2aa_icgraph" alt=""/></div>
+<map name="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adc79faea5566e71581637399c0b9b2aa_icgraph" id="ad0/d41/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_scene_base_adc79faea5566e71581637399c0b9b2aa_icgraph">
+<area shape="rect" title=" " alt="" coords="336,79,554,121"/>
+<area shape="rect" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a1512cb2d041eb281e5550aa252dde5c2" title=" " alt="" coords="5,29,288,72"/>
+<area shape="poly" title=" " alt="" coords="320,82,279,75,280,70,321,77"/>
+<area shape="rect" href="../../dc/dd5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_game_over_1_1_scene_game_over.html#a8be2c65b1d7ced546fa2df8df869cb80" title=" " alt="" coords="27,120,266,179"/>
+<area shape="poly" title=" " alt="" coords="321,123,267,132,266,127,320,118"/>
+<area shape="poly" title=" " alt="" coords="197,17,178,11,146,8,118,10,100,15,94,21,96,28,91,29,88,19,98,10,117,5,147,3,180,5,198,12"/>
+<area shape="poly" title=" " alt="" coords="196,109,177,101,146,99,120,101,103,105,94,112,94,120,89,119,90,109,100,101,119,95,147,93,179,96,198,104"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afec6e5025e42b2d73184d792cc2ed5a2" name="afec6e5025e42b2d73184d792cc2ed5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afec6e5025e42b2d73184d792cc2ed5a2">&#9670;&#160;</a></span>UpdateFlash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.UpdateFlash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa9ac75ce8c7dcfc95fafe99b4b7fe7f4" name="aa9ac75ce8c7dcfc95fafe99b4b7fe7f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9ac75ce8c7dcfc95fafe99b4b7fe7f4">&#9670;&#160;</a></span>UpdateTint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.SceneBase.UpdateTint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a7cc324f15b3190a929caa5d039a94e86" name="a7cc324f15b3190a929caa5d039a94e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc324f15b3190a929caa5d039a94e86">&#9670;&#160;</a></span>_fadeColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color RPGMaker.Codebase.Runtime.Common.SceneBase._fadeColor = Color.black</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b469dc2a770e36aef9bbd04e5a1cfff" name="a9b469dc2a770e36aef9bbd04e5a1cfff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b469dc2a770e36aef9bbd04e5a1cfff">&#9670;&#160;</a></span>_flashColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color RPGMaker.Codebase.Runtime.Common.SceneBase._flashColor = Color.black</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13e071a249330991ad1e2aad60e5dc87" name="a13e071a249330991ad1e2aad60e5dc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13e071a249330991ad1e2aad60e5dc87">&#9670;&#160;</a></span>_tintColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color RPGMaker.Codebase.Runtime.Common.SceneBase._tintColor = Color.black</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a451f82407f6c71ae6931e30d98da0141" name="a451f82407f6c71ae6931e30d98da0141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a451f82407f6c71ae6931e30d98da0141">&#9670;&#160;</a></span>active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.SceneBase.active</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73b6f3544275d9c202fb86e966d27066" name="a73b6f3544275d9c202fb86e966d27066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b6f3544275d9c202fb86e966d27066">&#9670;&#160;</a></span>alpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.SceneBase.alpha = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa00ede696be519fb54f9f6fb0c9bd10f" name="aa00ede696be519fb54f9f6fb0c9bd10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa00ede696be519fb54f9f6fb0c9bd10f">&#9670;&#160;</a></span>fadeDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.fadeDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac791c5e296db27d0a491619efd84d71" name="aac791c5e296db27d0a491619efd84d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac791c5e296db27d0a491619efd84d71">&#9670;&#160;</a></span>fadeSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.fadeSign</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6862455ee6cb4dcfb7bab650aa7a22e5" name="a6862455ee6cb4dcfb7bab650aa7a22e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6862455ee6cb4dcfb7bab650aa7a22e5">&#9670;&#160;</a></span>fadeSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a> RPGMaker.Codebase.Runtime.Common.SceneBase.fadeSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a479cff3d2cea21541087f995973c09d0" name="a479cff3d2cea21541087f995973c09d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479cff3d2cea21541087f995973c09d0">&#9670;&#160;</a></span>flashAlpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.SceneBase.flashAlpha = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c396677b4c37311fee76c0e4297a9c5" name="a7c396677b4c37311fee76c0e4297a9c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c396677b4c37311fee76c0e4297a9c5">&#9670;&#160;</a></span>flashDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.flashDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45200219ccbe9c16ed8c67e93f19b72e" name="a45200219ccbe9c16ed8c67e93f19b72e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45200219ccbe9c16ed8c67e93f19b72e">&#9670;&#160;</a></span>flashSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.flashSign</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a382019a98af779f070447e626cc90ba2" name="a382019a98af779f070447e626cc90ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a382019a98af779f070447e626cc90ba2">&#9670;&#160;</a></span>flashSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a> RPGMaker.Codebase.Runtime.Common.SceneBase.flashSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a898141e5638df06591f4294687a82f" name="a5a898141e5638df06591f4294687a82f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a898141e5638df06591f4294687a82f">&#9670;&#160;</a></span>rainParticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleSystem RPGMaker.Codebase.Runtime.Common.SceneBase.rainParticle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6336e7e898e5eb2956f44f865106ac79" name="a6336e7e898e5eb2956f44f865106ac79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6336e7e898e5eb2956f44f865106ac79">&#9670;&#160;</a></span>snowParticle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ParticleSystem RPGMaker.Codebase.Runtime.Common.SceneBase.snowParticle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bd9c397781118da21eb3df5a7208ab8" name="a0bd9c397781118da21eb3df5a7208ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bd9c397781118da21eb3df5a7208ab8">&#9670;&#160;</a></span>tintAlpha</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.SceneBase.tintAlpha = 1.0f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afecbb58af4521c724b5f769dd895d9ba" name="afecbb58af4521c724b5f769dd895d9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afecbb58af4521c724b5f769dd895d9ba">&#9670;&#160;</a></span>tintDuration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.tintDuration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8c9c801995869ad225b9bfdfb8639212" name="a8c9c801995869ad225b9bfdfb8639212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9c801995869ad225b9bfdfb8639212">&#9670;&#160;</a></span>tintSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.Common.SceneBase.tintSign</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6080ffd7030108237ad2c5b7c9b86d1" name="ac6080ffd7030108237ad2c5b7c9b86d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6080ffd7030108237ad2c5b7c9b86d1">&#9670;&#160;</a></span>tintSprite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d80/_skill_menu_8cs.html#a608db096452b7c3af254e6770ebfdc88">Image</a> RPGMaker.Codebase.Runtime.Common.SceneBase.tintSprite</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="a6b3026a2d4f81566b5d0c4eef17addfb" name="a6b3026a2d4f81566b5d0c4eef17addfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b3026a2d4f81566b5d0c4eef17addfb">&#9670;&#160;</a></span>soundManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html">SoundManager</a> RPGMaker.Codebase.Runtime.Common.SceneBase.soundManager = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Common/<a class="el" href="../../da/dc1/_scene_base_8cs.html">SceneBase.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

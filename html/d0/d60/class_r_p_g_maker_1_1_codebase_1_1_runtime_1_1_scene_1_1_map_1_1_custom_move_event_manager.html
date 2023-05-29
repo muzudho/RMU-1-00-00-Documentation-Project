@@ -1,0 +1,683 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d7/df7/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene.html">Scene</a></li><li class="navelem"><a class="el" href="../../df/d1b/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map.html">Map</a></li><li class="navelem"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html">CustomMoveEventManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d0/d95/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>カスタム移動イベント管理機  
+ <a href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/dc1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_scene_8_map_8_custom_move_event_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_scene_8_map_8_custom_move_event_manager_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_scene_8_map_8_custom_move_event_manager_coll__map">
+<area shape="rect" title="カスタム移動イベント管理機" alt="" coords="1505,1117,1753,1160"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html" title=" " alt="" coords="1012,835,1269,893"/>
+<area shape="poly" title=" " alt="" coords="1209,899,1591,1115,1588,1119,1206,903"/>
+<area shape="rect" href="../../d5/deb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_animation_repository.html" title=" " alt="" coords="405,256,672,315"/>
+<area shape="poly" title=" " alt="" coords="687,290,774,299,860,312,934,330,962,342,983,355,1009,381,1032,409,1070,472,1099,540,1118,610,1131,678,1139,740,1143,834,1137,834,1133,741,1126,679,1113,611,1094,542,1066,474,1028,412,1005,385,980,359,960,346,932,335,859,317,773,304,687,296"/>
+<area shape="rect" title=" " alt="" coords="9,264,196,307"/>
+<area shape="poly" title=" " alt="" coords="211,283,404,283,404,288,211,288"/>
+<area shape="rect" href="../../d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html" title=" " alt="" coords="405,339,672,397"/>
+<area shape="poly" title=" " alt="" coords="687,374,773,383,859,396,933,415,962,426,983,439,1026,483,1060,534,1087,589,1107,646,1121,702,1131,754,1140,834,1135,835,1126,755,1116,703,1102,648,1082,591,1055,536,1022,486,980,443,959,431,931,420,858,401,773,388,686,379"/>
+<area shape="rect" title=" " alt="" coords="9,347,196,389"/>
+<area shape="poly" title=" " alt="" coords="211,365,404,365,404,371,211,371"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_asset_manage_repository.html" title=" " alt="" coords="405,1083,672,1141"/>
+<area shape="poly" title=" " alt="" coords="665,1072,670,1069,678,1060,681,1051,685,1041,695,1032,734,1014,770,1008,804,1008,836,1014,869,1019,903,1022,940,1019,980,1006,1021,982,1058,952,1115,892,1119,896,1062,956,1024,986,982,1010,941,1024,903,1027,868,1025,836,1019,803,1014,771,1013,736,1019,697,1037,690,1044,686,1053,682,1063,674,1073,668,1077"/>
+<area shape="rect" title=" " alt="" coords="76,1387,129,1413"/>
+<area shape="poly" title=" " alt="" coords="115,1372,166,1279,196,1233,222,1203,264,1176,310,1155,357,1139,403,1127,405,1132,359,1144,312,1160,267,1181,225,1207,200,1236,171,1281,120,1375"/>
+<area shape="rect" href="../../dc/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_auto_guide_repository.html" title=" " alt="" coords="405,1165,672,1224"/>
+<area shape="poly" title=" " alt="" coords="122,1374,165,1330,193,1307,222,1287,266,1265,312,1246,404,1218,405,1223,314,1251,268,1270,225,1292,196,1311,169,1334,126,1377"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_flags_repository.html" title=" " alt="" coords="405,1579,672,1637"/>
+<area shape="poly" title=" " alt="" coords="122,1424,164,1481,192,1510,225,1534,268,1555,313,1572,405,1593,403,1599,312,1577,265,1560,222,1538,189,1514,160,1484,117,1428"/>
+<area shape="rect" href="../../d6/d55/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_system_repository.html" title=" " alt="" coords="405,1496,672,1555"/>
+<area shape="poly" title=" " alt="" coords="142,1419,181,1438,225,1456,315,1483,405,1502,404,1507,314,1488,223,1461,179,1443,139,1423"/>
+<area shape="rect" href="../../d6/d61/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_title_repository.html" title=" " alt="" coords="405,1248,672,1307"/>
+<area shape="poly" title=" " alt="" coords="142,1381,223,1351,314,1325,403,1303,405,1308,315,1330,224,1356,144,1386"/>
+<area shape="rect" href="../../de/d41/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_ui_setting_repository.html" title=" " alt="" coords="405,1331,672,1389"/>
+<area shape="poly" title=" " alt="" coords="144,1394,404,1370,405,1375,144,1399"/>
+<area shape="rect" href="../../d0/d25/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor810f9e3871d1afeaa788d9c5df5cdd13.html" title=" " alt="" coords="405,1413,672,1472"/>
+<area shape="poly" title=" " alt="" coords="144,1407,224,1423,315,1432,404,1437,404,1442,315,1437,223,1428,143,1413"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="696,1644,981,1703"/>
+<area shape="poly" title=" " alt="" coords="110,1428,120,1480,141,1544,156,1577,175,1608,198,1635,225,1658,285,1689,349,1710,416,1722,484,1727,551,1726,615,1720,728,1701,728,1706,615,1726,551,1731,483,1733,415,1728,347,1715,282,1694,222,1662,194,1639,170,1611,151,1579,136,1546,115,1481,105,1429"/>
+<area shape="poly" title=" " alt="" coords="667,1155,670,1152,679,1135,681,1118,682,1100,694,1083,720,1071,754,1066,836,1065,920,1065,954,1062,980,1054,1028,1019,1068,976,1100,931,1122,893,1127,895,1104,934,1072,979,1031,1023,983,1058,956,1067,920,1070,836,1070,754,1071,721,1077,698,1087,687,1102,686,1119,684,1137,674,1155,670,1158"/>
+<area shape="rect" title=" " alt="" coords="9,1173,196,1216"/>
+<area shape="poly" title=" " alt="" coords="211,1192,404,1192,404,1197,211,1197"/>
+<area shape="rect" href="../../dc/d27/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor67544213d6af3013901ca89c3e4d5d21.html" title=" " alt="" coords="405,421,672,480"/>
+<area shape="poly" title=" " alt="" coords="687,458,773,467,859,480,932,498,961,509,983,522,1019,555,1050,595,1075,638,1095,682,1123,768,1137,834,1132,835,1118,769,1090,684,1070,640,1045,598,1015,559,980,526,959,514,931,503,858,486,773,472,687,463"/>
+<area shape="rect" title=" " alt="" coords="5,429,200,472"/>
+<area shape="poly" title=" " alt="" coords="214,448,404,448,404,453,214,453"/>
+<area shape="rect" href="../../d5/df3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_class_repository.html" title=" " alt="" coords="405,504,672,563"/>
+<area shape="poly" title=" " alt="" coords="687,540,773,549,858,561,931,578,961,588,983,599,1013,623,1040,652,1083,717,1114,781,1133,833,1128,835,1109,783,1079,719,1036,656,1010,627,980,604,959,593,930,583,857,566,772,554,686,545"/>
+<area shape="rect" title=" " alt="" coords="9,512,196,555"/>
+<area shape="poly" title=" " alt="" coords="211,531,404,531,404,536,211,536"/>
+<area shape="rect" href="../../d3/dae/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_encounter_repository.html" title=" " alt="" coords="405,587,672,645"/>
+<area shape="poly" title=" " alt="" coords="687,618,758,626,834,641,911,663,983,695,1027,725,1066,762,1098,800,1122,833,1118,836,1094,803,1062,766,1024,730,980,700,909,668,833,646,757,631,686,623"/>
+<area shape="rect" title=" " alt="" coords="9,595,196,637"/>
+<area shape="poly" title=" " alt="" coords="211,613,404,613,404,619,211,619"/>
+<area shape="rect" href="../../d4/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_enemy_repository.html" title=" " alt="" coords="405,669,672,728"/>
+<area shape="poly" title=" " alt="" coords="687,713,831,739,908,758,982,780,1040,804,1092,832,1089,837,1038,809,980,785,907,763,830,744,686,718"/>
+<area shape="rect" title=" " alt="" coords="9,677,196,720"/>
+<area shape="poly" title=" " alt="" coords="211,696,404,696,404,701,211,701"/>
+<area shape="poly" title=" " alt="" coords="686,1593,764,1576,845,1548,883,1529,919,1505,951,1478,979,1447,992,1419,998,1381,1000,1287,997,1191,998,1149,1003,1117,1027,1051,1057,989,1116,892,1120,895,1062,991,1032,1053,1008,1118,1003,1150,1002,1191,1005,1287,1003,1382,997,1420,984,1449,955,1482,922,1510,886,1533,847,1553,766,1581,687,1599"/>
+<area shape="rect" href="../../dd/d1d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_item_repository.html" title=" " alt="" coords="405,752,672,811"/>
+<area shape="poly" title=" " alt="" coords="687,799,1012,844,1012,849,686,804"/>
+<area shape="rect" title=" " alt="" coords="9,760,196,803"/>
+<area shape="poly" title=" " alt="" coords="211,779,404,779,404,784,211,784"/>
+<area shape="rect" href="../../da/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_common_repository.html" title=" " alt="" coords="405,835,672,893"/>
+<area shape="poly" title=" " alt="" coords="687,861,1012,861,1012,867,687,867"/>
+<area shape="rect" title=" " alt="" coords="9,843,196,885"/>
+<area shape="poly" title=" " alt="" coords="211,861,404,861,404,867,211,867"/>
+<area shape="rect" href="../../df/d9d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_custom_repository.html" title=" " alt="" coords="405,917,672,976"/>
+<area shape="poly" title=" " alt="" coords="686,924,1012,879,1012,884,687,929"/>
+<area shape="rect" title=" " alt="" coords="9,925,196,968"/>
+<area shape="poly" title=" " alt="" coords="211,944,404,944,404,949,211,949"/>
+<area shape="rect" href="../../d0/d34/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_state_repository.html" title=" " alt="" coords="405,1000,672,1059"/>
+<area shape="poly" title=" " alt="" coords="656,993,696,984,776,972,840,969,903,963,981,944,1039,920,1091,892,1094,896,1041,925,982,949,903,968,840,974,777,978,696,989,657,998"/>
+<area shape="rect" title=" " alt="" coords="9,1008,196,1051"/>
+<area shape="poly" title=" " alt="" coords="211,1027,404,1027,404,1032,211,1032"/>
+<area shape="poly" title=" " alt="" coords="667,1485,670,1482,679,1469,682,1455,684,1440,694,1425,732,1397,769,1382,807,1377,844,1375,880,1372,914,1365,948,1348,979,1317,987,1301,992,1278,996,1221,997,1162,1003,1117,1028,1051,1058,989,1116,893,1121,895,1063,992,1033,1054,1008,1118,1002,1162,1001,1221,998,1279,992,1302,983,1320,951,1352,916,1370,880,1378,844,1380,807,1382,771,1388,734,1402,698,1428,689,1442,687,1456,684,1471,674,1486,670,1489"/>
+<area shape="poly" title=" " alt="" coords="668,1236,670,1234,678,1223,681,1212,680,1188,680,1164,685,1152,694,1141,730,1117,766,1108,800,1109,835,1116,869,1123,905,1126,941,1122,980,1104,1008,1083,1034,1058,1076,1000,1107,941,1127,893,1132,895,1112,944,1081,1003,1038,1061,1012,1087,983,1109,943,1127,905,1132,868,1128,833,1121,800,1115,766,1114,732,1122,698,1145,689,1155,685,1165,686,1188,686,1213,683,1225,674,1238,672,1240"/>
+<area shape="rect" href="../../d6/d3e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_troop_repository.html" title=" " alt="" coords="405,8,672,67"/>
+<area shape="poly" title=" " alt="" coords="687,18,763,20,842,32,880,43,917,58,952,78,983,103,1003,128,1021,160,1053,244,1079,347,1100,460,1127,681,1140,834,1135,834,1122,681,1094,461,1074,348,1048,246,1016,162,999,131,979,107,949,83,915,63,879,48,841,37,762,25,687,23"/>
+<area shape="rect" title=" " alt="" coords="9,16,196,59"/>
+<area shape="poly" title=" " alt="" coords="211,35,404,35,404,40,211,40"/>
+<area shape="poly" title=" " alt="" coords="668,1319,670,1317,679,1304,682,1291,680,1263,679,1235,684,1221,694,1207,730,1183,765,1173,800,1173,835,1179,870,1186,906,1188,942,1181,980,1162,989,1152,994,1142,1003,1116,1121,893,1126,895,1008,1118,999,1144,994,1155,983,1166,944,1186,906,1193,870,1191,834,1184,800,1179,766,1178,732,1188,698,1211,688,1224,684,1236,686,1263,687,1291,684,1306,674,1320,672,1322"/>
+<area shape="rect" href="../../dc/dcd/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_vehicle_repository.html" title=" " alt="" coords="405,91,672,149"/>
+<area shape="poly" title=" " alt="" coords="687,123,774,131,861,143,934,161,962,173,983,187,1001,209,1018,237,1048,311,1073,401,1094,501,1124,696,1139,834,1134,835,1119,697,1089,502,1068,403,1043,312,1013,239,997,212,980,191,960,178,932,166,860,148,774,136,686,128"/>
+<area shape="rect" title=" " alt="" coords="9,99,196,141"/>
+<area shape="poly" title=" " alt="" coords="211,117,404,117,404,123,211,123"/>
+<area shape="rect" href="../../de/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_weapon_repository.html" title=" " alt="" coords="405,173,672,232"/>
+<area shape="poly" title=" " alt="" coords="687,207,774,215,860,227,934,246,962,258,983,271,999,290,1014,314,1042,377,1067,456,1088,542,1120,711,1138,834,1133,835,1115,712,1083,543,1062,457,1037,379,1010,317,995,293,980,275,960,262,932,251,859,233,774,220,687,212"/>
+<area shape="rect" title=" " alt="" coords="9,181,196,224"/>
+<area shape="poly" title=" " alt="" coords="211,200,404,200,404,205,211,205"/>
+<area shape="poly" title=" " alt="" coords="668,1401,670,1400,678,1387,682,1375,681,1349,680,1323,684,1309,694,1295,730,1269,766,1258,803,1258,839,1262,875,1266,911,1265,945,1254,979,1229,990,1216,995,1204,998,1178,997,1150,1003,1117,1030,1052,1061,990,1118,893,1122,895,1066,992,1035,1054,1008,1118,1002,1150,1003,1178,1000,1205,994,1219,983,1233,948,1259,912,1270,875,1271,839,1267,803,1263,767,1264,732,1274,698,1299,689,1311,685,1323,686,1349,687,1375,683,1389,674,1403,672,1405"/>
+<area shape="poly" title=" " alt="" coords="939,1634,961,1617,979,1596,986,1569,988,1519,988,1384,988,1249,993,1200,1003,1173,1033,1147,1065,1126,1099,1109,1135,1096,1210,1080,1288,1074,1365,1078,1438,1087,1558,1114,1557,1119,1437,1093,1365,1083,1288,1080,1211,1085,1136,1101,1101,1114,1067,1131,1036,1152,1008,1176,998,1201,994,1249,993,1384,994,1519,991,1570,984,1599,965,1621,942,1638"/>
+<area shape="rect" href="../../df/dea/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_flag_1_1_flag_data_model.html" title="フラグ・データ・モデル" alt="" coords="1005,1187,1276,1229"/>
+<area shape="poly" title=" " alt="" coords="1290,1194,1384,1184,1480,1171,1542,1158,1543,1163,1481,1176,1385,1190,1291,1200"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a486b7009cfb773b88fc6b7c0dba2642f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a486b7009cfb773b88fc6b7c0dba2642f">CustomMoveEventManager</a> ()</td></tr>
+<tr class="memdesc:a486b7009cfb773b88fc6b7c0dba2642f"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ データの定義のみ行う  <br /></td></tr>
+<tr class="separator:a486b7009cfb773b88fc6b7c0dba2642f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb35d6a491734af834c11d8ed77e00c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a0fb35d6a491734af834c11d8ed77e00c">Init</a> ()</td></tr>
+<tr class="separator:a0fb35d6a491734af834c11d8ed77e00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3f11170cfd07b015b89f7179f54d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#adc3f11170cfd07b015b89f7179f54d34">RegisterCustomMove</a> (string commandEventID, List&lt; EventDataModel.EventCommand &gt; commands, int index, int endIndex, bool parallelProcess)</td></tr>
+<tr class="separator:adc3f11170cfd07b015b89f7179f54d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a973fb50269f9e3739835e266f018d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a27a973fb50269f9e3739835e266f018d">InitializeCount</a> ()</td></tr>
+<tr class="separator:a27a973fb50269f9e3739835e266f018d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab318ad6bd85f76a311a04c64e2bb6e9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#ab318ad6bd85f76a311a04c64e2bb6e9e">DestroyEvent</a> ()</td></tr>
+<tr class="memdesc:ab318ad6bd85f76a311a04c64e2bb6e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">マップから破棄される際に、各種データを破棄する  <br /></td></tr>
+<tr class="separator:ab318ad6bd85f76a311a04c64e2bb6e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:acc4a991f73c6f20ad347382d8257fcf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#acc4a991f73c6f20ad347382d8257fcf8">EventEndCallback</a> (<a class="el" href="../../df/d2c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_event_map_data_model.html">EventMapDataModel</a> eventMapDataModel, <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> eventDataModel)</td></tr>
+<tr class="separator:acc4a991f73c6f20ad347382d8257fcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a70eea6e840394d84fb1eaa480fcce4ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html">DatabaseManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a70eea6e840394d84fb1eaa480fcce4ca">_databaseManagementService</a> = null</td></tr>
+<tr class="separator:a70eea6e840394d84fb1eaa480fcce4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a330ff93e577f957c349d8b45e7c08f3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html">EventManagementService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a330ff93e577f957c349d8b45e7c08f3d">_eventManagementService</a> = null</td></tr>
+<tr class="separator:a330ff93e577f957c349d8b45e7c08f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789e39e6abe28e6da37729580554f0fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dea/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_flag_1_1_flag_data_model.html">FlagDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a789e39e6abe28e6da37729580554f0fb">_flagDataModel</a> = null</td></tr>
+<tr class="separator:a789e39e6abe28e6da37729580554f0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9680766c16305ef14c6bb1f847651a6a"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a9680766c16305ef14c6bb1f847651a6a">_eventCommonDataModels</a> = null</td></tr>
+<tr class="separator:a9680766c16305ef14c6bb1f847651a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8005b60b1271e668b1b7ef51429cd499"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a8005b60b1271e668b1b7ef51429cd499">_commonEventList</a> = new List&lt;<a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a>&gt;()</td></tr>
+<tr class="separator:a8005b60b1271e668b1b7ef51429cd499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bc95c026710578c18a95bca1e466a38"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a9bc95c026710578c18a95bca1e466a38">_eventDataList</a> = new List&lt;<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&gt;()</td></tr>
+<tr class="separator:a9bc95c026710578c18a95bca1e466a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8206191ac815081de2a26b5ba9ee5d23"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a8206191ac815081de2a26b5ba9ee5d23">_eventCommonDataList</a> = new List&lt;<a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a>&gt;()</td></tr>
+<tr class="separator:a8206191ac815081de2a26b5ba9ee5d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a326b2eea3b62a432ff420c7ea28db93a"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, <a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#a326b2eea3b62a432ff420c7ea28db93a">_eventIdEventCommandChainLauncherDic</a></td></tr>
+<tr class="separator:a326b2eea3b62a432ff420c7ea28db93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>カスタム移動イベント管理機 </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a486b7009cfb773b88fc6b7c0dba2642f" name="a486b7009cfb773b88fc6b7c0dba2642f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486b7009cfb773b88fc6b7c0dba2642f">&#9670;&#160;</a></span>CustomMoveEventManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.CustomMoveEventManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ データの定義のみ行う </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a486b7009cfb773b88fc6b7c0dba2642f_cgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a486b7009cfb773b88fc6b7c0dba2642f_cgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a486b7009cfb773b88fc6b7c0dba2642f_cgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a486b7009cfb773b88fc6b7c0dba2642f_cgraph">
+<area shape="rect" title="コンストラクタ データの定義のみ行う" alt="" coords="5,88,258,147"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#ada21c730391e51a191c0e3aa9fd5e883" title=" " alt="" coords="306,47,591,105"/>
+<area shape="poly" title=" " alt="" coords="258,98,290,94,291,99,258,104"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="320,129,577,188"/>
+<area shape="poly" title=" " alt="" coords="258,131,306,137,305,143,258,136"/>
+<area shape="rect" href="../../d8/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_common_repository.html#a2bf59fde3c5abbc68439597d156e4d45" title=" " alt="" coords="651,47,895,105"/>
+<area shape="poly" title=" " alt="" coords="591,73,635,73,635,79,591,79"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#ab1557b81ee60a7dc4f85349106fe4244" title=" " alt="" coords="958,88,1227,147"/>
+<area shape="poly" title=" " alt="" coords="896,89,944,95,943,101,895,94"/>
+<area shape="rect" href="../../d8/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_repository_1_1_event_common_repository.html#ac912f554fa76cd1a59a67803b0bd28cb" title=" " alt="" coords="954,5,1231,64"/>
+<area shape="poly" title=" " alt="" coords="895,58,939,52,940,57,896,63"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_flags_repository.html#a0410340db193ba2dd6d34cbbc9de1925" title=" " alt="" coords="639,129,906,188"/>
+<area shape="poly" title=" " alt="" coords="577,156,624,156,624,161,577,161"/>
+<area shape="poly" title=" " alt="" coords="906,139,943,134,944,139,907,144"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_flags_repository.html#a10a266f539262611885aa217176790b3" title=" " alt="" coords="959,171,1226,229"/>
+<area shape="poly" title=" " alt="" coords="907,173,945,178,944,184,906,179"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="ab318ad6bd85f76a311a04c64e2bb6e9e" name="ab318ad6bd85f76a311a04c64e2bb6e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab318ad6bd85f76a311a04c64e2bb6e9e">&#9670;&#160;</a></span>DestroyEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.DestroyEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>マップから破棄される際に、各種データを破棄する </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_ab318ad6bd85f76a311a04c64e2bb6e9e_icgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_ab318ad6bd85f76a311a04c64e2bb6e9e_icgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_ab318ad6bd85f76a311a04c64e2bb6e9e_icgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_ab318ad6bd85f76a311a04c64e2bb6e9e_icgraph">
+<area shape="rect" title="マップから破棄される際に、各種データを破棄する" alt="" coords="1688,35,1941,93"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a5af3576a0b4709a20541475e47014880" title="全てのイベントを破棄する" alt="" coords="1416,35,1640,93"/>
+<area shape="poly" title=" " alt="" coords="1673,67,1641,67,1641,61,1673,61"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a164b0a6efee413b3cff10ea519ab8029" title=" " alt="" coords="830,43,1096,85"/>
+<area shape="poly" title=" " alt="" coords="1401,60,1368,59,1144,59,1096,60,1096,55,1144,53,1368,53,1401,54"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ab495582b22a0da81cb51914e579edb76" title="マップ内のイベントを初期化" alt="" coords="1144,68,1368,127"/>
+<area shape="poly" title=" " alt="" coords="1402,82,1369,86,1368,81,1401,77"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ae14061e8d125d7fe532437b6ba183131" title=" " alt="" coords="564,5,767,48"/>
+<area shape="poly" title=" " alt="" coords="815,48,767,42,768,37,816,43"/>
+<area shape="rect" href="../../df/d12/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_move_place.html#a937507f8d3c881ce82d1d1eb38321bbf" title=" " alt="" coords="548,72,782,131"/>
+<area shape="poly" title=" " alt="" coords="816,85,783,89,782,84,815,80"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc" title=" " alt="" coords="277,5,480,48"/>
+<area shape="poly" title=" " alt="" coords="548,29,480,29,480,24,548,24"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a8514c54d190f9d2acb578100f490a861" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="262,29,209,29,209,24,262,24"/>
+<area shape="rect" href="../../da/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_processor.html#acd1dee6b4f36de52d8a8b775d612e502" title=" " alt="" coords="257,72,500,131"/>
+<area shape="poly" title=" " alt="" coords="533,104,500,104,500,99,533,99"/>
+<area shape="poly" title=" " alt="" coords="1128,86,1096,82,1097,77,1129,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acc4a991f73c6f20ad347382d8257fcf8" name="acc4a991f73c6f20ad347382d8257fcf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4a991f73c6f20ad347382d8257fcf8">&#9670;&#160;</a></span>EventEndCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.EventEndCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d2c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_map_1_1_event_map_data_model.html">EventMapDataModel</a>&#160;</td>
+          <td class="paramname"><em>eventMapDataModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&#160;</td>
+          <td class="paramname"><em>eventDataModel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_acc4a991f73c6f20ad347382d8257fcf8_icgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_acc4a991f73c6f20ad347382d8257fcf8_icgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_acc4a991f73c6f20ad347382d8257fcf8_icgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_acc4a991f73c6f20ad347382d8257fcf8_icgraph">
+<area shape="rect" title=" " alt="" coords="306,5,558,64"/>
+<area shape="rect" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#adc3f11170cfd07b015b89f7179f54d34" title=" " alt="" coords="5,5,258,64"/>
+<area shape="poly" title=" " alt="" coords="291,37,258,37,258,32,291,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0fb35d6a491734af834c11d8ed77e00c" name="a0fb35d6a491734af834c11d8ed77e00c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fb35d6a491734af834c11d8ed77e00c">&#9670;&#160;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a0fb35d6a491734af834c11d8ed77e00c_icgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a0fb35d6a491734af834c11d8ed77e00c_icgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a0fb35d6a491734af834c11d8ed77e00c_icgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a0fb35d6a491734af834c11d8ed77e00c_icgraph">
+<area shape="rect" title=" " alt="" coords="1416,43,1685,85"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ab495582b22a0da81cb51914e579edb76" title="マップ内のイベントを初期化" alt="" coords="1144,35,1368,93"/>
+<area shape="poly" title=" " alt="" coords="1401,67,1368,67,1368,61,1401,61"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a164b0a6efee413b3cff10ea519ab8029" title=" " alt="" coords="830,43,1096,85"/>
+<area shape="poly" title=" " alt="" coords="1129,67,1096,67,1096,61,1129,61"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ae14061e8d125d7fe532437b6ba183131" title=" " alt="" coords="564,5,767,48"/>
+<area shape="poly" title=" " alt="" coords="815,48,767,42,768,37,816,43"/>
+<area shape="rect" href="../../df/d12/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_character_1_1_move_place.html#a937507f8d3c881ce82d1d1eb38321bbf" title=" " alt="" coords="548,72,782,131"/>
+<area shape="poly" title=" " alt="" coords="816,85,783,89,782,84,815,80"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc" title=" " alt="" coords="277,5,480,48"/>
+<area shape="poly" title=" " alt="" coords="548,29,480,29,480,24,548,24"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a8514c54d190f9d2acb578100f490a861" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="262,29,209,29,209,24,262,24"/>
+<area shape="rect" href="../../da/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_character_1_1_move_place_processor.html#acd1dee6b4f36de52d8a8b775d612e502" title=" " alt="" coords="257,72,500,131"/>
+<area shape="poly" title=" " alt="" coords="533,104,500,104,500,99,533,99"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a27a973fb50269f9e3739835e266f018d" name="a27a973fb50269f9e3739835e266f018d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a973fb50269f9e3739835e266f018d">&#9670;&#160;</a></span>InitializeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.InitializeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a27a973fb50269f9e3739835e266f018d_icgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a27a973fb50269f9e3739835e266f018d_icgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a27a973fb50269f9e3739835e266f018d_icgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_a27a973fb50269f9e3739835e266f018d_icgraph">
+<area shape="rect" title=" " alt="" coords="1346,31,1598,89"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#ad75e4db8f826f7904cdd50d2001e5fc3" title="イベントの実行状態更新" alt="" coords="1074,31,1298,89"/>
+<area shape="poly" title=" " alt="" coords="1331,63,1298,63,1298,57,1331,57"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ab7cb7bd152ff2eab304d1c57abe54477" title=" " alt="" coords="785,39,1026,81"/>
+<area shape="poly" title=" " alt="" coords="1059,63,1026,63,1026,57,1059,57"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a423a666bb2aa67001761fd172ec9090f" title=" " alt="" coords="508,39,737,81"/>
+<area shape="poly" title=" " alt="" coords="771,63,738,63,738,57,771,57"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a0f6d0adae41e09e94a55d3c0af0c87dc" title=" " alt="" coords="257,5,460,48"/>
+<area shape="poly" title=" " alt="" coords="493,46,460,42,461,37,494,41"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a6e8b21d48258d3dda96299a1fe1f9a18" title=" " alt="" coords="257,72,460,115"/>
+<area shape="poly" title=" " alt="" coords="494,79,461,83,460,78,493,74"/>
+<area shape="rect" href="../../db/d02/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_scene_map.html#a8514c54d190f9d2acb578100f490a861" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="242,29,209,29,209,24,242,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adc3f11170cfd07b015b89f7179f54d34" name="adc3f11170cfd07b015b89f7179f54d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3f11170cfd07b015b89f7179f54d34">&#9670;&#160;</a></span>RegisterCustomMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager.RegisterCustomMove </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>commandEventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; EventDataModel::EventCommand &gt;&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallelProcess</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_adc3f11170cfd07b015b89f7179f54d34_cgraph.png" border="0" usemap="#ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_adc3f11170cfd07b015b89f7179f54d34_cgraph" alt=""/></div>
+<map name="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_adc3f11170cfd07b015b89f7179f54d34_cgraph" id="ad0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager_adc3f11170cfd07b015b89f7179f54d34_cgraph">
+<area shape="rect" title=" " alt="" coords="5,129,258,188"/>
+<area shape="rect" href="../../d3/d93/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model_1_1_event_command.html#ae5878d37561e5071c4d31841596b012c" title=" " alt="" coords="317,5,567,64"/>
+<area shape="poly" title=" " alt="" coords="189,126,305,74,323,67,325,72,307,78,191,131"/>
+<area shape="rect" href="../../d0/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_custom_move_event_manager.html#acc4a991f73c6f20ad347382d8257fcf8" title=" " alt="" coords="316,88,568,147"/>
+<area shape="poly" title=" " alt="" coords="258,139,301,133,302,139,258,144"/>
+<area shape="rect" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html#a84c9ee2d922fbe2d7f93fea680ff6feb" title="マップを移動した等の理由で、イベントを完全に消去する" alt="" coords="306,171,578,229"/>
+<area shape="poly" title=" " alt="" coords="258,173,291,177,291,183,258,178"/>
+<area shape="rect" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html#a6a8fdf14a6139d68569e8787a941c365" title="イベントコマンドチェーンを開始する" alt="" coords="306,253,578,312"/>
+<area shape="poly" title=" " alt="" coords="191,186,307,239,325,246,323,251,305,244,189,191"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html#a985e89bff241e06e39c74682a09d3fac" title="引数無しでイベントコマンドを実行する. この場合は同一のイベントIDで処理を継続する." alt="" coords="654,212,884,271"/>
+<area shape="poly" title=" " alt="" coords="578,263,638,255,639,260,579,268"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html#aba13365f2272d7133f9de1241d32f61b" title=" " alt="" coords="626,295,911,353"/>
+<area shape="poly" title=" " alt="" coords="579,297,612,301,611,307,578,303"/>
+<area shape="poly" title=" " alt="" coords="705,211,707,201,718,193,739,187,769,185,804,188,825,196,823,201,803,193,769,191,740,193,721,197,711,204,711,212"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a8005b60b1271e668b1b7ef51429cd499" name="a8005b60b1271e668b1b7ef51429cd499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8005b60b1271e668b1b7ef51429cd499">&#9670;&#160;</a></span>_commonEventList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a>&gt; RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._commonEventList = new List&lt;<a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70eea6e840394d84fb1eaa480fcce4ca" name="a70eea6e840394d84fb1eaa480fcce4ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70eea6e840394d84fb1eaa480fcce4ca">&#9670;&#160;</a></span>_databaseManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html">DatabaseManagementService</a> RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._databaseManagementService = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8206191ac815081de2a26b5ba9ee5d23" name="a8206191ac815081de2a26b5ba9ee5d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8206191ac815081de2a26b5ba9ee5d23">&#9670;&#160;</a></span>_eventCommonDataList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a>&gt; RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._eventCommonDataList = new List&lt;<a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9680766c16305ef14c6bb1f847651a6a" name="a9680766c16305ef14c6bb1f847651a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9680766c16305ef14c6bb1f847651a6a">&#9670;&#160;</a></span>_eventCommonDataModels</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../de/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_common_1_1_event_common_data_model.html">EventCommonDataModel</a>&gt; RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._eventCommonDataModels = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bc95c026710578c18a95bca1e466a38" name="a9bc95c026710578c18a95bca1e466a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc95c026710578c18a95bca1e466a38">&#9670;&#160;</a></span>_eventDataList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&gt; RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._eventDataList = new List&lt;<a class="el" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html">EventDataModel</a>&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a326b2eea3b62a432ff420c7ea28db93a" name="a326b2eea3b62a432ff420c7ea28db93a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326b2eea3b62a432ff420c7ea28db93a">&#9670;&#160;</a></span>_eventIdEventCommandChainLauncherDic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, <a class="el" href="../../d8/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_scene_1_1_map_1_1_event_command_chain_launcher.html">EventCommandChainLauncher</a>&gt; RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._eventIdEventCommandChainLauncherDic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a330ff93e577f957c349d8b45e7c08f3d" name="a330ff93e577f957c349d8b45e7c08f3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a330ff93e577f957c349d8b45e7c08f3d">&#9670;&#160;</a></span>_eventManagementService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html">EventManagementService</a> RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._eventManagementService = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a789e39e6abe28e6da37729580554f0fb" name="a789e39e6abe28e6da37729580554f0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789e39e6abe28e6da37729580554f0fb">&#9670;&#160;</a></span>_flagDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dea/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_flag_1_1_flag_data_model.html">FlagDataModel</a> RPGMaker.Codebase.Runtime.Scene.Map.CustomMoveEventManager._flagDataModel = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Map/<a class="el" href="../../db/d67/_custom_move_event_manager_8cs.html">CustomMoveEventManager.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

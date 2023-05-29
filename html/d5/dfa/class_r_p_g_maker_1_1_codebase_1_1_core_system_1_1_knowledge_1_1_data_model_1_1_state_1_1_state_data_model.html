@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d0e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system.html">CoreSystem</a></li><li class="navelem"><a class="el" href="../../de/daa/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge.html">Knowledge</a></li><li class="navelem"><a class="el" href="../../d7/d9e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model.html">DataModel</a></li><li class="navelem"><a class="el" href="../../df/d72/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state.html">State</a></li><li class="navelem"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html">StateDataModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="../../d8/d7f/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>状態データ・モデル  
+ <a href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/def/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_inherit__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_inherit__map">
+<area shape="rect" title="状態データ・モデル" alt="" coords="5,80,288,123"/>
+<area shape="rect" title=" " alt="" coords="52,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="149,47,149,80,144,80,144,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d79/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_coll__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_state_8_state_data_model_coll__map">
+<area shape="rect" title="状態データ・モデル" alt="" coords="5,80,288,123"/>
+<area shape="rect" title=" " alt="" coords="52,5,241,32"/>
+<area shape="poly" title=" " alt="" coords="149,47,149,80,144,80,144,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:af2f963767df3e180fcd2760639f73d66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#af2f963767df3e180fcd2760639f73d66">StateDataModel</a> (string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a95598729702beecd78493d2d2bf80e59">id</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a39a6db77ea0bd72581371e074461b7e5">iconId</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a368530da6b80d51518c82e1a45dd9b3d">priority</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a46ae0484229ca1b252f30ba84d7cae8a">motion</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a6e2dd5095b0a08f4f3d55bb7131cd5bd">overlay</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a0ab13728fed9657d2e2e134a06e13164">stateOn</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#aaad3fb0c71f9c9adc6ec7f4f1105a83e">restriction</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#afc1f1fe5fd669c65161f4e1316f6d763">name</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ab1612055c95aebdf1c542faae5b337af">note</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a49620dbf090a625ae21bc69655671d23">autoRemovalTiming</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a353929da0b2c866561aa980bca46d84e">removeAtBattleEnd</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a743e27b70bc1eae400f7f70f96d96839">removeAtBattling</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a2f38a4f3734f6d2aed3238955026e501">maxTurns</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a15f4fd51debab2b821cc24d97a0f35b9">minTurns</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a2e97cfbd3917e9fdb39dd7e35c91f692">removeByDamage</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#af343bab404d4b1297ede42eb0ac5d79f">removeByRestriction</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ab4fd1beda6894e0f63eeb4094f22bc9d">removeByWalking</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a642adeaf0d6a30d63471be3e6855be8b">stepsToRemove</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a6e6d14bb29f2b330a3468d38b032422e">stepGeneration</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a89c015c054348aebd81f1283f4ffb501">occurrenceFrequencyStep</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#acfbfdb23ea42caf716ca32e6abe3617b">inBattleRemoveRestriction</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#aaa45270284e3b5ffe9d4656cff6c2561">inBattleRemoveDamage</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#adb9080f9ca90368309ebed77ec8f4580">inBattleRemoveProbability</a>, int <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a7707a46eaf79800ac44b20b4e95ea7ba">removeProbability</a>, List&lt; <a class="el" href="../../db/d29/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_common_1_1_trait_common_data_model.html">TraitCommonDataModel</a> &gt; <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a90a64f6a67b163b77aa3304150c46616">traits</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#adf6757f169cf521165dfb3fe376982d8">message1</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ac35315a957dda36b1510a72910ddb015">message2</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a12c6ab3e41e291615c12a7cc5c8b3c66">message3</a>, string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a0534b958600e6f9a9ad66d2ab8fe28a6">message4</a>)</td></tr>
+<tr class="separator:af2f963767df3e180fcd2760639f73d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a39d62137a0ecedd0f04ead6b6362b0b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html">StateDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a39d62137a0ecedd0f04ead6b6362b0b7">CreateDefault</a> (string <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a95598729702beecd78493d2d2bf80e59">id</a>)</td></tr>
+<tr class="separator:a39d62137a0ecedd0f04ead6b6362b0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a49620dbf090a625ae21bc69655671d23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a49620dbf090a625ae21bc69655671d23">autoRemovalTiming</a></td></tr>
+<tr class="separator:a49620dbf090a625ae21bc69655671d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a6db77ea0bd72581371e074461b7e5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a39a6db77ea0bd72581371e074461b7e5">iconId</a></td></tr>
+<tr class="separator:a39a6db77ea0bd72581371e074461b7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95598729702beecd78493d2d2bf80e59"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a95598729702beecd78493d2d2bf80e59">id</a></td></tr>
+<tr class="separator:a95598729702beecd78493d2d2bf80e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa45270284e3b5ffe9d4656cff6c2561"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#aaa45270284e3b5ffe9d4656cff6c2561">inBattleRemoveDamage</a></td></tr>
+<tr class="separator:aaa45270284e3b5ffe9d4656cff6c2561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9080f9ca90368309ebed77ec8f4580"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#adb9080f9ca90368309ebed77ec8f4580">inBattleRemoveProbability</a></td></tr>
+<tr class="separator:adb9080f9ca90368309ebed77ec8f4580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfbfdb23ea42caf716ca32e6abe3617b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#acfbfdb23ea42caf716ca32e6abe3617b">inBattleRemoveRestriction</a></td></tr>
+<tr class="separator:acfbfdb23ea42caf716ca32e6abe3617b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f38a4f3734f6d2aed3238955026e501"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a2f38a4f3734f6d2aed3238955026e501">maxTurns</a></td></tr>
+<tr class="separator:a2f38a4f3734f6d2aed3238955026e501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6757f169cf521165dfb3fe376982d8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#adf6757f169cf521165dfb3fe376982d8">message1</a></td></tr>
+<tr class="separator:adf6757f169cf521165dfb3fe376982d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35315a957dda36b1510a72910ddb015"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ac35315a957dda36b1510a72910ddb015">message2</a></td></tr>
+<tr class="separator:ac35315a957dda36b1510a72910ddb015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c6ab3e41e291615c12a7cc5c8b3c66"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a12c6ab3e41e291615c12a7cc5c8b3c66">message3</a></td></tr>
+<tr class="separator:a12c6ab3e41e291615c12a7cc5c8b3c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0534b958600e6f9a9ad66d2ab8fe28a6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a0534b958600e6f9a9ad66d2ab8fe28a6">message4</a></td></tr>
+<tr class="separator:a0534b958600e6f9a9ad66d2ab8fe28a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15f4fd51debab2b821cc24d97a0f35b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a15f4fd51debab2b821cc24d97a0f35b9">minTurns</a></td></tr>
+<tr class="separator:a15f4fd51debab2b821cc24d97a0f35b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ae0484229ca1b252f30ba84d7cae8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a46ae0484229ca1b252f30ba84d7cae8a">motion</a></td></tr>
+<tr class="separator:a46ae0484229ca1b252f30ba84d7cae8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1f1fe5fd669c65161f4e1316f6d763"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#afc1f1fe5fd669c65161f4e1316f6d763">name</a></td></tr>
+<tr class="separator:afc1f1fe5fd669c65161f4e1316f6d763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1612055c95aebdf1c542faae5b337af"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ab1612055c95aebdf1c542faae5b337af">note</a></td></tr>
+<tr class="separator:ab1612055c95aebdf1c542faae5b337af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c015c054348aebd81f1283f4ffb501"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a89c015c054348aebd81f1283f4ffb501">occurrenceFrequencyStep</a></td></tr>
+<tr class="separator:a89c015c054348aebd81f1283f4ffb501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2dd5095b0a08f4f3d55bb7131cd5bd"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a6e2dd5095b0a08f4f3d55bb7131cd5bd">overlay</a></td></tr>
+<tr class="separator:a6e2dd5095b0a08f4f3d55bb7131cd5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368530da6b80d51518c82e1a45dd9b3d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a368530da6b80d51518c82e1a45dd9b3d">priority</a></td></tr>
+<tr class="separator:a368530da6b80d51518c82e1a45dd9b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353929da0b2c866561aa980bca46d84e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a353929da0b2c866561aa980bca46d84e">removeAtBattleEnd</a></td></tr>
+<tr class="separator:a353929da0b2c866561aa980bca46d84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743e27b70bc1eae400f7f70f96d96839"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a743e27b70bc1eae400f7f70f96d96839">removeAtBattling</a></td></tr>
+<tr class="separator:a743e27b70bc1eae400f7f70f96d96839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e97cfbd3917e9fdb39dd7e35c91f692"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a2e97cfbd3917e9fdb39dd7e35c91f692">removeByDamage</a></td></tr>
+<tr class="separator:a2e97cfbd3917e9fdb39dd7e35c91f692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af343bab404d4b1297ede42eb0ac5d79f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#af343bab404d4b1297ede42eb0ac5d79f">removeByRestriction</a></td></tr>
+<tr class="separator:af343bab404d4b1297ede42eb0ac5d79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fd1beda6894e0f63eeb4094f22bc9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#ab4fd1beda6894e0f63eeb4094f22bc9d">removeByWalking</a></td></tr>
+<tr class="separator:ab4fd1beda6894e0f63eeb4094f22bc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7707a46eaf79800ac44b20b4e95ea7ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a7707a46eaf79800ac44b20b4e95ea7ba">removeProbability</a></td></tr>
+<tr class="separator:a7707a46eaf79800ac44b20b4e95ea7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad3fb0c71f9c9adc6ec7f4f1105a83e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#aaad3fb0c71f9c9adc6ec7f4f1105a83e">restriction</a></td></tr>
+<tr class="separator:aaad3fb0c71f9c9adc6ec7f4f1105a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab13728fed9657d2e2e134a06e13164"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a0ab13728fed9657d2e2e134a06e13164">stateOn</a></td></tr>
+<tr class="separator:a0ab13728fed9657d2e2e134a06e13164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6d14bb29f2b330a3468d38b032422e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a6e6d14bb29f2b330a3468d38b032422e">stepGeneration</a></td></tr>
+<tr class="separator:a6e6d14bb29f2b330a3468d38b032422e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642adeaf0d6a30d63471be3e6855be8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a642adeaf0d6a30d63471be3e6855be8b">stepsToRemove</a></td></tr>
+<tr class="separator:a642adeaf0d6a30d63471be3e6855be8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a64f6a67b163b77aa3304150c46616"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../db/d29/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_common_1_1_trait_common_data_model.html">TraitCommonDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html#a90a64f6a67b163b77aa3304150c46616">traits</a></td></tr>
+<tr class="separator:a90a64f6a67b163b77aa3304150c46616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>状態データ・モデル </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="af2f963767df3e180fcd2760639f73d66" name="af2f963767df3e180fcd2760639f73d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f963767df3e180fcd2760639f73d66">&#9670;&#160;</a></span>StateDataModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.StateDataModel </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>iconId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>motion</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>overlay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stateOn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>restriction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>note</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>autoRemovalTiming</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeAtBattleEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeAtBattling</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxTurns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>minTurns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeByDamage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeByRestriction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeByWalking</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stepsToRemove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>stepGeneration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>occurrenceFrequencyStep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inBattleRemoveRestriction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inBattleRemoveDamage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>inBattleRemoveProbability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>removeProbability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../db/d29/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_common_1_1_trait_common_data_model.html">TraitCommonDataModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>traits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a39d62137a0ecedd0f04ead6b6362b0b7" name="a39d62137a0ecedd0f04ead6b6362b0b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d62137a0ecedd0f04ead6b6362b0b7">&#9670;&#160;</a></span>CreateDefault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model.html">StateDataModel</a> RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.CreateDefault </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model_a39d62137a0ecedd0f04ead6b6362b0b7_icgraph.png" border="0" usemap="#ad5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model_a39d62137a0ecedd0f04ead6b6362b0b7_icgraph" alt=""/></div>
+<map name="ad5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model_a39d62137a0ecedd0f04ead6b6362b0b7_icgraph" id="ad5/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_state_1_1_state_data_model_a39d62137a0ecedd0f04ead6b6362b0b7_icgraph">
+<area shape="rect" title=" " alt="" coords="303,5,550,64"/>
+<area shape="rect" href="../../dc/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_state_1_1_state_hierarchy.html#a635bd1ecb5e88f6fcfb0a85471b43524" title="ステート作成" alt="" coords="5,5,255,64"/>
+<area shape="poly" title=" " alt="" coords="288,37,255,37,255,32,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a49620dbf090a625ae21bc69655671d23" name="a49620dbf090a625ae21bc69655671d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49620dbf090a625ae21bc69655671d23">&#9670;&#160;</a></span>autoRemovalTiming</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.autoRemovalTiming</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a39a6db77ea0bd72581371e074461b7e5" name="a39a6db77ea0bd72581371e074461b7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a6db77ea0bd72581371e074461b7e5">&#9670;&#160;</a></span>iconId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.iconId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a95598729702beecd78493d2d2bf80e59" name="a95598729702beecd78493d2d2bf80e59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95598729702beecd78493d2d2bf80e59">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa45270284e3b5ffe9d4656cff6c2561" name="aaa45270284e3b5ffe9d4656cff6c2561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa45270284e3b5ffe9d4656cff6c2561">&#9670;&#160;</a></span>inBattleRemoveDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.inBattleRemoveDamage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb9080f9ca90368309ebed77ec8f4580" name="adb9080f9ca90368309ebed77ec8f4580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9080f9ca90368309ebed77ec8f4580">&#9670;&#160;</a></span>inBattleRemoveProbability</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.inBattleRemoveProbability</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfbfdb23ea42caf716ca32e6abe3617b" name="acfbfdb23ea42caf716ca32e6abe3617b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfbfdb23ea42caf716ca32e6abe3617b">&#9670;&#160;</a></span>inBattleRemoveRestriction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.inBattleRemoveRestriction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f38a4f3734f6d2aed3238955026e501" name="a2f38a4f3734f6d2aed3238955026e501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f38a4f3734f6d2aed3238955026e501">&#9670;&#160;</a></span>maxTurns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.maxTurns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf6757f169cf521165dfb3fe376982d8" name="adf6757f169cf521165dfb3fe376982d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6757f169cf521165dfb3fe376982d8">&#9670;&#160;</a></span>message1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.message1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac35315a957dda36b1510a72910ddb015" name="ac35315a957dda36b1510a72910ddb015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35315a957dda36b1510a72910ddb015">&#9670;&#160;</a></span>message2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.message2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12c6ab3e41e291615c12a7cc5c8b3c66" name="a12c6ab3e41e291615c12a7cc5c8b3c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c6ab3e41e291615c12a7cc5c8b3c66">&#9670;&#160;</a></span>message3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.message3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0534b958600e6f9a9ad66d2ab8fe28a6" name="a0534b958600e6f9a9ad66d2ab8fe28a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0534b958600e6f9a9ad66d2ab8fe28a6">&#9670;&#160;</a></span>message4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.message4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15f4fd51debab2b821cc24d97a0f35b9" name="a15f4fd51debab2b821cc24d97a0f35b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15f4fd51debab2b821cc24d97a0f35b9">&#9670;&#160;</a></span>minTurns</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.minTurns</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46ae0484229ca1b252f30ba84d7cae8a" name="a46ae0484229ca1b252f30ba84d7cae8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ae0484229ca1b252f30ba84d7cae8a">&#9670;&#160;</a></span>motion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.motion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc1f1fe5fd669c65161f4e1316f6d763" name="afc1f1fe5fd669c65161f4e1316f6d763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1f1fe5fd669c65161f4e1316f6d763">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1612055c95aebdf1c542faae5b337af" name="ab1612055c95aebdf1c542faae5b337af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1612055c95aebdf1c542faae5b337af">&#9670;&#160;</a></span>note</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.note</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89c015c054348aebd81f1283f4ffb501" name="a89c015c054348aebd81f1283f4ffb501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89c015c054348aebd81f1283f4ffb501">&#9670;&#160;</a></span>occurrenceFrequencyStep</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.occurrenceFrequencyStep</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e2dd5095b0a08f4f3d55bb7131cd5bd" name="a6e2dd5095b0a08f4f3d55bb7131cd5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2dd5095b0a08f4f3d55bb7131cd5bd">&#9670;&#160;</a></span>overlay</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.overlay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a368530da6b80d51518c82e1a45dd9b3d" name="a368530da6b80d51518c82e1a45dd9b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368530da6b80d51518c82e1a45dd9b3d">&#9670;&#160;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a353929da0b2c866561aa980bca46d84e" name="a353929da0b2c866561aa980bca46d84e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353929da0b2c866561aa980bca46d84e">&#9670;&#160;</a></span>removeAtBattleEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeAtBattleEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a743e27b70bc1eae400f7f70f96d96839" name="a743e27b70bc1eae400f7f70f96d96839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743e27b70bc1eae400f7f70f96d96839">&#9670;&#160;</a></span>removeAtBattling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeAtBattling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e97cfbd3917e9fdb39dd7e35c91f692" name="a2e97cfbd3917e9fdb39dd7e35c91f692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e97cfbd3917e9fdb39dd7e35c91f692">&#9670;&#160;</a></span>removeByDamage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeByDamage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af343bab404d4b1297ede42eb0ac5d79f" name="af343bab404d4b1297ede42eb0ac5d79f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af343bab404d4b1297ede42eb0ac5d79f">&#9670;&#160;</a></span>removeByRestriction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeByRestriction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4fd1beda6894e0f63eeb4094f22bc9d" name="ab4fd1beda6894e0f63eeb4094f22bc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fd1beda6894e0f63eeb4094f22bc9d">&#9670;&#160;</a></span>removeByWalking</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeByWalking</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7707a46eaf79800ac44b20b4e95ea7ba" name="a7707a46eaf79800ac44b20b4e95ea7ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7707a46eaf79800ac44b20b4e95ea7ba">&#9670;&#160;</a></span>removeProbability</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.removeProbability</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaad3fb0c71f9c9adc6ec7f4f1105a83e" name="aaad3fb0c71f9c9adc6ec7f4f1105a83e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad3fb0c71f9c9adc6ec7f4f1105a83e">&#9670;&#160;</a></span>restriction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.restriction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ab13728fed9657d2e2e134a06e13164" name="a0ab13728fed9657d2e2e134a06e13164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ab13728fed9657d2e2e134a06e13164">&#9670;&#160;</a></span>stateOn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.stateOn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e6d14bb29f2b330a3468d38b032422e" name="a6e6d14bb29f2b330a3468d38b032422e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e6d14bb29f2b330a3468d38b032422e">&#9670;&#160;</a></span>stepGeneration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.stepGeneration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a642adeaf0d6a30d63471be3e6855be8b" name="a642adeaf0d6a30d63471be3e6855be8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642adeaf0d6a30d63471be3e6855be8b">&#9670;&#160;</a></span>stepsToRemove</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.stepsToRemove</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90a64f6a67b163b77aa3304150c46616" name="a90a64f6a67b163b77aa3304150c46616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a64f6a67b163b77aa3304150c46616">&#9670;&#160;</a></span>traits</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../db/d29/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_common_1_1_trait_common_data_model.html">TraitCommonDataModel</a>&gt; RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.State.StateDataModel.traits</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/CoreSystem/Knowledge/DataModel/State/<a class="el" href="../../dd/de9/_state_data_model_8cs.html">StateDataModel.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

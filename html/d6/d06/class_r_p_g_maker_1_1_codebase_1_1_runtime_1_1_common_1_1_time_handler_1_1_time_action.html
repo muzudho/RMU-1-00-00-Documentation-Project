@@ -1,0 +1,487 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/daf/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html">TimeHandler</a></li><li class="navelem"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html">TimeAction</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d9/d24/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>時間経過で実行するActionを管理するクラス  
+ <a href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d0/d07/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_common_8_time_handler_8_time_action_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_time_handler_8_time_action_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_common_8_time_handler_8_time_action_coll__map">
+<area shape="rect" title="時間経過で実行するActionを管理するクラス" alt="" coords="5,96,224,139"/>
+<area shape="rect" title=" " alt="" coords="32,5,101,32"/>
+<area shape="poly" title=" " alt="" coords="66,47,70,71,88,94,83,97,65,73,60,48"/>
+<area shape="rect" title=" " alt="" coords="135,5,193,32"/>
+<area shape="poly" title=" " alt="" coords="153,47,127,97,123,94,148,44"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a685666caf5d65ea0f5c6f66d31b8aa4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a685666caf5d65ea0f5c6f66d31b8aa4d">TimeAction</a> (<a class="el" href="../../d6/de4/_time_handler_8cs.html#add58bd1ea2d0d44b69adbef6804578d6">GameState</a> <a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a77cc0d45bed9b6de1c796eb510f122f8">gameState</a>, Action <a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a1ea135b884e1487b880679728840d3b2">action</a>, float <a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a6d46d8e808cc2f710c76265d1855cb3e">executeTime</a>, float <a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a1afda70ee9ad08acfa3d44eeabf378d8">elapsedTime</a>, bool <a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a84752a89686540ac37dc6c236ead3d0d">loop</a>)</td></tr>
+<tr class="memdesc:a685666caf5d65ea0f5c6f66d31b8aa4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンストラクタ  <br /></td></tr>
+<tr class="separator:a685666caf5d65ea0f5c6f66d31b8aa4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcecf2ea73a0db66c18e91e832f0d0a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#aefcecf2ea73a0db66c18e91e832f0d0a">UpdateTime</a> (float deltaTime)</td></tr>
+<tr class="memdesc:aefcecf2ea73a0db66c18e91e832f0d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">時間経過による更新処理  <br /></td></tr>
+<tr class="separator:aefcecf2ea73a0db66c18e91e832f0d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24520abd8392aef490faee8f777661e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a24520abd8392aef490faee8f777661e8">ExecuteAction</a> ()</td></tr>
+<tr class="memdesc:a24520abd8392aef490faee8f777661e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actionを実行する  <br /></td></tr>
+<tr class="separator:a24520abd8392aef490faee8f777661e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6769df870b86b75353615cb6fa46b910"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a6769df870b86b75353615cb6fa46b910">GetAction</a> ()</td></tr>
+<tr class="memdesc:a6769df870b86b75353615cb6fa46b910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actionの返却  <br /></td></tr>
+<tr class="separator:a6769df870b86b75353615cb6fa46b910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bc0eea650d0d3c9c0f70c8d6c92ca6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#ae4bc0eea650d0d3c9c0f70c8d6c92ca6">IsEnd</a> ()</td></tr>
+<tr class="memdesc:ae4bc0eea650d0d3c9c0f70c8d6c92ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">破棄していいかどうかを返却  <br /></td></tr>
+<tr class="separator:ae4bc0eea650d0d3c9c0f70c8d6c92ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b59712959369a9822bc54a76ecc948"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a56b59712959369a9822bc54a76ecc948">IsLoop</a> ()</td></tr>
+<tr class="memdesc:a56b59712959369a9822bc54a76ecc948"><td class="mdescLeft">&#160;</td><td class="mdescRight">ループするかどうか  <br /></td></tr>
+<tr class="separator:a56b59712959369a9822bc54a76ecc948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a77cc0d45bed9b6de1c796eb510f122f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/de4/_time_handler_8cs.html#add58bd1ea2d0d44b69adbef6804578d6">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a77cc0d45bed9b6de1c796eb510f122f8">gameState</a></td></tr>
+<tr class="memdesc:a77cc0d45bed9b6de1c796eb510f122f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">対象のGameState  <br /></td></tr>
+<tr class="separator:a77cc0d45bed9b6de1c796eb510f122f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea135b884e1487b880679728840d3b2"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a1ea135b884e1487b880679728840d3b2">action</a></td></tr>
+<tr class="memdesc:a1ea135b884e1487b880679728840d3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行するAction  <br /></td></tr>
+<tr class="separator:a1ea135b884e1487b880679728840d3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d46d8e808cc2f710c76265d1855cb3e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a6d46d8e808cc2f710c76265d1855cb3e">executeTime</a></td></tr>
+<tr class="memdesc:a6d46d8e808cc2f710c76265d1855cb3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">実行するまでの時間  <br /></td></tr>
+<tr class="separator:a6d46d8e808cc2f710c76265d1855cb3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afda70ee9ad08acfa3d44eeabf378d8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a1afda70ee9ad08acfa3d44eeabf378d8">elapsedTime</a></td></tr>
+<tr class="memdesc:a1afda70ee9ad08acfa3d44eeabf378d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">経過した時間  <br /></td></tr>
+<tr class="separator:a1afda70ee9ad08acfa3d44eeabf378d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84752a89686540ac37dc6c236ead3d0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#a84752a89686540ac37dc6c236ead3d0d">loop</a></td></tr>
+<tr class="memdesc:a84752a89686540ac37dc6c236ead3d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">処理を繰り返すかどうか  <br /></td></tr>
+<tr class="separator:a84752a89686540ac37dc6c236ead3d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c7627bcb41b5046c2465b54e2a0881"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action.html#ab6c7627bcb41b5046c2465b54e2a0881">isEnd</a></td></tr>
+<tr class="memdesc:ab6c7627bcb41b5046c2465b54e2a0881"><td class="mdescLeft">&#160;</td><td class="mdescRight">破棄して良いかどうか  <br /></td></tr>
+<tr class="separator:ab6c7627bcb41b5046c2465b54e2a0881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>時間経過で実行するActionを管理するクラス </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a685666caf5d65ea0f5c6f66d31b8aa4d" name="a685666caf5d65ea0f5c6f66d31b8aa4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a685666caf5d65ea0f5c6f66d31b8aa4d">&#9670;&#160;</a></span>TimeAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.TimeAction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/de4/_time_handler_8cs.html#add58bd1ea2d0d44b69adbef6804578d6">GameState</a>&#160;</td>
+          <td class="paramname"><em>gameState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>executeTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>elapsedTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>loop</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>コンストラクタ </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameState</td><td></td></tr>
+    <tr><td class="paramname">action</td><td></td></tr>
+    <tr><td class="paramname">executeTime</td><td></td></tr>
+    <tr><td class="paramname">elapsedTime</td><td></td></tr>
+    <tr><td class="paramname">loop</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a24520abd8392aef490faee8f777661e8" name="a24520abd8392aef490faee8f777661e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24520abd8392aef490faee8f777661e8">&#9670;&#160;</a></span>ExecuteAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.ExecuteAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actionを実行する </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_a24520abd8392aef490faee8f777661e8_icgraph.png" border="0" usemap="#ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_a24520abd8392aef490faee8f777661e8_icgraph" alt=""/></div>
+<map name="ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_a24520abd8392aef490faee8f777661e8_icgraph" id="ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_a24520abd8392aef490faee8f777661e8_icgraph">
+<area shape="rect" title="Actionを実行する" alt="" coords="257,5,479,64"/>
+<area shape="rect" href="../../d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#a95ff8b18d74e1b3d6b0ca04e34393132" title="Update処理" alt="" coords="5,13,209,56"/>
+<area shape="poly" title=" " alt="" coords="242,37,209,37,209,32,242,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6769df870b86b75353615cb6fa46b910" name="a6769df870b86b75353615cb6fa46b910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6769df870b86b75353615cb6fa46b910">&#9670;&#160;</a></span>GetAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.GetAction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actionの返却 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ae4bc0eea650d0d3c9c0f70c8d6c92ca6" name="ae4bc0eea650d0d3c9c0f70c8d6c92ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bc0eea650d0d3c9c0f70c8d6c92ca6">&#9670;&#160;</a></span>IsEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.IsEnd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>破棄していいかどうかを返却 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a56b59712959369a9822bc54a76ecc948" name="a56b59712959369a9822bc54a76ecc948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b59712959369a9822bc54a76ecc948">&#9670;&#160;</a></span>IsLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.IsLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ループするかどうか </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aefcecf2ea73a0db66c18e91e832f0d0a" name="aefcecf2ea73a0db66c18e91e832f0d0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefcecf2ea73a0db66c18e91e832f0d0a">&#9670;&#160;</a></span>UpdateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.UpdateTime </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>deltaTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>時間経過による更新処理 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>経過時間。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>アクション実行フラグ。</dd></dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_aefcecf2ea73a0db66c18e91e832f0d0a_cgraph.png" border="0" usemap="#ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_aefcecf2ea73a0db66c18e91e832f0d0a_cgraph" alt=""/></div>
+<map name="ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_aefcecf2ea73a0db66c18e91e832f0d0a_cgraph" id="ad6/d06/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler_1_1_time_action_aefcecf2ea73a0db66c18e91e832f0d0a_cgraph">
+<area shape="rect" title="時間経過による更新処理" alt="" coords="5,64,228,123"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="276,5,511,48"/>
+<area shape="poly" title=" " alt="" coords="228,64,287,49,288,55,229,69"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a7c991ccb2c203b5ffc816c6c82f8768d" title="現在の状態がMAP、MENU、EVENTかどうかを返却する" alt="" coords="280,72,507,115"/>
+<area shape="poly" title=" " alt="" coords="228,91,265,91,265,96,228,96"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a08635f6fd879412581bd0c23e3559838" title="現在の状態がMENUかどうかを返却する" alt="" coords="277,139,510,181"/>
+<area shape="poly" title=" " alt="" coords="229,118,288,132,287,137,228,123"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a1ea135b884e1487b880679728840d3b2" name="a1ea135b884e1487b880679728840d3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea135b884e1487b880679728840d3b2">&#9670;&#160;</a></span>action</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.action</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>実行するAction </p>
+
+</div>
+</div>
+<a id="a1afda70ee9ad08acfa3d44eeabf378d8" name="a1afda70ee9ad08acfa3d44eeabf378d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afda70ee9ad08acfa3d44eeabf378d8">&#9670;&#160;</a></span>elapsedTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.elapsedTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>経過した時間 </p>
+
+</div>
+</div>
+<a id="a6d46d8e808cc2f710c76265d1855cb3e" name="a6d46d8e808cc2f710c76265d1855cb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d46d8e808cc2f710c76265d1855cb3e">&#9670;&#160;</a></span>executeTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.executeTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>実行するまでの時間 </p>
+
+</div>
+</div>
+<a id="a77cc0d45bed9b6de1c796eb510f122f8" name="a77cc0d45bed9b6de1c796eb510f122f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77cc0d45bed9b6de1c796eb510f122f8">&#9670;&#160;</a></span>gameState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/de4/_time_handler_8cs.html#add58bd1ea2d0d44b69adbef6804578d6">GameState</a> RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.gameState</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>対象のGameState </p>
+
+</div>
+</div>
+<a id="ab6c7627bcb41b5046c2465b54e2a0881" name="ab6c7627bcb41b5046c2465b54e2a0881"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c7627bcb41b5046c2465b54e2a0881">&#9670;&#160;</a></span>isEnd</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.isEnd</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>破棄して良いかどうか </p>
+
+</div>
+</div>
+<a id="a84752a89686540ac37dc6c236ead3d0d" name="a84752a89686540ac37dc6c236ead3d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84752a89686540ac37dc6c236ead3d0d">&#9670;&#160;</a></span>loop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.Runtime.Common.TimeHandler.TimeAction.loop</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>処理を繰り返すかどうか </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/GameState/<a class="el" href="../../d6/de4/_time_handler_8cs.html">TimeHandler.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

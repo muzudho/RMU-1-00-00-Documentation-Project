@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../d9/d09/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector.html">Inspector</a></li><li class="navelem"><a class="el" href="../../d2/d6d/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map.html">Map</a></li><li class="navelem"><a class="el" href="../../d0/da9/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view.html">View</a></li><li class="navelem"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html">MapCollisionInspector</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
+<a href="../../d4/da7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d4a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,219,139"/>
+<area shape="rect" title=" " alt="" coords="59,5,165,32"/>
+<area shape="poly" title=" " alt="" coords="115,47,115,79,109,79,109,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d25/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_inspector_8_map_8_view_8_map_collision_inspector_coll__map">
+<area shape="rect" title=" " alt="" coords="860,67,1073,125"/>
+<area shape="rect" title=" " alt="" coords="505,5,610,32"/>
+<area shape="poly" title=" " alt="" coords="625,24,725,37,837,57,863,63,862,69,835,63,724,43,625,29"/>
+<area shape="rect" title=" " alt="" coords="528,56,587,83"/>
+<area shape="poly" title=" " alt="" coords="601,69,860,86,859,92,601,75"/>
+<area shape="rect" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html" title="タイル・データ・モデル" alt="" coords="425,107,690,149"/>
+<area shape="poly" title=" " alt="" coords="705,116,836,107,859,105,860,110,836,112,705,122"/>
+<area shape="rect" title=" " alt="" coords="95,33,162,60"/>
+<area shape="poly" title=" " alt="" coords="178,53,401,95,446,103,445,109,400,100,177,58"/>
+<area shape="rect" href="../../d2/d0f/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_large_parts_data_model.html" title="大パーツ・データ・モデル" alt="" coords="5,84,252,143"/>
+<area shape="poly" title=" " alt="" coords="266,115,424,121,424,126,266,121"/>
+<area shape="rect" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html" title="タイル・イメージ・データ・モデル" alt="" coords="9,171,248,229"/>
+<area shape="poly" title=" " alt="" coords="262,201,465,197,578,189,690,175,791,152,883,123,884,129,792,157,690,180,578,194,465,203,263,206"/>
+<area shape="poly" title=" " alt="" coords="262,175,426,147,426,153,263,180"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a27a64966e90ce7bbba7eaad53eeb7b50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a27a64966e90ce7bbba7eaad53eeb7b50">MapCollisionInspector</a> (<a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a> tileDataModel, Action onClickRegisterBtn)</td></tr>
+<tr class="separator:a27a64966e90ce7bbba7eaad53eeb7b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511eb7dd397887a5d22610f6e8fa6a2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a511eb7dd397887a5d22610f6e8fa6a2a">SetTileImageEntity</a> (<a class="el" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html">TileImageDataModel</a> tileImageEntity)</td></tr>
+<tr class="separator:a511eb7dd397887a5d22610f6e8fa6a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:af34b9cb173adf3b14add918b49c18e5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#af34b9cb173adf3b14add918b49c18e5d">InitUI</a> ()</td></tr>
+<tr class="separator:af34b9cb173adf3b14add918b49c18e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c25eaaf6eb05e49a55f85c2a9180dae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a2c25eaaf6eb05e49a55f85c2a9180dae">SetEntityToUI</a> ()</td></tr>
+<tr class="separator:a2c25eaaf6eb05e49a55f85c2a9180dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42faaa15cc0c4eee107aab16afcc794b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a42faaa15cc0c4eee107aab16afcc794b">ToggleProcess</a> (bool data, Toggle toggle1, Toggle toggle2)</td></tr>
+<tr class="separator:a42faaa15cc0c4eee107aab16afcc794b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a273bc3de6fe2c82783f2af9667c55314"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d2/db4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_base.html">PopupFieldBase</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a273bc3de6fe2c82783f2af9667c55314">MakePopupField</a> (Dictionary&lt; string, string &gt; dictionary, VisualElement parentContainer, string containerName)</td></tr>
+<tr class="separator:a273bc3de6fe2c82783f2af9667c55314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a0cc6cb85e166dadaf7dee027ce5241ea"><td class="memItemLeft" align="right" valign="top">FloatField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a0cc6cb85e166dadaf7dee027ce5241ea">_constant_floatField</a></td></tr>
+<tr class="separator:a0cc6cb85e166dadaf7dee027ce5241ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80aaf06ea4416247b7c4eb16507699d6"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a80aaf06ea4416247b7c4eb16507699d6">_constant_toggle</a></td></tr>
+<tr class="separator:a80aaf06ea4416247b7c4eb16507699d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46e106c33253407395865268f7a5c49"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#ad46e106c33253407395865268f7a5c49">_counter_off_toggle</a></td></tr>
+<tr class="separator:ad46e106c33253407395865268f7a5c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a629947b607629ff5f285fc0fd742b4ed"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a629947b607629ff5f285fc0fd742b4ed">_counter_on_toggle</a></td></tr>
+<tr class="separator:a629947b607629ff5f285fc0fd742b4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b2745130675be631a8b44c13ada857"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a49b2745130675be631a8b44c13ada857">_damaged_floor_off_toggle</a></td></tr>
+<tr class="separator:a49b2745130675be631a8b44c13ada857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec27a8ecf8c2edbedd4d8308c981a28"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#aeec27a8ecf8c2edbedd4d8308c981a28">_damaged_floor_on_toggle</a></td></tr>
+<tr class="separator:aeec27a8ecf8c2edbedd4d8308c981a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ca1974788987738e884a922a45206a"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a70ca1974788987738e884a922a45206a">_dive_through_toggle</a></td></tr>
+<tr class="separator:a70ca1974788987738e884a922a45206a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01abd533ad544da0afc057ce122156f7"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a01abd533ad544da0afc057ce122156f7">_down_toggle</a></td></tr>
+<tr class="separator:a01abd533ad544da0afc057ce122156f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a351e9d970ee612fb03ed96cd994b6a56"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a351e9d970ee612fb03ed96cd994b6a56">_ladder_off_toggle</a></td></tr>
+<tr class="separator:a351e9d970ee612fb03ed96cd994b6a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be1753466dbda0081e56599605a49a2"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a3be1753466dbda0081e56599605a49a2">_ladder_on_toggle</a></td></tr>
+<tr class="separator:a3be1753466dbda0081e56599605a49a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e2110775db6b89c2c4ed17a934fa9ea"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a6e2110775db6b89c2c4ed17a934fa9ea">_left_toggle</a></td></tr>
+<tr class="separator:a6e2110775db6b89c2c4ed17a934fa9ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa3c038a1822d1f90aba382fd5cf95f"><td class="memItemLeft" align="right" valign="top">readonly Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a3fa3c038a1822d1f90aba382fd5cf95f">_onClickRegisterBtn</a></td></tr>
+<tr class="separator:a3fa3c038a1822d1f90aba382fd5cf95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed48457a7fb68efe92491257a54da9c4"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#aed48457a7fb68efe92491257a54da9c4">_pass_through_toggle</a></td></tr>
+<tr class="separator:aed48457a7fb68efe92491257a54da9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a704c4f1c660e0abbce985d0b42b2e0fe"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a704c4f1c660e0abbce985d0b42b2e0fe">_passTypeDictionary</a></td></tr>
+<tr class="separator:a704c4f1c660e0abbce985d0b42b2e0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5996bb4f29ccbd4349ed92ce86121a"><td class="memItemLeft" align="right" valign="top">FloatField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a2c5996bb4f29ccbd4349ed92ce86121a">_percentage_rate_floatField</a></td></tr>
+<tr class="separator:a2c5996bb4f29ccbd4349ed92ce86121a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696116ab3bf92aadf8a16153c4694809"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a696116ab3bf92aadf8a16153c4694809">_percentage_rate_toggle</a></td></tr>
+<tr class="separator:a696116ab3bf92aadf8a16153c4694809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c70378795e34c1cc9cf261f19e1fba"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a52c70378795e34c1cc9cf261f19e1fba">_right_toggle</a></td></tr>
+<tr class="separator:a52c70378795e34c1cc9cf261f19e1fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f289c05fa1d9a48c4074502eb181fd"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#aa1f289c05fa1d9a48c4074502eb181fd">_thicket_off_toggle</a></td></tr>
+<tr class="separator:aa1f289c05fa1d9a48c4074502eb181fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5dd9145a8f792854544f06a86608d7b"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#ab5dd9145a8f792854544f06a86608d7b">_thicket_on_toggle</a></td></tr>
+<tr class="separator:ab5dd9145a8f792854544f06a86608d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff94f510c2428219cf5a61a34ad8e4f8"><td class="memItemLeft" align="right" valign="top">readonly <a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#aff94f510c2428219cf5a61a34ad8e4f8">_tileDataModel</a></td></tr>
+<tr class="separator:aff94f510c2428219cf5a61a34ad8e4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3375efb0e4ee21666ac28f6f999efa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html">TileImageDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#aa3375efb0e4ee21666ac28f6f999efa5">_tileImageEntity</a></td></tr>
+<tr class="separator:aa3375efb0e4ee21666ac28f6f999efa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30fd1b82f3f256a056ed3cd952e87499"><td class="memItemLeft" align="right" valign="top">Toggle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a30fd1b82f3f256a056ed3cd952e87499">_up_toggle</a></td></tr>
+<tr class="separator:a30fd1b82f3f256a056ed3cd952e87499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a069d07c6ead15341a538f0e0e6a94893"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a069d07c6ead15341a538f0e0e6a94893">Uxml</a></td></tr>
+<tr class="separator:a069d07c6ead15341a538f0e0e6a94893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a27a64966e90ce7bbba7eaad53eeb7b50" name="a27a64966e90ce7bbba7eaad53eeb7b50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a64966e90ce7bbba7eaad53eeb7b50">&#9670;&#160;</a></span>MapCollisionInspector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.MapCollisionInspector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a>&#160;</td>
+          <td class="paramname"><em>tileDataModel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&#160;</td>
+          <td class="paramname"><em>onClickRegisterBtn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a27a64966e90ce7bbba7eaad53eeb7b50_cgraph.png" border="0" usemap="#ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a27a64966e90ce7bbba7eaad53eeb7b50_cgraph" alt=""/></div>
+<map name="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a27a64966e90ce7bbba7eaad53eeb7b50_cgraph" id="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a27a64966e90ce7bbba7eaad53eeb7b50_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,219,105"/>
+<area shape="rect" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#af34b9cb173adf3b14add918b49c18e5d" title=" " alt="" coords="267,5,480,64"/>
+<area shape="poly" title=" " alt="" coords="219,56,252,51,252,56,220,62"/>
+<area shape="rect" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a2c25eaaf6eb05e49a55f85c2a9180dae" title=" " alt="" coords="267,88,480,147"/>
+<area shape="poly" title=" " alt="" coords="220,90,252,96,252,101,219,96"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="af34b9cb173adf3b14add918b49c18e5d" name="af34b9cb173adf3b14add918b49c18e5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af34b9cb173adf3b14add918b49c18e5d">&#9670;&#160;</a></span>InitUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.InitUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_af34b9cb173adf3b14add918b49c18e5d_icgraph.png" border="0" usemap="#ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_af34b9cb173adf3b14add918b49c18e5d_icgraph" alt=""/></div>
+<map name="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_af34b9cb173adf3b14add918b49c18e5d_icgraph" id="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_af34b9cb173adf3b14add918b49c18e5d_icgraph">
+<area shape="rect" title=" " alt="" coords="267,5,480,64"/>
+<area shape="rect" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a27a64966e90ce7bbba7eaad53eeb7b50" title=" " alt="" coords="5,5,219,64"/>
+<area shape="poly" title=" " alt="" coords="251,37,219,37,219,32,251,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a273bc3de6fe2c82783f2af9667c55314" name="a273bc3de6fe2c82783f2af9667c55314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a273bc3de6fe2c82783f2af9667c55314">&#9670;&#160;</a></span>MakePopupField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d2/db4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_view_1_1_popup_field_base.html">PopupFieldBase</a>&lt; string &gt; RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.MakePopupField </td>
+          <td>(</td>
+          <td class="paramtype">Dictionary&lt; string, string &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VisualElement&#160;</td>
+          <td class="paramname"><em>parentContainer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>containerName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c25eaaf6eb05e49a55f85c2a9180dae" name="a2c25eaaf6eb05e49a55f85c2a9180dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c25eaaf6eb05e49a55f85c2a9180dae">&#9670;&#160;</a></span>SetEntityToUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.SetEntityToUI </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a2c25eaaf6eb05e49a55f85c2a9180dae_icgraph.png" border="0" usemap="#ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a2c25eaaf6eb05e49a55f85c2a9180dae_icgraph" alt=""/></div>
+<map name="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a2c25eaaf6eb05e49a55f85c2a9180dae_icgraph" id="ad2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector_a2c25eaaf6eb05e49a55f85c2a9180dae_icgraph">
+<area shape="rect" title=" " alt="" coords="267,5,480,64"/>
+<area shape="rect" href="../../d2/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_collision_inspector.html#a27a64966e90ce7bbba7eaad53eeb7b50" title=" " alt="" coords="5,5,219,64"/>
+<area shape="poly" title=" " alt="" coords="251,37,219,37,219,32,251,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a511eb7dd397887a5d22610f6e8fa6a2a" name="a511eb7dd397887a5d22610f6e8fa6a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511eb7dd397887a5d22610f6e8fa6a2a">&#9670;&#160;</a></span>SetTileImageEntity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.SetTileImageEntity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html">TileImageDataModel</a>&#160;</td>
+          <td class="paramname"><em>tileImageEntity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42faaa15cc0c4eee107aab16afcc794b" name="a42faaa15cc0c4eee107aab16afcc794b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42faaa15cc0c4eee107aab16afcc794b">&#9670;&#160;</a></span>ToggleProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.ToggleProcess </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Toggle&#160;</td>
+          <td class="paramname"><em>toggle1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Toggle&#160;</td>
+          <td class="paramname"><em>toggle2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a0cc6cb85e166dadaf7dee027ce5241ea" name="a0cc6cb85e166dadaf7dee027ce5241ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cc6cb85e166dadaf7dee027ce5241ea">&#9670;&#160;</a></span>_constant_floatField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatField RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._constant_floatField</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80aaf06ea4416247b7c4eb16507699d6" name="a80aaf06ea4416247b7c4eb16507699d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80aaf06ea4416247b7c4eb16507699d6">&#9670;&#160;</a></span>_constant_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._constant_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad46e106c33253407395865268f7a5c49" name="ad46e106c33253407395865268f7a5c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46e106c33253407395865268f7a5c49">&#9670;&#160;</a></span>_counter_off_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._counter_off_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a629947b607629ff5f285fc0fd742b4ed" name="a629947b607629ff5f285fc0fd742b4ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a629947b607629ff5f285fc0fd742b4ed">&#9670;&#160;</a></span>_counter_on_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._counter_on_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a49b2745130675be631a8b44c13ada857" name="a49b2745130675be631a8b44c13ada857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49b2745130675be631a8b44c13ada857">&#9670;&#160;</a></span>_damaged_floor_off_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._damaged_floor_off_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec27a8ecf8c2edbedd4d8308c981a28" name="aeec27a8ecf8c2edbedd4d8308c981a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec27a8ecf8c2edbedd4d8308c981a28">&#9670;&#160;</a></span>_damaged_floor_on_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._damaged_floor_on_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70ca1974788987738e884a922a45206a" name="a70ca1974788987738e884a922a45206a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ca1974788987738e884a922a45206a">&#9670;&#160;</a></span>_dive_through_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._dive_through_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01abd533ad544da0afc057ce122156f7" name="a01abd533ad544da0afc057ce122156f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01abd533ad544da0afc057ce122156f7">&#9670;&#160;</a></span>_down_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._down_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a351e9d970ee612fb03ed96cd994b6a56" name="a351e9d970ee612fb03ed96cd994b6a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a351e9d970ee612fb03ed96cd994b6a56">&#9670;&#160;</a></span>_ladder_off_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._ladder_off_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3be1753466dbda0081e56599605a49a2" name="a3be1753466dbda0081e56599605a49a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be1753466dbda0081e56599605a49a2">&#9670;&#160;</a></span>_ladder_on_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._ladder_on_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e2110775db6b89c2c4ed17a934fa9ea" name="a6e2110775db6b89c2c4ed17a934fa9ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e2110775db6b89c2c4ed17a934fa9ea">&#9670;&#160;</a></span>_left_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._left_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fa3c038a1822d1f90aba382fd5cf95f" name="a3fa3c038a1822d1f90aba382fd5cf95f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fa3c038a1822d1f90aba382fd5cf95f">&#9670;&#160;</a></span>_onClickRegisterBtn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Action RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._onClickRegisterBtn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed48457a7fb68efe92491257a54da9c4" name="aed48457a7fb68efe92491257a54da9c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed48457a7fb68efe92491257a54da9c4">&#9670;&#160;</a></span>_pass_through_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._pass_through_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a704c4f1c660e0abbce985d0b42b2e0fe" name="a704c4f1c660e0abbce985d0b42b2e0fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a704c4f1c660e0abbce985d0b42b2e0fe">&#9670;&#160;</a></span>_passTypeDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;string&gt; RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._passTypeDictionary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c5996bb4f29ccbd4349ed92ce86121a" name="a2c5996bb4f29ccbd4349ed92ce86121a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5996bb4f29ccbd4349ed92ce86121a">&#9670;&#160;</a></span>_percentage_rate_floatField</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatField RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._percentage_rate_floatField</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a696116ab3bf92aadf8a16153c4694809" name="a696116ab3bf92aadf8a16153c4694809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696116ab3bf92aadf8a16153c4694809">&#9670;&#160;</a></span>_percentage_rate_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._percentage_rate_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52c70378795e34c1cc9cf261f19e1fba" name="a52c70378795e34c1cc9cf261f19e1fba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c70378795e34c1cc9cf261f19e1fba">&#9670;&#160;</a></span>_right_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._right_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1f289c05fa1d9a48c4074502eb181fd" name="aa1f289c05fa1d9a48c4074502eb181fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1f289c05fa1d9a48c4074502eb181fd">&#9670;&#160;</a></span>_thicket_off_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._thicket_off_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5dd9145a8f792854544f06a86608d7b" name="ab5dd9145a8f792854544f06a86608d7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5dd9145a8f792854544f06a86608d7b">&#9670;&#160;</a></span>_thicket_on_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._thicket_on_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff94f510c2428219cf5a61a34ad8e4f8" name="aff94f510c2428219cf5a61a34ad8e4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff94f510c2428219cf5a61a34ad8e4f8">&#9670;&#160;</a></span>_tileDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html">TileDataModel</a> RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._tileDataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3375efb0e4ee21666ac28f6f999efa5" name="aa3375efb0e4ee21666ac28f6f999efa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3375efb0e4ee21666ac28f6f999efa5">&#9670;&#160;</a></span>_tileImageEntity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html">TileImageDataModel</a> RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._tileImageEntity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30fd1b82f3f256a056ed3cd952e87499" name="a30fd1b82f3f256a056ed3cd952e87499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30fd1b82f3f256a056ed3cd952e87499">&#9670;&#160;</a></span>_up_toggle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Toggle RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector._up_toggle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a069d07c6ead15341a538f0e0e6a94893" name="a069d07c6ead15341a538f0e0e6a94893"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a069d07c6ead15341a538f0e0e6a94893">&#9670;&#160;</a></span>Uxml</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.Inspector.Map.View.MapCollisionInspector.Uxml</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Assets/RPGMaker/Codebase/Editor/Inspector/Map/Asset/MapCollisionInspector.uxml&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Inspector/Map/View/<a class="el" href="../../d4/d6f/_map_collision_inspector_8cs.html">MapCollisionInspector.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

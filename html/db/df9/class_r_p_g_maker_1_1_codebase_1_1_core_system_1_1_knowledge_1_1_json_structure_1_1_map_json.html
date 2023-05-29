@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d0e/namespace_r_p_g_maker_1_1_codebase_1_1_core_system.html">CoreSystem</a></li><li class="navelem"><a class="el" href="../../de/daa/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge.html">Knowledge</a></li><li class="navelem"><a class="el" href="../../da/d29/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure.html">JsonStructure</a></li><li class="navelem"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html">MapJson</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="../../da/de2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d9d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_inherit__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,233,123"/>
+<area shape="rect" href="../../d2/d65/interface_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_i_json_structure.html" title=" " alt="" coords="67,5,171,32"/>
+<area shape="poly" title=" " alt="" coords="122,47,122,80,116,80,116,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d92/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_coll__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_json_structure_8_map_json_coll__map">
+<area shape="rect" title=" " alt="" coords="965,239,1192,281"/>
+<area shape="rect" href="../../d2/d65/interface_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_i_json_structure.html" title=" " alt="" coords="527,188,631,215"/>
+<area shape="poly" title=" " alt="" coords="646,206,917,236,965,242,964,247,917,241,646,211"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html" title="マップ・データ・モデル" alt="" coords="444,101,714,144"/>
+<area shape="poly" title=" " alt="" coords="683,146,918,208,1009,236,1007,241,916,213,682,151"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html" title=" " alt="" coords="941,71,1215,129"/>
+<area shape="poly" title=" " alt="" coords="729,127,822,127,917,123,940,120,941,126,917,128,822,132,729,132"/>
+<area shape="rect" title=" " alt="" coords="71,5,259,32"/>
+<area shape="poly" title=" " alt="" coords="274,31,325,41,427,69,517,98,515,103,425,74,324,47,273,36"/>
+<area shape="rect" href="../../d0/d66/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_background.html" title=" " alt="" coords="28,56,302,115"/>
+<area shape="poly" title=" " alt="" coords="317,96,444,108,443,113,317,102"/>
+<area shape="rect" href="../../d6/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1parallax.html" title=" " alt="" coords="5,139,325,181"/>
+<area shape="poly" title=" " alt="" coords="339,142,443,132,444,137,340,147"/>
+<area shape="rect" href="../../dc/d49/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_sound_state.html" title=" " alt="" coords="28,205,302,264"/>
+<area shape="poly" title=" " alt="" coords="316,203,419,177,522,142,524,147,420,183,317,208"/>
+<area shape="poly" title=" " alt="" coords="926,102,738,108,715,110,714,104,738,103,926,97"/>
+<area shape="rect" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html" title=" " alt="" coords="459,372,699,415"/>
+<area shape="poly" title=" " alt="" coords="714,380,814,364,916,339,984,311,1041,279,1043,284,986,316,918,344,815,370,714,385"/>
+<area shape="rect" href="../../d2/dc3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_background.html" title=" " alt="" coords="458,239,700,281"/>
+<area shape="poly" title=" " alt="" coords="714,257,964,257,964,263,714,263"/>
+<area shape="rect" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1parallax.html" title=" " alt="" coords="465,305,693,348"/>
+<area shape="poly" title=" " alt="" coords="707,307,964,272,965,278,707,312"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4246035aa9b7d3bc4116885f23e56ae1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a4246035aa9b7d3bc4116885f23e56ae1">MapJson</a> (string id, int <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a922f588d4a0809cc2f645cf50c2b745d">index</a>, string <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a3d11cb3c87309715927c2cd50c62a275">name</a>, string <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ac6113481ea9283119de873a308fab29f">displayName</a>, List&lt; <a class="el" href="../../db/d61/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_layer.html">MapDataModel.Layer</a> &gt; <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ad919831436468b372b338e4dac5718a6">layers</a>, int <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a258f8515450d635ccc0ab3cf40f1f864">width</a>, int <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ac5ace7134400a4acdb1ccd283f4b5a8e">height</a>, <a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a73bf249028eae4ba53d09b772aaf075a">MapDataModel.MapScrollType</a> <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a072ac4a9129494ac015765d7b8b6deb5">scrollType</a>, bool <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a2099905ba1501ffbdf7cd34f8640fc3b">autoPlayBGM</a>, string <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aeba1dedaffb3904034e33f2bb3935f0c">bgmID</a>, <a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a> <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a749f6e6b717490b935d9e9c256d9f995">bgmState</a>, bool <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aaf2b50980d1159f07a66b70fef983ec8">autoPlayBgs</a>, string <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a5e869c1b347295bee86060e6c60ec4b2">bgsID</a>, <a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a> <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a4411dab233a713064475869eb95671f6">bgsState</a>, bool <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a67b123e5df675f9a8da81b9e76709e6d">forbidDash</a>, <a class="el" href="../../d2/dc3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_background.html">Background</a> <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a283f3b55e23b9dccee30f19ea1c37d9e">background</a>, <a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1parallax.html">parallax</a> <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a4216f51b4a237a034cff38a602ef021d">Parallax</a>, string <a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aff063cea2c87ef2887593dfe992458a5">memo</a>)</td></tr>
+<tr class="separator:a4246035aa9b7d3bc4116885f23e56ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be2988f7394072c4dd18c0b6138ee05"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a6be2988f7394072c4dd18c0b6138ee05">GetID</a> ()</td></tr>
+<tr class="separator:a6be2988f7394072c4dd18c0b6138ee05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c53753a1d169fc2f86bea1120ed381"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d65/interface_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_i_json_structure.html#a03c53753a1d169fc2f86bea1120ed381">GetID</a> ()</td></tr>
+<tr class="separator:a03c53753a1d169fc2f86bea1120ed381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:ab69e42dead37d33514c1e43a6d4be08b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ab69e42dead37d33514c1e43a6d4be08b">mapId</a></td></tr>
+<tr class="separator:ab69e42dead37d33514c1e43a6d4be08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922f588d4a0809cc2f645cf50c2b745d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a922f588d4a0809cc2f645cf50c2b745d">index</a></td></tr>
+<tr class="separator:a922f588d4a0809cc2f645cf50c2b745d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6113481ea9283119de873a308fab29f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ac6113481ea9283119de873a308fab29f">displayName</a></td></tr>
+<tr class="separator:ac6113481ea9283119de873a308fab29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d11cb3c87309715927c2cd50c62a275"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a3d11cb3c87309715927c2cd50c62a275">name</a></td></tr>
+<tr class="separator:a3d11cb3c87309715927c2cd50c62a275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258f8515450d635ccc0ab3cf40f1f864"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a258f8515450d635ccc0ab3cf40f1f864">width</a></td></tr>
+<tr class="separator:a258f8515450d635ccc0ab3cf40f1f864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ace7134400a4acdb1ccd283f4b5a8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ac5ace7134400a4acdb1ccd283f4b5a8e">height</a></td></tr>
+<tr class="separator:ac5ace7134400a4acdb1ccd283f4b5a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8efd103e292d084d24b2586eea3fdb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ad8efd103e292d084d24b2586eea3fdb4">deleted</a></td></tr>
+<tr class="separator:ad8efd103e292d084d24b2586eea3fdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ea764952757735f2ae0cf41d2568f1b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d1/d36/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_encounter.html">MapEncounter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a5ea764952757735f2ae0cf41d2568f1b">encounter</a></td></tr>
+<tr class="separator:a5ea764952757735f2ae0cf41d2568f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad919831436468b372b338e4dac5718a6"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="../../d2/d6c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_layer.html">MapLayer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#ad919831436468b372b338e4dac5718a6">layers</a></td></tr>
+<tr class="separator:ad919831436468b372b338e4dac5718a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072ac4a9129494ac015765d7b8b6deb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a73bf249028eae4ba53d09b772aaf075a">MapDataModel.MapScrollType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a072ac4a9129494ac015765d7b8b6deb5">scrollType</a></td></tr>
+<tr class="separator:a072ac4a9129494ac015765d7b8b6deb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2099905ba1501ffbdf7cd34f8640fc3b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a2099905ba1501ffbdf7cd34f8640fc3b">autoPlayBGM</a></td></tr>
+<tr class="separator:a2099905ba1501ffbdf7cd34f8640fc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba1dedaffb3904034e33f2bb3935f0c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aeba1dedaffb3904034e33f2bb3935f0c">bgmID</a></td></tr>
+<tr class="separator:aeba1dedaffb3904034e33f2bb3935f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749f6e6b717490b935d9e9c256d9f995"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a749f6e6b717490b935d9e9c256d9f995">bgmState</a></td></tr>
+<tr class="separator:a749f6e6b717490b935d9e9c256d9f995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2b50980d1159f07a66b70fef983ec8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aaf2b50980d1159f07a66b70fef983ec8">autoPlayBgs</a></td></tr>
+<tr class="separator:aaf2b50980d1159f07a66b70fef983ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e869c1b347295bee86060e6c60ec4b2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a5e869c1b347295bee86060e6c60ec4b2">bgsID</a></td></tr>
+<tr class="separator:a5e869c1b347295bee86060e6c60ec4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4411dab233a713064475869eb95671f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a4411dab233a713064475869eb95671f6">bgsState</a></td></tr>
+<tr class="separator:a4411dab233a713064475869eb95671f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b123e5df675f9a8da81b9e76709e6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a67b123e5df675f9a8da81b9e76709e6d">forbidDash</a></td></tr>
+<tr class="separator:a67b123e5df675f9a8da81b9e76709e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a283f3b55e23b9dccee30f19ea1c37d9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dc3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_background.html">Background</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a283f3b55e23b9dccee30f19ea1c37d9e">background</a></td></tr>
+<tr class="separator:a283f3b55e23b9dccee30f19ea1c37d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4216f51b4a237a034cff38a602ef021d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1parallax.html">parallax</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#a4216f51b4a237a034cff38a602ef021d">Parallax</a></td></tr>
+<tr class="separator:a4216f51b4a237a034cff38a602ef021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff063cea2c87ef2887593dfe992458a5"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_json.html#aff063cea2c87ef2887593dfe992458a5">memo</a></td></tr>
+<tr class="separator:aff063cea2c87ef2887593dfe992458a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a4246035aa9b7d3bc4116885f23e56ae1" name="a4246035aa9b7d3bc4116885f23e56ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4246035aa9b7d3bc4116885f23e56ae1">&#9670;&#160;</a></span>MapJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.MapJson </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>displayName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">List&lt; <a class="el" href="../../db/d61/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_layer.html">MapDataModel::Layer</a> &gt;&#160;</td>
+          <td class="paramname"><em>layers</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a73bf249028eae4ba53d09b772aaf075a">MapDataModel::MapScrollType</a>&#160;</td>
+          <td class="paramname"><em>scrollType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoPlayBGM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>bgmID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a>&#160;</td>
+          <td class="paramname"><em>bgmState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>autoPlayBgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>bgsID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a>&#160;</td>
+          <td class="paramname"><em>bgsState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forbidDash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d2/dc3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_background.html">Background</a>&#160;</td>
+          <td class="paramname"><em>background</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1parallax.html">parallax</a>&#160;</td>
+          <td class="paramname"><em>Parallax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>memo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a6be2988f7394072c4dd18c0b6138ee05" name="a6be2988f7394072c4dd18c0b6138ee05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6be2988f7394072c4dd18c0b6138ee05">&#9670;&#160;</a></span>GetID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.GetID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="../../d2/d65/interface_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_i_json_structure.html#a03c53753a1d169fc2f86bea1120ed381">RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.IJsonStructure</a>を実装しています。</p>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a2099905ba1501ffbdf7cd34f8640fc3b" name="a2099905ba1501ffbdf7cd34f8640fc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2099905ba1501ffbdf7cd34f8640fc3b">&#9670;&#160;</a></span>autoPlayBGM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.autoPlayBGM</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf2b50980d1159f07a66b70fef983ec8" name="aaf2b50980d1159f07a66b70fef983ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2b50980d1159f07a66b70fef983ec8">&#9670;&#160;</a></span>autoPlayBgs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.autoPlayBgs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a283f3b55e23b9dccee30f19ea1c37d9e" name="a283f3b55e23b9dccee30f19ea1c37d9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283f3b55e23b9dccee30f19ea1c37d9e">&#9670;&#160;</a></span>background</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dc3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_background.html">Background</a> RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.background</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeba1dedaffb3904034e33f2bb3935f0c" name="aeba1dedaffb3904034e33f2bb3935f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba1dedaffb3904034e33f2bb3935f0c">&#9670;&#160;</a></span>bgmID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.bgmID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a749f6e6b717490b935d9e9c256d9f995" name="a749f6e6b717490b935d9e9c256d9f995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749f6e6b717490b935d9e9c256d9f995">&#9670;&#160;</a></span>bgmState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a> RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.bgmState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e869c1b347295bee86060e6c60ec4b2" name="a5e869c1b347295bee86060e6c60ec4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e869c1b347295bee86060e6c60ec4b2">&#9670;&#160;</a></span>bgsID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.bgsID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4411dab233a713064475869eb95671f6" name="a4411dab233a713064475869eb95671f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4411dab233a713064475869eb95671f6">&#9670;&#160;</a></span>bgsState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d19/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_sound_state.html">SoundState</a> RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.bgsState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8efd103e292d084d24b2586eea3fdb4" name="ad8efd103e292d084d24b2586eea3fdb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8efd103e292d084d24b2586eea3fdb4">&#9670;&#160;</a></span>deleted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.deleted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6113481ea9283119de873a308fab29f" name="ac6113481ea9283119de873a308fab29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6113481ea9283119de873a308fab29f">&#9670;&#160;</a></span>displayName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.displayName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ea764952757735f2ae0cf41d2568f1b" name="a5ea764952757735f2ae0cf41d2568f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ea764952757735f2ae0cf41d2568f1b">&#9670;&#160;</a></span>encounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d1/d36/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_encounter.html">MapEncounter</a>&gt; RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.encounter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67b123e5df675f9a8da81b9e76709e6d" name="a67b123e5df675f9a8da81b9e76709e6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b123e5df675f9a8da81b9e76709e6d">&#9670;&#160;</a></span>forbidDash</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.forbidDash</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac5ace7134400a4acdb1ccd283f4b5a8e" name="ac5ace7134400a4acdb1ccd283f4b5a8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ace7134400a4acdb1ccd283f4b5a8e">&#9670;&#160;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a922f588d4a0809cc2f645cf50c2b745d" name="a922f588d4a0809cc2f645cf50c2b745d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a922f588d4a0809cc2f645cf50c2b745d">&#9670;&#160;</a></span>index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad919831436468b372b338e4dac5718a6" name="ad919831436468b372b338e4dac5718a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad919831436468b372b338e4dac5718a6">&#9670;&#160;</a></span>layers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="../../d2/d6c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1_map_layer.html">MapLayer</a>&gt; RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.layers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab69e42dead37d33514c1e43a6d4be08b" name="ab69e42dead37d33514c1e43a6d4be08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69e42dead37d33514c1e43a6d4be08b">&#9670;&#160;</a></span>mapId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.mapId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff063cea2c87ef2887593dfe992458a5" name="aff063cea2c87ef2887593dfe992458a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff063cea2c87ef2887593dfe992458a5">&#9670;&#160;</a></span>memo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.memo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d11cb3c87309715927c2cd50c62a275" name="a3d11cb3c87309715927c2cd50c62a275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d11cb3c87309715927c2cd50c62a275">&#9670;&#160;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4216f51b4a237a034cff38a602ef021d" name="a4216f51b4a237a034cff38a602ef021d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4216f51b4a237a034cff38a602ef021d">&#9670;&#160;</a></span>Parallax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/dd8/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_json_structure_1_1parallax.html">parallax</a> RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.Parallax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a072ac4a9129494ac015765d7b8b6deb5" name="a072ac4a9129494ac015765d7b8b6deb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072ac4a9129494ac015765d7b8b6deb5">&#9670;&#160;</a></span>scrollType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a73bf249028eae4ba53d09b772aaf075a">MapDataModel.MapScrollType</a> RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.scrollType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a258f8515450d635ccc0ab3cf40f1f864" name="a258f8515450d635ccc0ab3cf40f1f864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258f8515450d635ccc0ab3cf40f1f864">&#9670;&#160;</a></span>width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.CoreSystem.Knowledge.JsonStructure.MapJson.width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/CoreSystem/Knowledge/JsonStructure/<a class="el" href="../../d0/d88/_map_json_8cs.html">MapJson.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

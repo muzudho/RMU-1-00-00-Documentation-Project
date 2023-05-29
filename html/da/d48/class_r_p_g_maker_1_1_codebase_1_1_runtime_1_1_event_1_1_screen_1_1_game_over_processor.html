@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d1/d71/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event.html">Event</a></li><li class="navelem"><a class="el" href="../../d2/da3/namespace_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen.html">Screen</a></li><li class="navelem"><a class="el" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html">GameOverProcessor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="../../db/d40/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ゲーム・オーバー処理機  
+ <a href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/de2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_inherit__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_inherit__map">
+<area shape="rect" title="ゲーム・オーバー処理機" alt="" coords="5,80,228,123"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html" title="抽象イベント・コマンド処理機" alt="" coords="6,5,227,32"/>
+<area shape="poly" title=" " alt="" coords="119,47,119,80,114,80,114,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d56/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_event_8_screen_8_game_over_processor_coll__map">
+<area shape="rect" title="ゲーム・オーバー処理機" alt="" coords="1478,213,1700,256"/>
+<area shape="rect" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html" title="抽象イベント・コマンド処理機" alt="" coords="1208,221,1429,248"/>
+<area shape="poly" title=" " alt="" coords="1444,232,1477,232,1477,237,1444,237"/>
+<area shape="rect" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html" title="イベントのChainLauncherの基底クラス" alt="" coords="749,125,979,184"/>
+<area shape="poly" title=" " alt="" coords="994,175,1239,218,1238,223,993,180"/>
+<area shape="rect" title=" " alt="" coords="304,123,497,165"/>
+<area shape="poly" title=" " alt="" coords="512,144,749,149,749,155,512,149"/>
+<area shape="rect" title=" " alt="" coords="343,205,458,232"/>
+<area shape="poly" title=" " alt="" coords="472,217,1208,230,1208,235,472,223"/>
+<area shape="poly" title=" " alt="" coords="471,206,748,168,749,173,472,212"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="258,40,543,99"/>
+<area shape="poly" title=" " alt="" coords="558,95,725,125,749,130,748,135,725,131,557,100"/>
+<area shape="rect" title=" " alt="" coords="5,56,59,83"/>
+<area shape="poly" title=" " alt="" coords="73,67,257,67,257,72,73,72"/>
+<area shape="rect" title=" " alt="" coords="835,283,893,309"/>
+<area shape="poly" title=" " alt="" coords="908,292,1032,285,1184,267,1271,246,1272,251,1185,272,1033,290,908,297"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a8bdcf1390df1e7e2fc6f52900e84e235"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#a8bdcf1390df1e7e2fc6f52900e84e235">Process</a> (string eventID, EventDataModel.EventCommand command)</td></tr>
+<tr class="memdesc:a8bdcf1390df1e7e2fc6f52900e84e235"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理  <br /></td></tr>
+<tr class="separator:a8bdcf1390df1e7e2fc6f52900e84e235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html">RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a8573e9ed8a8d62fb8a212d7440109c30 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a8573e9ed8a8d62fb8a212d7440109c30">SetNoWait</a> ()</td></tr>
+<tr class="memdesc:a8573e9ed8a8d62fb8a212d7440109c30 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">次回のCB処理のウェイトを行わない  <br /></td></tr>
+<tr class="separator:a8573e9ed8a8d62fb8a212d7440109c30 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad337b6f41b9fbe347c31f080079f69a9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ad337b6f41b9fbe347c31f080079f69a9">Process</a> (string eventID, EventDataModel.EventCommand command)</td></tr>
+<tr class="memdesc:ad337b6f41b9fbe347c31f080079f69a9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理  <br /></td></tr>
+<tr class="separator:ad337b6f41b9fbe347c31f080079f69a9 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0c6eee2246393717c8c5b61fecb936 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a7a0c6eee2246393717c8c5b61fecb936">Process</a> (string eventID, EventDataModel.EventCommand command, List&lt; EventDataModel.EventCommand &gt; eventCommands)</td></tr>
+<tr class="memdesc:a7a0c6eee2246393717c8c5b61fecb936 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理 選択肢用  <br /></td></tr>
+<tr class="separator:a7a0c6eee2246393717c8c5b61fecb936 inherit pro_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a936fc57bf42c48612e787e569ccf9b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#a936fc57bf42c48612e787e569ccf9b3c">ProcessWait</a> ()</td></tr>
+<tr class="separator:a936fc57bf42c48612e787e569ccf9b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html">RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:ae8bd158df928c659d1c2151daa9a1a43 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ae8bd158df928c659d1c2151daa9a1a43">Invoke</a> (<a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a> eventCommandChainLauncher, string eventID, EventDataModel.EventCommand command, Action&lt; string &gt; callback)</td></tr>
+<tr class="memdesc:ae8bd158df928c659d1c2151daa9a1a43 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントを実行する  <br /></td></tr>
+<tr class="separator:ae8bd158df928c659d1c2151daa9a1a43 inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f7aa404d3dab8fd9d4f1e05c5b253a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#af9f7aa404d3dab8fd9d4f1e05c5b253a">Invoke</a> (<a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a> eventCommandChainLauncher, string eventID, EventDataModel.EventCommand command, Action&lt; string &gt; callback, List&lt; EventDataModel.EventCommand &gt; eventCommands)</td></tr>
+<tr class="memdesc:af9f7aa404d3dab8fd9d4f1e05c5b253a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント実行処理 選択肢用  <br /></td></tr>
+<tr class="separator:af9f7aa404d3dab8fd9d4f1e05c5b253a inherit pub_methods_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor')"><img src="../../closed.png" alt="-"/>&#160;基底クラス <a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html">RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a51c3c1508c5bbdf78095bd490cbc9f65 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/dd0/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_chain_launcher.html">AbstractEventCommandChainLauncher</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a51c3c1508c5bbdf78095bd490cbc9f65">EventCommandChainLauncher</a></td></tr>
+<tr class="separator:a51c3c1508c5bbdf78095bd490cbc9f65 inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26872f8b3c9056896da8dd75a7a43a1f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a26872f8b3c9056896da8dd75a7a43a1f">EventId</a></td></tr>
+<tr class="separator:a26872f8b3c9056896da8dd75a7a43a1f inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac629457337b6e0c74a4c8ccba6b63acf inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">Action&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ac629457337b6e0c74a4c8ccba6b63acf">SendBackToLauncher</a></td></tr>
+<tr class="separator:ac629457337b6e0c74a4c8ccba6b63acf inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b6e12caad7aeeb1cefc01eb17fe292a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">Action&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a5b6e12caad7aeeb1cefc01eb17fe292a">SendBackToLauncherEventId</a></td></tr>
+<tr class="separator:a5b6e12caad7aeeb1cefc01eb17fe292a inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6002ccaace5bdac06a29ab37d8630eaa inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#a6002ccaace5bdac06a29ab37d8630eaa">_skipWait</a></td></tr>
+<tr class="separator:a6002ccaace5bdac06a29ab37d8630eaa inherit pro_attribs_class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>ゲーム・オーバー処理機 </p>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="a8bdcf1390df1e7e2fc6f52900e84e235" name="a8bdcf1390df1e7e2fc6f52900e84e235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bdcf1390df1e7e2fc6f52900e84e235">&#9670;&#160;</a></span>Process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor.Process </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>eventID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EventDataModel::EventCommand&#160;</td>
+          <td class="paramname"><em>command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>イベント実行処理 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventID</td><td></td></tr>
+    <tr><td class="paramname">command</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="../../d9/de5/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_abstract_event_command_processor.html#ad337b6f41b9fbe347c31f080079f69a9">RPGMaker.Codebase.Runtime.Event.AbstractEventCommandProcessor</a>を再実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a8bdcf1390df1e7e2fc6f52900e84e235_cgraph.png" border="0" usemap="#ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a8bdcf1390df1e7e2fc6f52900e84e235_cgraph" alt=""/></div>
+<map name="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a8bdcf1390df1e7e2fc6f52900e84e235_cgraph" id="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a8bdcf1390df1e7e2fc6f52900e84e235_cgraph">
+<area shape="rect" title="イベント実行処理" alt="" coords="5,447,232,505"/>
+<area shape="rect" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#a936fc57bf42c48612e787e569ccf9b3c" title=" " alt="" coords="280,447,506,505"/>
+<area shape="poly" title=" " alt="" coords="232,473,265,473,265,479,232,479"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="554,324,757,367"/>
+<area shape="poly" title=" " alt="" coords="453,444,597,371,599,376,455,448"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a7c991ccb2c203b5ffc816c6c82f8768d" title="現在の状態がMAP、MENU、EVENTかどうかを返却する" alt="" coords="2024,447,2251,489"/>
+<area shape="poly" title=" " alt="" coords="507,482,693,493,906,499,1475,499,1762,491,2009,476,2009,481,1762,496,1476,504,906,504,693,498,506,487"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="1373,1640,1576,1683"/>
+<area shape="poly" title=" " alt="" coords="411,504,452,582,517,698,605,842,714,1004,843,1174,914,1258,990,1341,1070,1420,1154,1495,1241,1564,1332,1626,1360,1639,1357,1644,1330,1630,1238,1568,1150,1499,1066,1424,986,1344,910,1262,839,1177,710,1007,600,845,512,701,447,585,406,507"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#aa8257238a6c7c2268986ee6f79190780" title=" " alt="" coords="1059,369,1281,412"/>
+<area shape="poly" title=" " alt="" coords="506,461,1043,402,1044,407,507,466"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="805,308,1009,351"/>
+<area shape="poly" title=" " alt="" coords="758,336,790,334,790,339,758,342"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a30d8201325917fd21fb249d2e99bb7e2" title="ウィンドウを閉じる" alt="" coords="1057,153,1283,196"/>
+<area shape="poly" title=" " alt="" coords="944,305,1118,202,1121,206,946,310"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ac94b3aa947539ba79fcbc39dfa9c92fe" title="フェードアウト" alt="" coords="1068,273,1272,316"/>
+<area shape="poly" title=" " alt="" coords="1009,313,1053,307,1053,313,1010,319"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="1068,1107,1272,1149"/>
+<area shape="poly" title=" " alt="" coords="918,350,1159,1091,1154,1093,913,352"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a88c98c800abbcda4dab46adb3ae97474" title="ウィンドウが完全に閉じているか" alt="" coords="1353,100,1596,143"/>
+<area shape="poly" title=" " alt="" coords="1283,152,1338,142,1339,148,1284,157"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a48d9151e60197c1fc6ca30ce116c953c" title=" " alt="" coords="1335,167,1613,209"/>
+<area shape="poly" title=" " alt="" coords="1216,270,1330,223,1366,211,1368,216,1332,228,1218,275"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a9afa799589a2e71c0458b8acfc20c0ff" title=" " alt="" coords="1340,237,1608,280"/>
+<area shape="poly" title=" " alt="" coords="1272,280,1325,274,1326,279,1272,285"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a9d7e7a73b205c8bbd12640dd907d18c4" title="現在のHudHandlerを返却" alt="" coords="1680,320,1936,363"/>
+<area shape="poly" title=" " alt="" coords="1272,299,1666,328,1666,334,1272,305"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a66af6442ca684f3e4c91d24d1028c366" title="画面演出用Prefabの生成" alt="" coords="1674,5,1942,64"/>
+<area shape="poly" title=" " alt="" coords="1597,164,1616,153,1632,134,1639,115,1646,94,1664,74,1669,70,1672,74,1667,78,1651,97,1644,117,1637,137,1619,157,1600,168"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a2c6ec894e14d38c384af30e0dd264758" title=" " alt="" coords="1665,88,1951,131"/>
+<area shape="poly" title=" " alt="" coords="1569,163,1617,152,1665,140,1698,132,1699,137,1666,145,1618,157,1570,169"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a1a8fbcdf6afd6d78f3bb845041a6e977" title=" " alt="" coords="1694,155,1922,213"/>
+<area shape="poly" title=" " alt="" coords="1614,184,1679,183,1679,188,1614,189"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a3ac37bed9d0de418fc32c934e4a922b9" title=" " alt="" coords="1674,237,1942,296"/>
+<area shape="poly" title=" " alt="" coords="1609,259,1659,260,1659,266,1609,265"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="2020,363,2255,405"/>
+<area shape="poly" title=" " alt="" coords="1936,355,2006,364,2005,370,1936,361"/>
+<area shape="poly" title=" " alt="" coords="1864,361,2000,415,2063,439,2061,444,1998,420,1862,366"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#abba89095b41defaca884c77eb2b85fa7" title=" " alt="" coords="1373,640,1576,683"/>
+<area shape="poly" title=" " alt="" coords="1170,1106,1178,1027,1188,974,1203,916,1223,855,1250,796,1285,740,1329,693,1357,675,1360,679,1333,697,1290,744,1255,798,1228,857,1208,917,1193,975,1184,1028,1175,1106"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b" title="新しい状態を登録する." alt="" coords="1999,699,2276,741"/>
+<area shape="poly" title=" " alt="" coords="1172,1106,1191,1002,1225,856,1247,781,1272,714,1299,661,1314,640,1329,626,1375,597,1424,576,1475,562,1528,553,1581,550,1636,552,1744,567,1847,593,1941,625,2022,659,2084,689,2082,694,2020,664,1939,630,1846,598,1743,572,1635,557,1582,555,1528,559,1476,567,1426,581,1378,602,1333,630,1318,644,1304,663,1277,717,1252,783,1230,857,1196,1003,1177,1107"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a51ad2669c15aba611fa704eb84001f8c" title=" " alt="" coords="1352,824,1597,867"/>
+<area shape="poly" title=" " alt="" coords="1176,1105,1196,1057,1228,995,1272,931,1299,902,1329,877,1337,872,1340,876,1333,881,1303,905,1276,934,1232,998,1201,1060,1181,1107"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a56d452c7dcdd02511b8999a3cdde268a" title=" " alt="" coords="1351,891,1597,933"/>
+<area shape="poly" title=" " alt="" coords="1182,1105,1205,1069,1239,1025,1281,980,1330,943,1340,938,1342,942,1332,948,1284,984,1243,1028,1209,1072,1186,1108"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa008ccb1bfddc97c2c6618cfe1fe9ab9" title=" " alt="" coords="1347,957,1602,1016"/>
+<area shape="poly" title=" " alt="" coords="1199,1104,1258,1065,1330,1026,1345,1019,1347,1024,1332,1030,1261,1069,1202,1108"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#acdc0251471c3db50b36db22a1f9b9d83" title=" " alt="" coords="1331,1040,1617,1083"/>
+<area shape="poly" title=" " alt="" coords="1270,1103,1359,1084,1360,1089,1271,1109"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ad8d180d215f1e569f1d29f59b606ebf7" title="メンバ変数の初期化" alt="" coords="1365,1107,1583,1149"/>
+<area shape="poly" title=" " alt="" coords="1272,1125,1350,1125,1350,1131,1272,1131"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a9ee082d1f5b3806983aa3f3c3c0d3cf6" title="戦闘終了時に呼ばれるハンドラ" alt="" coords="1352,1173,1596,1216"/>
+<area shape="poly" title=" " alt="" coords="1271,1147,1360,1167,1359,1172,1270,1153"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ab0b6b663d80d399628453df01d15f719" title="HudHandlerを削除" alt="" coords="1358,405,1590,464"/>
+<area shape="poly" title=" " alt="" coords="1171,1106,1185,1018,1214,885,1235,810,1260,732,1292,655,1329,583,1350,551,1374,522,1423,472,1427,476,1378,525,1354,554,1333,585,1297,657,1265,734,1240,811,1219,886,1190,1019,1176,1107"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af537b7414d677604dbc785e095368417" title="BGMとBGSの続きを再生" alt="" coords="1367,1291,1581,1349"/>
+<area shape="poly" title=" " alt="" coords="1192,1148,1251,1208,1290,1241,1332,1270,1356,1282,1354,1287,1330,1274,1287,1245,1247,1212,1188,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#aca0898033e6c728c94d26ad955dc4968" title=" " alt="" coords="1706,1265,1910,1308"/>
+<area shape="poly" title=" " alt="" coords="1199,1147,1258,1189,1294,1209,1332,1225,1398,1241,1491,1255,1692,1276,1691,1281,1490,1261,1397,1247,1330,1231,1292,1214,1255,1193,1196,1152"/>
+<area shape="poly" title=" " alt="" coords="1184,1149,1231,1257,1260,1330,1286,1405,1293,1439,1296,1471,1294,1526,1295,1551,1300,1575,1312,1600,1333,1626,1360,1645,1357,1649,1329,1630,1308,1603,1295,1577,1290,1552,1289,1526,1290,1471,1288,1440,1280,1406,1255,1332,1227,1259,1179,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a4716b4bff49f40f8db8ca1ea1fa6197e" title=" " alt="" coords="1363,1373,1585,1416"/>
+<area shape="poly" title=" " alt="" coords="1182,1149,1202,1193,1235,1251,1278,1310,1304,1336,1332,1359,1350,1369,1348,1374,1330,1364,1300,1340,1274,1313,1230,1254,1198,1196,1177,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a7e565c7b07c892b9ea082ecf702dc40a" title=" " alt="" coords="1365,1440,1583,1483"/>
+<area shape="poly" title=" " alt="" coords="1179,1149,1195,1205,1225,1281,1246,1321,1270,1360,1299,1395,1333,1426,1353,1438,1350,1443,1329,1430,1295,1399,1266,1363,1241,1323,1220,1283,1190,1207,1174,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a7beae47682975a5e20a57dd4a1842b0f" title=" " alt="" coords="1368,1507,1581,1549"/>
+<area shape="poly" title=" " alt="" coords="1182,1149,1264,1345,1308,1445,1333,1493,1355,1507,1352,1511,1329,1496,1303,1448,1259,1347,1177,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a968fc7606573f4ff48846413f5c1d5c2" title=" " alt="" coords="1369,1573,1580,1616"/>
+<area shape="poly" title=" " alt="" coords="1183,1149,1229,1258,1286,1405,1296,1451,1299,1490,1307,1525,1317,1542,1333,1559,1356,1575,1353,1580,1329,1563,1313,1545,1302,1527,1294,1491,1291,1452,1280,1406,1224,1260,1178,1151"/>
+<area shape="poly" title=" " alt="" coords="1550,637,2046,491,2048,497,1551,642"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="1696,691,1920,749"/>
+<area shape="poly" title=" " alt="" coords="1577,677,1682,695,1681,700,1576,682"/>
+<area shape="poly" title=" " alt="" coords="1576,657,1751,660,1852,666,1951,676,2039,692,2039,697,1950,681,1851,671,1751,666,1576,662"/>
+<area shape="poly" title=" " alt="" coords="1920,717,1983,717,1983,723,1920,723"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="2352,653,2587,712"/>
+<area shape="poly" title=" " alt="" coords="2276,702,2336,695,2337,700,2277,707"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a90d4308ec6a2f804e3d7b7fd7892b46e" title=" " alt="" coords="2344,736,2594,779"/>
+<area shape="poly" title=" " alt="" coords="2277,733,2330,739,2329,744,2276,738"/>
+<area shape="poly" title=" " alt="" coords="1581,402,1714,365,1716,370,1582,407"/>
+<area shape="poly" title=" " alt="" coords="1591,423,2004,391,2005,397,1591,428"/>
+<area shape="poly" title=" " alt="" coords="1591,438,2009,459,2009,464,1591,443"/>
+<area shape="poly" title=" " alt="" coords="1581,1307,1691,1296,1692,1301,1582,1312"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1706,1640,1910,1683"/>
+<area shape="poly" title=" " alt="" coords="1576,1659,1692,1659,1692,1664,1576,1664"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="2031,1640,2244,1683"/>
+<area shape="poly" title=" " alt="" coords="1910,1659,2016,1659,2016,1664,1910,1664"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="2341,1301,2597,1360"/>
+<area shape="poly" title=" " alt="" coords="2144,1638,2167,1584,2204,1511,2256,1435,2287,1400,2322,1370,2328,1366,2331,1370,2326,1374,2291,1404,2260,1438,2209,1514,2171,1586,2149,1640"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="2341,1384,2597,1443"/>
+<area shape="poly" title=" " alt="" coords="2150,1638,2177,1598,2216,1548,2266,1497,2323,1452,2331,1447,2334,1452,2325,1457,2269,1501,2221,1552,2181,1601,2154,1641"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="2341,1467,2598,1525"/>
+<area shape="poly" title=" " alt="" coords="2164,1637,2233,1587,2277,1559,2323,1535,2337,1529,2339,1534,2325,1540,2280,1564,2236,1591,2167,1642"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="2324,1549,2614,1608"/>
+<area shape="poly" title=" " alt="" coords="2225,1637,2334,1610,2335,1615,2227,1642"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="2331,1632,2607,1691"/>
+<area shape="poly" title=" " alt="" coords="2245,1659,2316,1659,2316,1664,2245,1664"/>
+<area shape="rect" href="../../db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="2335,1715,2604,1773"/>
+<area shape="poly" title=" " alt="" coords="2227,1681,2335,1708,2334,1713,2225,1686"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="2341,1797,2597,1856"/>
+<area shape="poly" title=" " alt="" coords="2167,1681,2236,1732,2280,1759,2325,1783,2339,1789,2337,1794,2323,1788,2277,1764,2233,1736,2164,1685"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="2341,1880,2597,1939"/>
+<area shape="poly" title=" " alt="" coords="2154,1682,2181,1721,2221,1771,2269,1822,2325,1866,2334,1871,2331,1875,2323,1870,2266,1826,2216,1774,2177,1724,2150,1685"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="2341,1963,2597,2021"/>
+<area shape="poly" title=" " alt="" coords="2149,1682,2171,1737,2209,1809,2260,1884,2291,1919,2326,1949,2331,1952,2328,1957,2322,1953,2287,1922,2256,1887,2204,1811,2167,1739,2144,1684"/>
+<area shape="poly" title=" " alt="" coords="1224,367,1254,349,1281,326,1297,300,1303,274,1310,249,1317,236,1329,223,1341,215,1344,219,1333,227,1321,239,1314,251,1308,276,1302,302,1285,330,1257,353,1227,371"/>
+<area shape="poly" title=" " alt="" coords="1220,366,1408,284,1410,289,1222,371"/>
+<area shape="poly" title=" " alt="" coords="1281,379,1665,350,1666,355,1282,385"/>
+<area shape="poly" title=" " alt="" coords="1176,412,1188,481,1214,576,1235,627,1261,676,1293,721,1333,759,1368,783,1402,796,1433,802,1465,802,1534,799,1574,801,1618,809,1642,818,1666,825,1746,839,1809,845,1872,842,1950,825,1991,811,2030,791,2096,748,2099,753,2033,796,1993,816,1951,831,1872,847,1809,851,1745,844,1665,831,1640,823,1617,815,1573,807,1534,805,1465,807,1433,807,1400,801,1366,788,1329,763,1289,724,1256,679,1230,629,1209,578,1183,482,1171,413"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a94b4a9d9aec9347922dc440b8321629f" title="メニュー以下を全部非表示にする" alt="" coords="1373,707,1576,749"/>
+<area shape="poly" title=" " alt="" coords="1179,412,1195,469,1225,545,1245,586,1270,625,1299,661,1333,693,1360,708,1357,713,1329,697,1295,665,1266,628,1241,588,1220,547,1190,470,1173,413"/>
+<area shape="poly" title=" " alt="" coords="1576,723,1681,720,1681,726,1576,728"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a09c9b32db375ba2624e228c47fcbc64f" title="GameState切り替え処理" alt="" coords="1695,773,1921,816"/>
+<area shape="poly" title=" " alt="" coords="1577,746,1684,767,1683,773,1576,751"/>
+<area shape="poly" title=" " alt="" coords="1905,770,2025,743,2026,748,1906,775"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a936fc57bf42c48612e787e569ccf9b3c" name="a936fc57bf42c48612e787e569ccf9b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936fc57bf42c48612e787e569ccf9b3c">&#9670;&#160;</a></span>ProcessWait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.Event.Screen.GameOverProcessor.ProcessWait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_cgraph.png" border="0" usemap="#ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_cgraph" alt=""/></div>
+<map name="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_cgraph" id="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,447,232,505"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a1434c68b34b96c9c3aeedbf7a05de51d" title="GAMEOVER処理 イベントから実行する" alt="" coords="280,324,483,367"/>
+<area shape="poly" title=" " alt="" coords="178,444,323,371,325,376,181,448"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a7c991ccb2c203b5ffc816c6c82f8768d" title="現在の状態がMAP、MENU、EVENTかどうかを返却する" alt="" coords="1750,447,1976,489"/>
+<area shape="poly" title=" " alt="" coords="232,482,419,493,631,499,1201,499,1488,491,1735,476,1735,481,1488,496,1201,504,631,504,419,498,232,487"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="1098,1640,1302,1683"/>
+<area shape="poly" title=" " alt="" coords="137,504,177,582,242,698,330,842,440,1004,569,1174,640,1258,716,1341,796,1420,880,1495,967,1564,1058,1626,1085,1639,1083,1644,1055,1630,964,1568,876,1499,792,1424,712,1344,636,1262,565,1177,435,1007,326,845,238,701,173,585,132,507"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#aa8257238a6c7c2268986ee6f79190780" title=" " alt="" coords="784,369,1007,412"/>
+<area shape="poly" title=" " alt="" coords="232,461,769,402,770,407,232,466"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ad7094243c2ebe20568e4340f09882bae" title="シーンの停止" alt="" coords="531,308,734,351"/>
+<area shape="poly" title=" " alt="" coords="483,336,516,334,516,339,484,342"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a30d8201325917fd21fb249d2e99bb7e2" title="ウィンドウを閉じる" alt="" coords="782,153,1009,196"/>
+<area shape="poly" title=" " alt="" coords="669,305,844,202,846,206,672,310"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#ac94b3aa947539ba79fcbc39dfa9c92fe" title="フェードアウト" alt="" coords="794,273,997,316"/>
+<area shape="poly" title=" " alt="" coords="735,313,778,307,779,313,735,319"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_scene_battle.html#a8dd7cb22d96207c1d7df687eedcc1f1c" title="遷移前のシーン中断" alt="" coords="794,1107,997,1149"/>
+<area shape="poly" title=" " alt="" coords="644,350,885,1091,880,1093,639,352"/>
+<area shape="rect" href="../../d1/d3a/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_battle.html#a88c98c800abbcda4dab46adb3ae97474" title="ウィンドウが完全に閉じているか" alt="" coords="1078,100,1322,143"/>
+<area shape="poly" title=" " alt="" coords="1009,152,1064,142,1065,148,1010,157"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a48d9151e60197c1fc6ca30ce116c953c" title=" " alt="" coords="1061,167,1339,209"/>
+<area shape="poly" title=" " alt="" coords="941,270,1056,223,1092,211,1094,216,1058,228,943,275"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a9afa799589a2e71c0458b8acfc20c0ff" title=" " alt="" coords="1066,237,1334,280"/>
+<area shape="poly" title=" " alt="" coords="997,280,1051,274,1051,279,998,285"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#a9d7e7a73b205c8bbd12640dd907d18c4" title="現在のHudHandlerを返却" alt="" coords="1406,320,1661,363"/>
+<area shape="poly" title=" " alt="" coords="998,299,1392,328,1391,334,997,305"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a66af6442ca684f3e4c91d24d1028c366" title="画面演出用Prefabの生成" alt="" coords="1400,5,1668,64"/>
+<area shape="poly" title=" " alt="" coords="1323,164,1341,153,1358,134,1365,115,1372,94,1389,74,1395,70,1398,74,1393,78,1377,97,1370,117,1362,137,1345,157,1325,168"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a2c6ec894e14d38c384af30e0dd264758" title=" " alt="" coords="1391,88,1676,131"/>
+<area shape="poly" title=" " alt="" coords="1295,163,1342,152,1390,140,1424,132,1425,137,1392,145,1344,157,1296,169"/>
+<area shape="rect" href="../../d4/ddb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_handler.html#a1a8fbcdf6afd6d78f3bb845041a6e977" title=" " alt="" coords="1420,155,1648,213"/>
+<area shape="poly" title=" " alt="" coords="1339,184,1404,183,1405,188,1339,189"/>
+<area shape="rect" href="../../d3/dde/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_component_1_1_hud_1_1_display_1_1_display.html#a3ac37bed9d0de418fc32c934e4a922b9" title=" " alt="" coords="1400,237,1668,296"/>
+<area shape="poly" title=" " alt="" coords="1334,259,1385,260,1385,266,1334,265"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad21ee0055358ca67238c33be028d2d7b" title="現在の状態がBATTLEまたは、BATTLE_EVENTかどうかを返却する" alt="" coords="1745,363,1981,405"/>
+<area shape="poly" title=" " alt="" coords="1662,355,1731,364,1731,370,1661,361"/>
+<area shape="poly" title=" " alt="" coords="1589,361,1725,415,1789,439,1787,444,1723,420,1587,366"/>
+<area shape="rect" href="../../d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#abba89095b41defaca884c77eb2b85fa7" title=" " alt="" coords="1098,640,1302,683"/>
+<area shape="poly" title=" " alt="" coords="895,1106,904,1027,914,974,928,916,949,855,976,796,1011,740,1055,693,1083,675,1086,679,1058,697,1015,744,981,798,954,857,933,917,919,975,909,1028,901,1106"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#ad0674aa1bff51c30c55e65612b611f0b" title="新しい状態を登録する." alt="" coords="1724,699,2002,741"/>
+<area shape="poly" title=" " alt="" coords="898,1106,917,1002,951,856,973,781,997,714,1025,661,1040,640,1055,626,1101,597,1150,576,1201,562,1253,553,1307,550,1361,552,1469,567,1573,593,1667,625,1748,659,1810,689,1808,694,1745,664,1665,630,1571,598,1468,572,1361,557,1307,555,1254,559,1202,567,1152,581,1103,602,1058,630,1044,644,1029,663,1002,717,978,783,956,857,922,1003,903,1107"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a51ad2669c15aba611fa704eb84001f8c" title=" " alt="" coords="1077,824,1323,867"/>
+<area shape="poly" title=" " alt="" coords="902,1105,921,1057,953,995,998,931,1025,902,1055,877,1062,872,1065,876,1058,881,1029,905,1002,934,958,998,926,1060,907,1107"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a56d452c7dcdd02511b8999a3cdde268a" title=" " alt="" coords="1077,891,1323,933"/>
+<area shape="poly" title=" " alt="" coords="907,1105,931,1069,964,1025,1006,980,1055,943,1065,938,1068,942,1058,948,1010,984,968,1028,935,1072,912,1108"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa008ccb1bfddc97c2c6618cfe1fe9ab9" title=" " alt="" coords="1072,957,1328,1016"/>
+<area shape="poly" title=" " alt="" coords="925,1104,983,1065,1056,1026,1071,1019,1073,1024,1058,1030,986,1069,928,1108"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#acdc0251471c3db50b36db22a1f9b9d83" title=" " alt="" coords="1057,1040,1343,1083"/>
+<area shape="poly" title=" " alt="" coords="995,1103,1084,1084,1086,1089,997,1109"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#ad8d180d215f1e569f1d29f59b606ebf7" title="メンバ変数の初期化" alt="" coords="1091,1107,1309,1149"/>
+<area shape="poly" title=" " alt="" coords="998,1125,1076,1125,1076,1131,998,1131"/>
+<area shape="rect" href="../../d5/dd1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_unit.html#a9ee082d1f5b3806983aa3f3c3c0d3cf6" title="戦闘終了時に呼ばれるハンドラ" alt="" coords="1078,1173,1322,1216"/>
+<area shape="poly" title=" " alt="" coords="997,1147,1086,1167,1084,1172,995,1153"/>
+<area shape="rect" href="../../de/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_hud_distributor.html#ab0b6b663d80d399628453df01d15f719" title="HudHandlerを削除" alt="" coords="1084,405,1316,464"/>
+<area shape="poly" title=" " alt="" coords="897,1106,911,1018,939,885,960,810,986,732,1017,655,1054,583,1075,551,1099,522,1149,472,1153,476,1103,525,1080,554,1059,585,1022,657,991,734,965,811,945,886,916,1019,902,1107"/>
+<area shape="rect" href="../../d3/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_battle_manager.html#af537b7414d677604dbc785e095368417" title="BGMとBGSの続きを再生" alt="" coords="1093,1291,1307,1349"/>
+<area shape="poly" title=" " alt="" coords="917,1148,977,1208,1016,1241,1058,1270,1082,1282,1080,1287,1055,1274,1012,1245,973,1212,913,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#aca0898033e6c728c94d26ad955dc4968" title=" " alt="" coords="1432,1265,1635,1308"/>
+<area shape="poly" title=" " alt="" coords="925,1147,984,1189,1020,1209,1058,1225,1124,1241,1217,1255,1417,1276,1417,1281,1216,1261,1123,1247,1056,1231,1017,1214,981,1193,922,1152"/>
+<area shape="poly" title=" " alt="" coords="910,1149,957,1257,986,1330,1011,1405,1019,1439,1021,1471,1020,1526,1021,1551,1026,1575,1038,1600,1058,1626,1086,1645,1083,1649,1055,1630,1033,1603,1021,1577,1015,1552,1015,1526,1016,1471,1014,1440,1006,1406,981,1332,952,1259,905,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a4716b4bff49f40f8db8ca1ea1fa6197e" title=" " alt="" coords="1089,1373,1311,1416"/>
+<area shape="poly" title=" " alt="" coords="908,1149,928,1193,960,1251,1004,1310,1030,1336,1058,1359,1076,1369,1073,1374,1055,1364,1026,1340,1000,1313,956,1254,923,1196,903,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a7e565c7b07c892b9ea082ecf702dc40a" title=" " alt="" coords="1091,1440,1309,1483"/>
+<area shape="poly" title=" " alt="" coords="904,1149,921,1205,951,1281,971,1321,996,1360,1025,1395,1058,1426,1078,1438,1076,1443,1055,1430,1021,1399,992,1363,967,1323,946,1283,916,1207,899,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a7beae47682975a5e20a57dd4a1842b0f" title=" " alt="" coords="1093,1507,1307,1549"/>
+<area shape="poly" title=" " alt="" coords="908,1149,990,1345,1034,1445,1059,1493,1081,1507,1078,1511,1055,1496,1029,1448,985,1347,903,1151"/>
+<area shape="rect" href="../../dc/d92/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_sound_manager.html#a968fc7606573f4ff48846413f5c1d5c2" title=" " alt="" coords="1094,1573,1306,1616"/>
+<area shape="poly" title=" " alt="" coords="909,1149,955,1258,1011,1405,1022,1451,1025,1490,1033,1525,1043,1542,1058,1559,1082,1575,1079,1580,1055,1563,1038,1545,1028,1527,1019,1491,1016,1452,1006,1406,950,1260,904,1151"/>
+<area shape="poly" title=" " alt="" coords="1276,637,1772,491,1773,497,1277,642"/>
+<area shape="rect" href="../../db/d6c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_event_execution_controller.html#a524c914e37524ca686d99e7a230443fb" title="実行を中断していたイベントの再開" alt="" coords="1422,691,1646,749"/>
+<area shape="poly" title=" " alt="" coords="1302,677,1407,695,1406,700,1301,682"/>
+<area shape="poly" title=" " alt="" coords="1302,657,1477,660,1577,666,1677,676,1765,692,1764,697,1676,681,1577,671,1477,666,1302,662"/>
+<area shape="poly" title=" " alt="" coords="1646,717,1709,717,1709,723,1646,723"/>
+<area shape="rect" href="../../d3/df6/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_input_distributor.html#afd7d620e18f9fe423e982aa6c9c782cb" title="ゲーム状態が変更されたら再登録をかける" alt="" coords="2077,653,2313,712"/>
+<area shape="poly" title=" " alt="" coords="2002,702,2062,695,2063,700,2002,707"/>
+<area shape="rect" href="../../de/d2c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_game_state_handler.html#a90d4308ec6a2f804e3d7b7fd7892b46e" title=" " alt="" coords="2070,736,2320,779"/>
+<area shape="poly" title=" " alt="" coords="2002,733,2056,739,2055,744,2002,738"/>
+<area shape="poly" title=" " alt="" coords="1307,402,1440,365,1442,370,1308,407"/>
+<area shape="poly" title=" " alt="" coords="1316,423,1730,391,1731,397,1317,428"/>
+<area shape="poly" title=" " alt="" coords="1317,438,1735,459,1735,464,1316,443"/>
+<area shape="poly" title=" " alt="" coords="1307,1307,1417,1296,1418,1301,1308,1312"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1432,1640,1635,1683"/>
+<area shape="poly" title=" " alt="" coords="1302,1659,1417,1659,1417,1664,1302,1664"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1756,1640,1970,1683"/>
+<area shape="poly" title=" " alt="" coords="1636,1659,1742,1659,1742,1664,1636,1664"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="2067,1260,2323,1319"/>
+<area shape="poly" title=" " alt="" coords="1868,1639,1888,1577,1924,1493,1948,1449,1977,1405,2010,1364,2048,1329,2053,1325,2056,1329,2051,1333,2014,1368,1981,1408,1953,1451,1929,1496,1893,1579,1873,1640"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="2067,1343,2323,1401"/>
+<area shape="poly" title=" " alt="" coords="1872,1638,1897,1591,1935,1530,1986,1466,2016,1437,2048,1411,2055,1407,2058,1411,2051,1416,2019,1441,1990,1469,1940,1533,1902,1594,1877,1641"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="2066,1425,2324,1484"/>
+<area shape="poly" title=" " alt="" coords="1881,1638,1950,1567,1997,1528,2048,1494,2059,1488,2062,1493,2051,1498,2000,1532,1953,1571,1884,1642"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="2050,1508,2340,1567"/>
+<area shape="poly" title=" " alt="" coords="1907,1637,1973,1607,2049,1576,2069,1569,2070,1574,2051,1581,1976,1612,1910,1642"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="2057,1591,2333,1649"/>
+<area shape="poly" title=" " alt="" coords="1970,1645,2042,1636,2043,1642,1971,1651"/>
+<area shape="rect" href="../../db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="2060,1673,2330,1732"/>
+<area shape="poly" title=" " alt="" coords="1971,1672,2046,1681,2045,1687,1970,1677"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="2067,1756,2323,1815"/>
+<area shape="poly" title=" " alt="" coords="1910,1681,1976,1711,2051,1742,2070,1748,2069,1753,2049,1746,1973,1716,1907,1686"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="2067,1839,2323,1897"/>
+<area shape="poly" title=" " alt="" coords="1884,1681,1953,1752,2000,1791,2051,1824,2062,1830,2059,1835,2048,1829,1997,1795,1950,1755,1881,1685"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="2067,1921,2323,1980"/>
+<area shape="poly" title=" " alt="" coords="1877,1682,1902,1729,1940,1790,1990,1853,2019,1882,2051,1907,2058,1912,2055,1916,2048,1912,2016,1886,1986,1857,1935,1793,1897,1731,1872,1684"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="2067,2004,2323,2063"/>
+<area shape="poly" title=" " alt="" coords="1873,1682,1893,1744,1929,1827,1953,1871,1981,1915,2014,1955,2051,1990,2056,1994,2053,1998,2048,1994,2010,1959,1977,1918,1948,1874,1924,1829,1888,1746,1868,1684"/>
+<area shape="poly" title=" " alt="" coords="950,367,980,349,1007,326,1023,300,1028,274,1035,249,1043,236,1055,223,1067,215,1070,219,1058,227,1047,239,1040,251,1034,276,1028,302,1011,330,983,353,952,371"/>
+<area shape="poly" title=" " alt="" coords="946,366,1134,284,1136,289,948,371"/>
+<area shape="poly" title=" " alt="" coords="1007,379,1391,350,1391,355,1007,385"/>
+<area shape="poly" title=" " alt="" coords="902,412,914,481,940,576,960,627,987,676,1019,721,1058,759,1094,783,1127,796,1159,802,1191,802,1260,799,1299,801,1344,809,1368,818,1392,825,1472,839,1535,845,1597,842,1676,825,1717,811,1756,791,1822,748,1825,753,1759,796,1719,816,1677,831,1598,847,1535,851,1471,844,1390,831,1366,823,1342,815,1299,807,1260,805,1191,807,1159,807,1126,801,1092,788,1055,763,1015,724,982,679,956,629,935,578,908,482,897,413"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a94b4a9d9aec9347922dc440b8321629f" title="メニュー以下を全部非表示にする" alt="" coords="1098,707,1302,749"/>
+<area shape="poly" title=" " alt="" coords="904,412,920,469,950,545,971,586,996,625,1025,661,1058,693,1086,708,1083,713,1055,697,1021,665,991,628,966,588,945,547,915,470,899,413"/>
+<area shape="poly" title=" " alt="" coords="1302,723,1406,720,1407,726,1302,728"/>
+<area shape="rect" href="../../d4/d87/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_menu_base.html#a09c9b32db375ba2624e228c47fcbc64f" title="GameState切り替え処理" alt="" coords="1421,773,1647,816"/>
+<area shape="poly" title=" " alt="" coords="1302,746,1410,767,1409,773,1301,751"/>
+<area shape="poly" title=" " alt="" coords="1631,770,1751,743,1752,748,1632,775"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_icgraph.png" border="0" usemap="#ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_icgraph" alt=""/></div>
+<map name="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_icgraph" id="ada/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor_a936fc57bf42c48612e787e569ccf9b3c_icgraph">
+<area shape="rect" title=" " alt="" coords="280,5,506,64"/>
+<area shape="rect" href="../../da/d48/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_event_1_1_screen_1_1_game_over_processor.html#a8bdcf1390df1e7e2fc6f52900e84e235" title="イベント実行処理" alt="" coords="5,5,232,64"/>
+<area shape="poly" title=" " alt="" coords="264,37,232,37,232,32,264,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Runtime/Event/Screen/<a class="el" href="../../d6/d11/_game_over_processor_8cs.html">GameOverProcessor.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

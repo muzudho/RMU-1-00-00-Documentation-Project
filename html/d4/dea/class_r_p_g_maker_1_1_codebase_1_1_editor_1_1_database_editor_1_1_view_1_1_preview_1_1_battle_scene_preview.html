@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="#pri-static-attribs">静的非公開変数類</a> &#124;
 <a href="../../d8/d1e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview クラス</div></div>
 </div><!--header-->
@@ -82,18 +84,651 @@ $(function() {
 
 <p>バトルシーン用のプレビュー  
  <a href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/d10/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_view_8_preview_8_battle_scene_preview_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_view_8_preview_8_battle_scene_preview_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_database_editor_8_view_8_preview_8_battle_scene_preview_coll__map">
+<area shape="rect" title="バトルシーン用のプレビュー" alt="" coords="3374,708,3602,767"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html" title="戦闘シーン用のスプライトセット。[背景][アクター][敵キャラ]を含む Unite用に作り替えている" alt="" coords="1984,737,2188,780"/>
+<area shape="poly" title=" " alt="" coords="2105,724,2130,689,2163,650,2204,613,2251,586,2294,572,2347,563,2407,559,2475,559,2625,569,2789,590,2955,618,3115,649,3374,707,3373,712,3114,654,2955,623,2788,595,2625,575,2475,565,2408,565,2347,569,2295,577,2253,590,2207,618,2167,654,2134,692,2109,727"/>
+<area shape="rect" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html" title="バトルシーン用のプレビュー" alt="" coords="2560,719,2789,777"/>
+<area shape="poly" title=" " alt="" coords="2202,754,2560,747,2560,753,2202,759"/>
+<area shape="rect" title=" " alt="" coords="453,884,563,911"/>
+<area shape="poly" title=" " alt="" coords="532,920,585,972,619,999,655,1023,764,1078,861,1116,950,1139,1036,1150,1124,1151,1219,1144,1449,1116,1597,1103,1660,1096,1717,1086,1769,1069,1819,1042,1868,1001,1917,944,1928,925,1931,908,1928,872,1925,837,1929,818,1942,800,1960,783,1982,772,1985,776,1963,788,1946,803,1934,820,1930,837,1933,872,1936,908,1933,927,1922,947,1872,1005,1822,1046,1771,1074,1718,1091,1660,1102,1597,1108,1449,1121,1220,1149,1125,1156,1036,1155,949,1144,859,1121,762,1083,653,1028,616,1004,582,976,529,924"/>
+<area shape="rect" href="../../de/db2/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite.html" title="Unity用の部品" alt="" coords="973,876,1177,919"/>
+<area shape="poly" title=" " alt="" coords="577,895,973,895,973,900,577,900"/>
+<area shape="rect" href="../../d2/dcb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_control_character_1_1_control_character.html" title="制御キャラクター" alt="" coords="1700,323,1920,381"/>
+<area shape="poly" title=" " alt="" coords="536,873,606,821,706,754,825,684,888,652,951,624,989,613,1023,609,1083,611,1111,611,1138,607,1166,595,1196,574,1206,558,1207,540,1209,521,1220,502,1255,478,1303,456,1363,436,1430,418,1571,387,1700,365,1700,370,1572,392,1431,423,1365,441,1305,461,1257,483,1224,506,1214,523,1213,540,1211,559,1200,578,1169,600,1139,612,1111,616,1083,616,1023,615,990,618,953,629,890,657,827,689,709,758,609,826,540,877"/>
+<area shape="rect" title=" " alt="" coords="462,395,554,421"/>
+<area shape="poly" title=" " alt="" coords="568,402,713,398,897,399,989,403,1074,411,1146,423,1199,440,1208,447,1212,454,1223,469,1268,490,1347,521,1569,596,2012,734,2011,739,1568,601,1345,526,1266,495,1220,473,1208,457,1204,451,1196,445,1144,428,1073,416,989,408,896,404,713,403,568,408"/>
+<area shape="rect" href="../../dd/d83/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_state_overlay.html" title="ステート画像(img/system/States.png)のスプライト" alt="" coords="969,455,1181,497"/>
+<area shape="poly" title=" " alt="" coords="561,424,606,438,654,449,736,461,819,468,969,474,968,480,819,474,736,466,654,455,605,443,559,429"/>
+<area shape="rect" href="../../d7/d4e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_state_icon.html" title="ステートアイコン( img/system/IconSet.png )表示用スプライト" alt="" coords="973,1057,1177,1100"/>
+<area shape="poly" title=" " alt="" coords="561,426,599,448,632,480,645,504,648,525,649,547,657,572,717,721,742,783,768,838,799,890,837,940,888,990,954,1043,974,1055,971,1060,951,1048,885,994,833,943,794,893,763,841,737,785,712,723,651,574,644,548,643,526,639,505,628,483,596,452,559,430"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html" title="タイトル用のプレビュー" alt="" coords="3862,1273,4081,1332"/>
+<area shape="poly" title=" " alt="" coords="566,425,603,448,619,462,632,480,642,503,649,530,654,595,651,672,645,753,639,835,636,911,641,976,647,1002,656,1024,684,1064,713,1091,745,1110,778,1123,850,1151,889,1171,930,1201,942,1215,954,1227,998,1242,1057,1251,1197,1258,1340,1260,1401,1263,1450,1271,1576,1307,1680,1348,1769,1391,1850,1436,1932,1480,2021,1521,2125,1557,2252,1588,2331,1598,2393,1597,2456,1592,2536,1588,2729,1591,2879,1595,3028,1595,3220,1581,3335,1567,3526,1538,3714,1503,3782,1485,3820,1469,3823,1473,3784,1490,3715,1508,3527,1544,3335,1572,3220,1587,3028,1600,2879,1601,2729,1596,2536,1593,2456,1597,2393,1602,2331,1603,2252,1593,2124,1563,2019,1526,1930,1484,1848,1441,1767,1396,1678,1353,1574,1312,1448,1276,1400,1269,1340,1265,1197,1263,1056,1256,997,1247,951,1232,938,1219,926,1205,886,1175,848,1155,776,1128,742,1114,710,1095,680,1067,652,1027,642,1004,636,976,631,911,634,834,640,753,646,671,649,596,644,531,637,504,628,483,615,466,599,452,563,430"/>
+<area shape="poly" title=" " alt="" coords="3820,1469,3829,1456,3833,1443,3835,1429,3843,1412,3883,1367,3926,1331,3929,1335,3887,1371,3848,1415,3840,1430,3838,1444,3834,1459,3823,1473"/>
+<area shape="rect" href="../../d1/d66/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_asset_manage_preview.html" title=" " alt="" coords="3857,255,4086,313"/>
+<area shape="poly" title=" " alt="" coords="523,380,545,349,574,313,611,277,653,248,711,220,762,200,810,187,855,180,952,178,1074,180,3098,180,3857,268,3856,273,3098,185,1074,185,952,183,856,186,811,192,764,205,713,224,655,253,614,281,578,316,549,352,527,383"/>
+<area shape="rect" href="../../de/d3a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_character_actor_1_1_character_actor_data_model.html" title="キャラクター・アクター・データ・モデル" alt="" coords="952,220,1198,279"/>
+<area shape="poly" title=" " alt="" coords="544,385,595,358,653,333,729,310,807,291,952,263,953,269,808,296,731,315,655,339,597,363,546,389"/>
+<area shape="rect" href="../../d3/dc8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_animation_preview.html" title=" " alt="" coords="3845,113,4098,172"/>
+<area shape="poly" title=" " alt="" coords="517,380,536,339,565,288,604,237,627,215,653,195,709,162,759,138,806,123,852,115,950,111,1074,113,3490,113,3676,119,3845,129,3845,135,3676,124,3489,119,1074,119,950,117,852,120,807,128,761,143,711,166,655,200,631,219,608,241,570,291,541,341,522,383"/>
+<area shape="rect" href="../../d1/d39/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_scene_element.html" title="プレビューシーンを持ったVisualElement。" alt="" coords="1222,325,1449,384"/>
+<area shape="poly" title=" " alt="" coords="568,401,1221,359,1221,365,569,407"/>
+<area shape="rect" href="../../d0/dd2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1_1_system_setting_data_model.html" title="システム設定データ・モデル" alt="" coords="386,1276,630,1335"/>
+<area shape="poly" title=" " alt="" coords="644,1300,975,1288,1378,1264,1570,1246,1734,1223,1801,1210,1855,1195,1895,1179,1918,1162,1925,1149,1931,1133,1935,1090,1929,983,1923,876,1928,832,1941,800,1960,782,1982,770,1985,775,1963,787,1946,803,1933,833,1929,876,1935,983,1941,1090,1936,1134,1930,1151,1922,1166,1897,1184,1857,1200,1802,1215,1735,1228,1570,1251,1379,1269,975,1293,644,1305"/>
+<area shape="rect" href="../../d3/d5b/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_actor.html" title="サイドビューのアクター表示用のスプライト" alt="" coords="1473,737,1676,780"/>
+<area shape="poly" title=" " alt="" coords="512,1261,525,1195,550,1116,568,1076,591,1038,619,1004,653,975,689,964,751,957,922,950,1094,948,1197,944,1328,931,1383,917,1448,887,1482,863,1512,834,1557,779,1561,782,1516,837,1485,867,1450,892,1385,922,1329,936,1198,949,1095,953,922,955,752,962,690,969,655,980,623,1007,595,1041,573,1078,555,1118,530,1196,517,1262"/>
+<area shape="rect" href="../../d8/de8/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_enemy.html" title="戦闘中の[敵キャラ]のパラメータの取得、画像の設定を行うクラス" alt="" coords="973,1175,1177,1217"/>
+<area shape="poly" title=" " alt="" coords="644,1276,972,1213,973,1218,645,1282"/>
+<area shape="rect" href="../../d8/dc3/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_menu_preview.html" title="タイトル用のプレビュー" alt="" coords="3858,847,4085,905"/>
+<area shape="poly" title=" " alt="" coords="645,1304,654,1304,928,1304,1198,1293,1449,1280,1676,1259,2144,1206,2507,1157,3336,1033,3379,1029,3418,1029,3484,1032,3514,1031,3545,1026,3578,1013,3615,993,3623,984,3626,974,3630,963,3639,953,3676,934,3731,917,3857,891,3858,896,3732,922,3678,939,3642,957,3634,966,3631,976,3627,987,3618,997,3580,1018,3547,1031,3515,1036,3484,1038,3418,1034,3380,1035,3336,1039,2508,1162,2145,1211,1677,1264,1449,1285,1198,1299,928,1309,654,1309,645,1309"/>
+<area shape="rect" href="../../d5/dc1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_preview.html" title="ゲーム用のプレビュー" alt="" coords="3857,1104,4086,1163"/>
+<area shape="poly" title=" " alt="" coords="578,1339,655,1372,770,1412,861,1440,953,1456,1074,1461,1811,1461,2103,1463,2589,1458,2841,1448,3067,1432,3161,1421,3240,1407,3298,1391,3334,1373,3344,1361,3348,1349,3346,1323,3344,1295,3348,1281,3358,1267,3389,1243,3419,1230,3448,1224,3477,1224,3540,1229,3576,1228,3616,1223,3745,1192,3864,1161,3865,1166,3746,1197,3617,1228,3577,1234,3540,1234,3477,1229,3448,1230,3420,1235,3392,1248,3362,1271,3353,1283,3349,1296,3351,1323,3353,1350,3348,1364,3338,1377,3300,1396,3241,1413,3162,1426,3067,1438,2842,1454,2589,1463,2103,1468,1811,1467,1074,1467,953,1461,859,1445,768,1417,653,1377,575,1344"/>
+<area shape="rect" href="../../df/d0c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_17ce0ed53697912195b01e8a552e37932.html" title=" " alt="" coords="9,1193,254,1252"/>
+<area shape="poly" title=" " alt="" coords="269,1250,386,1276,385,1281,268,1255"/>
+<area shape="rect" href="../../d8/d7d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_13c37c0ac7a3e126c1b06c1462a6db3a9.html" title=" " alt="" coords="9,1276,254,1335"/>
+<area shape="poly" title=" " alt="" coords="269,1303,385,1303,385,1308,269,1308"/>
+<area shape="rect" href="../../dc/dfb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1539107dbc80fc9072f4fd2f8782921fe.html" title=" " alt="" coords="9,1359,254,1417"/>
+<area shape="poly" title=" " alt="" coords="268,1355,385,1330,386,1335,269,1361"/>
+<area shape="rect" href="../../d8/d86/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_10d0bcdd35160aa829ac5668189dd2dd2.html" title=" " alt="" coords="5,1441,258,1500"/>
+<area shape="poly" title=" " alt="" coords="241,1433,257,1427,361,1379,451,1333,453,1338,363,1384,259,1432,243,1438"/>
+<area shape="rect" href="../../d9/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_system_setting_1fc90e68ad3a4642899cf508b2c75ae0f.html" title=" " alt="" coords="6,1111,257,1169"/>
+<area shape="poly" title=" " alt="" coords="243,1173,259,1179,363,1227,453,1273,451,1278,361,1231,257,1184,241,1177"/>
+<area shape="poly" title=" " alt="" coords="1691,756,1984,756,1984,761,1691,761"/>
+<area shape="rect" href="../../da/d4d/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_battler.html" title="戦闘シーンで表示されるキャラ画像" alt="" coords="1028,1007,1122,1033"/>
+<area shape="poly" title=" " alt="" coords="1136,1010,1320,985,1403,970,1448,956,1471,938,1491,916,1525,867,1549,819,1564,779,1569,781,1554,821,1529,870,1495,920,1474,942,1450,961,1404,975,1321,990,1137,1015"/>
+<area shape="rect" href="../../d3/d60/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_enemy.html" title="[敵キャラ]表示用のスプライトクラス" alt="" coords="1473,1008,1676,1051"/>
+<area shape="poly" title=" " alt="" coords="1136,1018,1472,1025,1472,1030,1136,1024"/>
+<area shape="rect" href="../../db/dfc/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_actor.html" title="アクターのパラメータの取得、画像の設定、戦闘の処理とサイドビュー時の画像処理を行うクラス" alt="" coords="973,639,1177,681"/>
+<area shape="poly" title=" " alt="" coords="1192,670,1349,689,1450,704,1492,718,1531,734,1528,739,1490,723,1448,709,1348,694,1191,675"/>
+<area shape="rect" href="../../db/d42/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_base.html" title="アニメーションする表示物のためのクラス" alt="" coords="973,809,1177,852"/>
+<area shape="poly" title=" " alt="" coords="1191,811,1472,771,1473,776,1192,817"/>
+<area shape="poly" title=" " alt="" coords="1029,792,1046,785,1075,783,1101,785,1118,790,1126,799,1124,809,1119,808,1121,801,1115,795,1100,790,1075,788,1047,790,1031,797"/>
+<area shape="rect" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html" title="資産管理データ・モデル" alt="" coords="389,493,627,552"/>
+<area shape="poly" title=" " alt="" coords="578,557,653,594,745,635,848,675,953,707,1053,723,1193,736,1473,752,1473,757,1192,741,1053,728,952,712,846,680,743,640,650,599,575,561"/>
+<area shape="poly" title=" " alt="" coords="642,516,780,508,928,496,968,491,969,496,929,501,780,514,642,521"/>
+<area shape="rect" href="../../db/d90/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_sprite_weapon.html" title="武器(img/system/WeaponsX.png)のスプライト" alt="" coords="973,521,1177,564"/>
+<area shape="poly" title=" " alt="" coords="642,542,654,543,822,548,973,545,973,551,822,554,654,548,642,547"/>
+<area shape="rect" title=" " alt="" coords="37,208,226,235"/>
+<area shape="poly" title=" " alt="" coords="161,243,260,327,387,431,466,491,463,495,384,435,256,331,158,247"/>
+<area shape="rect" href="../../d6/da9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_troop_1_1_troop_data_model.html" title="部隊データ・モデル" alt="" coords="1944,528,2228,571"/>
+<area shape="poly" title=" " alt="" coords="234,235,1449,436,1961,525,1960,530,1449,441,233,240"/>
+<area shape="poly" title=" " alt="" coords="241,222,952,243,952,248,240,227"/>
+<area shape="rect" href="../../db/dab/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_animation_1_1_animation_data_model.html" title="アニメーション・データ・モデル" alt="" coords="654,15,928,73"/>
+<area shape="poly" title=" " alt="" coords="161,197,215,161,281,128,375,98,473,76,568,61,653,51,654,56,569,66,474,81,377,103,283,133,217,165,164,201"/>
+<area shape="poly" title=" " alt="" coords="1191,885,1316,866,1383,850,1448,830,1499,805,1542,778,1545,783,1501,810,1450,834,1385,855,1318,871,1192,891"/>
+<area shape="poly" title=" " alt="" coords="1195,504,1200,508,1211,527,1212,546,1213,564,1224,581,1251,598,1278,605,1304,606,1331,602,1387,594,1417,598,1450,611,1488,638,1520,672,1546,706,1564,736,1560,738,1542,709,1516,675,1485,642,1448,616,1416,603,1387,600,1332,607,1305,611,1277,611,1249,603,1220,585,1208,566,1206,547,1206,528,1196,511,1192,508"/>
+<area shape="poly" title=" " alt="" coords="1118,570,1166,601,1223,627,1256,636,1285,640,1336,640,1388,640,1417,646,1450,658,1481,674,1510,694,1555,735,1551,739,1507,698,1478,679,1448,662,1416,651,1387,646,1336,645,1284,645,1255,641,1221,632,1164,606,1115,575"/>
+<area shape="poly" title=" " alt="" coords="1615,997,1756,901,1847,847,1943,799,1998,778,2000,783,1945,804,1850,852,1759,906,1618,1001"/>
+<area shape="poly" title=" " alt="" coords="1186,1168,1313,1133,1448,1088,1533,1049,1535,1054,1450,1093,1314,1139,1187,1173"/>
+<area shape="poly" title=" " alt="" coords="1191,1069,1315,1060,1449,1047,1472,1044,1473,1049,1449,1052,1316,1065,1192,1075"/>
+<area shape="poly" title=" " alt="" coords="2159,520,2305,476,2399,454,2503,435,2613,422,2726,418,2839,424,2895,433,2949,445,3015,465,3069,485,3115,507,3157,532,3238,591,3338,670,3350,683,3362,694,3383,705,3381,710,3358,698,3346,686,3334,674,3234,595,3154,536,3113,512,3067,490,3013,470,2948,451,2894,438,2839,430,2726,423,2613,427,2504,440,2401,459,2307,481,2160,525"/>
+<area shape="poly" title=" " alt="" coords="2166,573,2586,716,2584,721,2164,578"/>
+<area shape="rect" title=" " alt="" coords="1548,1191,1601,1217"/>
+<area shape="poly" title=" " alt="" coords="1615,1190,1683,1165,1768,1125,1810,1098,1851,1068,1887,1032,1917,992,1926,969,1931,938,1932,861,1932,783,1935,750,1941,724,1966,677,1997,634,2058,569,2062,573,2001,637,1970,680,1946,726,1940,751,1938,784,1938,861,1936,938,1931,970,1922,995,1891,1036,1854,1072,1813,1103,1770,1130,1686,1170,1617,1195"/>
+<area shape="rect" href="../../d3/d9a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_event_1_1_event_data_model.html" title="イベント・データ・モデル" alt="" coords="2252,1488,2536,1531"/>
+<area shape="poly" title=" " alt="" coords="1617,1211,1763,1246,1957,1296,2133,1349,2196,1373,2230,1393,2238,1404,2242,1416,2242,1439,2242,1461,2246,1471,2254,1481,2259,1485,2256,1490,2250,1485,2241,1473,2237,1462,2237,1439,2237,1417,2234,1407,2226,1397,2193,1378,2132,1354,1955,1301,1762,1251,1615,1216"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html" title="データベースエディター用シーンウィンドウ." alt="" coords="2973,761,3220,804"/>
+<area shape="poly" title=" " alt="" coords="3235,764,3373,748,3374,753,3235,769"/>
+<area shape="rect" href="../../d3/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_abstract_preview.html" title=" " alt="" coords="3431,1052,3545,1079"/>
+<area shape="poly" title=" " alt="" coords="3116,816,3137,855,3166,901,3202,947,3246,986,3291,1012,3340,1032,3388,1046,3431,1055,3430,1060,3387,1051,3338,1037,3288,1017,3242,990,3199,950,3162,904,3132,858,3111,818"/>
+<area shape="poly" title=" " alt="" coords="2958,794,2886,794,2812,788,2773,781,2774,775,2813,783,2886,789,2958,789"/>
+<area shape="rect" href="../../d3/d80/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_scroll_preview.html" title=" " alt="" coords="3858,617,4085,676"/>
+<area shape="poly" title=" " alt="" coords="3119,748,3172,686,3206,653,3242,624,3296,591,3343,567,3387,550,3430,539,3523,526,3640,515,3732,501,3773,502,3822,515,3861,534,3896,561,3949,615,3945,619,3892,565,3858,539,3820,520,3772,507,3733,506,3641,520,3523,531,3431,544,3389,555,3345,572,3298,596,3246,629,3209,657,3176,690,3123,751"/>
+<area shape="rect" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_base_window.html" title="メニュー、ヒエラルキー、シーン、インスペクターウィンドウの基底抽象クラス." alt="" coords="2626,813,2723,840"/>
+<area shape="poly" title=" " alt="" coords="2738,818,2948,796,2972,794,2972,799,2949,801,2738,823"/>
+<area shape="rect" title=" " alt="" coords="2035,813,2137,840"/>
+<area shape="poly" title=" " alt="" coords="2152,824,2625,824,2625,829,2152,829"/>
+<area shape="poly" title=" " alt="" coords="3847,1288,3686,1259,3506,1219,3421,1195,3346,1168,3284,1138,3242,1106,3212,1068,3185,1027,3144,942,3116,863,3100,805,3105,804,3121,861,3149,940,3190,1025,3216,1065,3246,1102,3287,1134,3348,1163,3423,1190,3508,1214,3687,1254,3848,1282"/>
+<area shape="poly" title=" " alt="" coords="3560,1075,3618,1095,3642,1112,3788,1201,3915,1271,3912,1275,3786,1205,3639,1117,3615,1100,3559,1081"/>
+<area shape="poly" title=" " alt="" coords="3539,1043,3581,1018,3599,1001,3614,981,3627,943,3632,892,3627,768,3622,643,3626,590,3638,550,3663,508,3694,470,3728,435,3765,403,3839,350,3906,312,3909,316,3842,355,3768,407,3732,439,3698,473,3667,511,3643,552,3631,591,3628,643,3633,767,3637,892,3632,944,3619,984,3603,1005,3584,1022,3542,1048"/>
+<area shape="poly" title=" " alt="" coords="3559,1053,3588,1044,3615,1031,3627,1018,3639,1005,3686,978,3727,964,3769,953,3820,936,3900,903,3902,908,3822,941,3770,958,3728,969,3688,983,3642,1009,3630,1022,3618,1035,3590,1049,3561,1058"/>
+<area shape="poly" title=" " alt="" coords="3560,1073,3857,1115,3857,1120,3560,1078"/>
+<area shape="rect" href="../../dd/da6/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_talk_window_preview.html" title="会話ウィンドウ用のプレビュー" alt="" coords="3862,420,4081,479"/>
+<area shape="poly" title=" " alt="" coords="3539,1043,3581,1018,3599,1001,3614,981,3623,953,3627,915,3623,822,3621,729,3626,691,3638,663,3658,642,3679,629,3701,623,3723,621,3769,617,3794,611,3820,598,3858,570,3892,538,3946,477,3950,481,3896,541,3861,574,3823,602,3796,616,3770,622,3724,626,3702,629,3681,634,3662,646,3643,665,3631,692,3626,729,3628,821,3632,915,3629,954,3619,984,3603,1005,3584,1022,3542,1048"/>
+<area shape="poly" title=" " alt="" coords="3537,1043,3579,1017,3598,1000,3614,981,3622,965,3626,949,3624,919,3623,889,3628,873,3638,857,3660,837,3681,825,3702,819,3724,816,3770,811,3794,804,3820,791,3857,764,3891,733,3945,675,3949,678,3895,737,3860,768,3823,796,3796,809,3771,816,3725,821,3703,824,3683,830,3663,841,3642,860,3633,875,3628,890,3629,919,3631,950,3627,967,3619,984,3602,1004,3582,1021,3540,1047"/>
+<area shape="rect" href="../../da/d33/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_jump_preview.html" title="イベントコマンド『ジャンプ』のプレビュー。" alt="" coords="3859,1425,4084,1484"/>
+<area shape="poly" title=" " alt="" coords="3561,1066,3592,1076,3618,1096,3636,1124,3641,1151,3638,1179,3631,1206,3625,1232,3622,1259,3627,1285,3642,1312,3662,1330,3682,1341,3702,1346,3722,1348,3769,1349,3794,1354,3822,1363,3879,1392,3929,1423,3926,1427,3876,1396,3820,1368,3793,1359,3768,1355,3722,1353,3701,1352,3680,1346,3659,1335,3638,1315,3622,1287,3617,1259,3619,1231,3626,1204,3633,1178,3635,1152,3631,1125,3614,1099,3589,1081,3559,1071"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html" title=" " alt="" coords="3857,960,4086,1019"/>
+<area shape="poly" title=" " alt="" coords="3559,1050,3640,1036,3856,1003,3857,1008,3641,1041,3560,1055"/>
+<area shape="poly" title=" " alt="" coords="3540,1043,3581,1018,3600,1001,3614,981,3623,960,3630,933,3636,869,3634,794,3629,713,3621,556,3625,490,3638,439,3663,393,3694,350,3730,310,3768,274,3846,213,3914,170,3917,175,3849,218,3772,278,3734,314,3699,353,3668,395,3643,441,3630,491,3627,556,3635,713,3640,794,3641,869,3635,934,3628,961,3619,984,3604,1005,3585,1022,3543,1048"/>
+<area shape="rect" href="../../d3/dc0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_custom_move_preview.html" title=" " alt="" coords="3852,1577,4091,1636"/>
+<area shape="poly" title=" " alt="" coords="3561,1065,3592,1076,3618,1096,3630,1119,3635,1152,3634,1232,3632,1312,3635,1345,3643,1370,3667,1405,3696,1439,3728,1469,3762,1496,3833,1541,3898,1574,3896,1579,3831,1546,3759,1500,3724,1473,3692,1442,3663,1409,3638,1372,3630,1346,3627,1312,3629,1231,3630,1152,3625,1121,3614,1099,3590,1080,3559,1070"/>
+<area shape="rect" title=" " alt="" coords="3073,1479,3120,1505"/>
+<area shape="poly" title=" " alt="" coords="3134,1493,3221,1499,3341,1501,3478,1494,3548,1485,3616,1471,3704,1442,3789,1405,3864,1365,3923,1330,3926,1335,3867,1370,3791,1410,3706,1447,3617,1476,3549,1490,3479,1499,3341,1506,3221,1504,3134,1498"/>
+<area shape="poly" title=" " alt="" coords="3129,1468,3176,1432,3233,1381,3288,1320,3313,1286,3334,1251,3342,1229,3344,1209,3340,1171,3338,1134,3344,1115,3358,1096,3373,1082,3392,1073,3430,1064,3431,1069,3393,1078,3376,1087,3362,1099,3349,1117,3344,1135,3345,1170,3349,1209,3347,1230,3338,1253,3317,1289,3293,1324,3236,1385,3179,1436,3132,1472"/>
+<area shape="rect" href="../../d8/d0e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_commons.html" title="Runtime, Editorのプレビュー, EditorのUIで共用するもの。" alt="" coords="2995,1529,3198,1572"/>
+<area shape="poly" title=" " alt="" coords="3209,1520,3219,1515,3260,1488,3289,1464,3312,1433,3333,1390,3340,1363,3342,1327,3339,1240,3339,1156,3345,1121,3358,1096,3373,1082,3391,1072,3430,1063,3431,1068,3393,1077,3376,1086,3362,1099,3350,1123,3345,1156,3345,1240,3348,1327,3345,1363,3339,1392,3316,1436,3293,1467,3263,1493,3221,1520,3212,1525"/>
+<area shape="poly" title=" " alt="" coords="3153,1576,3249,1617,3304,1636,3361,1649,3432,1662,3489,1668,3545,1664,3616,1649,3663,1635,3709,1616,3797,1571,3873,1524,3931,1482,3934,1487,3876,1528,3799,1576,3711,1621,3664,1640,3617,1655,3546,1670,3489,1673,3431,1667,3359,1655,3303,1641,3247,1622,3151,1581"/>
+<area shape="rect" href="../../d7/da2/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_runtime_1_1_runtime_title_data_model.html" title="実行時タイトル・データ・モデル" alt="" coords="3361,1281,3615,1340"/>
+<area shape="poly" title=" " alt="" coords="3630,1306,3862,1302,3862,1307,3630,1311"/>
+<area shape="poly" title=" " alt="" coords="3843,299,3735,315,3612,341,3484,378,3421,402,3361,429,3310,461,3265,502,3224,549,3190,598,3138,692,3108,762,3103,760,3133,690,3186,595,3220,546,3261,499,3307,457,3359,424,3419,397,3482,373,3611,335,3734,310,3842,293"/>
+<area shape="poly" title=" " alt="" coords="3843,863,3821,860,3220,797,3220,792,3822,855,3844,857"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html" title=" " alt="" coords="3360,855,3616,913"/>
+<area shape="poly" title=" " alt="" coords="3631,879,3858,875,3858,881,3631,884"/>
+<area shape="rect" href="../../db/dd5/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_ui_setting_1_1_ui_setting_data_model.html" title="ユーザー・インターフェース・設定データ・モデル" alt="" coords="3375,625,3602,684"/>
+<area shape="poly" title=" " alt="" coords="3599,687,3617,694,3722,736,3823,786,3924,844,3921,848,3820,790,3719,741,3615,698,3598,692"/>
+<area shape="poly" title=" " alt="" coords="3615,691,3618,694,3635,721,3641,747,3640,773,3635,798,3627,848,3631,874,3643,903,3667,938,3696,970,3762,1025,3832,1069,3896,1101,3894,1106,3829,1074,3759,1029,3692,973,3663,941,3638,905,3625,876,3622,848,3630,797,3635,772,3636,748,3630,723,3614,698,3611,694"/>
+<area shape="poly" title=" " alt="" coords="3583,617,3615,604,3772,537,3905,477,3907,482,3774,542,3617,609,3585,622"/>
+<area shape="poly" title=" " alt="" coords="3616,650,3857,646,3857,651,3616,655"/>
+<area shape="poly" title=" " alt="" coords="3843,1149,3737,1153,3614,1150,3485,1137,3421,1125,3359,1109,3322,1097,3295,1083,3270,1065,3242,1038,3193,978,3153,912,3123,851,3103,805,3108,803,3128,849,3158,909,3197,974,3246,1034,3274,1061,3298,1079,3324,1092,3361,1104,3422,1120,3486,1132,3615,1145,3737,1147,3842,1143"/>
+<area shape="poly" title=" " alt="" coords="2803,752,2949,763,2972,765,2972,770,2948,768,2803,757"/>
+<area shape="poly" title=" " alt="" coords="3847,443,3740,443,3617,449,3487,468,3423,483,3361,502,3314,525,3272,555,3233,590,3199,628,3144,704,3111,762,3106,759,3140,701,3195,625,3229,586,3268,551,3312,520,3359,498,3421,478,3486,463,3616,444,3740,437,3847,438"/>
+<area shape="poly" title=" " alt="" coords="1213,267,1385,286,1479,292,1573,295,3098,295,3234,308,3461,338,3687,372,3822,396,3892,417,3891,422,3821,401,3686,378,3460,344,3234,313,3098,300,1573,300,1479,298,1384,291,1212,272"/>
+<area shape="poly" title=" " alt="" coords="1935,348,2262,348,2729,357,2995,366,3271,379,3549,397,3822,421,3862,427,3862,432,3821,427,3549,402,3270,384,2995,371,2729,362,2262,354,1935,353"/>
+<area shape="poly" title=" " alt="" coords="3843,632,3716,618,3577,608,3451,605,3400,609,3361,616,3288,646,3221,686,3164,728,3123,763,3119,759,3161,723,3218,681,3286,641,3359,611,3399,603,3451,600,3577,602,3716,613,3843,627"/>
+<area shape="poly" title=" " alt="" coords="3844,1441,3539,1400,3359,1370,3339,1353,3318,1329,3278,1265,3239,1186,3202,1098,3139,925,3102,805,3107,804,3144,923,3207,1096,3244,1183,3283,1263,3323,1326,3342,1349,3361,1366,3540,1394,3844,1436"/>
+<area shape="poly" title=" " alt="" coords="2537,1533,2537,1534,2593,1560,2636,1590,2706,1655,2739,1684,2776,1708,2822,1723,2879,1729,3490,1729,3590,1731,3671,1727,3708,1718,3743,1703,3780,1680,3819,1646,3831,1628,3833,1609,3834,1588,3843,1564,3881,1518,3923,1483,3927,1487,3885,1522,3848,1567,3839,1589,3839,1609,3836,1629,3823,1650,3783,1684,3746,1708,3709,1724,3672,1732,3590,1736,3489,1735,2879,1735,2820,1729,2774,1712,2735,1688,2702,1659,2633,1594,2590,1564,2535,1538,2535,1538"/>
+<area shape="poly" title=" " alt="" coords="3842,999,3736,999,3614,992,3485,975,3421,961,3359,944,3288,915,3222,877,3165,839,3122,807,3126,802,3168,834,3225,873,3291,910,3361,939,3422,956,3486,969,3614,987,3737,993,3842,994"/>
+<area shape="poly" title=" " alt="" coords="3831,161,3723,180,3601,212,3538,233,3477,257,3417,286,3362,320,3304,367,3254,424,3212,488,3178,553,3150,617,3130,676,3105,762,3100,760,3124,674,3146,615,3173,551,3208,485,3250,421,3300,363,3358,315,3415,281,3475,252,3537,228,3599,207,3722,175,3830,155"/>
+<area shape="poly" title=" " alt="" coords="943,32,1130,23,1334,19,3490,19,3546,21,3604,28,3716,51,3817,81,3899,110,3897,115,3815,86,3714,56,3603,33,3546,26,3489,24,1334,24,1130,28,943,37"/>
+<area shape="poly" title=" " alt="" coords="3837,1632,3722,1640,3658,1638,3593,1631,3529,1618,3467,1596,3409,1566,3358,1526,3345,1508,3340,1490,3343,1454,3348,1418,3344,1400,3334,1382,3324,1372,3313,1367,3290,1363,3266,1360,3254,1355,3242,1345,3216,1312,3194,1277,3157,1201,3131,1122,3113,1043,3102,968,3096,900,3094,805,3100,805,3101,900,3107,967,3118,1042,3136,1121,3162,1199,3198,1274,3221,1309,3246,1341,3257,1350,3268,1355,3291,1358,3315,1362,3327,1368,3338,1378,3349,1398,3353,1417,3348,1454,3345,1489,3350,1506,3362,1522,3412,1562,3469,1592,3530,1612,3594,1626,3659,1633,3722,1634,3837,1627"/>
+<area shape="rect" href="../../db/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_custom_move_preview_1_1_update_loop.html" title=" " alt="" coords="3369,1769,3608,1828"/>
+<area shape="poly" title=" " alt="" coords="3623,1804,3672,1802,3722,1795,3773,1783,3820,1764,3862,1737,3898,1703,3928,1667,3950,1635,3955,1638,3932,1670,3902,1707,3865,1741,3823,1769,3774,1788,3723,1800,3672,1807,3623,1810"/>
+<area shape="poly" title=" " alt="" coords="1464,364,1830,400,2294,453,2518,483,2714,514,2864,545,2916,560,2950,575,2976,594,3000,617,3040,668,3070,719,3089,760,3084,762,3065,722,3036,671,2996,621,2973,598,2947,580,2914,565,2863,550,2713,519,2518,488,2293,458,1829,405,1464,369"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:af75409a8869b7c4dbbf2482d0264a97d"><td class="memItemLeft" align="right" valign="top"><a id="af75409a8869b7c4dbbf2482d0264a97d" name="af75409a8869b7c4dbbf2482d0264a97d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InitUi</b> (<a class="el" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html">SceneWindow</a> sceneWindow, TroopDataModel troopDataModel)</td></tr>
-<tr class="memdesc:af75409a8869b7c4dbbf2482d0264a97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期設定 <br /></td></tr>
+<tr class="memitem:af75409a8869b7c4dbbf2482d0264a97d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#af75409a8869b7c4dbbf2482d0264a97d">InitUi</a> (<a class="el" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html">SceneWindow</a> sceneWindow, <a class="el" href="../../d6/da9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_troop_1_1_troop_data_model.html">TroopDataModel</a> troopDataModel)</td></tr>
+<tr class="memdesc:af75409a8869b7c4dbbf2482d0264a97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">初期設定  <br /></td></tr>
 <tr class="separator:af75409a8869b7c4dbbf2482d0264a97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab62fe9691b014192f1398dd5d7c3493b"><td class="memItemLeft" align="right" valign="top">async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#ab62fe9691b014192f1398dd5d7c3493b">Render</a> ()</td></tr>
+<tr class="separator:ab62fe9691b014192f1398dd5d7c3493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a1a5a867579764351b43a45ecbc7dbf16"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#a1a5a867579764351b43a45ecbc7dbf16">_canvasGo</a></td></tr>
+<tr class="separator:a1a5a867579764351b43a45ecbc7dbf16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a8b0e37aaffa5613ccb990f4bab71b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html">SpritesetBattle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#a26a8b0e37aaffa5613ccb990f4bab71b">_spritesetBattle</a></td></tr>
+<tr class="separator:a26a8b0e37aaffa5613ccb990f4bab71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed04cbb7110da49746fec058f1193c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/da9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_troop_1_1_troop_data_model.html">TroopDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#a6ed04cbb7110da49746fec058f1193c9">_troopDataModel</a></td></tr>
+<tr class="separator:a6ed04cbb7110da49746fec058f1193c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15554dab973b6092fb4e55b23738689"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html">SceneWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#aa15554dab973b6092fb4e55b23738689">_sceneWindow</a></td></tr>
+<tr class="separator:aa15554dab973b6092fb4e55b23738689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a75d2c9824342bd4ecd8d9a14ba9b00d5"><td class="memItemLeft" align="right" valign="top">const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview.html#a75d2c9824342bd4ecd8d9a14ba9b00d5">PrefabPath</a></td></tr>
+<tr class="separator:a75d2c9824342bd4ecd8d9a14ba9b00d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>バトルシーン用のプレビュー </p>
-</div><hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/DatabaseEditor/View/Preview/BattleScenePreview.cs</li>
+</div><h2 class="groupheader">メソッド詳解</h2>
+<a id="af75409a8869b7c4dbbf2482d0264a97d" name="af75409a8869b7c4dbbf2482d0264a97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af75409a8869b7c4dbbf2482d0264a97d">&#9670;&#160;</a></span>InitUi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview.InitUi </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html">SceneWindow</a>&#160;</td>
+          <td class="paramname"><em>sceneWindow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/da9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_troop_1_1_troop_data_model.html">TroopDataModel</a>&#160;</td>
+          <td class="paramname"><em>troopDataModel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初期設定 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_cgraph.png" border="0" usemap="#ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_cgraph" alt=""/></div>
+<map name="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_cgraph" id="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_cgraph">
+<area shape="rect" title="初期設定" alt="" coords="5,5,234,64"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#a8a0832bfa012cec50a9d5ab099396557" title="ゲームオブジェクトを現在属しているシーンからプレビューシーンに移動させる。" alt="" coords="282,5,533,64"/>
+<area shape="poly" title=" " alt="" coords="234,32,267,32,267,37,234,37"/>
+<area shape="rect" href="../../d1/d39/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_scene_element.html#a44f6de89204d0a4016588943fcba5cd3" title="ゲームオブジェクトを現在属しているシーンからプレビューシーンに移動させる。" alt="" coords="581,5,852,64"/>
+<area shape="poly" title=" " alt="" coords="533,32,566,32,566,37,533,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_icgraph.png" border="0" usemap="#ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_icgraph" alt=""/></div>
+<map name="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_icgraph" id="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_af75409a8869b7c4dbbf2482d0264a97d_icgraph">
+<area shape="rect" title="初期設定" alt="" coords="1589,460,1817,519"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#ab676f1b7751bf8065e9ac8e324525fc3" title=" " alt="" coords="1273,468,1541,511"/>
+<area shape="poly" title=" " alt="" coords="1574,492,1541,492,1541,487,1574,487"/>
+<area shape="rect" href="../../db/d84/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_animation_1_1_view_1_1_animation_inspector_element.html#aae106fd133981d5041a1404498adf087" title=" " alt="" coords="927,5,1213,64"/>
+<area shape="poly" title=" " alt="" coords="1398,454,1381,376,1350,274,1327,220,1298,168,1264,120,1223,78,1207,67,1210,62,1226,74,1268,117,1303,165,1331,218,1355,272,1387,374,1403,453"/>
+<area shape="rect" href="../../dd/d5a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_u_i_pattern_1_1_view_1_1_ui_common_inspector_element.html#a16a8c55acc792105630571f8010aba6a" title=" " alt="" coords="954,88,1186,147"/>
+<area shape="poly" title=" " alt="" coords="1394,455,1373,391,1338,311,1315,270,1289,230,1258,193,1223,161,1185,140,1188,135,1226,157,1262,189,1293,227,1320,267,1343,309,1378,389,1399,453"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a9be269ac211e55504a92ba36dda0dbea" title="戦闘シーンのプレビュー設定" alt="" coords="915,171,1225,229"/>
+<area shape="poly" title=" " alt="" coords="1387,456,1362,408,1326,350,1279,292,1252,266,1223,244,1204,232,1207,228,1226,239,1256,262,1283,289,1330,347,1367,405,1392,453"/>
+<area shape="rect" href="../../d8/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_troop_1_1_view_1_1_troop_inspector_element.html#a0d9e9a163ca8326d7cacc57a70459297" title=" " alt="" coords="954,253,1186,312"/>
+<area shape="poly" title=" " alt="" coords="1377,459,1311,391,1269,356,1223,326,1185,310,1187,305,1226,322,1272,352,1315,387,1381,455"/>
+<area shape="rect" href="../../da/d9f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_asset_manage_1_1_view_1_1_asset_manage_inspector_element.html#a1ff6968c39c137f0b08b3fe2db8e62e5" title="初期化処理" alt="" coords="934,336,1206,395"/>
+<area shape="poly" title=" " alt="" coords="1349,463,1289,436,1224,409,1189,398,1191,393,1226,404,1291,431,1351,459"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#ab4bff436ce7c95b83d4f2d4e0c267f7e" title=" " alt="" coords="944,419,1196,477"/>
+<area shape="poly" title=" " alt="" coords="1258,474,1196,466,1197,461,1259,468"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#a4a0fbd9c1d01f2e62f9c7804ee4ca205" title=" " alt="" coords="944,501,1196,560"/>
+<area shape="poly" title=" " alt="" coords="1259,510,1197,518,1196,513,1258,505"/>
+<area shape="rect" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_flow_control_1_1_custom_move.html#afe506d41de45715cef7dbece1ec8fe8d" title=" " alt="" coords="944,584,1196,643"/>
+<area shape="poly" title=" " alt="" coords="1351,520,1291,548,1226,575,1191,586,1189,581,1224,569,1289,543,1349,515"/>
+<area shape="rect" href="../../dc/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_menu_1_1_view_1_1_u_i_battle_menu_inspector_element.html#a034073a0d825d40ef26ed99e54cd3423" title="データの更新" alt="" coords="943,667,1197,725"/>
+<area shape="poly" title=" " alt="" coords="1381,524,1315,591,1272,627,1226,657,1199,670,1196,665,1223,652,1269,622,1311,587,1377,520"/>
+<area shape="rect" href="../../d3/ddf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_game_menu_1_1_view_1_1_u_i_game_menu_inspector_element.html#a708cd83d451df464cc20a3fbb9b9cf00" title="データの更新" alt="" coords="943,749,1197,808"/>
+<area shape="poly" title=" " alt="" coords="1392,525,1367,574,1330,632,1283,690,1256,716,1226,740,1199,755,1196,750,1223,735,1252,712,1279,686,1326,629,1362,571,1387,523"/>
+<area shape="rect" href="../../dc/d2c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_talk_1_1_view_1_1_ui_talk_inspector_element.html#ad17f0589fd5c1739a79d49604a228d89" title="データの更新" alt="" coords="956,832,1184,891"/>
+<area shape="poly" title=" " alt="" coords="1399,526,1378,590,1343,670,1320,712,1293,752,1262,789,1226,822,1185,845,1183,840,1223,818,1258,786,1289,749,1315,709,1338,667,1373,588,1394,524"/>
+<area shape="rect" href="../../de/d02/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_title_1_1_view_1_1_title_inspector_element.html#aad394b72183c615eb160e675fc9a1702" title="データの更新" alt="" coords="962,915,1178,973"/>
+<area shape="poly" title=" " alt="" coords="1403,526,1387,604,1355,707,1331,761,1303,813,1268,862,1226,905,1204,920,1179,931,1177,926,1201,915,1223,901,1264,859,1298,810,1327,758,1350,705,1381,603,1398,525"/>
+<area shape="rect" href="../../dd/d5a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_u_i_pattern_1_1_view_1_1_ui_common_inspector_element.html#ab44518d3f6b4bac54b269b46d691020f" title="データの更新" alt="" coords="626,63,858,121"/>
+<area shape="poly" title=" " alt="" coords="939,110,858,104,858,98,939,105"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a229491a27c98aa08b8534c05d97626bf" title="初期化処理" alt="" coords="306,163,568,221"/>
+<area shape="poly" title=" " alt="" coords="900,188,867,187,742,184,616,187,568,188,568,183,616,181,742,179,867,181,901,183"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a5991981f3e64a513be8c361300eb2d0f" title="基本データ" alt="" coords="618,196,866,255"/>
+<area shape="poly" title=" " alt="" coords="901,216,866,218,866,213,900,210"/>
+<area shape="poly" title=" " alt="" coords="602,213,568,209,569,204,603,207"/>
+<area shape="rect" href="../../d8/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_troop_1_1_view_1_1_troop_inspector_element.html#a6015e876a3cbac57f8ceb3e46e090bdf" title=" " alt="" coords="626,279,857,337"/>
+<area shape="poly" title=" " alt="" coords="940,295,858,302,858,296,939,290"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#aae6efe8e2b25e3148bb450be5cb122c8" title=" " alt="" coords="616,419,867,477"/>
+<area shape="poly" title=" " alt="" coords="930,451,868,451,868,445,930,445"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="311,501,563,560"/>
+<area shape="poly" title=" " alt="" coords="617,484,549,503,547,498,616,479"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,460,258,519"/>
+<area shape="poly" title=" " alt="" coords="296,514,258,509,258,504,296,509"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,543,258,601"/>
+<area shape="poly" title=" " alt="" coords="296,552,258,558,258,552,296,547"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#aa0e5660dc6dfd220b1c101e6c9ea735d" title=" " alt="" coords="616,501,867,560"/>
+<area shape="poly" title=" " alt="" coords="930,533,868,533,868,528,930,528"/>
+<area shape="poly" title=" " alt="" coords="601,533,564,533,564,528,601,528"/>
+<area shape="rect" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_flow_control_1_1_custom_move.html#a504bd17e66c55e6f3448904272d1af16" title=" " alt="" coords="616,584,867,643"/>
+<area shape="poly" title=" " alt="" coords="930,616,868,616,868,611,930,611"/>
+<area shape="poly" title=" " alt="" coords="616,582,547,563,549,558,617,577"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab62fe9691b014192f1398dd5d7c3493b" name="ab62fe9691b014192f1398dd5d7c3493b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab62fe9691b014192f1398dd5d7c3493b">&#9670;&#160;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async void RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview.Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_cgraph.png" border="0" usemap="#ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_cgraph" alt=""/></div>
+<map name="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_cgraph" id="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,893,234,952"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a1051239bc642c5ebe7b20df0bf065374" title="バトルシーンプレビュー表示。" alt="" coords="306,569,509,628"/>
+<area shape="poly" title=" " alt="" coords="145,891,368,638,372,641,149,895"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#a63a88985933fb83de28323f1e420a106" title="一定時間後に再描画を行う タイトル画面のメニュー部分が、稀に崩れたまま表示されてしまう問題への対応" alt="" coords="282,1151,533,1209"/>
+<area shape="poly" title=" " alt="" coords="155,950,364,1139,360,1142,152,954"/>
+<area shape="rect" href="../../d1/de3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_window_1_1_window_initialize.html#aef66d454b0c451e57239453eb098288b" title="バトル用のPrefabをロードする" alt="" coords="879,728,1086,787"/>
+<area shape="poly" title=" " alt="" coords="446,626,507,669,544,690,582,707,653,728,727,742,799,750,865,754,864,760,798,755,726,747,652,733,580,712,541,695,504,674,443,631"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#acdc0251471c3db50b36db22a1f9b9d83" title=" " alt="" coords="1155,403,1441,445"/>
+<area shape="poly" title=" " alt="" coords="426,567,453,532,488,492,531,453,580,422,653,388,718,367,777,355,835,351,893,354,956,361,1107,380,1191,396,1190,402,1106,385,955,366,893,359,835,357,778,360,719,372,655,393,582,426,534,457,492,496,457,536,431,570"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934" title=" " alt="" coords="1196,701,1400,744"/>
+<area shape="poly" title=" " alt="" coords="510,622,581,637,744,663,907,684,1182,711,1181,716,907,689,743,668,581,643,509,628"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a0a1d56b16aeadaf9aef0a42466bcfd30" title="アクター生成" alt="" coords="594,569,797,628"/>
+<area shape="poly" title=" " alt="" coords="509,596,579,596,579,601,509,601"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a51ad2669c15aba611fa704eb84001f8c" title=" " alt="" coords="860,477,1105,520"/>
+<area shape="poly" title=" " alt="" coords="509,570,580,555,716,531,845,513,846,518,717,537,582,560,510,575"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a6b75373b4abd051421e3737c0956dd08" title="背景画像設定" alt="" coords="594,893,797,952"/>
+<area shape="poly" title=" " alt="" coords="437,627,661,880,657,884,433,630"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a6a260f15abf89fb492c0ea4b90a5cf6c" title="敵生成" alt="" coords="881,261,1084,320"/>
+<area shape="poly" title=" " alt="" coords="416,568,438,516,472,452,519,388,548,360,580,336,613,319,649,304,723,286,797,278,866,277,866,282,798,283,724,291,650,310,615,323,582,341,551,364,523,392,477,455,443,518,421,570"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#af8201fa99d2a991d496817de21d94b3e" title=" " alt="" coords="581,436,810,495"/>
+<area shape="poly" title=" " alt="" coords="466,566,580,511,608,498,610,503,582,516,468,571"/>
+<area shape="poly" title=" " alt="" coords="1014,726,1061,675,1084,645,1104,613,1114,591,1119,570,1121,530,1127,493,1137,474,1153,455,1156,452,1160,456,1157,459,1141,477,1132,495,1127,531,1124,570,1119,592,1109,616,1088,648,1065,679,1018,729"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="1164,968,1432,1027"/>
+<area shape="poly" title=" " alt="" coords="1087,783,1108,797,1126,815,1135,833,1143,851,1157,872,1201,917,1247,956,1243,960,1198,921,1153,875,1138,854,1130,835,1121,818,1105,801,1084,788"/>
+<area shape="poly" title=" " alt="" coords="1086,743,1182,733,1182,738,1087,749"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#ace8f5b29b336a071e6383ecdbe0f85c5" title=" " alt="" coords="1489,701,1692,744"/>
+<area shape="poly" title=" " alt="" coords="1400,720,1474,720,1474,725,1400,725"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a42e1175b0a1dc3a225503e007043dc86" title=" " alt="" coords="1740,701,1954,744"/>
+<area shape="poly" title=" " alt="" coords="1693,720,1726,720,1726,725,1693,725"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a24090092bb5f0e3f1a7f6d136a10cd22" title=" " alt="" coords="2019,73,2275,132"/>
+<area shape="poly" title=" " alt="" coords="1849,701,1866,585,1898,417,1919,331,1943,252,1970,187,1985,161,2000,142,2005,137,2009,141,2004,146,1989,164,1975,189,1948,254,1924,332,1903,419,1871,586,1854,701"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#aa2e210bbbaf85d6ed1f74aa1170b786a" title=" " alt="" coords="2019,156,2275,215"/>
+<area shape="poly" title=" " alt="" coords="1846,701,1850,614,1858,553,1870,486,1889,416,1916,347,1953,282,2000,225,2005,220,2008,224,2004,229,1957,285,1921,349,1894,418,1875,487,1863,554,1856,614,1851,701"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#afa56ff9a916ba5265719f6be7f2330e2" title=" " alt="" coords="2018,239,2276,297"/>
+<area shape="poly" title=" " alt="" coords="1847,701,1856,626,1880,520,1900,463,1926,406,1959,354,2000,307,2004,304,2008,308,2004,311,1963,357,1931,409,1905,465,1886,522,1862,627,1852,701"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a83d7b02d93737cf99a9e1b670f8fe4ea" title=" " alt="" coords="2002,321,2292,380"/>
+<area shape="poly" title=" " alt="" coords="1849,700,1864,639,1891,555,1911,510,1936,467,1965,426,2000,390,2004,386,2008,391,2003,394,1969,429,1940,469,1916,513,1896,557,1869,640,1855,701"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0b003a876f01ec9a754241a3df3836fc" title=" " alt="" coords="2009,404,2285,463"/>
+<area shape="poly" title=" " alt="" coords="1853,700,1872,652,1903,591,1945,527,1971,498,2000,473,2005,469,2009,473,2003,477,1975,502,1949,531,1907,594,1877,655,1858,702"/>
+<area shape="rect" href="../../db/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_runtime_data_management_1_1_runtime_data_management_service.html#a5d406eddf4f7129bc0a84639c9bffcbd" title=" " alt="" coords="2012,487,2282,545"/>
+<area shape="poly" title=" " alt="" coords="1860,699,1916,628,1955,589,2000,555,2009,550,2012,555,2003,560,1959,593,1920,632,1865,703"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a56946e6c58a5ec0f4641533476d5982c" title=" " alt="" coords="2019,569,2275,628"/>
+<area shape="poly" title=" " alt="" coords="1883,698,1937,668,2001,638,2018,631,2020,636,2003,642,1940,672,1885,703"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a5eb2954667a7f994c25194d12c5a2602" title=" " alt="" coords="2019,652,2275,711"/>
+<area shape="poly" title=" " alt="" coords="1954,705,2004,698,2005,704,1954,711"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a0447e9903c05f13e630c3523647e80a4" title=" " alt="" coords="2019,735,2275,793"/>
+<area shape="poly" title=" " alt="" coords="1954,735,2005,742,2004,747,1954,740"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a10afc5f75507a17db5197e23a2cdd4cc" title=" " alt="" coords="2019,817,2275,876"/>
+<area shape="poly" title=" " alt="" coords="1885,742,1940,773,2003,803,2020,809,2018,814,2001,808,1937,778,1883,747"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a2fa87c0d4f1431414d67e4943a14ae56" title=" " alt="" coords="2019,900,2275,959"/>
+<area shape="poly" title=" " alt="" coords="1865,743,1920,813,1959,852,2003,886,2012,891,2009,895,2000,890,1955,856,1916,817,1860,746"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ab14ced87348b79b244d7a5d975e80d25" title=" " alt="" coords="2019,983,2275,1041"/>
+<area shape="poly" title=" " alt="" coords="1858,744,1877,791,1907,852,1949,915,1975,944,2003,969,2009,972,2005,977,2000,973,1971,947,1945,918,1903,854,1872,793,1853,746"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a3f54f10563c3611839ddd3dfa5b65c13" title=" " alt="" coords="2019,1065,2275,1124"/>
+<area shape="poly" title=" " alt="" coords="1855,744,1869,805,1896,888,1916,933,1940,976,1969,1016,2003,1051,2008,1055,2005,1059,2000,1055,1965,1020,1936,979,1911,935,1891,890,1864,806,1849,745"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#ad73cc18191cf3d29c31d27f90e712965" title=" " alt="" coords="2004,1148,2290,1207"/>
+<area shape="poly" title=" " alt="" coords="1852,744,1862,818,1886,923,1905,980,1931,1036,1963,1089,2004,1134,2006,1137,2003,1141,2000,1138,1959,1092,1926,1039,1900,982,1880,925,1856,819,1847,745"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a14b53a047484b6c81f8e570ff47134af" title=" " alt="" coords="2019,1231,2275,1289"/>
+<area shape="poly" title=" " alt="" coords="1851,744,1856,831,1863,891,1875,958,1894,1028,1921,1096,1957,1161,2004,1217,2008,1221,2005,1225,2000,1221,1953,1164,1916,1099,1889,1029,1870,959,1858,892,1850,832,1846,744"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html#a293b136d822c9c73495b354502306eb1" title=" " alt="" coords="2019,1313,2275,1372"/>
+<area shape="poly" title=" " alt="" coords="1854,744,1871,859,1903,1027,1924,1113,1948,1192,1975,1256,1989,1281,2004,1300,2009,1305,2005,1308,2000,1303,1985,1284,1970,1259,1943,1194,1919,1114,1898,1028,1866,860,1849,745"/>
+<area shape="poly" title=" " alt="" coords="798,609,945,633,1107,669,1155,687,1183,695,1182,700,1154,692,1106,675,944,639,797,614"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#ac5ac2ccd4638ad18d4033b71c57ba156" title="戦闘に参加する全アクターを配列で返す" alt="" coords="876,544,1089,603"/>
+<area shape="poly" title=" " alt="" coords="798,587,861,581,861,587,798,592"/>
+<area shape="poly" title=" " alt="" coords="766,566,857,529,880,522,882,527,859,535,768,571"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#a5ddba874c7edcee24070edc19331f21b" title="パーティの全アクターを配列で返す" alt="" coords="1174,552,1422,595"/>
+<area shape="poly" title=" " alt="" coords="1089,571,1159,571,1159,576,1089,576"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#ad6fe33d8881f2757ddfab1ca1d2a595b" title="戦闘参加メンバーの最大数(規定値:4)を返す" alt="" coords="1179,619,1417,677"/>
+<area shape="poly" title=" " alt="" coords="1090,596,1165,614,1164,619,1089,601"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a33a50dca42bb982a7042e6c6e1749409" title="背景画像1の名称返却" alt="" coords="881,893,1084,952"/>
+<area shape="poly" title=" " alt="" coords="798,920,866,920,866,925,798,925"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a9b420b6bc0852de0ec0189a9f33fae28" title="背景画像2の名称返却" alt="" coords="881,811,1084,869"/>
+<area shape="poly" title=" " alt="" coords="797,891,866,871,867,876,799,896"/>
+<area shape="rect" href="../../d3/db5/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_image_manager.html#a814feb7de7773505e4b8685eda278fe4" title=" " alt="" coords="858,976,1107,1019"/>
+<area shape="poly" title=" " alt="" coords="799,947,885,969,883,974,797,952"/>
+<area shape="rect" href="../../d3/db5/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_image_manager.html#aa5357df0971d2b4ec4aff81478dbaf36" title=" " alt="" coords="858,1043,1107,1085"/>
+<area shape="poly" title=" " alt="" coords="736,950,792,991,859,1028,875,1035,873,1040,857,1033,789,995,732,955"/>
+<area shape="poly" title=" " alt="" coords="1083,893,1105,879,1121,862,1129,844,1137,825,1153,805,1192,774,1233,749,1236,753,1195,778,1157,809,1142,828,1134,846,1126,865,1108,883,1086,897"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a56d452c7dcdd02511b8999a3cdde268a" title=" " alt="" coords="1175,819,1421,861"/>
+<area shape="poly" title=" " alt="" coords="1084,893,1199,863,1200,868,1085,899"/>
+<area shape="poly" title=" " alt="" coords="1074,808,1106,796,1230,748,1232,753,1108,801,1075,813"/>
+<area shape="poly" title=" " alt="" coords="1084,837,1160,837,1160,843,1084,843"/>
+<area shape="poly" title=" " alt="" coords="1107,995,1149,995,1149,1000,1107,1000"/>
+<area shape="poly" title=" " alt="" coords="1086,1039,1149,1026,1150,1031,1087,1045"/>
+<area shape="poly" title=" " alt="" coords="1075,318,1108,337,1123,350,1132,364,1141,377,1156,388,1166,394,1164,399,1153,393,1137,380,1128,367,1119,354,1105,341,1073,323"/>
+<area shape="poly" title=" " alt="" coords="1043,318,1079,346,1109,381,1128,425,1134,466,1131,505,1125,543,1120,579,1120,615,1131,651,1157,687,1184,707,1181,711,1153,691,1126,653,1115,616,1114,579,1120,542,1126,505,1128,466,1123,426,1104,384,1075,350,1040,323"/>
+<area shape="poly" title=" " alt="" coords="1043,318,1079,346,1109,381,1132,434,1139,482,1137,528,1130,572,1124,615,1123,659,1132,705,1157,754,1186,786,1223,809,1220,814,1183,790,1152,758,1127,707,1118,659,1119,614,1125,571,1132,527,1134,482,1127,435,1104,384,1076,349,1040,322"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a54b0eca398145348433ec2b8645ca6c2" title="敵データの整列 コマンド入力時に並ぶ順" alt="" coords="1196,320,1400,379"/>
+<area shape="poly" title=" " alt="" coords="1085,307,1182,325,1181,330,1084,312"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a05be07bdd5ae3ec428017619aa02f220" title=" " alt="" coords="1174,5,1422,64"/>
+<area shape="poly" title=" " alt="" coords="997,259,1022,218,1057,168,1102,117,1153,74,1160,69,1163,74,1156,78,1105,121,1062,171,1027,221,1002,262"/>
+<area shape="rect" href="../../d7/dfb/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_troop.html#a0a1acd287c691070082ae88e2ff86936" title="敵データ（GameBattler）" alt="" coords="1181,88,1415,131"/>
+<area shape="poly" title=" " alt="" coords="1008,259,1070,198,1110,167,1153,140,1167,134,1169,139,1156,145,1113,171,1074,202,1012,263"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a4ed258b5e86a891d58ba2b0c44982fd1" title="配置場所に該当する、親のGameObjectを返却する" alt="" coords="1196,155,1400,213"/>
+<area shape="poly" title=" " alt="" coords="1057,258,1154,223,1181,214,1183,219,1156,228,1059,263"/>
+<area shape="rect" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html#a8124b19624dc78065b65584e4f07ee72" title="傾斜度の反映メソッド 傾斜度が中に入る エネミーの傾斜" alt="" coords="1189,237,1407,296"/>
+<area shape="poly" title=" " alt="" coords="1084,280,1174,273,1174,279,1085,286"/>
+<area shape="poly" title=" " alt="" coords="811,476,845,480,845,485,811,481"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_objects_1_1_game_party.html#a22e606ca9bed680d71b30947bb12e4ae" title="戦闘シーンのプレビューに使用するため、プレビュー用のアクター設定" alt="" coords="876,395,1089,453"/>
+<area shape="poly" title=" " alt="" coords="811,446,862,439,862,444,811,451"/>
+<area shape="poly" title=" " alt="" coords="1089,421,1140,421,1140,427,1089,427"/>
+<area shape="poly" title=" " alt="" coords="1091,448,1109,464,1128,493,1135,522,1136,551,1132,579,1129,607,1129,634,1137,661,1157,687,1184,706,1181,711,1153,691,1133,663,1124,635,1123,606,1127,578,1130,550,1130,523,1123,495,1105,467,1088,452"/>
+<area shape="rect" href="../../d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#aa412039efa6ceef23f126af24838cffb" title=" " alt="" coords="1179,469,1417,528"/>
+<area shape="poly" title=" " alt="" coords="1090,447,1165,465,1164,470,1089,452"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a79ee89df0d26b641153c0a9e81c5142e" title=" " alt="" coords="587,1151,805,1209"/>
+<area shape="poly" title=" " alt="" coords="534,1177,572,1177,572,1183,534,1183"/>
+<area shape="rect" href="../../d1/d39/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_scene_element.html#a75121b89c13a144a13e1c94cb5693d1d" title=" " alt="" coords="582,1233,809,1292"/>
+<area shape="poly" title=" " alt="" coords="513,1207,577,1226,576,1231,511,1213"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a5946dc12ab2db2235356116ea23e2577" title=" " alt="" coords="873,1109,1092,1168"/>
+<area shape="poly" title=" " alt="" coords="805,1162,858,1154,859,1159,806,1167"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a01927fd8dc7cbaec3937125b3ad292a6" title=" " alt="" coords="873,1192,1092,1251"/>
+<area shape="poly" title=" " alt="" coords="806,1193,859,1201,858,1206,805,1198"/>
+<area shape="rect" href="../../df/d87/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_title_preview.html#a6fb1c514518cf046326afbfc09704756" title=" " alt="" coords="873,1275,1092,1333"/>
+<area shape="poly" title=" " alt="" coords="789,1207,812,1219,836,1240,860,1260,869,1266,867,1270,857,1265,833,1244,809,1224,787,1212"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_icgraph.png" border="0" usemap="#ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_icgraph" alt=""/></div>
+<map name="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_icgraph" id="ad4/dea/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_battle_scene_preview_ab62fe9691b014192f1398dd5d7c3493b_icgraph">
+<area shape="rect" title=" " alt="" coords="2775,763,3004,821"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#ac894062a7b4e348a75d3536693344516" title=" " alt="" coords="2476,763,2727,821"/>
+<area shape="poly" title=" " alt="" coords="2761,795,2728,795,2728,789,2761,789"/>
+<area shape="rect" href="../../dd/d5a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_u_i_pattern_1_1_view_1_1_ui_common_inspector_element.html#a16a8c55acc792105630571f8010aba6a" title=" " alt="" coords="954,27,1186,85"/>
+<area shape="poly" title=" " alt="" coords="2593,748,2575,600,2541,404,2519,306,2492,218,2461,147,2444,120,2426,101,2375,63,2327,42,2280,33,2233,33,2130,48,2070,55,2003,59,1707,59,1187,59,1187,53,1707,53,2003,53,2070,50,2129,43,2233,28,2281,28,2329,37,2378,59,2430,97,2448,117,2466,144,2497,216,2524,305,2546,403,2580,599,2599,747"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#ab676f1b7751bf8065e9ac8e324525fc3" title=" " alt="" coords="1273,456,1541,499"/>
+<area shape="poly" title=" " alt="" coords="2598,749,2591,652,2581,591,2566,527,2545,463,2515,402,2476,347,2453,323,2427,302,2394,284,2355,270,2308,260,2257,253,2141,248,2016,253,1891,267,1772,287,1669,311,1590,337,1541,363,1496,395,1430,457,1426,453,1493,391,1538,358,1588,332,1668,306,1771,282,1890,261,2016,248,2141,242,2257,247,2309,254,2356,265,2396,279,2429,298,2456,319,2480,344,2520,399,2550,461,2572,526,2587,590,2596,651,2603,748"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a9be269ac211e55504a92ba36dda0dbea" title="戦闘シーンのプレビュー設定" alt="" coords="915,112,1225,171"/>
+<area shape="poly" title=" " alt="" coords="2592,748,2572,610,2537,430,2515,340,2488,260,2459,195,2443,171,2426,153,2375,116,2327,94,2280,85,2233,85,2130,99,2070,106,2003,109,1707,109,1453,116,1225,131,1225,126,1452,111,1707,104,2003,104,2070,101,2129,94,2232,80,2280,80,2328,89,2377,111,2430,149,2447,167,2463,192,2493,258,2520,339,2542,429,2577,609,2598,747"/>
+<area shape="rect" href="../../d8/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_troop_1_1_view_1_1_troop_inspector_element.html#a0d9e9a163ca8326d7cacc57a70459297" title=" " alt="" coords="954,200,1186,259"/>
+<area shape="poly" title=" " alt="" coords="2591,748,2569,621,2533,456,2510,375,2485,302,2457,243,2442,221,2426,205,2374,168,2326,147,2279,137,2232,137,2130,150,2070,157,2003,160,1707,160,1567,165,1426,178,1186,211,1185,206,1425,172,1566,160,1707,155,2003,155,2070,152,2129,145,2232,132,2280,132,2328,142,2377,163,2430,201,2446,218,2461,240,2490,300,2516,373,2538,455,2574,620,2596,747"/>
+<area shape="rect" href="../../da/d9f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_asset_manage_1_1_view_1_1_asset_manage_inspector_element.html#a1ff6968c39c137f0b08b3fe2db8e62e5" title="初期化処理" alt="" coords="934,283,1206,341"/>
+<area shape="poly" title=" " alt="" coords="2598,748,2593,645,2584,579,2569,510,2548,439,2517,371,2477,309,2453,282,2426,257,2374,221,2326,199,2279,190,2232,189,2129,201,2070,208,2003,211,1707,211,1566,218,1425,236,1294,260,1185,285,1184,279,1293,255,1424,231,1565,213,1707,205,2003,205,2070,202,2129,196,2232,184,2279,184,2327,194,2377,216,2430,253,2457,278,2482,306,2522,369,2553,437,2574,509,2589,579,2598,644,2604,748"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#ab4bff436ce7c95b83d4f2d4e0c267f7e" title=" " alt="" coords="944,531,1196,589"/>
+<area shape="poly" title=" " alt="" coords="2497,760,2427,743,2309,719,2217,704,2124,696,2003,693,1707,693,1606,683,1468,657,1188,593,1189,587,1469,652,1606,678,1707,688,2003,688,2124,690,2217,698,2310,713,2429,737,2499,755"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#a4a0fbd9c1d01f2e62f9c7804ee4ca205" title=" " alt="" coords="944,613,1196,672"/>
+<area shape="poly" title=" " alt="" coords="2461,776,2246,755,2124,747,2003,744,1707,744,1487,748,1391,740,1272,712,1247,700,1224,686,1191,675,1193,670,1226,682,1250,695,1274,707,1392,734,1487,743,1707,739,2003,739,2124,742,2246,749,2461,771"/>
+<area shape="rect" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_flow_control_1_1_custom_move.html#afe506d41de45715cef7dbece1ec8fe8d" title=" " alt="" coords="944,696,1196,755"/>
+<area shape="poly" title=" " alt="" coords="2461,795,2003,795,1707,795,1585,793,1489,787,1272,763,1196,751,1197,746,1273,757,1490,782,1585,788,1707,789,2003,789,2461,789"/>
+<area shape="rect" href="../../dc/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_menu_1_1_view_1_1_u_i_battle_menu_inspector_element.html#a034073a0d825d40ef26ed99e54cd3423" title="データの更新" alt="" coords="943,779,1197,837"/>
+<area shape="poly" title=" " alt="" coords="2461,813,2246,835,2124,842,2003,845,1707,845,1434,837,1197,822,1198,816,1434,832,1707,840,2003,840,2124,837,2246,829,2461,808"/>
+<area shape="rect" href="../../d3/ddf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_game_menu_1_1_view_1_1_u_i_game_menu_inspector_element.html#a708cd83d451df464cc20a3fbb9b9cf00" title="データの更新" alt="" coords="943,861,1197,920"/>
+<area shape="poly" title=" " alt="" coords="2496,828,2429,845,2310,869,2217,885,2124,893,2003,896,1707,896,1197,894,1197,889,1707,891,2003,891,2124,888,2217,880,2309,864,2427,840,2495,823"/>
+<area shape="rect" href="../../dc/d2c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_talk_1_1_view_1_1_ui_talk_inspector_element.html#ad17f0589fd5c1739a79d49604a228d89" title="データの更新" alt="" coords="956,944,1184,1003"/>
+<area shape="poly" title=" " alt="" coords="2549,832,2493,866,2429,895,2313,928,2220,943,2125,947,2003,947,1707,947,1425,954,1184,968,1184,962,1424,949,1707,941,2003,941,2125,942,2219,938,2312,923,2427,889,2490,861,2546,828"/>
+<area shape="rect" href="../../d1/d66/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_asset_manage_preview.html#ab7b6acd9b29c95577e181abfa59b7dc1" title="初期状態のUI設定" alt="" coords="1595,347,1823,405"/>
+<area shape="poly" title=" " alt="" coords="2596,748,2587,657,2577,601,2561,542,2539,483,2510,428,2473,378,2426,337,2405,325,2380,317,2316,306,2241,303,2160,306,2000,321,1877,337,1814,349,1813,343,1876,332,1999,316,2160,300,2241,297,2317,300,2381,311,2408,321,2430,332,2477,374,2515,425,2544,481,2566,541,2582,600,2592,656,2602,747"/>
+<area shape="rect" href="../../dc/d51/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_menu_1_1_view_1_1_u_i_battle_menu_inspector_element.html#a4cda79f7264fb02c28e88813b588a56c" title="セーブ処理" alt="" coords="2183,981,2421,1040"/>
+<area shape="poly" title=" " alt="" coords="2570,835,2508,900,2470,935,2429,965,2395,983,2393,979,2427,960,2467,931,2505,897,2566,831"/>
+<area shape="rect" href="../../d3/ddf/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_game_menu_1_1_view_1_1_u_i_game_menu_inspector_element.html#ab588eb9e7945605b1475618e779936c0" title="セーブ処理" alt="" coords="2183,1064,2421,1123"/>
+<area shape="poly" title=" " alt="" coords="2585,836,2561,886,2526,945,2483,1003,2430,1054,2411,1066,2408,1061,2426,1050,2479,1000,2522,942,2556,884,2580,834"/>
+<area shape="rect" href="../../d3/d80/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_scroll_preview.html#a02f4fa07ee713b67db7b90ed7477af12" title=" " alt="" coords="2188,429,2416,488"/>
+<area shape="poly" title=" " alt="" coords="2583,750,2561,693,2527,627,2482,560,2456,529,2426,502,2409,491,2412,486,2430,498,2460,525,2486,556,2532,624,2566,691,2588,748"/>
+<area shape="rect" href="../../d3/dc0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_custom_move_preview.html#a56e7fa77d099e2cd7a85ad304d0c7d18" title=" " alt="" coords="2182,512,2422,571"/>
+<area shape="poly" title=" " alt="" coords="2574,751,2547,711,2513,667,2472,623,2426,585,2407,573,2410,569,2430,580,2476,619,2517,663,2552,708,2578,748"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html#ab0cc899b46d1083644597a3880d95e86" title=" " alt="" coords="2188,595,2416,653"/>
+<area shape="poly" title=" " alt="" coords="2550,756,2492,714,2427,674,2388,656,2390,651,2429,670,2495,710,2553,751"/>
+<area shape="rect" href="../../d3/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_abstract_preview.html#a30e86259d7ee1988819633fed4b518e3" title=" " alt="" coords="2180,347,2424,405"/>
+<area shape="poly" title=" " alt="" coords="2590,749,2571,678,2539,589,2518,543,2492,498,2461,456,2426,419,2411,408,2414,404,2430,415,2466,453,2496,495,2522,540,2544,587,2576,676,2595,748"/>
+<area shape="rect" href="../../da/d33/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_jump_preview.html#a6724ec1770ee4e129e1223ccbc1f0348" title=" " alt="" coords="2189,1147,2415,1205"/>
+<area shape="poly" title=" " alt="" coords="2593,836,2572,902,2540,983,2518,1025,2493,1065,2463,1103,2430,1137,2413,1149,2410,1144,2426,1133,2459,1100,2488,1062,2513,1022,2535,981,2567,900,2588,835"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html#afbfccdb92eb855ec459baae0017391a6" title=" " alt="" coords="2188,1229,2416,1288"/>
+<area shape="poly" title=" " alt="" coords="2597,836,2582,917,2551,1020,2529,1074,2502,1126,2469,1176,2430,1219,2415,1231,2412,1227,2426,1215,2465,1172,2498,1124,2525,1072,2546,1018,2577,916,2592,835"/>
+<area shape="rect" href="../../d3/dc8/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_animation_preview.html#ad51100c2ff8ee794e9ce9a2a86866442" title=" " alt="" coords="2176,1363,2428,1421"/>
+<area shape="poly" title=" " alt="" coords="2602,836,2592,938,2582,1003,2566,1074,2544,1146,2515,1218,2477,1285,2430,1346,2407,1364,2403,1360,2426,1342,2473,1283,2510,1216,2539,1145,2561,1073,2576,1002,2587,938,2596,836"/>
+<area shape="rect" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html#a356319a100d17bc3c2a66925f47b3520" title=" " alt="" coords="1876,1363,2128,1421"/>
+<area shape="poly" title=" " alt="" coords="2602,836,2593,933,2583,994,2567,1059,2545,1126,2516,1191,2478,1250,2430,1302,2398,1325,2369,1339,2340,1345,2312,1347,2250,1346,2215,1347,2176,1353,2126,1365,2125,1359,2175,1348,2215,1342,2250,1340,2311,1342,2339,1340,2367,1334,2396,1321,2426,1298,2473,1247,2511,1188,2540,1124,2562,1058,2577,993,2588,932,2597,835"/>
+<area shape="rect" href="../../d3/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_abstract_preview.html#a69b8496e4f0f0a100bac71d98af0e3cc" title=" " alt="" coords="2180,1528,2424,1587"/>
+<area shape="poly" title=" " alt="" coords="2598,836,2578,988,2543,1191,2520,1294,2494,1387,2464,1464,2447,1495,2430,1518,2417,1529,2413,1525,2426,1514,2443,1492,2459,1462,2489,1386,2515,1293,2538,1190,2573,987,2593,836"/>
+<area shape="rect" href="../../da/d33/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_jump_preview.html#ad86e90cbdf993be5d9f0e16233fe91c2" title=" " alt="" coords="2189,1445,2415,1504"/>
+<area shape="poly" title=" " alt="" coords="2597,836,2574,972,2538,1151,2515,1240,2489,1322,2461,1389,2430,1435,2416,1447,2413,1443,2426,1432,2456,1386,2484,1320,2510,1239,2532,1150,2569,971,2591,836"/>
+<area shape="rect" href="../../d1/d66/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_asset_manage_preview.html#a18b2f9b84bd50c02140dc62de74916a1" title=" " alt="" coords="2188,1611,2416,1669"/>
+<area shape="poly" title=" " alt="" coords="2599,837,2582,1004,2549,1232,2526,1347,2499,1453,2467,1540,2449,1574,2430,1600,2417,1612,2414,1608,2426,1597,2444,1571,2462,1538,2493,1451,2521,1346,2543,1231,2576,1003,2594,836"/>
+<area shape="rect" href="../../dd/d5a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_u_i_pattern_1_1_view_1_1_ui_common_inspector_element.html#ab44518d3f6b4bac54b269b46d691020f" title="データの更新" alt="" coords="626,5,858,64"/>
+<area shape="poly" title=" " alt="" coords="939,50,858,45,858,40,939,45"/>
+<area shape="poly" title=" " alt="" coords="1396,442,1377,370,1344,278,1321,230,1294,183,1261,140,1223,102,1185,80,1188,75,1226,98,1265,136,1298,180,1326,228,1349,276,1383,369,1401,441"/>
+<area shape="rect" href="../../db/d84/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_animation_1_1_view_1_1_animation_inspector_element.html#aae106fd133981d5041a1404498adf087" title=" " alt="" coords="927,365,1213,424"/>
+<area shape="poly" title=" " alt="" coords="1302,454,1192,427,1193,422,1303,449"/>
+<area shape="poly" title=" " alt="" coords="1391,443,1367,387,1331,319,1283,249,1255,218,1223,190,1196,174,1199,169,1226,186,1258,214,1287,246,1336,316,1372,385,1395,441"/>
+<area shape="poly" title=" " alt="" coords="1383,445,1355,405,1319,358,1274,312,1223,273,1185,255,1187,250,1226,268,1278,308,1323,355,1360,402,1387,442"/>
+<area shape="poly" title=" " alt="" coords="1367,449,1302,401,1223,356,1195,344,1197,339,1226,351,1305,396,1370,444"/>
+<area shape="poly" title=" " alt="" coords="1303,505,1193,533,1192,527,1302,500"/>
+<area shape="poly" title=" " alt="" coords="1370,510,1305,558,1226,604,1197,615,1195,610,1223,599,1302,554,1367,506"/>
+<area shape="poly" title=" " alt="" coords="1387,513,1360,553,1323,600,1278,647,1226,686,1197,701,1195,696,1223,682,1274,643,1319,596,1355,550,1383,510"/>
+<area shape="poly" title=" " alt="" coords="1396,513,1372,570,1337,639,1288,709,1259,741,1226,769,1199,785,1196,780,1223,764,1255,737,1284,706,1332,636,1368,567,1391,511"/>
+<area shape="poly" title=" " alt="" coords="1401,514,1382,585,1349,676,1326,724,1298,771,1265,814,1226,851,1199,869,1196,864,1223,847,1261,810,1293,768,1321,722,1344,674,1377,584,1396,513"/>
+<area shape="poly" title=" " alt="" coords="1405,514,1390,600,1378,654,1360,713,1337,773,1307,832,1271,886,1226,934,1207,948,1185,959,1183,954,1204,944,1223,930,1267,883,1303,829,1332,771,1355,711,1373,653,1385,599,1399,513"/>
+<area shape="rect" href="../../de/d02/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_title_1_1_view_1_1_title_inspector_element.html#aad394b72183c615eb160e675fc9a1702" title="データの更新" alt="" coords="962,448,1178,507"/>
+<area shape="poly" title=" " alt="" coords="1258,480,1178,480,1178,475,1258,475"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a229491a27c98aa08b8534c05d97626bf" title="初期化処理" alt="" coords="306,105,568,164"/>
+<area shape="poly" title=" " alt="" coords="900,131,867,129,742,127,616,129,568,131,568,125,616,124,742,122,867,124,900,125"/>
+<area shape="rect" href="../../d8/d9b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_battle_scene_1_1_view_1_1_battle_scene_inspector_element.html#a5991981f3e64a513be8c361300eb2d0f" title="基本データ" alt="" coords="618,139,866,197"/>
+<area shape="poly" title=" " alt="" coords="901,158,866,161,866,155,900,152"/>
+<area shape="poly" title=" " alt="" coords="602,155,568,152,569,146,603,150"/>
+<area shape="rect" href="../../d8/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_troop_1_1_view_1_1_troop_inspector_element.html#a6015e876a3cbac57f8ceb3e46e090bdf" title=" " alt="" coords="626,221,857,280"/>
+<area shape="poly" title=" " alt="" coords="940,240,858,246,858,240,939,235"/>
+<area shape="rect" href="../../d5/de1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_action_1_1_jump.html#aae6efe8e2b25e3148bb450be5cb122c8" title=" " alt="" coords="616,531,867,589"/>
+<area shape="poly" title=" " alt="" coords="930,563,868,563,868,557,930,557"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a0849a2097c7f8ce9a6cdbea9cc53f355" title=" " alt="" coords="311,613,563,672"/>
+<area shape="poly" title=" " alt="" coords="617,596,549,615,547,610,616,591"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#ae0ff304b21e7e1fd046f284e79c77468" title="コマンドの追加" alt="" coords="5,572,258,631"/>
+<area shape="poly" title=" " alt="" coords="296,626,258,621,258,616,296,621"/>
+<area shape="rect" href="../../d4/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_event_edit_1_1_command_setting_window.html#a462ccdb6e962f1559d8436b3412d3787" title=" " alt="" coords="5,655,258,713"/>
+<area shape="poly" title=" " alt="" coords="296,664,258,670,258,664,296,659"/>
+<area shape="rect" href="../../d5/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_character_1_1_move_1_1_move_route.html#aa0e5660dc6dfd220b1c101e6c9ea735d" title=" " alt="" coords="616,613,867,672"/>
+<area shape="poly" title=" " alt="" coords="930,645,868,645,868,640,930,640"/>
+<area shape="poly" title=" " alt="" coords="601,645,564,645,564,640,601,640"/>
+<area shape="rect" href="../../d3/dbe/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_command_editor_1_1_flow_control_1_1_custom_move.html#a504bd17e66c55e6f3448904272d1af16" title=" " alt="" coords="616,696,867,755"/>
+<area shape="poly" title=" " alt="" coords="930,728,868,728,868,723,930,723"/>
+<area shape="poly" title=" " alt="" coords="616,694,547,675,549,670,617,689"/>
+<area shape="poly" title=" " alt="" coords="1606,413,1474,458,1472,453,1605,408"/>
+<area shape="rect" href="../../d3/d80/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_scroll_preview.html#acb694c9653d9dd3b5ef207ede167a334" title="初期状態のUI設定" alt="" coords="1595,429,1822,488"/>
+<area shape="poly" title=" " alt="" coords="2173,461,1823,461,1823,456,2173,456"/>
+<area shape="poly" title=" " alt="" coords="1580,469,1542,472,1541,466,1580,464"/>
+<area shape="rect" href="../../d3/dc0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_custom_move_preview.html#a89fdf50ec7a2e2cd5c69334afdfb1231" title="初期状態のUI設定" alt="" coords="1589,512,1828,571"/>
+<area shape="poly" title=" " alt="" coords="2168,544,1829,544,1829,539,2168,539"/>
+<area shape="poly" title=" " alt="" coords="1574,516,1510,502,1511,497,1575,510"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html#a4be1e4dacdf411e1a715aec234a0aa8b" title="初期状態のUI設定" alt="" coords="1595,595,1823,653"/>
+<area shape="poly" title=" " alt="" coords="2173,627,1823,627,1823,621,2173,621"/>
+<area shape="poly" title=" " alt="" coords="1602,591,1588,585,1507,542,1440,501,1443,497,1510,538,1590,580,1604,586"/>
+<area shape="rect" href="../../d3/dfd/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_abstract_preview.html#a8b08326cec1eb52f006100d1f6dde316" title=" " alt="" coords="1880,347,2124,405"/>
+<area shape="poly" title=" " alt="" coords="2165,379,2124,379,2124,373,2165,373"/>
+<area shape="poly" title=" " alt="" coords="1865,379,1823,379,1823,373,1865,373"/>
+<area shape="rect" href="../../da/d33/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_jump_preview.html#a465065040a0ac7305b025a0e9977359e" title=" " alt="" coords="1889,1147,2115,1205"/>
+<area shape="poly" title=" " alt="" coords="2174,1179,2115,1179,2115,1173,2174,1173"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html#a12309bae0e339379815450a1a0b298ed" title=" " alt="" coords="1888,1229,2116,1288"/>
+<area shape="poly" title=" " alt="" coords="2173,1261,2117,1261,2117,1256,2173,1256"/>
+<area shape="rect" href="../../d1/d5c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_view_1_1_preview_1_1_route_preview.html#ad642462d035efe0d30e149bb3c235ee0" title=" " alt="" coords="1595,1229,1823,1288"/>
+<area shape="poly" title=" " alt="" coords="1873,1261,1823,1261,1823,1256,1873,1256"/>
+<area shape="poly" title=" " alt="" coords="2161,1395,2128,1395,2128,1389,2161,1389"/>
+<area shape="poly" title=" " alt="" coords="2178,1443,2110,1425,2112,1419,2180,1438"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a1a5a867579764351b43a45ecbc7dbf16" name="a1a5a867579764351b43a45ecbc7dbf16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a5a867579764351b43a45ecbc7dbf16">&#9670;&#160;</a></span>_canvasGo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview._canvasGo</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa15554dab973b6092fb4e55b23738689" name="aa15554dab973b6092fb4e55b23738689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15554dab973b6092fb4e55b23738689">&#9670;&#160;</a></span>_sceneWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d38/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_database_editor_1_1_window_1_1_scene_window.html">SceneWindow</a> RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview._sceneWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26a8b0e37aaffa5613ccb990f4bab71b" name="a26a8b0e37aaffa5613ccb990f4bab71b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26a8b0e37aaffa5613ccb990f4bab71b">&#9670;&#160;</a></span>_spritesetBattle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/ddd/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_battle_1_1_sprites_1_1_spriteset_battle.html">SpritesetBattle</a> RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview._spritesetBattle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ed04cbb7110da49746fec058f1193c9" name="a6ed04cbb7110da49746fec058f1193c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed04cbb7110da49746fec058f1193c9">&#9670;&#160;</a></span>_troopDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/da9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_troop_1_1_troop_data_model.html">TroopDataModel</a> RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview._troopDataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75d2c9824342bd4ecd8d9a14ba9b00d5" name="a75d2c9824342bd4ecd8d9a14ba9b00d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75d2c9824342bd4ecd8d9a14ba9b00d5">&#9670;&#160;</a></span>PrefabPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const string RPGMaker.Codebase.Editor.DatabaseEditor.View.Preview.BattleScenePreview.PrefabPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Assets/RPGMaker/Codebase/Runtime/Battle/Asset/Prefab/BattleScenePreviewCanvas.prefab&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/DatabaseEditor/View/Preview/<a class="el" href="../../d5/d57/_battle_scene_preview_8cs.html">BattleScenePreview.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

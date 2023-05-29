@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d4/d7f/namespace_r_p_g_maker_1_1_codebase_1_1_editor.html">Editor</a></li><li class="navelem"><a class="el" href="../../dc/d62/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common.html">Common</a></li><li class="navelem"><a class="el" href="../../d7/df2/namespace_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util.html">AddonUIUtil</a></li><li class="navelem"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html">ScrollTextField</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-static-methods">静的非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d8/d89/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d32/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field__inherit__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_inherit__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,241,123"/>
+<area shape="rect" title=" " alt="" coords="82,5,164,32"/>
+<area shape="poly" title=" " alt="" coords="126,47,126,80,120,80,120,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d57/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_common_8_addon_u_i_util_8_scroll_text_field_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,241,123"/>
+<area shape="rect" title=" " alt="" coords="82,5,164,32"/>
+<area shape="poly" title=" " alt="" coords="126,47,126,80,120,80,120,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:acae100802d4c6b81475933516599c69e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#acae100802d4c6b81475933516599c69e">ScrollTextField</a> (ScrollViewMode scrollViewMode)</td></tr>
+<tr class="separator:acae100802d4c6b81475933516599c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:a06bf3d29d5133befd83d822b906dccb4"><td class="memItemLeft" align="right" valign="top">TextField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a06bf3d29d5133befd83d822b906dccb4">textField</a></td></tr>
+<tr class="separator:a06bf3d29d5133befd83d822b906dccb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a67731f20e5f5839eb349dea12c1d6e88"><td class="memItemLeft" align="right" valign="top">TextEditor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a67731f20e5f5839eb349dea12c1d6e88">GetTextEditor</a> (TextField <a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a06bf3d29d5133befd83d822b906dccb4">textField</a>)</td></tr>
+<tr class="separator:a67731f20e5f5839eb349dea12c1d6e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fc7637c98e69c5f6a417a9c84bb804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a13fc7637c98e69c5f6a417a9c84bb804">cursorMovedCallback</a> ()</td></tr>
+<tr class="separator:a13fc7637c98e69c5f6a417a9c84bb804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1176fc0c17937be1a8a8f981fc1d70ba"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a1176fc0c17937be1a8a8f981fc1d70ba">ScrollToRectVe</a> ()</td></tr>
+<tr class="separator:a1176fc0c17937be1a8a8f981fc1d70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+静的非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a69cba3db864d3c592fb62c2f3d1fbe45"><td class="memItemLeft" align="right" valign="top">static T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a69cba3db864d3c592fb62c2f3d1fbe45">GetPrivatePropertyValue&lt; T &gt;</a> (object obj, string fieldName)</td></tr>
+<tr class="separator:a69cba3db864d3c592fb62c2f3d1fbe45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a199fb5065c3cfa9d6642b330e7b4f19f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a199fb5065c3cfa9d6642b330e7b4f19f">_lastCursorIndex</a></td></tr>
+<tr class="separator:a199fb5065c3cfa9d6642b330e7b4f19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa3da247f53a70130342b44c6b19d99"><td class="memItemLeft" align="right" valign="top">readonly VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#acfa3da247f53a70130342b44c6b19d99">_rectVe</a></td></tr>
+<tr class="separator:acfa3da247f53a70130342b44c6b19d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff46275dfae770cad0a02d3dd390de76"><td class="memItemLeft" align="right" valign="top">readonly TextEditor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#aff46275dfae770cad0a02d3dd390de76">_textEditor</a></td></tr>
+<tr class="separator:aff46275dfae770cad0a02d3dd390de76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="acae100802d4c6b81475933516599c69e" name="acae100802d4c6b81475933516599c69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acae100802d4c6b81475933516599c69e">&#9670;&#160;</a></span>ScrollTextField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.ScrollTextField </td>
+          <td>(</td>
+          <td class="paramtype">ScrollViewMode&#160;</td>
+          <td class="paramname"><em>scrollViewMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_acae100802d4c6b81475933516599c69e_cgraph.png" border="0" usemap="#adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_acae100802d4c6b81475933516599c69e_cgraph" alt=""/></div>
+<map name="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_acae100802d4c6b81475933516599c69e_cgraph" id="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_acae100802d4c6b81475933516599c69e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,47,245,105"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a13fc7637c98e69c5f6a417a9c84bb804" title=" " alt="" coords="293,5,568,64"/>
+<area shape="poly" title=" " alt="" coords="245,57,277,53,278,58,245,62"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a67731f20e5f5839eb349dea12c1d6e88" title=" " alt="" coords="311,88,550,147"/>
+<area shape="poly" title=" " alt="" coords="245,90,296,97,296,102,245,95"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a1176fc0c17937be1a8a8f981fc1d70ba" title=" " alt="" coords="616,5,855,64"/>
+<area shape="poly" title=" " alt="" coords="568,32,601,32,601,37,568,37"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="a13fc7637c98e69c5f6a417a9c84bb804" name="a13fc7637c98e69c5f6a417a9c84bb804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13fc7637c98e69c5f6a417a9c84bb804">&#9670;&#160;</a></span>cursorMovedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.cursorMovedCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_cgraph.png" border="0" usemap="#adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_cgraph" alt=""/></div>
+<map name="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_cgraph" id="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,281,64"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a1176fc0c17937be1a8a8f981fc1d70ba" title=" " alt="" coords="329,5,568,64"/>
+<area shape="poly" title=" " alt="" coords="281,32,313,32,313,37,281,37"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_icgraph.png" border="0" usemap="#adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_icgraph" alt=""/></div>
+<map name="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_icgraph" id="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a13fc7637c98e69c5f6a417a9c84bb804_icgraph">
+<area shape="rect" title=" " alt="" coords="293,5,568,64"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#acae100802d4c6b81475933516599c69e" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a69cba3db864d3c592fb62c2f3d1fbe45" name="a69cba3db864d3c592fb62c2f3d1fbe45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cba3db864d3c592fb62c2f3d1fbe45">&#9670;&#160;</a></span>GetPrivatePropertyValue&lt; T &gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.GetPrivatePropertyValue&lt; T &gt; </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fieldName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67731f20e5f5839eb349dea12c1d6e88" name="a67731f20e5f5839eb349dea12c1d6e88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67731f20e5f5839eb349dea12c1d6e88">&#9670;&#160;</a></span>GetTextEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextEditor RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.GetTextEditor </td>
+          <td>(</td>
+          <td class="paramtype">TextField&#160;</td>
+          <td class="paramname"><em>textField</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a67731f20e5f5839eb349dea12c1d6e88_icgraph.png" border="0" usemap="#adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a67731f20e5f5839eb349dea12c1d6e88_icgraph" alt=""/></div>
+<map name="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a67731f20e5f5839eb349dea12c1d6e88_icgraph" id="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a67731f20e5f5839eb349dea12c1d6e88_icgraph">
+<area shape="rect" title=" " alt="" coords="293,5,532,64"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#acae100802d4c6b81475933516599c69e" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1176fc0c17937be1a8a8f981fc1d70ba" name="a1176fc0c17937be1a8a8f981fc1d70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1176fc0c17937be1a8a8f981fc1d70ba">&#9670;&#160;</a></span>ScrollToRectVe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.ScrollToRectVe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a1176fc0c17937be1a8a8f981fc1d70ba_icgraph.png" border="0" usemap="#adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a1176fc0c17937be1a8a8f981fc1d70ba_icgraph" alt=""/></div>
+<map name="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a1176fc0c17937be1a8a8f981fc1d70ba_icgraph" id="adf/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field_a1176fc0c17937be1a8a8f981fc1d70ba_icgraph">
+<area shape="rect" title=" " alt="" coords="616,5,855,64"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#a13fc7637c98e69c5f6a417a9c84bb804" title=" " alt="" coords="293,5,568,64"/>
+<area shape="poly" title=" " alt="" coords="601,37,569,37,569,32,601,32"/>
+<area shape="rect" href="../../df/dcc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_addon_u_i_util_1_1_scroll_text_field.html#acae100802d4c6b81475933516599c69e" title=" " alt="" coords="5,5,245,64"/>
+<area shape="poly" title=" " alt="" coords="278,37,245,37,245,32,278,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a199fb5065c3cfa9d6642b330e7b4f19f" name="a199fb5065c3cfa9d6642b330e7b4f19f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a199fb5065c3cfa9d6642b330e7b4f19f">&#9670;&#160;</a></span>_lastCursorIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField._lastCursorIndex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acfa3da247f53a70130342b44c6b19d99" name="acfa3da247f53a70130342b44c6b19d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfa3da247f53a70130342b44c6b19d99">&#9670;&#160;</a></span>_rectVe</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly VisualElement RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField._rectVe</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff46275dfae770cad0a02d3dd390de76" name="aff46275dfae770cad0a02d3dd390de76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff46275dfae770cad0a02d3dd390de76">&#9670;&#160;</a></span>_textEditor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly TextEditor RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField._textEditor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06bf3d29d5133befd83d822b906dccb4" name="a06bf3d29d5133befd83d822b906dccb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06bf3d29d5133befd83d822b906dccb4">&#9670;&#160;</a></span>textField</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TextField RPGMaker.Codebase.Editor.Common.AddonUIUtil.ScrollTextField.textField</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/Common/<a class="el" href="../../d5/d0a/_addon_u_i_util_8cs.html">AddonUIUtil.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

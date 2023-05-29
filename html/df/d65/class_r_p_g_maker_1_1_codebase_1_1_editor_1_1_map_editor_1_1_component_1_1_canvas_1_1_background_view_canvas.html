@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-28 23:45 Last updated</span>
+   <div id="projectname">RMU 1.00.00 Documentation Project<span id="projectnumber">&#160;2023-05-29 23:27 Last updated</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
 <a href="../../dc/d28/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas-members.html">全メンバ一覧</a>  </div>
   <div class="headertitle"><div class="title">RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas クラス</div></div>
 </div><!--header-->
@@ -82,17 +84,342 @@ $(function() {
 
 <p>背景ビュー管理用  
  <a href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#details">[詳解]</a></p>
+<div class="dynheader">
+RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/d4d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_background_view_canvas_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_background_view_canvas_coll__map" id="a_r_p_g_maker_8_codebase_8_editor_8_map_editor_8_component_8_canvas_8_background_view_canvas_coll__map">
+<area shape="rect" title="背景ビュー管理用" alt="" coords="3008,1721,3277,1780"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html" title=" " alt="" coords="1863,2031,2072,2089"/>
+<area shape="poly" title=" " alt="" coords="2088,2075,2246,2088,2340,2090,2441,2088,2546,2079,2651,2063,2754,2038,2853,2002,2896,1980,2937,1953,3012,1892,3073,1830,3116,1779,3120,1782,3077,1833,3015,1896,2940,1957,2898,1984,2855,2006,2756,2043,2652,2068,2546,2085,2441,2093,2340,2095,2245,2093,2087,2080"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html" title="マップ編集ウィンドウ." alt="" coords="2620,1652,2854,1711"/>
+<area shape="poly" title=" " alt="" coords="2004,2018,2049,1976,2103,1938,2173,1902,2235,1878,2293,1863,2347,1852,2459,1828,2523,1808,2594,1776,2650,1743,2698,1709,2701,1713,2653,1748,2597,1781,2525,1813,2461,1834,2348,1857,2294,1868,2237,1883,2175,1907,2106,1942,2052,1980,2008,2022"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html" title="背景ビュー管理用" alt="" coords="3008,1375,3277,1433"/>
+<area shape="poly" title=" " alt="" coords="2087,2054,2198,2044,2327,2026,2463,1995,2530,1975,2595,1950,2718,1889,2766,1860,2808,1829,2888,1755,2982,1653,3028,1596,3068,1535,3125,1432,3129,1435,3073,1538,3032,1599,2986,1656,2891,1759,2811,1833,2769,1864,2721,1894,2597,1954,2532,1980,2465,2001,2328,2031,2198,2050,2087,2059"/>
+<area shape="rect" href="../../d8/df0/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_distant_view_canvas.html" title="遠景ビュー管理用" alt="" coords="2229,1521,2471,1580"/>
+<area shape="poly" title=" " alt="" coords="2012,2018,2047,1980,2078,1935,2088,1912,2092,1894,2095,1874,2102,1850,2127,1773,2147,1712,2159,1684,2175,1656,2197,1627,2228,1597,2253,1578,2256,1583,2231,1601,2201,1631,2180,1659,2164,1686,2152,1714,2132,1775,2107,1851,2100,1875,2097,1895,2093,1914,2083,1937,2051,1983,2015,2022"/>
+<area shape="rect" title=" " alt="" coords="999,1869,1104,1896"/>
+<area shape="poly" title=" " alt="" coords="1119,1884,1246,1893,1392,1911,1439,1916,1480,1917,1553,1917,1586,1921,1620,1930,1654,1948,1692,1976,1702,1992,1704,2009,1706,2024,1716,2038,1749,2057,1786,2068,1825,2073,1863,2073,1863,2079,1824,2078,1785,2073,1747,2062,1712,2042,1701,2026,1699,2010,1697,1994,1688,1979,1652,1952,1618,1935,1585,1926,1552,1923,1480,1922,1439,1921,1391,1916,1246,1899,1119,1889"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html" title=" " alt="" coords="1509,1508,1597,1535"/>
+<area shape="poly" title=" " alt="" coords="1093,1860,1139,1835,1185,1805,1209,1782,1236,1764,1262,1751,1307,1733,1349,1712,1369,1696,1389,1672,1400,1649,1400,1627,1401,1605,1414,1581,1434,1562,1458,1547,1507,1528,1509,1533,1461,1552,1437,1566,1418,1584,1407,1606,1406,1628,1405,1650,1394,1675,1373,1699,1352,1717,1309,1738,1264,1756,1239,1768,1212,1786,1188,1809,1141,1839,1096,1865"/>
+<area shape="rect" href="../../d6/d05/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_tile_inventory.html" title=" " alt="" coords="1863,1865,2072,1924"/>
+<area shape="poly" title=" " alt="" coords="1118,1865,1255,1838,1415,1816,1553,1808,1690,1816,1762,1825,1832,1841,1895,1862,1893,1867,1830,1847,1761,1830,1690,1821,1553,1813,1416,1821,1256,1843,1120,1870"/>
+<area shape="rect" title=" " alt="" coords="5,1448,59,1475"/>
+<area shape="poly" title=" " alt="" coords="37,1490,49,1851,64,2051,73,2123,85,2163,118,2217,151,2264,184,2303,220,2334,260,2358,306,2375,359,2385,422,2388,1554,2388,1589,2386,1623,2379,1688,2353,1748,2315,1803,2269,1850,2219,1891,2170,1947,2088,1951,2091,1895,2173,1854,2223,1806,2273,1751,2319,1691,2357,1625,2384,1590,2391,1554,2393,422,2393,359,2390,305,2380,258,2363,217,2338,180,2307,146,2267,114,2220,80,2165,68,2124,58,2051,44,1851,31,1490"/>
+<area shape="poly" title=" " alt="" coords="39,1489,55,1582,70,1644,92,1709,122,1775,159,1837,207,1891,235,1913,265,1932,308,1952,347,1962,382,1964,417,1961,491,1946,583,1932,673,1929,744,1929,777,1925,812,1918,849,1904,891,1883,898,1877,902,1870,907,1862,915,1855,952,1836,986,1824,1046,1815,1109,1813,1186,1804,1288,1779,1367,1755,1447,1737,1495,1731,1551,1729,2351,1729,2421,1727,2490,1721,2619,1702,2620,1707,2491,1726,2421,1732,2351,1735,1552,1735,1495,1737,1448,1742,1369,1760,1290,1784,1187,1809,1109,1819,1046,1821,987,1830,954,1841,918,1860,911,1866,907,1873,902,1880,894,1888,851,1909,813,1923,778,1931,744,1934,673,1935,583,1937,491,1951,418,1967,382,1970,346,1967,307,1957,262,1937,231,1918,203,1895,155,1840,117,1778,87,1711,65,1645,49,1583,34,1490"/>
+<area shape="poly" title=" " alt="" coords="54,1485,89,1527,137,1578,197,1627,230,1648,265,1665,308,1676,382,1686,582,1703,687,1707,781,1706,852,1700,876,1694,891,1687,903,1672,907,1655,902,1619,896,1581,901,1562,915,1545,948,1532,1008,1523,1178,1515,1365,1514,1509,1517,1508,1523,1365,1520,1178,1520,1009,1528,950,1537,918,1549,906,1564,902,1581,907,1618,913,1656,908,1674,894,1691,878,1699,853,1705,781,1712,687,1712,582,1708,381,1692,306,1681,263,1671,228,1653,194,1632,134,1582,85,1531,50,1489"/>
+<area shape="rect" href="../../d5/d7b/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_event_management_1_1_event_management_service.html" title=" " alt="" coords="607,297,892,356"/>
+<area shape="poly" title=" " alt="" coords="31,1433,45,976,59,715,69,620,80,565,112,488,146,431,167,407,192,385,262,343,304,325,347,312,437,298,525,295,607,300,606,305,525,300,437,303,348,318,306,330,265,348,196,389,171,410,150,434,117,490,85,566,74,621,65,716,50,977,37,1433"/>
+<area shape="rect" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_asset_manage_repository.html" title=" " alt="" coords="290,936,557,995"/>
+<area shape="poly" title=" " alt="" coords="31,1433,34,1357,42,1259,57,1165,67,1127,80,1100,100,1076,123,1055,175,1021,232,997,288,981,290,986,233,1002,177,1026,126,1059,104,1080,85,1103,72,1129,62,1166,48,1259,40,1357,37,1433"/>
+<area shape="rect" href="../../dc/d23/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_auto_guide_repository.html" title=" " alt="" coords="290,1019,557,1077"/>
+<area shape="poly" title=" " alt="" coords="46,1434,159,1240,220,1141,245,1106,262,1087,288,1072,291,1077,265,1091,249,1109,225,1144,163,1242,50,1436"/>
+<area shape="rect" href="../../dd/db4/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_flags_repository.html" title=" " alt="" coords="290,1432,557,1491"/>
+<area shape="poly" title=" " alt="" coords="73,1459,289,1459,289,1464,73,1464"/>
+<area shape="rect" href="../../d6/d55/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_system_repository.html" title=" " alt="" coords="290,523,557,581"/>
+<area shape="poly" title=" " alt="" coords="31,1433,33,1270,41,1036,55,815,66,735,80,689,99,664,122,643,173,608,231,583,288,566,290,572,233,588,176,612,125,647,103,668,85,692,72,736,61,815,46,1036,39,1270,36,1433"/>
+<area shape="rect" href="../../d6/d61/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_title_repository.html" title=" " alt="" coords="290,605,557,664"/>
+<area shape="poly" title=" " alt="" coords="32,1433,45,1188,59,1047,69,989,80,946,168,807,228,719,262,674,288,659,290,664,265,678,232,722,172,810,85,948,74,990,65,1048,50,1189,37,1433"/>
+<area shape="poly" title=" " alt="" coords="37,1489,40,1605,48,1760,63,1902,73,1952,85,1977,100,1987,121,1996,182,2009,264,2018,364,2022,605,2018,881,2003,1169,1979,1445,1952,1863,1905,1863,1910,1445,1958,1170,1985,882,2008,605,2024,364,2027,264,2023,181,2015,119,2001,97,1992,81,1980,68,1953,57,1903,43,1761,35,1605,31,1490"/>
+<area shape="rect" href="../../dd/d0b/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_list_view_1_1_tile_list_view.html" title=" " alt="" coords="1439,2047,1667,2105"/>
+<area shape="poly" title=" " alt="" coords="36,1489,40,1614,48,1785,62,1943,72,1998,85,2028,147,2088,209,2137,269,2175,330,2203,390,2223,451,2234,513,2239,577,2238,710,2223,854,2198,1011,2171,1186,2151,1289,2139,1391,2119,1452,2103,1454,2109,1392,2124,1290,2145,1187,2156,1012,2176,855,2203,711,2228,577,2243,513,2244,451,2239,389,2228,328,2208,267,2180,206,2142,144,2092,80,2031,67,2000,57,1944,42,1785,34,1614,31,1489"/>
+<area shape="rect" title=" " alt="" coords="1450,2129,1656,2156"/>
+<area shape="poly" title=" " alt="" coords="1670,2138,1750,2131,1830,2116,1870,2103,1907,2088,1910,2092,1872,2108,1832,2121,1751,2136,1671,2144"/>
+<area shape="rect" title=" " alt="" coords="969,2115,1134,2141"/>
+<area shape="poly" title=" " alt="" coords="1125,2142,1235,2163,1376,2182,1453,2189,1532,2191,1612,2189,1690,2181,1762,2167,1830,2140,1879,2115,1923,2088,1925,2092,1881,2120,1832,2145,1763,2172,1690,2187,1612,2194,1532,2197,1453,2194,1375,2188,1234,2169,1124,2148"/>
+<area shape="poly" title=" " alt="" coords="1147,2121,1167,2113,1185,2101,1193,2091,1196,2081,1195,2059,1195,2036,1200,2025,1209,2014,1240,2002,1295,1994,1446,1985,1690,1977,1761,1972,1792,1967,1830,1957,1873,1941,1913,1922,1916,1927,1875,1946,1832,1963,1793,1973,1762,1977,1690,1983,1446,1990,1296,2000,1242,2008,1212,2018,1204,2027,1201,2037,1201,2059,1201,2082,1197,2093,1188,2105,1170,2118,1149,2126"/>
+<area shape="poly" title=" " alt="" coords="1148,2118,1391,2096,1438,2090,1439,2095,1392,2101,1149,2124"/>
+<area shape="rect" title=" " alt="" coords="969,2228,1134,2271"/>
+<area shape="poly" title=" " alt="" coords="1149,2262,1289,2274,1373,2276,1464,2273,1557,2264,1652,2248,1743,2221,1830,2184,1863,2163,1893,2138,1941,2088,1945,2091,1897,2142,1866,2168,1832,2189,1745,2226,1653,2253,1558,2270,1464,2279,1373,2281,1288,2279,1148,2267"/>
+<area shape="poly" title=" " alt="" coords="1148,2252,1218,2253,1289,2250,1350,2241,1374,2233,1390,2223,1400,2212,1404,2200,1402,2173,1400,2145,1404,2130,1414,2116,1437,2097,1441,2101,1418,2119,1409,2132,1406,2145,1408,2173,1409,2200,1404,2214,1393,2227,1376,2238,1352,2246,1290,2255,1218,2258,1148,2258"/>
+<area shape="poly" title=" " alt="" coords="2869,1701,3008,1725,3007,1730,2868,1706"/>
+<area shape="poly" title=" " alt="" coords="2720,1725,2700,1764,2673,1808,2638,1850,2597,1885,2531,1921,2471,1939,2414,1946,2358,1945,2302,1942,2242,1943,2178,1951,2105,1973,2052,2001,2007,2032,2004,2028,2049,1996,2103,1968,2177,1946,2242,1937,2302,1937,2358,1940,2413,1940,2469,1934,2529,1916,2594,1880,2634,1846,2668,1805,2695,1762,2715,1723"/>
+<area shape="poly" title=" " alt="" coords="2867,1651,2927,1629,2982,1598,3028,1559,3067,1514,3099,1470,3123,1432,3127,1435,3104,1473,3071,1518,3032,1563,2986,1602,2929,1633,2869,1656"/>
+<area shape="rect" href="../../de/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_base_window.html" title="メニュー、ヒエラルキー、シーン、インスペクターウィンドウの基底抽象クラス." alt="" coords="2301,1668,2399,1695"/>
+<area shape="poly" title=" " alt="" coords="2414,1679,2619,1679,2619,1684,2414,1684"/>
+<area shape="rect" title=" " alt="" coords="1917,1668,2018,1695"/>
+<area shape="poly" title=" " alt="" coords="2033,1679,2301,1679,2301,1684,2033,1684"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html" title="マップ・データ・モデル" alt="" coords="916,1072,1187,1115"/>
+<area shape="poly" title=" " alt="" coords="1173,1121,1189,1136,1201,1157,1205,1178,1199,1219,1195,1239,1194,1258,1199,1276,1212,1294,1235,1304,1279,1311,1428,1316,1966,1315,2547,1315,2621,1318,2684,1329,2738,1347,2786,1372,2831,1404,2878,1442,2986,1535,3032,1581,3072,1631,3128,1720,3123,1722,3067,1634,3028,1584,2982,1539,2874,1446,2828,1408,2783,1377,2736,1352,2683,1335,2621,1324,2546,1320,1966,1320,1428,1322,1278,1316,1234,1309,1209,1298,1194,1279,1189,1259,1190,1239,1194,1218,1200,1178,1196,1159,1185,1139,1169,1125"/>
+<area shape="poly" title=" " alt="" coords="1201,1079,1310,1076,1434,1080,1564,1093,1628,1105,1691,1120,1759,1143,1813,1169,1859,1197,1901,1227,1986,1287,2039,1316,2105,1344,2152,1357,2213,1367,2356,1385,2496,1408,2554,1424,2597,1446,2623,1468,2646,1493,2684,1549,2712,1605,2729,1651,2724,1653,2707,1607,2680,1551,2642,1496,2620,1471,2594,1450,2552,1429,2495,1413,2355,1390,2212,1372,2151,1362,2103,1349,2037,1321,1984,1292,1897,1231,1856,1202,1811,1174,1757,1148,1689,1125,1627,1110,1563,1099,1434,1085,1310,1081,1201,1084"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html" title=" " alt="" coords="1416,1240,1690,1299"/>
+<area shape="poly" title=" " alt="" coords="1169,1120,1189,1136,1199,1154,1201,1172,1202,1189,1213,1205,1234,1220,1255,1229,1295,1234,1338,1231,1392,1235,1416,1239,1415,1244,1391,1240,1338,1236,1294,1239,1253,1234,1232,1225,1209,1209,1197,1191,1195,1173,1194,1156,1185,1139,1165,1124"/>
+<area shape="rect" href="../../d9/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_edit_canvas.html" title=" " alt="" coords="1855,1492,2080,1551"/>
+<area shape="poly" title=" " alt="" coords="1146,1117,1188,1135,1200,1143,1212,1151,1257,1162,1318,1168,1460,1174,1532,1178,1598,1187,1653,1202,1675,1213,1692,1226,1708,1249,1714,1272,1712,1295,1708,1318,1700,1364,1704,1387,1716,1410,1745,1440,1780,1464,1817,1483,1856,1497,1854,1502,1815,1488,1777,1469,1741,1444,1712,1414,1699,1388,1695,1364,1702,1317,1707,1294,1708,1273,1703,1251,1688,1230,1672,1217,1651,1207,1597,1192,1531,1183,1460,1179,1317,1173,1257,1167,1210,1156,1197,1148,1185,1140,1144,1122"/>
+<area shape="poly" title=" " alt="" coords="1173,1121,1189,1136,1205,1164,1209,1192,1206,1219,1199,1246,1193,1272,1190,1297,1196,1322,1213,1348,1233,1364,1253,1372,1273,1373,1294,1371,1340,1366,1366,1368,1393,1378,1441,1407,1484,1443,1543,1506,1539,1510,1480,1447,1438,1411,1391,1382,1365,1374,1340,1371,1295,1376,1273,1378,1252,1377,1230,1369,1209,1351,1191,1325,1185,1298,1188,1271,1194,1244,1201,1218,1204,1192,1200,1166,1185,1139,1170,1125"/>
+<area shape="poly" title=" " alt="" coords="1165,1066,1210,1059,1380,1039,1551,1035,2738,1035,2775,1038,2811,1046,2846,1059,2879,1076,2939,1119,2993,1172,3040,1228,3078,1284,3129,1373,3125,1376,3074,1287,3035,1231,2989,1175,2936,1123,2876,1080,2843,1063,2810,1051,2775,1043,2738,1040,1552,1040,1381,1044,1211,1064,1165,1071"/>
+<area shape="poly" title=" " alt="" coords="1202,1103,1512,1132,1636,1145,1692,1155,1703,1175,1707,1203,1706,1270,1704,1338,1707,1365,1716,1384,1737,1396,1778,1410,1893,1438,2081,1477,2236,1518,2235,1523,2080,1483,1892,1443,1776,1415,1735,1401,1712,1387,1702,1367,1699,1339,1700,1270,1702,1203,1698,1177,1688,1159,1636,1151,1512,1137,1201,1109"/>
+<area shape="rect" title=" " alt="" coords="329,256,518,283"/>
+<area shape="poly" title=" " alt="" coords="532,256,632,251,738,251,832,261,868,271,894,286,917,311,937,346,955,389,971,438,998,551,1018,675,1033,799,1043,914,1052,1071,1047,1072,1038,914,1028,800,1013,676,993,552,966,439,950,391,932,348,912,315,891,290,866,276,831,266,738,256,632,256,532,261"/>
+<area shape="rect" href="../../d0/d66/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_background.html" title=" " alt="" coords="286,24,561,83"/>
+<area shape="poly" title=" " alt="" coords="575,22,656,18,742,26,783,36,823,50,861,70,894,97,921,130,944,174,964,228,982,290,1010,432,1029,587,1042,742,1049,883,1053,1071,1047,1072,1043,883,1036,742,1024,588,1004,433,977,291,959,229,939,176,916,132,890,101,858,75,821,55,782,41,741,31,656,23,575,27"/>
+<area shape="rect" href="../../d6/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1parallax.html" title=" " alt="" coords="264,107,583,149"/>
+<area shape="poly" title=" " alt="" coords="598,117,687,118,773,124,845,138,873,149,894,162,919,192,941,233,961,283,978,341,1006,473,1025,617,1039,762,1047,894,1053,1072,1047,1072,1041,894,1033,762,1020,618,1000,474,973,342,956,285,937,235,915,195,891,166,871,153,844,143,772,130,686,123,598,122"/>
+<area shape="rect" href="../../dc/d49/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_sound_state.html" title=" " alt="" coords="286,173,561,232"/>
+<area shape="poly" title=" " alt="" coords="575,197,669,200,762,208,841,224,872,235,894,250,917,277,937,314,955,359,972,411,999,530,1019,659,1033,789,1043,909,1052,1071,1047,1072,1038,909,1028,790,1014,660,993,531,967,413,950,361,932,317,912,280,891,254,869,240,840,229,761,213,669,205,575,202"/>
+<area shape="poly" title=" " alt="" coords="1401,1290,1343,1293,1287,1292,1241,1286,1209,1271,1196,1256,1190,1239,1194,1206,1198,1172,1195,1155,1185,1139,1156,1117,1159,1113,1189,1136,1200,1153,1203,1171,1199,1206,1196,1239,1200,1253,1212,1267,1242,1281,1288,1287,1342,1288,1401,1285"/>
+<area shape="poly" title=" " alt="" coords="2095,1494,2179,1482,2278,1472,2388,1466,2507,1466,2629,1475,2752,1495,2872,1528,2930,1550,2985,1576,3031,1607,3070,1645,3102,1685,3126,1719,3121,1722,3098,1688,3066,1649,3027,1611,2983,1581,2928,1555,2870,1533,2751,1500,2629,1481,2507,1472,2389,1471,2278,1477,2179,1488,2095,1500"/>
+<area shape="poly" title=" " alt="" coords="2061,1554,2143,1581,2230,1605,2387,1630,2620,1663,2619,1668,2386,1636,2229,1611,2141,1586,2059,1559"/>
+<area shape="poly" title=" " alt="" coords="2042,1483,2104,1460,2224,1430,2349,1409,2475,1394,2598,1386,2716,1382,2826,1383,3008,1390,3007,1395,2826,1388,2716,1388,2598,1391,2475,1400,2350,1414,2225,1435,2105,1465,2043,1488"/>
+<area shape="poly" title=" " alt="" coords="2096,1546,2105,1547,2229,1552,2229,1557,2104,1552,2095,1551"/>
+<area shape="poly" title=" " alt="" coords="1612,1519,1854,1519,1854,1524,1612,1524"/>
+<area shape="rect" title=" " alt="" coords="1007,1559,1096,1585"/>
+<area shape="poly" title=" " alt="" coords="1110,1564,1391,1537,1508,1524,1508,1529,1392,1543,1111,1570"/>
+<area shape="rect" title=" " alt="" coords="1022,1609,1081,1636"/>
+<area shape="poly" title=" " alt="" coords="1095,1617,1228,1604,1310,1593,1391,1576,1460,1555,1518,1533,1520,1538,1461,1560,1392,1581,1311,1598,1229,1610,1096,1623"/>
+<area shape="rect" title=" " alt="" coords="1022,1660,1081,1687"/>
+<area shape="poly" title=" " alt="" coords="1095,1670,1169,1668,1256,1661,1336,1648,1368,1639,1390,1629,1399,1618,1402,1607,1405,1594,1414,1581,1436,1563,1460,1549,1508,1530,1510,1535,1462,1554,1439,1568,1418,1584,1410,1596,1407,1608,1404,1621,1393,1633,1370,1644,1337,1654,1256,1666,1169,1673,1095,1676"/>
+<area shape="rect" title=" " alt="" coords="1006,1149,1097,1176"/>
+<area shape="poly" title=" " alt="" coords="1112,1160,1153,1169,1172,1179,1189,1193,1205,1219,1210,1245,1207,1271,1200,1297,1194,1322,1192,1346,1197,1370,1213,1394,1233,1411,1253,1419,1273,1422,1293,1420,1339,1416,1365,1417,1393,1424,1434,1443,1474,1465,1535,1505,1532,1510,1471,1469,1432,1447,1391,1429,1364,1422,1339,1421,1294,1426,1272,1427,1251,1424,1230,1415,1209,1398,1192,1372,1186,1347,1189,1321,1195,1295,1202,1270,1204,1245,1200,1221,1185,1196,1169,1183,1151,1174,1111,1165"/>
+<area shape="poly" title=" " alt="" coords="886,364,895,373,904,395,909,428,913,526,905,791,899,931,898,1055,903,1151,909,1183,918,1202,933,1217,948,1227,981,1235,1014,1234,1049,1227,1085,1220,1120,1218,1155,1226,1172,1236,1189,1250,1203,1272,1208,1294,1206,1316,1202,1338,1197,1359,1195,1380,1199,1401,1213,1421,1233,1438,1252,1448,1272,1452,1293,1452,1338,1450,1364,1452,1392,1457,1462,1481,1521,1505,1519,1510,1460,1486,1391,1463,1363,1457,1338,1456,1293,1458,1272,1457,1251,1453,1230,1443,1209,1424,1194,1403,1190,1380,1191,1358,1196,1336,1201,1315,1203,1294,1198,1274,1185,1254,1169,1240,1153,1231,1120,1223,1085,1225,1050,1232,1015,1239,980,1241,946,1231,930,1221,914,1206,904,1185,898,1152,892,1055,894,930,900,791,908,526,904,429,898,396,890,376,882,367"/>
+<area shape="rect" href="../../db/db0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_database_management_service.html" title=" " alt="" coords="923,1264,1180,1323"/>
+<area shape="poly" title=" " alt="" coords="1079,1334,1102,1369,1133,1408,1170,1444,1212,1474,1256,1485,1337,1496,1509,1515,1508,1520,1337,1501,1255,1490,1210,1478,1166,1448,1129,1411,1098,1373,1074,1337"/>
+<area shape="rect" href="../../d5/deb/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_animation_repository.html" title=" " alt="" coords="290,771,557,829"/>
+<area shape="poly" title=" " alt="" coords="572,770,655,766,699,768,742,775,784,785,824,801,861,823,894,852,904,866,911,885,917,931,915,987,910,1047,902,1164,905,1211,911,1229,918,1244,937,1262,933,1266,914,1247,906,1231,900,1212,896,1164,905,1047,910,987,911,932,906,886,900,869,890,855,858,827,822,806,783,790,741,780,698,774,655,771,572,775"/>
+<area shape="rect" href="../../d5/d5e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_armor_repository.html" title=" " alt="" coords="290,853,557,912"/>
+<area shape="poly" title=" " alt="" coords="572,872,666,872,761,878,841,893,872,904,894,920,909,947,914,985,910,1081,904,1178,907,1216,919,1244,937,1262,934,1266,914,1247,902,1218,899,1178,904,1081,909,986,904,948,890,923,870,909,840,898,760,883,666,877,572,878"/>
+<area shape="poly" title=" " alt="" coords="572,941,655,940,741,951,784,963,824,980,861,1002,894,1030,912,1057,918,1084,916,1110,910,1137,903,1163,900,1190,904,1217,918,1244,938,1261,934,1265,914,1247,899,1218,894,1190,898,1163,904,1136,911,1109,913,1084,908,1059,890,1034,858,1006,821,984,782,968,740,957,654,946,572,946"/>
+<area shape="poly" title=" " alt="" coords="572,1048,666,1054,760,1066,841,1085,872,1097,894,1113,906,1129,911,1146,909,1179,905,1212,909,1227,918,1244,939,1261,935,1265,914,1247,904,1229,900,1212,903,1178,906,1146,902,1131,890,1117,869,1102,839,1090,760,1071,666,1060,571,1053"/>
+<area shape="rect" href="../../dc/d27/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repositor67544213d6af3013901ca89c3e4d5d21.html" title=" " alt="" coords="290,1101,557,1160"/>
+<area shape="poly" title=" " alt="" coords="572,1129,649,1137,733,1152,816,1177,894,1214,902,1221,907,1229,918,1243,950,1261,947,1266,915,1247,902,1232,898,1225,891,1218,814,1182,731,1157,649,1142,571,1134"/>
+<area shape="rect" href="../../d5/df3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_class_repository.html" title=" " alt="" coords="290,1184,557,1243"/>
+<area shape="poly" title=" " alt="" coords="572,1229,923,1274,923,1280,571,1235"/>
+<area shape="rect" href="../../d3/dae/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_encounter_repository.html" title=" " alt="" coords="290,1267,557,1325"/>
+<area shape="poly" title=" " alt="" coords="571,1293,923,1291,923,1297,571,1298"/>
+<area shape="rect" href="../../d4/d59/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_enemy_repository.html" title=" " alt="" coords="290,1349,557,1408"/>
+<area shape="poly" title=" " alt="" coords="571,1358,892,1315,922,1310,923,1316,893,1320,572,1363"/>
+<area shape="poly" title=" " alt="" coords="571,1444,728,1418,811,1399,891,1375,950,1350,1002,1321,1005,1326,952,1354,893,1380,812,1404,729,1424,572,1449"/>
+<area shape="rect" href="../../dd/d1d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_item_repository.html" title=" " alt="" coords="290,1515,557,1573"/>
+<area shape="poly" title=" " alt="" coords="572,1540,649,1532,731,1517,813,1494,891,1460,935,1430,973,1393,1005,1355,1029,1322,1034,1325,1010,1358,977,1397,938,1434,894,1465,815,1499,732,1523,649,1537,572,1545"/>
+<area shape="rect" href="../../da/d52/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_common_repository.html" title=" " alt="" coords="290,1597,557,1656"/>
+<area shape="poly" title=" " alt="" coords="572,1619,665,1612,758,1601,838,1583,868,1572,891,1559,901,1547,905,1534,908,1519,914,1502,973,1401,1026,1322,1031,1325,977,1404,919,1504,913,1521,910,1536,906,1550,894,1563,871,1577,839,1588,759,1606,665,1618,572,1624"/>
+<area shape="rect" href="../../df/d9d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_skill_custom_repository.html" title=" " alt="" coords="290,357,557,416"/>
+<area shape="poly" title=" " alt="" coords="572,390,772,405,852,418,879,425,894,434,905,454,911,486,917,580,916,702,910,838,902,1097,905,1192,911,1224,919,1244,936,1262,933,1265,914,1247,905,1226,900,1193,896,1097,905,838,910,702,912,580,906,487,900,456,890,438,877,430,851,423,772,411,571,395"/>
+<area shape="rect" href="../../d0/d34/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_state_repository.html" title=" " alt="" coords="290,440,557,499"/>
+<area shape="poly" title=" " alt="" coords="572,456,667,454,762,459,842,473,872,484,894,500,904,518,910,547,916,633,915,745,910,871,903,1109,906,1196,911,1226,919,1244,936,1262,933,1265,914,1247,906,1227,901,1197,897,1109,905,870,910,745,911,633,905,548,899,520,890,503,870,489,840,478,761,464,667,460,572,462"/>
+<area shape="poly" title=" " alt="" coords="571,523,655,519,698,522,742,529,784,540,825,556,862,578,894,608,903,624,908,649,913,723,909,926,904,1129,908,1203,912,1229,919,1244,936,1261,933,1265,914,1247,907,1230,903,1204,899,1129,904,925,908,723,903,650,898,625,890,611,859,583,822,561,783,545,741,534,698,527,655,525,571,528"/>
+<area shape="poly" title=" " alt="" coords="572,627,667,629,762,637,842,654,873,666,894,682,902,696,907,719,912,784,909,963,906,1143,909,1208,913,1230,919,1244,936,1261,933,1265,914,1247,908,1232,904,1209,900,1143,904,963,906,784,901,720,897,698,890,686,870,671,840,659,761,643,667,635,572,633"/>
+<area shape="rect" href="../../d6/d3e/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_troop_repository.html" title=" " alt="" coords="290,688,557,747"/>
+<area shape="poly" title=" " alt="" coords="572,704,667,702,761,706,842,720,872,731,894,746,901,759,906,778,910,836,909,995,907,1154,910,1212,919,1244,937,1262,933,1266,914,1247,905,1213,901,1154,904,995,905,836,901,779,896,761,890,750,870,736,840,725,761,711,667,707,572,709"/>
+<area shape="rect" href="../../d8/d26/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_data_model.html" title="タイル・データ・モデル" alt="" coords="919,1752,1184,1795"/>
+<area shape="poly" title=" " alt="" coords="1119,1744,1210,1712,1261,1699,1301,1692,1341,1685,1391,1671,1415,1660,1530,1623,1648,1591,1854,1542,1855,1547,1649,1596,1532,1628,1417,1665,1393,1676,1342,1690,1302,1698,1262,1705,1211,1717,1121,1749"/>
+<area shape="poly" title=" " alt="" coords="1103,1800,1188,1855,1253,1904,1300,1945,1349,1984,1417,2026,1456,2044,1454,2049,1414,2030,1346,1988,1297,1949,1249,1908,1185,1860,1100,1805"/>
+<area shape="rect" title=" " alt="" coords="390,1731,457,1757"/>
+<area shape="poly" title=" " alt="" coords="472,1744,919,1765,919,1770,472,1749"/>
+<area shape="rect" href="../../d2/d0f/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_large_parts_data_model.html" title="大パーツ・データ・モデル" alt="" coords="300,1781,547,1840"/>
+<area shape="poly" title=" " alt="" coords="561,1803,892,1785,918,1783,919,1789,893,1791,561,1808"/>
+<area shape="rect" href="../../d2/d8c/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_tile_image_data_model.html" title="タイル・イメージ・データ・モデル" alt="" coords="304,1864,543,1923"/>
+<area shape="poly" title=" " alt="" coords="557,1883,719,1863,806,1845,891,1823,915,1811,967,1793,969,1798,917,1816,893,1828,808,1851,720,1868,557,1888"/>
+<area shape="poly" title=" " alt="" coords="3084,1444,2880,1581,2779,1654,2776,1649,2876,1576,3081,1440"/>
+<area shape="poly" title=" " alt="" coords="2486,1568,2542,1581,2597,1599,2648,1623,2693,1649,2691,1654,2645,1627,2595,1604,2540,1586,2485,1573"/>
+<area shape="poly" title=" " alt="" coords="2013,1854,2055,1825,2103,1802,2176,1780,2238,1771,2295,1769,2349,1771,2402,1773,2459,1773,2522,1766,2595,1748,2641,1730,2684,1709,2687,1714,2644,1735,2596,1753,2523,1771,2459,1778,2402,1779,2349,1776,2295,1774,2239,1776,2177,1786,2105,1806,2058,1830,2016,1858"/>
+<area shape="rect" title=" " alt="" coords="1455,1831,1651,1857"/>
+<area shape="poly" title=" " alt="" coords="1666,1855,1863,1879,1862,1885,1665,1860"/>
+<area shape="poly" title=" " alt="" coords="1681,2091,1756,2095,1831,2091,1862,2086,1863,2091,1831,2096,1756,2100,1681,2096"/>
+<area shape="poly" title=" " alt="" coords="1681,2058,1756,2040,1830,2011,1862,1992,1891,1969,1939,1922,1943,1926,1895,1973,1865,1996,1832,2016,1758,2045,1682,2063"/>
+<area shape="rect" title=" " alt="" coords="1010,2064,1093,2091"/>
+<area shape="poly" title=" " alt="" coords="1108,2075,1439,2074,1439,2079,1108,2080"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:af7ed7c2a6ecaa7f006d7f9e2e609e3a4"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4">CreateButtonMenu</a> (<a class="el" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html">MapEditWindow</a> mapEditWindow, MapDataModel mapDataModel, <a class="el" href="../../d9/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_edit_canvas.html">MapEditCanvas</a> mapEditCanvas, <a class="el" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html">LayerInventory</a> layerInventory, ScrollView images, VisualElement buttonContainer)</td></tr>
+<tr class="memitem:af7ed7c2a6ecaa7f006d7f9e2e609e3a4"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4">CreateButtonMenu</a> (<a class="el" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html">MapEditWindow</a> mapEditWindow, <a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html">MapDataModel</a> mapDataModel, <a class="el" href="../../d9/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_edit_canvas.html">MapEditCanvas</a> mapEditCanvas, <a class="el" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html">LayerInventory</a> layerInventory, ScrollView images, VisualElement buttonContainer)</td></tr>
 <tr class="separator:af7ed7c2a6ecaa7f006d7f9e2e609e3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd208abe708a9060fe115dee2de26f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a8cd208abe708a9060fe115dee2de26f5">UpdateImagePreview</a> (Texture2D tex2d)</td></tr>
 <tr class="separator:a8cd208abe708a9060fe115dee2de26f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae4c2051dc68f1c058815ad42cd15a526"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ae4c2051dc68f1c058815ad42cd15a526">LoadBackgroundImage</a> ()</td></tr>
+<tr class="separator:ae4c2051dc68f1c058815ad42cd15a526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310999717be28ee2ce0633abd4489a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a310999717be28ee2ce0633abd4489a3b">DeleteBackgroundImage</a> (string fileName)</td></tr>
+<tr class="memdesc:a310999717be28ee2ce0633abd4489a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">背景画像の削除  <br /></td></tr>
+<tr class="separator:a310999717be28ee2ce0633abd4489a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97dbde26c86bbedb49bc5c1d4231e27"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ad97dbde26c86bbedb49bc5c1d4231e27">BackgroundButtonMenu</a> ()</td></tr>
+<tr class="separator:ad97dbde26c86bbedb49bc5c1d4231e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a50b609f02a3be9475b08c4180f16fa96"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a50b609f02a3be9475b08c4180f16fa96">_backgroundView</a></td></tr>
+<tr class="separator:a50b609f02a3be9475b08c4180f16fa96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5213a8457a773c82b3290dabd250c43"><td class="memItemLeft" align="right" valign="top">VisualElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ab5213a8457a773c82b3290dabd250c43">_buttonContainer</a></td></tr>
+<tr class="separator:ab5213a8457a773c82b3290dabd250c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a5a45b53857cb5294f7c983d0328cf8"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a4a5a45b53857cb5294f7c983d0328cf8">_imageContentSize</a></td></tr>
+<tr class="separator:a4a5a45b53857cb5294f7c983d0328cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27eb1e4e999ff1c31ba7f9202c8048a"><td class="memItemLeft" align="right" valign="top">ScrollView&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ae27eb1e4e999ff1c31ba7f9202c8048a">_images</a></td></tr>
+<tr class="separator:ae27eb1e4e999ff1c31ba7f9202c8048a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a16d89d52cf161cf88647e0cd8144a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html">LayerInventory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a06a16d89d52cf161cf88647e0cd8144a">_layerInventory</a></td></tr>
+<tr class="separator:a06a16d89d52cf161cf88647e0cd8144a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec1bc32061eec8fd44d8448b3c9ea52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html">MapDataModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a1ec1bc32061eec8fd44d8448b3c9ea52">_mapDataModel</a></td></tr>
+<tr class="separator:a1ec1bc32061eec8fd44d8448b3c9ea52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76121bd37766f872848dafb83c64c3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_edit_canvas.html">MapEditCanvas</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ab76121bd37766f872848dafb83c64c3b">_mapEditCanvas</a></td></tr>
+<tr class="separator:ab76121bd37766f872848dafb83c64c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356df329dcd1d55ebc717888494c7332"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html">MapEditWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a356df329dcd1d55ebc717888494c7332">_mapEditWindow</a></td></tr>
+<tr class="separator:a356df329dcd1d55ebc717888494c7332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c648798ccea48e34a88895eab7ab1f"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ab4c648798ccea48e34a88895eab7ab1f">_texOriginalSize</a></td></tr>
+<tr class="separator:ab4c648798ccea48e34a88895eab7ab1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>背景ビュー管理用 </p>
 </div><h2 class="groupheader">メソッド詳解</h2>
+<a id="ad97dbde26c86bbedb49bc5c1d4231e27" name="ad97dbde26c86bbedb49bc5c1d4231e27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97dbde26c86bbedb49bc5c1d4231e27">&#9670;&#160;</a></span>BackgroundButtonMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas.BackgroundButtonMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ボタンメニューの作成 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_cgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_cgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_cgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_cgraph">
+<area shape="rect" title=" " alt="" coords="5,608,275,667"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a619331c2fdc2c99a4774ab1fe81cd315" title=" " alt="" coords="336,5,579,64"/>
+<area shape="poly" title=" " alt="" coords="140,607,149,508,159,441,176,368,199,291,230,216,270,144,321,81,332,71,336,75,325,85,274,147,234,218,204,293,181,369,165,442,154,509,145,608"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a310999717be28ee2ce0633abd4489a3b" title="背景画像の削除" alt="" coords="956,139,1226,197"/>
+<area shape="poly" title=" " alt="" coords="188,605,321,523,477,422,547,380,639,331,725,290,795,262,955,207,976,200,978,205,957,212,796,267,728,295,641,336,549,384,480,427,324,528,191,610"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a2c6167e377aba78a5305318f726925a9" title=" " alt="" coords="1290,284,1526,343"/>
+<area shape="poly" title=" " alt="" coords="159,606,225,518,271,468,321,422,480,303,549,259,616,224,685,195,762,170,851,147,956,124,1032,107,1093,97,1123,97,1154,101,1188,110,1227,124,1276,153,1320,191,1356,232,1383,270,1379,273,1351,235,1316,195,1273,157,1225,129,1186,115,1153,106,1123,102,1094,103,1033,113,957,129,852,152,764,175,687,200,618,229,551,264,483,307,324,426,274,471,229,521,163,609"/>
+<area shape="rect" href="../../d5/df7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_background_image_helper.html#a9efd5a671f44a0ca94270e707a15d2ec" title="背景画像の設定 引数1:設定対象(VisualElement) 引数2:表示領域の幅、高さ(Vector2Int) 引数3:対象のテクスチャ 引数4:画像サイズをピクセル数で指定するかパーセントで指定す..." alt="" coords="1288,836,1528,895"/>
+<area shape="poly" title=" " alt="" coords="193,665,254,696,323,723,451,757,583,785,715,807,845,825,1084,848,1273,859,1272,865,1083,854,844,830,714,813,582,790,450,762,322,728,252,701,190,670"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="640,653,908,712"/>
+<area shape="poly" title=" " alt="" coords="275,644,626,669,625,675,275,650"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ae4c2051dc68f1c058815ad42cd15a526" title=" " alt="" coords="323,537,592,596"/>
+<area shape="poly" title=" " alt="" coords="274,605,308,597,309,602,275,610"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a8cd208abe708a9060fe115dee2de26f5" title=" " alt="" coords="956,712,1226,771"/>
+<area shape="poly" title=" " alt="" coords="275,663,323,672,481,701,640,721,796,732,942,737,942,743,795,738,640,727,480,706,322,677,274,668"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html#ae08b2c5e09f5bba209b7f8263d0293b2" title=" " alt="" coords="341,845,574,904"/>
+<area shape="poly" title=" " alt="" coords="165,665,231,744,275,787,324,824,345,836,342,841,321,829,272,791,227,748,161,669"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ae8497421fbee3fdf2c7163afe5e400fa" title="背景または遠景の画像設定 (表示更新あり)。" alt="" coords="1295,471,1521,529"/>
+<area shape="poly" title=" " alt="" coords="1213,196,1228,207,1242,225,1251,243,1258,277,1261,313,1266,333,1276,353,1318,411,1364,459,1360,462,1314,414,1271,356,1261,334,1256,314,1252,278,1246,245,1238,228,1224,211,1210,200"/>
+<area shape="poly" title=" " alt="" coords="1198,195,1227,207,1292,239,1350,274,1348,278,1289,244,1225,212,1196,200"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="2267,604,2492,663"/>
+<area shape="poly" title=" " alt="" coords="1522,525,1590,539,1770,566,1950,589,2253,620,2252,626,1949,595,1769,572,1590,544,1521,530"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a124654a1f7c0a3a4bd272b49b6925ab5" title="背景または遠景の画像設定。" alt="" coords="1610,471,1842,529"/>
+<area shape="poly" title=" " alt="" coords="1521,497,1595,497,1595,503,1521,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#aa7e10682bd9659bbf64ee1829a5e1f76" title=" " alt="" coords="1912,471,2187,529"/>
+<area shape="poly" title=" " alt="" coords="1842,497,1898,497,1898,503,1842,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#a242e52d6c89e04659a56c186666f512d" title=" " alt="" coords="2242,471,2517,529"/>
+<area shape="poly" title=" " alt="" coords="2187,497,2227,497,2227,503,2187,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#affd4bfb9bfd560f9c7d84fc6d740123b" title="新規作成またはロードしたマッププレハブの内容を、使用できる状態に補正する。" alt="" coords="2569,553,2843,612"/>
+<area shape="poly" title=" " alt="" coords="2499,527,2574,546,2572,552,2497,533"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a849e43da36a49c1809353e19050800f2" title=" " alt="" coords="2569,687,2843,745"/>
+<area shape="poly" title=" " alt="" coords="2428,527,2522,590,2650,676,2647,680,2520,594,2425,532"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a0e5484709cd9d49495f730fdd7cc3e84" title=" " alt="" coords="2593,471,2820,529"/>
+<area shape="poly" title=" " alt="" coords="2517,497,2578,497,2578,503,2517,503"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a53bbabb88d5752c05d2c87b8c5228dec" title=" " alt="" coords="2588,388,2824,447"/>
+<area shape="poly" title=" " alt="" coords="2497,467,2573,448,2574,453,2499,473"/>
+<area shape="poly" title=" " alt="" coords="2569,578,2409,565,2237,544,2189,535,2190,530,2238,539,2410,560,2569,573"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="2896,479,3124,521"/>
+<area shape="poly" title=" " alt="" coords="2820,497,2881,497,2881,503,2820,503"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a621412cc59b6ebaa5359b2b76d0f6864" title=" " alt="" coords="1597,292,1854,335"/>
+<area shape="poly" title=" " alt="" coords="1527,311,1583,311,1583,316,1527,316"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a1b3b17d52311ea244b18b389df8c2b5c" title=" " alt="" coords="1955,255,2144,297"/>
+<area shape="poly" title=" " alt="" coords="1855,296,1940,286,1940,291,1855,301"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0ced2de704698b81d840db07779842b8" title=" " alt="" coords="1933,321,2166,380"/>
+<area shape="poly" title=" " alt="" coords="1855,326,1919,333,1918,338,1855,331"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a9fd159ca00e34217c8748d03a72a95cc" title=" " alt="" coords="2285,255,2474,297"/>
+<area shape="poly" title=" " alt="" coords="2145,273,2270,273,2270,279,2145,279"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a566d32cf7bf6badc0cdfb781137f0895" title=" " alt="" coords="2612,239,2801,281"/>
+<area shape="poly" title=" " alt="" coords="2474,269,2597,263,2597,268,2475,274"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="2588,305,2825,364"/>
+<area shape="poly" title=" " alt="" coords="2475,290,2573,308,2573,313,2474,296"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="2891,305,3129,364"/>
+<area shape="poly" title=" " alt="" coords="2825,332,2877,332,2877,337,2825,337"/>
+<area shape="poly" title=" " alt="" coords="550,534,639,512,729,500,806,497,939,504,1003,506,1069,501,1141,485,1225,455,1239,446,1249,437,1272,413,1352,350,1356,354,1275,417,1253,440,1243,451,1227,460,1143,490,1070,506,1003,511,939,510,806,502,729,505,641,517,551,539"/>
+<area shape="poly" title=" " alt="" coords="592,558,978,536,1145,524,1225,512,1239,500,1247,485,1256,470,1272,456,1336,430,1391,415,1442,409,1491,410,1595,422,1655,428,1724,431,2051,431,2191,424,2331,408,2461,386,2572,364,2573,369,2462,392,2331,413,2191,430,2051,436,1724,436,1655,433,1594,427,1491,415,1443,414,1392,420,1337,435,1275,461,1260,473,1252,488,1243,503,1227,517,1145,529,978,541,592,563"/>
+<area shape="poly" title=" " alt="" coords="528,594,641,639,660,646,659,651,639,644,526,599"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af8abf6641717893a6a048fbc34863392" title=" " alt="" coords="657,345,892,404"/>
+<area shape="poly" title=" " alt="" coords="506,534,710,410,713,414,509,539"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a1286ae556ae711d30b0de7f29adb3837" title=" " alt="" coords="657,571,891,629"/>
+<area shape="poly" title=" " alt="" coords="593,578,643,583,642,589,592,584"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#ae700e73304faf6a66d590053b74629c0" title=" " alt="" coords="973,304,1209,363"/>
+<area shape="poly" title=" " alt="" coords="892,357,958,348,959,353,893,362"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#a56f748dc148156495e3f5fc18a91f70b" title=" " alt="" coords="973,387,1209,445"/>
+<area shape="poly" title=" " alt="" coords="893,387,959,396,958,401,892,393"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af69d6cafe71797aad8b8c1436de9c439" title=" " alt="" coords="973,221,1209,280"/>
+<area shape="poly" title=" " alt="" coords="835,342,955,290,974,283,976,288,957,294,837,347"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdbf331b61525484fef829de4261226e" title=" " alt="" coords="978,571,1204,629"/>
+<area shape="poly" title=" " alt="" coords="892,597,963,597,963,603,892,603"/>
+<area shape="poly" title=" " alt="" coords="880,627,909,639,973,669,1031,702,1028,706,970,674,907,644,878,632"/>
+<area shape="poly" title=" " alt="" coords="1185,568,1298,532,1300,537,1187,573"/>
+<area shape="poly" title=" " alt="" coords="1135,568,1224,499,1304,422,1370,352,1374,355,1308,426,1227,503,1138,572"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="1274,604,1542,663"/>
+<area shape="poly" title=" " alt="" coords="1204,609,1259,615,1259,620,1204,614"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#adfa294899fffd2dd165dcc0c8e7dc9fc" title=" " alt="" coords="1274,687,1542,745"/>
+<area shape="poly" title=" " alt="" coords="1162,628,1275,672,1294,679,1292,684,1273,677,1160,632"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a0c5750fe8c86416d3511eef8093089a3" title=" " alt="" coords="1308,769,1508,812"/>
+<area shape="poly" title=" " alt="" coords="1139,627,1183,660,1228,698,1242,715,1250,729,1260,742,1275,755,1295,765,1292,770,1272,760,1256,746,1246,732,1237,718,1224,702,1179,664,1135,632"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#abe2b4039cf7d155f94edc51bfbb18ef7" title=" " alt="" coords="1597,604,1854,679"/>
+<area shape="poly" title=" " alt="" coords="1204,586,1364,579,1454,581,1542,589,1588,598,1587,603,1542,595,1454,587,1364,585,1204,591"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a79c0390d6e80ef85f4888abe9008e3c7" title="マップをセーブするときに強調表示を戻す" alt="" coords="1609,703,1843,761"/>
+<area shape="poly" title=" " alt="" coords="1508,770,1593,754,1594,759,1509,775"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html#a7b2b821a80c9d6e77ecea4c7481c8f0e" title=" " alt="" coords="1590,885,1861,944"/>
+<area shape="poly" title=" " alt="" coords="1509,809,1543,822,1568,837,1591,854,1637,876,1635,881,1589,858,1565,842,1541,826,1507,814"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a292b9b509b28fce1ce5d975de2b52b15" title="マップをセーブ完了時に、強調表示の状態戻す" alt="" coords="1604,785,1848,844"/>
+<area shape="poly" title=" " alt="" coords="1509,796,1589,802,1588,807,1508,801"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdaa46b19f6d87b89def3cab537595bc" title=" " alt="" coords="1937,703,2162,761"/>
+<area shape="poly" title=" " alt="" coords="1843,729,1922,729,1922,735,1843,735"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html#a19c0e2369048a6733d1c1f8e17c28099" title=" " alt="" coords="1910,785,2189,844"/>
+<area shape="poly" title=" " alt="" coords="1844,759,1918,778,1917,784,1843,765"/>
+<area shape="poly" title=" " alt="" coords="2147,699,2237,672,2261,665,2263,670,2238,677,2149,705"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ac61cc506d9255bbd571043f3e5468e49" title=" " alt="" coords="1909,895,2190,953"/>
+<area shape="poly" title=" " alt="" coords="1862,916,1895,917,1895,922,1862,921"/>
+<area shape="poly" title=" " alt="" coords="2122,892,2188,854,2202,841,2211,829,2221,817,2236,806,2276,787,2312,776,2375,767,2440,765,2521,755,2560,746,2561,752,2521,760,2440,770,2375,773,2313,781,2278,792,2239,810,2224,821,2215,832,2206,845,2191,858,2125,896"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a427282e3836e92ac98c186103ae2afbb" title=" " alt="" coords="2238,1052,2521,1111"/>
+<area shape="poly" title=" " alt="" coords="2093,952,2160,995,2239,1038,2254,1044,2252,1049,2237,1042,2157,1000,2090,956"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a041f774b2b96f08ba2ff2769f94ada31" title=" " alt="" coords="2242,687,2517,745"/>
+<area shape="poly" title=" " alt="" coords="2132,892,2162,875,2188,854,2204,831,2210,808,2218,785,2236,762,2251,751,2254,755,2240,766,2222,788,2215,810,2209,833,2192,858,2165,879,2135,896"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ae52ac0cf88d7d660713d2c01b24207e2" title=" " alt="" coords="2261,820,2498,879"/>
+<area shape="poly" title=" " alt="" coords="2181,891,2246,877,2247,882,2183,897"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#aac8a4802465c30e6b280e54872da1e8d" title=" " alt="" coords="2588,1011,2825,1069"/>
+<area shape="poly" title=" " alt="" coords="2070,952,2097,993,2135,1041,2183,1086,2210,1105,2239,1120,2279,1136,2314,1145,2346,1149,2376,1149,2441,1138,2520,1120,2583,1100,2640,1074,2643,1079,2585,1105,2522,1125,2442,1143,2377,1154,2345,1154,2313,1150,2277,1141,2237,1125,2207,1110,2180,1090,2131,1044,2093,996,2065,955"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#aa4247892fb80ce53b627e1cc34cdf737" title=" " alt="" coords="2266,903,2493,961"/>
+<area shape="poly" title=" " alt="" coords="2190,925,2251,926,2251,932,2190,930"/>
+<area shape="rect" href="../../d8/dd0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_json_helper.html#a769989dc78ae92d5e53c0aec69a8bec7" title=" " alt="" coords="2266,985,2493,1028"/>
+<area shape="poly" title=" " alt="" coords="2163,951,2238,971,2270,979,2269,984,2237,976,2162,957"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a712ec3f11afbdf696f89f34c65583346" title=" " alt="" coords="2588,820,2825,879"/>
+<area shape="poly" title=" " alt="" coords="2499,847,2572,847,2572,852,2499,852"/>
+<area shape="poly" title=" " alt="" coords="2497,877,2522,888,2564,913,2603,942,2668,999,2664,1003,2599,946,2561,918,2520,893,2495,882"/>
+<area shape="poly" title=" " alt="" coords="1843,782,1922,762,1923,767,1844,787"/>
+<area shape="poly" title=" " alt="" coords="1848,812,1895,812,1895,817,1848,817"/>
+<area shape="poly" title=" " alt="" coords="1812,601,1966,533,1968,538,1814,606"/>
+<area shape="poly" title=" " alt="" coords="1187,769,1227,787,1251,805,1275,822,1287,827,1285,832,1272,826,1248,809,1224,792,1185,774"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_icgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_icgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_icgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ad97dbde26c86bbedb49bc5c1d4231e27_icgraph">
+<area shape="rect" title=" " alt="" coords="605,5,874,64"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4" title=" " alt="" coords="288,5,557,64"/>
+<area shape="poly" title=" " alt="" coords="590,37,557,37,557,32,590,32"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#af5aa99fff88b3229de7a5a1c996f40eb" title=" " alt="" coords="5,5,240,64"/>
+<area shape="poly" title=" " alt="" coords="273,37,240,37,240,32,273,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="af7ed7c2a6ecaa7f006d7f9e2e609e3a4" name="af7ed7c2a6ecaa7f006d7f9e2e609e3a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7ed7c2a6ecaa7f006d7f9e2e609e3a4">&#9670;&#160;</a></span>CreateButtonMenu()</h2>
 
@@ -108,7 +435,7 @@ $(function() {
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">MapDataModel&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html">MapDataModel</a>&#160;</td>
           <td class="paramname"><em>mapDataModel</em>, </td>
         </tr>
         <tr>
@@ -143,6 +470,375 @@ $(function() {
       </table>
 </div><div class="memdoc">
 <p>初期化 </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_cgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_cgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_cgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,608,275,667"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ad97dbde26c86bbedb49bc5c1d4231e27" title=" " alt="" coords="323,608,592,667"/>
+<area shape="poly" title=" " alt="" coords="275,635,308,635,308,640,275,640"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a619331c2fdc2c99a4774ab1fe81cd315" title=" " alt="" coords="654,5,896,64"/>
+<area shape="poly" title=" " alt="" coords="457,607,466,508,477,441,493,368,516,291,547,216,587,144,638,81,650,71,653,75,642,85,592,147,552,218,521,293,498,369,482,442,471,509,462,608"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a310999717be28ee2ce0633abd4489a3b" title="背景画像の削除" alt="" coords="1274,139,1543,197"/>
+<area shape="poly" title=" " alt="" coords="505,605,639,523,795,422,864,380,956,331,1043,290,1112,262,1273,207,1293,200,1295,205,1275,212,1114,267,1045,295,959,336,866,384,797,427,641,528,508,610"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a2c6167e377aba78a5305318f726925a9" title=" " alt="" coords="1607,284,1843,343"/>
+<area shape="poly" title=" " alt="" coords="476,606,542,518,588,468,638,422,798,303,866,259,933,224,1003,195,1080,170,1168,147,1273,124,1349,107,1411,97,1440,97,1471,101,1505,110,1544,124,1594,153,1637,191,1673,232,1700,270,1696,273,1669,235,1633,195,1591,157,1542,129,1504,115,1470,106,1440,102,1411,103,1350,113,1274,129,1170,152,1081,175,1005,200,935,229,869,264,801,307,642,426,592,471,547,521,480,609"/>
+<area shape="rect" href="../../d5/df7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_background_image_helper.html#a9efd5a671f44a0ca94270e707a15d2ec" title="背景画像の設定 引数1:設定対象(VisualElement) 引数2:表示領域の幅、高さ(Vector2Int) 引数3:対象のテクスチャ 引数4:画像サイズをピクセル数で指定するかパーセントで指定す..." alt="" coords="1605,836,1845,895"/>
+<area shape="poly" title=" " alt="" coords="510,665,571,696,641,723,768,757,900,785,1032,807,1162,825,1401,848,1590,859,1590,865,1400,854,1161,830,1031,813,899,790,767,762,639,728,569,701,508,670"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="957,653,1226,712"/>
+<area shape="poly" title=" " alt="" coords="593,644,943,669,943,675,592,650"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ae4c2051dc68f1c058815ad42cd15a526" title=" " alt="" coords="640,537,909,596"/>
+<area shape="poly" title=" " alt="" coords="592,605,625,597,627,602,593,610"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a8cd208abe708a9060fe115dee2de26f5" title=" " alt="" coords="1274,712,1543,771"/>
+<area shape="poly" title=" " alt="" coords="593,663,640,672,798,701,958,721,1113,732,1259,737,1259,743,1113,738,957,727,798,706,640,677,592,668"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html#ae08b2c5e09f5bba209b7f8263d0293b2" title=" " alt="" coords="659,845,891,904"/>
+<area shape="poly" title=" " alt="" coords="482,665,548,744,592,787,641,824,662,836,659,841,639,829,589,791,544,748,478,669"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ae8497421fbee3fdf2c7163afe5e400fa" title="背景または遠景の画像設定 (表示更新あり)。" alt="" coords="1613,471,1838,529"/>
+<area shape="poly" title=" " alt="" coords="1531,196,1545,207,1560,225,1569,243,1575,277,1578,313,1584,333,1593,353,1635,411,1681,459,1677,462,1631,414,1589,356,1579,334,1573,314,1570,278,1564,245,1555,228,1541,211,1527,200"/>
+<area shape="poly" title=" " alt="" coords="1515,195,1544,207,1609,239,1668,274,1665,278,1606,244,1542,212,1513,200"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="2584,604,2809,663"/>
+<area shape="poly" title=" " alt="" coords="1839,525,1908,539,2087,566,2267,589,2570,620,2569,626,2267,595,2087,572,1907,544,1838,530"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a124654a1f7c0a3a4bd272b49b6925ab5" title="背景または遠景の画像設定。" alt="" coords="1927,471,2159,529"/>
+<area shape="poly" title=" " alt="" coords="1838,497,1912,497,1912,503,1838,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#aa7e10682bd9659bbf64ee1829a5e1f76" title=" " alt="" coords="2230,471,2504,529"/>
+<area shape="poly" title=" " alt="" coords="2160,497,2215,497,2215,503,2160,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#a242e52d6c89e04659a56c186666f512d" title=" " alt="" coords="2560,471,2834,529"/>
+<area shape="poly" title=" " alt="" coords="2505,497,2545,497,2545,503,2505,503"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#affd4bfb9bfd560f9c7d84fc6d740123b" title="新規作成またはロードしたマッププレハブの内容を、使用できる状態に補正する。" alt="" coords="2886,553,3161,612"/>
+<area shape="poly" title=" " alt="" coords="2816,527,2891,546,2890,552,2815,533"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a849e43da36a49c1809353e19050800f2" title=" " alt="" coords="2886,687,3161,745"/>
+<area shape="poly" title=" " alt="" coords="2745,527,2840,590,2968,676,2965,680,2837,594,2742,532"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a0e5484709cd9d49495f730fdd7cc3e84" title=" " alt="" coords="2910,471,3137,529"/>
+<area shape="poly" title=" " alt="" coords="2834,497,2895,497,2895,503,2834,503"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a53bbabb88d5752c05d2c87b8c5228dec" title=" " alt="" coords="2905,388,3142,447"/>
+<area shape="poly" title=" " alt="" coords="2815,467,2890,448,2892,453,2816,473"/>
+<area shape="poly" title=" " alt="" coords="2886,578,2727,565,2555,544,2507,535,2507,530,2555,539,2727,560,2886,573"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="3214,479,3441,521"/>
+<area shape="poly" title=" " alt="" coords="3137,497,3198,497,3198,503,3137,503"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a621412cc59b6ebaa5359b2b76d0f6864" title=" " alt="" coords="1914,292,2172,335"/>
+<area shape="poly" title=" " alt="" coords="1844,311,1900,311,1900,316,1844,316"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a1b3b17d52311ea244b18b389df8c2b5c" title=" " alt="" coords="2272,255,2462,297"/>
+<area shape="poly" title=" " alt="" coords="2172,296,2257,286,2258,291,2172,301"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0ced2de704698b81d840db07779842b8" title=" " alt="" coords="2251,321,2483,380"/>
+<area shape="poly" title=" " alt="" coords="2172,326,2236,333,2235,338,2172,331"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a9fd159ca00e34217c8748d03a72a95cc" title=" " alt="" coords="2602,255,2791,297"/>
+<area shape="poly" title=" " alt="" coords="2462,273,2587,273,2587,279,2462,279"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a566d32cf7bf6badc0cdfb781137f0895" title=" " alt="" coords="2929,239,3118,281"/>
+<area shape="poly" title=" " alt="" coords="2792,269,2914,263,2914,268,2792,274"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="2905,305,3142,364"/>
+<area shape="poly" title=" " alt="" coords="2792,290,2891,308,2890,313,2791,296"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="3209,305,3446,364"/>
+<area shape="poly" title=" " alt="" coords="3143,332,3194,332,3194,337,3143,337"/>
+<area shape="poly" title=" " alt="" coords="867,534,957,512,1046,500,1124,497,1257,504,1320,506,1386,501,1459,485,1542,455,1557,446,1567,437,1589,413,1670,350,1673,354,1593,417,1570,440,1560,451,1544,460,1460,490,1387,506,1320,511,1257,510,1124,502,1047,505,958,517,869,539"/>
+<area shape="poly" title=" " alt="" coords="909,558,1295,536,1462,524,1542,512,1557,500,1565,485,1573,470,1590,456,1653,430,1709,415,1760,409,1809,410,1912,422,1972,428,2042,431,2368,431,2508,424,2648,408,2778,386,2890,364,2891,369,2779,392,2649,413,2508,430,2368,436,2042,436,1972,433,1912,427,1808,415,1760,414,1710,420,1655,435,1592,461,1577,473,1569,488,1561,503,1544,517,1462,529,1296,541,910,563"/>
+<area shape="poly" title=" " alt="" coords="846,594,958,639,978,646,976,651,956,644,844,599"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af8abf6641717893a6a048fbc34863392" title=" " alt="" coords="974,345,1209,404"/>
+<area shape="poly" title=" " alt="" coords="824,534,1028,410,1031,414,826,539"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a1286ae556ae711d30b0de7f29adb3837" title=" " alt="" coords="974,571,1209,629"/>
+<area shape="poly" title=" " alt="" coords="910,578,960,583,959,589,909,584"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#ae700e73304faf6a66d590053b74629c0" title=" " alt="" coords="1291,304,1526,363"/>
+<area shape="poly" title=" " alt="" coords="1209,357,1276,348,1276,353,1210,362"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#a56f748dc148156495e3f5fc18a91f70b" title=" " alt="" coords="1291,387,1526,445"/>
+<area shape="poly" title=" " alt="" coords="1210,387,1276,396,1276,401,1209,393"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af69d6cafe71797aad8b8c1436de9c439" title=" " alt="" coords="1291,221,1526,280"/>
+<area shape="poly" title=" " alt="" coords="1152,342,1273,290,1291,283,1293,288,1275,294,1154,347"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdbf331b61525484fef829de4261226e" title=" " alt="" coords="1296,571,1521,629"/>
+<area shape="poly" title=" " alt="" coords="1209,597,1280,597,1280,603,1209,603"/>
+<area shape="poly" title=" " alt="" coords="1197,627,1227,639,1290,669,1348,702,1346,706,1288,674,1225,644,1195,632"/>
+<area shape="poly" title=" " alt="" coords="1503,568,1615,532,1617,537,1504,573"/>
+<area shape="poly" title=" " alt="" coords="1452,568,1541,499,1621,422,1687,352,1691,355,1625,426,1545,503,1455,572"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="1591,604,1859,663"/>
+<area shape="poly" title=" " alt="" coords="1522,609,1577,615,1576,620,1521,614"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#adfa294899fffd2dd165dcc0c8e7dc9fc" title=" " alt="" coords="1591,687,1859,745"/>
+<area shape="poly" title=" " alt="" coords="1479,628,1592,672,1611,679,1610,684,1590,677,1477,632"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a0c5750fe8c86416d3511eef8093089a3" title=" " alt="" coords="1625,769,1825,812"/>
+<area shape="poly" title=" " alt="" coords="1456,627,1500,660,1545,698,1559,715,1568,729,1577,742,1592,755,1612,765,1610,770,1590,760,1573,746,1563,732,1555,718,1541,702,1497,664,1453,632"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#abe2b4039cf7d155f94edc51bfbb18ef7" title=" " alt="" coords="1914,604,2172,679"/>
+<area shape="poly" title=" " alt="" coords="1521,586,1682,579,1771,581,1860,589,1905,598,1905,603,1859,595,1771,587,1682,585,1522,591"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a79c0390d6e80ef85f4888abe9008e3c7" title="マップをセーブするときに強調表示を戻す" alt="" coords="1926,703,2160,761"/>
+<area shape="poly" title=" " alt="" coords="1825,770,1910,754,1911,759,1826,775"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html#a7b2b821a80c9d6e77ecea4c7481c8f0e" title=" " alt="" coords="1907,885,2179,944"/>
+<area shape="poly" title=" " alt="" coords="1827,809,1861,822,1885,837,1909,854,1955,876,1952,881,1906,858,1882,842,1858,826,1825,814"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a292b9b509b28fce1ce5d975de2b52b15" title="マップをセーブ完了時に、強調表示の状態戻す" alt="" coords="1921,785,2165,844"/>
+<area shape="poly" title=" " alt="" coords="1826,796,1906,802,1906,807,1826,801"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdaa46b19f6d87b89def3cab537595bc" title=" " alt="" coords="2254,703,2480,761"/>
+<area shape="poly" title=" " alt="" coords="2161,729,2239,729,2239,735,2161,735"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html#a19c0e2369048a6733d1c1f8e17c28099" title=" " alt="" coords="2228,785,2506,844"/>
+<area shape="poly" title=" " alt="" coords="2161,759,2236,778,2234,784,2160,765"/>
+<area shape="poly" title=" " alt="" coords="2464,699,2554,672,2579,665,2580,670,2556,677,2466,705"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ac61cc506d9255bbd571043f3e5468e49" title=" " alt="" coords="2227,895,2507,953"/>
+<area shape="poly" title=" " alt="" coords="2179,916,2212,917,2212,922,2179,921"/>
+<area shape="poly" title=" " alt="" coords="2439,892,2505,854,2519,841,2528,829,2538,817,2554,806,2594,787,2629,776,2692,767,2757,765,2838,755,2878,746,2879,752,2839,760,2757,770,2692,773,2630,781,2596,792,2556,810,2541,821,2532,832,2523,845,2509,858,2442,896"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a427282e3836e92ac98c186103ae2afbb" title=" " alt="" coords="2555,1052,2838,1111"/>
+<area shape="poly" title=" " alt="" coords="2410,952,2477,995,2556,1038,2571,1044,2569,1049,2554,1042,2474,1000,2408,956"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a041f774b2b96f08ba2ff2769f94ada31" title=" " alt="" coords="2560,687,2834,745"/>
+<area shape="poly" title=" " alt="" coords="2450,892,2479,875,2505,854,2521,831,2528,808,2535,785,2553,762,2568,751,2571,755,2557,766,2540,788,2533,810,2526,833,2509,858,2482,879,2452,896"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ae52ac0cf88d7d660713d2c01b24207e2" title=" " alt="" coords="2578,820,2815,879"/>
+<area shape="poly" title=" " alt="" coords="2499,891,2563,877,2564,882,2500,897"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#aac8a4802465c30e6b280e54872da1e8d" title=" " alt="" coords="2905,1011,3142,1069"/>
+<area shape="poly" title=" " alt="" coords="2387,952,2414,993,2452,1041,2500,1086,2527,1105,2556,1120,2596,1136,2631,1145,2663,1149,2694,1149,2758,1138,2838,1120,2900,1100,2958,1074,2960,1079,2902,1105,2839,1125,2759,1143,2694,1154,2663,1154,2630,1150,2594,1141,2554,1125,2524,1110,2497,1090,2449,1044,2410,996,2383,955"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#aa4247892fb80ce53b627e1cc34cdf737" title=" " alt="" coords="2583,903,2810,961"/>
+<area shape="poly" title=" " alt="" coords="2507,925,2568,926,2568,932,2507,930"/>
+<area shape="rect" href="../../d8/dd0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_json_helper.html#a769989dc78ae92d5e53c0aec69a8bec7" title=" " alt="" coords="2583,985,2810,1028"/>
+<area shape="poly" title=" " alt="" coords="2480,951,2556,971,2588,979,2586,984,2554,976,2479,957"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a712ec3f11afbdf696f89f34c65583346" title=" " alt="" coords="2905,820,3142,879"/>
+<area shape="poly" title=" " alt="" coords="2816,847,2890,847,2890,852,2816,852"/>
+<area shape="poly" title=" " alt="" coords="2815,877,2840,888,2881,913,2920,942,2985,999,2982,1003,2917,946,2878,918,2837,893,2812,882"/>
+<area shape="poly" title=" " alt="" coords="2160,782,2239,762,2241,767,2161,787"/>
+<area shape="poly" title=" " alt="" coords="2166,812,2213,812,2213,817,2166,817"/>
+<area shape="poly" title=" " alt="" coords="2129,601,2284,533,2286,538,2131,606"/>
+<area shape="poly" title=" " alt="" coords="1504,769,1544,787,1568,805,1592,822,1604,827,1602,832,1590,826,1565,809,1542,792,1502,774"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_icgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_icgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_icgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_af7ed7c2a6ecaa7f006d7f9e2e609e3a4_icgraph">
+<area shape="rect" title=" " alt="" coords="288,5,557,64"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#af5aa99fff88b3229de7a5a1c996f40eb" title=" " alt="" coords="5,5,240,64"/>
+<area shape="poly" title=" " alt="" coords="273,37,240,37,240,32,273,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a310999717be28ee2ce0633abd4489a3b" name="a310999717be28ee2ce0633abd4489a3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a310999717be28ee2ce0633abd4489a3b">&#9670;&#160;</a></span>DeleteBackgroundImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas.DeleteBackgroundImage </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>背景画像の削除 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>背景画像名</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_cgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_cgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_cgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_cgraph">
+<area shape="rect" title="背景画像の削除" alt="" coords="5,243,275,301"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ae8497421fbee3fdf2c7163afe5e400fa" title="背景または遠景の画像設定 (表示更新あり)。" alt="" coords="328,187,554,245"/>
+<area shape="poly" title=" " alt="" coords="275,244,313,237,314,242,276,249"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a2c6167e377aba78a5305318f726925a9" title=" " alt="" coords="323,284,559,343"/>
+<area shape="poly" title=" " alt="" coords="276,288,308,292,307,298,275,293"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="623,104,848,163"/>
+<area shape="poly" title=" " alt="" coords="547,183,614,165,615,170,549,189"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a124654a1f7c0a3a4bd272b49b6925ab5" title="背景または遠景の画像設定。" alt="" coords="620,187,852,245"/>
+<area shape="poly" title=" " alt="" coords="554,213,605,213,605,219,554,219"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#aa7e10682bd9659bbf64ee1829a5e1f76" title=" " alt="" coords="912,129,1187,188"/>
+<area shape="poly" title=" " alt="" coords="852,192,897,184,898,189,853,197"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#a242e52d6c89e04659a56c186666f512d" title=" " alt="" coords="1235,129,1509,188"/>
+<area shape="poly" title=" " alt="" coords="1187,156,1220,156,1220,161,1187,161"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#affd4bfb9bfd560f9c7d84fc6d740123b" title="新規作成またはロードしたマッププレハブの内容を、使用できる状態に補正する。" alt="" coords="1557,5,1831,64"/>
+<area shape="poly" title=" " alt="" coords="1433,126,1556,74,1575,67,1577,72,1558,78,1436,131"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a849e43da36a49c1809353e19050800f2" title=" " alt="" coords="1557,88,1831,147"/>
+<area shape="poly" title=" " alt="" coords="1509,138,1542,134,1543,139,1510,144"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a0e5484709cd9d49495f730fdd7cc3e84" title=" " alt="" coords="1581,171,1808,229"/>
+<area shape="poly" title=" " alt="" coords="1510,174,1566,181,1565,186,1509,179"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a53bbabb88d5752c05d2c87b8c5228dec" title=" " alt="" coords="1576,253,1812,312"/>
+<area shape="poly" title=" " alt="" coords="1436,186,1558,239,1577,246,1575,251,1556,244,1433,191"/>
+<area shape="poly" title=" " alt="" coords="1557,60,1235,120,1195,128,1194,123,1234,115,1556,55"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="1884,179,2112,221"/>
+<area shape="poly" title=" " alt="" coords="1808,197,1869,197,1869,203,1808,203"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a621412cc59b6ebaa5359b2b76d0f6864" title=" " alt="" coords="607,321,864,364"/>
+<area shape="poly" title=" " alt="" coords="560,322,592,326,592,331,559,328"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a1b3b17d52311ea244b18b389df8c2b5c" title=" " alt="" coords="955,321,1144,364"/>
+<area shape="poly" title=" " alt="" coords="865,340,940,340,940,345,865,345"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0ced2de704698b81d840db07779842b8" title=" " alt="" coords="933,388,1166,447"/>
+<area shape="poly" title=" " alt="" coords="829,362,919,384,918,389,828,367"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a9fd159ca00e34217c8748d03a72a95cc" title=" " alt="" coords="1277,336,1467,379"/>
+<area shape="poly" title=" " alt="" coords="1145,344,1262,350,1262,355,1144,350"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a566d32cf7bf6badc0cdfb781137f0895" title=" " alt="" coords="1600,336,1789,379"/>
+<area shape="poly" title=" " alt="" coords="1467,355,1585,355,1585,360,1467,360"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="1576,403,1813,461"/>
+<area shape="poly" title=" " alt="" coords="1468,377,1562,399,1561,404,1466,382"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="1879,403,2117,461"/>
+<area shape="poly" title=" " alt="" coords="1813,429,1865,429,1865,435,1813,435"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_icgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_icgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_icgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a310999717be28ee2ce0633abd4489a3b_icgraph">
+<area shape="rect" title="背景画像の削除" alt="" coords="922,5,1192,64"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ad97dbde26c86bbedb49bc5c1d4231e27" title=" " alt="" coords="605,5,874,64"/>
+<area shape="poly" title=" " alt="" coords="907,37,875,37,875,32,907,32"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4" title=" " alt="" coords="288,5,557,64"/>
+<area shape="poly" title=" " alt="" coords="590,37,557,37,557,32,590,32"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#af5aa99fff88b3229de7a5a1c996f40eb" title=" " alt="" coords="5,5,240,64"/>
+<area shape="poly" title=" " alt="" coords="273,37,240,37,240,32,273,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae4c2051dc68f1c058815ad42cd15a526" name="ae4c2051dc68f1c058815ad42cd15a526"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c2051dc68f1c058815ad42cd15a526">&#9670;&#160;</a></span>LoadBackgroundImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas.LoadBackgroundImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>背景の読み込み </p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_cgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_cgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_cgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_cgraph">
+<area shape="rect" title=" " alt="" coords="5,197,275,256"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a800df5ea8f1279e857a7930eadc791c4" title=" " alt="" coords="2270,5,2508,64"/>
+<area shape="poly" title=" " alt="" coords="181,194,245,153,322,116,444,73,542,47,643,35,772,32,1734,32,2255,32,2255,37,1734,37,772,37,643,40,543,52,445,78,324,121,248,158,183,199"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a471f932b0479bad28c9fd1b02f1d5d7a" title=" " alt="" coords="323,264,591,323"/>
+<area shape="poly" title=" " alt="" coords="276,252,309,260,308,265,274,258"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a2c6167e377aba78a5305318f726925a9" title=" " alt="" coords="972,197,1209,256"/>
+<area shape="poly" title=" " alt="" coords="275,224,957,224,957,229,275,229"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af8abf6641717893a6a048fbc34863392" title=" " alt="" coords="339,445,575,504"/>
+<area shape="poly" title=" " alt="" coords="181,254,408,434,405,438,178,259"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a1286ae556ae711d30b0de7f29adb3837" title=" " alt="" coords="340,131,574,189"/>
+<area shape="poly" title=" " alt="" coords="274,196,325,185,326,190,276,201"/>
+<area shape="rect" href="../../d1/dcb/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_layout_manager.html#a5d6a0f96e987d3d534af55f13296b8c1" title=" " alt="" coords="2574,5,2811,64"/>
+<area shape="poly" title=" " alt="" coords="2508,32,2559,32,2559,37,2508,37"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a621412cc59b6ebaa5359b2b76d0f6864" title=" " alt="" coords="1280,191,1537,233"/>
+<area shape="poly" title=" " alt="" coords="1209,219,1265,216,1265,221,1209,224"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a1b3b17d52311ea244b18b389df8c2b5c" title=" " alt="" coords="1638,101,1827,144"/>
+<area shape="poly" title=" " alt="" coords="1488,187,1638,146,1639,151,1489,193"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0ced2de704698b81d840db07779842b8" title=" " alt="" coords="1616,183,1848,241"/>
+<area shape="poly" title=" " alt="" coords="1538,209,1601,209,1601,215,1538,215"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a9fd159ca00e34217c8748d03a72a95cc" title=" " alt="" coords="1967,72,2157,115"/>
+<area shape="poly" title=" " alt="" coords="1827,112,1953,100,1953,106,1827,117"/>
+<area shape="poly" title=" " alt="" coords="2157,74,2255,56,2256,61,2158,79"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a566d32cf7bf6badc0cdfb781137f0895" title=" " alt="" coords="2294,88,2484,131"/>
+<area shape="poly" title=" " alt="" coords="2157,95,2280,101,2279,107,2157,101"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#ae700e73304faf6a66d590053b74629c0" title=" " alt="" coords="656,404,891,463"/>
+<area shape="poly" title=" " alt="" coords="575,457,641,448,642,453,575,462"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#a56f748dc148156495e3f5fc18a91f70b" title=" " alt="" coords="656,487,891,545"/>
+<area shape="poly" title=" " alt="" coords="575,487,642,496,641,501,575,493"/>
+<area shape="rect" href="../../d8/d0a/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_asset_manage_importer.html#af69d6cafe71797aad8b8c1436de9c439" title=" " alt="" coords="656,569,891,628"/>
+<area shape="poly" title=" " alt="" coords="520,502,640,555,658,562,656,567,638,560,517,507"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdbf331b61525484fef829de4261226e" title=" " alt="" coords="661,321,886,380"/>
+<area shape="poly" title=" " alt="" coords="509,188,712,311,709,316,506,192"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#a8cd208abe708a9060fe115dee2de26f5" title=" " alt="" coords="639,123,908,181"/>
+<area shape="poly" title=" " alt="" coords="574,154,624,153,624,158,574,160"/>
+<area shape="poly" title=" " alt="" coords="834,318,955,266,974,259,976,264,957,270,837,323"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#ae8497421fbee3fdf2c7163afe5e400fa" title="背景または遠景の画像設定 (表示更新あり)。" alt="" coords="978,587,1203,645"/>
+<area shape="poly" title=" " alt="" coords="888,375,910,390,930,416,938,443,944,469,959,498,996,540,1037,576,1033,580,992,544,954,502,939,471,933,444,926,419,906,394,885,379"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#a6a55f5098d23beaeadbcb41de897f051" title=" " alt="" coords="956,280,1225,339"/>
+<area shape="poly" title=" " alt="" coords="886,333,941,326,942,331,887,339"/>
+<area shape="rect" href="../../d9/d20/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_asset_database_wrapper.html#adfa294899fffd2dd165dcc0c8e7dc9fc" title=" " alt="" coords="956,363,1225,421"/>
+<area shape="poly" title=" " alt="" coords="887,363,942,370,941,375,886,368"/>
+<area shape="rect" href="../../d1/d2d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_map_editor.html#a0c5750fe8c86416d3511eef8093089a3" title=" " alt="" coords="990,445,1191,488"/>
+<area shape="poly" title=" " alt="" coords="886,378,910,390,924,400,934,411,944,421,958,431,977,440,975,445,955,436,940,425,930,415,921,404,907,394,883,383"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#abe2b4039cf7d155f94edc51bfbb18ef7" title=" " alt="" coords="1280,736,1537,811"/>
+<area shape="poly" title=" " alt="" coords="888,372,910,390,932,425,941,459,940,492,934,526,929,559,928,591,937,623,958,656,990,684,1025,708,1063,727,1103,742,1185,763,1265,772,1264,777,1184,768,1101,747,1061,732,1022,712,986,688,954,659,932,626,923,592,924,558,929,525,934,492,935,459,927,427,906,394,885,376"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a2251fde9142862e109ac4894a3769594" title=" " alt="" coords="1949,637,2175,696"/>
+<area shape="poly" title=" " alt="" coords="1204,619,1934,657,1934,663,1203,624"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#a124654a1f7c0a3a4bd272b49b6925ab5" title="背景または遠景の画像設定。" alt="" coords="1292,653,1525,712"/>
+<area shape="poly" title=" " alt="" coords="1204,637,1278,653,1277,658,1203,642"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#aa7e10682bd9659bbf64ee1829a5e1f76" title=" " alt="" coords="1595,740,1869,799"/>
+<area shape="poly" title=" " alt="" coords="1521,710,1606,733,1605,738,1520,715"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#a242e52d6c89e04659a56c186666f512d" title=" " alt="" coords="1925,736,2199,795"/>
+<area shape="poly" title=" " alt="" coords="1870,765,1910,765,1910,770,1870,770"/>
+<area shape="rect" href="../../dd/db9/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model_1_1_map_prefab_manager.html#affd4bfb9bfd560f9c7d84fc6d740123b" title="新規作成またはロードしたマッププレハブの内容を、使用できる状態に補正する。" alt="" coords="2252,819,2526,877"/>
+<area shape="poly" title=" " alt="" coords="2181,793,2256,812,2255,817,2180,798"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a849e43da36a49c1809353e19050800f2" title=" " alt="" coords="2252,571,2526,629"/>
+<area shape="poly" title=" " alt="" coords="2156,733,2202,706,2217,690,2225,673,2234,656,2250,639,2256,635,2259,639,2253,643,2238,659,2230,675,2221,693,2205,710,2159,738"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a0e5484709cd9d49495f730fdd7cc3e84" title=" " alt="" coords="2275,653,2503,712"/>
+<area shape="poly" title=" " alt="" coords="2180,733,2260,712,2261,718,2181,738"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#a53bbabb88d5752c05d2c87b8c5228dec" title=" " alt="" coords="2271,736,2507,795"/>
+<area shape="poly" title=" " alt="" coords="2199,763,2256,763,2256,768,2199,768"/>
+<area shape="poly" title=" " alt="" coords="2251,843,2092,829,1920,809,1884,804,1885,798,1921,804,2093,824,2251,837"/>
+<area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="2579,661,2806,704"/>
+<area shape="poly" title=" " alt="" coords="2503,680,2564,680,2564,685,2503,685"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a79c0390d6e80ef85f4888abe9008e3c7" title="マップをセーブするときに強調表示を戻す" alt="" coords="1291,520,1526,579"/>
+<area shape="poly" title=" " alt="" coords="1176,486,1280,513,1278,518,1175,491"/>
+<area shape="rect" href="../../da/d11/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_map_management_service.html#a7b2b821a80c9d6e77ecea4c7481c8f0e" title=" " alt="" coords="1273,355,1544,413"/>
+<area shape="poly" title=" " alt="" coords="1179,442,1224,431,1283,415,1285,420,1225,436,1181,447"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a292b9b509b28fce1ce5d975de2b52b15" title="マップをセーブ完了時に、強調表示の状態戻す" alt="" coords="1286,437,1531,496"/>
+<area shape="poly" title=" " alt="" coords="1191,464,1271,464,1271,469,1191,469"/>
+<area shape="rect" href="../../da/d63/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_canvas.html#acdaa46b19f6d87b89def3cab537595bc" title=" " alt="" coords="1620,520,1845,579"/>
+<area shape="poly" title=" " alt="" coords="1526,547,1604,547,1604,552,1526,552"/>
+<area shape="rect" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html#a19c0e2369048a6733d1c1f8e17c28099" title=" " alt="" coords="1593,437,1871,496"/>
+<area shape="poly" title=" " alt="" coords="1525,517,1600,498,1601,503,1527,522"/>
+<area shape="poly" title=" " alt="" coords="1824,577,1873,595,1921,616,1957,629,1955,634,1919,621,1871,600,1823,582"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ac61cc506d9255bbd571043f3e5468e49" title=" " alt="" coords="1592,355,1872,413"/>
+<area shape="poly" title=" " alt="" coords="1544,381,1577,381,1577,387,1544,387"/>
+<area shape="poly" title=" " alt="" coords="1860,412,1874,423,1889,443,1896,463,1897,502,1899,540,1907,557,1922,573,1944,585,1974,594,2053,605,2144,609,2237,607,2237,612,2144,614,2052,610,1973,599,1942,589,1919,577,1902,560,1894,541,1892,502,1890,464,1884,445,1870,427,1857,416"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a427282e3836e92ac98c186103ae2afbb" title=" " alt="" coords="1920,139,2204,197"/>
+<area shape="poly" title=" " alt="" coords="1763,352,1919,207,1929,202,1931,206,1922,212,1767,356"/>
+<area shape="rect" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html#a041f774b2b96f08ba2ff2769f94ada31" title=" " alt="" coords="1925,221,2199,280"/>
+<area shape="poly" title=" " alt="" coords="1794,352,1919,296,1954,283,1956,288,1921,301,1796,357"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#ae52ac0cf88d7d660713d2c01b24207e2" title=" " alt="" coords="1943,355,2181,413"/>
+<area shape="poly" title=" " alt="" coords="1873,381,1928,381,1928,387,1873,387"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#aac8a4802465c30e6b280e54872da1e8d" title=" " alt="" coords="2270,288,2508,347"/>
+<area shape="poly" title=" " alt="" coords="1855,351,1920,340,2095,323,2256,316,2256,321,2095,328,1921,345,1856,357"/>
+<area shape="rect" href="../../dd/d78/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_unity_editor_wrapper_1_1_prefab_utility_wrapper.html#aa4247892fb80ce53b627e1cc34cdf737" title=" " alt="" coords="1948,437,2176,496"/>
+<area shape="poly" title=" " alt="" coords="1853,411,1935,432,1933,437,1851,417"/>
+<area shape="rect" href="../../d8/dd0/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_json_helper.html#a769989dc78ae92d5e53c0aec69a8bec7" title=" " alt="" coords="1948,520,2176,563"/>
+<area shape="poly" title=" " alt="" coords="1857,412,1874,423,1891,444,1899,466,1905,487,1922,506,1936,515,1933,519,1919,510,1901,489,1894,468,1887,447,1871,427,1854,416"/>
+<area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_map_management_1_1_repository_1_1_map_repository.html#a712ec3f11afbdf696f89f34c65583346" title=" " alt="" coords="2270,371,2508,429"/>
+<area shape="poly" title=" " alt="" coords="2181,387,2255,391,2255,396,2181,392"/>
+<area shape="poly" title=" " alt="" coords="2181,357,2255,342,2256,347,2182,362"/>
+<area shape="poly" title=" " alt="" coords="1527,494,1606,514,1605,520,1525,499"/>
+<area shape="poly" title=" " alt="" coords="1531,464,1578,464,1578,469,1531,469"/>
+<area shape="poly" title=" " alt="" coords="1537,769,1580,769,1580,774,1538,774"/>
+<area shape="rect" href="../../d5/df7/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_background_image_helper.html#a9efd5a671f44a0ca94270e707a15d2ec" title="背景画像の設定 引数1:設定対象(VisualElement) 引数2:表示領域の幅、高さ(Vector2Int) 引数3:対象のテクスチャ 引数4:画像サイズをピクセル数で指定するかパーセントで指定す..." alt="" coords="970,115,1211,173"/>
+<area shape="poly" title=" " alt="" coords="909,146,956,145,956,150,909,151"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_icgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_icgraph" alt=""/></div>
+<map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_icgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_ae4c2051dc68f1c058815ad42cd15a526_icgraph">
+<area shape="rect" title=" " alt="" coords="922,5,1192,64"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ad97dbde26c86bbedb49bc5c1d4231e27" title=" " alt="" coords="605,5,874,64"/>
+<area shape="poly" title=" " alt="" coords="907,37,875,37,875,32,907,32"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4" title=" " alt="" coords="288,5,557,64"/>
+<area shape="poly" title=" " alt="" coords="590,37,557,37,557,32,590,32"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#af5aa99fff88b3229de7a5a1c996f40eb" title=" " alt="" coords="5,5,240,64"/>
+<area shape="poly" title=" " alt="" coords="273,37,240,37,240,32,273,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -177,16 +873,228 @@ $(function() {
 <div class="dyncontent">
 <div class="center"><img src="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a8cd208abe708a9060fe115dee2de26f5_icgraph.png" border="0" usemap="#adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a8cd208abe708a9060fe115dee2de26f5_icgraph" alt=""/></div>
 <map name="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a8cd208abe708a9060fe115dee2de26f5_icgraph" id="adf/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas_a8cd208abe708a9060fe115dee2de26f5_icgraph">
-<area shape="rect" title=" " alt="" coords="288,5,557,64"/>
-<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a1286ae556ae711d30b0de7f29adb3837" title=" " alt="" coords="5,5,240,64"/>
+<area shape="rect" title=" " alt="" coords="1522,5,1791,64"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ad97dbde26c86bbedb49bc5c1d4231e27" title=" " alt="" coords="605,5,874,64"/>
+<area shape="poly" title=" " alt="" coords="1507,30,1474,29,1198,25,922,29,875,31,875,25,922,24,1198,20,1474,24,1507,25"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#a1286ae556ae711d30b0de7f29adb3837" title=" " alt="" coords="1240,39,1474,97"/>
+<area shape="poly" title=" " alt="" coords="1507,54,1475,58,1474,52,1507,49"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#af7ed7c2a6ecaa7f006d7f9e2e609e3a4" title=" " alt="" coords="288,5,557,64"/>
+<area shape="poly" title=" " alt="" coords="590,37,557,37,557,32,590,32"/>
+<area shape="rect" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html#af5aa99fff88b3229de7a5a1c996f40eb" title=" " alt="" coords="5,5,240,64"/>
 <area shape="poly" title=" " alt="" coords="273,37,240,37,240,32,273,32"/>
+<area shape="rect" href="../../df/d65/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_background_view_canvas.html#ae4c2051dc68f1c058815ad42cd15a526" title=" " alt="" coords="922,39,1192,97"/>
+<area shape="poly" title=" " alt="" coords="1225,71,1192,71,1192,65,1225,65"/>
+<area shape="rect" href="../../d8/d7d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_background_view_inspector.html#a94a180b5f7458eb96d71af92309b4df1" title=" " alt="" coords="939,121,1175,180"/>
+<area shape="poly" title=" " alt="" coords="1235,104,1167,123,1165,118,1233,99"/>
+<area shape="poly" title=" " alt="" coords="907,55,875,51,875,46,908,50"/>
+<area shape="rect" href="../../d8/d7d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_background_view_inspector.html#aa8575dedaf680b9cfaec8fd71b7ea6b3" title="初期化処理" alt="" coords="622,121,858,180"/>
+<area shape="poly" title=" " alt="" coords="924,153,858,153,858,148,924,148"/>
 </map>
 </div>
 
 </div>
 </div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a50b609f02a3be9475b08c4180f16fa96" name="a50b609f02a3be9475b08c4180f16fa96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50b609f02a3be9475b08c4180f16fa96">&#9670;&#160;</a></span>_backgroundView</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._backgroundView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5213a8457a773c82b3290dabd250c43" name="ab5213a8457a773c82b3290dabd250c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5213a8457a773c82b3290dabd250c43">&#9670;&#160;</a></span>_buttonContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">VisualElement RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._buttonContainer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a5a45b53857cb5294f7c983d0328cf8" name="a4a5a45b53857cb5294f7c983d0328cf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a5a45b53857cb5294f7c983d0328cf8">&#9670;&#160;</a></span>_imageContentSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._imageContentSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae27eb1e4e999ff1c31ba7f9202c8048a" name="ae27eb1e4e999ff1c31ba7f9202c8048a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27eb1e4e999ff1c31ba7f9202c8048a">&#9670;&#160;</a></span>_images</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScrollView RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._images</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06a16d89d52cf161cf88647e0cd8144a" name="a06a16d89d52cf161cf88647e0cd8144a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06a16d89d52cf161cf88647e0cd8144a">&#9670;&#160;</a></span>_layerInventory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d01/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_inventory_1_1_layer_inventory.html">LayerInventory</a> RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._layerInventory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ec1bc32061eec8fd44d8448b3c9ea52" name="a1ec1bc32061eec8fd44d8448b3c9ea52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec1bc32061eec8fd44d8448b3c9ea52">&#9670;&#160;</a></span>_mapDataModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d51/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_map_1_1_map_data_model.html">MapDataModel</a> RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._mapDataModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab76121bd37766f872848dafb83c64c3b" name="ab76121bd37766f872848dafb83c64c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76121bd37766f872848dafb83c64c3b">&#9670;&#160;</a></span>_mapEditCanvas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_component_1_1_canvas_1_1_map_edit_canvas.html">MapEditCanvas</a> RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._mapEditCanvas</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a356df329dcd1d55ebc717888494c7332" name="a356df329dcd1d55ebc717888494c7332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a356df329dcd1d55ebc717888494c7332">&#9670;&#160;</a></span>_mapEditWindow</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d6e/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_map_editor_1_1_window_1_1_map_edit_1_1_map_edit_window.html">MapEditWindow</a> RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._mapEditWindow</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4c648798ccea48e34a88895eab7ab1f" name="ab4c648798ccea48e34a88895eab7ab1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c648798ccea48e34a88895eab7ab1f">&#9670;&#160;</a></span>_texOriginalSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 RPGMaker.Codebase.Editor.MapEditor.Component.Canvas.BackgroundViewCanvas._texOriginalSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
-<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/MapEditor/Component/Canvas/BackgroundViewCanvas.cs</li>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research-Project/Assets/RPGMaker/Codebase/Editor/MapEditor/Component/Canvas/<a class="el" href="../../d4/da4/_background_view_canvas_8cs.html">BackgroundViewCanvas.cs</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
