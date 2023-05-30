@@ -5,7 +5,7 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToMoveVehicleClick",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [id="Node000001",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToMoveVehicleClick",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="キャラクターの移動を試行する （対象位置が進入不可の場合は向きだけ変える）"];
   Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="RPGMaker.Codebase.Runtime.\lCommon.TimeHandler.AddTimeAction\lEveryFrame",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d3/dac/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_time_handler.html#ac9871a57a401c0da5670b07803acc775",tooltip="実行するActionの登録（毎フレーム）"];
   Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
@@ -44,13 +44,13 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node10 -> Node32 [id="edge20_Node000010_Node000032",color="steelblue1",style="solid",tooltip=" "];
   Node32 [id="Node000032",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.SetMoveRoute",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a9f8aaa6ad6b4d38518cf852345dd019d",tooltip=" "];
   Node10 -> Node183 [id="edge21_Node000010_Node000183",color="steelblue1",style="solid",tooltip=" "];
-  Node183 [id="Node000183",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToMoveVehicle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af0e1fa61778d47dccbe907bcb8ebeb4c",tooltip=" "];
+  Node183 [id="Node000183",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToMoveVehicle",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af0e1fa61778d47dccbe907bcb8ebeb4c",tooltip="乗り物の移動を試行する （対象位置が進入不可の場合は向きだけ変える）"];
   Node183 -> Node34 [id="edge22_Node000183_Node000034",color="steelblue1",style="solid",tooltip=" "];
   Node34 [id="Node000034",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.ChangeCharacterDirection",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#adfcb95a5cb4a72b7940a9260b208703e",tooltip="向きを変える"];
   Node183 -> Node40 [id="edge23_Node000183_Node000040",color="steelblue1",style="solid",tooltip=" "];
   Node40 [id="Node000040",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.CheckCanMove",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a782ece33ed01436f368fed7cff5573c4",tooltip=" "];
   Node183 -> Node41 [id="edge24_Node000183_Node000041",color="steelblue1",style="solid",tooltip=" "];
-  Node41 [id="Node000041",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.CheckProcess",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af61111401b6e289e7cd71c37c80bff5d",tooltip=" "];
+  Node41 [id="Node000041",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.CheckProcess",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af61111401b6e289e7cd71c37c80bff5d",tooltip="移動後の各判定処理"];
   Node41 -> Node11 [id="edge25_Node000041_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node41 -> Node132 [id="edge26_Node000041_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node132 [id="Node000132",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.GetCurrentPositionOnTile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ad595963f96c284bcc874ab574c3635f4",tooltip="現在のタイル位置を取得"];
@@ -62,7 +62,7 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node41 -> Node49 [id="edge30_Node000041_Node000049",color="steelblue1",style="solid",tooltip=" "];
   Node49 [id="Node000049",label="RPGMaker.Codebase.Runtime.\lCommon.DataManager.Self",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d08/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_data_manager.html#a8f0a40fd71fe0a873d1905e106299934",tooltip=" "];
   Node41 -> Node173 [id="edge31_Node000041_Node000173",color="steelblue1",style="solid",tooltip=" "];
-  Node173 [id="Node000173",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToContactFrom\lThePlayerToEvent",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ae027dfdf0a7b7f54a351e2e95f5ae634",tooltip=" "];
+  Node173 [id="Node000173",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToContactFrom\lThePlayerToEvent",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#ae027dfdf0a7b7f54a351e2e95f5ae634",tooltip="イベントがあり、その発動契機がContactFromThePlayerであればイベントを開始する"];
   Node173 -> Node12 [id="edge32_Node000173_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node173 -> Node132 [id="edge33_Node000173_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node173 -> Node31 [id="edge34_Node000173_Node000031",color="steelblue1",style="solid",tooltip=" "];
@@ -73,13 +73,13 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node210 -> Node132 [id="edge38_Node000210_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node210 -> Node31 [id="edge39_Node000210_Node000031",color="steelblue1",style="solid",tooltip=" "];
   Node210 -> Node187 [id="edge40_Node000210_Node000187",color="steelblue1",style="solid",tooltip=" "];
-  Node187 [id="Node000187",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToGetOffFrom\lTheVehicleToPlayer",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a3232c5cf05cce0b13dd68035f5ba8604",tooltip=" "];
+  Node187 [id="Node000187",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToGetOffFrom\lTheVehicleToPlayer",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a3232c5cf05cce0b13dd68035f5ba8604",tooltip="乗り物から降りる"];
   Node187 -> Node184 [id="edge41_Node000187_Node000184",color="steelblue1",style="solid",tooltip=" "];
   Node184 [id="Node000184",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.CurrentTileData",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a6bd3ed94e7072c1d31769481ffb80100",tooltip="現在のマップのTilesOnThePositionを返却"];
   Node187 -> Node132 [id="edge42_Node000187_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node187 -> Node31 [id="edge43_Node000187_Node000031",color="steelblue1",style="solid",tooltip=" "];
   Node210 -> Node211 [id="edge44_Node000210_Node000211",color="steelblue1",style="solid",tooltip=" "];
-  Node211 [id="Node000211",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToRideFromThe\lPlayerToVehicle",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af833ea891460fe653ce5b7900b86e151",tooltip=" "];
+  Node211 [id="Node000211",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.TryToRideFromThe\lPlayerToVehicle",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#af833ea891460fe653ce5b7900b86e151",tooltip="乗り物に乗る"];
   Node211 -> Node132 [id="edge45_Node000211_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node211 -> Node46 [id="edge46_Node000211_Node000046",color="steelblue1",style="solid",tooltip=" "];
   Node211 -> Node31 [id="edge47_Node000211_Node000031",color="steelblue1",style="solid",tooltip=" "];
@@ -90,7 +90,7 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node183 -> Node12 [id="edge51_Node000183_Node000012",color="steelblue1",style="solid",tooltip=" "];
   Node183 -> Node184 [id="edge52_Node000183_Node000184",color="steelblue1",style="solid",tooltip=" "];
   Node183 -> Node185 [id="edge53_Node000183_Node000185",color="steelblue1",style="solid",tooltip=" "];
-  Node185 [id="Node000185",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.DesiceKeyEvent",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a2655da596d391627e8c2f71e6e490b62",tooltip=" "];
+  Node185 [id="Node000185",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.DesiceKeyEvent",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a2655da596d391627e8c2f71e6e490b62",tooltip="目の前にイベントがあり、その発動契機がTalkであればイベントを開始する"];
   Node185 -> Node8 [id="edge54_Node000185_Node000008",color="steelblue1",style="solid",tooltip=" "];
   Node185 -> Node11 [id="edge55_Node000185_Node000011",color="steelblue1",style="solid",tooltip=" "];
   Node185 -> Node12 [id="edge56_Node000185_Node000012",color="steelblue1",style="solid",tooltip=" "];
@@ -99,7 +99,7 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node185 -> Node211 [id="edge59_Node000185_Node000211",color="steelblue1",style="solid",tooltip=" "];
   Node185 -> Node210 [id="edge60_Node000185_Node000210",color="steelblue1",style="solid",tooltip=" "];
   Node183 -> Node246 [id="edge61_Node000183_Node000246",color="steelblue1",style="solid",tooltip=" "];
-  Node246 [id="Node000246",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.DirectionToVector2Int",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a9a88ef2357d9749441016c77e9e66e0a",tooltip=" "];
+  Node246 [id="Node000246",label="RPGMaker.Codebase.Runtime.\lMap.MapManager.DirectionToVector2Int",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$d5/d0f/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_map_manager.html#a9a88ef2357d9749441016c77e9e66e0a",tooltip="向きからVector2Intを取得。"];
   Node183 -> Node13 [id="edge62_Node000183_Node000013",color="steelblue1",style="solid",tooltip=" "];
   Node183 -> Node132 [id="edge63_Node000183_Node000132",color="steelblue1",style="solid",tooltip=" "];
   Node183 -> Node46 [id="edge64_Node000183_Node000046",color="steelblue1",style="solid",tooltip=" "];
@@ -110,7 +110,7 @@ digraph "RPGMaker.Codebase.Runtime.Map.MapManager.TryToMoveVehicleClick"
   Node183 -> Node215 [id="edge68_Node000183_Node000215",color="steelblue1",style="solid",tooltip=" "];
   Node215 [id="Node000215",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.MoveDownOneUnit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#ace33c79a51d8a533b2ce346abf138354",tooltip="1マス下に移動する"];
   Node183 -> Node225 [id="edge69_Node000183_Node000225",color="steelblue1",style="solid",tooltip=" "];
-  Node225 [id="Node000225",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.MoveLeftOneUnit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#acf153046015518dcf29ddacb5bb522a6",tooltip=" "];
+  Node225 [id="Node000225",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.MoveLeftOneUnit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#acf153046015518dcf29ddacb5bb522a6",tooltip="1マス左に移動する"];
   Node183 -> Node226 [id="edge70_Node000183_Node000226",color="steelblue1",style="solid",tooltip=" "];
   Node226 [id="Node000226",label="RPGMaker.Codebase.Runtime.\lMap.Component.Character.Character\lOnMap.MoveRightOneUnit",height=0.2,width=0.4,color="red", fillcolor="#FFF0F0", style="filled",URL="$d0/dad/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_map_1_1_component_1_1_character_1_1_character_on_map.html#a60565e3d03a68398ff93f970fbeff07a",tooltip="1マス右に移動する"];
   Node183 -> Node156 [id="edge71_Node000183_Node000156",color="steelblue1",style="solid",tooltip=" "];
