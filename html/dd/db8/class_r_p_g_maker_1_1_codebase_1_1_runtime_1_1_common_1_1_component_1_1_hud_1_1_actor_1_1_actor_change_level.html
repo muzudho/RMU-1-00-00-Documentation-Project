@@ -169,7 +169,13 @@ RPGMaker.Codebase.Runtime.Common.Component.Hud.Actor.ActorChangeLevel 連携図<
 <p>😁 レベル変更 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">command</td><td>指令</td></tr>
+    <tr><td class="paramname">command</td><td><pre class="fragment">命令引数[0] アクター(0:固定 1:変数)
+        [1] アクターID(-1:全員)
+        [2] 操作(0:増やす 1:減らす)
+        [3] オペランドタイプ(0:定数 1:変数)
+        [4] オペランド(設定値 or 変数番号) 実際は変数番号ではなく変数uuid
+        [5] レベルアップを表示(true or false)
+</pre> </td></tr>
     <tr><td class="paramname">callback</td><td>コールバック</td></tr>
   </table>
   </dd>
