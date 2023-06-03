@@ -112,6 +112,7 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
 &#160;&#160;<a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#acda49998d4c617b9d203c7a756f8abc4a7d5131680166eafb2d8604a73688eac9">test_event_name</a>
 <br />
  }</td></tr>
+<tr class="memdesc:acda49998d4c617b9d203c7a756f8abc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベント名。  <a href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#acda49998d4c617b9d203c7a756f8abc4">[詳解]</a><br /></td></tr>
 <tr class="separator:acda49998d4c617b9d203c7a756f8abc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8421c8d9c077a9de0c9668cc0b1a276a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a8421c8d9c077a9de0c9668cc0b1a276a">EventParameter</a> { <br />
 &#160;&#160;<a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a8421c8d9c077a9de0c9668cc0b1a276aa6adf97f83acf6453d4a6a4b1070f3754">None</a>
@@ -179,11 +180,13 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
 , <a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a8421c8d9c077a9de0c9668cc0b1a276aac85eb55de2bc1418137521d2cb63bd0a">test_event_parameter</a>
 <br />
  }</td></tr>
+<tr class="memdesc:a8421c8d9c077a9de0c9668cc0b1a276a"><td class="mdescLeft">&#160;</td><td class="mdescRight">イベントパラメータ。 C::の予約後と同じになるものは定義できないので、それについては末尾に'_'を追加しているが、 uxmlファイルへの記述では'_'は不要。  <a href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a8421c8d9c077a9de0c9668cc0b1a276a">[詳解]</a><br /></td></tr>
 <tr class="separator:a8421c8d9c077a9de0c9668cc0b1a276a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:ae9b30018a3ac013146bfb8a6d0b82dd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ae9b30018a3ac013146bfb8a6d0b82dd9">PostEventFromHierarchy</a> (VisualElement ve)</td></tr>
+<tr class="memdesc:ae9b30018a3ac013146bfb8a6d0b82dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">"AnalyticsTag__{イベント名}__{イベントパラメータ}"という名のクラスが設定してあるVisualElementをHierarchyの 親方向に探していき、最初に見つけたものの『イベント名』と『イベントパラメータ』を送信する。  <br /></td></tr>
 <tr class="separator:ae9b30018a3ac013146bfb8a6d0b82dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9c8eb375170074c4c9fa7380bb0e2f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ac9c8eb375170074c4c9fa7380bb0e2f0">PostEvent</a> (<a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#acda49998d4c617b9d203c7a756f8abc4">EventName</a> eventName, <a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a8421c8d9c077a9de0c9668cc0b1a276a">EventParameter</a> eventParameter)</td></tr>
 <tr class="separator:ac9c8eb375170074c4c9fa7380bb0e2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,11 +199,13 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 非公開メンバ関数</h2></td></tr>
 <tr class="memitem:a53cd025bf53c1c1f1678425b1510d9b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a53cd025bf53c1c1f1678425b1510d9b3">AnalyticsManager</a> ()</td></tr>
+<tr class="memdesc:a53cd025bf53c1c1f1678425b1510d9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">シングルトンなのでprivateなコンストラクタ。  <br /></td></tr>
 <tr class="separator:a53cd025bf53c1c1f1678425b1510d9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
 <tr class="memitem:af54396317c8d151c9d33faea5a56dae5"><td class="memItemLeft" align="right" valign="top">readonly Regex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#af54396317c8d151c9d33faea5a56dae5">analyticsTagRegex</a></td></tr>
+<tr class="memdesc:af54396317c8d151c9d33faea5a56dae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">VisualElementのクラス名として埋め込まれたアナリティクス用タグに一致する正規表現。  <br /></td></tr>
 <tr class="separator:af54396317c8d151c9d33faea5a56dae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c501c93b71ed693b0e77ab700ce2fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#a19c501c93b71ed693b0e77ab700ce2fb">isInitialized</a></td></tr>
 <tr class="separator:a19c501c93b71ed693b0e77ab700ce2fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,12 +229,19 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>イベント名。 </p>
 <table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a6adf97f83acf6453d4a6a4b1070f3754" name="acda49998d4c617b9d203c7a756f8abc4a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a8482f35d68db4bf9daf436cbde6bec30" name="acda49998d4c617b9d203c7a756f8abc4a8482f35d68db4bf9daf436cbde6bec30"></a>page_view&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a46f86faa6bbf9ac94a7e459509a20ed0" name="acda49998d4c617b9d203c7a756f8abc4a46f86faa6bbf9ac94a7e459509a20ed0"></a>project&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a418c5509e2171d55b0aee5c2ea4442b5" name="acda49998d4c617b9d203c7a756f8abc4a418c5509e2171d55b0aee5c2ea4442b5"></a>action&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a7d5131680166eafb2d8604a73688eac9" name="acda49998d4c617b9d203c7a756f8abc4a7d5131680166eafb2d8604a73688eac9"></a>test_event_name&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a6adf97f83acf6453d4a6a4b1070f3754" name="acda49998d4c617b9d203c7a756f8abc4a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a8482f35d68db4bf9daf436cbde6bec30" name="acda49998d4c617b9d203c7a756f8abc4a8482f35d68db4bf9daf436cbde6bec30"></a>page_view&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a46f86faa6bbf9ac94a7e459509a20ed0" name="acda49998d4c617b9d203c7a756f8abc4a46f86faa6bbf9ac94a7e459509a20ed0"></a>project&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a418c5509e2171d55b0aee5c2ea4442b5" name="acda49998d4c617b9d203c7a756f8abc4a418c5509e2171d55b0aee5c2ea4442b5"></a>action&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="acda49998d4c617b9d203c7a756f8abc4a7d5131680166eafb2d8604a73688eac9" name="acda49998d4c617b9d203c7a756f8abc4a7d5131680166eafb2d8604a73688eac9"></a>test_event_name&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
 </table>
 
 </div>
@@ -245,58 +257,111 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>イベントパラメータ。 C::の予約後と同じになるものは定義できないので、それについては末尾に'_'を追加しているが、 uxmlファイルへの記述では'_'は不要。 </p>
 <table class="fieldtable">
-<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa6adf97f83acf6453d4a6a4b1070f3754" name="a8421c8d9c077a9de0c9668cc0b1a276aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad5d3db1765287eef77d7927cc956f50a" name="a8421c8d9c077a9de0c9668cc0b1a276aad5d3db1765287eef77d7927cc956f50a"></a>title&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7cb33ae58a57d41a84ea86a0ce30788e" name="a8421c8d9c077a9de0c9668cc0b1a276aa7cb33ae58a57d41a84ea86a0ce30788e"></a>ui_setting&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac47d187067c6cf953245f128b5fde62a" name="a8421c8d9c077a9de0c9668cc0b1a276aac47d187067c6cf953245f128b5fde62a"></a>word&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaef3e30e070f70244fd6578d88a6b77ac" name="a8421c8d9c077a9de0c9668cc0b1a276aaef3e30e070f70244fd6578d88a6b77ac"></a>option&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaa956161a69928cd130a889b88082fb6e" name="a8421c8d9c077a9de0c9668cc0b1a276aaa956161a69928cd130a889b88082fb6e"></a>character&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5a76e813d6a0a40548b91acc11557bd2" name="a8421c8d9c077a9de0c9668cc0b1a276aa5a76e813d6a0a40548b91acc11557bd2"></a>vehicle&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa9dddd5ce1b1375bc497feeb871842d4b" name="a8421c8d9c077a9de0c9668cc0b1a276aa9dddd5ce1b1375bc497feeb871842d4b"></a>job&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae149b66b87098e78f066b0e6a76ee408" name="a8421c8d9c077a9de0c9668cc0b1a276aae149b66b87098e78f066b0e6a76ee408"></a>battle_scene&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aacde2fde1fa1551a704d775ce2315915d" name="a8421c8d9c077a9de0c9668cc0b1a276aacde2fde1fa1551a704d775ce2315915d"></a>enemy&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aabfc2e0ac776bb1455d7f9a74374872e6" name="a8421c8d9c077a9de0c9668cc0b1a276aabfc2e0ac776bb1455d7f9a74374872e6"></a>troop&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa0b8263d341de01f741e4deadfb18f9eb" name="a8421c8d9c077a9de0c9668cc0b1a276aa0b8263d341de01f741e4deadfb18f9eb"></a>sound&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaefad7abb323e3d4016284c8a6da076a1" name="a8421c8d9c077a9de0c9668cc0b1a276aaefad7abb323e3d4016284c8a6da076a1"></a>se&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaf61f4b21e3bd867d2cacee2960cf8b5c" name="a8421c8d9c077a9de0c9668cc0b1a276aaf61f4b21e3bd867d2cacee2960cf8b5c"></a>skill_common&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7f20c27a51d057bc2ca6fffab97f44b1" name="a8421c8d9c077a9de0c9668cc0b1a276aa7f20c27a51d057bc2ca6fffab97f44b1"></a>skill_basic&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7eaab835b4493697d8ffdcaabd9b5e4e" name="a8421c8d9c077a9de0c9668cc0b1a276aa7eaab835b4493697d8ffdcaabd9b5e4e"></a>skill_custom&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5657f336eeb6f606bc5664f1373a3c93" name="a8421c8d9c077a9de0c9668cc0b1a276aa5657f336eeb6f606bc5664f1373a3c93"></a>state_basic&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaa8a99c7045b24401b05913c5e4db17f3" name="a8421c8d9c077a9de0c9668cc0b1a276aaa8a99c7045b24401b05913c5e4db17f3"></a>state_custom&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5ed6ace64dbe8bde1e2ace9066293aae" name="a8421c8d9c077a9de0c9668cc0b1a276aa5ed6ace64dbe8bde1e2ace9066293aae"></a>equipment_weapon&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa3cb2cc88317da0b9b83de2c8a5b7c329" name="a8421c8d9c077a9de0c9668cc0b1a276aa3cb2cc88317da0b9b83de2c8a5b7c329"></a>equipment_armor&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa8826605ee98d334d560c8ad416eb9ac1" name="a8421c8d9c077a9de0c9668cc0b1a276aa8826605ee98d334d560c8ad416eb9ac1"></a>equipment_item&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad77ff12104cbd3d16e250600be67eed6" name="a8421c8d9c077a9de0c9668cc0b1a276aad77ff12104cbd3d16e250600be67eed6"></a>type_element&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa74ca81ae86f7ad110c6c2f6e5f499c30" name="a8421c8d9c077a9de0c9668cc0b1a276aa74ca81ae86f7ad110c6c2f6e5f499c30"></a>type_skill&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae6eebc019f9f9b20227680081761710d" name="a8421c8d9c077a9de0c9668cc0b1a276aae6eebc019f9f9b20227680081761710d"></a>type_weapon&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa0e7d8b77edb1138a8b5184f4b0af3ddb" name="a8421c8d9c077a9de0c9668cc0b1a276aa0e7d8b77edb1138a8b5184f4b0af3ddb"></a>type_armor&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa61b07d73765753890ec4d5a0302e34c9" name="a8421c8d9c077a9de0c9668cc0b1a276aa61b07d73765753890ec4d5a0302e34c9"></a>type_equipment&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaf5fcf0c5a32d7e342802e7b5a05be769" name="a8421c8d9c077a9de0c9668cc0b1a276aaf5fcf0c5a32d7e342802e7b5a05be769"></a>battle_effect&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa25fa0f0425cd9cbf00297316f95b9474" name="a8421c8d9c077a9de0c9668cc0b1a276aa25fa0f0425cd9cbf00297316f95b9474"></a>common_event&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae10dc8cdea07f15c4e7604975295d3e1" name="a8421c8d9c077a9de0c9668cc0b1a276aae10dc8cdea07f15c4e7604975295d3e1"></a>resource_character&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac8f0ea8e3b4aeff90ba1ca9624d009ad" name="a8421c8d9c077a9de0c9668cc0b1a276aac8f0ea8e3b4aeff90ba1ca9624d009ad"></a>resource_ballon_icon&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa721ea92cd86a89220436a9e091a85094" name="a8421c8d9c077a9de0c9668cc0b1a276aa721ea92cd86a89220436a9e091a85094"></a>resource_sv_character&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa83d5e0f7d0a3e4a27b89ec19e0f3bc6e" name="a8421c8d9c077a9de0c9668cc0b1a276aa83d5e0f7d0a3e4a27b89ec19e0f3bc6e"></a>resource_battle_effect&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae900e40bc91d3f9f7f0a99fed68a2e96" name="a8421c8d9c077a9de0c9668cc0b1a276aae900e40bc91d3f9f7f0a99fed68a2e96"></a>environment&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa10a18cdac259dc8bf941c1bd448512ca" name="a8421c8d9c077a9de0c9668cc0b1a276aa10a18cdac259dc8bf941c1bd448512ca"></a>switch_&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae04aa5104d082e4a51d241391941ba26" name="a8421c8d9c077a9de0c9668cc0b1a276aae04aa5104d082e4a51d241391941ba26"></a>variable&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa100a614d7b6a53252987f553b6e0234d" name="a8421c8d9c077a9de0c9668cc0b1a276aa100a614d7b6a53252987f553b6e0234d"></a>map_tile&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa97ebc6581630ad8e6ebb59cd41a038dc" name="a8421c8d9c077a9de0c9668cc0b1a276aa97ebc6581630ad8e6ebb59cd41a038dc"></a>map_tilegroup&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5802e0dc6ae65bfe0053197f1f45d312" name="a8421c8d9c077a9de0c9668cc0b1a276aa5802e0dc6ae65bfe0053197f1f45d312"></a>map_edit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aace8dd9d600306c7eea4803d7366aca82" name="a8421c8d9c077a9de0c9668cc0b1a276aace8dd9d600306c7eea4803d7366aca82"></a>map_battle_edit&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac01ca3dff2958fe8790d97e621fe4a79" name="a8421c8d9c077a9de0c9668cc0b1a276aac01ca3dff2958fe8790d97e621fe4a79"></a>map_event&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad77a18da627d092b526c29dbb5af9167" name="a8421c8d9c077a9de0c9668cc0b1a276aad77a18da627d092b526c29dbb5af9167"></a>event_search&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa1a18f19535b3b1edd5de7f535141f476" name="a8421c8d9c077a9de0c9668cc0b1a276aa1a18f19535b3b1edd5de7f535141f476"></a>outline&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa30db597822c6e06c6737052260426f45" name="a8421c8d9c077a9de0c9668cc0b1a276aa30db597822c6e06c6737052260426f45"></a>initialize&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa06435e9584009a1324c904ad359dcdba" name="a8421c8d9c077a9de0c9668cc0b1a276aa06435e9584009a1324c904ad359dcdba"></a>new_&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7cef8a734855777c2a9d0caf42666e69" name="a8421c8d9c077a9de0c9668cc0b1a276aa7cef8a734855777c2a9d0caf42666e69"></a>open&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa716f6b30598ba30945d84485e61c1027" name="a8421c8d9c077a9de0c9668cc0b1a276aa716f6b30598ba30945d84485e61c1027"></a>close&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa43781db5c40ecc39fd718685594f0956" name="a8421c8d9c077a9de0c9668cc0b1a276aa43781db5c40ecc39fd718685594f0956"></a>save&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa078f40fa23e0672777adc7c05d4773dd" name="a8421c8d9c077a9de0c9668cc0b1a276aa078f40fa23e0672777adc7c05d4773dd"></a>deploy&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae9a4f5669c3264e0a87c6c63605265c9" name="a8421c8d9c077a9de0c9668cc0b1a276aae9a4f5669c3264e0a87c6c63605265c9"></a>testplay&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa657f8b8da628ef83cf69101b6817150a" name="a8421c8d9c077a9de0c9668cc0b1a276aa657f8b8da628ef83cf69101b6817150a"></a>help&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac85eb55de2bc1418137521d2cb63bd0a" name="a8421c8d9c077a9de0c9668cc0b1a276aac85eb55de2bc1418137521d2cb63bd0a"></a>test_event_parameter&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa6adf97f83acf6453d4a6a4b1070f3754" name="a8421c8d9c077a9de0c9668cc0b1a276aa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad5d3db1765287eef77d7927cc956f50a" name="a8421c8d9c077a9de0c9668cc0b1a276aad5d3db1765287eef77d7927cc956f50a"></a>title&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7cb33ae58a57d41a84ea86a0ce30788e" name="a8421c8d9c077a9de0c9668cc0b1a276aa7cb33ae58a57d41a84ea86a0ce30788e"></a>ui_setting&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac47d187067c6cf953245f128b5fde62a" name="a8421c8d9c077a9de0c9668cc0b1a276aac47d187067c6cf953245f128b5fde62a"></a>word&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaef3e30e070f70244fd6578d88a6b77ac" name="a8421c8d9c077a9de0c9668cc0b1a276aaef3e30e070f70244fd6578d88a6b77ac"></a>option&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaa956161a69928cd130a889b88082fb6e" name="a8421c8d9c077a9de0c9668cc0b1a276aaa956161a69928cd130a889b88082fb6e"></a>character&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5a76e813d6a0a40548b91acc11557bd2" name="a8421c8d9c077a9de0c9668cc0b1a276aa5a76e813d6a0a40548b91acc11557bd2"></a>vehicle&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa9dddd5ce1b1375bc497feeb871842d4b" name="a8421c8d9c077a9de0c9668cc0b1a276aa9dddd5ce1b1375bc497feeb871842d4b"></a>job&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae149b66b87098e78f066b0e6a76ee408" name="a8421c8d9c077a9de0c9668cc0b1a276aae149b66b87098e78f066b0e6a76ee408"></a>battle_scene&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aacde2fde1fa1551a704d775ce2315915d" name="a8421c8d9c077a9de0c9668cc0b1a276aacde2fde1fa1551a704d775ce2315915d"></a>enemy&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aabfc2e0ac776bb1455d7f9a74374872e6" name="a8421c8d9c077a9de0c9668cc0b1a276aabfc2e0ac776bb1455d7f9a74374872e6"></a>troop&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa0b8263d341de01f741e4deadfb18f9eb" name="a8421c8d9c077a9de0c9668cc0b1a276aa0b8263d341de01f741e4deadfb18f9eb"></a>sound&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaefad7abb323e3d4016284c8a6da076a1" name="a8421c8d9c077a9de0c9668cc0b1a276aaefad7abb323e3d4016284c8a6da076a1"></a>se&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaf61f4b21e3bd867d2cacee2960cf8b5c" name="a8421c8d9c077a9de0c9668cc0b1a276aaf61f4b21e3bd867d2cacee2960cf8b5c"></a>skill_common&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7f20c27a51d057bc2ca6fffab97f44b1" name="a8421c8d9c077a9de0c9668cc0b1a276aa7f20c27a51d057bc2ca6fffab97f44b1"></a>skill_basic&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7eaab835b4493697d8ffdcaabd9b5e4e" name="a8421c8d9c077a9de0c9668cc0b1a276aa7eaab835b4493697d8ffdcaabd9b5e4e"></a>skill_custom&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5657f336eeb6f606bc5664f1373a3c93" name="a8421c8d9c077a9de0c9668cc0b1a276aa5657f336eeb6f606bc5664f1373a3c93"></a>state_basic&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaa8a99c7045b24401b05913c5e4db17f3" name="a8421c8d9c077a9de0c9668cc0b1a276aaa8a99c7045b24401b05913c5e4db17f3"></a>state_custom&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5ed6ace64dbe8bde1e2ace9066293aae" name="a8421c8d9c077a9de0c9668cc0b1a276aa5ed6ace64dbe8bde1e2ace9066293aae"></a>equipment_weapon&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa3cb2cc88317da0b9b83de2c8a5b7c329" name="a8421c8d9c077a9de0c9668cc0b1a276aa3cb2cc88317da0b9b83de2c8a5b7c329"></a>equipment_armor&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa8826605ee98d334d560c8ad416eb9ac1" name="a8421c8d9c077a9de0c9668cc0b1a276aa8826605ee98d334d560c8ad416eb9ac1"></a>equipment_item&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad77ff12104cbd3d16e250600be67eed6" name="a8421c8d9c077a9de0c9668cc0b1a276aad77ff12104cbd3d16e250600be67eed6"></a>type_element&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa74ca81ae86f7ad110c6c2f6e5f499c30" name="a8421c8d9c077a9de0c9668cc0b1a276aa74ca81ae86f7ad110c6c2f6e5f499c30"></a>type_skill&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae6eebc019f9f9b20227680081761710d" name="a8421c8d9c077a9de0c9668cc0b1a276aae6eebc019f9f9b20227680081761710d"></a>type_weapon&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa0e7d8b77edb1138a8b5184f4b0af3ddb" name="a8421c8d9c077a9de0c9668cc0b1a276aa0e7d8b77edb1138a8b5184f4b0af3ddb"></a>type_armor&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa61b07d73765753890ec4d5a0302e34c9" name="a8421c8d9c077a9de0c9668cc0b1a276aa61b07d73765753890ec4d5a0302e34c9"></a>type_equipment&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aaf5fcf0c5a32d7e342802e7b5a05be769" name="a8421c8d9c077a9de0c9668cc0b1a276aaf5fcf0c5a32d7e342802e7b5a05be769"></a>battle_effect&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa25fa0f0425cd9cbf00297316f95b9474" name="a8421c8d9c077a9de0c9668cc0b1a276aa25fa0f0425cd9cbf00297316f95b9474"></a>common_event&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae10dc8cdea07f15c4e7604975295d3e1" name="a8421c8d9c077a9de0c9668cc0b1a276aae10dc8cdea07f15c4e7604975295d3e1"></a>resource_character&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac8f0ea8e3b4aeff90ba1ca9624d009ad" name="a8421c8d9c077a9de0c9668cc0b1a276aac8f0ea8e3b4aeff90ba1ca9624d009ad"></a>resource_ballon_icon&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa721ea92cd86a89220436a9e091a85094" name="a8421c8d9c077a9de0c9668cc0b1a276aa721ea92cd86a89220436a9e091a85094"></a>resource_sv_character&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa83d5e0f7d0a3e4a27b89ec19e0f3bc6e" name="a8421c8d9c077a9de0c9668cc0b1a276aa83d5e0f7d0a3e4a27b89ec19e0f3bc6e"></a>resource_battle_effect&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae900e40bc91d3f9f7f0a99fed68a2e96" name="a8421c8d9c077a9de0c9668cc0b1a276aae900e40bc91d3f9f7f0a99fed68a2e96"></a>environment&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa10a18cdac259dc8bf941c1bd448512ca" name="a8421c8d9c077a9de0c9668cc0b1a276aa10a18cdac259dc8bf941c1bd448512ca"></a>switch_&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae04aa5104d082e4a51d241391941ba26" name="a8421c8d9c077a9de0c9668cc0b1a276aae04aa5104d082e4a51d241391941ba26"></a>variable&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa100a614d7b6a53252987f553b6e0234d" name="a8421c8d9c077a9de0c9668cc0b1a276aa100a614d7b6a53252987f553b6e0234d"></a>map_tile&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa97ebc6581630ad8e6ebb59cd41a038dc" name="a8421c8d9c077a9de0c9668cc0b1a276aa97ebc6581630ad8e6ebb59cd41a038dc"></a>map_tilegroup&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa5802e0dc6ae65bfe0053197f1f45d312" name="a8421c8d9c077a9de0c9668cc0b1a276aa5802e0dc6ae65bfe0053197f1f45d312"></a>map_edit&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aace8dd9d600306c7eea4803d7366aca82" name="a8421c8d9c077a9de0c9668cc0b1a276aace8dd9d600306c7eea4803d7366aca82"></a>map_battle_edit&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac01ca3dff2958fe8790d97e621fe4a79" name="a8421c8d9c077a9de0c9668cc0b1a276aac01ca3dff2958fe8790d97e621fe4a79"></a>map_event&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aad77a18da627d092b526c29dbb5af9167" name="a8421c8d9c077a9de0c9668cc0b1a276aad77a18da627d092b526c29dbb5af9167"></a>event_search&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa1a18f19535b3b1edd5de7f535141f476" name="a8421c8d9c077a9de0c9668cc0b1a276aa1a18f19535b3b1edd5de7f535141f476"></a>outline&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa30db597822c6e06c6737052260426f45" name="a8421c8d9c077a9de0c9668cc0b1a276aa30db597822c6e06c6737052260426f45"></a>initialize&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa06435e9584009a1324c904ad359dcdba" name="a8421c8d9c077a9de0c9668cc0b1a276aa06435e9584009a1324c904ad359dcdba"></a>new_&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa7cef8a734855777c2a9d0caf42666e69" name="a8421c8d9c077a9de0c9668cc0b1a276aa7cef8a734855777c2a9d0caf42666e69"></a>open&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa716f6b30598ba30945d84485e61c1027" name="a8421c8d9c077a9de0c9668cc0b1a276aa716f6b30598ba30945d84485e61c1027"></a>close&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa43781db5c40ecc39fd718685594f0956" name="a8421c8d9c077a9de0c9668cc0b1a276aa43781db5c40ecc39fd718685594f0956"></a>save&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa078f40fa23e0672777adc7c05d4773dd" name="a8421c8d9c077a9de0c9668cc0b1a276aa078f40fa23e0672777adc7c05d4773dd"></a>deploy&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aae9a4f5669c3264e0a87c6c63605265c9" name="a8421c8d9c077a9de0c9668cc0b1a276aae9a4f5669c3264e0a87c6c63605265c9"></a>testplay&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aa657f8b8da628ef83cf69101b6817150a" name="a8421c8d9c077a9de0c9668cc0b1a276aa657f8b8da628ef83cf69101b6817150a"></a>help&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
+<tr><td class="fieldname"><a id="a8421c8d9c077a9de0c9668cc0b1a276aac85eb55de2bc1418137521d2cb63bd0a" name="a8421c8d9c077a9de0c9668cc0b1a276aac85eb55de2bc1418137521d2cb63bd0a"></a>test_event_parameter&#160;</td><td class="fielddoc"><pre class="fragment">        &lt;/summary&gt; 
+</pre> </td></tr>
 </table>
 
 </div>
@@ -324,12 +389,14 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>シングルトンなのでprivateなコンストラクタ。 </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_a53cd025bf53c1c1f1678425b1510d9b3_cgraph.png" border="0" usemap="#ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_a53cd025bf53c1c1f1678425b1510d9b3_cgraph" alt=""/></div>
 <map name="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_a53cd025bf53c1c1f1678425b1510d9b3_cgraph" id="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_a53cd025bf53c1c1f1678425b1510d9b3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,245,64"/>
+<area shape="rect" title="シングルトンなのでprivateなコンストラクタ。" alt="" coords="5,5,245,64"/>
 <area shape="rect" href="../../d5/d47/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_1_1_event_name_or_paramater.html#ab858ced173906c96d2bf928e04afe2d7" title=" " alt="" coords="293,5,544,64"/>
 <area shape="poly" title=" " alt="" coords="245,32,278,32,278,37,245,37"/>
 </map>
@@ -363,6 +430,13 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventName</td><td></td></tr>
+    <tr><td class="paramname">eventParameter</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -393,7 +467,7 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
 <area shape="poly" title=" " alt="" coords="1107,1588,1085,1536,1052,1474,1007,1412,981,1384,952,1360,928,1346,930,1341,955,1355,985,1380,1012,1408,1056,1471,1090,1534,1112,1586"/>
 <area shape="rect" href="../../d9/d53/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_rpg_maker_editor.html#addf49cd1d80f9d52a8ed4aea8adc512d" title=" " alt="" coords="684,1369,939,1428"/>
 <area shape="poly" title=" " alt="" coords="1098,1591,1038,1516,997,1476,952,1442,931,1431,933,1426,955,1438,1001,1472,1041,1512,1102,1588"/>
-<area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ae9b30018a3ac013146bfb8a6d0b82dd9" title=" " alt="" coords="690,1452,934,1511"/>
+<area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ae9b30018a3ac013146bfb8a6d0b82dd9" title="&quot;AnalyticsTag__{イベント名}__{イベントパラメータ}&quot;という名のクラスが設定してあるVisualElementをHierarchyの 親方向に探していき、最初に見つけたものの『イベント..." alt="" coords="690,1452,934,1511"/>
 <area shape="poly" title=" " alt="" coords="1078,1595,1019,1559,952,1525,923,1514,925,1509,954,1520,1022,1555,1080,1591"/>
 <area shape="rect" href="../../dd/d8c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_window_1_1_menu_window.html#a57b7a7398ef156ad91ad88c1066e305b" title="ゲームをアプリ化" alt="" coords="675,1535,948,1577"/>
 <area shape="poly" title=" " alt="" coords="1006,1600,914,1581,915,1575,1007,1595"/>
@@ -512,12 +586,20 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>"AnalyticsTag__{イベント名}__{イベントパラメータ}"という名のクラスが設定してあるVisualElementをHierarchyの 親方向に探していき、最初に見つけたものの『イベント名』と『イベントパラメータ』を送信する。 </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ve</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_cgraph.png" border="0" usemap="#ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_cgraph" alt=""/></div>
 <map name="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_cgraph" id="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,143,250,201"/>
+<area shape="rect" title="&quot;AnalyticsTag__{イベント名}__{イベントパラメータ}&quot;という名のクラスが設定してあるVisualElementをHierarchyの 親方向に探していき、最初に見つけたものの『イベント..." alt="" coords="5,143,250,201"/>
 <area shape="rect" href="../../d0/dba/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_helper_1_1_debug_util.html#a6f68e12e2f77835f0734dde740a47814" title="オブジェクトを文字列化して警告メッセージをUnityコンソールに表示する。" alt="" coords="609,5,836,48"/>
 <area shape="poly" title=" " alt="" coords="201,140,297,107,450,70,594,43,595,49,452,75,298,112,202,145"/>
 <area shape="rect" href="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager.html#ac9c8eb375170074c4c9fa7380bb0e2f0" title=" " alt="" coords="301,121,546,164"/>
@@ -543,7 +625,7 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_icgraph.png" border="0" usemap="#ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_icgraph" alt=""/></div>
 <map name="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_icgraph" id="ad1/dd9/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_common_1_1_analytics_manager_ae9b30018a3ac013146bfb8a6d0b82dd9_icgraph">
-<area shape="rect" title=" " alt="" coords="976,1792,1221,1851"/>
+<area shape="rect" title="&quot;AnalyticsTag__{イベント名}__{イベントパラメータ}&quot;という名のクラスが設定してあるVisualElementをHierarchyの 親方向に探していき、最初に見つけたものの『イベント..." alt="" coords="976,1792,1221,1851"/>
 <area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a204d652b4f8c35ba25edc111bdc08cf6" title="ヒエラルキー中のボタンがクリックされた。" alt="" coords="692,1792,928,1851"/>
 <area shape="poly" title=" " alt="" coords="962,1824,929,1824,929,1819,962,1819"/>
 <area shape="rect" href="../../d5/d90/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_common_1_1_common_map_hierarchy_view.html#a7d5f8e5ea6c459d88174db8bcd6c6f67" title="ヒエラルキーに1つのサンプルマップのFoldoutを追加する。" alt="" coords="349,5,617,64"/>
@@ -668,6 +750,8 @@ RPGMaker.Codebase.Editor.Common.AnalyticsManager 連携図</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>VisualElementのクラス名として埋め込まれたアナリティクス用タグに一致する正規表現。 </p>
 
 </div>
 </div>
