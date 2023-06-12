@@ -2178,12 +2178,21 @@ RPGMaker.Codebase.Runtime.Common.ControlCharacter.ControlCharacter.Processer 連
 <p>【置換系】</p>
 <p>\V[n] 変数n番の値に置き換えられます。 \N[n] アクターn番の名前に置き換えられます。 \P[n] パーティメンバーn番に置き換えられます。 \I[n] アイコンn番を描画します。 \G 通貨単位に置き換えられます。 \ バックスラッシュに置き換えられます。</p>
 <p>【設定系】</p>
-<p>\C[n] 以降の文字をn番の色で表示します。 \PX[n] ウィンドウの左上を原点にX座標を設定します。 \PY[n] ウィンドウの左上を原点にY座標を設定します。 \FS[n] 文字サイズをnに変更します。 文字サイズを1段階大きくします。 【動作系】</p>
-<p>! ボタン入力を待ちます。 . 1/4秒待ちます。 | 1秒待ちます。 &gt; 同じ行の残りの文字を一瞬で表示します。 &lt; 文字を一瞬で表示する効果を取り消します。 \^ 文章表示後の入力待ちをしません。</p>
-<p>\f 改ページをします (バトルの場合のみ)。Uniteで追加されたもの？</p>
-<p>【他】</p>
-<p>$ 所持金のウィンドウを開きます。 </p>
-<div class="dynheader">
+<p>\C[n] 以降の文字をn番の色で表示します。 \PX[n] ウィンドウの左上を原点にX座標を設定します。 \PY[n] ウィンドウの左上を原点にY座標を設定します。 \FS[n] 文字サイズをnに変更します。 文字サイズを1段階大きくします。 </p><pre class="fragment">【動作系】
+
+\!      ボタン入力を待ちます。
+\.      1/4秒待ちます。
+\|      1秒待ちます。
+\＞     （＞は半角）同じ行の残りの文字を一瞬で表示します。
+\＜     （＜は半角）文字を一瞬で表示する効果を取り消します。
+\^      文章表示後の入力待ちをしません。
+
+\f      改ページをします (バトルの場合のみ)。Uniteで追加されたもの？
+
+【他】
+
+\$      所持金のウィンドウを開きます。
+</pre> <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d7/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_control_character_1_1_control_character_1_1_processer_a98cee73aab96ee5be0898304e7dbccde_cgraph.png" border="0" usemap="#ad7/d0c/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_common_1_1_control_character_1_1_control_character_1_1_processer_a98cee73aab96ee5be0898304e7dbccde_cgraph" alt=""/></div>
@@ -3186,10 +3195,10 @@ RPGMaker.Codebase.Runtime.Common.ControlCharacter.ControlCharacter.Processer 連
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">isSkipPxPyUntilPutObject</td><td>スキップＰｘＰｙ単位置くオブジェクト</td></tr>
+    <tr><td class="paramname">isEditorPreview</td><td>エディターのプレビュー表示の為に呼ばれたフラグ。</td></tr>
   </table>
   </dd>
 </dl>
-<p>&lt;param name="isEditorPreview"エディターのプレビュー表示の為に呼ばれたフラグ。&gt;</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
