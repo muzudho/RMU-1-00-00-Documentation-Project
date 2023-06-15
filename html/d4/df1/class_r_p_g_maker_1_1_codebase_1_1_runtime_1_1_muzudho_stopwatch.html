@@ -1,0 +1,784 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RMU 1.00.00 Documentation Project: RPGMaker.Codebase.Runtime.MuzudhoStopwatch クラス</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">RMU 1.00.00 Documentation Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../d3/df8/namespace_r_p_g_maker.html">RPGMaker</a></li><li class="navelem"><a class="el" href="../../de/dd0/namespace_r_p_g_maker_1_1_codebase.html">Codebase</a></li><li class="navelem"><a class="el" href="../../d8/d78/namespace_r_p_g_maker_1_1_codebase_1_1_runtime.html">Runtime</a></li><li class="navelem"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html">MuzudhoStopwatch</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pac-methods">関数</a> &#124;
+<a href="#pac-static-methods">静的関数</a> &#124;
+<a href="#pac-attribs">変数</a> &#124;
+<a href="#properties">プロパティ</a> &#124;
+<a href="#pri-methods">非公開メンバ関数</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="../../d7/d8e/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle"><div class="title">RPGMaker.Codebase.Runtime.MuzudhoStopwatch クラス</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+RPGMaker.Codebase.Runtime.MuzudhoStopwatch 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d95/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch__coll__graph.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_runtime_8_muzudho_stopwatch_coll__map" alt="Collaboration graph"/></div>
+<map name="a_r_p_g_maker_8_codebase_8_runtime_8_muzudho_stopwatch_coll__map" id="a_r_p_g_maker_8_codebase_8_runtime_8_muzudho_stopwatch_coll__map">
+<area shape="rect" title=" " alt="" coords="5,96,209,139"/>
+<area shape="rect" title=" " alt="" coords="74,5,140,32"/>
+<area shape="poly" title=" " alt="" coords="110,47,110,95,104,95,104,47"/>
+</map>
+<center><span class="legend">[<a href="../../graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ac21077a1bf98cbab71b0ad42ecbf3b03">Restart</a> ()</td></tr>
+<tr class="memdesc:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">経過時間をリセットしてから計測開始  <br /></td></tr>
+<tr class="separator:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ac21077a1bf98cbab71b0ad42ecbf3b03">Restart</a> ()</td></tr>
+<tr class="memdesc:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">経過時間をリセットしてから計測開始  <br /></td></tr>
+<tr class="separator:ac21077a1bf98cbab71b0ad42ecbf3b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
+関数</h2></td></tr>
+<tr class="memitem:add0f2ce7e3783c1d3247b3244d82873d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#add0f2ce7e3783c1d3247b3244d82873d">Stop</a> ()</td></tr>
+<tr class="memdesc:add0f2ce7e3783c1d3247b3244d82873d"><td class="mdescLeft">&#160;</td><td class="mdescRight">計測停止  <br /></td></tr>
+<tr class="separator:add0f2ce7e3783c1d3247b3244d82873d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a3b06ebd9ec4c8cd15b1dbb078b378263">Stringify</a> (string label)</td></tr>
+<tr class="memdesc:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列化  <br /></td></tr>
+<tr class="separator:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1b519cace12465013eb9f92b87a6d7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#afa1b519cace12465013eb9f92b87a6d7">StringifyTimeSpan</a> ()</td></tr>
+<tr class="memdesc:afa1b519cace12465013eb9f92b87a6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列化  <br /></td></tr>
+<tr class="separator:afa1b519cace12465013eb9f92b87a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3b9adb8b842cbe6113ceecc0879192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a2a3b9adb8b842cbe6113ceecc0879192">Update</a> (TimeSpan addSpan)</td></tr>
+<tr class="separator:a2a3b9adb8b842cbe6113ceecc0879192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add0f2ce7e3783c1d3247b3244d82873d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#add0f2ce7e3783c1d3247b3244d82873d">Stop</a> ()</td></tr>
+<tr class="memdesc:add0f2ce7e3783c1d3247b3244d82873d"><td class="mdescLeft">&#160;</td><td class="mdescRight">計測停止  <br /></td></tr>
+<tr class="separator:add0f2ce7e3783c1d3247b3244d82873d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a3b06ebd9ec4c8cd15b1dbb078b378263">Stringify</a> (string label)</td></tr>
+<tr class="memdesc:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列化  <br /></td></tr>
+<tr class="separator:a3b06ebd9ec4c8cd15b1dbb078b378263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1b519cace12465013eb9f92b87a6d7"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#afa1b519cace12465013eb9f92b87a6d7">StringifyTimeSpan</a> ()</td></tr>
+<tr class="memdesc:afa1b519cace12465013eb9f92b87a6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">文字列化  <br /></td></tr>
+<tr class="separator:afa1b519cace12465013eb9f92b87a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3b9adb8b842cbe6113ceecc0879192"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a2a3b9adb8b842cbe6113ceecc0879192">Update</a> (TimeSpan addSpan)</td></tr>
+<tr class="separator:a2a3b9adb8b842cbe6113ceecc0879192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-static-methods" name="pac-static-methods"></a>
+静的関数</h2></td></tr>
+<tr class="memitem:acc68d4c744bb8ea99e3f2f0e76f7f2e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html">MuzudhoStopwatch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#acc68d4c744bb8ea99e3f2f0e76f7f2e3">CreateAndStart</a> (string <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ab3de1a99a464ec00a93259805c06ed21">itemName</a>)</td></tr>
+<tr class="separator:acc68d4c744bb8ea99e3f2f0e76f7f2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c4bc028c0a63a849b5aba47714dd04"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a88c4bc028c0a63a849b5aba47714dd04">Stringify</a> (TimeSpan span)</td></tr>
+<tr class="separator:a88c4bc028c0a63a849b5aba47714dd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc68d4c744bb8ea99e3f2f0e76f7f2e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html">MuzudhoStopwatch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#acc68d4c744bb8ea99e3f2f0e76f7f2e3">CreateAndStart</a> (string <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ab3de1a99a464ec00a93259805c06ed21">itemName</a>)</td></tr>
+<tr class="separator:acc68d4c744bb8ea99e3f2f0e76f7f2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c4bc028c0a63a849b5aba47714dd04"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a88c4bc028c0a63a849b5aba47714dd04">Stringify</a> (TimeSpan span)</td></tr>
+<tr class="separator:a88c4bc028c0a63a849b5aba47714dd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-attribs" name="pac-attribs"></a>
+変数</h2></td></tr>
+<tr class="memitem:ab3de1a99a464ec00a93259805c06ed21"><td class="memItemLeft" align="right" valign="top">readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ab3de1a99a464ec00a93259805c06ed21">itemName</a></td></tr>
+<tr class="separator:ab3de1a99a464ec00a93259805c06ed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+プロパティ</h2></td></tr>
+<tr class="memitem:abeae69bc34e7db0127b3842842b4611f"><td class="memItemLeft" align="right" valign="top">TimeSpan&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#abeae69bc34e7db0127b3842842b4611f">Elapsed</a><code> [get]</code></td></tr>
+<tr class="separator:abeae69bc34e7db0127b3842842b4611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ab7f0ef3cc3b3e5d9c5255a9eb100a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ac9ab7f0ef3cc3b3e5d9c5255a9eb100a">CountOfUpdate</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac9ab7f0ef3cc3b3e5d9c5255a9eb100a"><td class="mdescLeft">&#160;</td><td class="mdescRight">アップデート回数  <br /></td></tr>
+<tr class="separator:ac9ab7f0ef3cc3b3e5d9c5255a9eb100a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51a095547843ce6d9a67f4f93690410"><td class="memItemLeft" align="right" valign="top">TimeSpan&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ac51a095547843ce6d9a67f4f93690410">Total</a> = TimeSpan.Zero<code> [get, set]</code></td></tr>
+<tr class="memdesc:ac51a095547843ce6d9a67f4f93690410"><td class="mdescLeft">&#160;</td><td class="mdescRight">累計時間  <br /></td></tr>
+<tr class="separator:ac51a095547843ce6d9a67f4f93690410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a03e34d186247fd2a178bc76a3b6feb59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a03e34d186247fd2a178bc76a3b6feb59">MuzudhoStopwatch</a> (string <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ab3de1a99a464ec00a93259805c06ed21">itemName</a>)</td></tr>
+<tr class="separator:a03e34d186247fd2a178bc76a3b6feb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c32883b1ad57a0561f8dfe6332b4174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a7c32883b1ad57a0561f8dfe6332b4174">Start</a> ()</td></tr>
+<tr class="memdesc:a7c32883b1ad57a0561f8dfe6332b4174"><td class="mdescLeft">&#160;</td><td class="mdescRight">計測開始  <br /></td></tr>
+<tr class="separator:a7c32883b1ad57a0561f8dfe6332b4174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e34d186247fd2a178bc76a3b6feb59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a03e34d186247fd2a178bc76a3b6feb59">MuzudhoStopwatch</a> (string <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#ab3de1a99a464ec00a93259805c06ed21">itemName</a>)</td></tr>
+<tr class="separator:a03e34d186247fd2a178bc76a3b6feb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c32883b1ad57a0561f8dfe6332b4174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a7c32883b1ad57a0561f8dfe6332b4174">Start</a> ()</td></tr>
+<tr class="memdesc:a7c32883b1ad57a0561f8dfe6332b4174"><td class="mdescLeft">&#160;</td><td class="mdescRight">計測開始  <br /></td></tr>
+<tr class="separator:a7c32883b1ad57a0561f8dfe6332b4174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a4a422cf010ce67b0db93701ba8c0c65e"><td class="memItemLeft" align="right" valign="top">System.Diagnostics.Stopwatch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html#a4a422cf010ce67b0db93701ba8c0c65e">stopwatch</a> = new System.Diagnostics.Stopwatch()</td></tr>
+<tr class="separator:a4a422cf010ce67b0db93701ba8c0c65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a03e34d186247fd2a178bc76a3b6feb59" name="a03e34d186247fd2a178bc76a3b6feb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e34d186247fd2a178bc76a3b6feb59">&#9670;&#160;</a></span>MuzudhoStopwatch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.MuzudhoStopwatch.MuzudhoStopwatch </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>itemName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03e34d186247fd2a178bc76a3b6feb59" name="a03e34d186247fd2a178bc76a3b6feb59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e34d186247fd2a178bc76a3b6feb59">&#9670;&#160;</a></span>MuzudhoStopwatch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RPGMaker.Codebase.Runtime.MuzudhoStopwatch.MuzudhoStopwatch </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>itemName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メソッド詳解</h2>
+<a id="acc68d4c744bb8ea99e3f2f0e76f7f2e3" name="acc68d4c744bb8ea99e3f2f0e76f7f2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc68d4c744bb8ea99e3f2f0e76f7f2e3">&#9670;&#160;</a></span>CreateAndStart() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html">MuzudhoStopwatch</a> RPGMaker.Codebase.Runtime.MuzudhoStopwatch.CreateAndStart </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>itemName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc68d4c744bb8ea99e3f2f0e76f7f2e3" name="acc68d4c744bb8ea99e3f2f0e76f7f2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc68d4c744bb8ea99e3f2f0e76f7f2e3">&#9670;&#160;</a></span>CreateAndStart() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch.html">MuzudhoStopwatch</a> RPGMaker.Codebase.Runtime.MuzudhoStopwatch.CreateAndStart </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>itemName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac21077a1bf98cbab71b0ad42ecbf3b03" name="ac21077a1bf98cbab71b0ad42ecbf3b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21077a1bf98cbab71b0ad42ecbf3b03">&#9670;&#160;</a></span>Restart() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>経過時間をリセットしてから計測開始 </p>
+
+</div>
+</div>
+<a id="ac21077a1bf98cbab71b0ad42ecbf3b03" name="ac21077a1bf98cbab71b0ad42ecbf3b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac21077a1bf98cbab71b0ad42ecbf3b03">&#9670;&#160;</a></span>Restart() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>経過時間をリセットしてから計測開始 </p>
+
+</div>
+</div>
+<a id="a7c32883b1ad57a0561f8dfe6332b4174" name="a7c32883b1ad57a0561f8dfe6332b4174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c32883b1ad57a0561f8dfe6332b4174">&#9670;&#160;</a></span>Start() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>計測開始 </p>
+
+</div>
+</div>
+<a id="a7c32883b1ad57a0561f8dfe6332b4174" name="a7c32883b1ad57a0561f8dfe6332b4174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c32883b1ad57a0561f8dfe6332b4174">&#9670;&#160;</a></span>Start() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>計測開始 </p>
+
+</div>
+</div>
+<a id="add0f2ce7e3783c1d3247b3244d82873d" name="add0f2ce7e3783c1d3247b3244d82873d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0f2ce7e3783c1d3247b3244d82873d">&#9670;&#160;</a></span>Stop() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>計測停止 </p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch_add0f2ce7e3783c1d3247b3244d82873d_icgraph.png" border="0" usemap="#ad4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch_add0f2ce7e3783c1d3247b3244d82873d_icgraph" alt=""/></div>
+<map name="ad4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch_add0f2ce7e3783c1d3247b3244d82873d_icgraph" id="ad4/df1/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_muzudho_stopwatch_add0f2ce7e3783c1d3247b3244d82873d_icgraph">
+<area shape="rect" title="計測停止" alt="" coords="257,5,460,48"/>
+<area shape="rect" href="../../d7/d54/class_r_p_g_maker_1_1_codebase_1_1_runtime_1_1_table_log_buffer.html#a0c01fcc975f3f3e12b4ab43c05e2b1bf" title=" " alt="" coords="5,5,209,48"/>
+<area shape="poly" title=" " alt="" coords="242,29,209,29,209,24,242,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add0f2ce7e3783c1d3247b3244d82873d" name="add0f2ce7e3783c1d3247b3244d82873d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add0f2ce7e3783c1d3247b3244d82873d">&#9670;&#160;</a></span>Stop() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>計測停止 </p>
+
+</div>
+</div>
+<a id="a3b06ebd9ec4c8cd15b1dbb078b378263" name="a3b06ebd9ec4c8cd15b1dbb078b378263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b06ebd9ec4c8cd15b1dbb078b378263">&#9670;&#160;</a></span>Stringify() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stringify </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文字列化 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a3b06ebd9ec4c8cd15b1dbb078b378263" name="a3b06ebd9ec4c8cd15b1dbb078b378263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b06ebd9ec4c8cd15b1dbb078b378263">&#9670;&#160;</a></span>Stringify() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stringify </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>label</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文字列化 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a88c4bc028c0a63a849b5aba47714dd04" name="a88c4bc028c0a63a849b5aba47714dd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c4bc028c0a63a849b5aba47714dd04">&#9670;&#160;</a></span>Stringify() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stringify </td>
+          <td>(</td>
+          <td class="paramtype">TimeSpan&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88c4bc028c0a63a849b5aba47714dd04" name="a88c4bc028c0a63a849b5aba47714dd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88c4bc028c0a63a849b5aba47714dd04">&#9670;&#160;</a></span>Stringify() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Stringify </td>
+          <td>(</td>
+          <td class="paramtype">TimeSpan&#160;</td>
+          <td class="paramname"><em>span</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa1b519cace12465013eb9f92b87a6d7" name="afa1b519cace12465013eb9f92b87a6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1b519cace12465013eb9f92b87a6d7">&#9670;&#160;</a></span>StringifyTimeSpan() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.StringifyTimeSpan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文字列化 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="afa1b519cace12465013eb9f92b87a6d7" name="afa1b519cace12465013eb9f92b87a6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa1b519cace12465013eb9f92b87a6d7">&#9670;&#160;</a></span>StringifyTimeSpan() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.StringifyTimeSpan </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>文字列化 </p>
+<dl class="section return"><dt>戻り値</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a2a3b9adb8b842cbe6113ceecc0879192" name="a2a3b9adb8b842cbe6113ceecc0879192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3b9adb8b842cbe6113ceecc0879192">&#9670;&#160;</a></span>Update() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Update </td>
+          <td>(</td>
+          <td class="paramtype">TimeSpan&#160;</td>
+          <td class="paramname"><em>addSpan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a3b9adb8b842cbe6113ceecc0879192" name="a2a3b9adb8b842cbe6113ceecc0879192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3b9adb8b842cbe6113ceecc0879192">&#9670;&#160;</a></span>Update() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Update </td>
+          <td>(</td>
+          <td class="paramtype">TimeSpan&#160;</td>
+          <td class="paramname"><em>addSpan</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="ab3de1a99a464ec00a93259805c06ed21" name="ab3de1a99a464ec00a93259805c06ed21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3de1a99a464ec00a93259805c06ed21">&#9670;&#160;</a></span>itemName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string RPGMaker.Codebase.Runtime.MuzudhoStopwatch.itemName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a422cf010ce67b0db93701ba8c0c65e" name="a4a422cf010ce67b0db93701ba8c0c65e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a422cf010ce67b0db93701ba8c0c65e">&#9670;&#160;</a></span>stopwatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System Diagnostics Stopwatch RPGMaker.Codebase.Runtime.MuzudhoStopwatch.stopwatch = new System.Diagnostics.Stopwatch()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">プロパティ詳解</h2>
+<a id="ac9ab7f0ef3cc3b3e5d9c5255a9eb100a" name="ac9ab7f0ef3cc3b3e5d9c5255a9eb100a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9ab7f0ef3cc3b3e5d9c5255a9eb100a">&#9670;&#160;</a></span>CountOfUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RPGMaker.Codebase.Runtime.MuzudhoStopwatch.CountOfUpdate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>アップデート回数 </p>
+
+</div>
+</div>
+<a id="abeae69bc34e7db0127b3842842b4611f" name="abeae69bc34e7db0127b3842842b4611f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeae69bc34e7db0127b3842842b4611f">&#9670;&#160;</a></span>Elapsed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSpan RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Elapsed</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac51a095547843ce6d9a67f4f93690410" name="ac51a095547843ce6d9a67f4f93690410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51a095547843ce6d9a67f4f93690410">&#9670;&#160;</a></span>Total</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimeSpan RPGMaker.Codebase.Runtime.MuzudhoStopwatch.Total = TimeSpan.Zero</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>累計時間 </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research/Assets/RPGMaker/Codebase/Editor/<a class="el" href="../../de/de2/_editor_2_muzudho_stopwatch_8cs.html">MuzudhoStopwatch.cs</a></li>
+<li>C:/Users/むずでょ/Documents/Unity Projects/RMU-1-00-00-Research/Assets/RPGMaker/Codebase/Runtime/<a class="el" href="../../dc/db7/_runtime_2_muzudho_stopwatch_8cs.html">MuzudhoStopwatch.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

@@ -124,6 +124,13 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
 <div class="textblock"><p>😁 順番管理用 </p>
+<ul>
+<li>
+（※翻訳者追記）資産型Ｉｄ というのが 1 ～ 6 ぐらいあり、そのそれぞれに、ＵＵＩＤ　のリストを持つ、ただのＵＵＩＤのリストの資産Ｉｄ別リスト </li>
+<li>
+（※翻訳者追記）Ｍａｐコレクションを使えよ </li>
+</ul>
+<p>{ "orderDataList": [ { "assetTypeId": 0, "idList": ["78a965c8-7400-432e-a17f-93432f6b9ff5", "bce01112-43f1-4859-b0a7-42fa24dd0331"] }, { "assetTypeId": 1, "idList": ["510f4d1b-986d-444b-9d38-61454ffe898b", "7baaf801-2b61-484f-8ec3-5459f59e8f31"] }, { "assetTypeId": 2, "idList": ["26b2219f-43b7-4c48-b05f-77312da9075f", "365224cf-85fd-4b2a-b3fe-34cf0cd0e2d3"] }, { "assetTypeId": 3, "idList": ["e7c8511c-dda2-4812-9ddb-03a8674ce085", "ee879f35-3bde-4755-a7ce-30e821fa15dd"] }, { "assetTypeId": 4, "idList": ["e47f074e-92e7-4c73-88e9-238bd8fd9116", "be343f14-c25a-4d47-ba73-dbacf22478e2"] }, { "assetTypeId": 5, "idList": ["eafa135e-b529-45ae-b9d5-8f5c1ec45731", "99a2c28e-b132-417b-bc4f-e56f63aaaaae"] }, { "assetTypeId": 6, "idList": ["f6bad097-a340-4fe8-b90e-9676c577cfeb", "6f7d5b0d-cc94-48dd-9053-d6893672c45c"] } ] } </p>
 </div><h2 class="groupheader">メソッド詳解</h2>
 <a id="a5b8e216e356f50b15349290bbe0c800c" name="a5b8e216e356f50b15349290bbe0c800c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b8e216e356f50b15349290bbe0c800c">&#9670;&#160;</a></span>Load()</h2>
@@ -149,6 +156,7 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </div><div class="memdoc">
 
 <p>😁 ロード </p>
+<p>😁（※翻訳者追記） ※１　ロード済みなら、それを返す ※２　未ロードなら、 <code>orderManager.json</code> を読込む ※３ （※２）に失敗したら、以下の方法で初期値を作成 <a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a> 列挙型の要素数分の長さの配列を生成。その要素の assetTypeId には 0 からの連番を振っている ※４　（※２）に成功したら、JSON形式テキストをシリアライズしてオブジェクト生成。それに失敗したら、代わりにデフォルト値を入れる </p>
 <dl class="section return"><dt>戻り値</dt><dd>順序データ</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
@@ -304,6 +312,9 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </div><div class="memdoc">
 
 <p>😁 順序データ </p>
+<p>{ "orderDataList": [ { "assetTypeId": 0, "idList": ["78a965c8-7400-432e-a17f-93432f6b9ff5", "bce01112-43f1-4859-b0a7-42fa24dd0331"] },</p>
+<p>...</p>
+<p>{ "assetTypeId": 6, "idList": ["f6bad097-a340-4fe8-b90e-9676c577cfeb", "6f7d5b0d-cc94-48dd-9053-d6893672c45c"] } ] } </p>
 
 </div>
 </div>

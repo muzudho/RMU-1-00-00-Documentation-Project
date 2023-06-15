@@ -1598,12 +1598,19 @@ RPGMaker.Codebase.CoreSystem.Helper.ImageManager 連携図</div>
 </div><div class="memdoc">
 
 <p>😁 Ｓｖキャラクター読込 </p>
+<ul>
+<li>
+（※翻訳者追記）JSONファイルを TextAsset として読込。 Unity の基本動作。実装では "Assets/RPGMaker/Storage/AssetManage/JSON/Assets/" + assetId + ".json" になるようだ </li>
+<li>
+（※翻訳者追記）読込んだ JSON形式テキストは、 JsonUtil ライブラリのシリアライズ機能を利用して AssetManageDataModel クラスへ変換するようだ。 </li>
+</ul>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assetId</td><td>財産Ｉｄ</td></tr>
+    <tr><td class="paramname">assetId</td><td>資産Ｉｄ。ＵＵＩｄ </td></tr>
   </table>
   </dd>
 </dl>
+<p>1590340c-c640-463e-a2ad-3c07852adaf9.json</p>
 <dl class="section return"><dt>戻り値</dt><dd>テクスチャー</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
