@@ -284,15 +284,15 @@ AssetManageDataModel という名前をしているが、内容はほとんど�
 <li>
 （※翻訳者追記）デフォルトを作ると言うのなら、セットする値無しで、固定値で作るべきだ </li>
 </ul>
-<p>😁（※翻訳者追記）<br  />
- ※１ 主に画像位置データ等のコレクションのインスタンスを生成。 sort 変数の初期値として、 otherSameTypeItemAmount + 1 をセット<br  />
- ※２ 資産型Ｉｄ（<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>）によって、<br  />
- AssetManageDataModel インスタンスの imageSettings メンバー・リストのサイズが変わる。<br  />
- そのサイズは DataSizeMoveCharacter、DataSizeSvCharacter、DataSizeDefault<br  />
- で指定されている。<br  />
- その固定長リストの各要素には、 ImageSetting インスタンスを生成してセットする<br  />
- </p>
-<dl class="params"><dt>引数</dt><dd>
+<pre>
+        😁（※翻訳者追記）
+        ※１ 主に画像位置データ等のコレクションのインスタンスを生成。 sort 変数の初期値として、 otherSameTypeItemAmount + 1 をセット
+        ※２ 資産型Ｉｄ（<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>）によって、
+                AssetManageDataModel インスタンスの imageSettings メンバー・リストのサイズが変わる。
+                そのサイズは DataSizeMoveCharacter、DataSizeSvCharacter、DataSizeDefault
+                で指定されている。
+                その固定長リストの各要素には、 ImageSetting インスタンスを生成してセットする
+    </pre><dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">assetTypeId</td><td>資産型Id</td></tr>
     <tr><td class="paramname">otherSameTypeItemAmount</td><td>他人同型アイテム金額。（※翻訳者追記）1 を足して sort プロパティに入れているが、 sort なのか？</td></tr>
@@ -458,38 +458,22 @@ AssetManageDataModel という名前をしているが、内容はほとんど�
 （※翻訳者追記）画像設定と言われても何のことだか分からん。仕様書を出してほしい </li>
 </ul>
 <pre>
-    [<br  />
-
-        {<br  />
-
-            "path": "Other2_001.png",<br  />
-
-            "sizeX": 294,<br  />
-
-            "sizeY": 194,<br  />
-
-            "animationFrame": 3,<br  />
-
-            "animationSpeed": 30<br  />
-
-        },<br  />
-
-        {<br  />
-
-            "path": "Other2_001.png",<br  />
-
-            "sizeX": 294,<br  />
-
-            "sizeY": 194,<br  />
-
-            "animationFrame": 3,<br  />
-
-            "animationSpeed": 30<br  />
-
-        }<br  />
-
-    ]<br  />
-
+    [
+        {
+            "path": "Other2_001.png",
+            "sizeX": 294,
+            "sizeY": 194,
+            "animationFrame": 3,
+            "animationSpeed": 30
+        },
+        {
+            "path": "Other2_001.png",
+            "sizeX": 294,
+            "sizeY": 194,
+            "animationFrame": 3,
+            "animationSpeed": 30
+        }
+    ]
     </pre> 
 </div>
 </div>
