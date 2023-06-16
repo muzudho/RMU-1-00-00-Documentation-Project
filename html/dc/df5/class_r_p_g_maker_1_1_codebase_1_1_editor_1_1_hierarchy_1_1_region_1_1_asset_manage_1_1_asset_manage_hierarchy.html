@@ -119,7 +119,7 @@ RPGMaker.Codebase.Editor.Hierarchy.Region.AssetManage.AssetManageHierarchy 連�
 <tr class="memdesc:a32ece07e608500a5840df8f4ca26a492"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 （※翻訳者追記）主に画像位置データ等のコレクションのInspector表示  <br /></td></tr>
 <tr class="separator:a32ece07e608500a5840df8f4ca26a492"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9700a935af448138045dfd009b172fd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#a9700a935af448138045dfd009b172fd3">CreateAssetManageDataModel</a> (<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3">AssetCategoryEnum</a> assetType)</td></tr>
-<tr class="memdesc:a9700a935af448138045dfd009b172fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 素材管理の新規作成  <br /></td></tr>
+<tr class="memdesc:a9700a935af448138045dfd009b172fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 主に画像位置データ等のコレクションの新規作成。このインスタンスのプロパティにセットされる  <br /></td></tr>
 <tr class="separator:a9700a935af448138045dfd009b172fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd2656735929bb2374662a697ceab4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#abd2656735929bb2374662a697ceab4ed">DuplicateAssetManageDataModel</a> (<a class="el" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html">AssetManageDataModel</a> assetManageDataModel)</td></tr>
 <tr class="memdesc:abd2656735929bb2374662a697ceab4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 主に画像位置データ等のコレクションのコピー＆貼り付け処理  <br /></td></tr>
@@ -276,10 +276,11 @@ RPGMaker.Codebase.Editor.Hierarchy.Region.AssetManage.AssetManageHierarchy 連�
       </table>
 </div><div class="memdoc">
 
-<p>😁 素材管理の新規作成 </p>
+<p>😁 主に画像位置データ等のコレクションの新規作成。このインスタンスのプロパティにセットされる </p>
+<p>😁 （※翻訳者追記） ※１　主に画像位置データ等のコレクションのインスタンスＡを生成。 　　　デフォルトとは名ばかりで 第２引数にはソートで使う数を振っている。 　　　<code>_orderData.orderDataList[(int)assetType].idList.Count</code> が３回出てくるのもウザい。 　　　この値は <code><a class="el" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html#a7cfb4c4c933f7cadfbb5e1179f3c34f3" title="😁 主に画像位置データ等のコレクションのインスタンスを初期化して返すだけ">AssetManageDataModel.CreateDefault()</a></code> の中で +1 してから格納している ※２　そのインスタンスＡに名前を設定。例えば「#0001　名称未設定」といった文字列になるかも ※３　そのインスタンスＡの連番を設定。1 足して採番に使っているが、最初に +1 すれば、３回も +1 しなくていいのでは？ ※４　画像位置データ等のコレクションのリストのサイズが１以上か？ ※４．１　もしそうなら、資産Ｉｄ（ＵＵＩＤ形式）を取得 ※４．２　その資産Ｉｄを使って、ＪＳＯＮ形式ファイルを読込んで直列化し、主に画像位置データ等のコレクションのインスタンスＢを作る。 　そのインスタンスＢは、インスタンスＡの画像設定プロパティーにセットする ※５　画像位置データ等のコレクションのリストのサイズが１未満なら ※５．１　インスタンスＡの画像設定プロパティーには、画像設定のリストのインスタンスを設定 ※５．２　資産型Ｉｄが　移動キャラクター、オブジェクトなら画像設定リスト・プロパティーの長さは５とする。 　　　　　　　サイドビュー戦闘キャラクターなら１８とする。 　　　　　　　ポップアップ、サイドビュー武器、状態オーバーラップ、戦闘効果なら１とする 　　※５．３　画像設定のリストの要素を初期値で埋める。初期値は、アニメーション・フレームが１、アニメーション速度が１とする </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assetType</td><td>資産型</td></tr>
+    <tr><td class="paramname">assetType</td><td>資産型Ｉｄ</td></tr>
   </table>
   </dd>
 </dl>
@@ -288,8 +289,8 @@ RPGMaker.Codebase.Editor.Hierarchy.Region.AssetManage.AssetManageHierarchy 連�
 <div class="dyncontent">
 <div class="center"><img src="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy_a9700a935af448138045dfd009b172fd3_cgraph.png" border="0" usemap="#adc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy_a9700a935af448138045dfd009b172fd3_cgraph" alt=""/></div>
 <map name="adc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy_a9700a935af448138045dfd009b172fd3_cgraph" id="adc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy_a9700a935af448138045dfd009b172fd3_cgraph">
-<area shape="rect" title="😁 素材管理の新規作成" alt="" coords="5,613,312,672"/>
-<area shape="rect" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html#a7cfb4c4c933f7cadfbb5e1179f3c34f3" title="😁 AssetManageDataModel インスタンスを初期化して返すだけ" alt="" coords="411,117,656,176"/>
+<area shape="rect" title="😁 主に画像位置データ等のコレクションの新規作成。このインスタンスのプロパティにセットされる" alt="" coords="5,613,312,672"/>
+<area shape="rect" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html#a7cfb4c4c933f7cadfbb5e1179f3c34f3" title="😁 主に画像位置データ等のコレクションのインスタンスを初期化して返すだけ" alt="" coords="411,117,656,176"/>
 <area shape="poly" title=" " alt="" coords="161,612,178,528,192,472,212,412,238,350,270,290,310,234,358,186,395,164,398,168,361,190,314,238,275,293,243,353,217,414,197,474,183,529,166,613"/>
 <area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a204d652b4f8c35ba25edc111bdc08cf6" title="😁 ヒエラルキー中のボタンがクリックされた。" alt="" coords="415,200,652,259"/>
 <area shape="poly" title=" " alt="" coords="164,612,186,542,224,448,249,399,280,351,316,307,358,268,400,246,402,250,361,273,320,310,285,354,254,402,228,450,191,543,169,614"/>
