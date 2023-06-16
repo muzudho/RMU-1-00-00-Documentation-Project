@@ -213,7 +213,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <tr class="memdesc:ab7b6a6207f70bbecd9e44be9b8b77c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 初期化処理  <br /></td></tr>
 <tr class="separator:ab7b6a6207f70bbecd9e44be9b8b77c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c853745aedcb0ae26f2778377e32c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32">Refresh</a> ()</td></tr>
-<tr class="memdesc:a0c853745aedcb0ae26f2778377e32c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 データの更新  <br /></td></tr>
+<tr class="memdesc:a0c853745aedcb0ae26f2778377e32c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）  <br /></td></tr>
 <tr class="separator:a0c853745aedcb0ae26f2778377e32c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45c0cef2a3366d7abd3af41dab3317a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#af45c0cef2a3366d7abd3af41dab3317a">RefreshScroll</a> ()</td></tr>
 <tr class="memdesc:af45c0cef2a3366d7abd3af41dab3317a"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 スクロール更新  <br /></td></tr>
@@ -246,7 +246,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <tr class="memdesc:a52db770bfcf898994d0d472b5b92d11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 画面内に存在する全てのButtonを取得する  <br /></td></tr>
 <tr class="separator:a52db770bfcf898994d0d472b5b92d11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8470b14f2c107172454318c1936084bf"><td class="memItemLeft" align="right" valign="top">async void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf">CanRefreshOn</a> ()</td></tr>
-<tr class="memdesc:a8470b14f2c107172454318c1936084bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 データの更新を再度行えるようにする  <br /></td></tr>
+<tr class="memdesc:a8470b14f2c107172454318c1936084bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）  <br /></td></tr>
 <tr class="separator:a8470b14f2c107172454318c1936084bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0b3e58ab87f56302d71bfa62cabfdfa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#ab0b3e58ab87f56302d71bfa62cabfdfa">RefreshContents</a> ()</td></tr>
 <tr class="memdesc:ab0b3e58ab87f56302d71bfa62cabfdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 データの更新  <br /></td></tr>
@@ -481,14 +481,29 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p>😁 データの更新を再度行えるようにする </p>
+<p>😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする） </p>
+<ul>
+<li>
+😁 （※翻訳者追記）CanRefreshOn という名前からは想像できない。 ReadyScrollByYOffset という名前の方がふさわしい </li>
+<li>
+😁 （※翻訳者追記）こんな可視要素の抽象メソッドで <code>await Task.Delay(1)</code> していいのか？ リフレッシュするたびに１ミリ秒待機が入るぞ？ </li>
+</ul>
+<p>😁 （※翻訳者追記）<br  />
+ ※１　１ミリ秒待つ<br  />
+ ※２　リフレッシュできるフラグをオン<br  />
+ ※３　「スクロールを今すぐ実行する」なら<br  />
+<br  />
+ ※３．１　可視要素の先頭のスクロール・ビューを取得<br  />
+ ※３．２　それが取れたら、スクロール・オフセットを（0, 変数）位置に指定<br  />
+ ※３．３　「スクロールを今すぐ実行する」フラグをオフにする<br  />
+ </p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a8470b14f2c107172454318c1936084bf_icgraph.png" border="0" usemap="#ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a8470b14f2c107172454318c1936084bf_icgraph" alt=""/></div>
 <map name="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a8470b14f2c107172454318c1936084bf_icgraph" id="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a8470b14f2c107172454318c1936084bf_icgraph">
-<area shape="rect" title="😁 データの更新を再度行えるようにする" alt="" coords="970,1764,1203,1823"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 データの更新" alt="" coords="690,1764,922,1823"/>
+<area shape="rect" title="😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）" alt="" coords="970,1764,1203,1823"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="690,1764,922,1823"/>
 <area shape="poly" title=" " alt="" coords="955,1796,923,1796,923,1791,955,1791"/>
 <area shape="rect" href="../../db/d84/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_animation_1_1_view_1_1_animation_inspector_element.html#aae106fd133981d5041a1404498adf087" title="😁 生成" alt="" coords="341,5,627,64"/>
 <area shape="poly" title=" " alt="" coords="801,1749,788,1399,776,1142,759,866,738,596,711,357,695,258,678,176,660,115,640,78,625,64,629,60,644,74,665,113,683,175,700,257,716,357,743,596,765,866,781,1142,794,1398,806,1749"/>
@@ -532,7 +547,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <area shape="poly" title=" " alt="" coords="739,1759,641,1713,604,1700,605,1695,643,1708,741,1754"/>
 <area shape="rect" href="../../d0/d9c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_option_1_1_view_1_1_option_inspector_element.html#aed14269d9a4661a20bb2a8ddaa3ba556" title="😁 生成" alt="" coords="362,1723,606,1781"/>
 <area shape="poly" title=" " alt="" coords="675,1779,605,1770,606,1765,676,1774"/>
-<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 再更新" alt="" coords="389,1491,579,1533"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="389,1491,579,1533"/>
 <area shape="poly" title=" " alt="" coords="786,1751,764,1703,732,1647,691,1593,667,1568,641,1548,611,1532,578,1522,580,1517,613,1527,643,1543,671,1564,695,1589,737,1644,769,1700,791,1749"/>
 <area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#a535e8aedd788cf9049ba7a8d255eb9de" title="😁 中身再更新" alt="" coords="375,1888,593,1947"/>
 <area shape="poly" title=" " alt="" coords="741,1832,643,1878,594,1895,592,1890,641,1874,739,1828"/>
@@ -1660,14 +1675,25 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
       </table>
 </div><div class="memdoc">
 
-<p>😁 データの更新 </p>
+<p>😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行） </p>
+<ul>
+<li>
+😁 （※翻訳者追記）Refresh という名前から何をリフレッシュするのか分からないが、<br  />
+ 可視要素のリフレッシュと、Ｙ位置の相対スクロールの仕込み（またはその即実行）をするようだ  </li>
+</ul>
+<p>😁 （※翻訳者追記）<br  />
+ ※１　リフレッシュできないなら何もしない<br  />
+ ※２　リフレッシュできるフラグをオフにする<br  />
+ ※３　可視要素の RefreshContents() 呼出し<br  />
+ ※４　Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）<br  />
+ </p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_cgraph.png" border="0" usemap="#ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_cgraph" alt=""/></div>
 <map name="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_cgraph" id="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_cgraph">
-<area shape="rect" title="😁 データの更新" alt="" coords="5,47,238,105"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 データの更新を再度行えるようにする" alt="" coords="286,5,518,64"/>
+<area shape="rect" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="5,47,238,105"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）" alt="" coords="286,5,518,64"/>
 <area shape="poly" title=" " alt="" coords="238,56,270,51,271,57,239,61"/>
 <area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#ab0b3e58ab87f56302d71bfa62cabfdfa" title="😁 データの更新" alt="" coords="286,88,518,147"/>
 <area shape="poly" title=" " alt="" coords="239,91,271,95,270,101,238,96"/>
@@ -1678,7 +1704,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_icgraph.png" border="0" usemap="#ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_icgraph" alt=""/></div>
 <map name="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_icgraph" id="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_a0c853745aedcb0ae26f2778377e32c32_icgraph">
-<area shape="rect" title="😁 データの更新" alt="" coords="957,1764,1190,1823"/>
+<area shape="rect" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="957,1764,1190,1823"/>
 <area shape="rect" href="../../db/d84/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_animation_1_1_view_1_1_animation_inspector_element.html#aae106fd133981d5041a1404498adf087" title="😁 生成" alt="" coords="609,5,894,64"/>
 <area shape="poly" title=" " alt="" coords="1068,1749,1056,1399,1043,1142,1027,866,1005,596,978,357,962,258,945,176,927,115,907,78,893,64,896,60,911,74,932,113,951,175,968,257,983,357,1010,596,1032,866,1049,1142,1061,1398,1074,1749"/>
 <area shape="rect" href="../../d2/d8f/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_armor_1_1_view_1_1_armor_inspector_element.html#a596b09c8801296721f68a93e0ce20bf2" title="😁 生成" alt="" coords="633,88,870,147"/>
@@ -1721,7 +1747,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <area shape="poly" title=" " alt="" coords="1007,1759,908,1713,871,1700,873,1695,910,1708,1009,1754"/>
 <area shape="rect" href="../../d0/d9c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_option_1_1_view_1_1_option_inspector_element.html#aed14269d9a4661a20bb2a8ddaa3ba556" title="😁 生成" alt="" coords="630,1723,873,1781"/>
 <area shape="poly" title=" " alt="" coords="942,1779,873,1770,873,1765,943,1774"/>
-<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 再更新" alt="" coords="657,1491,846,1533"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="657,1491,846,1533"/>
 <area shape="poly" title=" " alt="" coords="1054,1751,1031,1703,1000,1647,958,1593,934,1568,908,1548,878,1532,846,1522,847,1517,880,1527,911,1543,938,1564,962,1589,1004,1644,1036,1700,1058,1749"/>
 <area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#a535e8aedd788cf9049ba7a8d255eb9de" title="😁 中身再更新" alt="" coords="643,1888,860,1947"/>
 <area shape="poly" title=" " alt="" coords="1009,1832,910,1878,861,1895,859,1890,908,1874,1007,1828"/>
@@ -1817,7 +1843,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <div class="center"><img src="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_ab0b3e58ab87f56302d71bfa62cabfdfa_icgraph.png" border="0" usemap="#ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_ab0b3e58ab87f56302d71bfa62cabfdfa_icgraph" alt=""/></div>
 <map name="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_ab0b3e58ab87f56302d71bfa62cabfdfa_icgraph" id="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_ab0b3e58ab87f56302d71bfa62cabfdfa_icgraph">
 <area shape="rect" title="😁 データの更新" alt="" coords="970,1764,1203,1823"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 データの更新" alt="" coords="690,1764,922,1823"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="690,1764,922,1823"/>
 <area shape="poly" title=" " alt="" coords="955,1796,923,1796,923,1791,955,1791"/>
 <area shape="rect" href="../../db/d84/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_animation_1_1_view_1_1_animation_inspector_element.html#aae106fd133981d5041a1404498adf087" title="😁 生成" alt="" coords="341,5,627,64"/>
 <area shape="poly" title=" " alt="" coords="801,1749,788,1399,776,1142,759,866,738,596,711,357,695,258,678,176,660,115,640,78,625,64,629,60,644,74,665,113,683,175,700,257,716,357,743,596,765,866,781,1142,794,1398,806,1749"/>
@@ -1861,7 +1887,7 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <area shape="poly" title=" " alt="" coords="739,1759,641,1713,604,1700,605,1695,643,1708,741,1754"/>
 <area shape="rect" href="../../d0/d9c/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_option_1_1_view_1_1_option_inspector_element.html#aed14269d9a4661a20bb2a8ddaa3ba556" title="😁 生成" alt="" coords="362,1723,606,1781"/>
 <area shape="poly" title=" " alt="" coords="675,1779,605,1770,606,1765,676,1774"/>
-<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 再更新" alt="" coords="389,1491,579,1533"/>
+<area shape="rect" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e" title="😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="389,1491,579,1533"/>
 <area shape="poly" title=" " alt="" coords="786,1751,764,1703,732,1647,691,1593,667,1568,641,1548,611,1532,578,1522,580,1517,613,1527,643,1543,671,1564,695,1589,737,1644,769,1700,791,1749"/>
 <area shape="rect" href="../../d2/d9d/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_map_1_1_view_1_1_map_inspector_view.html#a535e8aedd788cf9049ba7a8d255eb9de" title="😁 中身再更新" alt="" coords="375,1888,593,1947"/>
 <area shape="poly" title=" " alt="" coords="741,1832,643,1878,594,1895,592,1890,641,1874,739,1828"/>
@@ -1945,11 +1971,11 @@ RPGMaker.Codebase.Editor.Inspector.AbstractInspectorElement 連携図</div>
 <div class="center"><img src="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_af45c0cef2a3366d7abd3af41dab3317a_cgraph.png" border="0" usemap="#ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_af45c0cef2a3366d7abd3af41dab3317a_cgraph" alt=""/></div>
 <map name="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_af45c0cef2a3366d7abd3af41dab3317a_cgraph" id="ad5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element_af45c0cef2a3366d7abd3af41dab3317a_cgraph">
 <area shape="rect" title="😁 スクロール更新" alt="" coords="5,88,238,147"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 データの更新" alt="" coords="286,47,518,105"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="286,47,518,105"/>
 <area shape="poly" title=" " alt="" coords="238,98,270,93,271,98,239,103"/>
 <area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0ced2de704698b81d840db07779842b8" title="😁 スクロール保存" alt="" coords="286,129,518,188"/>
 <area shape="poly" title=" " alt="" coords="239,132,271,137,270,142,238,137"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 データの更新を再度行えるようにする" alt="" coords="566,5,798,64"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）" alt="" coords="566,5,798,64"/>
 <area shape="poly" title=" " alt="" coords="518,56,551,51,552,57,519,61"/>
 <area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#ab0b3e58ab87f56302d71bfa62cabfdfa" title="😁 データの更新" alt="" coords="566,88,798,147"/>
 <area shape="poly" title=" " alt="" coords="519,91,552,95,551,101,518,96"/>

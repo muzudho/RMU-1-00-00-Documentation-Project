@@ -119,7 +119,7 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 <tr class="memdesc:a0da2c651d0317b0f5860ef731fef7fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 資産管理スクリプタブル・オブジェクト・フォルダーへのパス  <br /></td></tr>
 <tr class="separator:a0da2c651d0317b0f5860ef731fef7fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5177ddfe2183e48558b102c6e71ab007"><td class="memItemLeft" align="right" valign="top">static List&lt; <a class="el" href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html">AssetManageDataModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db3/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_service_1_1_database_management_1_1_repository_1_1_asset_manage_repository.html#a5177ddfe2183e48558b102c6e71ab007">_assetManageDataModels</a></td></tr>
-<tr class="memdesc:a5177ddfe2183e48558b102c6e71ab007"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 資産管理データ・モデル  <br /></td></tr>
+<tr class="memdesc:a5177ddfe2183e48558b102c6e71ab007"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 （※翻訳者追記）主に画像位置データ等のコレクション。そのリスト  <br /></td></tr>
 <tr class="separator:a5177ddfe2183e48558b102c6e71ab007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
@@ -145,7 +145,9 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </div><div class="memdoc">
 
 <p>😁 Jsonデータ読み込み </p>
-<dl class="section return"><dt>戻り値</dt><dd>資産管理データ・モデルのリスト</dd></dl>
+<p>ここでは、Unity Editor での挙動を説明する</p>
+<p>😁 （※翻訳者追記） ※１　ロードして生成したインスタンスは、静的変数にキャッシュしているから、２度目以降は速く返却できるはず ※２　そうでなければ、 List＜AssetManageDataModel＞　インスタンスを生成して、静的メンバーの _assetManageDataModels リストに格納 ※３　資産管理JSONディレクトリ内の <code>*.json</code> ファイル全取得 ※４　各ファイルについて ※４．１　ファイル・パスのセパレーターは \ から / へ置換 ※４．２　取得したJSON形式ファイルを読込み、 AssetManageDataModel インスタンスへ直列化、 静的メンバーの _assetManageDataModels リストへ要素として追加 ※５　資産管理JSONディレクトリー直下の <code>assetsData.json</code> ファイルへ、 静的メンバーの _assetManageDataModels リストを、ＪＳＯＮ形式の配列に変換して上書き （※元コメント）暫定対応（Runtime実行にまとめたJSON用意しておく） ※６　例外を投げたなら、握りつぶして続行 </p>
+<dl class="section return"><dt>戻り値</dt><dd>😁 （※翻訳者追記）主に画像位置データ等のコレクション。そのリスト</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -215,9 +217,9 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 <area shape="poly" title=" " alt="" coords="667,1043,593,1034,594,1028,668,1038"/>
 <area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#a9700a935af448138045dfd009b172fd3" title="😁 素材管理の新規作成" alt="" coords="314,1108,620,1167"/>
 <area shape="poly" title=" " alt="" coords="676,1193,585,1170,587,1165,678,1188"/>
-<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#acc020021ae590a7d5b1bc04ed55b0ddc" title="😁 素材管理の削除" alt="" coords="314,1191,620,1249"/>
+<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#acc020021ae590a7d5b1bc04ed55b0ddc" title="😁 主に画像位置データ等のコレクションの削除" alt="" coords="314,1191,620,1249"/>
 <area shape="poly" title=" " alt="" coords="667,1225,620,1224,620,1219,667,1220"/>
-<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#abd2656735929bb2374662a697ceab4ed" title="😁 素材管理のコピー＆貼り付け処理" alt="" coords="306,1273,628,1332"/>
+<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#abd2656735929bb2374662a697ceab4ed" title="😁 主に画像位置データ等のコレクションのコピー＆貼り付け処理" alt="" coords="306,1273,628,1332"/>
 <area shape="poly" title=" " alt="" coords="668,1259,598,1275,597,1270,667,1254"/>
 <area shape="rect" href="../../d3/df4/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_type_1_1_view_1_1_weapon_type_edit_inspector_element.html#af3a1257bca01df0f8b83bc92409a9c77" title="😁 初期化処理" alt="" coords="343,1356,591,1415"/>
 <area shape="poly" title=" " alt="" coords="686,1383,592,1385,592,1380,686,1378"/>
@@ -257,7 +259,7 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 <p>😁 JSONファイルに保存する </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataModel</td><td>データ・モデル</td></tr>
+    <tr><td class="paramname">dataModel</td><td>😁 （※翻訳者追記）主に画像位置データ等のコレクション</td></tr>
   </table>
   </dd>
 </dl>
@@ -281,9 +283,9 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 <area shape="poly" title=" " alt="" coords="665,120,632,120,632,115,665,115"/>
 <area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#a9700a935af448138045dfd009b172fd3" title="😁 素材管理の新規作成" alt="" coords="13,5,320,64"/>
 <area shape="poly" title=" " alt="" coords="366,86,289,67,290,62,368,81"/>
-<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#acc020021ae590a7d5b1bc04ed55b0ddc" title="😁 素材管理の削除" alt="" coords="14,88,319,147"/>
+<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#acc020021ae590a7d5b1bc04ed55b0ddc" title="😁 主に画像位置データ等のコレクションの削除" alt="" coords="14,88,319,147"/>
 <area shape="poly" title=" " alt="" coords="360,120,320,120,320,115,360,115"/>
-<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#abd2656735929bb2374662a697ceab4ed" title="😁 素材管理のコピー＆貼り付け処理" alt="" coords="5,171,328,229"/>
+<area shape="rect" href="../../dc/df5/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_region_1_1_asset_manage_1_1_asset_manage_hierarchy.html#abd2656735929bb2374662a697ceab4ed" title="😁 主に画像位置データ等のコレクションのコピー＆貼り付け処理" alt="" coords="5,171,328,229"/>
 <area shape="poly" title=" " alt="" coords="368,153,290,173,289,167,366,148"/>
 </map>
 </div>
@@ -311,7 +313,11 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </table>
 </div><div class="memdoc">
 
-<p>😁 資産管理データ・モデル </p>
+<p>😁 （※翻訳者追記）主に画像位置データ等のコレクション。そのリスト </p>
+<ul>
+<li>
+（※翻訳者追記）「レポジトリ―」は静的メンバーとして「データ・モデルのリスト」を持っているという構造をしているようだ </li>
+</ul>
 
 </div>
 </div>

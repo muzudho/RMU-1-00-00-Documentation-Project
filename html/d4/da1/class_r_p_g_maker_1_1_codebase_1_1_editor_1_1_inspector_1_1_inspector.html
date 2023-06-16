@@ -111,7 +111,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 <tr class="memdesc:a566d32cf7bf6badc0cdfb781137f0895"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 クリアー  <br /></td></tr>
 <tr class="separator:a566d32cf7bf6badc0cdfb781137f0895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80ec4df599eb5ab2d7d681f288c0f75e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a80ec4df599eb5ab2d7d681f288c0f75e">Refresh</a> ()</td></tr>
-<tr class="memdesc:a80ec4df599eb5ab2d7d681f288c0f75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 再更新  <br /></td></tr>
+<tr class="memdesc:a80ec4df599eb5ab2d7d681f288c0f75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）  <br /></td></tr>
 <tr class="separator:a80ec4df599eb5ab2d7d681f288c0f75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a620273ae32679e59af4c360f676c17f6"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#a620273ae32679e59af4c360f676c17f6">GetCurrentChapterId</a> (<a class="el" href="../../db/d3a/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_outline_editor_1_1_g_t_f_1_1_oe_graph_view.html">OeGraphView</a> graphView)</td></tr>
 <tr class="memdesc:a620273ae32679e59af4c360f676c17f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 引数のOeGraphViewを保持するウィンドウのセクション追加ボタンからカレントチャプターidを取得。  <br /></td></tr>
@@ -280,7 +280,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 <tr class="memdesc:a01a32fd17ad42e6994e07bb5263e31fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 インスペクター窓  <br /></td></tr>
 <tr class="separator:a01a32fd17ad42e6994e07bb5263e31fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f7db9fa38dc158cfde911348559c1b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html">AbstractInspectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#ac9f7db9fa38dc158cfde911348559c1b">_currentInspectorElement</a></td></tr>
-<tr class="memdesc:ac9f7db9fa38dc158cfde911348559c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 主インスペクター要素  <br /></td></tr>
+<tr class="memdesc:ac9f7db9fa38dc158cfde911348559c1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 現在インスペクター要素  <br /></td></tr>
 <tr class="separator:ac9f7db9fa38dc158cfde911348559c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55b96ad51ef1cbe9502cfa49364133f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html">AbstractInspectorElement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector.html#ab55b96ad51ef1cbe9502cfa49364133f">_nowInspectorElement</a></td></tr>
 <tr class="memdesc:ab55b96ad51ef1cbe9502cfa49364133f"><td class="mdescLeft">&#160;</td><td class="mdescRight">😁 今インスペクター要素  <br /></td></tr>
@@ -511,7 +511,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 <p>😁 素材管理用インスペクタ </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">assetManageDataModel</td><td>資産管理</td></tr>
+    <tr><td class="paramname">assetManageDataModel</td><td>😁 （※翻訳者追記）主に画像位置データ等のコレクション</td></tr>
   </table>
   </dd>
 </dl>
@@ -2956,17 +2956,17 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p>😁 再更新 </p>
-<dl class="section return"><dt>戻り値</dt><dd>完了した</dd></dl>
+<p>😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行） </p>
+<dl class="section return"><dt>戻り値</dt><dd>描画を指示されたインスペクターの可視要素が指定されていた</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_cgraph.png" border="0" usemap="#ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_cgraph" alt=""/></div>
 <map name="ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_cgraph" id="ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_cgraph">
-<area shape="rect" title="😁 再更新" alt="" coords="5,55,195,97"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 データの更新" alt="" coords="243,47,475,105"/>
+<area shape="rect" title="😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="5,55,195,97"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a0c853745aedcb0ae26f2778377e32c32" title="😁 可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="243,47,475,105"/>
 <area shape="poly" title=" " alt="" coords="195,73,228,73,228,79,195,79"/>
-<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 データの更新を再度行えるようにする" alt="" coords="523,5,755,64"/>
+<area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#a8470b14f2c107172454318c1936084bf" title="😁 Ｙ位置を相対スクロールする仕込みをする（またはすぐにスクロールする）" alt="" coords="523,5,755,64"/>
 <area shape="poly" title=" " alt="" coords="475,56,508,51,509,57,476,61"/>
 <area shape="rect" href="../../d5/d42/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_abstract_inspector_element.html#ab0b3e58ab87f56302d71bfa62cabfdfa" title="😁 データの更新" alt="" coords="523,88,755,147"/>
 <area shape="poly" title=" " alt="" coords="476,91,509,95,508,101,475,96"/>
@@ -2977,7 +2977,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_icgraph.png" border="0" usemap="#ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_icgraph" alt=""/></div>
 <map name="ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_icgraph" id="ad4/da1/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_inspector_1_1_inspector_a80ec4df599eb5ab2d7d681f288c0f75e_icgraph">
-<area shape="rect" title="😁 再更新" alt="" coords="266,5,455,48"/>
+<area shape="rect" title="😁 描画を指示されたインスペクターの可視要素の再更新、および、Ｙ位置の相対スクロールの仕込み（またはその即実行）" alt="" coords="266,5,455,48"/>
 <area shape="rect" href="../../de/ddc/class_r_p_g_maker_1_1_codebase_1_1_editor_1_1_hierarchy_1_1_hierarchy.html#a2b194448f5fcca77e60d5bc10f9ddbb7" title="😁 最後に開いていたインスペクターを開く" alt="" coords="5,5,218,48"/>
 <area shape="poly" title=" " alt="" coords="251,29,218,29,218,24,251,24"/>
 </map>
@@ -3012,7 +3012,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 <p>😁 描画 </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
-    <tr><td class="paramname">inspectorElement</td><td>インスペクター要素</td></tr>
+    <tr><td class="paramname">inspectorElement</td><td>描画を指示されたインスペクター要素</td></tr>
   </table>
   </dd>
 </dl>
@@ -4325,7 +4325,7 @@ RPGMaker.Codebase.Editor.Inspector.Inspector 連携図</div>
 </table>
 </div><div class="memdoc">
 
-<p>😁 主インスペクター要素 </p>
+<p>😁 現在インスペクター要素 </p>
 
 </div>
 </div>

@@ -84,14 +84,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>😁 資産管理データ・モデル  
+<p>😁 主に画像位置データ等のコレクション  
  <a href="../../d0/d6d/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_1_asset_manage_data_model.html#details">[詳解]</a></p>
 <div class="dynheader">
 RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataModel の継承関係図</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/dc7/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_10dd3fe8713beaeb85ce4c24adb840128.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_inherit__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_inherit__map">
-<area shape="rect" title="😁 資産管理データ・モデル" alt="" coords="5,80,244,139"/>
+<area shape="rect" title="😁 主に画像位置データ等のコレクション" alt="" coords="5,80,244,139"/>
 <area shape="rect" title=" " alt="" coords="30,5,219,32"/>
 <area shape="poly" title=" " alt="" coords="127,47,127,79,122,79,122,47"/>
 </map>
@@ -101,7 +101,7 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 <div class="dyncontent">
 <div class="center"><img src="../../da/dfa/class_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_data_model_1_1_asset_manage_1_145f524c4c189a7bddd41c1ed081fd345.png" border="0" usemap="#a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_coll__map" alt="Collaboration graph"/></div>
 <map name="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_coll__map" id="a_r_p_g_maker_8_codebase_8_core_system_8_knowledge_8_data_model_8_asset_manage_8_asset_manage_data_model_coll__map">
-<area shape="rect" title="😁 資産管理データ・モデル" alt="" coords="5,80,244,139"/>
+<area shape="rect" title="😁 主に画像位置データ等のコレクション" alt="" coords="5,80,244,139"/>
 <area shape="rect" title=" " alt="" coords="30,5,219,32"/>
 <area shape="poly" title=" " alt="" coords="127,47,127,79,122,79,122,47"/>
 </map>
@@ -162,10 +162,12 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 <tr class="separator:a2da955dab89a1d61a728d00415712582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
-<div class="textblock"><p>😁 資産管理データ・モデル </p>
+<div class="textblock"><p>😁 主に画像位置データ等のコレクション </p>
 <ul>
 <li>
 （※翻訳者追記）対応するJSONファイルは少なくとも "Assets/RPGMaker/Storage/AssetManage/JSON/Assets/" + assetId + ".json" だ </li>
+<li>
+AssetManageDataModel という名前をしているが、内容はほとんど画像位置に関するものだ </li>
 </ul>
 </div><h2 class="groupheader">構築子と解体子</h2>
 <a id="addfb54101f0b0b357bb07ec0238c0b56" name="addfb54101f0b0b357bb07ec0238c0b56"></a>
@@ -282,7 +284,7 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 <li>
 （※翻訳者追記）デフォルトを作ると言うのなら、セットする値無しで、固定値で作るべきだ </li>
 </ul>
-<p>😁（※翻訳者追記） ※１ AssetManageDataModel インスタンスを生成。 sort 変数の初期値として、 otherSameTypeItemAmount + 1 をセット ※２ 資産型Ｉｄ（<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>）によって、 AssetManageDataModel インスタンスの imageSettings メンバー・リストのサイズが変わる。 そのサイズは DataSizeMoveCharacter、DataSizeSvCharacter、DataSizeDefault で指定されている。 その固定長リストの各要素には、 ImageSetting インスタンスを生成してセットする </p>
+<p>😁（※翻訳者追記） ※１ 主に画像位置データ等のコレクションのインスタンスを生成。 sort 変数の初期値として、 otherSameTypeItemAmount + 1 をセット ※２ 資産型Ｉｄ（<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>）によって、 AssetManageDataModel インスタンスの imageSettings メンバー・リストのサイズが変わる。 そのサイズは DataSizeMoveCharacter、DataSizeSvCharacter、DataSizeDefault で指定されている。 その固定長リストの各要素には、 ImageSetting インスタンスを生成してセットする </p>
 <dl class="params"><dt>引数</dt><dd>
   <table class="params">
     <tr><td class="paramname">assetTypeId</td><td>資産型Id</td></tr>
@@ -290,7 +292,7 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>戻り値</dt><dd>資産管理データ・モデル</dd></dl>
+<dl class="section return"><dt>戻り値</dt><dd>😁 （※翻訳者追記）主に画像位置データ等のコレクション</dd></dl>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -351,6 +353,10 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 </div><div class="memdoc">
 
 <p>😁 データ・サイズ既定値 </p>
+<ul>
+<li>
+（※翻訳者追記）資産型Ｉｄが　ポップアップ、ＳＶ武器、超配置、戦闘効果のいずれかなら、 imageSettings リスト・プロパティの長さは１だという定数 </li>
+</ul>
 
 </div>
 </div>
@@ -375,6 +381,10 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 </div><div class="memdoc">
 
 <p>😁 データ・サイズ移動キャラクター </p>
+<ul>
+<li>
+（※翻訳者追記）資産型Ｉｄが　移動キャラクター、オブジェクトのいずれかなら、 imageSettings リスト・プロパティの長さは５だという定数 </li>
+</ul>
 
 </div>
 </div>
@@ -399,6 +409,10 @@ RPGMaker.Codebase.CoreSystem.Knowledge.DataModel.AssetManage.AssetManageDataMode
 </div><div class="memdoc">
 
 <p>😁 データ・サイズＳＶキャラクター </p>
+<ul>
+<li>
+（※翻訳者追記）資産型Ｉｄが　ＳＶ戦闘キャラクターなら、 imageSettings リスト・プロパティの長さは１８だという定数 </li>
+</ul>
 
 </div>
 </div>
