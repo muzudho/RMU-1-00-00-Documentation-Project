@@ -156,8 +156,14 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 </div><div class="memdoc">
 
 <p>😁 ロード </p>
-<p>😁（※翻訳者追記） ※１　ロード済みなら、それを返す ※２　未ロードなら、 <code>orderManager.json</code> を読込む ※３ （※２）に失敗したら、以下の方法で初期値を作成 <a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a> 列挙型の要素数分の長さの配列を生成。その要素の assetTypeId（😁 資産型Ｉｄ　<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>） には 0 からの連番を振っている ※４　（※２）に成功したら、JSON形式テキストをシリアライズしてオブジェクト生成。それに失敗したら、代わりにデフォルト値を入れる </p>
-<dl class="section return"><dt>戻り値</dt><dd>順序データ</dd></dl>
+<pre>
+        😁（※翻訳者追記）
+        ※１　ロード済みなら、それを返す
+        ※２　未ロードなら、 `orderManager.json` を読込む
+        ※３  （※２）に失敗したら、以下の方法で初期値を作成
+            <a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a> 列挙型の要素数分の長さの配列を生成。その要素の assetTypeId（😁 資産型Ｉｄ　<a class="el" href="../../db/de3/namespace_r_p_g_maker_1_1_codebase_1_1_core_system_1_1_knowledge_1_1_enum.html#aae1369d164e2d2c96a7bc5dd65ec97a3" title="😁 （※翻訳者追記）資産型Ｉｄか？">RPGMaker.Codebase.CoreSystem.Knowledge.Enum.AssetCategoryEnum</a>） には 0 からの連番を振っている
+        ※４　（※２）に成功したら、JSON形式テキストをシリアライズしてオブジェクト生成。それに失敗したら、代わりにデフォルト値を入れる
+    </pre><dl class="section return"><dt>戻り値</dt><dd>順序データ</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">

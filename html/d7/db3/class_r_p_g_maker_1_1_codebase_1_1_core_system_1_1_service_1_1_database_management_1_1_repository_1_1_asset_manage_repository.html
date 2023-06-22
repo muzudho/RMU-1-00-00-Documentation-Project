@@ -146,8 +146,20 @@ RPGMaker.Codebase.CoreSystem.Service.DatabaseManagement.Repository.AssetManageRe
 
 <p>😁 Jsonデータ読み込み </p>
 <p>ここでは、Unity Editor での挙動を説明する</p>
-<p>😁 （※翻訳者追記） ※１　ロードして生成したインスタンスは、静的変数にキャッシュしているから、２度目以降は速く返却できるはず ※２　そうでなければ、 List＜AssetManageDataModel＞　インスタンスを生成して、静的メンバーの _assetManageDataModels リストに格納 ※３　資産管理JSONディレクトリ内の <code>*.json</code> ファイル全取得 ※４　各ファイルについて ※４．１　ファイル・パスのセパレーターは \ から / へ置換 ※４．２　取得したJSON形式ファイルを読込み、 AssetManageDataModel インスタンスへ直列化、 静的メンバーの _assetManageDataModels リストへ要素として追加 ※５　資産管理JSONディレクトリー直下の <code>assetsData.json</code> ファイルへ、 静的メンバーの _assetManageDataModels リストを、ＪＳＯＮ形式の配列に変換して上書き （※元コメント）暫定対応（Runtime実行にまとめたJSON用意しておく） ※６　例外を投げたなら、握りつぶして続行 </p>
-<dl class="section return"><dt>戻り値</dt><dd>😁 （※翻訳者追記）主に画像位置データ等のコレクション。そのリスト</dd></dl>
+<pre>
+        😁 （※翻訳者追記）
+        ※１　ロードして生成したインスタンスは、静的変数にキャッシュしているから、２度目以降は速く返却できるはず
+        ※２　そうでなければ、 List＜AssetManageDataModel＞　インスタンスを生成して、静的メンバーの _assetManageDataModels リストに格納
+        ※３　資産管理JSONディレクトリ内の `*.json` ファイル全取得
+        ※４　各ファイルについて
+        ※４．１　ファイル・パスのセパレーターは \ から / へ置換
+        ※４．２　取得したJSON形式ファイルを読込み、 AssetManageDataModel インスタンスへ直列化、
+                  静的メンバーの _assetManageDataModels リストへ要素として追加
+        ※５　資産管理JSONディレクトリー直下の `assetsData.json` ファイルへ、
+              静的メンバーの _assetManageDataModels リストを、ＪＳＯＮ形式の配列に変換して上書き
+              （※元コメント）暫定対応（Runtime実行にまとめたJSON用意しておく）
+        ※６　例外を投げたなら、握りつぶして続行
+    </pre><dl class="section return"><dt>戻り値</dt><dd>😁 （※翻訳者追記）主に画像位置データ等のコレクション。そのリスト</dd></dl>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
